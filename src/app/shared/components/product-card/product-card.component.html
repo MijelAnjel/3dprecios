@@ -1,0 +1,44 @@
+<article class="product-card">
+  <a
+    class="product-card__link"
+    [routerLink]="['/productos', product().slug]"
+    [attr.aria-label]="product().name + ' desde ' + product().minPrice + ' pesos'"
+  >
+    <!-- Imagen -->
+    <div class="product-card__img-wrapper">
+      @if (product().images.length > 0) {
+        <img
+          class="product-card__img"
+          [ngSrc]="product().images[0]"
+          [alt]="product().name"
+          width="280"
+          height="200"
+          loading="lazy"
+        />
+      } @else {
+        <div class="product-card__img-placeholder" aria-hidden="true">⬡</div>
+      }
+    </div>
+
+    <!-- Info -->
+    <div class="product-card__body">
+      <p class="product-card__brand">{{ product().brand }}</p>
+      <h3 class="product-card__name">{{ product().name }}</h3>
+
+      <!-- Precio -->
+      <div class="product-card__pricing">
+        <app-price-badge [price]="product().minPrice" />
+        @if (product().minPrice !== product().maxPrice) {
+          <span class="product-card__max-price">hasta {{ product().maxPrice | clp }}</span>
+        }
+      </div>
+
+      <!-- Tiendas -->
+      <p class="product-card__stores">
+        Disponible en
+        <strong>{{ product().storeCount }}</strong>
+        {{ product().storeCount === 1 ? 'tienda' : 'tiendas' }}
+      </p>
+    </div>
+  </a>
+</article>

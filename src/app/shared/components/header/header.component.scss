@@ -1,0 +1,186 @@
+@use '../../../../styles/variables' as *;
+@use '../../../../styles/mixins' as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: $z-header;
+  background: rgba($bg-dark, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid $border-color;
+
+  &__inner {
+    @include container;
+    display: flex;
+    align-items: center;
+    height: $header-height;
+    gap: $space-5;
+  }
+
+  // ── Logo ────────────────────────────────────
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: $space-2;
+    text-decoration: none;
+    flex-shrink: 0;
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 3px;
+      border-radius: $border-radius-sm;
+    }
+  }
+
+  &__logo-icon {
+    font-size: 1.5rem;
+    color: $primary;
+    line-height: 1;
+  }
+
+  &__logo-text {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-medium;
+    color: $text-primary;
+    letter-spacing: -0.02em;
+
+    strong {
+      color: $primary;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  // ── Nav desktop ─────────────────────────────
+  &__nav {
+    display: none;
+    align-items: center;
+    gap: $space-1;
+    margin-left: auto;
+
+    @include md {
+      display: flex;
+    }
+  }
+
+  &__nav-link {
+    padding: $space-2 $space-3;
+    color: $text-secondary;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    border-radius: $border-radius-sm;
+    transition: color $transition-fast, background $transition-fast;
+    text-decoration: none;
+
+    &:hover {
+      color: $text-primary;
+      background: rgba($text-primary, 0.06);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 2px;
+    }
+
+    &--active {
+      color: $primary;
+    }
+  }
+
+  // ── CTA ─────────────────────────────────────
+  &__actions {
+    display: none;
+    margin-left: $space-3;
+
+    @include md {
+      display: flex;
+    }
+  }
+
+  &__cta {
+    @include btn-primary;
+    padding: $space-2 $space-4;
+    font-size: $font-size-sm;
+  }
+
+  // ── Hamburger ───────────────────────────────
+  &__hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: $space-2;
+    border-radius: $border-radius-sm;
+    transition: background $transition-fast;
+
+    &:hover {
+      background: rgba($text-primary, 0.06);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 2px;
+    }
+
+    @include md {
+      display: none;
+    }
+  }
+
+  &__hamburger-bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: $text-primary;
+    border-radius: 2px;
+    transition: transform $transition-fast, opacity $transition-fast;
+  }
+
+  // ── Mobile menu ─────────────────────────────
+  &__mobile-menu {
+    position: absolute;
+    top: $header-height;
+    left: 0;
+    right: 0;
+    background: $bg-card;
+    border-bottom: 1px solid $border-color;
+    padding: $space-4;
+    animation: slide-down 200ms ease forwards;
+
+    @include md {
+      display: none;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: $space-1;
+    }
+  }
+
+  &__mobile-link {
+    display: block;
+    padding: $space-3 $space-4;
+    color: $text-secondary;
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    border-radius: $border-radius-sm;
+    text-decoration: none;
+    transition: color $transition-fast, background $transition-fast;
+
+    &:hover {
+      color: $text-primary;
+      background: rgba($text-primary, 0.06);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 2px;
+    }
+  }
+}

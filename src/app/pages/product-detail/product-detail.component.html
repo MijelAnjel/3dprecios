@@ -1,0 +1,128 @@
+@if (jsonLd()) {
+  <script type="application/ld+json">{{ jsonLd() }}</script>
+}
+
+<main class="pd container" id="main-content">
+  <app-breadcrumb [items]="breadcrumb()" />
+
+  @if (loading()) {
+    <div class="pd__loading" aria-live="polite" aria-busy="true">
+      <div class="pd__skeleton pd__skeleton--hero"></div>
+    </div>
+  } @else if (!product()) {
+    <div class="pd__not-found">
+      <p>Producto no encontrado.</p>
+      <a routerLink="/categorias">Ver categorías</a>
+    </div>
+  } @else {
+    <!-- Hero grid: gallery + info -->
+    <div class="pd__hero">
+
+      <!-- Gallery -->
+      <div class="pd__gallery">
+        <div class="pd__gallery-main">
+          @if (product()!.images.length > 0) {
+            <img
+              [ngSrc]="product()!.images[activeImageIndex()]"
+              [alt]="product()!.name"
+              fill
+              priority
+              class="pd__gallery-img"
+            />
+          } @else {
+            <div class="pd__gallery-placeholder" aria-hidden="true">📦</div>
+          }
+        </div>
+        @if (product()!.images.length > 1) {
+          <div class="pd__gallery-thumbs" role="list" aria-label="Imágenes del producto">
+            @for (img of product()!.images; track img; let i = $index) {
+              <button
+                class="pd__thumb"
+                [class.pd__thumb--active]="activeImageIndex() === i"
+                (click)="setActiveImage(i)"
+                [attr.aria-label]="'Ver imagen ' + (i + 1)"
+                [attr.aria-pressed]="activeImageIndex() === i"
+                role="listitem"
+              >
+                <img [ngSrc]="img" [alt]="product()!.name + ' imagen ' + (i + 1)" width="64" height="64" />
+              </button>
+            }
+          </div>
+        }
+      </div>
+
+      <!-- Info panel -->
+      <div class="pd__info">
+        <p class="pd__brand">{{ product()!.brand }}</p>
+        <h1 class="pd__name">{{ product()!.name }}</h1>
+
+        <div class="pd__price-block">
+          <span class="pd__price-label">Desde</span>
+          <span class="pd__price">{{ minPrice() | clp }}</span>
+          <span class="pd__price-stores">en {{ product()!.storeCount }} {{ product()!.storeCount === 1 ? 'tienda' : 'tiendas' }}</span>
+        </div>
+
+        <p class="pd__description">{{ product()!.description }}</p>
+
+        @if (specEntries().length) {
+          <dl class="pd__specs">
+            @for (spec of specEntries(); track spec[0]) {
+              <div class="pd__spec-row">
+                <dt class="pd__spec-key">{{ spec[0] }}</dt>
+                <dd class="pd__spec-val">{{ spec[1] }}</dd>
+              </div>
+            }
+          </dl>
+        }
+
+        <a
+          [href]="entries()[0]?.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="pd__buy-btn"
+          [attr.aria-label]="'Comprar ' + product()!.name + ' al mejor precio'"
+        >
+          Ver mejor precio →
+        </a>
+      </div>
+    </div>
+
+    <!-- Price table -->
+    <section class="pd__section" aria-labelledby="pd-prices-title">
+      <app-price-table [entries]="entries()" [stores]="stores()" />
+    </section>
+
+    <!-- Price chart – lazy loaded when visible -->
+    <section class="pd__section" aria-labelledby="pd-chart-title">
+      @defer (on viewport) {
+        <app-price-chart [history]="history()" />
+      } @placeholder {
+        <div class="pd__chart-placeholder" aria-label="Cargando gráfico de precios">
+          <div class="pd__skeleton pd__skeleton--chart"></div>
+        </div>
+      }
+    </section>
+
+    <!-- Alert form -->
+    <section class="pd__section">
+      <app-alert-form
+        [productId]="product()!.id"
+        [currentMinPrice]="minPrice()"
+      />
+    </section>
+
+    <!-- Similar products -->
+    @if (similar().length) {
+      <section class="pd__section pd__similar" aria-labelledby="pd-similar-title">
+        <h2 class="pd__section-title" id="pd-similar-title">Productos similares</h2>
+        <ul class="pd__similar-grid" role="list">
+          @for (p of similar(); track p.id) {
+            <li>
+              <app-product-card [product]="p" />
+            </li>
+          }
+        </ul>
+      </section>
+    }
+  }
+</main>

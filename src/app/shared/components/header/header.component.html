@@ -1,0 +1,47 @@
+<header class="header" role="banner">
+  <div class="header__inner container">
+    <!-- Logo -->
+    <a class="header__logo" routerLink="/" (click)="closeMenu()" aria-label="3DPrecios — inicio">
+      <span class="header__logo-icon" aria-hidden="true">⬡</span>
+      <span class="header__logo-text"><strong>3D</strong>Precios</span>
+    </a>
+
+    <!-- Nav desktop -->
+    <nav class="header__nav" aria-label="Navegación principal">
+      <a class="header__nav-link" routerLink="/" routerLinkActive="header__nav-link--active"
+         [routerLinkActiveOptions]="{ exact: true }">Inicio</a>
+      <a class="header__nav-link" routerLink="/categorias" routerLinkActive="header__nav-link--active">Categorías</a>
+      <a class="header__nav-link" routerLink="/tiendas" routerLinkActive="header__nav-link--active">Tiendas</a>
+    </nav>
+
+    <!-- CTA desktop -->
+    <div class="header__actions">
+      <a class="header__cta" routerLink="/categorias">Ver productos</a>
+    </div>
+
+    <!-- Hamburger móvil -->
+    <button
+      class="header__hamburger"
+      type="button"
+      [attr.aria-expanded]="menuOpen()"
+      aria-controls="mobile-menu"
+      aria-label="Abrir menú"
+      (click)="toggleMenu()"
+    >
+      <span class="header__hamburger-bar"></span>
+      <span class="header__hamburger-bar"></span>
+      <span class="header__hamburger-bar"></span>
+    </button>
+  </div>
+
+  <!-- Menú móvil -->
+  @if (menuOpen()) {
+    <div id="mobile-menu" class="header__mobile-menu" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+      <nav aria-label="Navegación móvil">
+        <a class="header__mobile-link" routerLink="/" (click)="closeMenu()">Inicio</a>
+        <a class="header__mobile-link" routerLink="/categorias" (click)="closeMenu()">Categorías</a>
+        <a class="header__mobile-link" routerLink="/tiendas" (click)="closeMenu()">Tiendas</a>
+      </nav>
+    </div>
+  }
+</header>

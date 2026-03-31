@@ -1,0 +1,97 @@
+<app-breadcrumb [items]="breadcrumb()" />
+
+@if (isListView()) {
+  <!-- ── Vista lista: grid de todas las tiendas ── -->
+  <main class="stores container" id="main-content">
+    <h1 class="stores__title">Tiendas de impresión 3D en Chile</h1>
+    <p class="stores__sub">
+      Comparamos precios de {{ stores().length }} tiendas chilenas, actualizados cada 6 horas.
+    </p>
+
+    <ul class="stores__grid" role="list">
+      @for (store of stores(); track store.id) {
+        <li>
+          <a
+            class="stores__card"
+            [routerLink]="['/tiendas', store.slug]"
+            [attr.aria-label]="'Ver productos de ' + store.name"
+          >
+            <div class="stores__card-logo">
+              <img
+                [ngSrc]="store.logo"
+                [alt]="store.name + ' logo'"
+                width="56"
+                height="56"
+                [attr.data-fallback]="store.name[0]"
+              />
+            </div>
+            <div class="stores__card-body">
+              <h2 class="stores__card-name">{{ store.name }}</h2>
+              @if (store.shippingInfo) {
+                <p class="stores__card-shipping">🚚 {{ store.shippingInfo }}</p>
+              }
+              <span class="stores__card-url">{{ store.url.replace('https://', '') }}</span>
+            </div>
+            <span class="stores__card-arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+      }
+    </ul>
+  </main>
+
+} @else if (activeStore()) {
+  <!-- ── Vista perfil de tienda ── -->
+  <main class="store-profile container" id="main-content">
+    <div class="store-profile__header">
+      <div class="store-profile__logo">
+        <img
+          [ngSrc]="activeStore()!.logo"
+          [alt]="activeStore()!.name + ' logo'"
+          width="72"
+          height="72"
+        />
+      </div>
+      <div class="store-profile__info">
+        <h1 class="store-profile__name">{{ activeStore()!.name }}</h1>
+        @if (activeStore()!.shippingInfo) {
+          <p class="store-profile__shipping">🚚 {{ activeStore()!.shippingInfo }}</p>
+        }
+        <a
+          [href]="activeStore()!.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="store-profile__link"
+          [attr.aria-label]="'Visitar ' + activeStore()!.name"
+        >
+          {{ activeStore()!.url.replace('https://', '') }} ↗
+        </a>
+      </div>
+    </div>
+
+    <section aria-labelledby="store-products-title">
+      <h2 class="store-profile__section-title" id="store-products-title">
+        Productos disponibles
+      </h2>
+
+      @if (loading()) {
+        <app-skeleton [count]="6" />
+      } @else if (products().length === 0) {
+        <p class="store-profile__empty">Aún no hay productos de esta tienda.</p>
+      } @else {
+        <ul class="store-profile__grid" role="list">
+          @for (product of products(); track product.id) {
+            <li>
+              <app-product-card [product]="product" />
+            </li>
+          }
+        </ul>
+      }
+    </section>
+  </main>
+
+} @else {
+  <main class="container" id="main-content" style="padding-block: 4rem; text-align: center; color: var(--text-muted)">
+    <p>Tienda no encontrada.</p>
+    <a routerLink="/tiendas" style="color: var(--accent); text-decoration: none;">Ver todas las tiendas</a>
+  </main>
+}

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# No indexar páginas legales ni de cuenta
+Disallow: /privacidad
+Disallow: /terminos
+
+Sitemap: https://dprecios.web.app/sitemap.xml

@@ -1,0 +1,37 @@
+@use '../../../../styles/variables' as *;
+
+.store-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+  padding: $space-1 $space-3;
+  background: $bg-elevated;
+  border: 1px solid $border-color;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: border-color $transition-fast, background $transition-fast;
+
+  &:hover {
+    border-color: $primary;
+    background: rgba($primary, 0.08);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $accent;
+    outline-offset: 2px;
+  }
+
+  &__logo {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    object-fit: contain;
+  }
+
+  &__name {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    color: $text-secondary;
+    white-space: nowrap;
+  }
+}

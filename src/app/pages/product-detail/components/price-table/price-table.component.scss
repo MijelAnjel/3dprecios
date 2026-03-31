@@ -1,0 +1,145 @@
+@use '../../../../../styles/variables' as *;
+@use 'sass:color';
+
+.price-table {
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 1rem;
+  }
+
+  &__wrapper {
+    overflow-x: auto;
+    border: 1px solid rgba(255 255 255 / 0.07);
+    border-radius: $border-radius;
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+
+    thead tr {
+      background: rgba(255 255 255 / 0.04);
+    }
+
+    th {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      font-weight: 600;
+      color: $text-muted;
+      font-size: 0.8125rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+
+    tbody tr {
+      border-top: 1px solid rgba(255 255 255 / 0.05);
+      transition: background $transition-fast;
+
+      &:hover {
+        background: rgba(255 255 255 / 0.03);
+      }
+    }
+
+    td {
+      padding: 0.875rem 1rem;
+      color: $text-primary;
+      vertical-align: middle;
+    }
+  }
+
+  &__row--best {
+    background: rgba($accent, 0.05) !important;
+  }
+
+  &__store {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+
+  &__badge {
+    display: inline-block;
+    padding: 0.125rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.6875rem;
+    font-weight: 600;
+
+    &--best {
+      background: rgba($accent, 0.15);
+      color: $accent;
+    }
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 1.0625rem;
+    color: $text-primary;
+    white-space: nowrap;
+  }
+
+  &__stock-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: rgba(255 255 255 / 0.08);
+    color: $text-muted;
+
+    &--available {
+      background: rgba($accent, 0.12);
+      color: $accent;
+    }
+
+    &--low {
+      background: rgba(255, 160, 0, 0.12);
+      color: #FFA000;
+    }
+
+    &--out {
+      background: rgba(239, 83, 80, 0.12);
+      color: #EF5350;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 0.4rem 0.875rem;
+    background: $primary;
+    color: white;
+    border-radius: $border-radius;
+    text-decoration: none;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: background $transition-fast, transform $transition-fast;
+
+    &:hover {
+      background: color.adjust($primary, $lightness: -8%);
+      transform: translateY(-1px);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 3px;
+    }
+  }
+
+  &__empty {
+    text-align: center;
+    color: $text-muted;
+    padding: 2rem;
+  }
+}

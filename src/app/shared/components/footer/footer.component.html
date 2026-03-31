@@ -1,0 +1,53 @@
+<footer class="footer" role="contentinfo">
+  <div class="footer__inner container">
+    <div class="footer__grid">
+      <!-- Brand -->
+      <div class="footer__brand">
+        <a class="footer__logo" routerLink="/" aria-label="3DPrecios — inicio">
+          <span aria-hidden="true">⬡</span>
+          <strong>3D</strong>Precios
+        </a>
+        <p class="footer__tagline">Compara precios de impresión 3D en tiendas chilenas.</p>
+      </div>
+
+      <!-- Categorías -->
+      <div class="footer__col">
+        <h3 class="footer__col-title">Categorías</h3>
+        <ul class="footer__links">
+          <li><a routerLink="/categorias/filamentos-pla">Filamentos PLA</a></li>
+          <li><a routerLink="/categorias/filamentos-abs">Filamentos ABS</a></li>
+          <li><a routerLink="/categorias/impresoras-fdm">Impresoras FDM</a></li>
+          <li><a routerLink="/categorias/resinas">Resinas</a></li>
+          <li><a routerLink="/categorias/repuestos">Repuestos</a></li>
+        </ul>
+      </div>
+
+      <!-- Tiendas -->
+      <div class="footer__col">
+        <h3 class="footer__col-title">Tiendas</h3>
+        <ul class="footer__links">
+          <li><a routerLink="/tiendas/impresalta">Impresalta</a></li>
+          <li><a routerLink="/tiendas/formageo">Formageo</a></li>
+          <li><a routerLink="/tiendas/3d-chile">3D Chile</a></li>
+          <li><a routerLink="/tiendas/ahi3d">AHI 3D</a></li>
+          <li><a routerLink="/tiendas">Ver todas →</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div class="footer__col">
+        <h3 class="footer__col-title">Legal</h3>
+        <ul class="footer__links">
+          <li><a routerLink="/privacidad">Política de privacidad</a></li>
+          <li><a routerLink="/terminos">Términos de uso</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">
+        &copy; {{ year }} 3DPrecios. Precios informativos, verificar en tienda.
+      </p>
+    </div>
+  </div>
+</footer>

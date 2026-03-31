@@ -1,0 +1,144 @@
+@use '../../../../../styles/variables' as *;
+@use 'sass:color';
+
+.alert-form {
+  background: $bg-card;
+  border: 1px solid rgba(255 255 255 / 0.07);
+  border-radius: $border-radius;
+  padding: 1.5rem;
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.875rem;
+    margin-bottom: 1.25rem;
+  }
+
+  &__bell {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  &__title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin: 0 0 0.2rem;
+  }
+
+  &__sub {
+    color: $text-muted;
+    font-size: 0.875rem;
+    margin: 0;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+
+  &__label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: $text-secondary;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 0.625rem 0.875rem;
+    background: rgba(255 255 255 / 0.05);
+    border: 1px solid rgba(255 255 255 / 0.12);
+    border-radius: $border-radius;
+    color: $text-primary;
+    font-size: 0.9375rem;
+    transition: border-color $transition-fast;
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: $text-muted;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $accent;
+    }
+
+    &--error {
+      border-color: #EF5350;
+    }
+  }
+
+  &__error-msg {
+    font-size: 0.8125rem;
+    color: #EF5350;
+  }
+
+  &__submit {
+    padding: 0.75rem 1.25rem;
+    background: $primary;
+    color: white;
+    border: none;
+    border-radius: $border-radius;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background $transition-fast;
+
+    &:hover:not(:disabled) {
+      background: color.adjust($primary, $lightness: -8%);
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 3px;
+    }
+  }
+
+  &__success {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba($accent, 0.1);
+    border: 1px solid rgba($accent, 0.3);
+    border-radius: $border-radius;
+    padding: 1rem;
+    color: $accent;
+    font-weight: 600;
+
+    p { margin: 0; }
+  }
+
+  &__error {
+    background: rgba(239, 83, 80, 0.1);
+    border: 1px solid rgba(239, 83, 80, 0.3);
+    border-radius: $border-radius;
+    padding: 1rem;
+    color: #EF5350;
+
+    p { margin: 0; }
+  }
+
+  &__retry {
+    background: none;
+    border: none;
+    color: $text-primary;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+    font-size: inherit;
+  }
+}

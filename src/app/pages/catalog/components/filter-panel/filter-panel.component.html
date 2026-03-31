@@ -1,0 +1,127 @@
+<aside
+  class="filter-panel"
+  [class.filter-panel--open]="mobileOpen()"
+  aria-label="Filtros de búsqueda"
+>
+  <div class="filter-panel__header">
+    <h2 class="filter-panel__title">Filtros</h2>
+    <button
+      class="filter-panel__clear"
+      type="button"
+      (click)="clearAll()"
+      aria-label="Limpiar todos los filtros"
+    >
+      Limpiar
+    </button>
+    <!-- Cerrar en móvil -->
+    <button
+      class="filter-panel__close"
+      type="button"
+      aria-label="Cerrar filtros"
+      (click)="close.emit()"
+    >
+      ✕
+    </button>
+  </div>
+
+  <!-- ── Precio ─────────────────────────────── -->
+  <div class="filter-panel__section">
+    <button
+      class="filter-panel__section-toggle"
+      type="button"
+      [attr.aria-expanded]="isSectionOpen('price')"
+      aria-controls="filter-price"
+      (click)="toggleSection('price')"
+    >
+      <span>Precio (CLP)</span>
+      <span class="filter-panel__chevron" [class.filter-panel__chevron--open]="isSectionOpen('price')" aria-hidden="true">▾</span>
+    </button>
+
+    @if (isSectionOpen('price')) {
+      <div id="filter-price" class="filter-panel__section-body">
+        <div class="filter-panel__price-inputs">
+          <div class="filter-panel__input-group">
+            <label class="filter-panel__input-label" for="price-min">Mínimo</label>
+            <input
+              id="price-min"
+              class="filter-panel__input"
+              type="number"
+              placeholder="$ 0"
+              min="0"
+              [formControl]="priceMin"
+              (change)="onPriceChange()"
+            />
+          </div>
+          <span class="filter-panel__price-sep" aria-hidden="true">—</span>
+          <div class="filter-panel__input-group">
+            <label class="filter-panel__input-label" for="price-max">Máximo</label>
+            <input
+              id="price-max"
+              class="filter-panel__input"
+              type="number"
+              placeholder="$ ∞"
+              min="0"
+              [formControl]="priceMax"
+              (change)="onPriceChange()"
+            />
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+
+  <!-- ── Specs dinámicas por categoría ─────── -->
+  @for (field of specFields(); track field.key) {
+    @if (field.filterable) {
+      <div class="filter-panel__section">
+        <button
+          class="filter-panel__section-toggle"
+          type="button"
+          [attr.aria-expanded]="isSectionOpen(field.key)"
+          [attr.aria-controls]="'filter-' + field.key"
+          (click)="toggleSection(field.key)"
+        >
+          <span>{{ field.label }}</span>
+          <span class="filter-panel__chevron" [class.filter-panel__chevron--open]="isSectionOpen(field.key)" aria-hidden="true">▾</span>
+        </button>
+
+        @if (isSectionOpen(field.key)) {
+          <div [id]="'filter-' + field.key" class="filter-panel__section-body">
+            @if (field.type === 'select' && field.options) {
+              <ul class="filter-panel__options" role="list">
+                <li>
+                  <label class="filter-panel__option">
+                    <input
+                      class="filter-panel__radio"
+                      type="radio"
+                      [name]="field.key"
+                      value=""
+                      [checked]="!specValues()[field.key]"
+                      (change)="onSpecChange(field.key, '')"
+                    />
+                    <span>Todos</span>
+                  </label>
+                </li>
+                @for (opt of field.options; track opt) {
+                  <li>
+                    <label class="filter-panel__option">
+                      <input
+                        class="filter-panel__radio"
+                        type="radio"
+                        [name]="field.key"
+                        [value]="opt"
+                        [checked]="specValues()[field.key] === opt"
+                        (change)="onSpecChange(field.key, opt)"
+                      />
+                      <span>{{ opt }}{{ field.unit ? ' ' + field.unit : '' }}</span>
+                    </label>
+                  </li>
+                }
+              </ul>
+            }
+          </div>
+        }
+      </div>
+    }
+  }
+</aside>

@@ -1,0 +1,88 @@
+// ──────────────────────────────────────────────
+// Print3D — Design Tokens
+// ──────────────────────────────────────────────
+
+// Brand colors
+$primary:       #FF6B35; // naranja filamento fundido
+$primary-dark:  #E85A1F;
+$primary-light: #FF8C5A;
+$accent:        #00D4AA; // verde-teal (tech / precisión)
+$warn:          #FFB800; // precio bajo / alerta
+
+// Backgrounds (dark mode por defecto)
+$bg-dark:     #0A0A0F;
+$bg-card:     #12121A;
+$bg-elevated: #1A1A24;
+
+// Text
+$text-primary:   #F0F0F5;
+$text-secondary: rgba(240, 240, 245, 0.72);
+$text-muted:     rgba(240, 240, 245, 0.48);
+
+// Borders
+$border-color:  rgba(240, 240, 245, 0.1);
+$border-radius: 12px;
+$border-radius-sm: 8px;
+$border-radius-lg: 20px;
+
+// Spacing scale
+$space-1: 4px;
+$space-2: 8px;
+$space-3: 12px;
+$space-4: 16px;
+$space-5: 24px;
+$space-6: 32px;
+$space-7: 48px;
+$space-8: 64px;
+$space-9: 96px;
+
+// Typography
+$font-family:    'Inter', system-ui, -apple-system, sans-serif;
+$font-size-xs:   0.75rem;   // 12px
+$font-size-sm:   0.875rem;  // 14px
+$font-size-base: 1rem;      // 16px
+$font-size-lg:   1.125rem;  // 18px
+$font-size-xl:   1.25rem;   // 20px
+$font-size-2xl:  1.5rem;    // 24px
+$font-size-3xl:  1.875rem;  // 30px
+$font-size-4xl:  2.25rem;   // 36px
+$font-size-5xl:  3rem;      // 48px
+
+$font-weight-normal:    400;
+$font-weight-medium:    500;
+$font-weight-semibold:  600;
+$font-weight-bold:      700;
+
+$line-height-tight:  1.2;
+$line-height-normal: 1.5;
+$line-height-loose:  1.8;
+
+// Breakpoints
+$bp-sm:  480px;
+$bp-md:  768px;
+$bp-lg:  1024px;
+$bp-xl:  1280px;
+$bp-2xl: 1536px;
+
+// Shadows
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+$shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
+$shadow-glow-primary: 0 0 20px rgba(255, 107, 53, 0.25);
+$shadow-glow-accent:  0 0 20px rgba(0, 212, 170, 0.2);
+
+// Layout
+$container-max-width: 1280px;
+$header-height: 64px;
+$sidebar-width: 280px;
+
+// Z-index scale
+$z-header:  100;
+$z-drawer:  200;
+$z-modal:   300;
+$z-tooltip: 400;
+
+// Transitions
+$transition-fast:   150ms ease;
+$transition-normal: 250ms ease;
+$transition-slow:   400ms ease;

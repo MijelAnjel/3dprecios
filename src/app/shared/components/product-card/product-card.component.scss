@@ -1,0 +1,101 @@
+@use '../../../../styles/variables' as *;
+@use '../../../../styles/mixins' as *;
+
+.product-card {
+  @include card;
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 2px;
+    }
+  }
+
+  // ── Imagen ──────────────────────────────────
+  &__img-wrapper {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    background: $bg-elevated;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: $space-3;
+    transition: transform $transition-slow;
+
+    .product-card:hover & {
+      transform: scale(1.04);
+    }
+  }
+
+  &__img-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    color: $border-color;
+  }
+
+  // ── Body ─────────────────────────────────────
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: $space-2;
+    padding: $space-4;
+    flex: 1;
+  }
+
+  &__brand {
+    font-size: $font-size-xs;
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $text-muted;
+  }
+
+  &__name {
+    font-size: $font-size-base;
+    font-weight: $font-weight-semibold;
+    color: $text-primary;
+    line-height: $line-height-tight;
+    @include line-clamp(2);
+  }
+
+  &__pricing {
+    display: flex;
+    align-items: baseline;
+    gap: $space-2;
+    flex-wrap: wrap;
+    margin-top: $space-1;
+  }
+
+  &__max-price {
+    font-size: $font-size-sm;
+    color: $text-muted;
+    text-decoration: line-through;
+  }
+
+  &__stores {
+    font-size: $font-size-xs;
+    color: $text-muted;
+    margin-top: auto;
+
+    strong {
+      color: $accent;
+      font-weight: $font-weight-semibold;
+    }
+  }
+}

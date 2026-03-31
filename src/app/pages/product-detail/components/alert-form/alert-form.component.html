@@ -1,0 +1,75 @@
+<section class="alert-form" aria-labelledby="alert-form-title">
+  <div class="alert-form__header">
+    <span class="alert-form__bell" aria-hidden="true">🔔</span>
+    <div>
+      <h2 class="alert-form__title" id="alert-form-title">Alerta de precio</h2>
+      <p class="alert-form__sub">Te avisamos cuando baje al precio que elijas.</p>
+    </div>
+  </div>
+
+  @if (formState() === 'success') {
+    <div class="alert-form__success" role="status" aria-live="polite">
+      <span aria-hidden="true">✅</span>
+      <p>¡Alerta creada! Recibirás un correo cuando el precio baje.</p>
+    </div>
+  } @else if (formState() === 'error') {
+    <div class="alert-form__error" role="alert">
+      <p>Ocurrió un error al crear la alerta. <button class="alert-form__retry" (click)="retry()">Reintentar</button></p>
+    </div>
+  } @else {
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate class="alert-form__form">
+      <div class="alert-form__field">
+        <label for="alert-email" class="alert-form__label">Correo electrónico</label>
+        <input
+          id="alert-email"
+          type="email"
+          class="alert-form__input"
+          [class.alert-form__input--error]="emailControl.invalid && emailControl.touched"
+          formControlName="email"
+          placeholder="tuemail@ejemplo.cl"
+          autocomplete="email"
+          aria-required="true"
+          [attr.aria-describedby]="emailControl.invalid && emailControl.touched ? 'email-error' : null"
+        />
+        @if (emailControl.invalid && emailControl.touched) {
+          <span id="email-error" class="alert-form__error-msg" role="alert">
+            @if (emailControl.errors?.['required']) { Ingresa tu correo. }
+            @else { El correo no es válido. }
+          </span>
+        }
+      </div>
+
+      <div class="alert-form__field">
+        <label for="alert-price" class="alert-form__label">Precio objetivo (CLP)</label>
+        <input
+          id="alert-price"
+          type="number"
+          class="alert-form__input"
+          [class.alert-form__input--error]="priceControl.invalid && priceControl.touched"
+          formControlName="targetPrice"
+          placeholder="Ej: 15990"
+          min="1"
+          aria-required="true"
+          [attr.aria-describedby]="priceControl.invalid && priceControl.touched ? 'price-error' : null"
+        />
+        @if (priceControl.invalid && priceControl.touched) {
+          <span id="price-error" class="alert-form__error-msg" role="alert">
+            @if (priceControl.errors?.['required']) { Ingresa un precio objetivo. }
+            @else if (priceControl.errors?.['min']) { El precio debe ser mayor a 0. }
+            @else if (priceControl.errors?.['tooHigh']) { El precio debe ser menor al mínimo actual. }
+          </span>
+        }
+      </div>
+
+      <button
+        type="submit"
+        class="alert-form__submit"
+        [disabled]="form.invalid || formState() === 'submitting'"
+        [attr.aria-busy]="formState() === 'submitting'"
+      >
+        @if (formState() === 'submitting') { Creando alerta… }
+        @else { Crear alerta de precio }
+      </button>
+    </form>
+  }
+</section>

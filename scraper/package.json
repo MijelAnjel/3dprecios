@@ -1,0 +1,23 @@
+{
+  "name": "3dprecios-scraper",
+  "version": "1.0.0",
+  "description": "Scrapers de tiendas chilenas de impresión 3D para 3DPrecios",
+  "private": true,
+  "scripts": {
+    "scrape": "ts-node src/run.ts",
+    "scrape:store": "ts-node src/run.ts --store",
+    "seed": "ts-node src/seed.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "firebase-admin": "^13.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.35",
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.0"
+  }
+}

@@ -1,0 +1,138 @@
+<!-- JSON-LD -->
+<script type="application/ld+json">{{ jsonLd() }}</script>
+
+<!-- ── Hero ─────────────────────────────────────── -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero__inner container">
+    <h1 id="hero-heading" class="hero__title">
+      Compara precios de<br>
+      <span class="hero__title-accent">impresión 3D</span> en Chile
+    </h1>
+    <p class="hero__subtitle">
+      Filamentos, impresoras, resinas y repuestos en {{ storeCount() }} tiendas.
+      Encuentra el mejor precio sin salir de casa.
+    </p>
+
+    <!-- Buscador -->
+    <div class="hero__search" role="search">
+      <label class="hero__search-label sr-only" for="hero-search">
+        Buscar productos de impresión 3D
+      </label>
+      <div class="hero__search-wrap">
+        <span class="hero__search-icon" aria-hidden="true">🔍</span>
+        <input
+          id="hero-search"
+          class="hero__search-input"
+          type="search"
+          placeholder="Buscar filamentos, impresoras, resinas…"
+          autocomplete="off"
+          [formControl]="searchControl"
+          (keydown)="onSearchKeydown($event)"
+        />
+        <button
+          class="hero__search-btn"
+          type="button"
+          aria-label="Buscar"
+          (click)="onSearch()"
+        >
+          Buscar
+        </button>
+      </div>
+    </div>
+
+    <!-- Tags rápidos -->
+    <div class="hero__quick-links" aria-label="Búsquedas populares">
+      <span class="hero__quick-label">Popular:</span>
+      <a class="hero__quick-tag" routerLink="/categorias/filamentos-pla">PLA</a>
+      <a class="hero__quick-tag" routerLink="/categorias/filamentos-petg">PETG</a>
+      <a class="hero__quick-tag" routerLink="/categorias/impresoras-fdm">Bambu Lab</a>
+      <a class="hero__quick-tag" routerLink="/categorias/resinas">Resina 405nm</a>
+    </div>
+  </div>
+
+  <!-- Fondo decorativo -->
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__bg-orb hero__bg-orb--1"></div>
+    <div class="hero__bg-orb hero__bg-orb--2"></div>
+  </div>
+</section>
+
+<!-- ── Categorías ────────────────────────────────── -->
+@defer (on viewport) {
+  <section class="categories section" aria-labelledby="categories-heading">
+    <div class="container">
+      <h2 id="categories-heading" class="section__title">Explorar por categoría</h2>
+      <ul class="categories__grid" role="list">
+        @for (cat of categories(); track cat.id) {
+          <li>
+            <a
+              class="category-card"
+              [routerLink]="['/categorias', cat.slug]"
+              [attr.aria-label]="'Ver ' + cat.name"
+            >
+              <span class="category-card__icon" aria-hidden="true">{{ cat.icon }}</span>
+              <span class="category-card__name">{{ cat.name }}</span>
+            </a>
+          </li>
+        }
+      </ul>
+    </div>
+  </section>
+} @placeholder {
+  <div class="section section--placeholder" aria-hidden="true" style="min-height:300px"></div>
+}
+
+<!-- ── Mejores precios ───────────────────────────── -->
+@defer (on viewport) {
+  <section class="top-products section" aria-labelledby="top-products-heading">
+    <div class="container">
+      <div class="section__header">
+        <h2 id="top-products-heading" class="section__title">Mejores precios del día</h2>
+        <a class="section__link" routerLink="/categorias">Ver todos →</a>
+      </div>
+
+      @if (loadingProducts()) {
+        <app-skeleton [count]="4" />
+      } @else if (topProducts().length === 0) {
+        <div class="top-products__empty">
+          <p>Los precios se actualizan cada 6 horas. Vuelve pronto 🚀</p>
+          <a class="btn-primary" routerLink="/categorias">Explorar categorías</a>
+        </div>
+      } @else {
+        <ul class="products-grid" role="list">
+          @for (product of topProducts(); track product.id) {
+            <li>
+              <app-product-card [product]="product" />
+            </li>
+          }
+        </ul>
+      }
+    </div>
+  </section>
+} @placeholder {
+  <div class="section section--placeholder" aria-hidden="true" style="min-height:300px"></div>
+}
+
+<!-- ── Tiendas participantes ─────────────────────── -->
+@defer (on viewport) {
+  <section class="stores-section section" aria-labelledby="stores-heading">
+    <div class="container">
+      <h2 id="stores-heading" class="section__title">Tiendas participantes</h2>
+      <p class="stores-section__sub">
+        Monitoreamos precios en tiempo real en estas tiendas chilenas de impresión 3D.
+      </p>
+      <ul class="stores-list" role="list" aria-label="Tiendas de impresión 3D en Chile">
+        <li><a class="store-name" routerLink="/tiendas/impresalta">Impresalta</a></li>
+        <li><a class="store-name" routerLink="/tiendas/formageo">Formageo</a></li>
+        <li><a class="store-name" routerLink="/tiendas/3d-chile">3D Chile</a></li>
+        <li><a class="store-name" routerLink="/tiendas/ahi3d">AHI 3D</a></li>
+        <li><a class="store-name" routerLink="/tiendas/filamento">Filamento.cl</a></li>
+        <li><a class="store-name" routerLink="/tiendas/3dstore">3D Store</a></li>
+        <li><a class="store-name" routerLink="/tiendas/makershop">Makershop</a></li>
+        <li><a class="store-name" routerLink="/tiendas/mercadolibre">Mercado Libre</a></li>
+      </ul>
+    </div>
+  </section>
+} @placeholder {
+  <div class="section section--placeholder" aria-hidden="true" style="min-height:200px"></div>
+}

@@ -1,0 +1,207 @@
+@use '../../../../../styles/variables' as *;
+@use '../../../../../styles/mixins' as *;
+
+.filter-panel {
+  background: $bg-card;
+  border-radius: $border-radius;
+  border: 1px solid $border-color;
+  overflow: hidden;
+
+  // En móvil: oculto por defecto, visible como overlay cuando open
+  @media (max-width: #{$bp-lg - 1px}) {
+    position: fixed;
+    inset: 0;
+    z-index: $z-drawer;
+    border-radius: 0;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform $transition-normal;
+
+    &--open {
+      transform: translateX(0);
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: $space-3;
+    padding: $space-4 $space-5;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__title {
+    font-size: $font-size-base;
+    font-weight: $font-weight-semibold;
+    color: $text-primary;
+    flex: 1;
+  }
+
+  &__clear {
+    font-size: $font-size-xs;
+    font-weight: $font-weight-medium;
+    color: $primary;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: $space-1 $space-2;
+    border-radius: $border-radius-sm;
+    transition: background $transition-fast;
+
+    &:hover { background: rgba($primary, 0.1); }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 2px;
+    }
+  }
+
+  &__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    color: $text-muted;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: $border-radius-sm;
+    transition: background $transition-fast, color $transition-fast;
+
+    &:hover { background: rgba($text-primary, 0.06); color: $text-primary; }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 2px;
+    }
+
+    @include lg { display: none; }
+  }
+
+  // ── Secciones acordeón ─────────────────────
+  &__section {
+    border-bottom: 1px solid $border-color;
+
+    &:last-child { border-bottom: none; }
+  }
+
+  &__section-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: $space-4 $space-5;
+    background: none;
+    border: none;
+    color: $text-secondary;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    font-family: inherit;
+    cursor: pointer;
+    text-align: left;
+    transition: color $transition-fast;
+
+    &:hover { color: $text-primary; }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: -2px;
+    }
+  }
+
+  &__chevron {
+    font-size: 0.9rem;
+    transition: transform $transition-fast;
+    color: $text-muted;
+
+    &--open { transform: rotate(180deg); }
+  }
+
+  &__section-body {
+    padding: $space-1 $space-5 $space-4;
+    animation: slide-down 150ms ease forwards;
+  }
+
+  // ── Precio ─────────────────────────────────
+  &__price-inputs {
+    display: flex;
+    align-items: flex-end;
+    gap: $space-2;
+  }
+
+  &__input-group {
+    display: flex;
+    flex-direction: column;
+    gap: $space-1;
+    flex: 1;
+  }
+
+  &__input-label {
+    font-size: $font-size-xs;
+    color: $text-muted;
+  }
+
+  &__input {
+    background: $bg-elevated;
+    border: 1px solid $border-color;
+    border-radius: $border-radius-sm;
+    color: $text-primary;
+    font-size: $font-size-sm;
+    font-family: inherit;
+    padding: $space-2 $space-3;
+    width: 100%;
+    transition: border-color $transition-fast;
+
+    &:focus {
+      outline: none;
+      border-color: $primary;
+    }
+
+    // Ocultar flechas numéricas
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button { appearance: none; margin: 0; }
+  }
+
+  &__price-sep {
+    color: $text-muted;
+    padding-bottom: $space-2;
+    flex-shrink: 0;
+  }
+
+  // ── Opciones radio ─────────────────────────
+  &__options {
+    display: flex;
+    flex-direction: column;
+    gap: $space-2;
+  }
+
+  &__option {
+    display: flex;
+    align-items: center;
+    gap: $space-2;
+    cursor: pointer;
+
+    span {
+      font-size: $font-size-sm;
+      color: $text-secondary;
+      transition: color $transition-fast;
+    }
+
+    &:hover span { color: $text-primary; }
+
+    &:has(input:checked) span {
+      color: $primary;
+      font-weight: $font-weight-medium;
+    }
+  }
+
+  &__radio {
+    accent-color: $primary;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+}

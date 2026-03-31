@@ -1,0 +1,59 @@
+<app-breadcrumb [items]="breadcrumbs()" />
+
+<div class="catalog container">
+
+  <!-- Botón filtros móvil -->
+  <div class="catalog__mobile-bar">
+    <button
+      class="catalog__filter-btn"
+      type="button"
+      [attr.aria-expanded]="mobileFiltersOpen()"
+      aria-controls="filter-panel"
+      (click)="toggleMobileFilters()"
+    >
+      <span aria-hidden="true">⚙</span> Filtros
+      @if (filters().priceMin || filters().priceMax) {
+        <span class="catalog__filter-badge" aria-label="Filtros activos">•</span>
+      }
+    </button>
+  </div>
+
+  <div class="catalog__layout">
+    <!-- Sidebar filtros -->
+    <div id="filter-panel">
+      <app-filter-panel
+        [specFields]="specFields()"
+        [mobileOpen]="mobileFiltersOpen()"
+        (filtersChange)="onFiltersChange($event)"
+        (close)="mobileFiltersOpen.set(false)"
+      />
+    </div>
+
+    <!-- Área de productos -->
+    <div class="catalog__main">
+
+      <!-- Encabezado de categoría -->
+      @if (category(); as cat) {
+        <div class="catalog__cat-header">
+          <span class="catalog__cat-icon" aria-hidden="true">{{ cat.icon }}</span>
+          <h1 class="catalog__cat-title">{{ cat.name }}</h1>
+        </div>
+      } @else {
+        <h1 class="catalog__cat-title">Todos los productos</h1>
+      }
+
+      <!-- Sort bar -->
+      <app-sort-bar
+        [total]="visibleProducts().length"
+        [current]="sort()"
+        (sortChange)="onSortChange($event)"
+      />
+
+      <!-- Grid -->
+      <app-product-grid
+        [products]="visibleProducts()"
+        [loading]="loading()"
+      />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+@use '../../../../../styles/variables' as *;
+
+.sort-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-4;
+  padding-block: $space-3;
+  border-bottom: 1px solid $border-color;
+  flex-wrap: wrap;
+
+  &__count {
+    font-size: $font-size-sm;
+    color: $text-muted;
+
+    strong {
+      color: $text-primary;
+      font-weight: $font-weight-semibold;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: $space-2;
+  }
+
+  &__label {
+    font-size: $font-size-sm;
+    color: $text-muted;
+    white-space: nowrap;
+  }
+
+  &__select {
+    background: $bg-elevated;
+    border: 1px solid $border-color;
+    border-radius: $border-radius-sm;
+    color: $text-primary;
+    font-size: $font-size-sm;
+    font-family: inherit;
+    padding: $space-2 $space-4 $space-2 $space-3;
+    cursor: pointer;
+    transition: border-color $transition-fast;
+    appearance: auto;
+
+    &:hover { border-color: $primary; }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 2px;
+    }
+
+    option { background: $bg-elevated; }
+  }
+}
