@@ -9,8 +9,8 @@
       <span class="hero__title-accent">impresión 3D</span> en Chile
     </h1>
     <p class="hero__subtitle">
-      Filamentos, impresoras, resinas y repuestos en {{ storeCount() }} tiendas.
-      Encuentra el mejor precio sin salir de casa.
+      Más de 1.000 productos en {{ storeCount() }} tiendas especializadas.
+      Compara precios de filamentos, impresoras y resinas en segundos.
     </p>
 
     <!-- Buscador -->
@@ -57,11 +57,34 @@
   </div>
 </section>
 
+<!-- ── Stats ───────────────────────────────────────── -->
+<section class="stats" aria-label="Estadísticas del comparador">
+  <div class="container stats__grid">
+    <div class="stat-card">
+      <span class="stat-card__value" aria-label="Más de 1.000 productos">1.000+</span>
+      <span class="stat-card__label">Productos comparables</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-card__value">{{ storeCount() }}</span>
+      <span class="stat-card__label">Tiendas monitoreadas</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-card__value">{{ categoryCount() }}</span>
+      <span class="stat-card__label">Categorías disponibles</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-card__value">Gratis</span>
+      <span class="stat-card__label">Sin registro requerido</span>
+    </div>
+  </div>
+</section>
+
 <!-- ── Categorías ────────────────────────────────── -->
 @defer (on viewport) {
   <section class="categories section" aria-labelledby="categories-heading">
     <div class="container">
-      <h2 id="categories-heading" class="section__title">Explorar por categoría</h2>
+      <h2 id="categories-heading" class="section__title">Explora por categoría</h2>
+      <p class="section__subtitle">Desde filamentos hasta impresoras completas — todo en un solo lugar.</p>
       <ul class="categories__grid" role="list">
         @for (cat of categories(); track cat.id) {
           <li>
@@ -119,18 +142,30 @@
     <div class="container">
       <h2 id="stores-heading" class="section__title">Tiendas participantes</h2>
       <p class="stores-section__sub">
-        Monitoreamos precios en tiempo real en estas tiendas chilenas de impresión 3D.
+        Monitoreamos precios en tiempo real en tiendas chilenas especializadas en impresión 3D.
       </p>
-      <ul class="stores-list" role="list" aria-label="Tiendas de impresión 3D en Chile">
-        <li><a class="store-name" routerLink="/tiendas/impresalta">Impresalta</a></li>
-        <li><a class="store-name" routerLink="/tiendas/formageo">Formageo</a></li>
-        <li><a class="store-name" routerLink="/tiendas/3d-chile">3D Chile</a></li>
-        <li><a class="store-name" routerLink="/tiendas/ahi3d">AHI 3D</a></li>
-        <li><a class="store-name" routerLink="/tiendas/filamento">Filamento.cl</a></li>
-        <li><a class="store-name" routerLink="/tiendas/3dstore">3D Store</a></li>
-        <li><a class="store-name" routerLink="/tiendas/makershop">Makershop</a></li>
-        <li><a class="store-name" routerLink="/tiendas/mercadolibre">Mercado Libre</a></li>
-      </ul>
+      @if (stores().length > 0) {
+        <ul class="stores-list" role="list" aria-label="Tiendas de impresión 3D en Chile">
+          @for (store of stores(); track store.id) {
+            <li>
+              <a class="store-name" [routerLink]="['/tiendas', store.slug]">
+                {{ store.name }}
+              </a>
+            </li>
+          }
+        </ul>
+      } @else {
+        <ul class="stores-list" role="list" aria-label="Tiendas de impresión 3D en Chile">
+          <li><span class="store-name">Horus3D</span></li>
+          <li><span class="store-name">Imperio 3D</span></li>
+          <li><span class="store-name">Makers Chile</span></li>
+          <li><span class="store-name">eVStore</span></li>
+          <li><span class="store-name">Maxi3D</span></li>
+          <li><span class="store-name">Capital 3D</span></li>
+          <li><span class="store-name">Make 3D</span></li>
+          <li><span class="store-name">TodoToner</span></li>
+        </ul>
+      }
     </div>
   </section>
 } @placeholder {

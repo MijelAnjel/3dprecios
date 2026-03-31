@@ -32,10 +32,12 @@ export class HomeComponent {
   private readonly productService = inject(ProductService);
 
   readonly searchControl = new FormControl('');
+  readonly stores = this.storeService.stores;
   readonly categories = signal(this.categoryService.categories.filter((c) => c.id !== 'general'));
   readonly topProducts = toSignal(this.productService.getTopProducts(8), { initialValue: [] });
   readonly loadingProducts = signal(false);
-  readonly storeCount = computed(() => this.storeService.stores().length || 16);
+  readonly storeCount = computed(() => this.storeService.stores().length);
+  readonly categoryCount = computed(() => this.categories().length);
 
   readonly jsonLd = computed(() =>
     JSON.stringify([
