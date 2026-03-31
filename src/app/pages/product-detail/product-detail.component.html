@@ -73,15 +73,17 @@
           </dl>
         }
 
-        <a
-          [href]="entries()[0]?.url"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="pd__buy-btn"
-          [attr.aria-label]="'Comprar ' + product()!.name + ' al mejor precio'"
-        >
-          Ver mejor precio →
-        </a>
+        @if (entries()[0]?.url) {
+          <a
+            [href]="entries()[0]!.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="pd__buy-btn"
+            [attr.aria-label]="'Comprar ' + product()!.name + ' al mejor precio'"
+          >
+            Ver mejor precio →
+          </a>
+        }
       </div>
     </div>
 

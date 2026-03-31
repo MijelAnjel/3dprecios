@@ -2,7 +2,7 @@
   <a
     class="product-card__link"
     [routerLink]="['/productos', product().slug]"
-    [attr.aria-label]="product().name + ' desde ' + product().minPrice + ' pesos'"
+    [attr.aria-label]="product().name + ' desde ' + (product().minPrice | clp)"
   >
     <!-- Imagen -->
     <div class="product-card__img-wrapper">
