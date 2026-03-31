@@ -375,87 +375,128 @@ $text-muted:     rgba(240, 240, 245, 0.48);
 
 ## 10. Fases del Proyecto
 
-### FASE 0 — Setup Base (Día 1)
-- [ ] `ng new print3d-web --ssr --style=scss`
-- [ ] Configurar `provideZonelessChangeDetection()` en `app.config.ts`
-- [ ] Instalar AngularFire (`ng add @angular/fire`)
-- [ ] Configurar Firebase proyecto: Hosting, Firestore, Auth
-- [ ] `src/styles/_variables.scss`, `_mixins.scss`, `_animations.scss`
-- [ ] Reset CSS + tipografía base en `styles.scss`
-- [ ] Configurar `firebase.json` y `.firebaserc`
-- [ ] `environment.ts` / `environment.prod.ts` con config Firebase
-- [ ] Carpeta `scraper/` independiente con `package.json` propio
-- [ ] GitHub Actions workflow base (deploy automático en push a main)
+> **Leyenda:** ✅ Hecho · ⚠️ Parcial · ❌ Pendiente
+> **Deploy live:** https://dprecios.web.app · **Repo:** https://github.com/MijelAnjel/3dprecios
+> **Lighthouse producción:** Performance 93 · Accessibility 100 · Best Practices 100 · SEO 100
 
-### FASE 1 — Shell y Componentes Compartidos (Día 1-2)
-- [ ] `HeaderComponent`: logo + nav desktop + hamburger móvil (position:absolute cuando abierto)
-- [ ] `FooterComponent`: links, categorías, stores, copyright
-- [ ] `ProductCardComponent`: input `product: Product`, imagen lazy, precio mín/máx
-- [ ] `PriceBadgeComponent`: precio formateado en CLP (`$1.990`)
-- [ ] `StoreChipComponent`: logo tienda + nombre
-- [ ] `SkeletonCardComponent`: skeleton animado
-- [ ] `BreadcrumbComponent`: aria-label + JSON-LD
-- [ ] Lazy loading de todas las rutas
+---
 
-### FASE 2 — Home Page (Día 2-3)
-- [ ] Hero con buscador central (input reactivo con signal)
-- [ ] Sección "Categorías" con grid de iconos
-- [ ] Sección "Mejores precios del día" (top 8 productos más baratos)
-- [ ] Sección "Tiendas participantes" con logos
-- [ ] JSON-LD WebSite + SearchAction + Organization
-- [ ] Meta tags Open Graph completos
+### FASE 0 — Setup Base ✅ COMPLETA
+- ✅ Angular 21 SSR zoneless con `provideZonelessChangeDetection()`
+- ✅ AngularFire 20 instalado y configurado (fix race condition con injector explícito)
+- ✅ Firebase proyecto `dprecios`: Hosting, Firestore, Auth
+- ✅ `_variables.scss`, `_mixins.scss`, `_animations.scss`
+- ✅ `firebase.json`, `.firebaserc`, `environment.ts`/`environment.prod.ts`
+- ✅ `scraper/` independiente con `package.json` propio
+- ✅ GitHub Actions: `deploy.yml` (auto-deploy en push a `master`)
+- ✅ `.npmrc` con `legacy-peer-deps` para compatibilidad AngularFire/Angular 21
 
-### FASE 3 — Catálogo y Filtros (Día 3-5)
-- [ ] Ruta `/categorias/:slug` lazy loaded
-- [ ] `FilterPanelComponent`: filtros dinámicos por categoría vía `specFields`
-- [ ] Filtrado con `computed()` signal (no requests al servidor)
-- [ ] Sort: menor precio, mayor precio, más tiendas, relevancia
-- [ ] Paginación virtual (virtual scroll para +1000 productos)
-- [ ] URL params sincronizados con filtros activos (para compartir búsquedas)
-- [ ] Breadcrumb + JSON-LD BreadcrumbList
+### FASE 1 — Shell y Componentes Compartidos ✅ COMPLETA
+- ✅ `HeaderComponent`: logo + nav desktop + hamburger móvil
+- ✅ `FooterComponent`: links, categorías, tiendas, copyright
+- ✅ `ProductCardComponent`: imagen, precio mín/máx, tiendas disponibles
+- ✅ `PriceBadgeComponent`: precio formateado en CLP
+- ✅ `StoreChipComponent`: logo tienda + nombre
+- ✅ `SkeletonCardComponent`: placeholder animado
+- ✅ Lazy loading de todas las rutas
 
-### FASE 4 — Ficha de Producto (Día 5-7)
-- [ ] Ruta `/productos/:slug` con SSR + meta tags dinámicos
-- [ ] Galería de imágenes (lazy + NgOptimizedImage)
-- [ ] `PriceTableComponent`: tabla de tiendas ordenada por precio, con link directo
-- [ ] `PriceChartComponent`: Chart.js con historial 30/60/90 días (lazy con `@defer`)
-- [ ] `AlertFormComponent`: email + precio objetivo → Firestore + Firebase Auth
-- [ ] JSON-LD Product + AggregateOffer + ItemAvailability
-- [ ] Sección "Productos similares" con computed()
+### FASE 2 — Home Page ✅ COMPLETA
+- ✅ Hero con buscador central
+- ✅ Sección "Categorías" con grid de iconos
+- ✅ Sección "Mejores precios del día" (top 8 productos de Firestore)
+- ✅ Sección "Tiendas participantes" con logos
+- ✅ Meta tags Open Graph
+- ❌ JSON-LD WebSite + SearchAction + Organization (pendiente)
 
-### FASE 5 — Scraper Pipeline (Día 7-10)
-- [ ] Carpeta `scraper/` con TypeScript + ts-node
-- [ ] `scraper/src/stores/` — un archivo por tienda
-- [ ] Interface `ScraperResult` unificada para todas las tiendas
-- [ ] Cheerio para scraping de HTML estático
-- [ ] Playwright para sitios con JS (solo si necesario — más pesado en CI)
-- [ ] Rate limiting y manejo de errores/reintentos
-- [ ] Firebase Admin SDK — upsert productos y entradas
-- [ ] Trigger de alerta: si `newPrice <= alert.targetPrice` → enviar email via Resend
-- [ ] GitHub Actions cron cada 6 horas
-- [ ] Webhook de Slack/Discord opcional para errores de scraping
+### FASE 3 — Catálogo y Filtros ✅ COMPLETA
+- ✅ Ruta `/categorias/:slug` lazy loaded
+- ✅ `FilterPanelComponent`: filtros dinámicos por categoría
+- ✅ Filtrado local con `computed()` signal
+- ✅ Sort: menor precio, mayor precio, más tiendas
+- ✅ Breadcrumb
+- ❌ URL params sincronizados con filtros (para compartir búsquedas)
+- ❌ Paginación virtual (pendiente — necesario con +1000 productos)
 
-### FASE 6 — Tiendas y Páginas Secundarias (Día 10-11)
-- [ ] `/tiendas` — grid de todas las tiendas con stats
-- [ ] `/tiendas/:slug` — perfil de tienda con sus productos listados
-- [ ] `/privacidad` y `/terminos` — páginas legales
-- [ ] Sitemap.xml generado automáticamente por el scraper
+### FASE 4 — Ficha de Producto ✅ COMPLETA (base)
+- ✅ Ruta `/productos/:slug` con meta tags dinámicos
+- ✅ `PriceTableComponent`: tabla de tiendas ordenada por precio
+- ✅ `PriceChartComponent`: historial de precios (Chart.js con `@defer`)
+- ✅ Sección "Productos similares"
+- ✅ JSON-LD Product + AggregateOffer
+- ❌ `AlertFormComponent`: requiere Firebase Auth — **PENDIENTE**
+- ❌ Galería de imágenes múltiples (actualmente solo 1 imagen)
 
-### FASE 7 — PWA + Performance (Día 11-12)
-- [ ] Service Worker con `@angular/pwa` (`ng add @angular/pwa`)
-- [ ] `ngsw-config.json`: caché de assets, rutas de categorías
-- [ ] `@defer (on viewport)` en secciones below-the-fold
-- [ ] Preloading de rutas críticas
-- [ ] Lighthouse CI en GitHub Actions (falla si Performance < 90)
-- [ ] `manifest.json` con iconos para instalación PWA
+### FASE 5 — Scraper Pipeline ✅ ACTIVO (7 tiendas con datos reales)
+- ✅ Scrapers activos con datos reales: **horus3d, evstore, makerschile, capital3d** (WooCommerce Store API) + **imperio3d, maxi3d** (HTML+Cheerio) + **todotoner** (Jumpseller SSR)
+- ✅ `fetchWcStoreProducts()` — cliente paginado para WooCommerce Store API (4 tiendas migradas)
+- ✅ `inferCategory(nombre, path)` — **reescrito con filamentos-primero** (bug crítico corregido: "Filamento FDM PLA" ya no cae en `impresoras-fdm`)
+- ✅ `normalizeProductName(nombre)` — normalización para cross-store matching (quita colores, normaliza pesos, elimina suffijos de marketing)
+- ✅ `firebase.ts` — actualiza categoría siempre que la nueva sea más específica (no solo desde `general`)
+- ✅ `ScraperResult` interface unificada
+- ✅ Cheerio + rate limiting + retry con backoff exponencial
+- ✅ Firebase Admin SDK — upsert productos, entries, history
+- ✅ GitHub Actions cron cada 6 horas (`scrape.yml`)
+- ✅ Índices Firestore: products (categoryId+minPrice), products (categoryId+storeCount), entries (collectionGroup), alerts (collectionGroup)
+- ✅ `check.ts --recategorize` — comando para re-clasificar todos los productos existentes con la lógica actualizada
+- ⚠️ **make3d.ts** — Jumpseller JS-rendered, scraper parcial vía sitemap. Trae ~58 productos pero limitado
+- ⚠️ **pcfactory.ts** — JS-rendered sin API conocida, actualmente sin datos
+- ❌ Scraper de `3dstore.cl` (falta implementar)
+- ❌ MercadoLibre (marcado inactivo, tiene anti-scraping fuerte)
 
-### FASE 8 — Lighthouse Final y Deploy (Día 12-13)
-- [ ] Build production: `npm run build`
-- [ ] Lighthouse contra archivos estáticos: `npx serve dist/print3d-web/browser`
-- [ ] **Objetivo:** Performance ≥ 90, Accessibility = 100, Best Practices = 100, SEO = 100
-- [ ] Corregir todos los fallos de contraste (mínimo 4.5:1 texto normal, 3:1 texto grande)
-- [ ] Deploy: `firebase deploy --only hosting`
-- [ ] Verificar en producción con Lighthouse real
+### FASE 6 — Tiendas y Páginas Secundarias ✅ COMPLETA (base)
+- ✅ `/tiendas` — grid de todas las tiendas
+- ✅ `/tiendas/:slug` — perfil de tienda con sus productos
+- ✅ `/privacidad` y `/terminos` — páginas legales
+- ❌ Sitemap.xml dinámico generado por scraper (el actual es estático)
+
+### FASE 7 — PWA + Performance ✅ COMPLETA
+- ✅ Service Worker con `@angular/pwa` (`ngsw-config.json`)
+- ✅ `manifest.webmanifest` con iconos
+- ✅ `@defer (on viewport)` en secciones below-the-fold
+- ⚠️ Lighthouse CI en GitHub Actions (`lighthouse.yml`) — workflow existe pero falla en CI (build local funciona)
+
+### FASE 8 — Deploy ✅ COMPLETA
+- ✅ Build producción sin errores
+- ✅ Lighthouse local: **93 / 100 / 100 / 100**
+- ✅ Deploy en https://dprecios.web.app
+- ✅ CI/CD automático: cada push a `master` → deploy automático
+
+---
+
+## 10b. Pendientes y Próximos Pasos
+
+### Alta prioridad
+| Tarea | Detalle |
+|---|---|
+| **Paginación virtual** | Con +1.000 productos la categoría se carga completa en memoria. Implementar cursor con `startAfter()` de Firestore |
+| **URL params en filtros** | Los filtros seleccionados no se reflejan en la URL — imposible compartir búsquedas o volver con el botón atrás |
+| **make3d.ts completo** | Jumpseller JS-rendered — leer sitemap.xml, hacer petición individual a cada producto, parsear JSON-LD y precio del HTML |
+| **Alertas de precio** | `AlertFormComponent` requiere Firebase Auth — hay que implementar login con email/Google + trigger via Resend |
+
+### Scrapers pendientes
+| Tienda | Estado | Qué falta |
+|---|---|---|
+| **make3d** | ⚠️ Parcial | Completar scraper individual por producto vía sitemap |
+| **pcfactory** | ⚠️ Sin datos | JS-rendered; buscar API interna en DevTools > Network > XHR |
+| **3dstore.cl** | ❌ Sin implementar | Investigar plataforma y crear scraper |
+| **lider / easy** | ❌ Sin implementar | `isActive: true` en STORES pero no hay scraper — buscar en catálogo de impresoras |
+
+### Categorías por agregar
+Editar `src/app/core/services/category.service.ts` para agregar:
+- `filamentos-tpu` — TPU / TPE (flexibles) — **`inferCategory` ya las clasifica, solo falta añadir a la UI**
+- `filamentos-especiales` — Nylon, PA, PA-CF, PC, ASA — **igual, ya clasificadas en scraper**
+- `filamentos-composite` — PLA-CF, PETG-CF, fibra de vidrio
+- `enclosures` — carcasas/cajas para impresoras
+- `scanners-3d` — escáneres 3D
+
+### Funcionalidades futuras
+- ❌ **Sitemap.xml dinámico** generado por scraper con todos los slugs de productos
+- ❌ **Comparador lado a lado** de 2-3 productos
+- ❌ **Historial de precios exportable** (CSV)
+- ❌ **Notificaciones push** (Web Push API)
+- ❌ **Búsqueda full-text** (actualmente solo filtra por categoría — considerar Algolia Free o búsqueda en Firestore)
+- ❌ **Panel admin** para gestionar tiendas y productos manualmente
+- ❌ **Lighthouse CI** funcionando en GitHub Actions (workflow existe pero falla en CI)
 
 ---
 
