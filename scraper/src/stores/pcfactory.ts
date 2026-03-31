@@ -29,7 +29,7 @@ export async function scrapePcfactory(store: StoreConfig): Promise<ScraperResult
           const name     = $(el).find('h2, h3, .product-name, [class*="title"], [class*="name"]').first().text().trim();
           const href     = $(el).find('a').first().attr('href') ?? '';
           const priceRaw = $(el).find('[class*="price"], .price, [class*="Price"]').first().text().trim();
-          const imgSrc   = $(el).find('img').attr('src') ?? $(el).find('img').attr('data-src') ?? '';
+          const imgSrc   = $(el).find('img').attr('data-src') ?? $(el).find('img').attr('data-lazy-src') ?? $(el).find('img').attr('src') ?? '';
           const price    = parsePriceCLP(priceRaw);
           if (!name || price === 0) return;
 

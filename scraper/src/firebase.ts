@@ -38,6 +38,7 @@ export async function saveResults(
       const productSnap = await productRef.get();
 
       // ── 1. Crear producto si no existe ──────────────────────────
+      const validImageUrl = result.imageUrl && !result.imageUrl.startsWith('data:') ? result.imageUrl : null;
       if (!productSnap.exists) {
         await productRef.set({
           id:          productSlug,
@@ -46,7 +47,7 @@ export async function saveResults(
           brand:       result.brand ?? '',
           categoryId:  result.categorySlug ?? 'general',
           description: '',
-          images:      result.imageUrl ? [result.imageUrl] : [],
+          images:      validImageUrl ? [validImageUrl] : [],
           specs:       result.specs ?? {},
           minPrice:    result.price,
           maxPrice:    result.price,
@@ -54,6 +55,13 @@ export async function saveResults(
           createdAt:   Timestamp.now(),
           updatedAt:   Timestamp.now(),
         });
+      } else if (validImageUrl) {
+        // Actualizar imagen si el producto existe pero no tiene imagen válida
+        const existingImages: string[] = productSnap.data()?.['images'] ?? [];
+        const hasValidImage = existingImages.some(img => !img.startsWith('data:') && img.length > 0);
+        if (!hasValidImage) {
+          await productRef.update({ images: [validImageUrl] });
+        }
       }
 
       // ── 2. Upsert ProductEntry ──────────────────────────────────

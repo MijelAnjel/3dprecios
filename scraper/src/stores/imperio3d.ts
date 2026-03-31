@@ -39,7 +39,7 @@ export async function scrapeImperio3d(store: StoreConfig): Promise<ScraperResult
           const href     = $(el).find('a.woocommerce-LoopProduct-link').attr('href') ?? '';
           // Selects sale price if exists, otherwise regular price
           const priceRaw = $(el).find('.price ins .woocommerce-Price-amount bdi, .price .woocommerce-Price-amount bdi').first().text().trim();
-          const imgSrc   = $(el).find('img').attr('src') ?? $(el).find('img').attr('data-src') ?? '';
+          const imgSrc   = $(el).find('img').attr('data-src') ?? $(el).find('img').attr('data-lazy-src') ?? $(el).find('img').attr('src') ?? '';
           const isOut    = $(el).hasClass('outofstock');
           const stockTxt = $(el).find('.stock').text();
 

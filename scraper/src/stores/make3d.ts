@@ -28,7 +28,7 @@ export async function scrapeMake3d(store: StoreConfig): Promise<ScraperResult[]>
           const name     = $(el).find('.woocommerce-loop-product__title').text().trim();
           const href     = $(el).find('a.woocommerce-LoopProduct-link').attr('href') ?? '';
           const priceRaw = $(el).find('.price ins .woocommerce-Price-amount, .price .woocommerce-Price-amount').first().text().trim();
-          const imgSrc   = $(el).find('img').attr('src') ?? $(el).find('img').attr('data-src') ?? '';
+          const imgSrc   = $(el).find('img').attr('data-src') ?? $(el).find('img').attr('data-lazy-src') ?? $(el).find('img').attr('src') ?? '';
           const stockTxt = $(el).find('.stock, .out-of-stock').text();
           const price    = parsePriceCLP(priceRaw);
           if (!name || !href || price === 0) return;
