@@ -23,13 +23,13 @@ export class ProductService {
   private readonly firestore = inject(Firestore);
   private readonly isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
 
-  /** Top N productos ordenados por número de tiendas (más comparado = más popular). */
+  /** Top N productos ordenados por fecha de actualización (más reciente primero). */
   getTopProducts(limitCount = 8): Observable<Product[]> {
     if (!this.isBrowser) return of([]);
     return collectionData(
       query(
         collection(this.firestore, 'products'),
-        orderBy('storeCount', 'desc'),
+        orderBy('updatedAt', 'desc'),
         limit(limitCount),
       ),
       { idField: 'id' },
