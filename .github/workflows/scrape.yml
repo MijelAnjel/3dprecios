@@ -6,7 +6,7 @@ on:
   workflow_dispatch:          # trigger manual desde GitHub UI
     inputs:
       store:
-        description: 'ID de tienda específica (opcional). Ej: impresalta'
+        description: 'ID de tienda (opcional). Ej: impresalta'
         required: false
         default: ''
 
@@ -43,4 +43,4 @@ jobs:
       - name: Notify on failure
         if: failure()
         run: |
-          echo "::error::El scraper falló. Revisar logs para más detalles."
+          echo "::error::El scraper fallo. Revisar logs para mas detalles."
