@@ -64,7 +64,7 @@ export class CatalogComponent {
   ]);
 
   // Todos los productos de la categoría desde Firestore (reactivo al slug)
-  private readonly allProducts = toSignal(
+  readonly allProducts = toSignal(
     this.route.paramMap.pipe(
       map((p) => p.get('slug') ?? ''),
       switchMap((slug) => this.productService.getByCategory(slug)),

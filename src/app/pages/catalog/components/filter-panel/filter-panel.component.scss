@@ -197,6 +197,33 @@
     }
   }
 
+  &__option-label {
+    display: flex;
+    align-items: center;
+    gap: $space-1;
+  }
+
+  &__option-count {
+    font-size: $font-size-xs;
+    color: $text-muted;
+    font-weight: $font-weight-normal;
+  }
+
+  &__active-dot {
+    color: $primary;
+    margin-left: $space-1;
+  }
+
+  &__clear {
+    &--active {
+      cursor: pointer;
+    }
+    &:not(#{&}--active) {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+  }
+
   &__radio {
     accent-color: $primary;
     width: 16px;

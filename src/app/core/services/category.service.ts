@@ -1,6 +1,47 @@
 import { Injectable } from '@angular/core';
 import { Category, SpecField } from '../models';
 
+// Campos de spec compartidos para todos los filamentos
+const FILAMENT_SPEC_FIELDS: SpecField[] = [
+  {
+    key: 'brand',
+    label: 'Marca',
+    type: 'select',
+    options: ['Bambu Lab', 'Creality', 'eSUN', 'Polymaker', 'Prusament', 'Sunlu', 'Fiberlogy', 'Overture', 'Zaxe'],
+    filterable: true,
+  },
+  {
+    key: 'material',
+    label: 'Material',
+    type: 'select',
+    options: ['PLA', 'PLA+', 'PLA Silk', 'PLA Matte', 'PLA HF', 'PLA-CF', 'PETG', 'ABS', 'ASA', 'TPU', 'TPE', 'Nylon', 'PC'],
+    filterable: true,
+  },
+  {
+    key: 'weight',
+    label: 'Peso',
+    unit: 'g',
+    type: 'select',
+    options: ['250', '500', '750', '1000', '1250', '2000', '3000', '5000'],
+    filterable: true,
+  },
+  {
+    key: 'diameter',
+    label: 'Diámetro',
+    unit: 'mm',
+    type: 'select',
+    options: ['1.75', '2.85'],
+    filterable: true,
+  },
+  {
+    key: 'color',
+    label: 'Color',
+    type: 'select',
+    options: ['Blanco', 'Negro', 'Gris', 'Rojo', 'Azul', 'Verde', 'Amarillo', 'Naranja', 'Morado', 'Rosa', 'Transparente', 'Café', 'Dorado', 'Plateado'],
+    filterable: true,
+  },
+];
+
 // Categorías estáticas — no cambian con el catálogo de productos.
 // El campo `id` coincide con el slug (es el categoryId almacenado en Firestore).
 const CATEGORIES: Category[] = [
@@ -9,28 +50,35 @@ const CATEGORIES: Category[] = [
     slug: 'filamentos-pla',
     name: 'Filamentos PLA',
     icon: '🧵',
-    specFields: [
-      { key: 'diameter', label: 'Diámetro', unit: 'mm', type: 'select', options: ['1.75', '2.85'], filterable: true },
-      { key: 'weight',   label: 'Peso',     unit: 'g',  type: 'select', options: ['500', '750', '1000', '2000'], filterable: true },
-    ],
-  },
-  {
-    id: 'filamentos-abs',
-    slug: 'filamentos-abs',
-    name: 'Filamentos ABS',
-    icon: '🔶',
-    specFields: [
-      { key: 'diameter', label: 'Diámetro', unit: 'mm', type: 'select', options: ['1.75', '2.85'], filterable: true },
-    ],
+    specFields: FILAMENT_SPEC_FIELDS,
   },
   {
     id: 'filamentos-petg',
     slug: 'filamentos-petg',
     name: 'Filamentos PETG',
     icon: '🟦',
-    specFields: [
-      { key: 'diameter', label: 'Diámetro', unit: 'mm', type: 'select', options: ['1.75', '2.85'], filterable: true },
-    ],
+    specFields: FILAMENT_SPEC_FIELDS,
+  },
+  {
+    id: 'filamentos-abs',
+    slug: 'filamentos-abs',
+    name: 'Filamentos ABS',
+    icon: '🔶',
+    specFields: FILAMENT_SPEC_FIELDS,
+  },
+  {
+    id: 'filamentos-tpu',
+    slug: 'filamentos-tpu',
+    name: 'Filamentos TPU/TPE',
+    icon: '🟣',
+    specFields: FILAMENT_SPEC_FIELDS,
+  },
+  {
+    id: 'filamentos-especiales',
+    slug: 'filamentos-especiales',
+    name: 'Filamentos Especiales',
+    icon: '⚗️',
+    specFields: FILAMENT_SPEC_FIELDS,
   },
   {
     id: 'impresoras-fdm',
@@ -38,7 +86,13 @@ const CATEGORIES: Category[] = [
     name: 'Impresoras FDM',
     icon: '🖨️',
     specFields: [
-      { key: 'brand', label: 'Marca', type: 'select', options: ['Bambu Lab', 'Prusa', 'Creality', 'Elegoo', 'Qidi'], filterable: true },
+      {
+        key: 'brand',
+        label: 'Marca',
+        type: 'select',
+        options: ['Bambu Lab', 'Creality', 'Prusa', 'Elegoo', 'Qidi', 'Flashforge', 'Artillery', 'Raise3D', 'Voxelab'],
+        filterable: true,
+      },
     ],
   },
   {
@@ -47,7 +101,13 @@ const CATEGORIES: Category[] = [
     name: 'Impresoras Resina',
     icon: '💧',
     specFields: [
-      { key: 'brand', label: 'Marca', type: 'select', options: ['Elegoo', 'Anycubic', 'Phrozen'], filterable: true },
+      {
+        key: 'brand',
+        label: 'Marca',
+        type: 'select',
+        options: ['Elegoo', 'Anycubic', 'Phrozen', 'Creality', 'Graphy'],
+        filterable: true,
+      },
     ],
   },
   {
@@ -56,7 +116,28 @@ const CATEGORIES: Category[] = [
     name: 'Resinas',
     icon: '🧪',
     specFields: [
-      { key: 'volume', label: 'Volumen', unit: 'ml', type: 'select', options: ['500', '1000'], filterable: true },
+      {
+        key: 'brand',
+        label: 'Marca',
+        type: 'select',
+        options: ['Elegoo', 'Anycubic', 'Phrozen', 'Creality', 'eSUN', 'Siraya Tech', 'Antinsky'],
+        filterable: true,
+      },
+      {
+        key: 'type',
+        label: 'Tipo',
+        type: 'select',
+        options: ['Estándar', 'ABS-Like', 'Water Washable', 'Alta Resolución', 'Especializada'],
+        filterable: true,
+      },
+      {
+        key: 'volume',
+        label: 'Volumen',
+        unit: 'ml',
+        type: 'select',
+        options: ['250', '500', '1000', '2000'],
+        filterable: true,
+      },
     ],
   },
   {
@@ -64,14 +145,15 @@ const CATEGORIES: Category[] = [
     slug: 'repuestos',
     name: 'Repuestos',
     icon: '🔧',
-    specFields: [],
-  },
-  {
-    id: 'herramientas',
-    slug: 'herramientas',
-    name: 'Herramientas',
-    icon: '🛠️',
-    specFields: [],
+    specFields: [
+      {
+        key: 'brand',
+        label: 'Marca compatible',
+        type: 'select',
+        options: ['Bambu Lab', 'Creality', 'Prusa', 'Elegoo', 'Anycubic', 'Artillery'],
+        filterable: true,
+      },
+    ],
   },
   {
     id: 'general',
@@ -84,11 +166,15 @@ const CATEGORIES: Category[] = [
 
 @Injectable({ providedIn: 'root' })
 export class CategoryService {
-  /** Todas las categorías (estáticas). */
-  readonly categories = CATEGORIES;
+  /** Todas las categorías visibles en navegación (excluye 'general'). */
+  readonly categories = CATEGORIES.filter((c) => c.id !== 'general');
+
+  /** Todas las categorías incluyendo 'general'. */
+  readonly allCategories = CATEGORIES;
 
   /** Busca una categoría por su slug (= categoryId en Firestore). */
   getBySlug(slug: string): Category | null {
     return CATEGORIES.find((c) => c.slug === slug) ?? null;
   }
 }
+

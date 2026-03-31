@@ -23,6 +23,7 @@
     <div id="filter-panel">
       <app-filter-panel
         [specFields]="specFields()"
+        [allProducts]="allProducts()"
         [mobileOpen]="mobileFiltersOpen()"
         (filtersChange)="onFiltersChange($event)"
         (close)="mobileFiltersOpen.set(false)"

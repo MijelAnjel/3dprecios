@@ -33,7 +33,7 @@ export class HomeComponent {
 
   readonly searchControl = new FormControl('');
   readonly stores = this.storeService.stores;
-  readonly categories = signal(this.categoryService.categories.filter((c) => c.id !== 'general'));
+  readonly categories = signal(this.categoryService.categories); // ya excluye 'general'
   readonly topProducts = toSignal(this.productService.getTopProducts(8), { initialValue: [] });
   readonly loadingProducts = signal(false);
   readonly storeCount = computed(() => this.storeService.stores().length);

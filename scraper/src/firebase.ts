@@ -5,7 +5,7 @@ import {
   WriteBatch,
 } from 'firebase-admin/firestore';
 import { ScraperResult, STORES } from './models';
-import { slugify, normalizeProductName } from './utils';
+import { slugify, normalizeProductName, extractSpecs } from './utils';
 
 // ─────────────────────────────────────────────────────────────
 // Firebase upsert — productos, entradas e historial de precios
@@ -53,15 +53,16 @@ export async function saveResults(
 
       // ── 1. Crear producto si no existe ──────────────────────────
       if (!productSnap.exists) {
+        const specs = extractSpecs(cleanName, newCategory);
         await productRef.set({
           id:          productSlug,
           slug:        productSlug,
           name:        cleanName,
-          brand:       result.brand ?? '',
+          brand:       result.brand ?? specs['brand'] ?? '',
           categoryId:  newCategory,
           description: '',
           images:      validImageUrl ? [validImageUrl] : [],
-          specs:       result.specs ?? {},
+          specs,
           minPrice:    result.price,
           maxPrice:    result.price,
           storeCount:  1,
@@ -70,16 +71,27 @@ export async function saveResults(
         });
       } else {
         // Actualizar categoría si la nueva clasificación es más específica que la existente.
-        // "general" siempre se sobreescribe. Categorías equivocadas (ej. filamento en impresoras)
-        // se corrigen en cada re-scrape gracias al inferCategory mejorado.
         const existingCategory: string  = productSnap.data()?.['categoryId'] ?? 'general';
         const existingImages: string[]  = productSnap.data()?.['images'] ?? [];
+        const existingSpecs: Record<string, string> = productSnap.data()?.['specs'] ?? {};
         const hasValidImage = existingImages.some(img => !img.startsWith('data:') && img.length > 0);
 
         const updates: Record<string, unknown> = {};
-        // Actualizar si: tenemos categoría concreta Y es distinta a la actual
+        const effectiveCategory = (newCategory !== 'general' && newCategory !== existingCategory)
+          ? newCategory
+          : existingCategory;
+
         if (newCategory !== 'general' && newCategory !== existingCategory) updates['categoryId'] = newCategory;
         if (!hasValidImage && validImageUrl) updates['images'] = [validImageUrl];
+
+        // Extraer specs con la categoría efectiva y mezclar con las existentes
+        const newSpecs = extractSpecs(cleanName, effectiveCategory);
+        const mergedSpecs = { ...existingSpecs, ...newSpecs };
+        if (Object.keys(mergedSpecs).length > Object.keys(existingSpecs).length ||
+            JSON.stringify(mergedSpecs) !== JSON.stringify(existingSpecs)) {
+          updates['specs'] = mergedSpecs;
+        }
+
         if (Object.keys(updates).length > 0) await productRef.update(updates);
       }
 

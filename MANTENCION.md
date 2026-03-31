@@ -1,6 +1,6 @@
 # 3DPrecios — Guía de Mantención
 
-Sitio live: **https://dprecios.web.app**  
+Sitio live: **https://dprecios.web.app**
 Repositorio: **https://github.com/MijelAnjel/3dprecios**
 
 ---

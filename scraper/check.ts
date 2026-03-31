@@ -1,6 +1,6 @@
 import { initializeApp, cert } from 'firebase-admin/app';
 import { getFirestore, Timestamp } from 'firebase-admin/firestore';
-import { inferCategory } from './src/utils';
+import { inferCategory, extractSpecs } from './src/utils';
 
 const sa = require('./dprecios-firebase-adminsdk-fbsvc-5fc52d6967.json');
 const app = initializeApp({ credential: cert(sa) });
@@ -116,15 +116,17 @@ async function cleanSeedEntries() {
 }
 
 async function recategorize() {
-  console.log('=== RE-CATEGORIZANDO PRODUCTOS CON inferCategory ACTUALIZADO ===');
+  console.log('=== RE-CATEGORIZANDO PRODUCTOS CON inferCategory + extractSpecs ACTUALIZADO ===');
   const productsSnap = await db.collection('products').get();
   let changed = 0;
+  let specsUpdated = 0;
   let skipped = 0;
 
   for (const productDoc of productsSnap.docs) {
     const data      = productDoc.data();
     const name: string = data['name'] ?? '';
     const existing: string = data['categoryId'] ?? 'general';
+    const existingSpecs: Record<string, string> = data['specs'] ?? {};
 
     // Obtener URL de la primera entry para tener el path
     const entrySnap = await db
@@ -135,17 +137,27 @@ async function recategorize() {
     const entryUrl: string = entrySnap.docs[0]?.data()['url'] ?? '';
 
     const newCat = inferCategory(name, entryUrl);
+    // La categoría efectiva para extraer specs: preferir la nueva si es concreta,
+    // de lo contrario usar la existente
+    const effectiveCat = (newCat !== 'general') ? newCat : existing;
+    const newSpecs = extractSpecs(name, effectiveCat);
+    const mergedSpecs = { ...existingSpecs, ...newSpecs };
 
-    if (newCat !== 'general' && newCat !== existing) {
-      await productDoc.ref.update({ categoryId: newCat, updatedAt: Timestamp.now() });
-      console.log(`  [FIX] ${productDoc.id}: ${existing} → ${newCat}`);
-      changed++;
+    const catChanged  = newCat !== 'general' && newCat !== existing;
+    const specsChanged = JSON.stringify(mergedSpecs) !== JSON.stringify(existingSpecs);
+
+    if (catChanged || specsChanged) {
+      const updates: Record<string, unknown> = { updatedAt: Timestamp.now() };
+      if (catChanged)   { updates['categoryId'] = newCat;    changed++; }
+      if (specsChanged) { updates['specs'] = mergedSpecs; specsUpdated++; }
+      await productDoc.ref.update(updates);
+      if (catChanged) console.log(`  [CAT] ${productDoc.id}: ${existing} → ${newCat}`);
     } else {
       skipped++;
     }
   }
 
-  console.log(`\nProductos re-categorizados: ${changed} | Sin cambios: ${skipped}`);
+  console.log(`\nProductos re-categorizados: ${changed} | Specs actualizadas: ${specsUpdated} | Sin cambios: ${skipped}`);
 }
 
 async function main() {

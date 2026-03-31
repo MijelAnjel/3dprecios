@@ -5,14 +5,18 @@
 >
   <div class="filter-panel__header">
     <h2 class="filter-panel__title">Filtros</h2>
-    <button
-      class="filter-panel__clear"
-      type="button"
-      (click)="clearAll()"
-      aria-label="Limpiar todos los filtros"
-    >
-      Limpiar
-    </button>
+    @if (hasActiveFilters()) {
+      <button
+        class="filter-panel__clear filter-panel__clear--active"
+        type="button"
+        (click)="clearAll()"
+        aria-label="Limpiar todos los filtros"
+      >
+        Limpiar
+      </button>
+    } @else {
+      <span class="filter-panel__clear" aria-hidden="true">Limpiar</span>
+    }
     <!-- Cerrar en móvil -->
     <button
       class="filter-panel__close"
@@ -72,7 +76,7 @@
 
   <!-- ── Specs dinámicas por categoría ─────── -->
   @for (field of specFields(); track field.key) {
-    @if (field.filterable) {
+    @if (field.filterable && (dynamicOptions()[field.key]?.length ?? 0) > 0) {
       <div class="filter-panel__section">
         <button
           class="filter-panel__section-toggle"
@@ -81,44 +85,57 @@
           [attr.aria-controls]="'filter-' + field.key"
           (click)="toggleSection(field.key)"
         >
-          <span>{{ field.label }}</span>
+          <span>
+            {{ field.label }}
+            @if (specValues()[field.key]) {
+              <span class="filter-panel__active-dot" aria-label="Filtro activo">•</span>
+            }
+          </span>
           <span class="filter-panel__chevron" [class.filter-panel__chevron--open]="isSectionOpen(field.key)" aria-hidden="true">▾</span>
         </button>
 
         @if (isSectionOpen(field.key)) {
           <div [id]="'filter-' + field.key" class="filter-panel__section-body">
-            @if (field.type === 'select' && field.options) {
-              <ul class="filter-panel__options" role="list">
+            <ul class="filter-panel__options" role="list">
+              <!-- Opción "Todos" siempre primera -->
+              <li>
+                <label class="filter-panel__option">
+                  <input
+                    class="filter-panel__radio"
+                    type="radio"
+                    [name]="field.key"
+                    value=""
+                    [checked]="!specValues()[field.key]"
+                    (change)="onSpecChange(field.key, '')"
+                  />
+                  <span class="filter-panel__option-label">
+                    Todos
+                    <span class="filter-panel__option-count">({{ allProducts().length }})</span>
+                  </span>
+                </label>
+              </li>
+              <!-- Opciones reales desde los productos -->
+              @for (opt of dynamicOptions()[field.key]; track opt) {
                 <li>
                   <label class="filter-panel__option">
                     <input
                       class="filter-panel__radio"
                       type="radio"
                       [name]="field.key"
-                      value=""
-                      [checked]="!specValues()[field.key]"
-                      (change)="onSpecChange(field.key, '')"
+                      [value]="opt"
+                      [checked]="specValues()[field.key] === opt"
+                      (change)="onSpecChange(field.key, opt)"
                     />
-                    <span>Todos</span>
+                    <span class="filter-panel__option-label">
+                      {{ opt }}{{ field.unit ? ' ' + field.unit : '' }}
+                      @if (optionCounts()[field.key]?.[opt]) {
+                        <span class="filter-panel__option-count">({{ optionCounts()[field.key][opt] }})</span>
+                      }
+                    </span>
                   </label>
                 </li>
-                @for (opt of field.options; track opt) {
-                  <li>
-                    <label class="filter-panel__option">
-                      <input
-                        class="filter-panel__radio"
-                        type="radio"
-                        [name]="field.key"
-                        [value]="opt"
-                        [checked]="specValues()[field.key] === opt"
-                        (change)="onSpecChange(field.key, opt)"
-                      />
-                      <span>{{ opt }}{{ field.unit ? ' ' + field.unit : '' }}</span>
-                    </label>
-                  </li>
-                }
-              </ul>
-            }
+              }
+            </ul>
           </div>
         }
       </div>
