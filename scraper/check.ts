@@ -5,23 +5,62 @@ const sa = require('./dprecios-firebase-adminsdk-fbsvc-5fc52d6967.json');
 const app = initializeApp({ credential: cert(sa) });
 const db = getFirestore(app);
 
-// Tiendas que no tienen scraper activo — sus entries son basura del seed
-const DEAD_STORE_IDS = [
-  'impresalta', 'ahi3d', 'formageo', '3dstore', 'deskfab',
-  'tresd', 'todotorner', 'makershop', 'filamento', 'filamentosmaxi',
-  'impakt', 'mercadolibre',
-];
+// Tiendas cuyas entries son basura del seed (scraper nunca corrió)
+const SEED_ONLY_STORES = ['falabella', 'ripley', 'paris', 'sodimac', 'lider', 'easy'];
 
-async function main() {
-  console.log('=== LIMPIANDO ENTRIES DE TIENDAS MUERTAS ===');
+async function diagnose() {
+  const entriesSnap = await db.collectionGroup('entries').get();
+  const byStore: Record<string, Set<string>> = {};
+  const urlSamples: Record<string, string> = {};
+  entriesSnap.docs.forEach(d => {
+    const data = d.data();
+    const storeId = data['storeId'];
+    if (!byStore[storeId]) byStore[storeId] = new Set();
+    byStore[storeId].add(data['productId']);
+    if (!urlSamples[storeId]) urlSamples[storeId] = data['url'] ?? '';
+  });
 
-  // 1. Marcar tiendas muertas como isActive: false en Firestore
-  for (const storeId of DEAD_STORE_IDS) {
-    await db.collection('stores').doc(storeId).set({ isActive: false }, { merge: true });
-    console.log(`  [stores] ${storeId} → isActive: false`);
+  console.log('=== PRODUCTOS POR TIENDA ===');
+  Object.entries(byStore)
+    .sort((a, b) => b[1].size - a[1].size)
+    .forEach(([store, products]) => {
+      console.log(`  ${store}: ${products.size} productos | URL ejemplo: ${urlSamples[store]?.substring(0, 80)}`);
+    });
+
+  const productsSnap = await db.collection('products').get();
+  const catCount: Record<string, number> = {};
+  const noEntryProducts: string[] = [];
+
+  for (const productDoc of productsSnap.docs) {
+    const cat = productDoc.data()['categoryId'] ?? 'undefined';
+    catCount[cat] = (catCount[cat] ?? 0) + 1;
+
+    // Check if product has no active entries
+    const activeEntries = await db
+      .collection('products').doc(productDoc.id)
+      .collection('entries')
+      .where('isActive', '==', true)
+      .limit(1)
+      .get();
+    if (activeEntries.empty) noEntryProducts.push(productDoc.id);
+  }
+  console.log('\n=== PRODUCTOS POR CATEGORÍA ===');
+  Object.entries(catCount).sort((a, b) => b[1] - a[1]).forEach(([cat, count]) => {
+    console.log(`  ${cat}: ${count}`);
+  });
+
+  console.log('\n=== PRODUCTOS SIN ENTRIES ACTIVAS ===');
+  if (noEntryProducts.length === 0) {
+    console.log('  Ninguno (todo limpio)');
+  } else {
+    noEntryProducts.forEach(id => console.log(`  ${id}`));
   }
 
-  // 2. Buscar y borrar entries de tiendas muertas, recalcular producto afectados
+  console.log('\nTotal productos:', productsSnap.size);
+}
+
+async function cleanSeedEntries() {
+  console.log('=== ELIMINANDO ENTRIES DE SEED (retail general sin scraper real) ===');
   const productsSnap = await db.collection('products').get();
   let deletedEntries = 0;
   const affectedProducts = new Set<string>();
@@ -34,37 +73,34 @@ async function main() {
 
     for (const entryDoc of entriesSnap.docs) {
       const storeId = entryDoc.data()['storeId'];
-      if (DEAD_STORE_IDS.includes(storeId)) {
+      if (SEED_ONLY_STORES.includes(storeId)) {
         await entryDoc.ref.delete();
         deletedEntries++;
         affectedProducts.add(productDoc.id);
+        console.log(`  [DELETE entry] ${productDoc.id} / ${storeId}`);
       }
     }
   }
 
-  console.log(`\nEntries borradas: ${deletedEntries}`);
-  console.log(`Productos afectados: ${affectedProducts.size}`);
+  console.log(`\nEntries seed borradas: ${deletedEntries}`);
 
-  // 3. Recalcular minPrice / maxPrice / storeCount para productos afectados
-  console.log('\nRecalculando productos...');
+  // Recalcular / borrar productos afectados
   let updated = 0;
   let deleted = 0;
-
   for (const productId of affectedProducts) {
-    const entriesSnap = await db
+    const remaining = await db
       .collection('products').doc(productId)
       .collection('entries')
       .where('isActive', '==', true)
       .get();
 
-    if (entriesSnap.empty) {
-      // Sin entries activas → borrar el producto (era solo del seed)
+    if (remaining.empty) {
       await db.collection('products').doc(productId).delete();
       deleted++;
-      console.log(`  [DELETE] ${productId}`);
+      console.log(`  [DELETE product] ${productId}`);
     } else {
-      const prices = entriesSnap.docs.map(d => d.data()['price'] as number);
-      const storeCount = new Set(entriesSnap.docs.map(d => d.data()['storeId'])).size;
+      const prices = remaining.docs.map(d => d.data()['price'] as number);
+      const storeCount = new Set(remaining.docs.map(d => d.data()['storeId'])).size;
       await db.collection('products').doc(productId).update({
         minPrice: Math.min(...prices),
         maxPrice: Math.max(...prices),
@@ -75,10 +111,17 @@ async function main() {
     }
   }
 
-  console.log(`\nProductos actualizados: ${updated} | Productos borrados: ${deleted}`);
+  console.log(`Productos actualizados: ${updated} | Borrados: ${deleted}`);
+}
 
-  const total = await db.collection('products').count().get();
-  console.log('Total productos restantes en BD:', total.data().count);
+async function main() {
+  const doClean = process.argv.includes('--clean');
+  if (doClean) {
+    await cleanSeedEntries();
+    console.log('\n--- diagnóstico post-cleanup ---');
+  }
+  await diagnose();
   process.exit(0);
 }
 main().catch(e => { console.error(e); process.exit(1); });
+

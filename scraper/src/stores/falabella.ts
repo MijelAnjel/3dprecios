@@ -1,5 +1,5 @@
 import { ScraperResult, StoreConfig } from '../models';
-import { fetchJson, delay, inferStock } from '../utils';
+import { fetchJson, delay, inferStock, inferCategory } from '../utils';
 
 // ──────────────────────────────────────────────────────────────
 // Falabella Chile — API Browse v1
@@ -109,6 +109,7 @@ export async function scrapeFalabella(store: StoreConfig): Promise<ScraperResult
             currency:    'CLP',
             stock:       inferStock(stockTxt),
             imageUrl:    product.mediaUrls?.[0] ?? '',
+            categorySlug: inferCategory(product.displayName, term),
             brand:       product.brand ?? undefined,
             sku:         product.skuId ?? undefined,
             scrapedAt:   new Date(),

@@ -1,5 +1,5 @@
 import { ScraperResult, StoreConfig } from '../models';
-import { fetchHtml, parsePriceCLP, inferStock } from '../utils';
+import { fetchHtml, parsePriceCLP, inferStock, inferCategory } from '../utils';
 
 // ──────────────────────────────────────────────────────────────
 // Imperio 3D — imperio3d.com — WooCommerce
@@ -55,6 +55,7 @@ export async function scrapeImperio3d(store: StoreConfig): Promise<ScraperResult
             currency:    'CLP',
             stock:       isOut ? 'out' : inferStock(stockTxt || 'disponible'),
             imageUrl:    imgSrc,
+            categorySlug: inferCategory(name, path),
             scrapedAt:   new Date(),
           });
         });

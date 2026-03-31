@@ -1,57 +1,29 @@
 import { ScraperResult, StoreConfig } from '../models';
-import { fetchHtml, parsePriceCLP, inferStock, inferCategory } from '../utils';
+import { fetchWcStoreProducts, inferCategory } from '../utils';
 
-const CATEGORY_PATHS = [
-  '/categoria-producto/filamentos/',
-  '/categoria-producto/impresoras-3d/',
-  '/categoria-producto/resinas/',
-  '/categoria-producto/repuestos/',
-  '/categoria-producto/accesorios/',
-];
+// ──────────────────────────────────────────────────────────────
+// Horus3D — horus3d.cl — WooCommerce Store API
+// Site renders products client-side → HTML scraping returns 0
+// Store is 100% 3D printing focused → fetch all products
+// ──────────────────────────────────────────────────────────────
 
 export async function scrapeHorus3d(store: StoreConfig): Promise<ScraperResult[]> {
-  const results: ScraperResult[] = [];
+  const products = await fetchWcStoreProducts(store.baseUrl, [], { rateDelay: 2500 });
 
-  for (const path of CATEGORY_PATHS) {
-    let page = 1;
-    let hasMore = true;
-
-    while (hasMore) {
-      const url = `${store.baseUrl}${path}page/${page}/`;
-      console.log(`[Horus3D] Scraping: ${url}`);
-
-      try {
-        const $ = await fetchHtml(url, { rateDelay: 2000 });
-        const products = $('li.product');
-        if (products.length === 0) { hasMore = false; break; }
-
-        products.each((_, el) => {
-          const name     = $(el).find('.woocommerce-loop-product__title').text().trim();
-          const href     = $(el).find('a.woocommerce-LoopProduct-link').attr('href') ?? '';
-          const priceRaw = $(el).find('.price ins .woocommerce-Price-amount, .price .woocommerce-Price-amount').first().text().trim();
-          const imgSrc   = $(el).find('img').attr('data-src') ?? $(el).find('img').attr('data-lazy-src') ?? $(el).find('img').attr('src') ?? '';
-          const stockTxt = $(el).find('.stock, .out-of-stock').text();
-          const price    = parsePriceCLP(priceRaw);
-          if (!name || !href || price === 0) return;
-
-          results.push({
-            storeId: store.id, storeName: store.name,
-            productName: name, productUrl: href, price, currency: 'CLP',
-            stock: $(el).hasClass('outofstock') ? 'out' : inferStock(stockTxt),
-            imageUrl: imgSrc,
-            categorySlug: inferCategory(name, path),
-            scrapedAt: new Date(),
-          });
-        });
-
-        hasMore = $('a.next.page-numbers').length > 0;
-        page++;
-      } catch (err) {
-        console.error(`[Horus3D] Error en ${url}:`, err);
-        hasMore = false;
-      }
-    }
-  }
+  const results: ScraperResult[] = products
+    .filter(p => p.prices?.price && parseInt(p.prices.price, 10) > 0)
+    .map(p => ({
+      storeId:      store.id,
+      storeName:    store.name,
+      productName:  p.name,
+      productUrl:   p.permalink,
+      price:        parseInt(p.prices.price, 10),
+      currency:     'CLP' as const,
+      stock:        p.is_in_stock ? 'available' : 'out',
+      imageUrl:     p.images?.[0] ?? '',
+      categorySlug: inferCategory(p.name, p.categories?.[0]?.slug ?? ''),
+      scrapedAt:    new Date(),
+    }));
 
   console.log(`[Horus3D] Total productos: ${results.length}`);
   return results;

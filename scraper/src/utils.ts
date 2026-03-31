@@ -180,3 +180,71 @@ export function inferCategory(name: string, path: string): string {
 
   return 'general';
 }
+
+// ── WooCommerce Store API helper ───────────────────────────────────────────
+export interface WcStoreProduct {
+  name: string;
+  permalink: string;
+  prices: {
+    price: string;
+    regular_price: string;
+    currency_code: string;
+  };
+  images: string[];
+  is_in_stock: boolean;
+  on_sale: boolean;
+  categories: Array<{ id: number; name: string; slug: string }>;
+}
+
+/**
+ * Fetches all products from a WooCommerce Store API.
+ * Handles pagination automatically. Deduplicates by permalink.
+ * Use categoryIds=[] to fetch all products.
+ */
+export async function fetchWcStoreProducts(
+  storeUrl: string,
+  categoryIds: number[] = [],
+  { rateDelay = 1500 }: { rateDelay?: number } = {},
+): Promise<WcStoreProduct[]> {
+  const results: WcStoreProduct[] = [];
+  const seen = new Set<string>();
+
+  const targets = categoryIds.length > 0 ? categoryIds : [0]; // 0 = no filter
+
+  for (const catId of targets) {
+    let page = 1;
+
+    while (true) {
+      const params = new URLSearchParams({ per_page: '100', page: String(page) });
+      if (catId > 0) params.append('category_ids[]', String(catId));
+
+      const url = `${storeUrl}/wp-json/wc/store/v1/products?${params}`;
+      console.log(`[WcStore] ${url}`);
+
+      try {
+        const data = await fetchJson<WcStoreProduct[]>(url, {
+          rateDelay,
+          retries: 3,
+        });
+
+        if (!Array.isArray(data) || data.length === 0) break;
+
+        for (const p of data) {
+          if (p.permalink && !seen.has(p.permalink)) {
+            seen.add(p.permalink);
+            results.push(p);
+          }
+        }
+
+        if (data.length < 100) break;
+        page++;
+      } catch (err) {
+        console.error(`[WcStore] Error en ${url}:`, err);
+        break;
+      }
+    }
+  }
+
+  return results;
+}
+
