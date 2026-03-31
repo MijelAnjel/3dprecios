@@ -11,30 +11,14 @@ const sleep = (ms: number) => new Promise(res => setTimeout(res, ms));
 // Tiendas cuyas entries son basura del seed (scraper nunca corrió)
 const SEED_ONLY_STORES = ['falabella', 'ripley', 'paris', 'sodimac', 'lider', 'easy'];
 
-async function diagnose() {
-  const entriesSnap = await db.collectionGroup('entries').get();
-  const byStore: Record<string, Set<string>> = {};
-  const urlSamples: Record<string, string> = {};
-  entriesSnap.docs.forEach(d => {
-    const data = d.data();
-    const storeId = data['storeId'];
-    if (!byStore[storeId]) byStore[storeId] = new Set();
-    byStore[storeId].add(data['productId']);
-    if (!urlSamples[storeId]) urlSamples[storeId] = data['url'] ?? '';
-  });
-
-  console.log('=== PRODUCTOS POR TIENDA ===');
-  Object.entries(byStore)
-    .sort((a, b) => b[1].size - a[1].size)
-    .forEach(([store, products]) => {
-      console.log(`  ${store}: ${products.size} productos | URL ejemplo: ${urlSamples[store]?.substring(0, 80)}`);
-    });
-
+async function diagnose(verbose = false) {
   const productsSnap = await db.collection('products').get();
   const catCount: Record<string, number> = {};
+  const storeCount: Record<string, number> = {};
 
   for (const productDoc of productsSnap.docs) {
-    const cat = productDoc.data()['categoryId'] ?? 'undefined';
+    const data = productDoc.data();
+    const cat = data['categoryId'] ?? 'undefined';
     catCount[cat] = (catCount[cat] ?? 0) + 1;
   }
 
@@ -43,7 +27,7 @@ async function diagnose() {
     console.log(`  ${cat}: ${count}`);
   });
 
-  // Detectar slugs que parecen duplicados (sólo heurística local, no consulta extra)
+  // Detectar slugs duplicados (solo heurística local, sin lecturas extra)
   const dupSlugs = productsSnap.docs.filter(doc => {
     const name: string = doc.data()['name'] ?? '';
     const correctSlug = slugify(normalizeProductName(name));
@@ -59,6 +43,24 @@ async function diagnose() {
   }
 
   console.log('\nTotal productos:', productsSnap.size);
+
+  // Con --verbose también muestra desglose por tienda (requiere leer todas las entries)
+  if (verbose) {
+    console.log('\n=== PRODUCTOS POR TIENDA (verbose) ===');
+    const entriesSnap = await db.collectionGroup('entries').get();
+    const byStore: Record<string, Set<string>> = {};
+    entriesSnap.docs.forEach(d => {
+      const data = d.data();
+      const sid = data['storeId'] as string;
+      if (!byStore[sid]) byStore[sid] = new Set();
+      byStore[sid].add(data['productId']);
+    });
+    Object.entries(byStore)
+      .sort((a, b) => b[1].size - a[1].size)
+      .forEach(([store, products]) => {
+        console.log(`  ${store}: ${products.size} productos`);
+      });
+  }
 }
 
 async function cleanSeedEntries() {
@@ -245,6 +247,7 @@ async function main() {
   const doRecategorize = process.argv.includes('--recategorize');
   const doFixDupes     = process.argv.includes('--fix-dupes');
   const dryRun         = process.argv.includes('--dry-run');
+  const verbose        = process.argv.includes('--verbose');
 
   if (doClean) {
     await cleanSeedEntries();
@@ -258,7 +261,9 @@ async function main() {
     await recategorize();
     console.log('\n--- diagnóstico post-recategorización ---');
   }
-  await diagnose();
+  // diagnose() básico solo lee 'products' (396 reads).
+  // Con --verbose también lee collectionGroup('entries') para desglose por tienda.
+  await diagnose(verbose);
   process.exit(0);
 }
 main().catch(e => { console.error(e); process.exit(1); });
