@@ -46,6 +46,9 @@ export const STORES: StoreConfig[] = [
   { id: 'ripley',         name: 'Ripley',              slug: 'ripley',         baseUrl: 'https://simple.ripley.cl',       logo: 'https://simple.ripley.cl/favicon.ico',       isActive: true  },
   { id: 'lider',          name: 'Lider',               slug: 'lider',          baseUrl: 'https://www.lider.cl',           logo: 'https://www.lider.cl/favicon.ico',           isActive: true  },
   { id: 'easy',           name: 'Easy',                slug: 'easy',           baseUrl: 'https://www.easy.cl',            logo: 'https://www.easy.cl/favicon.ico',            isActive: true  },
-  // ── Pendientes de integración ────────────────────────────────────────────
-  { id: 'mercadolibre',   name: 'Mercado Libre CL',   slug: 'mercadolibre',   baseUrl: 'https://listado.mercadolibre.cl', logo: 'https://http2.mlstatic.com/favicon.ico',    isActive: false },
+  // ── Sin scraper activo (datos del seed eliminados) ───────────────────────
+  { id: 'impresalta',     name: 'Impresalta',          slug: 'impresalta',     baseUrl: 'https://impresalta.cl',          logo: '',                                           isActive: false },
+  { id: 'ahi3d',          name: 'AHI 3D',              slug: 'ahi3d',          baseUrl: 'https://ahi3d.cl',               logo: '',                                           isActive: false },
+  { id: 'formageo',       name: 'Formageo',            slug: 'formageo',       baseUrl: 'https://formageo.cl',            logo: '',                                           isActive: false },
+  { id: 'mercadolibre',   name: 'Mercado Libre CL',   slug: 'mercadolibre',   baseUrl: 'https://listado.mercadolibre.cl', logo: '',                                          isActive: false },
 ];
