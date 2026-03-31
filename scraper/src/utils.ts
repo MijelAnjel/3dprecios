@@ -215,6 +215,8 @@ export function inferCategory(name: string, path: string): string {
     /estructura\s*bambu|bambu.*enclosure|enclosure.*bambu|bambu.*estructura/i.test(n) ||
     // Electrónica de impresoras
     /\bmainboard\b|placa\s*madre.*impr|placa\s*base.*impr|raspberry.*impr/i.test(n) ||
+    // Controladores de impresoras (BTT, MKS, etc.)
+    /\bbigtreetech\b|\bbtt\b|\bmks\s*(gen|sbase|robin)|skr\s*(mini|pro|v\d)|octopus\s*pro|spider\s*v\d/i.test(n) ||
     // Kits de repuesto explícitos
     /kit\s*correa|kit\s*nozzle|kit\s*hotend|upgrade\s*kit\s*(ender|bambu|prusa)/i.test(n);
 
@@ -256,6 +258,10 @@ export function inferCategory(name: string, path: string): string {
   // NO usar "fdm" sólo: "Filamento FDM" es filamento, no impresora
   if (/impresora|printer|impresion-3d|impresoras-3d|impresoras-fdm/i.test(p) && !/resina|resin/i.test(p)) return 'impresoras-fdm';
   if (/\bender\b|\bneptune\b|\bkobra\b|\baquila\b|\bvoxelab\b|adventurer|flashforge|\bprusa\b|\bvoron\b|bambu\s*(a1|p1|x1|a1\s*mini|p1s|p1p|x1c)|elegoo\s*(neptune|centauri)|\bqidi\b/i.test(n)) return 'impresoras-fdm';
+  // Modelos Creality FDM adicionales (K-series, CR-series, etc.)
+  if (/\bcreality\b.*\b(k1|k2|cr[\s-]?\d+|sonic\s*pad|nebula)/i.test(n)) return 'impresoras-fdm';
+  // Bambu Lab con nombre de modelo sin "bambu" inmediatamente antes (e.g. "Bambu Lab A1C")
+  if (/\bbambu\b|\bbambu\s+lab\b/i.test(n) && !filamentByName) return 'impresoras-fdm';
   if (isPrinterWord && !/resina|resin|sla|msla|dlp/i.test(n)) return 'impresoras-fdm';
 
   // ── 5. Repuestos generales (por path) ─────────────────────────────────
@@ -439,7 +445,8 @@ export interface WcStoreProduct {
     regular_price: string;
     currency_code: string;
   };
-  images: string[];
+  // WC Store API v1 returns images as objects, not plain strings
+  images: Array<{ id: number; src: string; thumbnail: string; name: string; alt: string }>;
   is_in_stock: boolean;
   on_sale: boolean;
   categories: Array<{ id: number; name: string; slug: string }>;

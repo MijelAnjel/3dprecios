@@ -23,7 +23,7 @@ export async function scrapeEvstore(store: StoreConfig): Promise<ScraperResult[]
       price:        parseInt(p.prices.price, 10),
       currency:     'CLP' as const,
       stock:        p.is_in_stock ? 'available' : 'out',
-      imageUrl:     p.images?.[0] ?? '',
+      imageUrl:     p.images?.[0]?.src ?? '',
       categorySlug: inferCategory(p.name, p.categories?.[0]?.slug ?? ''),
       scrapedAt:    new Date(),
     }));

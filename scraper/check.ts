@@ -1,10 +1,12 @@
 import { initializeApp, cert } from 'firebase-admin/app';
 import { getFirestore, Timestamp } from 'firebase-admin/firestore';
-import { inferCategory, extractSpecs } from './src/utils';
+import { inferCategory, extractSpecs, normalizeProductName, slugify } from './src/utils';
 
 const sa = require('./dprecios-firebase-adminsdk-fbsvc-5fc52d6967.json');
 const app = initializeApp({ credential: cert(sa) });
 const db = getFirestore(app);
+
+const sleep = (ms: number) => new Promise(res => setTimeout(res, ms));
 
 // Tiendas cuyas entries son basura del seed (scraper nunca corrió)
 const SEED_ONLY_STORES = ['falabella', 'ripley', 'paris', 'sodimac', 'lider', 'easy'];
@@ -30,31 +32,30 @@ async function diagnose() {
 
   const productsSnap = await db.collection('products').get();
   const catCount: Record<string, number> = {};
-  const noEntryProducts: string[] = [];
 
   for (const productDoc of productsSnap.docs) {
     const cat = productDoc.data()['categoryId'] ?? 'undefined';
     catCount[cat] = (catCount[cat] ?? 0) + 1;
-
-    // Check if product has no active entries
-    const activeEntries = await db
-      .collection('products').doc(productDoc.id)
-      .collection('entries')
-      .where('isActive', '==', true)
-      .limit(1)
-      .get();
-    if (activeEntries.empty) noEntryProducts.push(productDoc.id);
   }
+
   console.log('\n=== PRODUCTOS POR CATEGORÍA ===');
   Object.entries(catCount).sort((a, b) => b[1] - a[1]).forEach(([cat, count]) => {
     console.log(`  ${cat}: ${count}`);
   });
 
-  console.log('\n=== PRODUCTOS SIN ENTRIES ACTIVAS ===');
-  if (noEntryProducts.length === 0) {
-    console.log('  Ninguno (todo limpio)');
-  } else {
-    noEntryProducts.forEach(id => console.log(`  ${id}`));
+  // Detectar slugs que parecen duplicados (sólo heurística local, no consulta extra)
+  const dupSlugs = productsSnap.docs.filter(doc => {
+    const name: string = doc.data()['name'] ?? '';
+    const correctSlug = slugify(normalizeProductName(name));
+    return correctSlug !== doc.id && correctSlug.length >= 5;
+  });
+  if (dupSlugs.length > 0) {
+    console.log(`\n⚠️  Slugs incorrectos detectados: ${dupSlugs.length} (ejecutar --fix-dupes para corregir)`);
+    dupSlugs.slice(0, 5).forEach(d => {
+      const name: string = d.data()['name'] ?? '';
+      console.log(`  "${d.id}" → "${slugify(normalizeProductName(name))}"`);
+    });
+    if (dupSlugs.length > 5) console.log(`  ... y ${dupSlugs.length - 5} más`);
   }
 
   console.log('\nTotal productos:', productsSnap.size);
@@ -160,13 +161,98 @@ async function recategorize() {
   console.log(`\nProductos re-categorizados: ${changed} | Specs actualizadas: ${specsUpdated} | Sin cambios: ${skipped}`);
 }
 
+async function fixDuplicateSlugs(dryRun = false) {
+  console.log(`=== CORRIGIENDO SLUGS DUPLICADOS${dryRun ? ' (DRY-RUN)' : ''} ===`);
+  const productsSnap = await db.collection('products').get();
+
+  // Fase 1: identificar qué productos necesitan fix (sin lecturas extra)
+  const toFix: Array<{ docId: string; correctSlug: string; name: string }> = [];
+  for (const doc of productsSnap.docs) {
+    const name: string = doc.data()['name'] ?? '';
+    const correctSlug = slugify(normalizeProductName(name));
+    if (correctSlug && correctSlug !== doc.id && correctSlug.length >= 5) {
+      toFix.push({ docId: doc.id, correctSlug, name });
+    }
+  }
+
+  console.log(`Productos a corregir: ${toFix.length} / ${productsSnap.size}`);
+  toFix.forEach(({ docId, correctSlug }) =>
+    console.log(`  "${docId}" → "${correctSlug}"`)
+  );
+
+  if (dryRun || toFix.length === 0) {
+    if (toFix.length === 0) console.log('  Nada que corregir.');
+    return;
+  }
+
+  let fixed = 0;
+  let merged = 0;
+
+  // Fase 2: corregir cada uno con delay para no agotar quota
+  for (const { docId, correctSlug } of toFix) {
+    console.log(`\n  [FIX] "${docId}" → "${correctSlug}"`);
+    await sleep(300); // throttle
+
+    const sourceRef = db.collection('products').doc(docId);
+    const targetRef = db.collection('products').doc(correctSlug);
+    const [sourceSnap, targetSnap, oldEntriesSnap] = await Promise.all([
+      sourceRef.get(),
+      targetRef.get(),
+      sourceRef.collection('entries').get(),
+    ]);
+    if (!sourceSnap.exists) { console.log(`    → (ya eliminado, skip)`); continue; }
+
+    const sourceData = sourceSnap.data()!;
+
+    // Copiar entries al doc destino
+    for (const entry of oldEntriesSnap.docs) {
+      await targetRef.collection('entries').doc(entry.id).set({
+        ...entry.data(),
+        productId: correctSlug,
+      });
+      await sleep(50);
+    }
+
+    if (targetSnap.exists) {
+      // Merge: recalcular precios/storeCount del destino
+      const allActive = await targetRef.collection('entries')
+        .where('isActive', '==', true).get();
+      if (!allActive.empty) {
+        const prices = allActive.docs.map(d => d.data()['price'] as number);
+        const storeCount = new Set(allActive.docs.map(d => d.data()['storeId'])).size;
+        await targetRef.update({ minPrice: Math.min(...prices), maxPrice: Math.max(...prices), storeCount, updatedAt: Timestamp.now() });
+      }
+      merged++;
+    } else {
+      // Rename: crear nuevo doc con datos del original
+      await targetRef.set({ ...sourceData, updatedAt: Timestamp.now() });
+      fixed++;
+    }
+
+    // Eliminar entries y doc viejo
+    for (const entry of oldEntriesSnap.docs) {
+      await entry.ref.delete();
+      await sleep(50);
+    }
+    await sourceRef.delete();
+  }
+
+  console.log(`\nProductos renombrados: ${fixed} | Mergeados: ${merged}`);
+}
+
 async function main() {
-  const doClean       = process.argv.includes('--clean');
+  const doClean        = process.argv.includes('--clean');
   const doRecategorize = process.argv.includes('--recategorize');
+  const doFixDupes     = process.argv.includes('--fix-dupes');
+  const dryRun         = process.argv.includes('--dry-run');
 
   if (doClean) {
     await cleanSeedEntries();
     console.log('\n--- diagnóstico post-cleanup ---');
+  }
+  if (doFixDupes) {
+    await fixDuplicateSlugs(dryRun);
+    console.log('\n--- diagnóstico post-fix-dupes ---');
   }
   if (doRecategorize) {
     await recategorize();

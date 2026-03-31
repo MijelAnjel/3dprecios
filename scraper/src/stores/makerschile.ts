@@ -4,9 +4,17 @@ import { fetchWcStoreProducts, inferCategory } from '../utils';
 // ──────────────────────────────────────────────────────────────
 // Makers Chile — makerschile.cl — WooCommerce Store API
 // Site renders products client-side → HTML scraping returns 0
-// Buscamos todos los productos y filtramos por categoría inferida
-// (los category_ids específicos incluían categorías no-3D)
+// El catálogo mezcla productos 3D con electrónica general.
+// Se excluyen categorías WC explícitamente no-3D.
 // ──────────────────────────────────────────────────────────────
+
+// Categorías WC de MakersChile que definitivamente no son 3D printing
+const NON_3D_SLUGS =
+  /maquinas-cnc-laser|laser-co2|laser-diodo|bater[íi]as?|lora\b|espressif|gsm|gprs|sensores|raspberry|scanner-3d|sin-categoria/i;
+
+// Marcas y categorías WC que SÍ son 3D printing (aunque no digan "impresora")
+const IS_3D_SLUG =
+  /impresora|filament|repuesto|accesorio|resina|3d|bambu|creality|prusa|anycubic|elegoo|flashforge|qidi|artillery/i;
 
 export async function scrapeMakerschile(store: StoreConfig): Promise<ScraperResult[]> {
   // Fetch ALL products — la tienda mezcla 3D con otros productos
@@ -14,11 +22,19 @@ export async function scrapeMakerschile(store: StoreConfig): Promise<ScraperResu
 
   const results: ScraperResult[] = products
     .filter(p => {
-      if (!p.prices?.price || parseInt(p.prices.price, 10) <= 0) return false;
-      // Descartar productos que no son de impresión 3D
+      const price = parseInt(p.prices?.price ?? '0', 10);
+      if (price <= 0) return false;
+
       const catSlug = p.categories?.[0]?.slug ?? '';
-      const cat = inferCategory(p.name, catSlug);
-      return cat !== 'general';
+
+      // Excluir explícitamente categorías no-3D
+      if (NON_3D_SLUGS.test(catSlug)) return false;
+
+      // Incluir si la categoría WC es claramente 3D-related
+      if (IS_3D_SLUG.test(catSlug)) return true;
+
+      // Fallback: usar inferCategory en nombre para el resto
+      return inferCategory(p.name, catSlug) !== 'general';
     })
     .map(p => ({
       storeId:      store.id,
@@ -28,7 +44,7 @@ export async function scrapeMakerschile(store: StoreConfig): Promise<ScraperResu
       price:        parseInt(p.prices.price, 10),
       currency:     'CLP' as const,
       stock:        p.is_in_stock ? 'available' : 'out',
-      imageUrl:     p.images?.[0] ?? '',
+      imageUrl:     p.images?.[0]?.src ?? '',
       categorySlug: inferCategory(p.name, p.categories?.[0]?.slug ?? ''),
       scrapedAt:    new Date(),
     }));
@@ -36,3 +52,4 @@ export async function scrapeMakerschile(store: StoreConfig): Promise<ScraperResu
   console.log(`[MakersChile] Total productos: ${results.length}`);
   return results;
 }
+
