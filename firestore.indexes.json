@@ -23,6 +23,14 @@
         { "fieldPath": "storeId",  "order": "ASCENDING" },
         { "fieldPath": "isActive", "order": "ASCENDING" }
       ]
+    },
+    {
+      "collectionGroup": "alerts",
+      "queryScope": "COLLECTION_GROUP",
+      "fields": [
+        { "fieldPath": "productId", "order": "ASCENDING" },
+        { "fieldPath": "isActive",  "order": "ASCENDING" }
+      ]
     }
   ],
   "fieldOverrides": []
