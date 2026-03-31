@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
 import { ProductEntry, Store } from '../../../../core/models';
 import { ClpPipe } from '../../../../shared/pipes/clp.pipe';
 
@@ -11,7 +10,7 @@ interface PriceRow {
 @Component({
   selector: 'app-price-table',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [NgOptimizedImage, ClpPipe],
+  imports: [ClpPipe],
   template: `
     <div class="price-table">
       <h2 class="price-table__title">Precios por tienda</h2>
@@ -31,7 +30,7 @@ interface PriceRow {
                 <td class="price-table__store">
                   @if (row.store?.logo) {
                     <img
-                      [ngSrc]="row.store!.logo"
+                      [src]="row.store!.logo"
                       [alt]="row.store!.name"
                       width="24"
                       height="24"

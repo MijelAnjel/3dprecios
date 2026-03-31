@@ -7,7 +7,6 @@ import {
 } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
-import { NgOptimizedImage } from '@angular/common';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map, switchMap } from 'rxjs/operators';
 import { of } from 'rxjs';
@@ -24,7 +23,6 @@ import { ProductService } from '../../core/services/product.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     RouterLink,
-    NgOptimizedImage,
     BreadcrumbComponent,
     ProductCardComponent,
     SkeletonComponent,

@@ -23,10 +23,8 @@
         <div class="pd__gallery-main">
           @if (product()!.images.length > 0) {
             <img
-              [ngSrc]="product()!.images[activeImageIndex()]"
+              [src]="product()!.images[activeImageIndex()]"
               [alt]="product()!.name"
-              fill
-              priority
               class="pd__gallery-img"
             />
           } @else {
@@ -44,7 +42,7 @@
                 [attr.aria-pressed]="activeImageIndex() === i"
                 role="listitem"
               >
-                <img [ngSrc]="img" [alt]="product()!.name + ' imagen ' + (i + 1)" width="64" height="64" />
+                <img [src]="img" [alt]="product()!.name + ' imagen ' + (i + 1)" width="64" height="64" />
               </button>
             }
           </div>
