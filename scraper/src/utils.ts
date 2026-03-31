@@ -138,29 +138,45 @@ export function inferStock(text: string): 'available' | 'low' | 'out' | 'unknown
 }
 
 // ── Infer categorySlug from product name + URL path ───────────────────────
+// ── Infer categorySlug from product name + URL path ───────────────────────
 export function inferCategory(name: string, path: string): string {
   const n = name.toLowerCase();
+  const p = path.toLowerCase();
 
-  // Impresoras
-  if (/impresora|printer|fdm|fused/.test(n) && !/resina|resin|sla|msla|dlp/.test(n)) return 'impresoras-fdm';
-  if (/impresora|printer/.test(n) && /resina|resin|sla|msla|dlp/.test(n))            return 'impresoras-resina';
-  if (/resina|resin/.test(n) && !/impresora|printer/.test(n))                        return 'resinas';
+  // 1. Path de URL es la señal más confiable (viene del scraper)
+  if (/impresora.*resina|resina.*impresora|resin.*printer/i.test(p)) return 'impresoras-resina';
+  if (/impresora|printer|impresion-3d|impresoras-3d|impresoras-fdm/i.test(p) && !/resina|resin/i.test(p)) return 'impresoras-fdm';
+  if (/resina|resin/i.test(p) && !/impresora|printer/i.test(p)) return 'resinas';
+  if (/filament/i.test(p)) {
+    // Sub-categoría por nombre
+    if (/\bpetg\b/i.test(n)) return 'filamentos-petg';
+    if (/\babs\b|\basa\b/i.test(n)) return 'filamentos-abs';
+    if (/\btpu\b|\btpe\b|flexible/i.test(n)) return 'filamentos-tpu';
+    if (/nylon|\bpa\b|\bpa12\b|\bpa6\b|\bpc\b|policarbonato|fibra.*(carbono|vidrio)|-cf\b/i.test(n)) return 'filamentos-especiales';
+    return 'filamentos-pla';
+  }
+  if (/repuesto|accesorio|spare|upgrade|hotend|nozzle|extrusor/i.test(p)) return 'repuestos';
 
-  // Filamentos por material
-  if (/\bpetg\b/.test(n))                                return 'filamentos-petg';
-  if (/\babs\b/.test(n))                                 return 'filamentos-abs';
-  if (/\btpu\b|\btpe\b|flexible/.test(n))                return 'filamentos-tpu';
-  if (/\basa\b/.test(n))                                 return 'filamentos-abs';
-  if (/nylon|\bpa\b|\bpa12\b|\bpa6\b/.test(n))          return 'filamentos-especiales';
-  if (/\bpc\b|policarbonato/.test(n))                    return 'filamentos-especiales';
-  if (/fibra.*(carbono|vidrio|carbon)|composite|-cf\b/.test(n)) return 'filamentos-especiales';
-  if (/\bpla\b|poliláctico/.test(n))                    return 'filamentos-pla';
+  // 2. Nombre del producto — modelos conocidos de impresoras FDM
+  if (/ender|neptune|kobra|aquila|voxelab|adventurer|flashforge|prusa|voron|bambu.*(a1|p1|x1)|elegoo.*(neptune|centauri)/i.test(n)) return 'impresoras-fdm';
+  // Modelos conocidos de impresoras resina
+  if (/saturn|mars|photon|halot|mono|sonic|phrozen|anycubic.*m5|elegoo.*saturn/i.test(n)) return 'impresoras-resina';
 
-  // Por path de URL
-  if (/filamento/i.test(path))  return 'filamentos-pla';
-  if (/impresora/i.test(path))  return 'impresoras-fdm';
-  if (/resina/i.test(path))     return 'resinas';
-  if (/repuesto/i.test(path))   return 'repuestos';
+  // 3. Palabras clave en nombre
+  if (/impresora|printer|fdm|fused/i.test(n) && !/resina|resin|sla|msla|dlp/i.test(n)) return 'impresoras-fdm';
+  if (/impresora|printer/i.test(n) && /resina|resin|sla|msla|dlp/i.test(n)) return 'impresoras-resina';
+  if (/\bresina\b|\bresin\b/i.test(n) && !/impresora|printer/i.test(n)) return 'resinas';
+
+  // 4. Sub-categorías de filamento por nombre
+  if (/\bpetg\b/i.test(n)) return 'filamentos-petg';
+  if (/\babs\b|\basa\b/i.test(n)) return 'filamentos-abs';
+  if (/\btpu\b|\btpe\b|flexible/i.test(n)) return 'filamentos-tpu';
+  if (/nylon|\bpa\b|\bpa12\b|\bpa6\b|\bpc\b|policarbonato|fibra.*(carbono|vidrio)|-cf\b/i.test(n)) return 'filamentos-especiales';
+  if (/\bpla\b|poliláctico/i.test(n)) return 'filamentos-pla';
+  if (/filamento|filament/i.test(n)) return 'filamentos-pla';
+
+  // 5. Repuestos / accesorios por nombre
+  if (/nozzle|hotend|extrusor|bowden|ptfe|ventilador|motor.nema|resorte|rodamiento|cama|bed|placa|rail|belt|correa|upgrade/i.test(n)) return 'repuestos';
 
   return 'general';
 }

@@ -37,15 +37,24 @@ export async function saveResults(
       const productRef  = db.collection('products').doc(productSlug);
       const productSnap = await productRef.get();
 
-      // ── 1. Crear producto si no existe ──────────────────────────
+      // Limpiar nombre duplicado (algunos WooCommerce repiten el texto)
+      const cleanName = result.productName.length > 10
+        ? result.productName.slice(0, Math.ceil(result.productName.length / 2)) === result.productName.slice(Math.ceil(result.productName.length / 2))
+          ? result.productName.slice(0, Math.ceil(result.productName.length / 2)).trim()
+          : result.productName
+        : result.productName;
+
       const validImageUrl = result.imageUrl && !result.imageUrl.startsWith('data:') ? result.imageUrl : null;
+      const newCategory   = result.categorySlug ?? 'general';
+
+      // ── 1. Crear producto si no existe ──────────────────────────
       if (!productSnap.exists) {
         await productRef.set({
           id:          productSlug,
           slug:        productSlug,
-          name:        result.productName,
+          name:        cleanName,
           brand:       result.brand ?? '',
-          categoryId:  result.categorySlug ?? 'general',
+          categoryId:  newCategory,
           description: '',
           images:      validImageUrl ? [validImageUrl] : [],
           specs:       result.specs ?? {},
@@ -55,13 +64,16 @@ export async function saveResults(
           createdAt:   Timestamp.now(),
           updatedAt:   Timestamp.now(),
         });
-      } else if (validImageUrl) {
-        // Actualizar imagen si el producto existe pero no tiene imagen válida
-        const existingImages: string[] = productSnap.data()?.['images'] ?? [];
+      } else {
+        // Actualizar categoría si estaba en "general" y ahora tenemos una mejor
+        const existingCategory: string  = productSnap.data()?.['categoryId'] ?? 'general';
+        const existingImages: string[]  = productSnap.data()?.['images'] ?? [];
         const hasValidImage = existingImages.some(img => !img.startsWith('data:') && img.length > 0);
-        if (!hasValidImage) {
-          await productRef.update({ images: [validImageUrl] });
-        }
+
+        const updates: Record<string, unknown> = {};
+        if (existingCategory === 'general' && newCategory !== 'general') updates['categoryId'] = newCategory;
+        if (!hasValidImage && validImageUrl) updates['images'] = [validImageUrl];
+        if (Object.keys(updates).length > 0) await productRef.update(updates);
       }
 
       // ── 2. Upsert ProductEntry ──────────────────────────────────
