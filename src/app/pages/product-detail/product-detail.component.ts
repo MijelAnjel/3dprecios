@@ -119,6 +119,22 @@ export class ProductDetailComponent {
   });
 
   readonly minPrice    = computed(() => this.product()?.minPrice ?? 0);
+
+  /** Specs del producto con labels legibles desde el specFields de la categoría */
+  readonly specDisplayEntries = computed<Array<[string, string]>>(() => {
+    const specs = this.product()?.specs ?? {};
+    const fields = this.category()?.specFields ?? [];
+    const fieldMap = new Map(fields.map(f => [f.key, f]));
+    return Object.entries(specs)
+      .filter(([, v]) => v !== '' && v !== null && v !== undefined)
+      .map(([key, val]) => {
+        const field = fieldMap.get(key);
+        const label = field?.label ?? key;
+        const suffix = field?.unit ? ` ${field.unit}` : '';
+        return [label, `${val}${suffix}`] as [string, string];
+      });
+  });
+
   readonly specEntries = computed(() => Object.entries(this.product()?.specs ?? {}));
 
   readonly jsonLd = computed(() => {

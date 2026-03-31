@@ -62,9 +62,9 @@
 
         <p class="pd__description">{{ product()!.description }}</p>
 
-        @if (specEntries().length) {
+        @if (specDisplayEntries().length) {
           <dl class="pd__specs">
-            @for (spec of specEntries(); track spec[0]) {
+            @for (spec of specDisplayEntries(); track spec[0]) {
               <div class="pd__spec-row">
                 <dt class="pd__spec-key">{{ spec[0] }}</dt>
                 <dd class="pd__spec-val">{{ spec[1] }}</dd>

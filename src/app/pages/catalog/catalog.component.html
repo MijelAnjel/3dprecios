@@ -12,7 +12,7 @@
       (click)="toggleMobileFilters()"
     >
       <span aria-hidden="true">⚙</span> Filtros
-      @if (filters().priceMin || filters().priceMax) {
+      @if (hasActiveFilters()) {
         <span class="catalog__filter-badge" aria-label="Filtros activos">•</span>
       }
     </button>

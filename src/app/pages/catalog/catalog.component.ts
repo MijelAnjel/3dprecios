@@ -39,6 +39,11 @@ export class CatalogComponent {
   readonly filters = signal<ActiveFilters>({ priceMin: null, priceMax: null, specs: {} });
   readonly loading = signal(false);
 
+  readonly hasActiveFilters = computed(() => {
+    const { priceMin, priceMax, specs } = this.filters();
+    return priceMin !== null || priceMax !== null || Object.values(specs).some(Boolean);
+  });
+
   // Slug de la ruta como signal
   private readonly slug = toSignal(
     this.route.paramMap.pipe(map((p) => p.get('slug') ?? '')),
