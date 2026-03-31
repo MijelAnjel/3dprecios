@@ -1,20 +1,35 @@
 import { Injectable } from '@angular/core';
 import { Category, SpecField } from '../models';
 
-// Campos de spec compartidos para todos los filamentos
+// Marcas de filamento disponibles en Chile (fuente: tiendas monitoreadas + tiendasypaginas.md)
+const FILAMENT_BRANDS: string[] = [
+  // Globales dominantes
+  'Anycubic', 'Bambu Lab', 'Creality', 'eSUN', 'Elegoo', 'Sunlu',
+  // Alta gama y rendimiento
+  'AzureFilm', 'Fiberlogy', 'Flashforge', 'FormFutura', 'Hatchbox',
+  'Overture', 'Polymaker', 'Prusament',
+  // Especializadas e ingeniería
+  'Colorfabb', 'NinjaTek', 'Proto-Pasta', 'Smartfil', 'Spectrum', 'Taulman3D',
+  // Económicas y de batallas
+  'Anet', 'GeeeTech', 'Jayo', 'Kingroon', 'Voxelab', 'Zaxe',
+  // Regionales (Argentina/Chile)
+  'Grilon3', 'Printalot',
+];
+
+// Campos de spec compartidos para filamentos estándar (PLA, PETG, ABS, TPU)
 const FILAMENT_SPEC_FIELDS: SpecField[] = [
   {
     key: 'brand',
     label: 'Marca',
     type: 'select',
-    options: ['Bambu Lab', 'Creality', 'eSUN', 'Polymaker', 'Prusament', 'Sunlu', 'Fiberlogy', 'Overture', 'Zaxe'],
+    options: FILAMENT_BRANDS,
     filterable: true,
   },
   {
     key: 'material',
     label: 'Material',
     type: 'select',
-    options: ['PLA', 'PLA+', 'PLA Silk', 'PLA Matte', 'PLA HF', 'PLA-CF', 'PETG', 'ABS', 'ASA', 'TPU', 'TPE', 'Nylon', 'PC'],
+    options: ['PLA', 'PLA+', 'PLA Silk', 'PLA Matte', 'PLA HF', 'PLA-CF', 'PETG', 'PETG-CF', 'PETG-HF', 'ABS', 'ASA', 'ASA-CF', 'TPU', 'TPE', 'Nylon', 'Nylon-CF', 'PC', 'HIPS', 'PVA', 'PEEK', 'PEI'],
     filterable: true,
   },
   {
@@ -37,7 +52,7 @@ const FILAMENT_SPEC_FIELDS: SpecField[] = [
     key: 'color',
     label: 'Color',
     type: 'select',
-    options: ['Blanco', 'Negro', 'Gris', 'Rojo', 'Azul', 'Verde', 'Amarillo', 'Naranja', 'Morado', 'Rosa', 'Transparente', 'Café', 'Dorado', 'Plateado'],
+    options: ['Blanco', 'Negro', 'Gris', 'Rojo', 'Azul', 'Azul Oscuro', 'Celeste', 'Verde', 'Amarillo', 'Naranja', 'Morado', 'Rosa', 'Transparente', 'Marfil', 'Café', 'Dorado', 'Plateado'],
     filterable: true,
   },
 ];
@@ -90,7 +105,7 @@ const CATEGORIES: Category[] = [
         key: 'brand',
         label: 'Marca',
         type: 'select',
-        options: ['Bambu Lab', 'Creality', 'Prusa', 'Elegoo', 'Qidi', 'Flashforge', 'Artillery', 'Raise3D', 'Voxelab'],
+        options: ['Anet', 'AnkerMake', 'Anycubic', 'Artillery', 'Bambu Lab', 'Creality', 'Elegoo', 'Flashforge', 'Prusa', 'Qidi', 'Raise3D', 'Snapmaker', 'Voxelab'],
         filterable: true,
       },
     ],
@@ -105,7 +120,7 @@ const CATEGORIES: Category[] = [
         key: 'brand',
         label: 'Marca',
         type: 'select',
-        options: ['Elegoo', 'Anycubic', 'Phrozen', 'Creality', 'Graphy'],
+        options: ['Anycubic', 'Bambu Lab', 'Creality', 'Elegoo', 'Flashforge', 'Graphy', 'Phrozen', 'Shining 3D', 'Uniz'],
         filterable: true,
       },
     ],
@@ -120,14 +135,14 @@ const CATEGORIES: Category[] = [
         key: 'brand',
         label: 'Marca',
         type: 'select',
-        options: ['Elegoo', 'Anycubic', 'Phrozen', 'Creality', 'eSUN', 'Siraya Tech', 'Antinsky'],
+        options: ['Anycubic', 'Creality', 'eSUN', 'Elegoo', 'Graphy', 'Phrozen', 'Siraya Tech'],
         filterable: true,
       },
       {
         key: 'type',
         label: 'Tipo',
         type: 'select',
-        options: ['Estándar', 'ABS-Like', 'Water Washable', 'Alta Resolución', 'Especializada'],
+        options: ['Estándar', 'ABS-Like', 'Water Washable', 'Alta Resolución', 'Dental', 'Especializada'],
         filterable: true,
       },
       {
@@ -150,7 +165,67 @@ const CATEGORIES: Category[] = [
         key: 'brand',
         label: 'Marca compatible',
         type: 'select',
-        options: ['Bambu Lab', 'Creality', 'Prusa', 'Elegoo', 'Anycubic', 'Artillery'],
+        options: ['AnkerMake', 'Anet', 'Anycubic', 'Artillery', 'Bambu Lab', 'Capricorn', 'Creality', 'Elegoo', 'Fiberlogy', 'Flashforge', 'LuckyBot', 'Mosaic', 'Prusa', 'Siboor', 'Sunlu'],
+        filterable: true,
+      },
+    ],
+  },
+  {
+    id: 'accesorios',
+    slug: 'accesorios',
+    name: 'Accesorios 3D',
+    icon: '🛠️',
+    specFields: [
+      {
+        key: 'brand',
+        label: 'Marca compatible',
+        type: 'select',
+        options: ['Bambu Lab', 'Creality', 'Elegoo', 'Anycubic', 'Artillery', 'Flashforge', 'Prusa'],
+        filterable: true,
+      },
+    ],
+  },
+  {
+    id: 'secadores',
+    slug: 'secadores',
+    name: 'Secadores de Filamento',
+    icon: '🌡️',
+    specFields: [
+      {
+        key: 'brand',
+        label: 'Marca',
+        type: 'select',
+        options: ['Bambu Lab', 'Creality', 'eSUN', 'Polymaker', 'Sovol', 'Sunlu'],
+        filterable: true,
+      },
+    ],
+  },
+  {
+    id: 'scanner-3d',
+    slug: 'scanner-3d',
+    name: 'Scanners 3D',
+    icon: '📡',
+    specFields: [
+      {
+        key: 'brand',
+        label: 'Marca',
+        type: 'select',
+        options: ['Bambu Lab', 'Creality', 'Revopoint', 'Shining 3D'],
+        filterable: true,
+      },
+    ],
+  },
+  {
+    id: 'lapices-3d',
+    slug: 'lapices-3d',
+    name: 'Lápices 3D',
+    icon: '✏️',
+    specFields: [
+      {
+        key: 'brand',
+        label: 'Marca',
+        type: 'select',
+        options: ['3Doodler', 'MYNT3D', 'Scribbler'],
         filterable: true,
       },
     ],

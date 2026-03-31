@@ -30,9 +30,10 @@
 **3DPrecios** automatiza la comparación de precios de productos de impresión 3D vendidos en tiendas chilenas. El sistema:
 
 1. **Scrapers** corren cada 6 horas en GitHub Actions y visitan cada tienda
-2. Los productos y precios se guardan en **Firestore**
-3. El sitio **Angular SSR** los muestra con comparativas en tiempo real
-4. El usuario ve el precio mínimo de cada producto y puede comparar tienda por tienda
+2. Los productos y precios se guardan en **Firestore** (escritura Admin SDK únicamente)
+3. Tras cada scrape, `export.ts` genera `src/assets/catalog.json` — un snapshot estático del catálogo completo
+4. El sitio **Angular SSR** lee `catalog.json` una sola vez vía HTTP (cacheado en localStorage 30 min)
+5. **0 lecturas Firestore** desde el navegador del usuario — todo opera sobre datos en memoria
 
 Funcionalidades actuales:
 - Navegación por **8 categorías** (filamentos por material, impresoras FDM/resina, resinas, repuestos)
@@ -47,20 +48,54 @@ Funcionalidades actuales:
 
 ## 2. Zero-Cost Architecture
 
-El proyecto corre completamente **gratis** usando los tiers gratuitos de cada servicio:
+El proyecto corre completamente **gratis** usando los tiers gratuitos de cada servicio.
+
+### Flujo de datos
+
+```
+GitHub Actions (cron cada 6h)
+    │
+    ├── scraper/src/run.ts  →  cada tienda
+    │       ↓ Admin SDK (escritura)
+    │   Firestore (~1.600 lecturas Admin SDK por scrape)
+    │       ↓ Admin SDK (lectura única post-scrape)
+    └── scraper/src/export.ts  →  src/assets/catalog.json
+                                        ↓ git commit + push
+                                  Firebase Hosting / CDN
+                                        ↓ HTTP GET (1x por sesión)
+                                  CatalogService (Angular)
+                                        ↓ in-memory, 0 Firestore
+                              ProductService / PriceService / StoreService
+                                        ↓
+                                  Usuario (0 lecturas Firestore)
+```
+
+### Comparativa de coste
+
+| Métrica | Arquitectura anterior | Arquitectura actual |
+|---|---|---|
+| Lecturas Firestore por carga de página | ~400 | **0** |
+| Lecturas diarias (125 visitas) | 50.000 (cuota agotada) | **0** |
+| Lecturas Admin SDK por scrape | — | ~1.600 (1×/6h) |
+| Tamaño de catalog.json | — | ~150-200 KB |
+| Costo mensual extrapolado (10M users) | ~$208.800 | **~$1.200** |
+
+### Por qué funciona
+
+- **Firestore es write-only desde usuarios** — solo el scraper Admin SDK escribe
+- **`catalog.json` en CDN** — descargado en ~50 ms desde Firebase Hosting, cacheado en service worker NGSW
+- **localStorage 30 min TTL** — segunda carga es instantánea (0 red)
+- **Alertas de precio** — único camino donde el usuario escribe en Firestore (acción explícita)
+
+### Servicios de Firebase y sus límites gratuitos
 
 | Servicio | Uso | Tier gratuito |
 |---|---|---|
-| **Firebase Hosting** | Serve del sitio Angular SSR | 10 GB transfer/mes, 1 GB storage |
-| **Cloud Firestore** | Base de datos productos/precios | 1 GB datos, 50K reads/día, 20K writes/día |
+| **Firebase Hosting** | Serve del sitio + `catalog.json` | 10 GB transfer/mes, 1 GB storage |
+| **Cloud Firestore** | Escritura desde scraper; lectura solo Admin SDK | 1 GB datos, 50K reads/día, 20K writes/día |
 | **Firebase Auth** | Cuentas usuario (alertas futuras) | 10K users/mes |
 | **GitHub Actions** | Scraping cron + CI/CD | Ilimitado en repos públicos |
 | **Resend.com** | Emails de alertas de precio | 3.000 emails/mes |
-
-**Por qué no usar un backend tradicional:**
-- PostgreSQL + Redis + NestJS en un servidor = mínimo **$10-15/mes** permanentes
-- GitHub Actions + Firestore hacen exactamente lo mismo a **$0**
-- La única diferencia: no hay WebSockets ni lógica server-side al vuelo — no se necesitan para un comparador de precios
 
 ---
 
@@ -111,10 +146,11 @@ print3d-web/
 │       ├── core/
 │       │   ├── models/index.ts    ← interfaces TypeScript
 │       │   └── services/
+│       │       ├── catalog.service.ts    ← carga catalog.json, cache localStorage 30min
 │       │       ├── category.service.ts   ← categorías estáticas
-│       │       ├── store.service.ts      ← tiendas desde Firestore
-│       │       ├── product.service.ts    ← productos desde Firestore
-│       │       └── price.service.ts      ← entries e historial
+│       │       ├── store.service.ts      ← tiendas desde CatalogService (0 Firestore)
+│       │       ├── product.service.ts    ← productos desde CatalogService (0 Firestore)
+│       │       └── price.service.ts      ← entries e historial desde CatalogService
 │       ├── shared/
 │       │   ├── components/
 │       │   │   ├── header/
@@ -142,7 +178,8 @@ print3d-web/
 │   ├── check.ts                   ← herramienta de diagnóstico
 │   └── src/
 │       ├── models.ts              ← ScraperResult, StoreConfig, STORES[]
-│       ├── run.ts                 ← punto de entrada del scraper
+│       ├── run.ts                 ← punto de entrada del scraper; llama exportCatalog() al final
+│       ├── export.ts              ← Admin SDK lee Firestore y genera src/assets/catalog.json
 │       ├── firebase.ts            ← lógica de upsert a Firestore
 │       └── utils.ts               ← fetchHtml, fetchJson, fetchWcStoreProducts,
 │           │                         parsePriceCLP, inferCategory, slugify,
@@ -178,9 +215,11 @@ print3d-web/
 
 ---
 
-## 5. Modelo de datos (Firestore)
+## 5. Modelo de datos
 
-### Estructura de colecciones
+### Firestore (write-only desde Admin SDK)
+
+Firestore ya no es leído por el frontend. Solo el scraper Admin SDK escribe en él, y `export.ts` lo lee una vez para generar `catalog.json`.
 
 ```
 /stores/{storeId}
@@ -191,7 +230,55 @@ print3d-web/
     /alerts/{alertId}
 ```
 
-### Interfaces TypeScript
+### catalog.json — formato de exportación
+
+Generado por `scraper/src/export.ts` y servido como asset estático desde CDN.
+
+```typescript
+interface CatalogData {
+  version:    number;           // incrementa con cada export
+  exportedAt: string;           // ISO timestamp del último scrape
+  stores:     CatalogStore[];
+  products:   CatalogProduct[];
+  entries:    Record<string, CatalogEntry[]>;    // productId → entries
+  history:    Record<string, CatalogHistoryPoint[]>; // productId → historial
+}
+
+interface CatalogStore {
+  id:       string;   // "imperio3d"
+  name:     string;   // "Imperio 3D"
+  logo:     string;
+  baseUrl:  string;
+  isActive: boolean;
+}
+
+interface CatalogProduct {
+  id:          string;  // slug del producto (PK)
+  name:        string;
+  category:    string;  // slugs de categoría
+  minPrice:    number;
+  maxPrice:    number;
+  storeCount:  number;
+  imageUrl:    string;
+  specs:       Record<string, string | number>;
+}
+
+interface CatalogEntry {
+  storeId:     string;
+  price:       number;
+  stock:       'available' | 'out';
+  url:         string;
+  lastChecked: string;  // ISO timestamp
+}
+
+interface CatalogHistoryPoint {
+  storeId: string;
+  price:   number;
+  date:    string;  // ISO timestamp
+}
+```
+
+### Interfaces Firestore (solo para el scraper)
 
 ```typescript
 // Tienda registrada
@@ -655,22 +742,33 @@ Para una solución completa se requeriría matching por embedding (NLP) — fuer
 ### Servicios de datos
 
 ```typescript
-// CategoryService — datos estáticos, sin Firestore
-readonly categories = CATEGORIES; // array estático
+// CatalogService — núcleo Zero Cost (catalog.json, cache localStorage 30min)
+// Todos los demás servicios dependen de este
+readonly catalog: Signal<CatalogData | null>;
+getProducts(): CatalogProduct[]
+getEntries(productId: string): CatalogEntry[]
+getHistory(productId: string): CatalogHistoryPoint[]
+getStores(): CatalogStore[]
 
-// StoreService — signal actualizado desde Firestore
-readonly stores = signal<Store[]>([]);
-// Se carga una vez en el constructor vía collectionData()
+// CategoryService — datos estáticos, sin red
+readonly categories = CATEGORIES; // array en memoria
 
-// ProductService — observables (Firestore es reactivo)
-getByCategory(slug: string): Observable<Product[]>
-getBySlug(slug: string): Observable<Product | null>
-getTopProducts(limit: number): Observable<Product[]>
+// StoreService — lee CatalogService (0 Firestore)
+readonly stores: Signal<CatalogStore[]>;
 
-// PriceService — subcollecciones
-getEntries(productSlug: string): Observable<ProductEntry[]>
-getHistory(productSlug: string): Observable<PriceHistory[]>
+// ProductService — lee CatalogService (0 Firestore)
+getByCategory(slug: string): CatalogProduct[]
+getBySlug(slug: string): CatalogProduct | null
+getTopProducts(limit: number): CatalogProduct[]
+getSimilar(product: CatalogProduct, limit: number): CatalogProduct[]
+
+// PriceService — lee CatalogService (0 Firestore)
+getEntries(productSlug: string): CatalogEntry[]
+getHistory(productSlug: string): CatalogHistoryPoint[]
 ```
+
+> **Excepción:** `AlertFormComponent` escribe alertas de precio directamente en Firestore
+> via AngularFire — es la única operación Firestore iniciada por el usuario.
 
 ---
 
@@ -710,30 +808,47 @@ cd scraper
 # Requiere la variable de entorno del service account:
 $env:FIREBASE_SERVICE_ACCOUNT = Get-Content "dprecios-firebase-adminsdk-fbsvc-5fc52d6967.json" -Raw
 
-# Solo diagnóstico (sin modificar datos)
+# Solo diagnóstico — lee SOLO la colección products (~396 lecturas)
 npx ts-node check.ts
 
-# Borrar entries de tiendas sin scraper real (falabella, ripley, paris, sodimac)
-npx ts-node check.ts --clean
+# Diagnóstico extendido + desglose por tienda (lee collectionGroup entries)
+npx ts-node check.ts --verbose
 
-# Re-categorizar todos los productos existentes con el inferCategory actualizado
+# Generar catalog.json manualmente sin correr el scraper completo
+npx ts-node check.ts --export
+
+# Ver qué productos tienen slug duplicado sin modificar nada
+npx ts-node check.ts --fix-dupes --dry-run
+
+# Migrar productos con slug duplicado (añade sufijo -[storeId] al slug antiguo)
+npx ts-node check.ts --fix-dupes
+
+# Re-categorizar todos los productos con el inferCategory actualizado
 npx ts-node check.ts --recategorize
+
+# Borrar entries de tiendas sin scraper real (falabella, ripley, etc.)
+npx ts-node check.ts --clean
 ```
 
-**Salida de diagnóstico:**
+**Salida de diagnóstico básico (`check.ts`):**
 ```
-=== PRODUCTOS POR TIENDA ===
-  imperio3d: 305 productos | URL ejemplo: https://imperio3d.com/producto/xyz
-  todotoner:  63 productos | URL ejemplo: https://www.todotoner.cl/todo-3d/...
-
 === PRODUCTOS POR CATEGORÍA ===
-  repuestos:           184
-  impresoras-fdm:       86
-  filamentos-pla:       80
+  repuestos:           228
+  filamentos-pla:       74
+  impresoras-fdm:       45
   ...
+  TOTAL: 396
 
 === PRODUCTOS SIN ENTRIES ACTIVAS ===
   Ninguno (todo limpio)
+```
+
+**`--verbose` añade:**
+```
+=== PRODUCTOS POR TIENDA ===
+  imperio3d: 305 productos
+  makerschile: 147 productos
+  ...
 ```
 
 ### Scraper local de una tienda específica
@@ -832,13 +947,21 @@ Si responde JSON → usar WC Store API.
 
 ## 15. Pendientes y roadmap
 
+### Bloqueado (Firestore quota — corre cuando se restablezca a medianoche PT)
+
+| Tarea | Comando |
+|---|---|
+| **Poblar catalog.json** con datos reales | `cd scraper && npx ts-node check.ts --export` |
+| **Migrar slugs duplicados** (ej. Bambu Lab eje X) | `npx ts-node check.ts --fix-dupes` |
+| **Re-scrape tiendas WC API** (datos actualizados) | `npx ts-node src/run.ts --store=makerschile` (y horus3d, evstore, capital3d) |
+
 ### Alta prioridad
 
 | Tarea | Descripción |
 |---|---|
-| **make3d.ts completo** | Scraper via sitemap + 58 peticiones individuales a páginas de producto con JSON-LD |
-| **pcfactory.ts** | JS-rendered; buscar si tiene API interna capturada en DevTools > Network |
-| **Paginación virtual** | Con +1000 productos la categoría se carga completa en memoria — implementar cursor-based pagination |
+| **make3d.ts completo** | Scraper via sitemap + 58 peticiones individuales con JSON-LD |
+| **pcfactory.ts** | JS-rendered; buscar si tiene API interna en DevTools > Network |
+| **Paginación virtual** | Con +1000 productos la categoría se carga completa en memoria — cursor-based pagination |
 | **URL params en filtros** | Los filtros seleccionados no se reflejan en la URL — imposible compartir búsquedas |
 
 ### Media prioridad
@@ -846,9 +969,7 @@ Si responde JSON → usar WC Store API.
 | Tarea | Descripción |
 |---|---|
 | **Sistema de alertas** | `AlertFormComponent` guardó el diseño pero falta Firebase Auth + Resend trigger |
-| **filamentos-tpu** | La categoría existe en `inferCategory` pero no está en `category.service.ts` — falta añadirla |
-| **filamentos-especiales** | Igual que TPU — falta añadirla |
-| **Sitemap dinámico** | Generar `sitemap.xml` desde el scraper con todos los productos y subirlo a Hosting |
+| **Sitemap dinámico** | Generar `sitemap.xml` desde `export.ts` con todos los slugs de productos |
 | **Más tiendas** | Investigar: 3DStore.cl, Filamento.cl, AHI 3D |
 
 ### Baja prioridad / futuro
@@ -858,6 +979,5 @@ Si responde JSON → usar WC Store API.
 | **Comparador lado a lado** | Seleccionar 2-3 productos y comparar specs y precios en tabla |
 | **Exportar historial CSV** | Botón de descarga en la ficha de producto |
 | **Notificaciones push** | Web Push API para alertas sin email |
-| **Búsqueda full-text** | Actualmente solo filtra por categoría — añadir Algolia Free o búsqueda en Firestore |
+| **Búsqueda full-text** | Algolia Free o búsqueda sobre catalog.json en memoria |
 | **Panel admin** | UI para gestionar tiendas, productos y categorías manualmente |
-| **Lighthouse CI** | El workflow existe pero falla en GitHub Actions — corregir |

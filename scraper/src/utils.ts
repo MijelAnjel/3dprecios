@@ -222,6 +222,26 @@ export function inferCategory(name: string, path: string): string {
 
   if (isRepuesto) return 'repuestos';
 
+  // ── 1b. Secadores de filamento ─────────────────────────────────────────
+  // Antes de filamentos, para que "Secador de Filamento" no caiga en filamentos-pla
+  if (
+    /\bsecador\b.*filament|\bfilament.*secador\b/i.test(n) ||
+    /dry[\s-]?box|drybox\b|filament[\s-]?dryer|dryer.*filament/i.test(n) ||
+    /\bsunlu\s*s[12]\b|\bpolymaker\s*polydryer\b|\badu\b.*filament/i.test(n)
+  ) return 'secadores';
+
+  // ── 1c. Scanners 3D ────────────────────────────────────────────────────
+  if (
+    /scanner[\s-]?3d|esc[aá]ner[\s-]?3d|3d[\s-]?scanner/i.test(n) ||
+    /\brevopoint\b|\bshining[\s-]?3d\b.*scan|scan.*\bshining[\s-]?3d\b/i.test(n)
+  ) return 'scanner-3d';
+
+  // ── 1d. Lápices 3D ────────────────────────────────────────────────────
+  if (
+    /l[aá]piz[\s-]?3d|pen[\s-]?3d|3d[\s-]?pen\b/i.test(n) ||
+    /\b3doodler\b|\bmynt3d\b|\bscribbler\b/i.test(n)
+  ) return 'lapices-3d';
+
   // ── 1. Filamentos ──────────────────────────────────────────────────────
   const filamentByPath = /filament/i.test(p);
   // Un producto es filamento si su nombre contiene keywords de material
@@ -233,7 +253,7 @@ export function inferCategory(name: string, path: string): string {
     if (/\bpetg\b/i.test(n) || /petg/i.test(p))                   return 'filamentos-petg';
     if (/\babs\b|\basa\b/i.test(n) || /\babs\b|\basa\b/i.test(p)) return 'filamentos-abs';
     if (/\btpu\b|\btpe\b/i.test(n) || /tpu|tpe/i.test(p))         return 'filamentos-tpu';
-    if (/\bnylon\b|\bpa12\b|\bpa6\b|\bpa\b(?=[\s-]?\d)|policarbonato|\bpc\b|-cf\b|fibra[\s-]*(carbono|vidrio)/i.test(n))
+    if (/\bnylon\b|\bpa12\b|\bpa6\b|\bpa\b(?=[\s-]?\d)|policarbonato|\bpc\b(?![\s-]*factory)|-cf\b|fibra[\s-]*(carbono|vidrio)|\bhips\b|\bpva\b|\bpeek\b|\bpei\b|\bultem\b/i.test(n))
       return 'filamentos-especiales';
     return 'filamentos-pla';
   }
@@ -268,6 +288,14 @@ export function inferCategory(name: string, path: string): string {
   if (/repuesto|accesorio|spare|upgrade|hotend|nozzle|extrusor|accesorios/i.test(p)) return 'repuestos';
   if (/\bnozzle\b|\bhotend\b|\bextrusor\b|\bbowden\b|\bptfe\b|motor\s*nema|\brodamiento\b|cama\s*caliente|rail/i.test(n)) return 'repuestos';
 
+  // ── 6. Accesorios generales ─────────────────────────────────────────────
+  if (
+    /\benclosure\b|\bcubierta\s*impresora\b|\bcaja\s*impresora\b/i.test(n) ||
+    /\bglue\s*stick\b|\bpegamento.*impr|\bspray.*impr|\badhesivo.*impr/i.test(n) ||
+    /\bsuperficie\s*de\s*impresi[oó]n\b|\bbuild\s*surface\b|\balfombrilla\s*magn/i.test(n) ||
+    /\bcapricorn\b|\bptfe\s*tube\b|\btube\s*ptfe\b/i.test(n)
+  ) return 'accesorios';
+
   return 'general';
 }
 
@@ -278,22 +306,44 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
 
   // ── Marcas por categoría ───────────────────────────────────────────────
   const FILAMENT_BRANDS: [RegExp, string][] = [
+    // Globales dominantes
     [/bambu\.?lab\b/i, 'Bambu Lab'],
     [/\bcreality\b/i, 'Creality'],
+    [/\besun\b|\be-sun\b/i, 'eSUN'],
+    [/\belegoo\b/i, 'Elegoo'],
+    [/\bsunlu\b/i, 'Sunlu'],
+    [/\banycubic\b/i, 'Anycubic'],
+    // Alta gama y rendimiento
     [/\bpolymaker\b/i, 'Polymaker'],
     [/\bprusament\b|\bprusa\b.*filament/i, 'Prusament'],
-    [/\besun\b|\be-sun\b/i, 'eSUN'],
-    [/\bsunlu\b/i, 'Sunlu'],
+    [/\bflashforge\b/i, 'Flashforge'],
+    [/\bformfutura\b|\bforma\s*futura\b/i, 'FormFutura'],
     [/\bfiberlogy\b/i, 'Fiberlogy'],
     [/\bhatchbox\b/i, 'Hatchbox'],
-    [/\bzaxe\b/i, 'Zaxe'],
-    [/\beleego\b|\belegoo\b/i, 'Elegoo'],
-    [/\bantinsky\b/i, 'Antinsky'],
-    [/\b3dl[aá]c\b|3d\s*lac/i, '3DLac'],
     [/\boverture\b/i, 'Overture'],
+    [/\bazure[\s-]?film\b/i, 'AzureFilm'],
+    // Especializadas
+    [/\bspectrum\b(?:\s*filament)?\b/i, 'Spectrum'],
+    [/\bcolorfabb\b/i, 'Colorfabb'],
+    [/\bninjaflex\b|\bninjatec\b|\bninjatk\b/i, 'NinjaTek'],
+    [/\bproto[\s-]?pasta\b|\bprotopasta\b/i, 'Proto-Pasta'],
+    [/\bsmartfil\b|\bsmart\s*materials\b/i, 'Smartfil'],
+    [/\btaulman\b/i, 'Taulman3D'],
+    // Económicas
+    [/\bjayo\b/i, 'Jayo'],
+    [/\bkingroon\b/i, 'Kingroon'],
+    [/\bvoxelab\b/i, 'Voxelab'],
+    [/\bgeetech\b|\bgee\s*tech\b/i, 'GeeeTech'],
+    [/\banet\b/i, 'Anet'],
+    [/\bzaxe\b/i, 'Zaxe'],
+    // Regionales
+    [/\bgrilon3?\b|\bgrilon\s*3\b/i, 'Grilon3'],
+    [/\bprintalot\b/i, 'Printalot'],
+    // Otras
+    [/\b3dl[aá]c\b|3d\s*lac/i, '3DLac'],
     [/\braiser3d\b|\braise3d\b/i, 'Raise3D'],
     [/\bprimavalue\b|\bprima\s*value\b/i, 'PrimaValue'],
-    [/\bformfutura\b|\bforma\s*futura\b/i, 'FormFutura'],
+    [/\bantinsky\b/i, 'Antinsky'],
   ];
 
   const PRINTER_BRANDS: [RegExp, string][] = [
@@ -309,6 +359,11 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
     [/\bartillery\b/i, 'Artillery'],
     [/\braise3d\b/i, 'Raise3D'],
     [/\bgraphy\b/i, 'Graphy'],
+    [/\banet\b/i, 'Anet'],
+    [/\bankermake\b|\banker\s*make\b/i, 'AnkerMake'],
+    [/\bsnapmake[rr]?\b/i, 'Snapmaker'],
+    [/\bshining\s*3d\b/i, 'Shining 3D'],
+    [/\buniz\b/i, 'Uniz'],
   ];
 
   const RESIN_BRANDS: [RegExp, string][] = [
@@ -320,7 +375,9 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
     [/\bantinsky\b/i, 'Antinsky'],
     [/\bsiraya\b/i, 'Siraya Tech'],
     [/\bgraphy\b/i, 'Graphy'],
-    [/\bwashable\b/i, 'Generic'],
+    [/\bshining\s*3d\b/i, 'Shining 3D'],
+    [/\buniz\b/i, 'Uniz'],
+    [/\bflashforge\b/i, 'Flashforge'],
   ];
 
   // ── Filamentos ────────────────────────────────────────────────────────
@@ -331,20 +388,29 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
     }
 
     // Material específico
-    if (/\bpetg\b/i.test(name))                          specs['material'] = 'PETG';
-    else if (/\babs\b/i.test(name))                      specs['material'] = 'ABS';
-    else if (/\basa\b/i.test(name))                      specs['material'] = 'ASA';
-    else if (/\btpu\b/i.test(name))                      specs['material'] = 'TPU';
-    else if (/\btpe\b/i.test(name))                      specs['material'] = 'TPE';
-    else if (/\bnylon\b|\bpa\d/i.test(name))             specs['material'] = 'Nylon';
-    else if (/policarbonato|\bpc\b/i.test(name))         specs['material'] = 'PC';
+    if (/\bpetg[-\s]?cf\b|petg.*(?:carbono|carbon)\b/i.test(name))    specs['material'] = 'PETG-CF';
+    else if (/\bpetg[-\s]?hf\b|petg.*high[\s-]?speed/i.test(name))    specs['material'] = 'PETG-HF';
+    else if (/\bpetg\b/i.test(name))                                   specs['material'] = 'PETG';
+    else if (/\basa[-\s]?cf\b/i.test(name))                            specs['material'] = 'ASA-CF';
+    else if (/\basa\b/i.test(name))                                    specs['material'] = 'ASA';
+    else if (/\btpu\b/i.test(name))                                    specs['material'] = 'TPU';
+    else if (/\btpe\b/i.test(name))                                    specs['material'] = 'TPE';
+    else if (/\bnylon[-\s]?cf\b|pa.*(?:carbono|carbon)\b/i.test(name)) specs['material'] = 'Nylon-CF';
+    else if (/\bpa12\b/i.test(name))                                   specs['material'] = 'PA12';
+    else if (/\bnylon\b|\bpa[\s-]?\d/i.test(name))                    specs['material'] = 'Nylon';
+    else if (/policarbonato|\bpc\b(?![\s-]*factory)/i.test(name))     specs['material'] = 'PC';
+    else if (/\bhips\b/i.test(name))                                   specs['material'] = 'HIPS';
+    else if (/\bpva\b/i.test(name))                                    specs['material'] = 'PVA';
+    else if (/\bpeek\b/i.test(name))                                   specs['material'] = 'PEEK';
+    else if (/\bpei\b|\bultem\b/i.test(name))                         specs['material'] = 'PEI';
+    else if (/\babs\b/i.test(name))                                    specs['material'] = 'ABS';
     else if (/\bpla\b/i.test(name)) {
-      if (/-cf\b|carbono/i.test(name))                   specs['material'] = 'PLA-CF';
-      else if (/\bsilk\b|\bseda\b/i.test(name))         specs['material'] = 'PLA Silk';
-      else if (/\bmatte\b|\bmate\b/i.test(name))        specs['material'] = 'PLA Matte';
-      else if (/high.?speed|\bhs\b/i.test(name))        specs['material'] = 'PLA HF';
-      else if (/\bplus\b|\+/i.test(name))               specs['material'] = 'PLA+';
-      else                                                specs['material'] = 'PLA';
+      if (/-cf\b|carbono/i.test(name))                                 specs['material'] = 'PLA-CF';
+      else if (/\bsilk\b|\bseda\b/i.test(name))                       specs['material'] = 'PLA Silk';
+      else if (/\bmatte\b|\bmate\b/i.test(name))                      specs['material'] = 'PLA Matte';
+      else if (/high.?speed|\bhs\b/i.test(name))                      specs['material'] = 'PLA HF';
+      else if (/\bplus\b|\+/i.test(name))                             specs['material'] = 'PLA+';
+      else                                                              specs['material'] = 'PLA';
     }
 
     // Diámetro

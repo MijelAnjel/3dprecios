@@ -37,6 +37,12 @@ export const routes: Routes = [
       import('./pages/store/store.component').then((m) => m.StoreComponent),
   },
   {
+    path: 'recursos',
+    loadComponent: () =>
+      import('./pages/recursos/recursos.component').then((m) => m.RecursosComponent),
+    title: 'Recursos 3D — Descargas y Herramientas — 3DPrecios',
+  },
+  {
     path: 'privacidad',
     loadComponent: () =>
       import('./pages/legal/privacy/privacy.component').then((m) => m.PrivacyComponent),

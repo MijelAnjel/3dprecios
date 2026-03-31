@@ -9,15 +9,17 @@ Repositorio: **https://github.com/MijelAnjel/3dprecios**
 
 ```
 Scrapers (GitHub Actions)
-    ↓  cada 6 horas
-Firestore (base de datos)
-    ↓  en tiempo real
-Angular SSR (Firebase Hosting)
-    ↓
+    ↓  cada 6 horas — Admin SDK escribe en Firestore
+Firestore (solo escritura desde scraper)
+    ↓  Admin SDK lee una vez al terminar el scrape
+export.ts → src/assets/catalog.json
+    ↓  git commit + push → Firebase Hosting CDN
 dprecios.web.app
+    ↓  HTTP GET catalog.json (1× por sesión, cache localStorage 30min)
+Angular (in-memory, 0 lecturas Firestore)
 ```
 
-El scraper visita cada tienda, extrae productos y precios, y los guarda en Firestore. El sitio Angular los muestra automáticamente sin necesidad de redeploy.
+El scraper visita cada tienda, extrae productos y precios, los guarda en Firestore, y luego genera `catalog.json` — un snapshot estático del catálogo completo que el sitio sirve desde CDN. El navegador del usuario **nunca lee Firestore directamente**.
 
 ---
 
@@ -26,7 +28,8 @@ El scraper visita cada tienda, extrae productos y precios, y los guarda en Fires
 1. Ir a: https://github.com/MijelAnjel/3dprecios/actions/workflows/scrape.yml
 2. Clic en **"Run workflow"** → **"Run workflow"**
 3. Esperar ~20-30 minutos
-4. Refresh del sitio — aparecen los productos actualizados
+4. El workflow actualiza Firestore **y** regenera `catalog.json` automáticamente
+5. Refresh del sitio — aparecen los productos actualizados
 
 ### Scraper de una sola tienda (más rápido)
 
@@ -65,17 +68,36 @@ Para deployar manualmente:
 
 Las categorías son estáticas — están en `src/app/core/services/category.service.ts`. Para agregar una nueva categoría hay que editar ese archivo y hacer push.
 
-| Category ID       | Nombre             | Qué incluye                                      |
-|-------------------|--------------------|--------------------------------------------------|
-| filamentos-pla    | Filamentos PLA     | PLA, PLA+, PLA Silk, PLA Matte, etc.            |
-| filamentos-abs    | Filamentos ABS     | ABS, ABS+, ASA                                   |
-| filamentos-petg   | Filamentos PETG    | PETG, PETG-CF                                    |
-| impresoras-fdm    | Impresoras FDM     | Bambu, Creality, Prusa, Elegoo Aquila, etc.      |
-| impresoras-resina | Impresoras Resina  | Elegoo Saturn/Mars, Anycubic, Phrozen            |
-| resinas           | Resinas            | Resina estándar, ABS-like, 8K                    |
-| repuestos         | Repuestos          | Boquillas, hotends, camas, cinturones            |
-| herramientas      | Herramientas       | Espátulas, alicates, kits                        |
-| general           | General            | Todo lo que no califica en otra categoría        |
+| Category ID           | Nombre                  | Qué incluye                                      |
+|-----------------------|-------------------------|--------------------------------------------------|
+| filamentos-pla        | Filamentos PLA          | PLA, PLA+, PLA Silk, PLA Matte, etc.            |
+| filamentos-abs        | Filamentos ABS          | ABS, ABS+, ASA                                   |
+| filamentos-petg       | Filamentos PETG         | PETG, PETG-CF                                    |
+| filamentos-tpu        | Filamentos TPU/TPE      | TPU, TPE (flexibles)                             |
+| filamentos-especiales | Filamentos Especiales   | Nylon, PC, PA12, PA-CF, fibra de carbono         |
+| impresoras-fdm        | Impresoras FDM          | Bambu, Creality, Prusa, Elegoo Aquila, etc.      |
+| impresoras-resina     | Impresoras Resina       | Elegoo Saturn/Mars, Anycubic, Phrozen            |
+| resinas               | Resinas                 | Resina estándar, ABS-like, 8K                    |
+| repuestos             | Repuestos               | Boquillas, hotends, camas, cinturones            |
+| general               | General                 | Todo lo que no califica en otra categoría        |
+
+---
+
+## Regenerar catalog.json manualmente
+
+`catalog.json` se genera automáticamente al final de cada scrape. Si necesitas regenerarlo sin correr el scraper completo (por ejemplo, tras cambiar `inferCategory` o después de `--fix-dupes`):
+
+```powershell
+cd scraper
+$env:FIREBASE_SERVICE_ACCOUNT = Get-Content "dprecios-firebase-adminsdk-fbsvc-5fc52d6967.json" -Raw
+npx ts-node check.ts --export
+```
+
+Esto lee TODO Firestore via Admin SDK (~1.600 lecturas) y sobreescribe `src/assets/catalog.json`. Luego hacer `git commit + push` para que Firebase Hosting lo sirva.
+
+> **Nota:** El archivo resultante va a `src/assets/catalog.json` — no a `public/`. Angular Build lo copia a `dist/` automáticamente.
+
+---
 
 ### Categorías que faltan y se pueden agregar
 

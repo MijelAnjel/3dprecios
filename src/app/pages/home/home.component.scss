@@ -384,3 +384,100 @@
     outline-offset: 2px;
   }
 }
+
+// ── Recursos banner ──────────────────────────────
+.recursos-banner {
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-6;
+    background: linear-gradient(135deg, rgba($primary, 0.08) 0%, rgba($accent, 0.05) 100%);
+    border: 1px solid rgba($primary, 0.22);
+    border-radius: $border-radius-lg;
+    padding: $space-7 $space-8;
+    flex-wrap: wrap;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $space-3;
+    max-width: 480px;
+  }
+
+  &__tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px $space-3;
+    background: rgba($accent, 0.15);
+    border: 1px solid rgba($accent, 0.3);
+    border-radius: 100px;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-semibold;
+    color: $accent;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  &__title {
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-bold;
+    color: $text-primary;
+    margin: 0;
+    line-height: $line-height-tight;
+
+    @include md { font-size: $font-size-3xl; }
+  }
+
+  &__text {
+    font-size: $font-size-base;
+    color: $text-secondary;
+    line-height: $line-height-loose;
+    margin: 0;
+  }
+
+  &__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-2;
+    padding: $space-3 $space-6;
+    background: $primary;
+    color: white;
+    font-size: $font-size-base;
+    font-weight: $font-weight-semibold;
+    text-decoration: none;
+    border-radius: $border-radius;
+    transition: background $transition-fast, transform $transition-fast;
+    margin-top: $space-1;
+
+    &:hover {
+      background: $primary-dark;
+      transform: translateX(2px);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 2px;
+    }
+  }
+
+  &__pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-2;
+    list-style: none;
+    max-width: 300px;
+
+    li {
+      padding: $space-2 $space-3;
+      background: $bg-elevated;
+      border: 1px solid $border-color;
+      border-radius: $border-radius-sm;
+      font-size: $font-size-sm;
+      color: $text-muted;
+      white-space: nowrap;
+    }
+  }
+}

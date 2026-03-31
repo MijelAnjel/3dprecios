@@ -136,6 +136,41 @@
   <div class="section section--placeholder" aria-hidden="true" style="min-height:300px"></div>
 }
 
+<!-- ── Recursos 3D Banner ────────────────────────── -->
+@defer (on viewport) {
+  <section class="recursos-banner section" aria-labelledby="recursos-banner-heading">
+    <div class="container">
+      <div class="recursos-banner__card">
+        <div class="recursos-banner__content">
+          <span class="recursos-banner__tag">Nuevo</span>
+          <h2 id="recursos-banner-heading" class="recursos-banner__title">
+            ¿Buscas modelos 3D para imprimir?
+          </h2>
+          <p class="recursos-banner__text">
+            Más de 50 repositorios, buscadores de STL, herramientas de IA y recursos
+            educativos — todo organizado para la comunidad de impresión 3D en Chile.
+          </p>
+          <a class="recursos-banner__cta" routerLink="/recursos" aria-label="Ver directorio de recursos de impresión 3D">
+            Ver directorio de recursos →
+          </a>
+        </div>
+        <ul class="recursos-banner__pills" aria-hidden="true">
+          <li>Thingiverse</li>
+          <li>Printables</li>
+          <li>MakerWorld</li>
+          <li>Cults3D</li>
+          <li>Thangs</li>
+          <li>Meshy AI</li>
+          <li>GrabCAD</li>
+          <li>Smithsonian 3D</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+} @placeholder {
+  <div class="section section--placeholder" aria-hidden="true" style="min-height:180px"></div>
+}
+
 <!-- ── Tiendas participantes ─────────────────────── -->
 @defer (on viewport) {
   <section class="stores-section section" aria-labelledby="stores-heading">

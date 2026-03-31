@@ -7,21 +7,47 @@ import { ScraperResult, STORES } from './models';
 import { saveResults, syncStores, checkPriceAlerts } from './firebase';
 import { exportCatalog } from './export';
 // ── Tiendas especializadas ────────────────────────────────────
-import { scrapeHorus3d }      from './stores/horus3d';
-import { scrapeImperio3d }    from './stores/imperio3d';
-import { scrapeMakerschile }  from './stores/makerschile';
-import { scrapeEvstore }      from './stores/evstore';
-import { scrapeMake3d }       from './stores/make3d';
-import { scrapeMaxi3d }       from './stores/maxi3d';
-import { scrapeCapital3d }    from './stores/capital3d';
+import { scrapeHorus3d }          from './stores/horus3d';
+import { scrapeImperio3d }        from './stores/imperio3d';
+import { scrapeMakerschile }      from './stores/makerschile';
+import { scrapeEvstore }          from './stores/evstore';
+import { scrapeMake3d }           from './stores/make3d';
+import { scrapeMaxi3d }           from './stores/maxi3d';
+import { scrapeCapital3d }        from './stores/capital3d';
+import { scrape3dworks }          from './stores/3dworks';
+import { scrapeCimech3d }         from './stores/cimech3d';
+import { scrapeDream3d }          from './stores/dream3d';
+import { scrapeTriangulab }       from './stores/triangulab';
+import { scrapePrintalot }        from './stores/printalot';
+import { scrape3dinsumos }        from './stores/3dinsumos';
+import { scrapeNebula3d }         from './stores/nebula3d';
+import { scrapeRed3d }            from './stores/red3d';
+import { scrapeMundo3d }          from './stores/mundo3d';
+import { scrapeMekano3d }         from './stores/mekano3d';
+import { scrapeOpen3d }           from './stores/open3d';
+import { scrapeFilamento }        from './stores/filamento';
+import { scrapeCrealityChile }    from './stores/crealitychile';
+import { scrapeArtilleryChile }   from './stores/artillerychile';
+import { scrapeDeskfab }          from './stores/deskfab';
+import { scrapeImpakt }           from './stores/impakt';
+import { scrapeMakershop }        from './stores/makershop';
+import { scrapeFilamentosMaxi }   from './stores/filamentosmaxi';
+import { scrapeTodoTorner }       from './stores/todotorner';
+import { scrapeTresD }            from './stores/tresd';
+// ── Repuestos y electrónica ───────────────────────────────────
+import { scrapeAfel }             from './stores/afel';
+import { scrapeTecnosistec }      from './stores/tecnosistec';
+import { scrapeMciElectronics }   from './stores/mcielectronics';
+import { scrapeElectronicat }     from './stores/electronicat';
+import { scrapeEinsumos }         from './stores/einsumos';
 // ── Retail técnico ────────────────────────────────────────────
-import { scrapeTodotoner }    from './stores/todotoner';
-import { scrapePcfactory }    from './stores/pcfactory';
+import { scrapeTodotoner }        from './stores/todotoner';
+import { scrapePcfactory }        from './stores/pcfactory';
 // ── Retail general ────────────────────────────────────────────
-import { scrapeFalabella }    from './stores/falabella';
-import { scrapeSodimac }      from './stores/sodimac';
-import { scrapeParis }        from './stores/paris';
-import { scrapeRipley }       from './stores/ripley';
+import { scrapeFalabella }        from './stores/falabella';
+import { scrapeSodimac }          from './stores/sodimac';
+import { scrapeParis }            from './stores/paris';
+import { scrapeRipley }           from './stores/ripley';
 
 // ──────────────────────────────────────────────
 // Punto de entrada — 3DPrecios Scraper
@@ -31,21 +57,47 @@ type StoreScraperFn = typeof scrapeHorus3d;
 
 const STORE_SCRAPERS: Record<string, StoreScraperFn> = {
   // Especializadas
-  horus3d:      scrapeHorus3d,
-  imperio3d:    scrapeImperio3d,
-  makerschile:  scrapeMakerschile,
-  evstore:      scrapeEvstore,
-  make3d:       scrapeMake3d,
-  maxi3d:       scrapeMaxi3d,
-  capital3d:    scrapeCapital3d,
+  horus3d:          scrapeHorus3d,
+  imperio3d:        scrapeImperio3d,
+  makerschile:      scrapeMakerschile,
+  evstore:          scrapeEvstore,
+  make3d:           scrapeMake3d,
+  maxi3d:           scrapeMaxi3d,
+  capital3d:        scrapeCapital3d,
+  '3dworks':        scrape3dworks,
+  cimech3d:         scrapeCimech3d,
+  dream3d:          scrapeDream3d,
+  triangulab:       scrapeTriangulab,
+  printalot:        scrapePrintalot,
+  '3dinsumos':      scrape3dinsumos,
+  nebula3d:         scrapeNebula3d,
+  red3d:            scrapeRed3d,
+  mundo3d:          scrapeMundo3d,
+  mekano3d:         scrapeMekano3d,
+  open3d:           scrapeOpen3d,
+  filamento:        scrapeFilamento,
+  crealitychile:    scrapeCrealityChile,
+  artillerychile:   scrapeArtilleryChile,
+  deskfab:          scrapeDeskfab,
+  impakt:           scrapeImpakt,
+  makershop:        scrapeMakershop,
+  filamentosmaxi:   scrapeFilamentosMaxi,
+  todotorner:       scrapeTodoTorner,
+  tresd:            scrapeTresD,
+  // Repuestos y electrónica
+  afel:             scrapeAfel,
+  tecnosistec:      scrapeTecnosistec,
+  mcielectronics:   scrapeMciElectronics,
+  electronicat:     scrapeElectronicat,
+  einsumos:         scrapeEinsumos,
   // Retail técnico
-  todotoner:    scrapeTodotoner,
-  pcfactory:    scrapePcfactory,
+  todotoner:        scrapeTodotoner,
+  pcfactory:        scrapePcfactory,
   // Retail general
-  falabella:    scrapeFalabella,
-  sodimac:      scrapeSodimac,
-  paris:        scrapeParis,
-  ripley:       scrapeRipley,
+  falabella:        scrapeFalabella,
+  sodimac:          scrapeSodimac,
+  paris:            scrapeParis,
+  ripley:           scrapeRipley,
 };
 
 async function runAllScrapers(db: Firestore): Promise<ScraperResult[]> {

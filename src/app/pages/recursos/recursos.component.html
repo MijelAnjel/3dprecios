@@ -1,0 +1,48 @@
+<main class="recursos container" id="main-content">
+  <header class="recursos__header">
+    <h1 class="recursos__title">Recursos para Impresión 3D</h1>
+    <p class="recursos__sub">
+      Repositorios, buscadores y herramientas para encontrar y crear modelos 3D.
+      Desde gratuitos hasta plataformas premium.
+    </p>
+  </header>
+
+  <nav class="recursos__toc" aria-label="Ir a sección">
+    @for (cat of categories; track cat.id) {
+      <a class="recursos__toc-link" [attr.href]="'#' + cat.id">
+        <span aria-hidden="true">{{ cat.icon }}</span>
+        {{ cat.title }}
+      </a>
+    }
+  </nav>
+
+  @for (cat of categories; track cat.id) {
+    <section class="recursos__section" [id]="cat.id" [attr.aria-labelledby]="cat.id + '-heading'">
+      <header class="recursos__section-header">
+        <span class="recursos__section-icon" aria-hidden="true">{{ cat.icon }}</span>
+        <div>
+          <h2 class="recursos__section-title" [id]="cat.id + '-heading'">{{ cat.title }}</h2>
+          <p class="recursos__section-desc">{{ cat.description }}</p>
+        </div>
+      </header>
+
+      <ul class="recursos__grid" role="list">
+        @for (site of cat.sites; track site.url) {
+          <li>
+            <a
+              class="recursos__card"
+              [href]="site.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              [attr.aria-label]="site.name + ' — ' + site.description"
+            >
+              <span class="recursos__card-name">{{ site.name }}</span>
+              <span class="recursos__card-desc">{{ site.description }}</span>
+              <span class="recursos__card-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        }
+      </ul>
+    </section>
+  }
+</main>
