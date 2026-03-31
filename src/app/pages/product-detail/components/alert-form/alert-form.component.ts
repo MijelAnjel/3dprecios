@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, input, signal } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
 import { Firestore, collection, addDoc, Timestamp } from '@angular/fire/firestore';
-import { Auth, signInAnonymously } from '@angular/fire/auth';
 
 function minPriceValidator(minPrice: () => number) {
   return (control: AbstractControl): ValidationErrors | null => {
@@ -26,7 +25,6 @@ export class AlertFormComponent {
 
   private readonly fb        = inject(FormBuilder);
   private readonly firestore = inject(Firestore);
-  private readonly auth      = inject(Auth);
 
   readonly formState = signal<FormState>('idle');
 
@@ -48,10 +46,9 @@ export class AlertFormComponent {
     this.formState.set('submitting');
 
     try {
-      const cred = await signInAnonymously(this.auth);
       const alertsRef = collection(this.firestore, 'priceAlerts');
       await addDoc(alertsRef, {
-        userId:      cred.user.uid,
+        userId:      crypto.randomUUID(),
         productId:   this.productId(),
         targetPrice: this.priceControl.value!,
         email:       this.emailControl.value!.trim().toLowerCase(),
