@@ -1,5 +1,6 @@
 import { initializeApp, cert } from 'firebase-admin/app';
 import { getFirestore, Timestamp } from 'firebase-admin/firestore';
+import { inferCategory } from './src/utils';
 
 const sa = require('./dprecios-firebase-adminsdk-fbsvc-5fc52d6967.json');
 const app = initializeApp({ credential: cert(sa) });
@@ -114,11 +115,50 @@ async function cleanSeedEntries() {
   console.log(`Productos actualizados: ${updated} | Borrados: ${deleted}`);
 }
 
+async function recategorize() {
+  console.log('=== RE-CATEGORIZANDO PRODUCTOS CON inferCategory ACTUALIZADO ===');
+  const productsSnap = await db.collection('products').get();
+  let changed = 0;
+  let skipped = 0;
+
+  for (const productDoc of productsSnap.docs) {
+    const data      = productDoc.data();
+    const name: string = data['name'] ?? '';
+    const existing: string = data['categoryId'] ?? 'general';
+
+    // Obtener URL de la primera entry para tener el path
+    const entrySnap = await db
+      .collection('products').doc(productDoc.id)
+      .collection('entries')
+      .limit(1)
+      .get();
+    const entryUrl: string = entrySnap.docs[0]?.data()['url'] ?? '';
+
+    const newCat = inferCategory(name, entryUrl);
+
+    if (newCat !== 'general' && newCat !== existing) {
+      await productDoc.ref.update({ categoryId: newCat, updatedAt: Timestamp.now() });
+      console.log(`  [FIX] ${productDoc.id}: ${existing} → ${newCat}`);
+      changed++;
+    } else {
+      skipped++;
+    }
+  }
+
+  console.log(`\nProductos re-categorizados: ${changed} | Sin cambios: ${skipped}`);
+}
+
 async function main() {
-  const doClean = process.argv.includes('--clean');
+  const doClean       = process.argv.includes('--clean');
+  const doRecategorize = process.argv.includes('--recategorize');
+
   if (doClean) {
     await cleanSeedEntries();
     console.log('\n--- diagnóstico post-cleanup ---');
+  }
+  if (doRecategorize) {
+    await recategorize();
+    console.log('\n--- diagnóstico post-recategorización ---');
   }
   await diagnose();
   process.exit(0);

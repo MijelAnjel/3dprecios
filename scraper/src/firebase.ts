@@ -5,7 +5,7 @@ import {
   WriteBatch,
 } from 'firebase-admin/firestore';
 import { ScraperResult, STORES } from './models';
-import { slugify } from './utils';
+import { slugify, normalizeProductName } from './utils';
 
 // ─────────────────────────────────────────────────────────────
 // Firebase upsert — productos, entradas e historial de precios
@@ -33,16 +33,20 @@ export async function saveResults(
 
   for (const result of results) {
     try {
-      const productSlug = slugify(result.productName);
+      // Normalizar nombre antes de slugificar para mejorar matching entre tiendas.
+      // Ej: "Filamento PLA 1Kg - Blanco (Pack 2)" y "Filamento PLA 1KG Blanco"
+      // apuntan al mismo producto → mismo slug → se comparten en la comparativa.
+      const normalizedName = normalizeProductName(result.productName);
+      const productSlug = slugify(normalizedName);
       const productRef  = db.collection('products').doc(productSlug);
       const productSnap = await productRef.get();
 
       // Limpiar nombre duplicado (algunos WooCommerce repiten el texto)
-      const cleanName = result.productName.length > 10
-        ? result.productName.slice(0, Math.ceil(result.productName.length / 2)) === result.productName.slice(Math.ceil(result.productName.length / 2))
-          ? result.productName.slice(0, Math.ceil(result.productName.length / 2)).trim()
-          : result.productName
-        : result.productName;
+      const rawName = result.productName;
+      const halfLen = Math.ceil(rawName.length / 2);
+      const cleanName = rawName.length > 10 && rawName.slice(0, halfLen) === rawName.slice(halfLen)
+        ? rawName.slice(0, halfLen).trim()
+        : rawName;
 
       const validImageUrl = result.imageUrl && !result.imageUrl.startsWith('data:') ? result.imageUrl : null;
       const newCategory   = result.categorySlug ?? 'general';
@@ -65,13 +69,16 @@ export async function saveResults(
           updatedAt:   Timestamp.now(),
         });
       } else {
-        // Actualizar categoría si estaba en "general" y ahora tenemos una mejor
+        // Actualizar categoría si la nueva clasificación es más específica que la existente.
+        // "general" siempre se sobreescribe. Categorías equivocadas (ej. filamento en impresoras)
+        // se corrigen en cada re-scrape gracias al inferCategory mejorado.
         const existingCategory: string  = productSnap.data()?.['categoryId'] ?? 'general';
         const existingImages: string[]  = productSnap.data()?.['images'] ?? [];
         const hasValidImage = existingImages.some(img => !img.startsWith('data:') && img.length > 0);
 
         const updates: Record<string, unknown> = {};
-        if (existingCategory === 'general' && newCategory !== 'general') updates['categoryId'] = newCategory;
+        // Actualizar si: tenemos categoría concreta Y es distinta a la actual
+        if (newCategory !== 'general' && newCategory !== existingCategory) updates['categoryId'] = newCategory;
         if (!hasValidImage && validImageUrl) updates['images'] = [validImageUrl];
         if (Object.keys(updates).length > 0) await productRef.update(updates);
       }

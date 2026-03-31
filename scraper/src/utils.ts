@@ -137,46 +137,64 @@ export function inferStock(text: string): 'available' | 'low' | 'out' | 'unknown
   return 'unknown';
 }
 
-// ── Infer categorySlug from product name + URL path ───────────────────────
-// ── Infer categorySlug from product name + URL path ───────────────────────
+// ── Normaliza el nombre del producto para mejorar matching entre tiendas ──
+// Elimina ruido que varía entre tiendas pero no identifica el producto.
+export function normalizeProductName(name: string): string {
+  return name
+    // Quitar paréntesis de color/variante al final: "(Negro)", "(2 Pack)", etc.
+    .replace(/\s*\([^)]{0,30}\)\s*$/, '')
+    // Normalizar pesos: "1 Kg" "1KG" "1000 G" → tokens consistentes
+    .replace(/(\d)\s*kg\b/gi, '$1kg')
+    .replace(/(\d)\s*g\b(?!r)/gi, '$1g')
+    .replace(/(\d)\s*ml\b/gi, '$1ml')
+    // Quitar sufijos de marketing comunes
+    .replace(/\s*[-–|]\s*(importado|import|oferta|sale|nuevo|new|stock|disponible)[\w\s]*/gi, '')
+    // Compactar espacios
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// ── Infer categorySlug from product name + URL/category path ─────────────
+//
+// ORDEN CRÍTICO: filamentos PRIMERO que impresoras.
+// "Filamento FDM PLA 1.75mm" antes tenía bug: fdm → impresoras-fdm.
 export function inferCategory(name: string, path: string): string {
   const n = name.toLowerCase();
   const p = path.toLowerCase();
 
-  // 1. Path de URL es la señal más confiable (viene del scraper)
-  if (/impresora.*resina|resina.*impresora|resin.*printer/i.test(p)) return 'impresoras-resina';
-  if (/impresora|printer|impresion-3d|impresoras-3d|impresoras-fdm/i.test(p) && !/resina|resin/i.test(p)) return 'impresoras-fdm';
-  if (/resina|resin/i.test(p) && !/impresora|printer/i.test(p)) return 'resinas';
-  if (/filament/i.test(p)) {
-    // Sub-categoría por nombre
-    if (/\bpetg\b/i.test(n)) return 'filamentos-petg';
-    if (/\babs\b|\basa\b/i.test(n)) return 'filamentos-abs';
-    if (/\btpu\b|\btpe\b|flexible/i.test(n)) return 'filamentos-tpu';
-    if (/nylon|\bpa\b|\bpa12\b|\bpa6\b|\bpc\b|policarbonato|fibra.*(carbono|vidrio)|-cf\b/i.test(n)) return 'filamentos-especiales';
+  // ── 1. Detectar filamentos primero (por path Y por nombre) ────────────
+  // Un producto es filamento si su path/categoría menciona "filament" O si
+  // el nombre contiene keywords de material, SIN mención de "impresora/printer".
+  const filamentByPath = /filament/i.test(p);
+  const filamentByName = /\bpla\b|polil[aá]ctico|\bpetg\b|\babs\b(?!\s*pl)|\basa\b|\btpu\b|\btpe\b|flexible.*filament|filamento|filament|nylon.*filament/i.test(n);
+  const isPrinterName  = /impresora|printer/i.test(n);
+
+  if (filamentByPath || (filamentByName && !isPrinterName)) {
+    if (/\bpetg\b/i.test(n) || /petg/i.test(p))            return 'filamentos-petg';
+    if (/\babs\b|\basa\b/i.test(n) || /\babs\b|\basa\b/i.test(p)) return 'filamentos-abs';
+    if (/\btpu\b|\btpe\b/i.test(n) || /tpu|tpe/i.test(p))  return 'filamentos-tpu';
+    if (/nylon|\bpa12\b|\bpa6\b|policarbonato|-cf\b|fibra.*(carbono|vidrio)/i.test(n)) return 'filamentos-especiales';
     return 'filamentos-pla';
   }
-  if (/repuesto|accesorio|spare|upgrade|hotend|nozzle|extrusor/i.test(p)) return 'repuestos';
 
-  // 2. Nombre del producto — modelos conocidos de impresoras FDM
+  // ── 2. Resinas (líquidas para impresoras SLA/MSLA) ─────────────────────
+  if (/resina|resin/i.test(p) && !/impresora|printer/i.test(p)) return 'resinas';
+  if (/\bresina\b|\bresin\b/i.test(n) && !isPrinterName)         return 'resinas';
+
+  // ── 3. Impresoras resina ──────────────────────────────────────────────
+  if (/impresora.*resina|resina.*impresora|impresoras-resina|resin.*printer/i.test(p)) return 'impresoras-resina';
+  if (/saturn|mars|photon|halot|mono\s*x|sonic.*mini|phrozen|anycubic.*m[0-9]|elegoo.*saturn/i.test(n)) return 'impresoras-resina';
+  if (isPrinterName && /resina|resin|sla|msla|dlp/i.test(n)) return 'impresoras-resina';
+
+  // ── 4. Impresoras FDM ─────────────────────────────────────────────────
+  // OJO: NO incluir "fdm" solo — "Filamento FDM" es un filamento
+  if (/impresora|printer|impresion-3d|impresoras-3d|impresoras-fdm/i.test(p) && !/resina|resin/i.test(p)) return 'impresoras-fdm';
   if (/ender|neptune|kobra|aquila|voxelab|adventurer|flashforge|prusa|voron|bambu.*(a1|p1|x1)|elegoo.*(neptune|centauri)/i.test(n)) return 'impresoras-fdm';
-  // Modelos conocidos de impresoras resina
-  if (/saturn|mars|photon|halot|mono|sonic|phrozen|anycubic.*m5|elegoo.*saturn/i.test(n)) return 'impresoras-resina';
+  if (isPrinterName && !/resina|resin|sla|msla|dlp/i.test(n)) return 'impresoras-fdm';
 
-  // 3. Palabras clave en nombre
-  if (/impresora|printer|fdm|fused/i.test(n) && !/resina|resin|sla|msla|dlp/i.test(n)) return 'impresoras-fdm';
-  if (/impresora|printer/i.test(n) && /resina|resin|sla|msla|dlp/i.test(n)) return 'impresoras-resina';
-  if (/\bresina\b|\bresin\b/i.test(n) && !/impresora|printer/i.test(n)) return 'resinas';
-
-  // 4. Sub-categorías de filamento por nombre
-  if (/\bpetg\b/i.test(n)) return 'filamentos-petg';
-  if (/\babs\b|\basa\b/i.test(n)) return 'filamentos-abs';
-  if (/\btpu\b|\btpe\b|flexible/i.test(n)) return 'filamentos-tpu';
-  if (/nylon|\bpa\b|\bpa12\b|\bpa6\b|\bpc\b|policarbonato|fibra.*(carbono|vidrio)|-cf\b/i.test(n)) return 'filamentos-especiales';
-  if (/\bpla\b|poliláctico/i.test(n)) return 'filamentos-pla';
-  if (/filamento|filament/i.test(n)) return 'filamentos-pla';
-
-  // 5. Repuestos / accesorios por nombre
-  if (/nozzle|hotend|extrusor|bowden|ptfe|ventilador|motor.nema|resorte|rodamiento|cama|bed|placa|rail|belt|correa|upgrade/i.test(n)) return 'repuestos';
+  // ── 5. Repuestos & accesorios ─────────────────────────────────────────
+  if (/repuesto|accesorio|spare|upgrade|hotend|nozzle|extrusor|accesorios/i.test(p)) return 'repuestos';
+  if (/nozzle|hotend|extrusor|bowden|ptfe|ventilador|motor.?nema|rodamiento|cama caliente|placa.*calor|rail|correa de impresion/i.test(n)) return 'repuestos';
 
   return 'general';
 }
