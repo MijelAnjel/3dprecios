@@ -73,11 +73,8 @@ export class PriceChartComponent implements AfterViewInit, OnDestroy {
   readonly filteredHistory = computed(() => {
     const cutoff = Date.now() - this.selectedDays() * 24 * 60 * 60 * 1000;
     return this.history()
-      .filter(h => (h.recordedAt as unknown as { toMillis(): number }).toMillis() >= cutoff)
-      .sort((a, b) =>
-        (a.recordedAt as unknown as { toMillis(): number }).toMillis() -
-        (b.recordedAt as unknown as { toMillis(): number }).toMillis()
-      );
+      .filter(h => new Date(h.recordedAt).getTime() >= cutoff)
+      .sort((a, b) => new Date(a.recordedAt).getTime() - new Date(b.recordedAt).getTime());
   });
 
   setDays(d: DaysOption): void {
@@ -97,9 +94,7 @@ export class PriceChartComponent implements AfterViewInit, OnDestroy {
     const data = this.filteredHistory();
     if (data.length === 0) return;
 
-    const labels = data.map(h =>
-      new Date((h.recordedAt as unknown as { toMillis(): number }).toMillis())
-    );
+    const labels = data.map(h => new Date(h.recordedAt));
     const prices = data.map(h => h.price);
 
     const dataset: ChartDataset<'line'> = {

@@ -1,5 +1,3 @@
-import { Timestamp } from '@angular/fire/firestore';
-
 // ──────────────────────────────────────────────
 // Print3D Chile — Modelos TypeScript
 // ──────────────────────────────────────────────
@@ -12,7 +10,7 @@ export interface Store {
   logo: string;
   country: 'CL';
   shippingInfo?: string;
-  lastScraped: Timestamp;
+  lastScraped: string; // ISO date string
   isActive: boolean;
 }
 
@@ -45,8 +43,8 @@ export interface Product {
   minPrice: number;
   maxPrice: number;
   storeCount: number;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: string; // ISO date string
+  updatedAt: string; // ISO date string
 }
 
 export interface ProductEntry {
@@ -58,7 +56,7 @@ export interface ProductEntry {
   currency: 'CLP';
   stock: 'available' | 'low' | 'out' | 'unknown';
   sku?: string;
-  lastChecked: Timestamp;
+  lastChecked: string; // ISO date string
   isActive: boolean;
 }
 
@@ -66,7 +64,7 @@ export interface PriceHistory {
   productId: string;
   storeId: string;
   price: number;
-  recordedAt: Timestamp;
+  recordedAt: string; // ISO date string
 }
 
 export interface PriceAlert {
@@ -76,5 +74,41 @@ export interface PriceAlert {
   targetPrice: number;
   email: string;
   isActive: boolean;
-  createdAt: Timestamp;
+  createdAt: string; // ISO date string
+}
+
+// ─────────────────────────────────────────────
+// Catalog JSON — estructura del archivo estático
+// ─────────────────────────────────────────────
+
+/** Entrada de precio embebida dentro del catálogo estático. */
+export interface CatalogEntry {
+  storeId: string;
+  url: string;
+  price: number;
+  stock: 'available' | 'low' | 'out' | 'unknown';
+  sku?: string;
+}
+
+/** Punto de historial de precios embebido. */
+export interface CatalogHistoryPoint {
+  storeId: string;
+  price: number;
+  recordedAt: string; // ISO date string
+}
+
+/** Producto con entradas e historial embebidos (catalog.json). */
+export interface CatalogProduct extends Product {
+  entries: CatalogEntry[];
+  history: CatalogHistoryPoint[];
+}
+
+/** Estructura completa del archivo catalog.json. */
+export interface CatalogData {
+  meta: {
+    generatedAt: string;
+    productCount: number;
+  };
+  stores: Store[];
+  products: CatalogProduct[];
 }

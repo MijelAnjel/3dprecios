@@ -5,6 +5,7 @@ import { initializeApp, cert, App } from 'firebase-admin/app';
 import { getFirestore, Firestore } from 'firebase-admin/firestore';
 import { ScraperResult, STORES } from './models';
 import { saveResults, syncStores, checkPriceAlerts } from './firebase';
+import { exportCatalog } from './export';
 // ── Tiendas especializadas ────────────────────────────────────
 import { scrapeHorus3d }      from './stores/horus3d';
 import { scrapeImperio3d }    from './stores/imperio3d';
@@ -121,7 +122,10 @@ async function main(): Promise<void> {
     return slugify(r.productName) as string;
   }))];
   await checkPriceAlerts(db, changedProducts);
-
+  // ── Exportar catálogo estático — Zero Cost ─────────────────────────────────
+  // Genera src/assets/data/catalog.json con todos los productos + entries.
+  // El frontend Angular lee este archivo desde CDN (0 lecturas a Firestore).
+  await exportCatalog(db);
   console.log('\n[3DPrecios Scraper] ✓ Completado exitosamente.');
 }
 

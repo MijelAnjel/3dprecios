@@ -1,42 +1,58 @@
-import { Injectable, inject, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
-import {
-  Firestore,
-  collection,
-  collectionData,
-  doc,
-  query,
-  orderBy,
-} from '@angular/fire/firestore';
-import { Observable, of } from 'rxjs';
+import { Injectable, inject } from '@angular/core';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { ProductEntry, PriceHistory } from '../models';
+import { CatalogService } from './catalog.service';
 
 @Injectable({ providedIn: 'root' })
 export class PriceService {
-  private readonly firestore = inject(Firestore);
-  private readonly isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
+  private readonly catalog = inject(CatalogService);
 
-  /** Entradas de precio activas para un producto (subcollección `/products/{slug}/entries`). */
+  /**
+   * Entradas de precio para un producto.
+   * Embebidas en catalog.json — 0 lecturas a Firestore.
+   */
   getEntries(productSlug: string): Observable<ProductEntry[]> {
-    if (!this.isBrowser || !productSlug) return of([]);
-    return collectionData(
-      query(
-        collection(this.firestore, 'products', productSlug, 'entries'),
-        orderBy('price'),
-      ),
-      { idField: 'id' },
-    ) as Observable<ProductEntry[]>;
+    return this.catalog.load().pipe(
+      map(data => {
+        const product = data.products.find(p => p.slug === productSlug);
+        if (!product) return [];
+        return product.entries
+          .sort((a, b) => a.price - b.price)
+          .map((e): ProductEntry => ({
+            id:          `${e.storeId}_${productSlug}`,
+            productId:   productSlug,
+            storeId:     e.storeId,
+            url:         e.url,
+            price:       e.price,
+            currency:    'CLP',
+            stock:       e.stock,
+            sku:         e.sku,
+            lastChecked: '',
+            isActive:    true,
+          }));
+      }),
+    );
   }
 
-  /** Historial de precios para un producto (subcollección `/products/{slug}/history`). */
+  /**
+   * Historial de precios para un producto.
+   * Puntos de historial embebidos en catalog.json.
+   */
   getHistory(productSlug: string): Observable<PriceHistory[]> {
-    if (!this.isBrowser || !productSlug) return of([]);
-    return collectionData(
-      query(
-        collection(this.firestore, 'products', productSlug, 'history'),
-        orderBy('recordedAt'),
-      ),
-      { idField: 'id' },
-    ) as Observable<PriceHistory[]>;
+    return this.catalog.load().pipe(
+      map(data => {
+        const product = data.products.find(p => p.slug === productSlug);
+        if (!product) return [];
+        return product.history
+          .sort((a, b) => a.recordedAt.localeCompare(b.recordedAt))
+          .map((h): PriceHistory => ({
+            productId:  productSlug,
+            storeId:    h.storeId,
+            price:      h.price,
+            recordedAt: h.recordedAt,
+          }));
+      }),
+    );
   }
 }

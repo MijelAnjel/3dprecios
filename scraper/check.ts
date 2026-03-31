@@ -1,6 +1,7 @@
 import { initializeApp, cert } from 'firebase-admin/app';
 import { getFirestore, Timestamp } from 'firebase-admin/firestore';
 import { inferCategory, extractSpecs, normalizeProductName, slugify } from './src/utils';
+import { exportCatalog } from './src/export';
 
 const sa = require('./dprecios-firebase-adminsdk-fbsvc-5fc52d6967.json');
 const app = initializeApp({ credential: cert(sa) });
@@ -246,6 +247,7 @@ async function main() {
   const doClean        = process.argv.includes('--clean');
   const doRecategorize = process.argv.includes('--recategorize');
   const doFixDupes     = process.argv.includes('--fix-dupes');
+  const doExport       = process.argv.includes('--export');
   const dryRun         = process.argv.includes('--dry-run');
   const verbose        = process.argv.includes('--verbose');
 
@@ -260,6 +262,11 @@ async function main() {
   if (doRecategorize) {
     await recategorize();
     console.log('\n--- diagnóstico post-recategorización ---');
+  }
+  if (doExport) {
+    // Exporta catalog.json a src/assets/data/ sin diagnóstico extra.
+    await exportCatalog(db);
+    process.exit(0);
   }
   // diagnose() básico solo lee 'products' (396 reads).
   // Con --verbose también lee collectionGroup('entries') para desglose por tienda.
