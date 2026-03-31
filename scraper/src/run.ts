@@ -1,49 +1,50 @@
+import * as dns from 'dns';
+dns.setServers(['8.8.8.8', '8.8.4.4', '1.1.1.1']);
+
 import { initializeApp, cert, App } from 'firebase-admin/app';
 import { getFirestore, Firestore } from 'firebase-admin/firestore';
 import { ScraperResult, STORES } from './models';
 import { saveResults, syncStores, checkPriceAlerts } from './firebase';
-// ── Tiendas especializadas en impresión 3D ────────────────────
-import { scrapeImpresalta }    from './stores/impresalta';
-import { scrapeFormageo }      from './stores/formageo';
-import { scrapeTresD }         from './stores/tresd';
-import { scrapeAhi3d }         from './stores/ahi3d';
-import { scrapeFilamento }     from './stores/filamento';
-import { scrapeMakershop }     from './stores/makershop';
-import { scrapeImperio3d }     from './stores/imperio3d';
-import { scrapeImpakt }        from './stores/impakt';
-import { scrapeTodoTorner }    from './stores/todotorner';
-import { scrapeDeskfab }       from './stores/deskfab';
-import { scrapeFilamentosMaxi } from './stores/filamentosmaxi';
+// ── Tiendas especializadas ────────────────────────────────────
+import { scrapeHorus3d }      from './stores/horus3d';
+import { scrapeImperio3d }    from './stores/imperio3d';
+import { scrapeMakerschile }  from './stores/makerschile';
+import { scrapeEvstore }      from './stores/evstore';
+import { scrapeMake3d }       from './stores/make3d';
+import { scrapeMaxi3d }       from './stores/maxi3d';
+import { scrapeCapital3d }    from './stores/capital3d';
+// ── Retail técnico ────────────────────────────────────────────
+import { scrapeTodotoner }    from './stores/todotoner';
+import { scrapePcfactory }    from './stores/pcfactory';
 // ── Retail general ────────────────────────────────────────────
-import { scrapeFalabella }     from './stores/falabella';
-import { scrapeSodimac }       from './stores/sodimac';
-import { scrapeParis }         from './stores/paris';
-import { scrapeRipley }        from './stores/ripley';
+import { scrapeFalabella }    from './stores/falabella';
+import { scrapeSodimac }      from './stores/sodimac';
+import { scrapeParis }        from './stores/paris';
+import { scrapeRipley }       from './stores/ripley';
 
 // ──────────────────────────────────────────────
 // Punto de entrada — 3DPrecios Scraper
 // ──────────────────────────────────────────────
 
-type StoreScraperFn = typeof scrapeImpresalta;
+type StoreScraperFn = typeof scrapeHorus3d;
 
 const STORE_SCRAPERS: Record<string, StoreScraperFn> = {
   // Especializadas
-  impresalta:     scrapeImpresalta,
-  formageo:       scrapeFormageo,
-  tresd:          scrapeTresD,
-  ahi3d:          scrapeAhi3d,
-  filamento:      scrapeFilamento,
-  makershop:      scrapeMakershop,
-  imperio3d:      scrapeImperio3d,
-  impakt:         scrapeImpakt,
-  todotorner:     scrapeTodoTorner,
-  deskfab:        scrapeDeskfab,
-  filamentosmaxi: scrapeFilamentosMaxi,
-  // Retail
-  falabella:      scrapeFalabella,
-  sodimac:        scrapeSodimac,
-  paris:          scrapeParis,
-  ripley:         scrapeRipley,
+  horus3d:      scrapeHorus3d,
+  imperio3d:    scrapeImperio3d,
+  makerschile:  scrapeMakerschile,
+  evstore:      scrapeEvstore,
+  make3d:       scrapeMake3d,
+  maxi3d:       scrapeMaxi3d,
+  capital3d:    scrapeCapital3d,
+  // Retail técnico
+  todotoner:    scrapeTodotoner,
+  pcfactory:    scrapePcfactory,
+  // Retail general
+  falabella:    scrapeFalabella,
+  sodimac:      scrapeSodimac,
+  paris:        scrapeParis,
+  ripley:       scrapeRipley,
 };
 
 async function runAllScrapers(db: Firestore): Promise<ScraperResult[]> {

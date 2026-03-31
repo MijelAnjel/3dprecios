@@ -29,23 +29,23 @@ export interface StoreConfig {
 
 export const STORES: StoreConfig[] = [
   // ── Especializadas en impresión 3D ──────────────────────────────────────
-  { id: 'impresalta',     name: 'Impresalta',         slug: 'impresalta',     baseUrl: 'https://impresalta.cl',          logo: 'https://impresalta.cl/favicon.ico',          isActive: true  },
-  { id: 'formageo',       name: 'Formageo',            slug: 'formageo',       baseUrl: 'https://formageo.cl',            logo: 'https://formageo.cl/favicon.ico',            isActive: true  },
-  { id: 'tresd',          name: '3D Chile (TresD)',    slug: 'tresd',          baseUrl: 'https://3d.cl',                  logo: 'https://3d.cl/favicon.ico',                  isActive: true  },
-  { id: 'ahi3d',          name: 'AHI 3D',              slug: 'ahi3d',          baseUrl: 'https://ahi3d.cl',               logo: 'https://ahi3d.cl/favicon.ico',               isActive: true  },
-  { id: 'filamento',      name: 'Filamento.cl',        slug: 'filamento',      baseUrl: 'https://filamento.cl',           logo: 'https://filamento.cl/favicon.ico',           isActive: true  },
-  { id: '3dstore',        name: '3D Store Chile',      slug: '3dstore',        baseUrl: 'https://3dstore.cl',             logo: 'https://3dstore.cl/favicon.ico',             isActive: true  },
-  { id: 'makershop',      name: 'MakerShop',           slug: 'makershop',      baseUrl: 'https://makershop.cl',           logo: 'https://makershop.cl/favicon.ico',           isActive: true  },
+  { id: 'horus3d',        name: 'Horus3D',             slug: 'horus3d',        baseUrl: 'https://horus3d.cl',             logo: 'https://horus3d.cl/favicon.ico',             isActive: true  },
   { id: 'imperio3d',      name: 'Imperio 3D',          slug: 'imperio3d',      baseUrl: 'https://imperio3d.com',          logo: 'https://imperio3d.com/favicon.ico',          isActive: true  },
-  { id: 'impakt',         name: 'Impakt',               slug: 'impakt',         baseUrl: 'https://www.impakt.cl',          logo: 'https://www.impakt.cl/favicon.ico',          isActive: true  },
-  { id: 'todotorner',     name: 'Todo Torner',         slug: 'todotorner',     baseUrl: 'https://todotorner.cl',          logo: 'https://todotorner.cl/favicon.ico',          isActive: true  },
-  { id: 'deskfab',        name: 'DeskFab',              slug: 'deskfab',        baseUrl: 'https://deskfab.cl',             logo: 'https://deskfab.cl/favicon.ico',             isActive: true  },
-  { id: 'filamentosmaxi', name: 'Filamentos Maxi',     slug: 'filamentosmaxi', baseUrl: 'https://filamentosmaxi.cl',      logo: 'https://filamentosmaxi.cl/favicon.ico',      isActive: true  },
+  { id: 'makerschile',    name: 'Makers Chile',        slug: 'makerschile',    baseUrl: 'https://makerschile.cl',         logo: 'https://makerschile.cl/favicon.ico',         isActive: true  },
+  { id: 'evstore',        name: 'eVStore',             slug: 'evstore',        baseUrl: 'https://evstore.cl',             logo: 'https://evstore.cl/favicon.ico',             isActive: true  },
+  { id: 'make3d',         name: 'Make 3D',             slug: 'make3d',         baseUrl: 'https://www.make3d.cl',          logo: 'https://www.make3d.cl/favicon.ico',          isActive: true  },
+  { id: 'maxi3d',         name: 'Maxi3D',              slug: 'maxi3d',         baseUrl: 'https://www.maxi3d.cl',          logo: 'https://www.maxi3d.cl/favicon.ico',          isActive: true  },
+  { id: 'capital3d',      name: 'Capital 3D',          slug: 'capital3d',      baseUrl: 'https://capital3d.cl',           logo: 'https://capital3d.cl/favicon.ico',           isActive: true  },
+  // ── Retail técnico con sección 3D ────────────────────────────────────────
+  { id: 'todotoner',      name: 'TodoToner',           slug: 'todotoner',      baseUrl: 'https://www.todotoner.cl',       logo: 'https://www.todotoner.cl/favicon.ico',       isActive: true  },
+  { id: 'pcfactory',      name: 'PC Factory',          slug: 'pcfactory',      baseUrl: 'https://www.pcfactory.cl',       logo: 'https://www.pcfactory.cl/favicon.ico',       isActive: true  },
   // ── Retail general ───────────────────────────────────────────────────────
-  { id: 'falabella',      name: 'Falabella',            slug: 'falabella',      baseUrl: 'https://www.falabella.com',      logo: 'https://www.falabella.com/favicon.ico',      isActive: true  },
-  { id: 'sodimac',        name: 'Sodimac',              slug: 'sodimac',        baseUrl: 'https://www.sodimac.cl',         logo: 'https://www.sodimac.cl/favicon.ico',         isActive: true  },
-  { id: 'paris',          name: 'Paris',                slug: 'paris',          baseUrl: 'https://www.paris.cl',           logo: 'https://www.paris.cl/favicon.ico',           isActive: true  },
-  { id: 'ripley',         name: 'Ripley',               slug: 'ripley',         baseUrl: 'https://simple.ripley.cl',       logo: 'https://simple.ripley.cl/favicon.ico',       isActive: true  },
-  // ── Desactivadas / pendientes de integración ────────────────────────────
-  { id: 'mercadolibre',   name: 'Mercado Libre CL',    slug: 'mercadolibre',   baseUrl: 'https://listado.mercadolibre.cl', logo: 'https://http2.mlstatic.com/favicon.ico',    isActive: false },
+  { id: 'falabella',      name: 'Falabella',           slug: 'falabella',      baseUrl: 'https://www.falabella.com',      logo: 'https://www.falabella.com/favicon.ico',      isActive: true  },
+  { id: 'sodimac',        name: 'Sodimac',             slug: 'sodimac',        baseUrl: 'https://www.sodimac.cl',         logo: 'https://www.sodimac.cl/favicon.ico',         isActive: true  },
+  { id: 'paris',          name: 'Paris',               slug: 'paris',          baseUrl: 'https://www.paris.cl',           logo: 'https://www.paris.cl/favicon.ico',           isActive: true  },
+  { id: 'ripley',         name: 'Ripley',              slug: 'ripley',         baseUrl: 'https://simple.ripley.cl',       logo: 'https://simple.ripley.cl/favicon.ico',       isActive: true  },
+  { id: 'lider',          name: 'Lider',               slug: 'lider',          baseUrl: 'https://www.lider.cl',           logo: 'https://www.lider.cl/favicon.ico',           isActive: true  },
+  { id: 'easy',           name: 'Easy',                slug: 'easy',           baseUrl: 'https://www.easy.cl',            logo: 'https://www.easy.cl/favicon.ico',            isActive: true  },
+  // ── Pendientes de integración ────────────────────────────────────────────
+  { id: 'mercadolibre',   name: 'Mercado Libre CL',   slug: 'mercadolibre',   baseUrl: 'https://listado.mercadolibre.cl', logo: 'https://http2.mlstatic.com/favicon.ico',    isActive: false },
 ];

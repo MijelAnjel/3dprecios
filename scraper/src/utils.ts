@@ -136,3 +136,31 @@ export function inferStock(text: string): 'available' | 'low' | 'out' | 'unknown
   if (/disponible|en stock|add to cart|agregar/.test(t))       return 'available';
   return 'unknown';
 }
+
+// ── Infer categorySlug from product name + URL path ───────────────────────
+export function inferCategory(name: string, path: string): string {
+  const n = name.toLowerCase();
+
+  // Impresoras
+  if (/impresora|printer|fdm|fused/.test(n) && !/resina|resin|sla|msla|dlp/.test(n)) return 'impresoras-fdm';
+  if (/impresora|printer/.test(n) && /resina|resin|sla|msla|dlp/.test(n))            return 'impresoras-resina';
+  if (/resina|resin/.test(n) && !/impresora|printer/.test(n))                        return 'resinas';
+
+  // Filamentos por material
+  if (/\bpetg\b/.test(n))                                return 'filamentos-petg';
+  if (/\babs\b/.test(n))                                 return 'filamentos-abs';
+  if (/\btpu\b|\btpe\b|flexible/.test(n))                return 'filamentos-tpu';
+  if (/\basa\b/.test(n))                                 return 'filamentos-abs';
+  if (/nylon|\bpa\b|\bpa12\b|\bpa6\b/.test(n))          return 'filamentos-especiales';
+  if (/\bpc\b|policarbonato/.test(n))                    return 'filamentos-especiales';
+  if (/fibra.*(carbono|vidrio|carbon)|composite|-cf\b/.test(n)) return 'filamentos-especiales';
+  if (/\bpla\b|poliláctico/.test(n))                    return 'filamentos-pla';
+
+  // Por path de URL
+  if (/filamento/i.test(path))  return 'filamentos-pla';
+  if (/impresora/i.test(path))  return 'impresoras-fdm';
+  if (/resina/i.test(path))     return 'resinas';
+  if (/repuesto/i.test(path))   return 'repuestos';
+
+  return 'general';
+}
