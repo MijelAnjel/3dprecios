@@ -1,5 +1,5 @@
 import { ScraperResult, StoreConfig } from '../models';
-import { fetchHtml, parsePriceCLP, inferStock } from '../utils';
+import { fetchHtml, parsePriceCLP, inferStock, inferCategory } from '../utils';
 
 // ──────────────────────────────────────────────────────────────
 // 3D Chile (TresD) — 3d.cl
@@ -20,6 +20,8 @@ const CATEGORY_URLS = [
   '/75-accesorios',
 ];
 
+const MAX_PAGES = 20;
+
 export async function scrapeTresD(store: StoreConfig): Promise<ScraperResult[]> {
   const results: ScraperResult[] = [];
 
@@ -27,12 +29,12 @@ export async function scrapeTresD(store: StoreConfig): Promise<ScraperResult[]> 
     let page = 1;
     let hasMore = true;
 
-    while (hasMore) {
+    while (hasMore && page <= MAX_PAGES) {
       const url = `${store.baseUrl}${catPath}?p=${page}`;
       console.log(`[3D Chile] Scraping: ${url}`);
 
       try {
-        const $ = await fetchHtml(url, { rateDelay: 2500 });
+        const $ = await fetchHtml(url, { rateDelay: 1500 });
 
         // PrestaShop product grid
         const products = $('article.product-miniature, .product-miniature, li.product-item');
@@ -41,6 +43,8 @@ export async function scrapeTresD(store: StoreConfig): Promise<ScraperResult[]> 
           hasMore = false;
           break;
         }
+
+        const countBefore = results.length;
 
         products.each((_, el) => {
           const name     = $(el).find('.product-title a, .product-name a, h2 a, h3 a').first().text().trim();
@@ -62,18 +66,30 @@ export async function scrapeTresD(store: StoreConfig): Promise<ScraperResult[]> 
             productUrl:  fullUrl,
             price,
             currency:    'CLP',
-            stock:       inferStock(stockTxt || 'disponible'),
-            imageUrl:    imgSrc,
-            scrapedAt:   new Date(),
+            stock:        inferStock(stockTxt || 'disponible'),
+            imageUrl:     imgSrc,
+            categorySlug: inferCategory(name, catPath),
+            scrapedAt:    new Date(),
           });
         });
 
-        hasMore = $('a[rel="next"], .next, a.js-search-link:contains("Siguiente")').length > 0;
+        // Stop if no new products (duplicate page — PrestaShop behavior at end of pagination)
+        if (results.length === countBefore) {
+          hasMore = false;
+          break;
+        }
+
+        // Scope selector to pagination wrapper to avoid false positives
+        hasMore = $('.pagination a[rel="next"], #js-pagination a[rel="next"], .pagination-next a').length > 0;
         page++;
       } catch (err) {
         console.error(`[3D Chile] Error en ${url}:`, err);
         hasMore = false;
       }
+    }
+
+    if (page > MAX_PAGES) {
+      console.warn(`[3D Chile] Límite de ${MAX_PAGES} páginas alcanzado en ${catPath}`);
     }
   }
 

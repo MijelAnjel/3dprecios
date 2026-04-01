@@ -11,6 +11,9 @@ const CATEGORY_PATHS = [
   '/154-repuestos-impresoras-3d',
 ];
 
+// Safety guard: PrestaShop stores rarely exceed 30 pages in a single category
+const MAX_PAGES = 30;
+
 export async function scrapeTecnosistec(store: StoreConfig): Promise<ScraperResult[]> {
   const results: ScraperResult[] = [];
 
@@ -18,14 +21,14 @@ export async function scrapeTecnosistec(store: StoreConfig): Promise<ScraperResu
     let page = 1;
     let hasMore = true;
 
-    while (hasMore) {
+    while (hasMore && page <= MAX_PAGES) {
       const url = page === 1
         ? `${store.baseUrl}${catPath}`
         : `${store.baseUrl}${catPath}?p=${page}`;
       console.log(`[Tecnosistec] Scraping: ${url}`);
 
       try {
-        const $ = await fetchHtml(url, { rateDelay: 2500 });
+        const $ = await fetchHtml(url, { rateDelay: 1500 });
 
         // PrestaShop product grid selectors
         const products = $('article.product-miniature, .product-miniature, li.product-item, .js-product');
@@ -34,6 +37,8 @@ export async function scrapeTecnosistec(store: StoreConfig): Promise<ScraperResu
           hasMore = false;
           break;
         }
+
+        const countBefore = results.length;
 
         products.each((_, el) => {
           const titleEl  = $(el).find('.product-title a, .product-name a, h2 a, h3 a').first();
@@ -62,12 +67,23 @@ export async function scrapeTecnosistec(store: StoreConfig): Promise<ScraperResu
           });
         });
 
-        hasMore = $('a[rel="next"], .next, a.js-search-link:contains("Siguiente"), li.next a').length > 0;
+        // Stop if no new products were added (duplicate page — common PrestaShop behavior at end)
+        if (results.length === countBefore) {
+          hasMore = false;
+          break;
+        }
+
+        // PrestaShop: use the explicit pagination next link inside .pagination wrapper only
+        hasMore = $('.pagination a[rel="next"], #js-pagination a[rel="next"], .pagination-next a').length > 0;
         page++;
       } catch (err) {
         console.error(`[Tecnosistec] Error en ${url}:`, err);
         hasMore = false;
       }
+    }
+
+    if (page > MAX_PAGES) {
+      console.warn(`[Tecnosistec] Límite de ${MAX_PAGES} páginas alcanzado en ${catPath}`);
     }
   }
 

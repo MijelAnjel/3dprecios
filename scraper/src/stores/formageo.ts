@@ -12,6 +12,8 @@ const CATEGORY_PATHS = [
   '/categoria-producto/accesorios/',
 ];
 
+const MAX_PAGES = 20;
+
 export async function scrapeFormageo(store: StoreConfig): Promise<ScraperResult[]> {
   const results: ScraperResult[] = [];
 
@@ -19,7 +21,7 @@ export async function scrapeFormageo(store: StoreConfig): Promise<ScraperResult[
     let page = 1;
     let hasMore = true;
 
-    while (hasMore) {
+    while (hasMore && page <= MAX_PAGES) {
       const url = `${store.baseUrl}${path}?page=${page}`;
       console.log(`[Formageo] Scraping: ${url}`);
 
@@ -59,12 +61,16 @@ export async function scrapeFormageo(store: StoreConfig): Promise<ScraperResult[
           });
         });
 
-        hasMore = $('a.next, a[rel="next"], .pagination .next').length > 0 && products.length > 0;
+        hasMore = $('a.next.page-numbers, a[rel="next"]').length > 0 && products.length > 0;
         page++;
       } catch (err) {
         console.error(`[Formageo] Error en ${url}:`, err);
         hasMore = false;
       }
+    }
+
+    if (page > MAX_PAGES) {
+      console.warn(`[Formageo] Límite de ${MAX_PAGES} páginas alcanzado en ${path}`);
     }
   }
 
