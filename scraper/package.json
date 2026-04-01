@@ -6,6 +6,8 @@
   "scripts": {
     "scrape": "ts-node src/run.ts",
     "scrape:store": "ts-node src/run.ts --store",
+    "scrape:direct": "ts-node src/run-direct.ts",
+    "export": "ts-node check.ts --export",
     "seed": "ts-node src/seed.ts",
     "build": "tsc"
   },

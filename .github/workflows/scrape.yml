@@ -16,13 +16,13 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -34,27 +34,19 @@ jobs:
       - name: Install scraper dependencies
         run: npm ci --prefix scraper
 
-      - name: Run scrapers
+      - name: Run scrapers (sin Firestore)
         run: |
           STORE_ARG=""
           if [ -n "${{ github.event.inputs.store }}" ]; then
-            STORE_ARG="-- --store=${{ github.event.inputs.store }}"
+            STORE_ARG="--store=${{ github.event.inputs.store }}"
           fi
-          npm run scrape --prefix scraper $STORE_ARG
-        env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-
-      - name: Export catalog.json
-        run: npm run export --prefix scraper
-        env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          cd scraper && npx ts-node src/run-direct.ts $STORE_ARG
 
       - name: Commit and push catalog.json
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/assets/data/catalog.json
+          git add src/assets/data/catalog.json public/sitemap.xml
           git diff --cached --quiet || git commit -m "chore: update catalog.json [$(date -u '+%Y-%m-%d %H:%M UTC')]"
           git push
 
