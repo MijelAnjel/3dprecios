@@ -34,7 +34,8 @@ import { scrapeImpakt }           from './stores/impakt';
 import { scrapeMakershop }        from './stores/makershop';
 import { scrapeFilamentosMaxi }   from './stores/filamentosmaxi';
 import { scrapeTodoTorner }       from './stores/todotorner';
-import { scrapeTresD }            from './stores/tresd';
+// tresd (3d.cl) — dominio caído, deshabilitado
+// import { scrapeTresD }         from './stores/tresd';
 // ── Repuestos y electrónica ───────────────────────────────────
 import { scrapeAfel }             from './stores/afel';
 import { scrapeTecnosistec }      from './stores/tecnosistec';
@@ -139,7 +140,7 @@ const STORE_SCRAPERS: Record<string, StoreScraperFn> = {
   makershop:        scrapeMakershop,
   filamentosmaxi:   scrapeFilamentosMaxi,
   todotorner:       scrapeTodoTorner,
-  tresd:            scrapeTresD,
+  // tresd: disabled — 3d.cl caído
   afel:             scrapeAfel,
   tecnosistec:      scrapeTecnosistec,
   mcielectronics:   scrapeMciElectronics,

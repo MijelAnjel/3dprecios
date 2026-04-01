@@ -3,37 +3,32 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    // ── Lectura pública ────────────────────────────────────────────────────
-    // Productos, categorías y tiendas: cualquiera puede leer
+    // ── Datos del catálogo ─────────────────────────────────────────────────
+    // El frontend ya NO lee de Firestore (usa catalog.json estático).
+    // Solo el Admin SDK (scraper/check.ts) puede escribir — bypasses estas reglas.
+    // Se bloquea lectura pública para reducir el consumo de la cuota gratuita.
     match /products/{productId} {
-      allow read: if true;
-      allow write: if false; // Solo Admin SDK (scraper)
+      allow read, write: if false;
 
-      // Subcollections: entradas de precio e historial por tienda
       match /entries/{entryId} {
-        allow read: if true;
-        allow write: if false;
+        allow read, write: if false;
       }
 
       match /history/{histId} {
-        allow read: if true;
-        allow write: if false;
+        allow read, write: if false;
       }
     }
 
-    // Permite la collectionGroup query 'entries' (para listar productos por tienda)
     match /{path=**}/entries/{entryId} {
-      allow read: if true;
+      allow read, write: if false;
     }
 
     match /stores/{storeId} {
-      allow read: if true;
-      allow write: if false;
+      allow read, write: if false;
     }
 
     match /categories/{categoryId} {
-      allow read: if true;
-      allow write: if false;
+      allow read, write: if false;
     }
 
     // ── Alertas de precio ─────────────────────────────────────────────────

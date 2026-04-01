@@ -55,7 +55,7 @@ export const STORES: StoreConfig[] = [
   { id: 'makershop',        name: 'MakerShop',            slug: 'makershop',        baseUrl: 'https://www.makershop.cl',        logo: 'https://www.makershop.cl/favicon.ico',        isActive: true  },
   { id: 'filamentosmaxi',   name: 'Filamentos Maxi',      slug: 'filamentosmaxi',   baseUrl: 'https://filamentosmaxi.cl',       logo: 'https://filamentosmaxi.cl/favicon.ico',       isActive: true  },
   { id: 'todotorner',       name: 'Todo Torner',          slug: 'todotorner',       baseUrl: 'https://todotorner.cl',           logo: 'https://todotorner.cl/favicon.ico',           isActive: true  },
-  { id: 'tresd',            name: '3D.cl',                slug: 'tresd',            baseUrl: 'https://3d.cl',                   logo: 'https://3d.cl/favicon.ico',                   isActive: true  },
+  { id: 'tresd',            name: '3D.cl',                slug: 'tresd',            baseUrl: 'https://3d.cl',                   logo: 'https://3d.cl/favicon.ico',                   isActive: false },  // dominio caído
   // ── Repuestos y electrónica con sección 3D ───────────────────────────────
   { id: 'afel',             name: 'Afel',                 slug: 'afel',             baseUrl: 'https://afel.cl',                 logo: 'https://afel.cl/favicon.ico',                 isActive: true  },
   { id: 'tecnosistec',      name: 'Tecnosistec',          slug: 'tecnosistec',      baseUrl: 'https://tecnosistec.cl',          logo: 'https://tecnosistec.cl/favicon.ico',          isActive: true  },
@@ -70,8 +70,8 @@ export const STORES: StoreConfig[] = [
   { id: 'sodimac',          name: 'Sodimac',              slug: 'sodimac',          baseUrl: 'https://www.sodimac.cl',          logo: 'https://www.sodimac.cl/favicon.ico',          isActive: true  },
   { id: 'paris',            name: 'Paris',                slug: 'paris',            baseUrl: 'https://www.paris.cl',            logo: 'https://www.paris.cl/favicon.ico',            isActive: true  },
   { id: 'ripley',           name: 'Ripley',               slug: 'ripley',           baseUrl: 'https://simple.ripley.cl',        logo: 'https://simple.ripley.cl/favicon.ico',        isActive: true  },
-  { id: 'lider',            name: 'Lider',                slug: 'lider',            baseUrl: 'https://www.lider.cl',            logo: 'https://www.lider.cl/favicon.ico',            isActive: true  },
-  { id: 'easy',             name: 'Easy',                 slug: 'easy',             baseUrl: 'https://www.easy.cl',             logo: 'https://www.easy.cl/favicon.ico',             isActive: true  },
+  { id: 'lider',            name: 'Lider',                slug: 'lider',            baseUrl: 'https://www.lider.cl',            logo: 'https://www.lider.cl/favicon.ico',            isActive: false },  // sin scraper
+  { id: 'easy',             name: 'Easy',                 slug: 'easy',             baseUrl: 'https://www.easy.cl',             logo: 'https://www.easy.cl/favicon.ico',             isActive: false },  // sin scraper
   // ── Sin scraper activo ────────────────────────────────────────────────────
   { id: 'impresalta',       name: 'Impresalta',           slug: 'impresalta',       baseUrl: 'https://impresalta.cl',           logo: '',                                            isActive: false },
   { id: 'ahi3d',            name: 'AHI 3D',               slug: 'ahi3d',            baseUrl: 'https://ahi3d.cl',                logo: '',                                            isActive: false },

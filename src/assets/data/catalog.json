@@ -101,7 +101,7 @@
       "url": "https://www.easy.cl",
       "logo": "https://www.easy.cl/favicon.ico",
       "country": "CL",
-      "isActive": true,
+      "isActive": false,
       "lastScraped": "2026-04-01T18:24:07.256Z"
     },
     {
@@ -201,7 +201,7 @@
       "url": "https://www.lider.cl",
       "logo": "https://www.lider.cl/favicon.ico",
       "country": "CL",
-      "isActive": true,
+      "isActive": false,
       "lastScraped": "2026-04-01T18:24:07.256Z"
     },
     {
@@ -391,7 +391,7 @@
       "url": "https://3d.cl",
       "logo": "https://3d.cl/favicon.ico",
       "country": "CL",
-      "isActive": true,
+      "isActive": false,
       "lastScraped": "2026-04-01T18:24:07.256Z"
     },
     {
