@@ -50,6 +50,7 @@
 // ── Hero ─────────────────────────────────────────
 .hero {
   position: relative;
+  z-index: 2; // Ensure hero stacking context sits above following sections so dropdown is always visible
   padding-block: $space-8;
   min-height: 340px;
   display: flex;
@@ -61,7 +62,6 @@
 
   &__inner {
     position: relative;
-    z-index: 1;
     text-align: center;
     display: flex;
     flex-direction: column;
