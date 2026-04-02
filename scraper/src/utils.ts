@@ -410,13 +410,23 @@ export function inferCategory(name: string, path: string): string {
   const filamentByName = /\bpla\b|polil[aá]ctico|\bpetg\b|\babs\b|\basa\b|\btpu\b|\btpe\b|\bpa\s*nylon\b|\bfilamento\b|\bfilament\b/i.test(n);
   const isPrinterWord  = /\bimpresora\b|\bprinter\b/i.test(n);
 
+  // Detectar si el producto es claramente una impresora FDM por nombre (marca+modelo conocidos)
+  // aunque venga bajo path /filamentos/ (ej. Imperio3D categoriza impresoras Bambu bajo filamentos)
+  const isClearlyPrinterFDM =
+    /bambu\.?lab\b|\bbambulab\b/i.test(n) ||
+    /\bartillery\s+sidewinder|\bartillery\s+genius|\bartillery\s+hornet/i.test(n) ||
+    /\bprusa\s+(mk\d|xl\b|mini|core)/i.test(n) ||
+    /elegoo\s*(neptune|centauri|saturn(?!\s*wash))/i.test(n) ||
+    /\bams\s*(lite|combo)?\s*(bambu|bambulab|a1\b|x1\b|p1\b|a1\s*series)/i.test(n) ||
+    /(bambu|bambulab).*\bams\s*(lite|combo)?\b/i.test(n);
+
   // Excluir accesorios que mencionan filamento en su nombre pero NO son filamento
   const isFilamentoAccessory =
     /soporte.*(carrete|bobina|spool)|carrete.*(soporte|holder)|spool\s*holder/i.test(n) ||   // soportes de carrete
     /filtro.*resina|resina.*filtro|filtro.*impresi/i.test(n) ||                               // filtros de resina
     /guia.*filament|filament.*guia|guia.*ptfe/i.test(n);                                      // guías/tubos
 
-  if (!isFilamentoAccessory && !isPrinterWord && (filamentByPath || filamentByName)) {
+  if (!isFilamentoAccessory && !isPrinterWord && !isClearlyPrinterFDM && (filamentByPath || filamentByName)) {
     // Si el nombre contiene "resina" junto con keywords de material (p.ej. "Resina ABS Like")
     // → es una resina líquida, no un filamento
     if (/\bresina\b|\bresin\b/i.test(n)) return 'resinas';
