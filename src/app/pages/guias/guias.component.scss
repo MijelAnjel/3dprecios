@@ -1,0 +1,350 @@
+@use '../../../styles/variables' as *;
+
+.guias {
+  padding-block: clamp(2rem, 5vw, 4rem);
+
+  // ── Header ──────────────────────────────────────────────────────
+  &__header {
+    margin-bottom: 2.5rem;
+  }
+
+  &__title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 800;
+    color: $text-primary;
+    margin-bottom: 0.5rem;
+  }
+
+  &__sub {
+    color: $text-muted;
+    font-size: 1.05rem;
+    max-width: 640px;
+  }
+
+  // ── Symptom finder ──────────────────────────────────────────────
+  &__finder {
+    background: $bg-card;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  &__finder-header {
+    margin-bottom: 1.25rem;
+  }
+
+  &__finder-title {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__finder-hint {
+    color: $text-muted;
+    font-size: 0.875rem;
+  }
+
+  &__symptoms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  &__symptom-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.35rem 0.8rem;
+    background: $bg-elevated;
+    border: 1px solid $border-color;
+    border-radius: 2rem;
+    color: $text-secondary;
+    font-size: 0.82rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition:
+      border-color $transition-normal,
+      color $transition-normal,
+      background $transition-normal,
+      transform 80ms ease;
+
+    &:hover {
+      border-color: rgba($accent, 0.4);
+      color: $text-primary;
+      background: rgba($accent, 0.06);
+    }
+
+    &:active {
+      transform: scale(0.97);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 3px;
+    }
+
+    &--active {
+      background: rgba($accent, 0.15);
+      border-color: $accent;
+      color: $accent;
+      font-weight: 600;
+    }
+  }
+
+  &__filter-banner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background: rgba($accent, 0.08);
+    border: 1px solid rgba($accent, 0.25);
+    border-radius: $border-radius-sm;
+    color: $text-secondary;
+    font-size: 0.875rem;
+
+    strong {
+      color: $text-primary;
+    }
+  }
+
+  &__clear-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.625rem;
+    background: transparent;
+    border: 1px solid rgba($accent, 0.35);
+    border-radius: 2rem;
+    color: $accent;
+    font-size: 0.8rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background $transition-normal, border-color $transition-normal;
+
+    &:hover {
+      background: rgba($accent, 0.12);
+      border-color: $accent;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 3px;
+    }
+  }
+
+  // ── Table of contents ───────────────────────────────────────────
+  &__toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+  }
+
+  &__toc-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.4rem 0.875rem;
+    background: $bg-card;
+    border: 1px solid $border-color;
+    border-radius: 2rem;
+    color: $text-secondary;
+    font-size: 0.85rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition:
+      border-color $transition-normal,
+      color $transition-normal,
+      background $transition-normal;
+
+    &:hover {
+      border-color: rgba($accent, 0.5);
+      color: $text-primary;
+      background: $bg-elevated;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 3px;
+    }
+  }
+
+  // ── Empty state ─────────────────────────────────────────────────
+  &__empty {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: $text-muted;
+    font-size: 1rem;
+  }
+
+  // ── Guide sections ──────────────────────────────────────────────
+  &__section {
+    margin-bottom: 3.5rem;
+  }
+
+  &__section-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  &__section-icon {
+    font-size: 2rem;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+
+  &__section-title {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 0.25rem;
+  }
+
+  &__section-desc {
+    color: $text-muted;
+    font-size: 0.9rem;
+  }
+
+  // ── Grid of guide cards ─────────────────────────────────────────
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.625rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: $bp-sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $bp-lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1.125rem;
+    background: $bg-card;
+    border: 1px solid $border-color;
+    border-radius: $border-radius-sm;
+    text-decoration: none;
+    color: $text-primary;
+    transition:
+      transform $transition-normal,
+      border-color $transition-normal,
+      box-shadow $transition-normal;
+
+    &:hover {
+      transform: translateY(-2px);
+      border-color: rgba($accent, 0.35);
+      box-shadow: 0 6px 20px rgba($accent, 0.08);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 3px;
+    }
+  }
+
+  &__card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  &__card-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: $text-primary;
+    flex: 1;
+    line-height: 1.35;
+  }
+
+  &__card-arrow {
+    color: $accent;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    flex-shrink: 0;
+    transition: opacity $transition-normal;
+    margin-top: 0.1rem;
+
+    .guias__card:hover & {
+      opacity: 1;
+    }
+  }
+
+  &__card-desc {
+    font-size: 0.8rem;
+    color: $text-muted;
+    line-height: 1.45;
+    flex: 1;
+    margin: 0;
+  }
+
+  &__card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    margin-top: 0.125rem;
+  }
+
+  // ── Badges ──────────────────────────────────────────────────────
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 2rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    background: $bg-elevated;
+    color: $text-muted;
+    border: 1px solid $border-color;
+
+    &--es {
+      background: rgba(0, 180, 80, 0.1);
+      color: #4cd97a;
+      border-color: rgba(0, 180, 80, 0.2);
+    }
+
+    &--en {
+      background: rgba(0, 150, 255, 0.1);
+      color: #60b8ff;
+      border-color: rgba(0, 150, 255, 0.2);
+    }
+
+    &--principiante {
+      background: rgba(0, 212, 170, 0.1);
+      color: $accent;
+      border-color: rgba(0, 212, 170, 0.2);
+    }
+
+    &--intermedio {
+      background: rgba(255, 184, 0, 0.1);
+      color: $warn;
+      border-color: rgba(255, 184, 0, 0.2);
+    }
+
+    &--experto {
+      background: rgba(255, 107, 53, 0.1);
+      color: $primary-light;
+      border-color: rgba(255, 107, 53, 0.2);
+    }
+  }
+}

@@ -1,0 +1,118 @@
+<main class="guias container" id="main-content">
+  <header class="guias__header">
+    <h1 class="guias__title">Guías y Soluciones</h1>
+    <p class="guias__sub">
+      Biblioteca de recursos para diagnosticar y resolver fallos de impresión 3D.
+      Desde stringing hasta fallo de resina — cada problema tiene solución.
+    </p>
+  </header>
+
+  <!-- ── Buscador de síntomas ──────────────────────────────────── -->
+  <section class="guias__finder" aria-labelledby="finder-heading">
+    <div class="guias__finder-header">
+      <h2 class="guias__finder-title" id="finder-heading">
+        <span aria-hidden="true">🩺</span> ¿Qué le pasa a tu impresión?
+      </h2>
+      <p class="guias__finder-hint">Selecciona un síntoma para filtrar las guías relevantes.</p>
+    </div>
+
+    <div class="guias__symptoms" role="group" aria-label="Filtrar guías por síntoma">
+      @for (sym of symptoms; track sym.id) {
+        <button
+          type="button"
+          class="guias__symptom-btn"
+          [class.guias__symptom-btn--active]="activeSymptom() === sym.id"
+          [attr.aria-pressed]="activeSymptom() === sym.id"
+          (click)="selectSymptom(sym.id)"
+        >
+          <span aria-hidden="true">{{ sym.emoji }}</span>
+          {{ sym.label }}
+        </button>
+      }
+    </div>
+
+    @if (activeSymptomData(); as sym) {
+      <div class="guias__filter-banner" role="status" aria-live="polite" aria-atomic="true">
+        <span>
+          Mostrando guías para: <strong>{{ sym.emoji }} {{ sym.label }}</strong>
+        </span>
+        <button type="button" class="guias__clear-btn" (click)="clearSymptom()">
+          Quitar filtro ✕
+        </button>
+      </div>
+    }
+  </section>
+
+  <!-- ── TOC (solo sin filtro activo) ─────────────────────────── -->
+  @if (!activeSymptom()) {
+    <nav class="guias__toc" aria-label="Ir a sección">
+      @for (cat of allCategories; track cat.id) {
+        <button type="button" class="guias__toc-link" (click)="scrollTo(cat.id)">
+          <span aria-hidden="true">{{ cat.icon }}</span>
+          {{ cat.title }}
+        </button>
+      }
+    </nav>
+  }
+
+  <!-- ── Sin resultados ────────────────────────────────────────── -->
+  @if (filteredCategories().length === 0) {
+    <p class="guias__empty" role="status" aria-live="polite">
+      No hay guías para ese síntoma. Prueba con otro.
+    </p>
+  }
+
+  <!-- ── Categorías de guías ───────────────────────────────────── -->
+  @for (cat of filteredCategories(); track cat.id) {
+    <section
+      class="guias__section"
+      [id]="cat.id"
+      [attr.aria-labelledby]="cat.id + '-heading'"
+    >
+      <header class="guias__section-header">
+        <span class="guias__section-icon" aria-hidden="true">{{ cat.icon }}</span>
+        <div>
+          <h2 class="guias__section-title" [id]="cat.id + '-heading'">{{ cat.title }}</h2>
+          <p class="guias__section-desc">{{ cat.description }}</p>
+        </div>
+      </header>
+
+      <ul class="guias__grid" role="list">
+        @for (guide of cat.guides; track guide.url) {
+          <li>
+            <a
+              class="guias__card"
+              [href]="guide.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              [attr.aria-label]="guide.name + ' — ' + guide.description + ' (' + guide.lang + ')'"
+            >
+              <div class="guias__card-top">
+                <span class="guias__card-name">{{ guide.name }}</span>
+                <span class="guias__card-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="guias__card-desc">{{ guide.description }}</p>
+              <div class="guias__card-meta">
+                <span
+                  class="guias__badge"
+                  [class.guias__badge--es]="guide.lang === 'es'"
+                  [class.guias__badge--en]="guide.lang === 'en'"
+                >
+                  {{ guide.lang === 'es' ? '🇨🇱 Español' : '🌐 English' }}
+                </span>
+                <span
+                  class="guias__badge"
+                  [class.guias__badge--principiante]="guide.difficulty === 'principiante'"
+                  [class.guias__badge--intermedio]="guide.difficulty === 'intermedio'"
+                  [class.guias__badge--experto]="guide.difficulty === 'experto'"
+                >
+                  {{ guide.difficulty }}
+                </span>
+              </div>
+            </a>
+          </li>
+        }
+      </ul>
+    </section>
+  }
+</main>

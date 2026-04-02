@@ -43,6 +43,12 @@ export const routes: Routes = [
     title: 'Recursos 3D — Descargas y Herramientas — 3DPrecios',
   },
   {
+    path: 'guias',
+    loadComponent: () =>
+      import('./pages/guias/guias.component').then((m) => m.GuiasComponent),
+    title: 'Guías y Soluciones — Impresión 3D — 3DPrecios',
+  },
+  {
     path: 'privacidad',
     loadComponent: () =>
       import('./pages/legal/privacy/privacy.component').then((m) => m.PrivacyComponent),
