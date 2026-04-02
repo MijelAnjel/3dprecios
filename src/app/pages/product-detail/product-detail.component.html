@@ -95,7 +95,7 @@
     <!-- Price chart – lazy loaded when visible -->
     <section class="pd__section" aria-labelledby="pd-chart-title">
       @defer (on viewport) {
-        <app-price-chart [history]="history()" />
+        <app-price-chart [history]="history()" [stores]="stores()" />
       } @placeholder {
         <div class="pd__chart-placeholder" aria-label="Cargando gráfico de precios">
           <div class="pd__skeleton pd__skeleton--chart"></div>
