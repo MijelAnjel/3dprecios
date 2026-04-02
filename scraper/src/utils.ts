@@ -321,7 +321,18 @@ export function inferCategory(name: string, path: string): string {
     // Abrazaderas y bloques de marca (piezas estructurales de impresora)
     /(abrazadera|bloque)\s*(para\s*)?(bambu|bambulab|bambu\s+lab\b|a1\b|x1\b|p1[sp]?\b)/i.test(n) ||
     // Cámara para impresora 3D
-    /c[aá]mara\s*(para|de)\s*(bambu|bambulab|a1|x1|p1|impresora|3d)\b/i.test(n);
+    /c[aá]mara\s*(para|de)\s*(bambu|bambulab|a1|x1|p1|impresora|3d)\b/i.test(n) ||
+    // Ruedas de carruaje genéricas (POM, precisión, V-slot)
+    /ruedas?\s+(pom\b|de\s*carruaje|de\s*precisi[oó]n|v[\s-]?slot)\b/i.test(n) ||
+    /\bpom\b.*\brueda|rueda.*\bpom\b/i.test(n) ||
+    // Cortadores de tubo PTFE/teflón (herramienta de mantenimiento)
+    /cortador.*(tubo|teflo|ptfe)|cort.*teflo/i.test(n) ||
+    // Pinzas de precisión para impresión 3D
+    /\bpinzas?\s+(punta|de\s*precisi[oó]n|para\s*(impresi|soport|3d))/i.test(n) ||
+    // Cepillo de limpieza (para impresoras 3D, mantenimiento)
+    /cepillo\s+(para|de)\s*(limpieza|nozzle|boquilla|extrusor)/i.test(n) ||
+    // Bolsas de sellado al vacío para almacenamiento de filamento (categorizan como repuesto para evitar el bloque de filamentos)
+    /bolsas?\s*(para|de)\s*(sellado|vac[ií]o)|sellado.*vac[ií]o.*filament/i.test(n);
 
   if (isRepuesto) return 'repuestos';
 
@@ -379,7 +390,7 @@ export function inferCategory(name: string, path: string): string {
     /filtro.*resina|resina.*filtro|filtro.*impresi/i.test(n) ||                               // filtros de resina
     /guia.*filament|filament.*guia|guia.*ptfe/i.test(n);                                      // guías/tubos
 
-  if (!isFilamentoAccessory && (filamentByPath || (filamentByName && !isPrinterWord))) {
+  if (!isFilamentoAccessory && !isPrinterWord && (filamentByPath || filamentByName)) {
     // Si el nombre contiene "resina" junto con keywords de material (p.ej. "Resina ABS Like")
     // → es una resina líquida, no un filamento
     if (/\bresina\b|\bresin\b/i.test(n)) return 'resinas';
