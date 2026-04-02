@@ -47,9 +47,9 @@ export const STORES: StoreConfig[] = [
   { id: 'mundo3d',          name: 'Mundo 3D',             slug: 'mundo3d',          baseUrl: 'https://mundo3d.cl',              logo: 'https://mundo3d.cl/favicon.ico',              isActive: true  },
   { id: 'mekano3d',         name: 'Mekano 3D',            slug: 'mekano3d',         baseUrl: 'https://mekano3d.cl',             logo: 'https://mekano3d.cl/favicon.ico',             isActive: true  },
   { id: 'open3d',           name: 'Open3D',               slug: 'open3d',           baseUrl: 'https://open3d.cl',               logo: 'https://open3d.cl/favicon.ico',               isActive: true  },
-  { id: 'filamento',        name: 'Filamento.cl',         slug: 'filamento',        baseUrl: 'https://filamento.cl',            logo: 'https://filamento.cl/favicon.ico',            isActive: true  },
-  { id: 'crealitychile',    name: 'Creality Chile',       slug: 'crealitychile',    baseUrl: 'https://crealitychile.cl',        logo: 'https://crealitychile.cl/favicon.ico',        isActive: true  },
-  { id: 'artillerychile',   name: 'Artillery Chile',      slug: 'artillerychile',   baseUrl: 'https://artillerychile.cl',       logo: 'https://artillerychile.cl/favicon.ico',       isActive: true  },
+  { id: 'filamento',        name: 'Filamento.cl',         slug: 'filamento',        baseUrl: 'https://filamento.cl',            logo: 'https://filamento.cl/favicon.ico',            isActive: false },  // dominio caído
+  { id: 'crealitychile',    name: 'Creality Chile',       slug: 'crealitychile',    baseUrl: 'https://crealitychile.cl',        logo: 'https://crealitychile.cl/favicon.ico',        isActive: false },  // dominio caído
+  { id: 'artillerychile',   name: 'Artillery Chile',      slug: 'artillerychile',   baseUrl: 'https://artillerychile.cl',       logo: 'https://artillerychile.cl/favicon.ico',       isActive: false },  // dominio caído
   { id: 'deskfab',          name: 'DeskFab',              slug: 'deskfab',          baseUrl: 'https://deskfab.cl',              logo: 'https://deskfab.cl/favicon.ico',              isActive: true  },
   { id: 'impakt',           name: 'Impakt',               slug: 'impakt',           baseUrl: 'https://impakt.cl',               logo: 'https://impakt.cl/favicon.ico',               isActive: true  },
   { id: 'makershop',        name: 'MakerShop',            slug: 'makershop',        baseUrl: 'https://www.makershop.cl',        logo: 'https://www.makershop.cl/favicon.ico',        isActive: true  },

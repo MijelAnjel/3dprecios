@@ -44,6 +44,7 @@ export class HomeComponent {
   readonly loadingProducts = signal(false);
   readonly storeCount = computed(() => this.storeService.stores().length);
   readonly categoryCount = computed(() => this.categories().length);
+  readonly productCount = computed(() => this.catalogService.products().length);
 
   readonly activeIndex = signal(-1);
   readonly showDropdown = signal(false);
@@ -167,7 +168,7 @@ export class HomeComponent {
   selectSuggestion(slug: string): void {
     this.showDropdown.set(false);
     this.activeIndex.set(-1);
-    this.router.navigate(['/producto', slug]);
+    this.router.navigate(['/productos', slug]);
   }
 
   setActiveIndex(i: number): void {

@@ -51,6 +51,10 @@ export async function fetchHtml(
       }
 
       const html = await response.text();
+      // Cloudflare / bot-protection challenge page detection
+      if (html.includes('One moment, please') || html.includes('Checking your browser') || html.includes('cf-browser-verification')) {
+        throw new Error(`CF-BLOCKED — ${url}`);
+      }
       return cheerio.load(html);
     } catch (err) {
       lastError = err;
@@ -94,7 +98,12 @@ export async function fetchJson<T = unknown>(
         throw new Error(`HTTP ${response.status} ${response.statusText} — ${url}`);
       }
 
-      return await response.json() as T;
+      const text = await response.text();
+      // Cloudflare / bot-protection challenge page detection
+      if (text.includes('One moment, please') || text.includes('Checking your browser') || text.includes('cf-browser-verification')) {
+        throw new Error(`CF-BLOCKED — ${url}`);
+      }
+      return JSON.parse(text) as T;
     } catch (err) {
       lastError = err;
       console.warn(`[fetchJson] Intento ${attempt}/${retries} falló para ${url}:`, err);
@@ -241,8 +250,8 @@ export function inferCategory(name: string, path: string): string {
     /driver\s+(con\s+disipador|de\s+(calor|motor)|para\s+(impres|artil|creali|bambu|prusa))/i.test(n) ||
     // Motion: correas (singular y plural), poleas, rodamientos, raíles (EN + ES)
     /\bcorreas?\b|\bpulley\b|\bpolea\b|\brodamiento\b|\bbearing\b|rail\s*lineal|lead[\s-]?screw|trapezoidal|varilla\s*roscada/i.test(n) ||
-    // Conectores neumáticos (PC4-M10, PC4-M6, etc.) para tubo PTFE
-    /pc4[-\s]?m\d|\bconector\s*neum[aá]/i.test(n) ||
+    // Conectores neumáticos (PC4-M10, PC4-M6, PC6-01, etc.) para tubo PTFE
+    /pc[46][-\s]?m?\d|\bconector\s*neum[aá]/i.test(n) ||
     // Puntas / tips endurecidos (nozzles de acero, carburo, E3D, Hardened)
     /puntas?\s*(de\s*)?(acero\s*endurecido|carburo|tungsten|e3d)|kit.*puntas.*(impres|e3d)/i.test(n) ||
     // Espiral / recubrimiento de cables para impresoras
@@ -280,6 +289,12 @@ export function inferCategory(name: string, path: string): string {
     /sistema\s+de\s+extrusi[oó]n|extrus[oó]n\s+titan|titan\s+extrus/i.test(n) ||
     // Kits de repuesto explícitos
     /kit\s*correa|kit\s*nozzle|kit\s*hotend|upgrade\s*kit\s*(ender|bambu|prusa)/i.test(n) ||
+    // Acoplamientos flexibles para ejes de impresoras
+    /acoplamiento\s*flexible|acopl.*flexi|flexible.*acopl|spider\s*coupling|jaw\s*coupling/i.test(n) ||
+    // Módulos LED / iluminación específica para impresoras 3D
+    /m[oó]dulo\s*led.*(impresi|artillery|creality|ender|bambu|prusa)|led.*(strip|tira).*impresi/i.test(n) ||
+    // Cables de motor stepper (mayormente para impresoras 3D)
+    /cable.*(motor\s*stepper|stepper\s*motor)|stepper.*cable.*motor/i.test(n) ||
     // Kits de herramientas y limpieza asociados a impresoras (no genéricos)
     /kit\s*(de\s*)?(herramientas|limpieza|boquillas)\s*(para\s*)?(impres|ender|bambu|creality|artillery)/i.test(n) ||
     /(ender|bambu|creality|artillery|prusa|anycubic).*kit\s*(boquill|nozzle|hotend|repuest)/i.test(n);

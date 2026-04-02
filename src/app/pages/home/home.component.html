@@ -7,7 +7,7 @@
     </h1>
     <!-- Stats compactas -->
     <ul class="hero__stats" aria-label="Estadísticas del comparador">
-      <li class="hero__stat"><strong>1.000+</strong> productos</li>
+      <li class="hero__stat"><strong>{{ productCount() | number:'1.0-0' }}</strong> productos</li>
       <li class="hero__stat" aria-hidden="true">·</li>
       <li class="hero__stat"><strong>{{ categoryCount() }}</strong> categorías</li>
       <li class="hero__stat" aria-hidden="true">·</li>

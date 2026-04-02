@@ -553,12 +553,66 @@ async function main(): Promise<void> {
   if (isPurgeNon3d) {
     const NON3D_STORES = new Set(['cimech3d', 'electronicat', 'mcielectronics', 'afel']);
     // Blacklist estricta: solo patrones inequívocamente NO relacionados con impresión 3D
-    const NON_3D_BLACKLIST = /\barduino\b|\batmega\b|\bgrbl\b|\bmach3\b|fluid\s*cnc|spring\s+collet|er\s*\d+\s+collet|kit\s+de\s+brocas\s+cnc|kit\s+capacitor|kit\s+transistor|kit\s+diod[eo]|kit\s+boton|kit\s+potenci|shield.*cnc|cnc.*shield|\buno\s+r3\b|\bnano\s+33\b|\bmega\s+2560\b|controlador.*mach3|mach3.*controlador|microcontrolador\s+arduino|fresa\s+(en\s+espiral|de\s+grabado|redondeo|c[oó]nica|ranura|corte|desbaste)|spring\s+collet\s+er|kit\s+de\s+fresas|simulador\s+de\s+carreras|caja\s+organizadora|caja\s+pl[aá]stica\s+apilable|slot\s+cover\s+\d|adaptador\s+de\s+collet|fresa\s+para\s+(acrilico|aluminio|madera|neon|aplanar|esquina|desbarbado|conica)|servicio\s+de\s+(corte|grabado|laser|cnc|router\s+cnc|modelado\s+3d\s+por\s+hora)|cajon\s+de\s+madera\s+para\s+maquina|modulo\s+relay\s+5v|adaptador\s+12v\s+\d+a\b|regulador\s+de\s+voltaje\s+lm|driver\s+l298n|m[oó]dulo\s+encoder\s+rotatorio\s+arduino|m[oó]dulo\s+lector\s+tarjeta\s+sd\s+arduino|kit\s+para\s+arduino/i;
+    const NON_3D_BLACKLIST = new RegExp([
+      // Arduino y microcontroladores
+      '\\barduino\\b','\\batmega\\b','\\bgrbl\\b','\\bmach3\\b',
+      // Kits de electrónica genérica (usar .* para permitir "de" entre palabras)
+      'kit\\s+de\\s+(diod|capac|transistor|bot[oó]n|potenci|led\\s+de\\s+varios)',
+      'kit\\s+(diod|capac|transistor|bot[oó]n|potenci)',
+      'kit\\s+para\\s+arduino',
+      // CNC — controladores, interfaces, herramientas
+      'fluid\\s*cnc','\\bmach3\\b',
+      'controlador.*mach3|mach3.*controlador',
+      'controlador.*\\d\\s*ejes?.*cnc|\\d\\s*ejes?.*controlador.*cnc|controlador.*usb.*\\d\\s*ejes?',
+      'interfaz.*cnc|cnc.*interfaz',
+      'pantalla.*cnc|cnc.*pantalla',
+      'thc\\s+\\d{2,}|m[oó]dulo\\s+thc\\b|controlador\\s+(plasma|thc)',
+      // Fresas CNC (cualquier tipo de fresa es herramienta CNC)
+      '\\bfresa\\b',
+      // Collets/mandriles CNC
+      'spring\\s+collet|er\\s*\\d+\\s+collet|adaptador\\s+de\\s+collet',
+      // Arduino shields
+      'shield.*cnc|cnc.*shield','monster\\s+moto\\s+shield',
+      '\\buno\\s+r3\\b|\\bnano\\s+33\\b|\\bmega\\s+2560\\b',
+      'placa\\s+nano\\s+controladora|nano\\s+controladora',
+      // Reguladores y drivers de electrónica general
+      'regulador\\s+de\\s+voltaje\\s+lm',
+      'driver\\s+l298n',
+      'm[oó]dulo\\s+relay\\s+5v',
+      'm[oó]dulo\\s+encoder\\s+rotatorio\\s+arduino',
+      'm[oó]dulo\\s+lector\\s+tarjeta\\s+sd\\s+arduino',
+      'm[oó]dulo\\s+pap\\s+driver|step\\s*stick\\b|big\\s*easy\\s*driver\\b',
+      // Filtros y adaptadores eléctricos genéricos
+      'filtro\\s+(de\\s+)?l[ií]nea\\s+emi|filtro\\s+emi[\\s/]emc|filtro\\s+emc\\b',
+      'adaptador\\s+12v\\s+\\d+a\\b',
+      // Herramientas de chips / IC tools
+      'herramienta\\s+para\\s+extraer\\s+(chips?|ic|plcc)',
+      // Cuchillas genéricas (no 3D)
+      'cuchilla.*ipa',
+      // Brocas CNC
+      'kit\\s+(de\\s+)?brocas?(\\s+para)?\\s*cnc',
+      // Slot covers (perfil de aluminio para CNC)
+      '\\bslot\\s+cover\\b',
+      // Servicios CNC
+      'servicio\\s+de\\s+(corte|grabado|laser|cnc|router\\s+cnc|modelado\\s+3d\\s+por\\s+hora)',
+      // Actuador lineal armado (servicio, no producto 3D)
+      'armado.*actuador\\s+lineal|actuador\\s+lineal.*armado',
+      // Cortador de cable genérico (no es herramienta 3D específica)
+      'cortador\\s+de\\s+cable\\s+o\\s+cortafrio',
+      // Llaves genéricas (no relacionadas con 3D)
+      'herramienta\\s+para\\s+extraer|llave\\s+de\\s+extremo\\s+abierto',
+      // Laser CO2 heads (CNC laser, not 3D)
+      'cabezales?\\s+para\\s+maquina\\s+l[aá]ser\\s+co2',
+      // Simuladores y cajas plásticas
+      'simulador\\s+de\\s+carreras',
+      'caja\\s+organizadora|caja\\s+pl[aá]stica\\s+apilable',
+    ].join('|'), 'i');
 
     const before = existingCatalog.products.length;
     existingCatalog.products = existingCatalog.products.filter(prod => {
       const name = prod.name.toLowerCase();
-      // Solo purgar si: viene de tienda mixta Y nombre está en blacklist non-3D
+      // Solo purgar si: viene de tienda mixta Y está en general Y nombre en blacklist
+      if (prod.categoryId !== 'general') return true;  // proteger repuestos y otros
       const fromMixedStore = prod.entries?.some(e => NON3D_STORES.has(e.storeId));
       if (!fromMixedStore) return true;
       return !NON_3D_BLACKLIST.test(name);
