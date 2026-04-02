@@ -50,7 +50,6 @@
 // ── Hero ─────────────────────────────────────────
 .hero {
   position: relative;
-  overflow: hidden;
   padding-block: $space-8;
   min-height: 340px;
   display: flex;
@@ -296,6 +295,7 @@
   &__bg {
     position: absolute;
     inset: 0;
+    overflow: hidden;
     pointer-events: none;
   }
 
