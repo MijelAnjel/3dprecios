@@ -1,20 +1,25 @@
 import { ScraperResult, StoreConfig } from '../models';
-import { fetchHtml, parsePriceCLP, inferStock } from '../utils';
+import { fetchHtml, parsePriceCLP, inferStock, inferCategory } from '../utils';
 
 // ──────────────────────────────────────────────────────────────
 // Filamento.cl — Tienda especializada en filamentos
+// WooCommerce con rutas de categoría /categoria/ (no /categoria-producto/)
 // ──────────────────────────────────────────────────────────────
 
 const CATEGORY_PATHS = [
   '/categoria/filamento-pla/',
   '/categoria/filamento-abs/',
   '/categoria/filamento-petg/',
+  '/categoria/filamento-tpu/',
+  '/categoria/filamentos-tecnicos/',
   '/categoria/resinas/',
   '/categoria/impresoras/',
+  '/categoria/accesorios/',
 ];
 
 export async function scrapeFilamento(store: StoreConfig): Promise<ScraperResult[]> {
   const results: ScraperResult[] = [];
+  const seen = new Set<string>();
 
   for (const path of CATEGORY_PATHS) {
     let page = 1;
@@ -42,21 +47,20 @@ export async function scrapeFilamento(store: StoreConfig): Promise<ScraperResult
 
           const price = parsePriceCLP(priceRaw);
           if (!name || !href || price === 0) return;
-
-          // Infer category slug from path
-          const categorySlug = path.replace(/\//g, '').replace('categoria', '');
+          if (seen.has(href)) return;
+          seen.add(href);
 
           results.push({
-            storeId:     store.id,
-            storeName:   store.name,
-            productName: name,
-            productUrl:  href,
+            storeId:      store.id,
+            storeName:    store.name,
+            productName:  name,
+            productUrl:   href,
             price,
-            currency:    'CLP',
-            stock:       outStock ? 'out' : 'available',
-            imageUrl:    imgSrc,
-            categorySlug,
-            scrapedAt:   new Date(),
+            currency:     'CLP',
+            stock:        outStock ? 'out' : inferStock('disponible'),
+            imageUrl:     imgSrc,
+            categorySlug: inferCategory(name, path),
+            scrapedAt:    new Date(),
           });
         });
 

@@ -9,10 +9,10 @@
 
   <nav class="recursos__toc" aria-label="Ir a sección">
     @for (cat of categories; track cat.id) {
-      <a class="recursos__toc-link" [attr.href]="'#' + cat.id">
+      <button type="button" class="recursos__toc-link" (click)="scrollTo(cat.id)">
         <span aria-hidden="true">{{ cat.icon }}</span>
         {{ cat.title }}
-      </a>
+      </button>
     }
   </nav>
 

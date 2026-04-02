@@ -18,6 +18,7 @@ import { PriceTableComponent } from './components/price-table/price-table.compon
 import { PriceChartComponent } from './components/price-chart/price-chart.component';
 import { AlertFormComponent } from './components/alert-form/alert-form.component';
 import { ProductCardComponent } from '../../shared/components/product-card/product-card.component';
+import { DisqusComponent } from '../../shared/components/disqus/disqus.component';
 import { ClpPipe } from '../../shared/pipes/clp.pipe';
 import { ProductService } from '../../core/services/product.service';
 import { PriceService } from '../../core/services/price.service';
@@ -34,6 +35,7 @@ import { CategoryService } from '../../core/services/category.service';
     PriceChartComponent,
     AlertFormComponent,
     ProductCardComponent,
+    DisqusComponent,
     ClpPipe,
   ],
   templateUrl: './product-detail.component.html',

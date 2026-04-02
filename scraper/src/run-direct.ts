@@ -217,10 +217,15 @@ function mergeCatalog(
   for (const p of existing.products) {
     const prod = JSON.parse(JSON.stringify(p)) as CatalogProduct;
 
-    // Re-inferir categoría si sigue siendo 'general' — puede que nuevas reglas la clasifiquen
-    if (prod.categoryId === 'general') {
+    // Re-inferir categoría: desde 'general' siempre; desde 'impresoras-fdm'/'impresoras-resina'
+    // sólo si el nuevo resultado es 'repuestos', 'resinas' o 'accesorios' (correcciones conocidas).
+    const RECATEGORIZE_ALL = ['general', 'impresoras-fdm', 'impresoras-resina'];
+    if (RECATEGORIZE_ALL.includes(prod.categoryId)) {
       const reCat = inferCategory(prod.name, '');
-      if (reCat !== 'general') {
+      const isDowngradeSafe = prod.categoryId === 'general'
+        ? reCat !== 'general'
+        : ['repuestos', 'resinas', 'accesorios'].includes(reCat);
+      if (isDowngradeSafe) {
         prod.categoryId = reCat;
         // Re-extraer specs con la categoría correcta
         const reSpecs = extractSpecs(prod.name, reCat);
@@ -228,6 +233,16 @@ function mergeCatalog(
           prod.specs    = reSpecs;
           prod.brand    = prod.brand || (reSpecs['brand'] as string | undefined) || '';
         }
+      }
+    }
+
+    // Re-extraer specs para productos ya en 'repuestos'/'impresoras-resina'
+    // para aplicar nuevas reglas de partType, compatibleWith, resolution, etc.
+    if (prod.categoryId === 'repuestos' || prod.categoryId === 'impresoras-resina') {
+      const freshSpecs = extractSpecs(prod.name, prod.categoryId);
+      if (Object.keys(freshSpecs).length > 0) {
+        prod.specs = { ...freshSpecs, ...prod.specs }; // preserve manual overrides
+        prod.brand = prod.brand || (freshSpecs['brand'] as string | undefined) || '';
       }
     }
 

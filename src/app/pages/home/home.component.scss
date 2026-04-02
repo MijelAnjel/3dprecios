@@ -50,13 +50,13 @@
 .hero {
   position: relative;
   overflow: hidden;
-  padding-block: $space-9;
-  min-height: 540px;
+  padding-block: $space-8;
+  min-height: 340px;
   display: flex;
   align-items: center;
 
   @include lg {
-    min-height: 640px;
+    min-height: 420px;
   }
 
   &__inner {
@@ -94,10 +94,31 @@
     line-height: $line-height-loose;
   }
 
+  // ── Stats inline ────────────────────────────
+  &__stats {
+    display: flex;
+    align-items: center;
+    gap: $space-3;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: $font-size-sm;
+    color: $text-muted;
+
+    strong {
+      background: linear-gradient(135deg, $primary, $accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: $font-weight-bold;
+    }
+  }
+
   // ── Buscador ──────────────────────────────────
   &__search {
     width: 100%;
     max-width: 640px;
+    position: relative;
   }
 
   &__search-wrap {
@@ -143,6 +164,96 @@
     font-size: $font-size-sm;
     border-radius: $border-radius-sm;
     flex-shrink: 0;
+  }
+
+  &__search-wrap--open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-color: transparent;
+  }
+
+  // ── Autocomplete dropdown ─────────────────────
+  &__suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: $bg-elevated;
+    border: 1px solid $primary;
+    border-top: none;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    box-shadow: $shadow-md;
+    list-style: none;
+    overflow: hidden;
+    z-index: 50;
+    max-height: 420px;
+    overflow-y: auto;
+  }
+
+  &__suggestion {
+    display: flex;
+    align-items: center;
+    gap: $space-3;
+    padding: $space-3 $space-4;
+    cursor: pointer;
+    transition: background $transition-fast;
+    border-top: 1px solid $border-color;
+
+    &:first-child { border-top: none; }
+
+    &:hover,
+    &--active {
+      background: rgba($primary, 0.08);
+    }
+
+    &--all {
+      font-size: $font-size-sm;
+      color: $primary-light;
+      justify-content: center;
+      padding: $space-2 $space-4;
+      background: rgba($primary, 0.04);
+
+      &:hover,
+      &.hero__suggestion--active {
+        background: rgba($primary, 0.12);
+      }
+    }
+  }
+
+  &__sug-img {
+    width: 40px;
+    height: 40px;
+    border-radius: $border-radius-sm;
+    object-fit: cover;
+    flex-shrink: 0;
+    background: $bg-card;
+
+    &--placeholder {
+      background: $bg-card;
+      border: 1px solid $border-color;
+    }
+  }
+
+  &__sug-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: 2px;
+  }
+
+  &__sug-name {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    color: $text-primary;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__sug-meta {
+    font-size: $font-size-xs;
+    color: $text-muted;
   }
 
   // ── Quick links ───────────────────────────────

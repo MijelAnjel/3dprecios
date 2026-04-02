@@ -198,7 +198,7 @@ export async function exportCatalog(db: Firestore): Promise<void> {
     products,
   };
 
-  // ── 5. Escribir archivo ──────────────────────────────────────────────────
+  // ── 5. Escribir catalog.json ─────────────────────────────────────────────
   const outputPath = path.resolve(__dirname, '../../src/assets/data/catalog.json');
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
   fs.writeFileSync(outputPath, JSON.stringify(catalog, null, 2), 'utf-8');
@@ -206,4 +206,100 @@ export async function exportCatalog(db: Firestore): Promise<void> {
   const elapsed = ((Date.now() - start) / 1000).toFixed(1);
   console.log(`[Export] ✓ catalog.json generado: ${products.length} productos, ${entryCount} entries, ${historyCount} puntos de historial (${elapsed}s)`);
   console.log(`[Export] Ruta: ${outputPath}`);
+
+  // ── 6. Generar sitemap.xml dinámico ─────────────────────────────────────
+  generateSitemap(catalog);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// generateSitemap — genera public/sitemap.xml a partir del catálogo
+// ─────────────────────────────────────────────────────────────────────────────
+
+const SITE_URL = 'https://dprecios.web.app';
+
+const STATIC_CATEGORIES = [
+  'filamentos-pla',
+  'filamentos-petg',
+  'filamentos-abs',
+  'filamentos-tpu',
+  'filamentos-especiales',
+  'resinas',
+  'impresoras-fdm',
+  'impresoras-resina',
+  'accesorios',
+  'secadores',
+  'scanner-3d',
+  'lapices-3d',
+  'repuestos',
+];
+
+function xmlEscape(s: string): string {
+  return s
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
+function urlEntry(loc: string, opts: { lastmod?: string; changefreq?: string; priority?: number } = {}): string {
+  const lines: string[] = [`  <url>`, `    <loc>${xmlEscape(loc)}</loc>`];
+  if (opts.lastmod)    lines.push(`    <lastmod>${opts.lastmod.slice(0, 10)}</lastmod>`);
+  if (opts.changefreq) lines.push(`    <changefreq>${opts.changefreq}</changefreq>`);
+  if (opts.priority !== undefined) lines.push(`    <priority>${opts.priority.toFixed(1)}</priority>`);
+  lines.push(`  </url>`);
+  return lines.join('\n');
+}
+
+function generateSitemap(catalog: CatalogData): void {
+  const today = new Date().toISOString().slice(0, 10);
+  const urls: string[] = [];
+
+  // Páginas estáticas
+  urls.push(urlEntry(`${SITE_URL}/`,         { changefreq: 'daily',  priority: 1.0 }));
+  urls.push(urlEntry(`${SITE_URL}/categorias`, { changefreq: 'daily',  priority: 0.9 }));
+  urls.push(urlEntry(`${SITE_URL}/tiendas`,    { changefreq: 'weekly', priority: 0.8 }));
+  urls.push(urlEntry(`${SITE_URL}/recursos`,   { changefreq: 'monthly', priority: 0.6 }));
+  urls.push(urlEntry(`${SITE_URL}/comparar`,   { changefreq: 'weekly', priority: 0.5 }));
+
+  // Categorías
+  for (const cat of STATIC_CATEGORIES) {
+    urls.push(urlEntry(`${SITE_URL}/categorias/${cat}`, {
+      lastmod:    today,
+      changefreq: 'daily',
+      priority:   0.8,
+    }));
+  }
+
+  // Tiendas activas
+  for (const store of catalog.stores) {
+    urls.push(urlEntry(`${SITE_URL}/tiendas/${xmlEscape(store.slug)}`, {
+      lastmod:    store.lastScraped.slice(0, 10),
+      changefreq: 'weekly',
+      priority:   0.6,
+    }));
+  }
+
+  // Productos individuales (máx 50 000 URLs por sitemap — estándar Google)
+  const MAX_PRODUCTS = 49_000;
+  const productsSorted = catalog.products.slice(0, MAX_PRODUCTS);
+  for (const product of productsSorted) {
+    urls.push(urlEntry(`${SITE_URL}/productos/${xmlEscape(product.slug)}`, {
+      lastmod:    product.updatedAt.slice(0, 10),
+      changefreq: 'weekly',
+      priority:   0.7,
+    }));
+  }
+
+  const xml = [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ...urls,
+    '</urlset>',
+    '',
+  ].join('\n');
+
+  const sitemapPath = path.resolve(__dirname, '../../public/sitemap.xml');
+  fs.writeFileSync(sitemapPath, xml, 'utf-8');
+  console.log(`[Export] ✓ sitemap.xml generado: ${urls.length} URLs → ${sitemapPath}`);
 }

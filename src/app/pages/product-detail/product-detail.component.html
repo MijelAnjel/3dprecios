@@ -124,5 +124,11 @@
         </ul>
       </section>
     }
+
+    <!-- Disqus comments -->
+    <section class="pd__section pd__comments" aria-labelledby="pd-comments-title">
+      <h2 class="pd__section-title" id="pd-comments-title">Comentarios</h2>
+      <app-disqus [identifier]="product()!.slug" />
+    </section>
   }
 </main>

@@ -44,7 +44,7 @@ En el mismo formulario de "Run workflow", ingresar el ID de la tienda en el camp
 | `capital3d`  | Capital 3D      | WC Store API       | ✅ Activo |
 | `maxi3d`     | Maxi3D          | WooCommerce HTML   | ✅ Activo |
 | `todotoner`  | TodoToner       | Jumpseller SSR     | ✅ Activo |
-| `make3d`     | Make3D          | Jumpseller sitemap | ⚠️ Parcial |
+| `make3d`     | Make3D          | Jumpseller SSR     | ✅ Activo |
 | `falabella`  | Falabella       | API JSON           | ⚠️ Pocos  |
 | `pcfactory`  | PC Factory      | JS-rendered        | ⚠️ Sin datos |
 
@@ -72,13 +72,17 @@ Las categorías son estáticas — están en `src/app/core/services/category.ser
 |-----------------------|-------------------------|--------------------------------------------------|
 | filamentos-pla        | Filamentos PLA          | PLA, PLA+, PLA Silk, PLA Matte, etc.            |
 | filamentos-abs        | Filamentos ABS          | ABS, ABS+, ASA                                   |
-| filamentos-petg       | Filamentos PETG         | PETG, PETG-CF                                    |
+| filamentos-petg       | Filamentos PETG         | PETG, PETG-CF, PETG-HF                           |
 | filamentos-tpu        | Filamentos TPU/TPE      | TPU, TPE (flexibles)                             |
-| filamentos-especiales | Filamentos Especiales   | Nylon, PC, PA12, PA-CF, fibra de carbono         |
-| impresoras-fdm        | Impresoras FDM          | Bambu, Creality, Prusa, Elegoo Aquila, etc.      |
-| impresoras-resina     | Impresoras Resina       | Elegoo Saturn/Mars, Anycubic, Phrozen            |
+| filamentos-especiales | Filamentos Especiales   | Nylon, PC, PA12, PA-CF, PEEK, PEI, HIPS, PVA   |
+| impresoras-fdm        | Impresoras FDM          | Bambu, Creality, Prusa, Elegoo Aquila, Anycubic  |
+| impresoras-resina     | Impresoras Resina       | Elegoo Saturn/Mars, Anycubic, Phrozen, Shining   |
 | resinas               | Resinas                 | Resina estándar, ABS-like, 8K                    |
 | repuestos             | Repuestos               | Boquillas, hotends, camas, cinturones            |
+| accesorios            | Accesorios              | Herramientas, insumos, adhesivos, eVacuum, eSpool|
+| secadores             | Secadores               | Secadores de filamento y cajas con calefacción   |
+| scanner-3d            | Escáneres 3D            | Escáneres de escritorio y portátiles              |
+| lapices-3d            | Lápices 3D             | Lápices 3D con filamento                         |
 | general               | General                 | Todo lo que no califica en otra categoría        |
 
 ---
@@ -101,26 +105,16 @@ Esto lee TODO Firestore via Admin SDK (~1.600 lecturas) y sobreescribe `src/asse
 
 ### Categorías que faltan y se pueden agregar
 
-Estas categorías existen en las tiendas pero el sitio aún no las distingue:
-
-- **filamentos-tpu** — TPU, TPE (flexibles)
-- **filamentos-especiales** — Nylon, PC, ASA, PEEK, materiales de ingeniería
-- **filamentos-composite** — Fibra de carbono, fibra de vidrio, madera, metal
-- **filamentos-otros** — HIPS, PVA, soporte soluble
-- **enclosures** — Cajas/cubiertas para impresoras
-- **scanners-3d** — Escáneres 3D
-- **lapices-3d** — Lápices 3D
-
-Para agregar una categoría:
-1. Editar `src/app/core/services/category.service.ts` — agregar la entrada al array `CATEGORIES`
-2. Editar los scrapers relevantes en `scraper/src/stores/` — asignar el nuevo `categorySlug` a los productos correspondientes
-3. Hacer push → deploy automático
+> Todas las categorías identificadas previamente ya están implementadas en `category.service.ts` y `inferCategory()`. Para agregar una **nueva** categoría:
+> 1. Editar `src/app/core/services/category.service.ts` — agregar la entrada al array `CATEGORIES`
+> 2. Verificar que `inferCategory` en `scraper/src/utils.ts` ya la detecta, o agregar la lógica correspondiente
+> 3. Hacer push → deploy automático
 
 ---
 
 ## Qué raspa cada scraper y cómo clasifica
 
-El scraper usa `inferCategory(nombre, path)` para clasificar cada producto. Los filamentos se detectan **siempre antes** que las impresoras, por lo que nombres como "Filamento FDM PLA" van a `filamentos-pla` y no a `impresoras-fdm`.
+El scraper usa `inferCategory(nombre, path)` para clasificar cada producto. Los filamentos se detectan **siempre antes** que las impresoras, y los repuestos conocidos (BTT, Bigtreetech) tienen **prioridad máxima**.
 
 | Tienda | Método | Qué visita |
 |---|---|---|
@@ -129,14 +123,17 @@ El scraper usa `inferCategory(nombre, path)` para clasificar cada producto. Los 
 | **makerschile** | WC Store API | Todos los productos, filtra los no-3D con `inferCategory` |
 | **evstore** | WC Store API | Todos los productos |
 | **capital3d** | WC Store API | Categorías específicas (IDs 54, 43, 49, etc.) |
-| **maxi3d** | HTML + Cheerio | Paths de categoría WooCommerce |
+| **maxi3d** | HTML + Cheerio | Paths WooCommerce con paginación `?product-page=N` (~280+ prods) |
 | **todotoner** | HTML + Cheerio | Paths Jumpseller con selector `button[data-product-name]` |
+| **make3d** | HTML + Cheerio | Paths Jumpseller (mismo selector que todotoner) |
 
 **Cómo funciona la clasificación por categoría:**
 - Path `/filamentos/` → detecta material por nombre → `filamentos-pla / petg / abs / tpu / especiales`
 - Path `/impresoras-3d/` → detecta tipo por nombre/modelo → `impresoras-fdm` o `impresoras-resina`
 - Path `/resinas/` → `resinas`
 - Path `/repuestos/` o `/accesorios/` → `repuestos`
+- Path `/insumos/` o `/herramientas/` → `accesorios`
+- Nombre con `"secador"` o `"dryer"` → `secadores`
 - Sin match claro → `general` (no se guarda en Firestore)
 
 ---

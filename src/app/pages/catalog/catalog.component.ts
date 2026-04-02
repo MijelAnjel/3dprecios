@@ -7,6 +7,7 @@ import {
   signal,
 } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { DOCUMENT } from '@angular/common';
 import { Title, Meta } from '@angular/platform-browser';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map, switchMap } from 'rxjs/operators';
@@ -28,6 +29,7 @@ import { ProductService } from '../../core/services/product.service';
 export class CatalogComponent {
   private readonly route   = inject(ActivatedRoute);
   private readonly router  = inject(Router);
+  private readonly doc     = inject(DOCUMENT);
   private readonly title   = inject(Title);
   private readonly meta    = inject(Meta);
   private readonly categoryService = inject(CategoryService);
@@ -38,6 +40,8 @@ export class CatalogComponent {
   readonly sort    = signal<SortOption>('price-asc');
   readonly filters = signal<ActiveFilters>({ priceMin: null, priceMax: null, specs: {} });
   readonly loading = signal(false);
+  readonly page    = signal(1);
+  readonly PAGE_SIZE = 24;
 
   readonly hasActiveFilters = computed(() => {
     const { priceMin, priceMax, specs } = this.filters();
@@ -103,6 +107,28 @@ export class CatalogComponent {
     });
   });
 
+  readonly totalPages = computed(() => Math.max(1, Math.ceil(this.visibleProducts().length / this.PAGE_SIZE)));
+
+  readonly pagedProducts = computed<Product[]>(() => {
+    const p = Math.min(this.page(), this.totalPages());
+    return this.visibleProducts().slice((p - 1) * this.PAGE_SIZE, p * this.PAGE_SIZE);
+  });
+
+  /** Páginas a mostrar en el control de paginación (ventana deslizante de 5) */
+  readonly pageRange = computed<number[]>(() => {
+    const total = this.totalPages();
+    const current = this.page();
+    if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
+    const delta = 2;
+    const range: number[] = [];
+    for (let i = Math.max(2, current - delta); i <= Math.min(total - 1, current + delta); i++) {
+      range.push(i);
+    }
+    if (range[0] > 2) range.unshift(-1);           // ellipsis izq
+    if (range[range.length - 1] < total - 1) range.push(-2); // ellipsis der
+    return [1, ...range, total];
+  });
+
   constructor() {
     // Actualizar meta tags cuando cambia la categoría
     effect(() => {
@@ -115,25 +141,55 @@ export class CatalogComponent {
       });
     });
 
-    // Sincronizar sort con URL query params
-    effect(() => {
-      const currentSort = this.sort();
-      if (currentSort !== 'price-asc') {
-        this.router.navigate([], { queryParamsHandling: 'merge', queryParams: { sort: currentSort }, replaceUrl: true });
-      }
-    });
-
-    // Leer sort inicial de URL
-    const sortParam = this.route.snapshot.queryParamMap.get('sort') as SortOption | null;
+    // Leer estado inicial desde URL
+    const snap = this.route.snapshot.queryParamMap;
+    const sortParam = snap.get('sort') as SortOption | null;
+    const priceMin  = snap.get('priceMin')  ? Number(snap.get('priceMin'))  : null;
+    const priceMax  = snap.get('priceMax')  ? Number(snap.get('priceMax'))  : null;
+    const pageParam = snap.get('page') ? Number(snap.get('page')) : 1;
+    const specs: Record<string, string> = {};
+    for (const key of snap.keys) {
+      if (key.startsWith('s_')) specs[key.slice(2)] = snap.get(key) ?? '';
+    }
     if (sortParam) this.sort.set(sortParam);
+    if (pageParam > 1) this.page.set(pageParam);
+    if (priceMin !== null || priceMax !== null || Object.keys(specs).length) {
+      this.filters.set({ priceMin, priceMax, specs });
+    }
+  }
+
+  private syncUrl(): void {
+    const f = this.filters();
+    const s = this.sort();
+    const p = this.page();
+    const params: Record<string, string | null | undefined> = {
+      sort:     s !== 'price-asc' ? s : null,
+      page:     p > 1 ? String(p) : null,
+      priceMin: f.priceMin !== null ? String(f.priceMin) : null,
+      priceMax: f.priceMax !== null ? String(f.priceMax) : null,
+    };
+    for (const key of this.specFields().map(sf => sf.key)) {
+      params[`s_${key}`] = f.specs[key] || null;
+    }
+    this.router.navigate([], { queryParams: params, queryParamsHandling: 'merge', replaceUrl: true });
   }
 
   onFiltersChange(filters: ActiveFilters): void {
     this.filters.set(filters);
+    this.page.set(1);
+    this.syncUrl();
   }
 
   onSortChange(sort: SortOption): void {
     this.sort.set(sort);
+    this.page.set(1);
+    this.syncUrl();
+  }
+
+  goToPage(p: number): void {
+    this.page.set(p);
+    this.syncUrl();
+    this.doc.getElementById('main-content')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   toggleMobileFilters(): void {

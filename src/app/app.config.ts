@@ -1,5 +1,5 @@
 import { ApplicationConfig, provideZonelessChangeDetection, isDevMode } from '@angular/core';
-import { provideRouter, withPreloading, PreloadAllModules, withViewTransitions } from '@angular/router';
+import { provideRouter, withPreloading, PreloadAllModules, withViewTransitions, withInMemoryScrolling } from '@angular/router';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { FirebaseApp, initializeApp, provideFirebaseApp } from '@angular/fire/app';
@@ -14,6 +14,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes,
       withPreloading(PreloadAllModules),
       withViewTransitions(),
+      withInMemoryScrolling({ anchorScrolling: 'enabled', scrollPositionRestoration: 'disabled' }),
     ),
     provideClientHydration(withEventReplay()),
     provideHttpClient(withFetch()),

@@ -52,9 +52,45 @@
 
       <!-- Grid -->
       <app-product-grid
-        [products]="visibleProducts()"
+        [products]="pagedProducts()"
         [loading]="loading()"
       />
+
+      <!-- Paginación -->
+      @if (totalPages() > 1) {
+        <nav class="catalog__pagination" aria-label="Paginación">
+          <button
+            class="catalog__page-btn"
+            type="button"
+            [disabled]="page() === 1"
+            (click)="goToPage(page() - 1)"
+            aria-label="Página anterior"
+          >‹</button>
+
+          @for (p of pageRange(); track p) {
+            @if (p < 0) {
+              <span class="catalog__page-ellipsis" aria-hidden="true">…</span>
+            } @else {
+              <button
+                class="catalog__page-btn"
+                [class.catalog__page-btn--active]="page() === p"
+                type="button"
+                (click)="goToPage(p)"
+                [attr.aria-label]="'Página ' + p"
+                [attr.aria-current]="page() === p ? 'page' : null"
+              >{{ p }}</button>
+            }
+          }
+
+          <button
+            class="catalog__page-btn"
+            type="button"
+            [disabled]="page() === totalPages()"
+            (click)="goToPage(page() + 1)"
+            aria-label="Página siguiente"
+          >›</button>
+        </nav>
+      }
     </div>
   </div>
 </div>

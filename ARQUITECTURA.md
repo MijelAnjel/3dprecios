@@ -36,13 +36,16 @@
 5. **0 lecturas Firestore** desde el navegador del usuario — todo opera sobre datos en memoria
 
 Funcionalidades actuales:
-- Navegación por **8 categorías** (filamentos por material, impresoras FDM/resina, resinas, repuestos)
+- Navegación por **17 categorías** (filamentos por material, impresoras FDM/resina, resinas, repuestos, accesorios, secadores, escáneres, lápices 3D)
 - **Comparativa de precios** por tienda en la ficha de cada producto
 - **Historial de precios** (gráfico de línea con evolución)
-- **Búsqueda por texto** en el catálogo
-- Filtros por categoría y ordenamiento (menor precio, más tiendas)
+- **Búsqueda con autocompletado** (0 Firestore — filtra catalog.json en memoria)
+- Filtros por categoría, specs, precio y ordenamiento — con **URL params compartibles**
+- **Paginación** (24 productos/página, ellipsis, sincronizada con URL)
+- **Comentarios Disqus** en la ficha de cada producto
+- **Página /recursos** — directorios, modelos 3D, tutoriales y comunidades
 - PWA installable (service worker, manifest)
-- **SEO completo**: SSR, JSON-LD, meta tags dinámicos, sitemap
+- **SEO completo**: SSR, JSON-LD, meta tags dinámicos, sitemap auto-generado
 
 ---
 
@@ -416,11 +419,13 @@ interface WcStoreProduct {
   name: string;
   permalink: string;
   prices: { price: string; currency_code: string; };  // precio en centavos (CLP = sin decimales)
-  images: string[];
+  images: Array<{ id: number; src: string; thumbnail: string; name: string; alt: string }>;
   is_in_stock: boolean;
   categories: Array<{ id: number; name: string; slug: string }>;
 }
 ```
+
+> **Importante:** `images` es un array de objetos (no de strings). Para obtener la URL usar `p.images?.[0]?.src ?? ''`.
 
 #### `parsePriceCLP(texto)`
 Convierte texto de precio a número entero CLP.
@@ -626,13 +631,17 @@ Verificar que:
 |---|---|---|
 | `filamentos-pla` | Filamentos PLA | PLA, PLA+, PLA Silk, PLA Matte, PLA HF |
 | `filamentos-abs` | Filamentos ABS | ABS, ABS+, ASA |
-| `filamentos-petg` | Filamentos PETG | PETG, PETG-CF |
-| `filamentos-tpu` | Filamentos TPU/TPE | Flexibles |
-| `filamentos-especiales` | Filamentos Especiales | Nylon, PC, PA12, PA-CF, fibra carbono |
-| `impresoras-fdm` | Impresoras FDM | Bambu Lab, Creality, Prusa, Elegoo Neptune |
-| `impresoras-resina` | Impresoras Resina | Elegoo Saturn/Mars, Anycubic, Phrozen |
+| `filamentos-petg` | Filamentos PETG | PETG, PETG-CF, PETG-HF |
+| `filamentos-tpu` | Filamentos TPU/TPE | Flexibles — TPU, TPE |
+| `filamentos-especiales` | Filamentos Especiales | Nylon, PC, PA12, PA-CF, PEEK, PEI, HIPS, PVA, ASA-CF, Nylon-CF, fibra carbono |
+| `impresoras-fdm` | Impresoras FDM | Bambu Lab, Creality, Prusa, Elegoo Neptune, Anycubic, Anet, AnkerMake, Snapmaker |
+| `impresoras-resina` | Impresoras Resina | Elegoo Saturn/Mars, Anycubic, Phrozen, Shining 3D, Uniz |
 | `resinas` | Resinas | Resina estándar, ABS-like, 8K, agua-lavable |
-| `repuestos` | Repuestos | Boquillas, hotends, camas, extrusores |
+| `repuestos` | Repuestos | Boquillas, hotends, camas, extrusores, BTT, Creality K-series |
+| `accesorios` | Accesorios | Herramientas, insumos, adhesivos, eVacuum, eSpool, enclosures |
+| `secadores` | Secadores de Filamento | Secadores, cajas de almacenamiento con calefacción |
+| `scanner-3d` | Escáneres 3D | Escáneres de escritorio y portátiles |
+| `lapices-3d` | Lápices 3D | Lápices 3D con filamento |
 | `general` | General | Fallback — productos sin categoría clara |
 
 ### `inferCategory(nombre, pathOSlug)` — lógica de clasificación
@@ -640,6 +649,7 @@ Verificar que:
 La función está en `scraper/src/utils.ts` y sigue este orden **estrictamente**:
 
 ```
+0. ¿El slug tiene keywords de repuesto/BTT/Creality K? → repuestos  (prioridad máxima)
 1. ¿El path/slug contiene "filament"?  → filamento (sub-tipo por nombre)
 2. ¿El nombre contiene keyword de filamento SIN mencionar "impresora"? → filamento
 3. ¿El path/slug menciona "resina" sin "impresora"? → resinas
@@ -648,9 +658,12 @@ La función está en `scraper/src/utils.ts` y sigue este orden **estrictamente**
 6. ¿El nombre coincide con modelo conocido de impresora resina? → impresoras-resina
 7. ¿El path/slug menciona "impresora" (sin resina)? → impresoras-fdm
 8. ¿El nombre coincide con modelo conocido de impresora FDM? → impresoras-fdm
-9. ¿El path/slug menciona "repuesto", "accesorio", "nozzle"? → repuestos
-10. ¿El nombre tiene keywords de repuesto? → repuestos
-11. Fallback → general
+9. ¿El nombre/path menciona secador/dryer? → secadores
+10. ¿El path menciona /insumos/, /herramientas/, /accesorios/? → accesorios
+11. ¿El nombre tiene keywords de accesorio (eVacuum, eSpool, CryoGrip, enclosure)? → accesorios
+12. ¿El path/slug menciona "repuesto", "accesorio", "nozzle"? → repuestos
+13. ¿El nombre tiene keywords de repuesto? → repuestos
+14. Fallback → general
 ```
 
 **Regla crítica: los filamentos se detectan ANTES que las impresoras.**
@@ -781,7 +794,7 @@ getHistory(productSlug: string): CatalogHistoryPoint[]
 
 ### Scraping (`.github/workflows/scrape.yml`)
 - **Trigger:** cron `0 */6 * * *` (00:00, 06:00, 12:00, 18:00 UTC) + `workflow_dispatch` manual
-- **Acción:** `npm ci --prefix scraper && npm run scrape --prefix scraper`
+- **Acción:** Scrape todas las tiendas → `check.ts --export` (genera catalog.json + sitemap.xml) → `git commit + push` (dispara deploy.yml automáticamente)
 - **Tiempo:** ~15-30 minutos según tiendas activas
 
 #### Secrets de GitHub requeridos
@@ -912,13 +925,51 @@ Si responde JSON → usar WC Store API.
 
 **Solución:** Traer TODOS los productos sin filtro de categoría y aplicar `inferCategory` como filtro, descartando los que devuelvan `'general'`.
 
-### 13.7 — Jumpseller JS-rendered (PARCIALMENTE RESUELTO)
+### 13.7 — Jumpseller JS-rendered (RESUELTO)
 
-**Plataforma:** Make3D y potencialmente otras usan Jumpseller. Las páginas de categoría devuelven 404 o HTML vacío.
+**Plataforma:** Make3D y TodoToner usan Jumpseller. El HTML SSR SÍ incluye los productos con el selector correcto.
 
-**Solución para Make3D:** Leer el sitemap XML (`/sitemap.xml`) para obtener URLs de productos y scrapear cada página individualmente (JSON-LD tiene nombre e imagen, precio está en el HTML). Pendiente de implementar completo.
+**Solución:** Selector `button[data-product-name]` (Jumpseller SSR). Desde el botón, subir con `.parents('[data-product-id]')` para encontrar el contenedor con precio e imagen. Implementado en `todotoner.ts` y `make3d.ts`.
 
-**Solución para TodoToner:** Jumpseller SSR — el HTML SÍ incluye los productos. Selector correcto: `button[data-product-name]` con `.parents('[data-product-id]')` para obtener el contenedor con precio e imagen.
+```typescript
+$('button[data-product-name]').each((_, el) => {
+  const name  = $(el).attr('data-product-name')!;
+  const container = $(el).parents('[data-product-id]');
+  const price = parsePriceCLP(container.find('.price').text());
+  const href  = container.find('a').attr('href') ?? '';
+  const img   = container.find('img').attr('src') ?? '';
+  ...
+});
+```
+
+### 13.8 — `WcStoreProduct.images` era `string[]` (RESUELTO)
+
+**Problema:** 4 scrapers WC API (horus3d, evstore, capital3d, makerschile) usaban `p.images?.[0]` como string, pero la API devuelve objetos `{id, src, thumbnail, name, alt}`.
+
+**Solución:** Actualizar el tipo en `utils.ts` y corregir todos los scrapers:
+```typescript
+imageUrl: p.images?.[0]?.src ?? '',
+```
+
+### 13.9 — maxi3d traía solo 15 productos (RESUELTO)
+
+**Problema:** paginación usaba `/page/N/` (WordPress estándar) pero maxi3d.cl usa el parámetro WooCommerce `?product-page=N`.
+
+**Solución:** Cambiar patrón de paginación en `maxi3d.ts` → ahora obtiene 280+ productos.
+
+### 13.10 — JSON-LD eliminado por Angular (RESUELTO)
+
+**Problema:** `<script type="application/ld+json">` dentro de plantillas Angular es eliminado por el sanitizador HTML de seguridad.
+
+**Solución:** Inyectar el tag `<script>` directamente via `DOCUMENT` en el constructor del componente:
+```typescript
+constructor() {
+  const script = this.document.createElement('script');
+  script.type = 'application/ld+json';
+  script.innerHTML = JSON.stringify(schema);
+  this.document.head.appendChild(script);
+}
+```
 
 ---
 
@@ -931,8 +982,8 @@ Si responde JSON → usar WC Store API.
 | `makerschile` | Makers Chile | WC Store API (todos, filtrado) | ✅ Activo | ~300 |
 | `evstore` | eVStore | WC Store API (todos) | ✅ Activo | ~300 |
 | `capital3d` | Capital 3D | WC Store API (categorías) | ✅ Activo | ~130 |
-| `maxi3d` | Maxi3D | WooCommerce HTML + Cheerio | ✅ Activo | ~23 |
-| `make3d` | Make3D | Jumpseller sitemap+JSON-LD | ⚠️ Limitado | ~58 |
+| `maxi3d` | Maxi3D | WooCommerce HTML + Cheerio | ✅ Activo | ~280+ |
+| `make3d` | Make3D | Jumpseller SSR + Cheerio | ✅ Activo | ~58 |
 | `todotoner` | TodoToner | Jumpseller SSR + Cheerio | ✅ Activo | ~65 |
 | `pcfactory` | PC Factory | JS-rendered | ⚠️ Sin datos | 0 |
 | `falabella` | Falabella | API JSON | ⚠️ Pocos | ~10 |
@@ -947,37 +998,36 @@ Si responde JSON → usar WC Store API.
 
 ## 15. Pendientes y roadmap
 
-### Bloqueado (Firestore quota — corre cuando se restablezca a medianoche PT)
+### Pendiente (requiere Firestore — correr cuando quota se restablezca)
 
 | Tarea | Comando |
 |---|---|
 | **Poblar catalog.json** con datos reales | `cd scraper && npx ts-node check.ts --export` |
-| **Migrar slugs duplicados** (ej. Bambu Lab eje X) | `npx ts-node check.ts --fix-dupes` |
-| **Re-scrape tiendas WC API** (datos actualizados) | `npx ts-node src/run.ts --store=makerschile` (y horus3d, evstore, capital3d) |
+| **Migrar slugs duplicados** (ej. Bambu Lab eje X) | `npx ts-node check.ts --fix-dupes --dry-run` luego `--fix-dupes` |
+| **Re-scrape tiendas con bugs corregidos** | `npx ts-node src/run.ts --store=maxi3d` (y make3d, filamento, capital3d) |
+| **Re-categorizar con nuevas categorías** | `npx ts-node check.ts --recategorize` |
 
 ### Alta prioridad
 
 | Tarea | Descripción |
 |---|---|
-| **make3d.ts completo** | Scraper via sitemap + 58 peticiones individuales con JSON-LD |
 | **pcfactory.ts** | JS-rendered; buscar si tiene API interna en DevTools > Network |
-| **Paginación virtual** | Con +1000 productos la categoría se carga completa en memoria — cursor-based pagination |
-| **URL params en filtros** | Los filtros seleccionados no se reflejan en la URL — imposible compartir búsquedas |
+| **filamento.ts tiendas adicionales** | Agregar más paths de categoría (TPU especiales, composites) |
+| **Activar tiendas pendientes** | Impresalta, AHI3D — investigar plataforma y crear scrapers |
 
 ### Media prioridad
 
 | Tarea | Descripción |
 |---|---|
 | **Sistema de alertas** | `AlertFormComponent` guardó el diseño pero falta Firebase Auth + Resend trigger |
-| **Sitemap dinámico** | Generar `sitemap.xml` desde `export.ts` con todos los slugs de productos |
-| **Más tiendas** | Investigar: 3DStore.cl, Filamento.cl, AHI 3D |
+| **Comparador lado a lado** | Seleccionar 2-3 productos y comparar specs y precios en tabla |
+| **Más tiendas** | ~35 tiendas chilenas identificadas en `tiendasypaginas.md` — priorizar las más grandes |
 
 ### Baja prioridad / futuro
 
 | Tarea | Descripción |
 |---|---|
-| **Comparador lado a lado** | Seleccionar 2-3 productos y comparar specs y precios en tabla |
+| **Blaze plan Firebase** | Escalar con budget alerts ($5/mes recommended) para persistencia a largo plazo |
 | **Exportar historial CSV** | Botón de descarga en la ficha de producto |
 | **Notificaciones push** | Web Push API para alertas sin email |
-| **Búsqueda full-text** | Algolia Free o búsqueda sobre catalog.json en memoria |
 | **Panel admin** | UI para gestionar tiendas, productos y categorías manualmente |

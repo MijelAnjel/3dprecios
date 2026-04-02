@@ -1,5 +1,5 @@
 import { ScraperResult, StoreConfig } from '../models';
-import { fetchHtml, parsePriceCLP, inferStock } from '../utils';
+import { fetchHtml, parsePriceCLP, inferStock, inferCategory } from '../utils';
 
 // ──────────────────────────────────────────────────────────────
 // Impakt.cl — WooCommerce
@@ -52,9 +52,10 @@ export async function scrapeImpakt(store: StoreConfig): Promise<ScraperResult[]>
             productUrl:  href,
             price,
             currency:    'CLP',
-            stock:       isOut ? 'out' : inferStock(stockTxt || 'disponible'),
-            imageUrl:    imgSrc,
-            scrapedAt:   new Date(),
+            stock:        isOut ? 'out' : inferStock(stockTxt || 'disponible'),
+            imageUrl:     imgSrc,
+            categorySlug: inferCategory(name, path),
+            scrapedAt:    new Date(),
           });
         });
 

@@ -201,16 +201,51 @@ export function inferCategory(name: string, path: string): string {
   const isRepuesto =
     // Sensores y finales de carrera
     /\bsensor\b|endstop|final\s*de\s*carrera|\bprobe\b|bltouch|cr[\s-]?touch|inductive\s*probe/i.test(n) ||
+    // Módulo de detección de filamento
+    /modulo\s*(de\s*)?detecci[oó]n\s*(de\s*)?filament|filament\s*detector|run[\s-]?out\s*sensor/i.test(n) ||
     // Herramientas de filamento (cortadores, palancas, etc.)
     /cortador.*filament|palanca.*cort|cutter.*filament|cizalla|palanca\s+corta/i.test(n) ||
     // Térmicos y hotend
     /\bcalefactor\b|\bheater[\s-]?block\b|\btermistor\b|thermistor|thermocouple|termopar|heatbreak|heat\s*break/i.test(n) ||
-    // Boquillas y extrusores
+    // Boquillas, gargantas y extrusores
     /\bnozzle\b|\bboquilla\b|\bextrusor\b|\bextruder\b|\bbowden\b|\bptfe\b(?!\s*filament)|\bhotend\b/i.test(n) ||
-    // Motion: correas, poleas, rodamientos, raíles (EN + ES)
-    /\bcorrea\b|\bpulley\b|\bpolea\b|\brodamiento\b|\bbearing\b|rail\s*lineal|lead[\s-]?screw|trapezoidal|varilla\s*roscada/i.test(n) ||
+    /\bgarganta\b|\bthroat\b|tubo\s*(de\s*)?calor/i.test(n) ||
+    // Engranajes y piezas de extrusión
+    /\bengranaje\b|\bgear\b.*extru|extru.*\bgear\b|\bmk8\b|\bmk\s*8\b|\bdual\s*drive\b|\bbmg\b/i.test(n) ||
+    // Acoples y conectores de cabeza de impresora
+    /acople\s*cabeza|conector\s*acople\s*cabeza|head\s*connector/i.test(n) ||
+    // Silicona para bloques / protectores de hotend
+    /silicona\s*(para\s*)?(bloque|hotend|calefactor)|silicona\s*protectora.*extru/i.test(n) ||
+    // Tuercas anti-backlash (patrón flexible — el modificador 'metálica' puede ir en medio)
+    /anti[\s-]?backlash/i.test(n) ||
+    /tuerca\s*(para\s*)?(varilla|husillo|tornillo|lead)/i.test(n) ||
+    /tuerca\s*para\s*apretar/i.test(n) ||
+    // Bloques disipadores y accesorios térmicos (no el hotend completo)
+    /bloque\s*disipador|disipador\s*de\s*aluminio|bloque.*disipaci[oó]n|disipaci[oó]n.*bloque|heatsink.*print|coldsend|cold\s*end/i.test(n) ||
+    // Power switch, interruptores eléctricos de impresora
+    /power\s*switch.*\d+[avAV]|\binterruptor\b.*\d+[aA]|\bswitching\s*\d+[aA]/i.test(n) ||
+    // Tanque/cuba/vat de resina (repuesto de impresoras de resina)
+    /\btanque\s*(de\s*)?resina\b|\bresin\s+vat\b|\bvat\b.*resina/i.test(n) ||
+    // Perfil de extensión, piezas estructurales de aluminio extruido
+    /perfil\s*(de\s*)?exten.*eje|perfil.*eje\s*[xyz]/i.test(n) ||
+    // Kits de reparación / kits de mantenimiento para modelos concretos
+    /kit\s*(de\s*)?(repara|reparaci[oó]n|mantenimiento)\s*(ender|bambu|prusa|creality|artillery)/i.test(n) ||
+    /kit\s*(repara|reparaci[oó]n)/i.test(n) ||
+    // Drivers de placas (FS, TMC, A4988, DRV, y genérico con disipador)
+    /driver\s+(fs\d+|tmc\d+|a4988|drv8825|elb\d+|mv\d+)/i.test(n) ||
+    /driver\s+(con\s+disipador|de\s+(calor|motor)|para\s+(impres|artil|creali|bambu|prusa))/i.test(n) ||
+    // Motion: correas (singular y plural), poleas, rodamientos, raíles (EN + ES)
+    /\bcorreas?\b|\bpulley\b|\bpolea\b|\brodamiento\b|\bbearing\b|rail\s*lineal|lead[\s-]?screw|trapezoidal|varilla\s*roscada/i.test(n) ||
+    // Conectores neumáticos (PC4-M10, PC4-M6, etc.) para tubo PTFE
+    /pc4[-\s]?m\d|\bconector\s*neum[aá]/i.test(n) ||
+    // Puntas / tips endurecidos (nozzles de acero, carburo, E3D, Hardened)
+    /puntas?\s*(de\s*)?(acero\s*endurecido|carburo|tungsten|e3d)|kit.*puntas.*(impres|e3d)/i.test(n) ||
+    // Espiral / recubrimiento de cables para impresoras
+    /espiral\s*(caucas|negro|cables).*impresi|cable\s*management.*impresi/i.test(n) ||
     // Ventiladores específicos (4010, 5015, hotend, capa) — no ventilador genérico
     /ventilador\s*de\s*capa|layer\s*fan|hotend\s*fan|ventilador.*\b\d{4}\b|\b\d{4}\b.*ventilador/i.test(n) ||
+    // Ruedas de carruaje y rodillos de precisión (V-slot, etc.)
+    /rueda\s*(policarbonato|pvc|v[\s-]?slot|eccentr|precision)|eccentric\s*(spacer|nut)|espaciador\s*exc[eé]ntrico/i.test(n) ||
     // Cama y superficie de impresión / placas de impresión reemplazables
     /cama\s*caliente|heated\s*bed|vidrio\s*templado|placa\s*de\s*construcci|spring\s*steel|\bpei\b|build\s*plate|\bcryogrip\b|cryo\s*grip|\bflexplate\b|panda.*plate/i.test(n) ||
     // Protectores de pantalla FEP para resina
@@ -239,7 +274,10 @@ export function inferCategory(name: string, path: string): string {
     // Sistemas de extrusión nombrados
     /sistema\s+de\s+extrusi[oó]n|extrus[oó]n\s+titan|titan\s+extrus/i.test(n) ||
     // Kits de repuesto explícitos
-    /kit\s*correa|kit\s*nozzle|kit\s*hotend|upgrade\s*kit\s*(ender|bambu|prusa)/i.test(n);
+    /kit\s*correa|kit\s*nozzle|kit\s*hotend|upgrade\s*kit\s*(ender|bambu|prusa)/i.test(n) ||
+    // Kits de herramientas y limpieza asociados a impresoras (no genéricos)
+    /kit\s*(de\s*)?(herramientas|limpieza|boquillas)\s*(para\s*)?(impres|ender|bambu|creality|artillery)/i.test(n) ||
+    /(ender|bambu|creality|artillery|prusa|anycubic).*kit\s*(boquill|nozzle|hotend|repuest)/i.test(n);
 
   if (isRepuesto) return 'repuestos';
 
@@ -287,9 +325,13 @@ export function inferCategory(name: string, path: string): string {
   }
 
   // ── 2. Resinas líquidas (SLA/MSLA) ────────────────────────────────────
-  // isLiquidResin: tiene "resina" en nombre Y (hay cantidad en g/ml o empieza con "Resina")
+  // Si el NOMBRE empieza con "Resina" → siempre es un material líquido, nunca una impresora
+  if (/^resina\b/i.test(n)) return 'resinas';
+
+  // isLiquidResin: tiene "resina" en nombre Y (hay cantidad en g/ml o marcadores de resina líquida)
   const hasResinaWord   = /\bresina\b|\bresin\b/i.test(n);
-  const hasLiquidMarker = /\d+\s*(g|ml|kg|litro)\b/i.test(n) || /^resina\b/i.test(n);
+  const hasLiquidMarker = /\d+\s*(g|ml|kg|litro)\b/i.test(n)
+    || /\bliquida?\b|\best[aá]ndar\b|\bmodeling\b|\bnormal\b|\btranspar|\bwater[\s-]?wash|\babs[\s-]?like/i.test(n);
 
   if (/resina|resin/i.test(p) && !/impresora.*resina|impresoras-resina/i.test(p)) return 'resinas';
   if (hasResinaWord && hasLiquidMarker && !isPrinterWord) return 'resinas';
@@ -310,7 +352,11 @@ export function inferCategory(name: string, path: string): string {
   if (/\bcreality\b.*\b(k1|k2|cr[\s-]?\d+|sonic\s*pad|nebula)/i.test(n)) return 'impresoras-fdm';
   // Bambu Lab con nombre de modelo sin "bambu" inmediatamente antes (e.g. "Bambu Lab A1C")
   if (/\bbambu\b|\bbambu\s+lab\b/i.test(n) && !filamentByName) return 'impresoras-fdm';
-  if (isPrinterWord && !/resina|resin|sla|msla|dlp/i.test(n)) return 'impresoras-fdm';
+  // Only classify as FDM if it's not "para impresora" (accessory description) or a repuesto
+  if (isPrinterWord
+    && !/resina|resin|sla|msla|dlp/i.test(n)
+    && !/para\s+(impresora|impresi[oó]n)|repuesto|accesorio|pieza|componente|upgrade|compatible\s+(con|para)/i.test(n)
+  ) return 'impresoras-fdm';
 
   // ── 5. Repuestos generales (por path o nombre) ─────────────────────────────
   if (/repuesto|accesorio|spare|upgrade|hotend|nozzle|extrusor|accesorios/i.test(p)) return 'repuestos';
@@ -599,6 +645,20 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
     }
   }
 
+  // ── Impresoras de Resina: resolución UV y tecnología ─────────────────
+  if (categorySlug === 'impresoras-resina') {
+    if (/\b16k\b/i.test(name))      specs['resolution'] = '16K';
+    else if (/\b14k\b/i.test(name)) specs['resolution'] = '14K';
+    else if (/\b12k\b/i.test(name)) specs['resolution'] = '12K';
+    else if (/\b10k\b/i.test(name)) specs['resolution'] = '10K';
+    else if (/\b8k\b/i.test(name))  specs['resolution'] = '8K';
+    else if (/\b4k\b/i.test(name))  specs['resolution'] = '4K';
+
+    if (/\bdlp\b/i.test(name))                       specs['technology'] = 'DLP';
+    else if (/\bsla\b/i.test(name))                   specs['technology'] = 'SLA';
+    else if (/\bmsla\b|\blcd\b|mono\s*x/i.test(name)) specs['technology'] = 'MSLA / LCD';
+  }
+
   // ── Resinas líquidas ──────────────────────────────────────────────────
   if (categorySlug === 'resinas') {
     for (const [re, brand] of RESIN_BRANDS) {
@@ -625,8 +685,52 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
 
   // ── Repuestos ─────────────────────────────────────────────────────────
   if (categorySlug === 'repuestos') {
+    // Brand (printer compatibility)
     for (const [re, brand] of PRINTER_BRANDS) {
       if (re.test(name)) { specs['brand'] = brand; break; }
+    }
+
+    // Part type classification
+    if (/\bnozzle\b|\bboquilla\b/i.test(name)) specs['partType'] = 'Nozzle';
+    else if (/\bhotend\b|heatbreak|heat\s*break|\bcalefactor\b|heater[\s-]?block|\btermistor\b/i.test(name)) specs['partType'] = 'Hotend';
+    else if (/\bextrusor\b|\bextruder\b|\bengranaje\b|\bmk8\b|\bdual\s*drive\b/i.test(name)) specs['partType'] = 'Extrusor';
+    else if (/\bsensor\b|endstop|final\s*de\s*carrera|\bprobe\b|bltouch|cr[\s-]?touch|modulo\s*detecci[oó]n/i.test(name)) specs['partType'] = 'Sensor';
+    else if (/\bcorrea\b|\bpulley\b|\bpolea\b|gt2.*belt|belt.*gt2/i.test(name)) specs['partType'] = 'Correa / Polea';
+    else if (/motor\s+paso|stepper|\bnema\s*\d+/i.test(name)) specs['partType'] = 'Motor';
+    else if (/\bmainboard\b|placa\s*(madre|pcb|controladora)|bigtreetech|\bbtt\b|\bmks\b|skr\s*(mini|pro)/i.test(name)) specs['partType'] = 'Placa';
+    else if (/cama\s*caliente|heated\s*bed|vidrio\s*templado|placa.*construcci|spring\s*steel|\bpei\b|build\s*plate/i.test(name)) specs['partType'] = 'Cama / Superficie';
+    else if (/fuente\s*(de\s*)?poder|power\s*supply|\bmeanwell\b/i.test(name)) specs['partType'] = 'Fuente de Poder';
+    else if (/ventilador|fan/i.test(name)) specs['partType'] = 'Ventilador';
+    else if (/\bfep\b|\bnfep\b|release\s*film|pantalla\s*fep|tanque\s*resina|resin\s*vat/i.test(name)) specs['partType'] = 'Accesorio Resina';
+    else if (/pantalla\s*(lcd|tft)|lcd\s*screen/i.test(name)) specs['partType'] = 'Pantalla LCD';
+    else if (/\btermistor\b|thermocouple|termopar/i.test(name)) specs['partType'] = 'Termistor';
+    else if (/\brodamiento\b|\bbearing\b|rail\s*lineal|eccentric|espaciador/i.test(name)) specs['partType'] = 'Rodamiento / Riel';
+    else if (/driver\s+(fs|tmc|a4988|drv)/i.test(name)) specs['partType'] = 'Driver Motor';
+    else if (/silicona|garganta|throat/i.test(name)) specs['partType'] = 'Piezas Hotend';
+    else if (/correa|varilla\s*roscada|lead[\s-]?screw|husillo|trapezoidal/i.test(name)) specs['partType'] = 'Sistema de Movimiento';
+
+    // Compatible model family
+    const MODEL_FAMILIES: [RegExp, string][] = [
+      [/\bender\s*3\b/i, 'Ender 3'],
+      [/\bender\s*5\b/i, 'Ender 5'],
+      [/\bender\s*6\b/i, 'Ender 6'],
+      [/\bcr[\s-]?10\b/i, 'CR-10'],
+      [/\bcr[\s-]?6\b/i, 'CR-6'],
+      [/\bartillery\s*(x1|sidewinder)/i, 'Artillery Sidewinder'],
+      [/\bartillery\s*(x2|genius)/i, 'Artillery Genius'],
+      [/\bartillery\s*(hornet|x3)/i, 'Artillery Hornet'],
+      [/\bartillery\b/i, 'Artillery'],
+      [/\ba1\s*mini\b/i, 'Bambu A1 Mini'],
+      [/\bbambu\b.*\ba1\b|\ba1\b.*\bbambu\b/i, 'Bambu A1'],
+      [/\bp1[sp]\b/i, 'Bambu P1'],
+      [/\bx1\s*(carbon|combo)?\b/i, 'Bambu X1'],
+      [/\bprusa\s*(mk3|mk4|xl|mini)/i, 'Prusa'],
+      [/\banycubic\s*(kobra|i3)/i, 'Anycubic Kobra / i3'],
+      [/\bkossel\b/i, 'Kossel'],
+      [/\bdelta\b.*\bimpresora\b|\bimpresora.*\bdelta\b/i, 'Delta genérica'],
+    ];
+    for (const [re, model] of MODEL_FAMILIES) {
+      if (re.test(name)) { specs['compatibleWith'] = model; break; }
     }
   }
 

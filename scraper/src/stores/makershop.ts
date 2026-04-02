@@ -1,5 +1,5 @@
 import { ScraperResult, StoreConfig } from '../models';
-import { fetchHtml, parsePriceCLP, inferStock } from '../utils';
+import { fetchHtml, parsePriceCLP, inferStock, inferCategory } from '../utils';
 
 // ──────────────────────────────────────────────────────────────
 // MakerShop.cl — Tienda general de impresión 3D
@@ -50,9 +50,10 @@ export async function scrapeMakershop(store: StoreConfig): Promise<ScraperResult
             productUrl:  href,
             price,
             currency:    'CLP',
-            stock:       outStock ? 'out' : lowStock ? 'low' : 'available',
-            imageUrl:    imgSrc,
-            scrapedAt:   new Date(),
+            stock:        outStock ? 'out' : lowStock ? 'low' : 'available',
+            imageUrl:     imgSrc,
+            categorySlug: inferCategory(name, path),
+            scrapedAt:    new Date(),
           });
         });
 

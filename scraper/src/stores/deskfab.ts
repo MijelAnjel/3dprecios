@@ -1,5 +1,5 @@
 import { ScraperResult, StoreConfig } from '../models';
-import { fetchJson, inferStock } from '../utils';
+import { fetchJson, inferStock, inferCategory } from '../utils';
 
 // ──────────────────────────────────────────────────────────────
 // DeskFab — deskfab.cl — Shopify
@@ -85,9 +85,10 @@ export async function scrapeDeskfab(store: StoreConfig): Promise<ScraperResult[]
           price,
           currency:    'CLP',
           stock,
-          imageUrl:    imgSrc.startsWith('//') ? `https:${imgSrc}` : imgSrc,
-          brand:       product.vendor || undefined,
-          scrapedAt:   new Date(),
+          imageUrl:     imgSrc.startsWith('//') ? `https:${imgSrc}` : imgSrc,
+          brand:        product.vendor || undefined,
+          categorySlug: inferCategory(product.title, product.product_type),
+          scrapedAt:    new Date(),
         });
       }
 

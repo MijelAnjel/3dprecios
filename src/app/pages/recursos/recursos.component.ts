@@ -1,6 +1,7 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, afterNextRender, inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 import { Title, Meta } from '@angular/platform-browser';
-import { inject } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 export interface ResourceSite {
   name: string;
@@ -141,12 +142,14 @@ const RESOURCE_CATEGORIES: ResourceCategory[] = [
 @Component({
   selector: 'app-recursos',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [],
   templateUrl: './recursos.component.html',
   styleUrl: './recursos.component.scss',
 })
 export class RecursosComponent {
   private readonly titleService = inject(Title);
   private readonly meta = inject(Meta);
+  private readonly doc = inject(DOCUMENT);
 
   readonly categories = RESOURCE_CATEGORIES;
 
@@ -156,5 +159,21 @@ export class RecursosComponent {
       name: 'description',
       content: 'Directorio de repositorios, buscadores y herramientas para descargar modelos 3D gratuitos y de pago: Thingiverse, Printables, MakerWorld y más.',
     });
+
+    // Handle incoming fragment navigation (e.g. footer link to /recursos#buscadores).
+    // Must run after render so section elements exist in the DOM.
+    const route = inject(ActivatedRoute);
+    afterNextRender(() => {
+      route.fragment.subscribe(fragment => {
+        if (fragment) {
+          this.doc.getElementById(fragment)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  }
+
+  /** Called by TOC pill clicks for same-page smooth scroll. */
+  scrollTo(id: string): void {
+    this.doc.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }

@@ -1,5 +1,5 @@
 import { ScraperResult, StoreConfig } from '../models';
-import { fetchHtml, parsePriceCLP, inferStock } from '../utils';
+import { fetchHtml, parsePriceCLP, inferStock, inferCategory } from '../utils';
 
 // ──────────────────────────────────────────────────────────────
 // Todo Torner — todotorner.cl — WooCommerce
@@ -56,9 +56,10 @@ export async function scrapeTodoTorner(store: StoreConfig): Promise<ScraperResul
             productUrl:  fullUrl,
             price,
             currency:    'CLP',
-            stock:       isOut ? 'out' : inferStock(stockTxt || 'disponible'),
-            imageUrl:    imgSrc,
-            scrapedAt:   new Date(),
+            stock:        isOut ? 'out' : inferStock(stockTxt || 'disponible'),
+            imageUrl:     imgSrc,
+            categorySlug: inferCategory(name, path),
+            scrapedAt:    new Date(),
           });
         });
 

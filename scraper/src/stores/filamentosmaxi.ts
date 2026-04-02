@@ -1,5 +1,5 @@
 import { ScraperResult, StoreConfig } from '../models';
-import { fetchHtml, parsePriceCLP, inferStock } from '../utils';
+import { fetchHtml, parsePriceCLP, inferStock, inferCategory } from '../utils';
 
 // ──────────────────────────────────────────────────────────────
 // Filamentos Maxi — filamentosmaxi.cl — WooCommerce
@@ -63,6 +63,7 @@ export async function scrapeFilamentosMaxi(store: StoreConfig): Promise<ScraperR
             currency:    'CLP',
             stock:       isOut ? 'out' : inferStock(stockTxt || 'disponible'),
             imageUrl:    imgSrc,
+            categorySlug: inferCategory(name, path),
             scrapedAt:   new Date(),
           });
         });

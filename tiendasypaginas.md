@@ -5528,3 +5528,92 @@ Láser Fibra
               </div>
             </div>
           </div>
+
+
+
+<div class="secondary-nav-menu col electro-animate-dropdown position-relative animated-dropdown">
+		<ul id="menu-departments-meu-2" class="secondary-nav yamm"><li id="menu-item-6002" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-6002 dropdown"><a title="Impresoras 3D" href="https://imperio3d.com/categoria-producto/impresoras-3d/" class="dropdown-toggle" aria-haspopup="true" data-hover="dropdown">Impresoras 3D</a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-16071" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-16071 dropdown-submenu"><a title="Bambu Lab" target="_blank" href="https://imperio3d.com/categoria-producto/impresoras-3d/impresoras-bambulab/">Bambu Lab</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li id="menu-item-27100" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-27100"><a title="Bambu Lab A1 Mini" href="https://imperio3d.com/producto/impresora-3d-bambu-lab-a1-mini/">Bambu Lab A1 Mini</a></li>
+		<li id="menu-item-25872" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-25872"><a title="Bambu Lab A1 Mini Combo AMS Lite" href="https://imperio3d.com/producto/impresora-3d-bambu-lab-a1-mini-combo-ams-lite/">Bambu Lab A1 Mini Combo AMS Lite</a></li>
+		<li id="menu-item-22715" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-22715"><a title="Bambu Lab A1" href="https://imperio3d.com/producto/impresora-3d-bambu-lab-a1/">Bambu Lab A1</a></li>
+		<li id="menu-item-17267" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-17267"><a title="Bambu Lab A1 Combo con AMS Lite" href="https://imperio3d.com/producto/impresora-3d-bambu-lab-a1-combo-ams-lite/">Bambu Lab A1 Combo con AMS Lite</a></li>
+		<li id="menu-item-27145" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-27145"><a title="Bambu Lab H2C Combo con AMS 2 Pro" href="https://imperio3d.com/producto/impresora-3d-bambu-lab-h2c-combo-ams-2-pro/">Bambu Lab H2C Combo con AMS 2 Pro</a></li>
+		<li id="menu-item-24007" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-24007"><a title="Bambu Lab H2D Combo con AMS 2 Pro" href="https://imperio3d.com/producto/impresora-3d-bambu-lab-h2d-combo-ams-2-pro/">Bambu Lab H2D Combo con AMS 2 Pro</a></li>
+		<li id="menu-item-27137" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-27137"><a title="Bambu Lab H2S" href="https://imperio3d.com/producto/impresora-3d-bambu-lab-h2s/">Bambu Lab H2S</a></li>
+		<li id="menu-item-25837" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-25837"><a title="Bambu Lab H2S Combo con AMS 2 Pro" href="https://imperio3d.com/producto/impresora-3d-bambu-lab-h2s-combo-ams-2-pro/">Bambu Lab H2S Combo con AMS 2 Pro</a></li>
+		<li id="menu-item-17223" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-17223"><a title="Bambu Lab P1S Combo con AMS" href="https://imperio3d.com/producto/impresora-3d-bambu-lab-p1s-combo-con-ams/">Bambu Lab P1S Combo con AMS</a></li>
+		<li id="menu-item-25871" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-25871"><a title="Bambu Lab P2S" href="https://imperio3d.com/producto/impresora-3d-bambu-lab-p2s/">Bambu Lab P2S</a></li>
+		<li id="menu-item-25838" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-25838"><a title="Bambu Lab P2S Combo con AMS 2 Pro" href="https://imperio3d.com/producto/impresora-3d-bambu-lab-p2s-combo-con-ams-2-pro/">Bambu Lab P2S Combo con AMS 2 Pro</a></li>
+		<li id="menu-item-16073" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-16073"><a title="Bambu Lab X1 Carbon Combo con AMS" href="https://imperio3d.com/producto/bambu-lab-x1-carbon-combo/">Bambu Lab X1 Carbon Combo con AMS</a></li>
+		<li id="menu-item-24154" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-24154"><a title="Bambu Lab AMS 2 Pro" href="https://imperio3d.com/producto/bambu-lab-ams-2-pro/">Bambu Lab AMS 2 Pro</a></li>
+	</ul>
+</li>
+	<li id="menu-item-11359" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-11359 dropdown-submenu"><a title="Flsun" href="https://imperio3d.com/categoria-producto/impresoras-3d/flsun/">Flsun</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li id="menu-item-17939" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-17939"><a title="Flsun T1" href="https://imperio3d.com/producto/impresora-3d-flsun-t1-impresora-3d-fdm-maxima-velocidad-1000-mm-s/">Flsun T1</a></li>
+	</ul>
+</li>
+	<li id="menu-item-23985" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-23985 dropdown-submenu"><a title="Prusa" href="https://imperio3d.com/categoria-producto/impresoras-3d/impresoras-prusa/">Prusa</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li id="menu-item-23986" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-23986"><a title="Original Prusa Core One" href="https://imperio3d.com/producto/kit-prusa-core-one-no-ensamblada/">Original Prusa Core One</a></li>
+		<li id="menu-item-23987" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-23987"><a title="Original Prusa MK4S" href="https://imperio3d.com/producto/kit-prusa-mk4s-no-ensamblada/">Original Prusa MK4S</a></li>
+		<li id="menu-item-23988" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-23988"><a title="Original Prusa XL" href="https://imperio3d.com/producto/impresora-3d-prusa-xl-semi-ensamblado/">Original Prusa XL</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-6014" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-6014 dropdown"><a title="Filamentos" href="https://imperio3d.com/categoria-producto/filamentos/" class="dropdown-toggle" aria-haspopup="true" data-hover="dropdown">Filamentos</a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-23009" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-23009 dropdown-submenu"><a title="Bambu Lab" href="https://imperio3d.com/categoria-producto/filamentos/bambu-lab/">Bambu Lab</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li id="menu-item-26495" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-26495"><a title="ASA" href="https://imperio3d.com/categoria-producto/filamentos/bambu-lab/asa-bambu-lab/">ASA</a></li>
+		<li id="menu-item-26496" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-26496"><a title="PETG" href="https://imperio3d.com/categoria-producto/filamentos/bambu-lab/petg/">PETG</a></li>
+		<li id="menu-item-26503" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-26503"><a title="PLA" href="https://imperio3d.com/categoria-producto/filamentos/bambu-lab/pla-bambu-lab/">PLA</a></li>
+		<li id="menu-item-26505" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-26505"><a title="PPA-CF" href="https://imperio3d.com/categoria-producto/filamentos/bambu-lab/ppa-cf/">PPA-CF</a></li>
+		<li id="menu-item-26504" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-26504"><a title="PPS-CF" href="https://imperio3d.com/categoria-producto/filamentos/bambu-lab/pps-cf/">PPS-CF</a></li>
+		<li id="menu-item-26507" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-26507"><a title="PVA" href="https://imperio3d.com/categoria-producto/filamentos/filamentos-esun/pva/">PVA</a></li>
+	</ul>
+</li>
+	<li id="menu-item-6024" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-6024 dropdown-submenu"><a title="Creality" target="_blank" href="https://imperio3d.com/categoria-producto/filamentos/filamentos-creality/">Creality</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li id="menu-item-14650" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-14650"><a title="PLA" href="https://imperio3d.com/categoria-producto/filamentos/filamentos-creality/filamentos-creality-pla/">PLA</a></li>
+		<li id="menu-item-7930" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-7930"><a title="PLA Silk" href="https://imperio3d.com/categoria-producto/filamentos/filamentos-creality/filamentos-creality-pla-silk/">PLA Silk</a></li>
+	</ul>
+</li>
+	<li id="menu-item-7955" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-7955 dropdown-submenu"><a title="Esun" href="https://imperio3d.com/categoria-producto/filamentos/filamentos-esun/">Esun</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li id="menu-item-21202" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-21202"><a title="Policarbonato ePC" href="https://imperio3d.com/producto/filamento-esun-pc-policarbonato/">Policarbonato ePC</a></li>
+		<li id="menu-item-14407" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-14407"><a title="PLA" href="https://imperio3d.com/categoria-producto/filamentos/filamentos-esun/pla-filamentos-esun/">PLA</a></li>
+		<li id="menu-item-21203" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-21203"><a title="PLA LW / Ligero" href="https://imperio3d.com/producto/filamento-esun-pla-light-weight-pla-lw/">PLA LW / Ligero</a></li>
+		<li id="menu-item-8347" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8347"><a title="PLA+" href="https://imperio3d.com/categoria-producto/filamentos/filamentos-esun/filamentos-esun-pla/">PLA+</a></li>
+		<li id="menu-item-18940" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-18940"><a title="PETG" href="https://imperio3d.com/categoria-producto/filamentos/filamentos-esun/filamentos-esun-petg/">PETG</a></li>
+		<li id="menu-item-21126" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-21126"><a title="Fibra de Carbono" href="https://imperio3d.com/categoria-producto/filamentos/filamentos-esun/fibra-de-carbono/">Fibra de Carbono</a></li>
+		<li id="menu-item-23018" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-23018"><a title="TPE 83 A" href="https://imperio3d.com/producto/filamento-esun-tpe-83a-1-75mm-1kg/">TPE 83 A</a></li>
+	</ul>
+</li>
+	<li id="menu-item-10260" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-10260"><a title="Plastar" href="https://imperio3d.com/categoria-producto/filamentos/printalot/plastar/">Plastar</a></li>
+	<li id="menu-item-9642" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-9642"><a title="Printalot" href="https://imperio3d.com/categoria-producto/filamentos/printalot/">Printalot</a></li>
+</ul>
+</li>
+<li id="menu-item-6017" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-6017 dropdown"><a title="Accesorios" href="https://imperio3d.com/categoria-producto/accesorios/" class="dropdown-toggle" aria-haspopup="true" data-hover="dropdown">Accesorios</a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-24127" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-24127"><a title="Adherencia" href="https://imperio3d.com/categoria-producto/adherencia/">Adherencia</a></li>
+	<li id="menu-item-19029" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-19029"><a title="MakerKit" href="https://imperio3d.com/categoria-producto/makerkit/">MakerKit</a></li>
+	<li id="menu-item-21472" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-21472"><a title="Superficie de Impresión" href="https://imperio3d.com/categoria-producto/accesorios/superficie-de-impresion/">Superficie de Impresión</a></li>
+	<li id="menu-item-24125" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-24125"><a title="Upgrade / Mejora" href="https://imperio3d.com/categoria-producto/upgrade-mejora/">Upgrade / Mejora</a></li>
+</ul>
+</li>
+<li id="menu-item-24063" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-24063"><a title="Mantenimiento" href="https://imperio3d.com/categoria-producto/mantenimiento/">Mantenimiento</a></li>
+<li id="menu-item-15310" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-15310 dropdown"><a title="Repuestos" target="_blank" href="https://imperio3d.com/categoria-producto/repuestos/" class="dropdown-toggle" aria-haspopup="true" data-hover="dropdown">Repuestos</a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-17699" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-17699"><a title="Anycubic" href="https://imperio3d.com/categoria-producto/repuestos/repuestos-anycubic/">Anycubic</a></li>
+	<li id="menu-item-15395" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-15395"><a title="Artillery" href="https://imperio3d.com/categoria-producto/repuestos/repuestosartillery/">Artillery</a></li>
+	<li id="menu-item-18620" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-18620"><a title="BambuLab" href="https://imperio3d.com/categoria-producto/repuestos/repuestos-bambulab/">BambuLab</a></li>
+	<li id="menu-item-17844" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-17844"><a title="Creality" href="https://imperio3d.com/categoria-producto/repuestos/repuestos-creality/">Creality</a></li>
+	<li id="menu-item-17604" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-17604"><a title="Flsun" href="https://imperio3d.com/categoria-producto/repuestos/repuestos-flsun/">Flsun</a></li>
+</ul>
+</li>
+</ul>		</div>

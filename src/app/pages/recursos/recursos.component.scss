@@ -38,7 +38,9 @@
     border-radius: 2rem;
     color: $text-secondary;
     font-size: 0.85rem;
+    font-family: inherit;
     text-decoration: none;
+    cursor: pointer;
     transition: border-color $transition-normal, color $transition-normal, background $transition-normal;
 
     &:hover {

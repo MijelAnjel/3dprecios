@@ -123,6 +123,20 @@ const CATEGORIES: Category[] = [
         options: ['Anycubic', 'Bambu Lab', 'Creality', 'Elegoo', 'Flashforge', 'Graphy', 'Phrozen', 'Shining 3D', 'Uniz'],
         filterable: true,
       },
+      {
+        key: 'resolution',
+        label: 'Resolución UV',
+        type: 'select',
+        options: ['4K', '8K', '10K', '12K', '14K', '16K'],
+        filterable: true,
+      },
+      {
+        key: 'technology',
+        label: 'Tecnología',
+        type: 'select',
+        options: ['MSLA / LCD', 'DLP', 'SLA'],
+        filterable: true,
+      },
     ],
   },
   {
@@ -162,10 +176,34 @@ const CATEGORIES: Category[] = [
     icon: '🔧',
     specFields: [
       {
+        key: 'partType',
+        label: 'Tipo de repuesto',
+        type: 'select',
+        options: [
+          'Nozzle', 'Hotend', 'Extrusor', 'Sensor', 'Correa / Polea', 'Motor',
+          'Placa', 'Cama / Superficie', 'Fuente de Poder', 'Ventilador',
+          'Pantalla LCD', 'Termistor', 'Rodamiento / Riel', 'Driver Motor',
+          'Piezas Hotend', 'Sistema de Movimiento', 'Accesorio Resina',
+        ],
+        filterable: true,
+      },
+      {
         key: 'brand',
         label: 'Marca compatible',
         type: 'select',
         options: ['AnkerMake', 'Anet', 'Anycubic', 'Artillery', 'Bambu Lab', 'Capricorn', 'Creality', 'Elegoo', 'Fiberlogy', 'Flashforge', 'LuckyBot', 'Mosaic', 'Prusa', 'Siboor', 'Sunlu'],
+        filterable: true,
+      },
+      {
+        key: 'compatibleWith',
+        label: 'Modelo compatible',
+        type: 'select',
+        options: [
+          'Ender 3', 'Ender 5', 'Ender 6', 'CR-10', 'CR-6',
+          'Artillery Sidewinder', 'Artillery Genius', 'Artillery Hornet', 'Artillery',
+          'Bambu A1 Mini', 'Bambu A1', 'Bambu P1', 'Bambu X1',
+          'Prusa', 'Anycubic Kobra / i3', 'Kossel', 'Delta genérica',
+        ],
         filterable: true,
       },
     ],

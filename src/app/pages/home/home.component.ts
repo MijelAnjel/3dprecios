@@ -1,25 +1,30 @@
 import {
   ChangeDetectionStrategy,
   Component,
+  DestroyRef,
   computed,
   inject,
   signal,
 } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 import { Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { ReactiveFormsModule, FormControl } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { DecimalPipe } from '@angular/common';
+import { debounceTime, distinctUntilChanged, startWith } from 'rxjs/operators';
 import { ProductCardComponent } from '../../shared/components/product-card/product-card.component';
 import { SkeletonComponent } from '../../shared/components/skeleton/skeleton.component';
 import { CategoryService } from '../../core/services/category.service';
 import { StoreService } from '../../core/services/store.service';
 import { ProductService } from '../../core/services/product.service';
+import { CatalogService } from '../../core/services/catalog.service';
 
 @Component({
   selector: 'app-home',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [ReactiveFormsModule, RouterLink, ProductCardComponent, SkeletonComponent],
+  imports: [ReactiveFormsModule, RouterLink, ProductCardComponent, SkeletonComponent, DecimalPipe],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
@@ -30,39 +35,69 @@ export class HomeComponent {
   private readonly categoryService = inject(CategoryService);
   private readonly storeService = inject(StoreService);
   private readonly productService = inject(ProductService);
+  private readonly catalogService = inject(CatalogService);
 
   readonly searchControl = new FormControl('');
   readonly stores = this.storeService.stores;
-  readonly categories = signal(this.categoryService.categories); // ya excluye 'general'
+  readonly categories = signal(this.categoryService.categories);
   readonly topProducts = toSignal(this.productService.getTopProducts(8), { initialValue: [] });
   readonly loadingProducts = signal(false);
   readonly storeCount = computed(() => this.storeService.stores().length);
   readonly categoryCount = computed(() => this.categories().length);
 
-  readonly jsonLd = computed(() =>
-    JSON.stringify([
-      {
-        '@context': 'https://schema.org',
-        '@type': 'WebSite',
-        name: '3DPrecios',
-        url: 'https://3dprecios.cl',
-        potentialAction: {
-          '@type': 'SearchAction',
-          target: 'https://3dprecios.cl/categorias?q={search_term_string}',
-          'query-input': 'required name=search_term_string',
-        },
-      },
-      {
-        '@context': 'https://schema.org',
-        '@type': 'Organization',
-        name: '3DPrecios',
-        url: 'https://3dprecios.cl',
-        description: 'Comparador de precios de productos de impresión 3D en Chile.',
-      },
-    ])
+  readonly activeIndex = signal(-1);
+  readonly showDropdown = signal(false);
+
+  private readonly searchQuery = toSignal(
+    this.searchControl.valueChanges.pipe(
+      debounceTime(150),
+      distinctUntilChanged(),
+      startWith(''),
+    ),
+    { initialValue: '' },
   );
 
+  readonly suggestions = computed(() => {
+    const q = (this.searchQuery() ?? '').trim().toLowerCase();
+    if (q.length < 2) return [];
+    return this.catalogService.products()
+      .filter(p => p.name.toLowerCase().includes(q) || p.brand.toLowerCase().includes(q))
+      .slice(0, 6);
+  });
+
+  private readonly jsonLdSchemas = computed(() => [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: '3DPrecios',
+      url: 'https://dprecios.web.app',
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: 'https://dprecios.web.app/categorias?q={search_term_string}',
+        'query-input': 'required name=search_term_string',
+      },
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: '3DPrecios',
+      url: 'https://dprecios.web.app',
+      description: 'Comparador de precios de productos de impresión 3D en Chile.',
+      numberOfEmployees: 1,
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: 'Catálogo de productos de impresión 3D',
+      url: 'https://dprecios.web.app/categorias',
+      numberOfItems: this.catalogService.products().length,
+    },
+  ]);
+
   constructor() {
+    const doc = inject(DOCUMENT);
+    const destroyRef = inject(DestroyRef);
+
     this.titleService.setTitle('3DPrecios — Compara precios de impresión 3D en Chile');
     this.meta.updateTag({
       name: 'description',
@@ -70,19 +105,72 @@ export class HomeComponent {
     });
     this.meta.updateTag({ property: 'og:title', content: '3DPrecios — Compara precios de impresión 3D en Chile' });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
-    this.meta.updateTag({ property: 'og:url', content: 'https://3dprecios.cl' });
+    this.meta.updateTag({ property: 'og:url', content: 'https://dprecios.web.app' });
+
+    // Inject JSON-LD structured data via a real <script> tag (SSR-compatible)
+    const script = doc.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(this.jsonLdSchemas());
+    doc.head.appendChild(script);
+
+    destroyRef.onDestroy(() => script.remove());
   }
 
   onSearch(): void {
     const query = this.searchControl.value?.trim();
+    this.showDropdown.set(false);
+    this.activeIndex.set(-1);
     if (query) {
       this.router.navigate(['/categorias'], { queryParams: { q: query } });
     }
   }
 
   onSearchKeydown(event: KeyboardEvent): void {
+    const sug = this.suggestions();
     if (event.key === 'Enter') {
-      this.onSearch();
+      const idx = this.activeIndex();
+      if (idx >= 0 && sug[idx]) {
+        this.selectSuggestion(sug[idx].slug);
+      } else {
+        this.onSearch();
+      }
+    } else if (event.key === 'ArrowDown') {
+      event.preventDefault();
+      this.activeIndex.set(Math.min(this.activeIndex() + 1, sug.length - 1));
+    } else if (event.key === 'ArrowUp') {
+      event.preventDefault();
+      this.activeIndex.set(Math.max(this.activeIndex() - 1, -1));
+    } else if (event.key === 'Escape') {
+      this.showDropdown.set(false);
+      this.activeIndex.set(-1);
     }
+  }
+
+  onSearchFocus(): void {
+    if ((this.searchControl.value?.trim() ?? '').length >= 2) {
+      this.showDropdown.set(true);
+    }
+  }
+
+  onSearchInput(): void {
+    this.activeIndex.set(-1);
+    this.showDropdown.set((this.searchControl.value?.trim() ?? '').length >= 2);
+  }
+
+  onSearchBlur(): void {
+    setTimeout(() => {
+      this.showDropdown.set(false);
+      this.activeIndex.set(-1);
+    }, 200);
+  }
+
+  selectSuggestion(slug: string): void {
+    this.showDropdown.set(false);
+    this.activeIndex.set(-1);
+    this.router.navigate(['/producto', slug]);
+  }
+
+  setActiveIndex(i: number): void {
+    this.activeIndex.set(i);
   }
 }

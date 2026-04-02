@@ -1,5 +1,6 @@
 export const environment = {
   production: false,
+  disqusShortname: '3dprecios',
   firebase: {
     apiKey: 'AIzaSyDSbutOg5f-IzbLnM6XEC-PQOEqNG2KRj8',
     authDomain: 'dprecios.firebaseapp.com',

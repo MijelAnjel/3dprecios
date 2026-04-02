@@ -34,13 +34,13 @@
         </ul>
       </div>
 
-      <!-- Legal -->
+      <!-- Recursos -->
       <div class="footer__col">
         <h3 class="footer__col-title">Recursos</h3>
         <ul class="footer__links">
           <li><a routerLink="/recursos">Repositorios 3D</a></li>
-          <li><a routerLink="/recursos#buscadores">Buscadores STL</a></li>
-          <li><a routerLink="/recursos#ia">IA y Generación 3D</a></li>
+          <li><a [routerLink]="['/recursos']" [fragment]="'buscadores'">Buscadores STL</a></li>
+          <li><a [routerLink]="['/recursos']" [fragment]="'ia'">IA y Generación 3D</a></li>
           <li><a routerLink="/tiendas">Ver tiendas →</a></li>
         </ul>
       </div>
@@ -53,11 +53,40 @@
           <li><a routerLink="/terminos">Términos de uso</a></li>
         </ul>
       </div>
+
+      <!-- Contacto -->
+      <div class="footer__col">
+        <h3 class="footer__col-title">Contacto</h3>
+        <ul class="footer__links">
+          <li>
+            <a
+              href="https://www.mijeldev.com/"
+              target="_blank"
+              rel="author noopener noreferrer"
+              aria-label="Sitio web de Miguel Figueroa — mijeldev.com"
+            >
+              mijeldev.com
+            </a>
+          </li>
+          <li><span class="footer__contact-note">Reportar precios incorrectos o tiendas faltantes a través del sitio del desarrollador.</span></li>
+        </ul>
+      </div>
     </div>
 
     <div class="footer__bottom">
       <p class="footer__copy">
         &copy; {{ year }} 3DPrecios. Precios informativos, verificar en tienda.
+      </p>
+      <p class="footer__dev">
+        Desarrollado por
+        <a
+          href="https://www.mijeldev.com/"
+          target="_blank"
+          rel="author noopener noreferrer"
+          aria-label="Portfolio de Miguel Figueroa — mijeldev.com"
+        >
+          Miguel Figueroa
+        </a>
       </p>
     </div>
   </div>

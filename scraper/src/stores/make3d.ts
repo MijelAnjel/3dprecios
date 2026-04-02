@@ -1,50 +1,92 @@
 import { ScraperResult, StoreConfig } from '../models';
-import { fetchHtml, parsePriceCLP, inferStock, inferCategory } from '../utils';
+import { fetchHtml, parsePriceCLP, inferCategory } from '../utils';
+
+// ──────────────────────────────────────────────────────────────
+// Make 3D Chile — make3d.cl — Jumpseller platform (NOT WooCommerce)
+// Pagination: ?page=N  (NOT /page/N/)
+// Category URLs: /impresoras-3d | /filamentos-para-impresion-3d | ...
+// Product selectors: h3 a (title/url), .current-price/.money (price)
+// ──────────────────────────────────────────────────────────────
 
 const CATEGORY_PATHS = [
-  '/categoria-producto/filamentos/',
-  '/categoria-producto/impresoras/',
-  '/categoria-producto/resinas/',
-  '/categoria-producto/accesorios/',
+  '/impresoras-3d',
+  '/filamentos-para-impresion-3d',
+  '/repuestos',
+  '/insumos-para-impresion-3d',
+  // '/resina' — actualmente vacío
 ];
 
 export async function scrapeMake3d(store: StoreConfig): Promise<ScraperResult[]> {
   const results: ScraperResult[] = [];
+  const seen = new Set<string>();
 
   for (const path of CATEGORY_PATHS) {
     let page = 1;
     let hasMore = true;
 
     while (hasMore) {
-      const url = `${store.baseUrl}${path}page/${page}/`;
+      // Jumpseller paginates with ?page=N (not /page/N/)
+      const url = page === 1
+        ? `${store.baseUrl}${path}`
+        : `${store.baseUrl}${path}?page=${page}`;
       console.log(`[Make3D] Scraping: ${url}`);
 
       try {
         const $ = await fetchHtml(url, { rateDelay: 2000 });
-        const products = $('li.product');
+
+        // Jumpseller product containers — common class names across themes
+        const products = $('li.product, li.col, .product-item, article.product').filter((_, el) => {
+          // Must contain an H3 (product title) to avoid picking up non-product li
+          return $(el).find('h3').length > 0;
+        });
+
         if (products.length === 0) { hasMore = false; break; }
 
         products.each((_, el) => {
-          const name     = $(el).find('.woocommerce-loop-product__title').text().trim();
-          const href     = $(el).find('a.woocommerce-LoopProduct-link').attr('href') ?? '';
-          const priceRaw = $(el).find('.price ins .woocommerce-Price-amount, .price .woocommerce-Price-amount').first().text().trim();
-          const imgSrc   = $(el).find('img').attr('data-src') ?? $(el).find('img').attr('data-lazy-src') ?? $(el).find('img').attr('src') ?? '';
-          const stockTxt = $(el).find('.stock, .out-of-stock').text();
-          const price    = parsePriceCLP(priceRaw);
-          if (!name || !href || price === 0) return;
+          // Jumpseller title: h3 > a (Popup/Loop themes)
+          const titleAnchor = $(el).find('h3 a, .product-name a, .product-title a').first();
+          const name = titleAnchor.text().trim();
+          let href   = titleAnchor.attr('href')
+                    ?? $(el).find('a[href^="/"]').first().attr('href')
+                    ?? '';
+
+          if (!name || !href) return;
+          if (!href.startsWith('http')) href = `${store.baseUrl}${href}`;
+          if (seen.has(href)) return;
+
+          // Price: Jumpseller uses .money, .current-price, or span.product-price
+          const priceRaw = $(el)
+            .find('.money, .current-price, .product-price-amount, .js-price-amount, .product-price span, .price')
+            .filter((_, priceEl) => /\$/.test($(priceEl).text()))
+            .first()
+            .text()
+            .trim();
+
+          const price = parsePriceCLP(priceRaw);
+          if (price === 0) return;
+
+          seen.add(href);
+          const imgSrc = $(el).find('img').attr('src') ?? $(el).find('img').attr('data-src') ?? '';
+          const isOut  = /agotado/i.test($(el).text());
 
           results.push({
-            storeId: store.id, storeName: store.name,
-            productName: name, productUrl: href, price, currency: 'CLP',
-            stock: $(el).hasClass('outofstock') ? 'out' : inferStock(stockTxt),
-            imageUrl: imgSrc,
+            storeId:      store.id,
+            storeName:    store.name,
+            productName:  name,
+            productUrl:   href,
+            price,
+            currency:     'CLP',
+            stock:        isOut ? 'out' : 'available',
+            imageUrl:     imgSrc,
             categorySlug: inferCategory(name, path),
-            scrapedAt: new Date(),
+            scrapedAt:    new Date(),
           });
         });
 
-        hasMore = $('a.next.page-numbers').length > 0;
+        // Jumpseller pagination: look for ?page=N+1 link or rel="next"
+        hasMore = $(`a[href*="?page=${page + 1}"], a[rel="next"], .pagination .next, a.next`).length > 0;
         page++;
+        if (page > 30) hasMore = false; // safety cap
       } catch (err) {
         console.error(`[Make3D] Error en ${url}:`, err);
         hasMore = false;
