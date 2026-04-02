@@ -241,7 +241,7 @@ function mergeCatalog(
     if (prod.categoryId === 'repuestos' || prod.categoryId === 'impresoras-resina') {
       const freshSpecs = extractSpecs(prod.name, prod.categoryId);
       if (Object.keys(freshSpecs).length > 0) {
-        prod.specs = { ...freshSpecs, ...prod.specs }; // preserve manual overrides
+        prod.specs = { ...prod.specs, ...freshSpecs }; // freshSpecs override stale values
         prod.brand = prod.brand || (freshSpecs['brand'] as string | undefined) || '';
       }
     }

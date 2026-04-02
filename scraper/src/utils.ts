@@ -620,23 +620,35 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
 
     // Color (detectar colores comunes)
     const COLOR_MAP: [RegExp, string][] = [
-      [/\bblanco\b|\bwhite\b|\bnatural\b|\bcrema\b/i, 'Blanco'],
-      [/\bnegro\b|\bblack\b/i, 'Negro'],
-      [/\brojo\b|\bred\b/i, 'Rojo'],
-      [/\bazul\b|\bblue\b/i, 'Azul'],
-      [/azul\s*oscuro|dark\s*blue|navy/i, 'Azul Oscuro'],
-      [/\bverde\b|\bgreen\b/i, 'Verde'],
-      [/\bamarillo\b|\byellow\b/i, 'Amarillo'],
-      [/\bnaranja\b|\bnaranjo\b|\borange\b/i, 'Naranja'],
-      [/\bgris\b|\bgray\b|\bgrey\b/i, 'Gris'],
-      [/\bmorado\b|\bvioleta\b|\bpurple\b/i, 'Morado'],
-      [/\btransparente\b|\btransparent\b|\bclear\b/i, 'Transparente'],
-      [/\bceleste\b|\bsky[\s-]?blue\b/i, 'Celeste'],
-      [/\brosa\b|\bpink\b/i, 'Rosa'],
-      [/\bcaf[eé]\b|\bbrown\b/i, 'Café'],
+      // Order matters: more specific patterns first
+      [/azul\s*oscuro|dark\s*blue|\bnavy\b|\bazul\s*marino\b/i, 'Azul Oscuro'],
+      [/\bblanco\b|\bwhite\b|\bnatural\b/i, 'Blanco'],
+      [/\bcrema\b|\bcream\b/i, 'Crema'],
+      [/\bhueso\b|\bbone\b/i, 'Hueso'],
       [/\bmarfil\b|\bivory\b/i, 'Marfil'],
+      [/\bchampagne\b|\bchampán\b/i, 'Champagne'],
+      [/\bnegro\b|\bblack\b/i, 'Negro'],
+      [/\bantracita\b|anthrac/i, 'Antracita'],
+      [/\bgris\b|\bgray\b|\bgrey\b/i, 'Gris'],
+      [/\brojo\b|\bred\b/i, 'Rojo'],
+      [/\bborgona\b|\bborgon\w*\b|\bvino\b|\bwine\b|\bburgund/i, 'Borgoña'],
+      [/\bcoral\b/i, 'Coral'],
+      [/\bterracota\b|\bterr[ae]\s*cot/i, 'Terracota'],
+      [/\bnaranja\b|\bnaranjo\b|\borange\b/i, 'Naranja'],
+      [/\bamarillo\b|\byellow\b/i, 'Amarillo'],
       [/\bdorado\b|\bgold\b/i, 'Dorado'],
+      [/\bverde\b|\bgreen\b/i, 'Verde'],
+      [/\blima\b|\blime\b/i, 'Lima'],
+      [/\bmenta\b|\bmint\b/i, 'Menta'],
+      [/\bceleste\b|\bsky[\s-]?blue\b/i, 'Celeste'],
+      [/\bazul\b|\bblue\b/i, 'Azul'],
+      [/\bmorado\b|\bvioleta\b|\bpurple\b|\bviolet\b/i, 'Morado'],
+      [/\blavanda\b|\blavender\b|\blilac\b/i, 'Lavanda'],
+      [/\brosa\b|\bpink\b|\bfucs\w*\b/i, 'Rosa'],
+      [/\bcaf[eé]\b|\bbrown\b|\bmarrón\b/i, 'Café'],
+      [/\bcobre\b|\bcopper\b|\bbronc[eo]\b/i, 'Cobre'],
       [/\bplateado\b|\bsilver\b/i, 'Plateado'],
+      [/\btransparente\b|\btransparent\b|\bclear\b/i, 'Transparente'],
     ];
     for (const [re, color] of COLOR_MAP) {
       if (re.test(name)) { specs['color'] = color; break; }
@@ -647,6 +659,14 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
   if (categorySlug === 'impresoras-fdm' || categorySlug === 'impresoras-resina') {
     for (const [re, brand] of PRINTER_BRANDS) {
       if (re.test(name)) { specs['brand'] = brand; break; }
+    }
+  }
+
+  // ── Impresoras FDM: volumen de construcción ───────────────────────────
+  if (categorySlug === 'impresoras-fdm') {
+    const waMatch = name.match(/(\d{2,4})\s*[xX×]\s*(\d{2,4})\s*[xX×]\s*(\d{2,4})/);
+    if (waMatch) {
+      specs['workArea'] = `${waMatch[1]}×${waMatch[2]}×${waMatch[3]}mm`;
     }
   }
 
@@ -696,7 +716,18 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
     }
 
     // Part type classification
-    if (/\bnozzle\b|\bboquilla\b/i.test(name)) specs['partType'] = 'Nozzle';
+    if (/\bnozzle\b|\bboquilla\b/i.test(name)) {
+      specs['partType'] = 'Nozzle';
+      // Nozzle diameter (0.2, 0.25, 0.3, 0.4, 0.6, 0.8, 1.0, 1.2)
+      const ndMatch = name.match(/\b(\d[.,]\d{1,2})\s*mm/);
+      if (ndMatch) {
+        const d = parseFloat(ndMatch[1].replace(',', '.'));
+        const std    = [0.2, 0.25, 0.3, 0.4, 0.6, 0.8, 1.0, 1.2];
+        const stdStr = ['0.2', '0.25', '0.3', '0.4', '0.6', '0.8', '1.0', '1.2'];
+        const idx = std.reduce((best, v, i) => Math.abs(v - d) < Math.abs(std[best] - d) ? i : best, 0);
+        if (Math.abs(std[idx] - d) < 0.05) specs['nozzleDiameter'] = stdStr[idx];
+      }
+    }
     else if (/\bhotend\b|heatbreak|heat\s*break|\bcalefactor\b|heater[\s-]?block|\btermistor\b/i.test(name)) specs['partType'] = 'Hotend';
     else if (/\bextrusor\b|\bextruder\b|\bengranaje\b|\bmk8\b|\bdual\s*drive\b/i.test(name)) specs['partType'] = 'Extrusor';
     else if (/\bsensor\b|endstop|final\s*de\s*carrera|\bprobe\b|bltouch|cr[\s-]?touch|modulo\s*detecci[oó]n/i.test(name)) specs['partType'] = 'Sensor';
@@ -716,19 +747,32 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
 
     // Compatible model family
     const MODEL_FAMILIES: [RegExp, string][] = [
-      [/\bender\s*3\b/i, 'Ender 3'],
+      // Creality Ender — specific variants before generic
+      [/\bender\s*3\s*v3\s*se\b/i, 'Ender 3 V3 SE'],
+      [/\bender\s*3\s*v3\s*(plus|pro)?\b/i, 'Ender 3 V3'],
+      [/\bender\s*3\s*s1\s*pro\b|\be3s1\s*pro\b/i, 'Ender 3 S1 Pro'],
+      [/\bender\s*3\s*s1\b|\be3s1\b/i, 'Ender 3 S1'],
+      [/\bender\s*3\s*(neo|v2|pro|plus|max)?\b/i, 'Ender 3'],
       [/\bender\s*5\b/i, 'Ender 5'],
       [/\bender\s*6\b/i, 'Ender 6'],
       [/\bcr[\s-]?10\b/i, 'CR-10'],
       [/\bcr[\s-]?6\b/i, 'CR-6'],
+      // Creality K-series
+      [/\bk1\s*max\b/i, 'K1 Max'],
+      [/\bk1[c]\b/i, 'K1C'],
+      [/\bk1\b/i, 'K1'],
+      [/\bk2\s*plus\b/i, 'K2 Plus'],
+      // Artillery
       [/\bartillery\s*(x1|sidewinder)/i, 'Artillery Sidewinder'],
       [/\bartillery\s*(x2|genius)/i, 'Artillery Genius'],
       [/\bartillery\s*(hornet|x3)/i, 'Artillery Hornet'],
       [/\bartillery\b/i, 'Artillery'],
+      // Bambu Lab
       [/\ba1\s*mini\b/i, 'Bambu A1 Mini'],
       [/\bbambu\b.*\ba1\b|\ba1\b.*\bbambu\b/i, 'Bambu A1'],
       [/\bp1[sp]\b/i, 'Bambu P1'],
-      [/\bx1\s*(carbon|combo)?\b/i, 'Bambu X1'],
+      [/\bx1\s*(carbon|combo|c)?\b/i, 'Bambu X1'],
+      // Others
       [/\bprusa\s*(mk3|mk4|xl|mini)/i, 'Prusa'],
       [/\banycubic\s*(kobra|i3)/i, 'Anycubic Kobra / i3'],
       [/\bkossel\b/i, 'Kossel'],

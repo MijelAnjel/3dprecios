@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-02T04:31:24.893Z",
+    "generatedAt": "2026-04-02T04:58:01.661Z",
     "productCount": 2704
   },
   "stores": [
@@ -714,7 +714,7 @@
       ],
       "specs": {
         "partType": "Piezas Hotend",
-        "compatibleWith": "Ender 3"
+        "compatibleWith": "Ender 3 S1"
       },
       "minPrice": 2000,
       "maxPrice": 2000,
@@ -749,6 +749,7 @@
       ],
       "specs": {
         "partType": "Piezas Hotend",
+        "compatibleWith": "Ender 3 V3 SE",
         "diameter": "1.75"
       },
       "minPrice": 2000,
@@ -785,6 +786,7 @@
       "specs": {
         "brand": "Creality",
         "partType": "Piezas Hotend",
+        "compatibleWith": "K1",
         "diameter": "1.75"
       },
       "minPrice": 2000,
@@ -3633,7 +3635,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F25462Fnozzle20volcano-1.jpg?v=1720900183"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.8"
       },
       "minPrice": 1500,
       "maxPrice": 1500,
@@ -3699,7 +3702,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F21422Fnozzle20volcano.jpg?v=1720901631"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.6"
       },
       "minPrice": 1500,
       "maxPrice": 1500,
@@ -3733,7 +3737,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F21412Fnozzle20volcano.jpg?v=1720901634"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.4"
       },
       "minPrice": 1500,
       "maxPrice": 1500,
@@ -3767,7 +3772,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F25452Fnozzle20volcano-1.jpg?v=1720900180"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.3"
       },
       "minPrice": 1200,
       "maxPrice": 1200,
@@ -3801,7 +3807,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F23692Fnozzle_volcano_1200x900-1.jpg?v=1720900877"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.8"
       },
       "minPrice": 1500,
       "maxPrice": 1500,
@@ -3867,7 +3874,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F23982Fnozzle_volcano_1200x900-1.jpg?v=1720900874"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.6"
       },
       "minPrice": 1500,
       "maxPrice": 1500,
@@ -3935,6 +3943,7 @@
       "specs": {
         "brand": "Artillery",
         "partType": "Nozzle",
+        "nozzleDiameter": "0.4",
         "compatibleWith": "Artillery Hornet"
       },
       "minPrice": 1500,
@@ -3969,7 +3978,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F23702Fnozzle_volcano_1200x900-1.jpg?v=1720900881"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.2"
       },
       "minPrice": 1500,
       "maxPrice": 1500,
@@ -4037,7 +4047,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/nozzle-punta-impresora-3d-1.jpg?v=1720904313"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.8"
       },
       "minPrice": 1000,
       "maxPrice": 1000,
@@ -4071,7 +4082,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/nozzle-punta-impresora-3d-2.jpg?v=1720904311"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.6"
       },
       "minPrice": 1000,
       "maxPrice": 1000,
@@ -4139,7 +4151,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/nozzle-punta-impresora-3d-4.jpg?v=1720904306"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.4"
       },
       "minPrice": 1000,
       "maxPrice": 1000,
@@ -4173,7 +4186,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/nozzle-punta-impresora-3d-5.jpg?v=1720904304"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.3"
       },
       "minPrice": 1000,
       "maxPrice": 1000,
@@ -4239,7 +4253,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/nozzle-punta-impresora-3d-6.jpg?v=1720904301"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.2"
       },
       "minPrice": 1000,
       "maxPrice": 1000,
@@ -4423,7 +4438,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock-pictures2f19142fnozzle-metal-02c5mm-1200x900-1.jpg?v=1720902246"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.4"
       },
       "minPrice": 1500,
       "maxPrice": 1500,
@@ -4457,7 +4473,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock-pictures2f19132fnozzle-metal-02c5mm-1200x900-1.jpg?v=1720902244"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.3"
       },
       "minPrice": 1200,
       "maxPrice": 1200,
@@ -4525,7 +4542,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F21172Fnozzle_e3d_1_1200x900_0dc33d5e-6bf2-40f3-9746-2b2705ecb245.jpg?v=1720901717"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.8"
       },
       "minPrice": 1000,
       "maxPrice": 1000,
@@ -4593,7 +4611,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F21112Fnozzle_acero_0.6_1_1200x900_3310c23b-6d4a-451c-a6b5-fe6576d18f9a.jpg?v=1720901700"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.6"
       },
       "minPrice": 6000,
       "maxPrice": 6000,
@@ -4627,7 +4646,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F21162Fnozzle_e3d_1_1200x900_947e6d34-42a3-4eb4-bd78-ae6e728e803d.jpg?v=1720901715"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.6"
       },
       "minPrice": 800,
       "maxPrice": 800,
@@ -4761,7 +4781,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F21102Fnozzle_acero_0.4_1_1200x900-1.jpg?v=1720899290"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.4"
       },
       "minPrice": 6000,
       "maxPrice": 6000,
@@ -4863,7 +4884,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F21142Fnozzle_e3d_1_1200x900_f1e2d378-5fd4-457a-96ec-c2396a3a119a.jpg?v=1720901709"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.3"
       },
       "minPrice": 800,
       "maxPrice": 800,
@@ -5093,7 +5115,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F21092Fnozzle_acero_0.3_1_1200x900_e8ecf03c-2e7c-4dc3-b079-c71785e4b58e.jpg?v=1720901703"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.3"
       },
       "minPrice": 4800,
       "maxPrice": 4800,
@@ -5161,7 +5184,8 @@
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F21132Fnozzle_e3d_1_1200x900_7cd6b2f8-7e0e-4465-a3b4-b545c0db0533.jpg?v=1720901706"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.2"
       },
       "minPrice": 800,
       "maxPrice": 800,
@@ -13317,6 +13341,7 @@
       "specs": {
         "brand": "Artillery",
         "partType": "Nozzle",
+        "nozzleDiameter": "0.4",
         "compatibleWith": "Artillery"
       },
       "minPrice": 2490,
@@ -27980,6 +28005,7 @@
       ],
       "specs": {
         "partType": "Piezas Hotend",
+        "compatibleWith": "Ender 3 S1",
         "diameter": "1.75"
       },
       "minPrice": 2500,
@@ -58747,7 +58773,8 @@
         "https://evstore.cl/wp-content/uploads/2021/03/Boquilla-laton-Trianglelab-CR10S-PRO-04mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.4"
       },
       "minPrice": 4650,
       "maxPrice": 4650,
@@ -58781,7 +58808,8 @@
         "https://evstore.cl/wp-content/uploads/2021/03/Boquilla-laton-CR10S-PRO-04mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.4"
       },
       "minPrice": 1500,
       "maxPrice": 1500,
@@ -58849,7 +58877,8 @@
         "https://evstore.cl/wp-content/uploads/2021/03/Boquilla-Acero-Inoxidable-Ender-3-04mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.4"
       },
       "minPrice": 4000,
       "maxPrice": 4000,
@@ -58883,7 +58912,8 @@
         "https://evstore.cl/wp-content/uploads/2021/03/Boquilla-Acero-Inoxidable-Ender-3-06mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.6"
       },
       "minPrice": 4200,
       "maxPrice": 4200,
@@ -58917,7 +58947,8 @@
         "https://evstore.cl/wp-content/uploads/2021/03/Boquilla-Acero-Inoxidable-Ender-3-03mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.3"
       },
       "minPrice": 4200,
       "maxPrice": 4200,
@@ -58985,7 +59016,8 @@
         "https://evstore.cl/wp-content/uploads/2021/03/Boquilla-Acero-Inoxidable-Ender-3-02mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.2"
       },
       "minPrice": 4200,
       "maxPrice": 4200,
@@ -59019,7 +59051,8 @@
         "https://evstore.cl/wp-content/uploads/2021/03/Boquilla-laton-Ender-3-02mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.2"
       },
       "minPrice": 1200,
       "maxPrice": 1200,
@@ -59053,7 +59086,8 @@
         "https://evstore.cl/wp-content/uploads/2021/03/Boquilla-laton-Ender-3-03mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.3"
       },
       "minPrice": 1200,
       "maxPrice": 1200,
@@ -59087,7 +59121,8 @@
         "https://evstore.cl/wp-content/uploads/2021/03/Boquilla-laton-Ender-3-04mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.4"
       },
       "minPrice": 1000,
       "maxPrice": 1000,
@@ -59155,7 +59190,8 @@
         "https://evstore.cl/wp-content/uploads/2021/03/Boquilla-laton-Ender-3-06mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.6"
       },
       "minPrice": 1200,
       "maxPrice": 1200,
@@ -59189,7 +59225,8 @@
         "https://evstore.cl/wp-content/uploads/2021/03/Boquilla-laton-Ender-3-1mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "1.0"
       },
       "minPrice": 1200,
       "maxPrice": 1200,
@@ -59223,7 +59260,8 @@
         "https://evstore.cl/wp-content/uploads/2021/03/Boquilla-laton-Ender-3-08mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.8"
       },
       "minPrice": 1200,
       "maxPrice": 1200,
@@ -59257,7 +59295,8 @@
         "https://evstore.cl/wp-content/uploads/2021/03/Boquilla-Laton-E3D-04mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.4"
       },
       "minPrice": 1000,
       "maxPrice": 1000,
@@ -59291,7 +59330,8 @@
         "https://evstore.cl/wp-content/uploads/2021/03/Boquilla-Laton-E3D-02mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.2"
       },
       "minPrice": 1200,
       "maxPrice": 1200,
@@ -59325,7 +59365,8 @@
         "https://evstore.cl/wp-content/uploads/2021/03/Boquilla-Laton-E3D-06mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.6"
       },
       "minPrice": 1200,
       "maxPrice": 1200,
@@ -59359,7 +59400,8 @@
         "https://evstore.cl/wp-content/uploads/2021/03/Boquilla-Laton-E3D-03mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.3"
       },
       "minPrice": 1200,
       "maxPrice": 1200,
@@ -59427,7 +59469,8 @@
         "https://evstore.cl/wp-content/uploads/2021/03/Boquilla-Laton-E3D-1mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "1.0"
       },
       "minPrice": 1200,
       "maxPrice": 1200,
@@ -59461,7 +59504,8 @@
         "https://evstore.cl/wp-content/uploads/2021/03/Boquilla-Laton-E3D-08mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.8"
       },
       "minPrice": 1200,
       "maxPrice": 1200,
@@ -61731,7 +61775,8 @@
         "https://evstore.cl/wp-content/uploads/2022/07/Boquilla-Volcano-Laton-04mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.4"
       },
       "minPrice": 1500,
       "maxPrice": 1500,
@@ -61765,7 +61810,8 @@
         "https://evstore.cl/wp-content/uploads/2022/07/Boquilla-Volcano-Laton-06mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.6"
       },
       "minPrice": 1500,
       "maxPrice": 1500,
@@ -61799,7 +61845,8 @@
         "https://evstore.cl/wp-content/uploads/2022/07/Boquilla-Volcano-Laton-08mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.8"
       },
       "minPrice": 1500,
       "maxPrice": 1500,
@@ -61833,7 +61880,8 @@
         "https://evstore.cl/wp-content/uploads/2022/07/Boquilla-Volcano-Laton-10mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "1.0"
       },
       "minPrice": 1500,
       "maxPrice": 1500,
@@ -61867,7 +61915,8 @@
         "https://evstore.cl/wp-content/uploads/2022/07/Boquilla-Volcano-Laton-12mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "1.2"
       },
       "minPrice": 1500,
       "maxPrice": 1500,
@@ -61901,7 +61950,8 @@
         "https://evstore.cl/wp-content/uploads/2022/07/Boquilla-Volcano-Acero-inoxidable-04mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.4"
       },
       "minPrice": 4450,
       "maxPrice": 4450,
@@ -61935,7 +61985,8 @@
         "https://evstore.cl/wp-content/uploads/2022/07/Boquilla-Volcano-Acero-inoxidable-06mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.6"
       },
       "minPrice": 4450,
       "maxPrice": 4450,
@@ -61969,7 +62020,8 @@
         "https://evstore.cl/wp-content/uploads/2022/07/Boquilla-Volcano-Acero-inoxidable-08mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.8"
       },
       "minPrice": 4450,
       "maxPrice": 4450,
@@ -62003,7 +62055,8 @@
         "https://evstore.cl/wp-content/uploads/2022/07/Boquilla-Volcano-Acero-inoxidable-10mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "1.0"
       },
       "minPrice": 4450,
       "maxPrice": 4450,
@@ -62037,7 +62090,8 @@
         "https://evstore.cl/wp-content/uploads/2022/07/Boquilla-Volcano-Acero-inoxidable-12mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "1.2"
       },
       "minPrice": 4450,
       "maxPrice": 4450,
@@ -63044,7 +63098,8 @@
         "https://evstore.cl/wp-content/uploads/2023/12/Frontal-Boquilla-laton-CR10S-PRO-02mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.2"
       },
       "minPrice": 1950,
       "maxPrice": 1950,
@@ -63078,7 +63133,8 @@
         "https://evstore.cl/wp-content/uploads/2023/12/Frontal-Boquilla-laton-CR10S-PRO-06mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.6"
       },
       "minPrice": 1950,
       "maxPrice": 1950,
@@ -63112,7 +63168,8 @@
         "https://evstore.cl/wp-content/uploads/2023/12/Frontal-Boquilla-laton-CR10S-PRO-08mm.jpg"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.8"
       },
       "minPrice": 1950,
       "maxPrice": 1950,
@@ -63870,7 +63927,8 @@
         "https://evstore.cl/wp-content/uploads/2025/07/Hotend-serie-K1-con-bloque-discipador.jpg"
       ],
       "specs": {
-        "partType": "Hotend"
+        "partType": "Hotend",
+        "compatibleWith": "K1"
       },
       "minPrice": 24990,
       "maxPrice": 24990,
@@ -63905,7 +63963,8 @@
       ],
       "specs": {
         "brand": "Creality",
-        "partType": "Hotend"
+        "partType": "Hotend",
+        "compatibleWith": "K1"
       },
       "minPrice": 7990,
       "maxPrice": 7990,
@@ -63940,7 +63999,8 @@
       ],
       "specs": {
         "brand": "Creality",
-        "partType": "Hotend"
+        "partType": "Hotend",
+        "compatibleWith": "K1"
       },
       "minPrice": 7990,
       "maxPrice": 7990,
@@ -64078,7 +64138,7 @@
       ],
       "specs": {
         "partType": "Nozzle",
-        "compatibleWith": "Ender 3"
+        "compatibleWith": "Ender 3 V3 SE"
       },
       "minPrice": 3500,
       "maxPrice": 3500,
@@ -64113,7 +64173,7 @@
       ],
       "specs": {
         "partType": "Hotend",
-        "compatibleWith": "Ender 3"
+        "compatibleWith": "Ender 3 S1"
       },
       "minPrice": 15950,
       "maxPrice": 15950,
@@ -64352,7 +64412,7 @@
       ],
       "specs": {
         "partType": "Hotend",
-        "compatibleWith": "Ender 3"
+        "compatibleWith": "Ender 3 V3 SE"
       },
       "minPrice": 45550,
       "maxPrice": 45550,
@@ -64387,7 +64447,7 @@
       ],
       "specs": {
         "partType": "Hotend",
-        "compatibleWith": "Ender 3"
+        "compatibleWith": "Ender 3 V3 SE"
       },
       "minPrice": 15950,
       "maxPrice": 15950,
@@ -64422,7 +64482,7 @@
       ],
       "specs": {
         "partType": "Hotend",
-        "compatibleWith": "Ender 3"
+        "compatibleWith": "Ender 3 V3 SE"
       },
       "minPrice": 7550,
       "maxPrice": 7550,
@@ -64689,7 +64749,7 @@
       ],
       "specs": {
         "partType": "Hotend",
-        "compatibleWith": "Ender 3"
+        "compatibleWith": "Ender 3 V3"
       },
       "minPrice": 25550,
       "maxPrice": 25550,
@@ -71020,7 +71080,7 @@
       "specs": {
         "brand": "Creality",
         "partType": "Hotend",
-        "compatibleWith": "Ender 3"
+        "compatibleWith": "Ender 3 S1"
       },
       "minPrice": 59391,
       "maxPrice": 59391,
@@ -71056,7 +71116,7 @@
       "specs": {
         "brand": "Creality",
         "partType": "Hotend",
-        "compatibleWith": "Ender 3"
+        "compatibleWith": "Ender 3 S1 Pro"
       },
       "minPrice": 68391,
       "maxPrice": 68391,
@@ -72159,7 +72219,8 @@
       ],
       "specs": {
         "brand": "Creality",
-        "partType": "Placa"
+        "partType": "Placa",
+        "compatibleWith": "K1"
       },
       "minPrice": 71991,
       "maxPrice": 71991,
@@ -72194,7 +72255,8 @@
       ],
       "specs": {
         "brand": "Creality",
-        "partType": "Placa"
+        "partType": "Placa",
+        "compatibleWith": "K1 Max"
       },
       "minPrice": 80991,
       "maxPrice": 80991,
@@ -74823,7 +74885,8 @@
         "https://imperio3d.com/wp-content/uploads/2024/03/Bambulab_-FAH001-P-300x300.webp"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.4"
       },
       "minPrice": 49990,
       "maxPrice": 49990,
@@ -74858,6 +74921,7 @@
       ],
       "specs": {
         "partType": "Nozzle",
+        "nozzleDiameter": "0.4",
         "compatibleWith": "Bambu X1"
       },
       "minPrice": 49990,
@@ -75061,7 +75125,7 @@
       ],
       "specs": {
         "partType": "Placa",
-        "compatibleWith": "Ender 3"
+        "compatibleWith": "Ender 3 S1 Pro"
       },
       "minPrice": 45990,
       "maxPrice": 45990,
@@ -75096,7 +75160,7 @@
       ],
       "specs": {
         "partType": "Placa",
-        "compatibleWith": "Ender 3"
+        "compatibleWith": "Ender 3 S1"
       },
       "minPrice": 45990,
       "maxPrice": 45990,
@@ -75465,7 +75529,7 @@
       ],
       "specs": {
         "partType": "Cama / Superficie",
-        "compatibleWith": "Ender 3"
+        "compatibleWith": "Ender 3 S1 Pro"
       },
       "minPrice": 39990,
       "maxPrice": 39990,
@@ -75532,7 +75596,7 @@
       ],
       "specs": {
         "partType": "Fuente de Poder",
-        "compatibleWith": "Ender 3"
+        "compatibleWith": "Ender 3 V3"
       },
       "minPrice": 38990,
       "maxPrice": 38990,
@@ -77095,7 +77159,8 @@
         "https://imperio3d.com/wp-content/uploads/2024/02/CR-4001040054-2-300x300.webp"
       ],
       "specs": {
-        "partType": "Cama / Superficie"
+        "partType": "Cama / Superficie",
+        "compatibleWith": "K1"
       },
       "minPrice": 24990,
       "maxPrice": 24990,
@@ -77804,7 +77869,7 @@
       ],
       "specs": {
         "partType": "Hotend",
-        "compatibleWith": "Ender 3"
+        "compatibleWith": "Ender 3 V3"
       },
       "minPrice": 17990,
       "maxPrice": 17990,
@@ -85434,7 +85499,7 @@
       ],
       "specs": {
         "partType": "Hotend",
-        "compatibleWith": "Ender 3"
+        "compatibleWith": "Ender 3 S1"
       },
       "minPrice": 12000,
       "maxPrice": 12000,
@@ -85572,7 +85637,8 @@
         "https://horus3d.cl/wp-content/uploads/2023/09/Boquilla-mk8-Acero-Inox.png"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.4"
       },
       "minPrice": 2000,
       "maxPrice": 2000,
@@ -85606,7 +85672,8 @@
         "https://horus3d.cl/wp-content/uploads/2023/09/Boquilla-Volcano-Acero-Inox.png"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.4"
       },
       "minPrice": 2000,
       "maxPrice": 2000,
@@ -85640,7 +85707,8 @@
         "https://horus3d.cl/wp-content/uploads/2023/09/Boquilla-mk8-Acero-Endurecido.png"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.4"
       },
       "minPrice": 2500,
       "maxPrice": 2500,
@@ -85674,7 +85742,8 @@
         "https://horus3d.cl/wp-content/uploads/2023/09/Boquilla-Volcano-Acero-Endurecido.png"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.4"
       },
       "minPrice": 2500,
       "maxPrice": 2500,
@@ -86228,6 +86297,7 @@
       "specs": {
         "brand": "Artillery",
         "partType": "Nozzle",
+        "nozzleDiameter": "0.4",
         "compatibleWith": "Artillery Hornet"
       },
       "minPrice": 3500,
@@ -86923,7 +86993,8 @@
       ],
       "specs": {
         "brand": "Creality",
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "compatibleWith": "Ender 3 V3"
       },
       "minPrice": 3500,
       "maxPrice": 3500,
@@ -87638,7 +87709,7 @@
       ],
       "specs": {
         "partType": "Hotend",
-        "compatibleWith": "Ender 3"
+        "compatibleWith": "Ender 3 S1"
       },
       "minPrice": 3500,
       "maxPrice": 3500,
@@ -87673,7 +87744,7 @@
       ],
       "specs": {
         "partType": "Hotend",
-        "compatibleWith": "Ender 3"
+        "compatibleWith": "Ender 3 S1"
       },
       "minPrice": 3500,
       "maxPrice": 3500,
@@ -88783,7 +88854,8 @@
         "https://horus3d.cl/wp-content/uploads/2025/09/Ender-3V3-SE-KE-Upgrade-Hotend.png"
       ],
       "specs": {
-        "partType": "Hotend"
+        "partType": "Hotend",
+        "compatibleWith": "Ender 3 V3 SE"
       },
       "minPrice": 35000,
       "maxPrice": 35000,
@@ -88949,7 +89021,8 @@
         "https://horus3d.cl/wp-content/uploads/2025/09/Hotend-3v3KE.webp"
       ],
       "specs": {
-        "partType": "Hotend"
+        "partType": "Hotend",
+        "compatibleWith": "Ender 3 V3"
       },
       "minPrice": 18000,
       "maxPrice": 18000,
@@ -88984,7 +89057,8 @@
       ],
       "specs": {
         "brand": "Creality",
-        "partType": "Extrusor"
+        "partType": "Extrusor",
+        "compatibleWith": "K2 Plus"
       },
       "minPrice": 28000,
       "maxPrice": 28000,
@@ -89019,7 +89093,8 @@
       ],
       "specs": {
         "brand": "Creality",
-        "partType": "Extrusor"
+        "partType": "Extrusor",
+        "compatibleWith": "Ender 3 V3"
       },
       "minPrice": 15000,
       "maxPrice": 15000,
@@ -89054,7 +89129,8 @@
       ],
       "specs": {
         "brand": "Creality",
-        "partType": "Hotend"
+        "partType": "Hotend",
+        "compatibleWith": "K1 Max"
       },
       "minPrice": 20000,
       "maxPrice": 20000,
@@ -89089,7 +89165,8 @@
       ],
       "specs": {
         "brand": "Creality",
-        "partType": "Hotend"
+        "partType": "Hotend",
+        "compatibleWith": "K2 Plus"
       },
       "minPrice": 33000,
       "maxPrice": 33000,
@@ -89193,7 +89270,9 @@
         "https://horus3d.cl/wp-content/uploads/2025/09/Boquilla-unicorn-K2Plus-06mm.avif"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.6",
+        "compatibleWith": "K2 Plus"
       },
       "minPrice": 21000,
       "maxPrice": 21000,
@@ -89227,7 +89306,9 @@
         "https://horus3d.cl/wp-content/uploads/2025/09/Boquillas-K1-x2.png"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.4",
+        "compatibleWith": "K1"
       },
       "minPrice": 5000,
       "maxPrice": 5000,
@@ -89262,7 +89343,8 @@
       ],
       "specs": {
         "brand": "Creality",
-        "partType": "Extrusor"
+        "partType": "Extrusor",
+        "compatibleWith": "K1 Max"
       },
       "minPrice": 45000,
       "maxPrice": 45000,
@@ -89779,7 +89861,9 @@
         "https://horus3d.cl/wp-content/uploads/2025/12/Boquilla-Unicornio-04mm.png"
       ],
       "specs": {
-        "partType": "Nozzle"
+        "partType": "Nozzle",
+        "nozzleDiameter": "0.4",
+        "compatibleWith": "K2 Plus"
       },
       "minPrice": 21000,
       "maxPrice": 21000,
