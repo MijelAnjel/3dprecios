@@ -380,19 +380,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/silicona-para-bloque-ender-3-s1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-piezas-hotend-ender-3-s1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/silicona-bloque-ender-3v3se</loc>
+    <loc>https://dprecios.web.app/productos/rsp-piezas-hotend-ender-3-v3-se</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/silicona-bloque-creality-k1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-piezas-hotend-k1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -470,19 +470,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/sensor-final-de-carrera-eje-y-artillery-x1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-sensor-artillery-sidewinder</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/sensor-final-de-carrera-eje-y-artillery-genius-pro-switch</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/sensor-final-de-carrera-eje-y-artillery-genius</loc>
+    <loc>https://dprecios.web.app/productos/rsp-sensor-artillery-genius</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -494,19 +488,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/sensor-final-de-carrera-eje-x-artillery</loc>
+    <loc>https://dprecios.web.app/productos/rsp-sensor-artillery</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/sensor-filamento-artillery</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/resorte-extrusor-artillery</loc>
+    <loc>https://dprecios.web.app/productos/rsp-extrusor-artillery</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -518,7 +506,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/protector-plastico-extrusor-artillery-x1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-extrusor-artillery-sidewinder</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -608,7 +596,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/placa-pcb-eje-z-artillery-x1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-placa-artillery-sidewinder</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -686,7 +674,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/placa-pcb-eje-z-artillery-genius</loc>
+    <loc>https://dprecios.web.app/productos/rsp-placa-artillery-genius</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -711,12 +699,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/fuente-de-poder-switching-meanwell-12v-42a-50w</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-pcb-eje-x-artillery-x1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -825,12 +807,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/kit-de-diodos-led-de-varios-colores-por-300u</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/palanca-extrusor-artillery</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -1142,13 +1118,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/motor-paso-a-paso-eje-y-48mm-artillery</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/motor-paso-a-paso-eje-x-y-z-40mm-artillery</loc>
+    <loc>https://dprecios.web.app/productos/rsp-motor-artillery</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -1388,12 +1358,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/extrusor-completo-artillery-x1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/extrusor-bloque-de-aluminio-mk8-sistema-bowden</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -1418,37 +1382,25 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/engranaje-extrusor-artillery</loc>
+    <loc>https://dprecios.web.app/productos/rsp-driver-motor-artillery</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/driver-fs31w01-v2-para-impresora-artillery</loc>
+    <loc>https://dprecios.web.app/productos/rsp-correa-polea-artillery</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/correa-dentada-cama-caliente-artillery-95cm</loc>
+    <loc>https://dprecios.web.app/productos/rsp-correa-polea-artillery-sidewinder</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/correa-dentada-cama-caliente-artillery-75cm</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/correa-dentada-2gt-760-para-artillery-x1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/correa-dentada-2gt-600-para-artillery-genius</loc>
+    <loc>https://dprecios.web.app/productos/rsp-correa-polea-artillery-genius</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -1484,13 +1436,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/cartucho-original-calefactor-para-impresora-artillery</loc>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-artillery</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/cartucho-calefactor-ender-3-v2</loc>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-ender-3</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -1521,12 +1473,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/cable-sensor-de-filamento-para-artillery-x1-y-x2</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cable-sensor-de-filamento-para-artillery-genius-y-genius-pro</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -1592,13 +1538,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/aislante-termico-cama-caliente-artillery-x1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-artillery-sidewinder</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/aislante-termico-cama-caliente-artillery-genius</loc>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-artillery-genius</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -2282,25 +2228,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/tubo-caliente-calefactor-para-impresora-3d-artillery</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/prensa-estopa-pg16-conector-de-nylon-a-prueba-de-agua-blanca</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/cama-caliente-magnetica-en-acero-para-artillery-310x310mm</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cama-caliente-magnetica-en-acero-para-artillery-230x230mm</loc>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-artillery</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -2343,12 +2277,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/prensa-estopa-pg7-conector-de-nylon-a-prueba-de-agua-blanca</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cable-sensor-de-filamento-710mm-254-3pin-artillery-genius-y-genius-pro</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -2558,7 +2486,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/garganta-de-manguera-v6-para-artillery-genius</loc>
+    <loc>https://dprecios.web.app/productos/rsp-piezas-hotend-artillery-genius</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -2570,13 +2498,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-volcano-nozzle-04mm-artillery</loc>
+    <loc>https://dprecios.web.app/productos/rsp-nozzle-artillery-04mm</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/bloque-calefactor-volcano-para-artillery-genius-y-sw</loc>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-artillery-genius</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -2600,19 +2528,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/aislante-termico-de-algodon-para-cama-caliente-artillery-genius-pro</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/socket-para-conector-de-alta-carga-con-4-polos</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cama-caliente-de-silicona-para-artillery-genius-pro</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -2667,12 +2583,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/conector-y-socket-resistente-al-agua-de-3-pines-sd16</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cama-caliente-con-tornillos-para-artillery-genius-pro-230x230mm</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -4544,7 +4454,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fdm-bambu-lab-bambulab-p2s-combo</loc>
+    <loc>https://dprecios.web.app/productos/fdm-bambu-lab-p2s-combo</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -4562,7 +4472,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fdm-bambu-lab-bambulab-h2s-combo</loc>
+    <loc>https://dprecios.web.app/productos/fdm-bambu-lab-h2s-combo</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -4574,7 +4484,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fdm-bambu-lab-bambulab-h2d-combo</loc>
+    <loc>https://dprecios.web.app/productos/fdm-bambu-lab-h2d-combo</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -4592,7 +4502,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fdm-bambu-lab-bambulab-a1-mini-combo-400000-con-transferencia</loc>
+    <loc>https://dprecios.web.app/productos/fdm-bambu-lab-a1-mini-combo-400000-con-transferencia</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -4610,7 +4520,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fdm-bambu-lab-bambulab-a1-combo-550000-con-transferencia</loc>
+    <loc>https://dprecios.web.app/productos/fdm-bambu-lab-a1-combo-550000-con-transferencia</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -4622,7 +4532,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fdm-bambu-lab-bambulab-a1</loc>
+    <loc>https://dprecios.web.app/productos/impresora-bambulab-a1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -4935,12 +4845,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/sc10luu-rodamiento-lineal-con-soporte-largo-10mm</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/garganta-para-ender-3s1-con-teflon</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -9146,7 +9050,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/motor-stepper-bipolar-nema-17-345v-150a-45ncm-1817hs15-1504s-x1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-motor-bambu-x1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -9902,7 +9806,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/creality-placa-madre-ender3</loc>
+    <loc>https://dprecios.web.app/productos/rsp-placa-ender-3</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -9920,7 +9824,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/extrusor-creality-cr6-se</loc>
+    <loc>https://dprecios.web.app/productos/rsp-extrusor-cr-6</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10352,19 +10256,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/bigtreetech-pantalla-ender-3-tft35-e3-v30</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/resortes-cama-caliente</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/sensor-de-autonivelacion-anycubic-kossel-linear-plus</loc>
+    <loc>https://dprecios.web.app/productos/rsp-sensor-kossel</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10388,13 +10286,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/extrusor-de-aluminio-ender-3</loc>
+    <loc>https://dprecios.web.app/productos/rsp-extrusor-ender-3</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/correas-gt2-6mm-ender-3-eje-x-y-eje-y</loc>
+    <loc>https://dprecios.web.app/productos/rsp-sistema-de-movimiento-ender-3</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10412,13 +10310,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/sistema-hotend-completo-ender-3</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/sistema-hotend-completo-kossel-linear-plus</loc>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-kossel</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -11030,19 +10922,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/cartucho-calefactor-artillery</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/termistor-artillery</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/garganta-artillery</loc>
+    <loc>https://dprecios.web.app/productos/rsp-piezas-hotend-artillery</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -11300,19 +11180,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/hotend-para-serie-k1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/termistor-creality-serie-k1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/calefactor-ceramico-creality-serie-k1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-k1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -11324,7 +11192,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/cama-caliente-ender-3</loc>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-ender-3</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -11336,13 +11204,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-ender-3-v3-se-compatible-con-ender-5-s1-ender-7-spider</loc>
+    <loc>https://dprecios.web.app/productos/rsp-nozzle-ender-3-v3-se</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/hotend-sprite-ender-3-s1-s1-pro</loc>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-ender-3-s1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -11384,19 +11252,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/hotend-ceramico-ender-3-v3-seke</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/hotend-ender-3-v3-se</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/termistor-y-resistencia-calefactora-ender-3-v3-se</loc>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-ender-3-v3-se</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -11432,19 +11288,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/extrusor-completo-artillery-genius-cabezal-direct-drive-de-repuesto</loc>
+    <loc>https://dprecios.web.app/productos/rsp-extrusor-artillery-genius</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/hotend-artillery-hornet</loc>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-artillery-hornet</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/hotend-completo-ender-3-v3-ke</loc>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-ender-3-v3</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -11780,13 +11636,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-nozzle-impresora-3d-volcano-m6-sidewinder-x1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-nozzle-bambu-x1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-nozzle-impresora-3d-m6-mk8-ender-3-v2-cr-6-se</loc>
+    <loc>https://dprecios.web.app/productos/rsp-nozzle-ender-3</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -11930,12 +11786,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/extrusor-metalico-para-impresora-3d-derecho-ender-3-5-cr10</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/extrusor-metalico-doble-engranaje-dual-drive-stepper-motor</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -11948,13 +11798,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/tensor-correa-eje-x-2020-cr-1020-cr-10s-pro-ender-35-anet</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tensor-correa-eje-y-2040-cr-1020-cr-10s-pro-ender-35-anet</loc>
+    <loc>https://dprecios.web.app/productos/rsp-correa-polea-cr-10</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -11990,7 +11834,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/sensor-filamento-impresora-3d-ender-3-cr10</loc>
+    <loc>https://dprecios.web.app/productos/rsp-sensor-ender-3</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -12512,13 +12356,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/hotend-extrusor-completo-sprite-ender-3-s1-creality</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/hotend-extrusor-completo-sprite-ender-3-s1-pro-creality</loc>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-ender-3-s1-pro</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -12710,13 +12548,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/placa-madre-creality-k1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-placa-k1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/placa-madre-creality-k1-max</loc>
+    <loc>https://dprecios.web.app/productos/rsp-placa-k1-max</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -12854,19 +12692,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-bambu-lab-a1-series-04-acero-reforzado</loc>
+    <loc>https://dprecios.web.app/productos/rsp-nozzle-bambu-a1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-bambu-lab-x1-y-p1-series-04-acero-reforzado</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-bambu-lab-pei-texturizado-x1-p1-y-a1-series</loc>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-bambu-a1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13064,13 +12896,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fuente-de-poder-108w-24v-x1-p1fuente-de-poder-108w-24v-x1-p1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-fuente-de-poder-bambu-x1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fuente-de-poder-450w-24v-bambu-lab-a1fuente-de-poder-450w-24v-bambu-lab-a1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-fuente-de-poder-bambu-a1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13088,19 +12920,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/cama-caliente-bambu-lab-a1cama-caliente-bambu-lab-a1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/pack-camara-serie-p1-y-luz-ledpack-camara-serie-p1-y-luz-led</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/cama-caliente-a1-minicama-caliente-a1-mini</loc>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-bambu-a1-mini</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13118,7 +12944,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/extrusor-completo-bambu-lab-serie-a1extrusor-completo-bambu-lab-serie-a1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-extrusor-bambu-a1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13166,7 +12992,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fuente-de-poder-a1-minifuente-de-poder-a1-mini</loc>
+    <loc>https://dprecios.web.app/productos/rsp-fuente-de-poder-bambu-a1-mini</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13184,7 +13010,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/full-hotend-con-boquilla-de-acero-04mm-para-series-x1full-hotend-con-boquilla-de-acero-04mm-para-series-x1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-nozzle-bambu-x1-04mm</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13220,13 +13046,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/placa-madre-ender-3-s1-proplaca-madre-ender-3-s1-pro</loc>
+    <loc>https://dprecios.web.app/productos/rsp-placa-ender-3-s1-pro</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/placa-madre-ender-3-s1-plusplaca-madre-ender-3-s1-plus</loc>
+    <loc>https://dprecios.web.app/productos/rsp-placa-ender-3-s1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13280,7 +13106,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/ventilador-auxiliar-series-x1-y-p1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-ventilador-bambu-x1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13292,7 +13118,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/cama-caliente-ender-3-s1-procama-caliente-ender-3-s1-pro</loc>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-ender-3-s1-pro</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13304,7 +13130,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fuente-de-poder-serie-ender-3-v3fuente-de-poder-serie-ender-3-v3</loc>
+    <loc>https://dprecios.web.app/productos/rsp-fuente-de-poder-ender-3-v3</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13424,7 +13250,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/placa-madre-cr10-smartplaca-madre-cr10-smart</loc>
+    <loc>https://dprecios.web.app/productos/rsp-placa-cr-10</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13478,19 +13304,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/bambu-lab-motor-extrusor-serie-a1bambu-lab-motor-extrusor-serie-a1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/mecanismo-extrusor-q5mecanismo-extrusor-q5</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/mecanismo-extrusor-acero-endurecido-serie-x1-p1mecanismo-extrusor-acero-endurecido-serie-x1-p1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-extrusor-bambu-x1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13538,7 +13358,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/cama-caliente-anycubic-kobra-2-s010108cama-caliente-anycubic-kobra-2-s010108</loc>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-anycubic-kobra-i3</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13568,12 +13388,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/bambu-lab-hotend-con-boquilla-x1-p1bambu-lab-hotend-con-boquilla-x1-p1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/cubierta-frontal-p1pcubierta-frontal-p1p</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -13592,7 +13406,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/cama-caliente-ender-5-pluscama-caliente-ender-5-plus</loc>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-ender-5</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13616,13 +13430,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/termistor-para-serie-x1-3und</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/calefactor-de-ceramica-para-serie-x1-3undcalefactor-de-ceramica-para-serie-x1-3und</loc>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-bambu-x1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13634,7 +13442,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/cama-caliente-ender-6cama-caliente-ender-6</loc>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-ender-6</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13653,12 +13461,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/mecanismo-extrusor-acero-endurecido-serie-a1mecanismo-extrusor-acero-endurecido-serie-a1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/vidrio-templado-310320-ender-3-max</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13694,25 +13496,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/vidrio-templado-290290-ender-6</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cama-caliente-245270-cr6-secama-caliente-245270-cr6-se</loc>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-cr-6</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/generico-ender-3-v3-ke-full-hotend-ceramicogenerico-ender-3-v3-ke-full-hotend-ceramico</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/generico-full-hotend-ender-3-v3-ender-3-v3-plusgenerico-full-hotend-ender-3-v3-ender-3-v3-plus</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13766,12 +13556,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/placa-extrusor-v9-para-serie-x1placa-extrusor-v9-para-serie-x1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/kit-modulo-wifi-cr-10-smartkit-modulo-wifi-cr-10-smart</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -13779,18 +13563,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/plataforma-de-impresion-ld-002hplataforma-de-impresion-ld-002h</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bambu-lab-hotend-con-boquilla-serie-a1bambu-lab-hotend-con-boquilla-serie-a1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ventilador-de-placa-x1-y-serie-p1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13826,12 +13598,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/calefactor-ender-3-v2calefactor-ender-3-v2</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/placa-de-conexion-del-extrusor-para-serie-p1placa-de-conexion-del-extrusor-para-serie-p1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -13862,7 +13628,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/polea-tensora-serie-p1-x1polea-tensora-serie-p1-x1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-correa-polea-bambu-x1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13886,7 +13652,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/ventilador-de-capa-artillery</loc>
+    <loc>https://dprecios.web.app/productos/rsp-ventilador-artillery</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13928,7 +13694,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/ventilador-de-capa-4010-24v-ender-5-plus</loc>
+    <loc>https://dprecios.web.app/productos/rsp-ventilador-ender-5</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13958,7 +13724,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/tensor-de-correa-xy-con-polea-p1p-serie-x1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-correa-polea-bambu-p1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13970,7 +13736,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/ventilador-de-capa-4010-24v-ender-3-v2</loc>
+    <loc>https://dprecios.web.app/productos/rsp-ventilador-ender-3</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -14012,25 +13778,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/polea-del-motor-x1-p1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-correa-polea-bambu-a1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/correa-eje-z-bambu-lab-a1correa-eje-z-bambu-lab-a1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/polea-de-sincronizacion-de-correa-z-p1p-x1x1c</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/correas-eje-z-serie-x1-y-p1pcorreas-eje-z-serie-x1-y-p1p</loc>
+    <loc>https://dprecios.web.app/productos/rsp-sistema-de-movimiento-bambu-p1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -14066,13 +13820,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/sensor-cama-caliente-serie-x1-y-p1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/creality-sensor-de-final-de-filamento-ender-3-v2creality-sensor-de-final-de-filamento-ender-3-v2</loc>
+    <loc>https://dprecios.web.app/productos/rsp-sensor-bambu-x1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -14103,12 +13851,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/limpiador-de-purga-a1limpiador-de-purga-a1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/silicona-protectora-del-hotend-3und-x1-p1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -14204,7 +13946,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/cable-de-senal-cama-caliente-bambu-lab-x1-p1cable-de-senal-cama-caliente-bambu-lab-x1-p1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-bambu-x1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -14234,12 +13976,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/set-2-bloque-calefactor-ender-3-v2</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/placa-del-boton-y-temperatura-interiorplaca-del-boton-y-temperatura-interior</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -14258,13 +13994,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/termistor-hotend-cr6-se</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/calentador-calefactor-hotend-artillerycalentador-calefactor-hotend-artillery</loc>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-cr-6</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -14282,19 +14012,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/polea-eje-xy-a1-mini</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/calefactor-ender-3calefactor-ender-3</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/sensor-de-final-de-filamento-artillery</loc>
+    <loc>https://dprecios.web.app/productos/rsp-correa-polea-bambu-a1-mini</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -14318,19 +14036,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/correas-ender-5-plus-ejes-xycorreas-ender-5-plus-ejes-xy</loc>
+    <loc>https://dprecios.web.app/productos/rsp-sistema-de-movimiento-ender-5</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/bloque-calefactor-artillerybloque-calefactor-artillery</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/garganta-cr-10-2-und</loc>
+    <loc>https://dprecios.web.app/productos/rsp-piezas-hotend-cr-10</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -14343,12 +14055,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/boquilla-volcanoboquilla-volcano</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bambu-placa-pei-lisasuave-para-bambu-lab-x1-p1-a1bambu-placa-pei-lisasuave-para-bambu-lab-x1-p1-a1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -14666,12 +14372,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/cable-flex-extrusor-artillery-genius</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/boquillas-para-impresoras-3d</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -14715,12 +14415,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/filamento-estars-pla-galaxy-black</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ventilador-de-capa-artillery-4020-24v</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -14846,12 +14540,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/termistor-para-creality-ender-3</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/calefactor-para-creality-12v</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -14895,12 +14583,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/extrusor-titan-directo-kingroon</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/extrusor-titan-directo-kingroon-para-ender-3</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -15044,12 +14726,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/termistor-para-artillery-hornet</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/kit-hotend-sprite-para-ender-3-s1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -15057,12 +14733,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/hotend-kingroon-kp3s</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ventilador-de-capa-4010-24v-para-ender-3</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -15176,12 +14846,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/cable-flex-extrusor-artillery-sidewinder-x1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/sensor-abl-artillery-x3-y-x4</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -15230,19 +14894,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/lamina-pei-peo-bambulab-a1-mini</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/motor-paso-a-paso-nema-14</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/silicona-bloque-bambulab-x1p1p</loc>
+    <loc>https://dprecios.web.app/productos/rsp-piezas-hotend-bambu-p1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -15260,13 +14918,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/cable-termistor-para-bambulab-x1p1p</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cable-calefactor-para-bambulab-x1p1p</loc>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-bambu-p1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -15284,12 +14936,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/hotend-para-bambulab-x1p1p</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/bloque-calefactor-extrusor-sprite</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -15302,19 +14948,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-bambulab-x1p1p</loc>
+    <loc>https://dprecios.web.app/productos/rsp-nozzle-bambu-p1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-creality-k1-ender-3v3-ke</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tubo-guia-extrusor-artillery</loc>
+    <loc>https://dprecios.web.app/productos/rsp-nozzle-ender-3-v3</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -15333,18 +14973,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/pack-de-4-cables-para-a1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/correa-eje-x-para-a1-mini</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/correa-eje-y-para-a1-mini</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -15404,7 +15032,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/placa-madre-a1-mini</loc>
+    <loc>https://dprecios.web.app/productos/rsp-placa-bambu-a1-mini</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -15429,18 +15057,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/ams-lite-bambulab-a1-series</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cable-termistor-para-ender-3-s1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cable-calefactor-para-ender-3-s1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -15506,7 +15122,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/extrusor-completo-anycubic-kobra-2-plusmax</loc>
+    <loc>https://dprecios.web.app/productos/rsp-extrusor-anycubic-kobra-i3</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -15537,12 +15153,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/kit-hotend-anycubic-kobra-3</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/extrusor-anycubic-kobra-3</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -15614,12 +15224,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/extrusor-completo-anycubic-kobra-3-max</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/resina-jamg-he-art-engineering</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -15662,31 +15266,25 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/hotend-para-ender-3v3-ke</loc>
+    <loc>https://dprecios.web.app/productos/rsp-extrusor-k2-plus</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/extrusor-creality-k2-plus</loc>
+    <loc>https://dprecios.web.app/productos/rsp-extrusor-ender-3-v3</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/extrusor-creality-ender-3v3-ke</loc>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-k1-max</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/hotend-para-creality-k1k1-max</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/hotend-para-creality-k2-plus</loc>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-k2-plus</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -15704,19 +15302,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-06mm-para-k2-plus-y-hi-combo</loc>
+    <loc>https://dprecios.web.app/productos/rsp-nozzle-k2-plus-06mm</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-de-laton-y-acero-04mm-para-k13v3ke</loc>
+    <loc>https://dprecios.web.app/productos/rsp-nozzle-k1-04mm</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/extrusor-para-creality-k1-k1-max</loc>
+    <loc>https://dprecios.web.app/productos/rsp-extrusor-k1-max</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -15734,13 +15332,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/ventilador-de-refrigeracion-2510-anycubic-kobra-s1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ventilador-de-capa-5020-anycubic-kobra-s1</loc>
+    <loc>https://dprecios.web.app/productos/rsp-ventilador-anycubic-kobra-i3</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -15806,7 +15398,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-04mm-para-k2-plus-y-hi-combo</loc>
+    <loc>https://dprecios.web.app/productos/rsp-nozzle-k2-plus-04mm</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -15830,7 +15422,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/hotend-para-creality-ender-5-max</loc>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-ender-5</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -15866,37 +15458,37 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/rsp-anycubic-wash-and-cure-wc3-plus-maquina-de-curado-y-lavado-alta-precision</loc>
+    <loc>https://dprecios.web.app/productos/wash-and-cure-wc3-plus-anycubic-maquina-3d-de-curado-y-lavado-alta-precision</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/rsp-anycubic-wash-and-cure-wc3-maquina-de-curado-y-lavado-alta-precision</loc>
+    <loc>https://dprecios.web.app/productos/wash-and-cure-wc3-anycubic-maquina-3d-de-curado-y-lavado-alta-precision</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/rsp-anycubic-wash-and-cure-machine-plus-maquina-de-curado-y-lavado-alta-precision</loc>
+    <loc>https://dprecios.web.app/productos/wash-and-cure-machine-plus-anycubic-maquina-3d-de-curado-y-lavado-alta-precision</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/rsp-anycubic-wash-and-cure-machine-20-maquina-de-curado-y-lavado-alta-precision</loc>
+    <loc>https://dprecios.web.app/productos/wash-and-cure-machine-20-anycubic-maquina-3d-de-curado-y-lavado-alta-precision</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/rsp-anycubic-wash-and-cure-3-max-maquina-de-curado-y-lavado-alta-precision</loc>
+    <loc>https://dprecios.web.app/productos/wash-and-cure-3-max-anycubic-maquina-3d-de-curado-y-lavado-alta-precision</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/rsp-creality-uw-03-maquina-de-curado-y-lavado-alta-precision</loc>
+    <loc>https://dprecios.web.app/productos/uw-03-creality-maquina-3d-de-curado-y-lavado-alta-precision</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -15908,7 +15500,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/rsp-graphy-tera-harz-care-lavadora-ultrasonica-maquina-lavadora</loc>
+    <loc>https://dprecios.web.app/productos/tera-harz-care-lavadora-ultrasonica-graphy-maquina-3d-lavadora</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -16250,18 +15842,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/termistor-original-para-impresora-artillery</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/throat-garganta-artillery-original</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/tubo-de-teflon-ptfe-capricorn-por-metro</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -16274,25 +15854,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/tuerca-cama-caliente-impresoras-artillery</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ventilador-extrusor-4010-24v-artillery</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ventilador-placa-madre-8020-24v-artillery</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/vidrio-templado-artillery-genius-y-genius-pro</loc>
+    <loc>https://dprecios.web.app/productos/rsp-placa-artillery</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

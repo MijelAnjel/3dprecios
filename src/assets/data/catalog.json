@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-04-02T04:58:01.661Z",
-    "productCount": 2704
+    "generatedAt": "2026-04-02T05:14:47.590Z",
+    "productCount": 2631
   },
   "stores": [
     {
@@ -703,8 +703,8 @@
       ]
     },
     {
-      "slug": "silicona-para-bloque-ender-3-s1",
-      "id": "silicona-para-bloque-ender-3-s1",
+      "slug": "rsp-piezas-hotend-ender-3-s1",
+      "id": "rsp-piezas-hotend-ender-3-s1",
       "name": "Silicona para bloque Ender 3 S1",
       "brand": "",
       "categoryId": "repuestos",
@@ -716,16 +716,16 @@
         "partType": "Piezas Hotend",
         "compatibleWith": "Ender 3 S1"
       },
-      "minPrice": 2000,
-      "maxPrice": 2000,
+      "minPrice": 2500,
+      "maxPrice": 2500,
       "storeCount": 1,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:45:23.858Z",
       "entries": [
         {
           "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/silicona-ender3s1/",
-          "price": 2000,
+          "url": "https://horus3d.cl/producto/garganta-ender3s1/",
+          "price": 2500,
           "stock": "available"
         }
       ],
@@ -734,12 +734,17 @@
           "storeId": "horus3d",
           "price": 2000,
           "recordedAt": "2026-04-01T18:22:38.548Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 2500,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
     },
     {
-      "slug": "silicona-bloque-ender-3v3se",
-      "id": "silicona-bloque-ender-3v3se",
+      "slug": "rsp-piezas-hotend-ender-3-v3-se",
+      "id": "rsp-piezas-hotend-ender-3-v3-se",
       "name": "Silicona bloque Ender 3V3SE",
       "brand": "",
       "categoryId": "repuestos",
@@ -774,8 +779,8 @@
       ]
     },
     {
-      "slug": "silicona-bloque-creality-k1",
-      "id": "silicona-bloque-creality-k1",
+      "slug": "rsp-piezas-hotend-k1",
+      "id": "rsp-piezas-hotend-k1",
       "name": "Silicona bloque Creality K1",
       "brand": "Creality",
       "categoryId": "repuestos",
@@ -1220,8 +1225,8 @@
       ]
     },
     {
-      "slug": "sensor-final-de-carrera-eje-y-artillery-x1",
-      "id": "sensor-final-de-carrera-eje-y-artillery-x1",
+      "slug": "rsp-sensor-artillery-sidewinder",
+      "id": "rsp-sensor-artillery-sidewinder",
       "name": "Sensor Final de Carrera eje Y Artillery X1",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -1256,8 +1261,8 @@
       ]
     },
     {
-      "slug": "sensor-final-de-carrera-eje-y-artillery-genius-pro-switch",
-      "id": "sensor-final-de-carrera-eje-y-artillery-genius-pro-switch",
+      "slug": "rsp-sensor-artillery-genius",
+      "id": "rsp-sensor-artillery-genius",
       "name": "Sensor Final de Carrera eje Y Artillery Genius Pro switch",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -1270,17 +1275,23 @@
         "partType": "Sensor",
         "compatibleWith": "Artillery Genius"
       },
-      "minPrice": 7992,
-      "maxPrice": 7992,
-      "storeCount": 1,
+      "minPrice": 2000,
+      "maxPrice": 2000,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T19:02:31.853Z",
       "entries": [
         {
           "storeId": "afel",
-          "url": "https://afel.cl/products/sensor-final-de-carrera-eje-y-artillery-genius-pro-switch",
-          "price": 7992,
+          "url": "https://afel.cl/products/cable-sensor-de-filamento-para-artillery-genius-y-genius-pro",
+          "price": 2800,
           "stock": "out"
+        },
+        {
+          "storeId": "cimech3d",
+          "url": "https://www.cimech3d.cl/producto/cable-sensor-de-filamento-710mm-2-54-3pin-para-artillery-genius-genius-pro/",
+          "price": 2000,
+          "stock": "available"
         }
       ],
       "history": [
@@ -1288,42 +1299,21 @@
           "storeId": "afel",
           "price": 7992,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "sensor-final-de-carrera-eje-y-artillery-genius",
-      "id": "sensor-final-de-carrera-eje-y-artillery-genius",
-      "name": "Sensor Final de Carrera eje Y Artillery Genius",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F23842Fsensor_eje_y_genius_1200x900-1.jpg?v=1720899275"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Sensor",
-        "compatibleWith": "Artillery Genius"
-      },
-      "minPrice": 7192,
-      "maxPrice": 7192,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:02:30.986Z",
-      "entries": [
-        {
-          "storeId": "afel",
-          "url": "https://afel.cl/products/sensor-final-de-carrera-eje-y-artillery-genius",
-          "price": 7192,
-          "stock": "out"
-        }
-      ],
-      "history": [
+        },
         {
           "storeId": "afel",
           "price": 7192,
           "recordedAt": "2026-04-01T18:39:28.373Z"
+        },
+        {
+          "storeId": "afel",
+          "price": 2800,
+          "recordedAt": "2026-04-01T18:39:28.372Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 2000,
+          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -1364,8 +1354,8 @@
       ]
     },
     {
-      "slug": "sensor-final-de-carrera-eje-x-artillery",
-      "id": "sensor-final-de-carrera-eje-x-artillery",
+      "slug": "rsp-sensor-artillery",
+      "id": "rsp-sensor-artillery",
       "name": "Sensor Final de Carrera eje X Artillery",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -1378,66 +1368,46 @@
         "partType": "Sensor",
         "compatibleWith": "Artillery"
       },
-      "minPrice": 7192,
-      "maxPrice": 7192,
-      "storeCount": 1,
+      "minPrice": 4990,
+      "maxPrice": 4990,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T19:02:15.162Z",
-      "entries": [
-        {
-          "storeId": "afel",
-          "url": "https://afel.cl/products/sensor-final-de-carrera-eje-x-artillery",
-          "price": 7192,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "afel",
-          "price": 7192,
-          "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "sensor-filamento-artillery",
-      "id": "sensor-filamento-artillery",
-      "name": "Sensor Filamento Artillery",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F22192Fsensor_filamento_artillery_1200x900-1.jpg?v=1720901423"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Sensor",
-        "compatibleWith": "Artillery"
-      },
-      "minPrice": 4800,
-      "maxPrice": 4800,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:02:14.550Z",
       "entries": [
         {
           "storeId": "afel",
           "url": "https://afel.cl/products/sensor-filamento-artillery",
           "price": 4800,
           "stock": "out"
+        },
+        {
+          "storeId": "imperio3d",
+          "url": "https://imperio3d.com/producto/sensor-de-final-de-filamento-artillery/",
+          "price": 4990,
+          "stock": "available"
         }
       ],
       "history": [
         {
           "storeId": "afel",
+          "price": 7192,
+          "recordedAt": "2026-04-01T18:39:28.373Z"
+        },
+        {
+          "storeId": "afel",
           "price": 4800,
           "recordedAt": "2026-04-01T18:39:28.373Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 4990,
+          "recordedAt": "2026-04-01T18:23:08.354Z"
         }
       ]
     },
     {
-      "slug": "resorte-extrusor-artillery",
-      "id": "resorte-extrusor-artillery",
+      "slug": "rsp-extrusor-artillery",
+      "id": "rsp-extrusor-artillery",
       "name": "Resorte Extrusor Artillery",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -1450,17 +1420,29 @@
         "partType": "Extrusor",
         "compatibleWith": "Artillery"
       },
-      "minPrice": 1200,
-      "maxPrice": 1200,
-      "storeCount": 1,
+      "minPrice": 2000,
+      "maxPrice": 3990,
+      "storeCount": 3,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T19:02:12.904Z",
       "entries": [
         {
           "storeId": "afel",
-          "url": "https://afel.cl/products/resorte-extrusor-artillery",
-          "price": 1200,
+          "url": "https://afel.cl/products/ventilador-extrusor-4010-24v-artillery",
+          "price": 3000,
           "stock": "out"
+        },
+        {
+          "storeId": "imperio3d",
+          "url": "https://imperio3d.com/producto/palanca-extrusor-artillery/",
+          "price": 3990,
+          "stock": "available"
+        },
+        {
+          "storeId": "horus3d",
+          "url": "https://horus3d.cl/producto/guia-artillery/",
+          "price": 2000,
+          "stock": "available"
         }
       ],
       "history": [
@@ -1468,6 +1450,36 @@
           "storeId": "afel",
           "price": 1200,
           "recordedAt": "2026-04-01T18:39:28.373Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 3990,
+          "recordedAt": "2026-03-31T13:32:28.467Z"
+        },
+        {
+          "storeId": "afel",
+          "price": 6000,
+          "recordedAt": "2026-04-01T18:39:28.373Z"
+        },
+        {
+          "storeId": "afel",
+          "price": 2000,
+          "recordedAt": "2026-04-01T18:39:28.373Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 2000,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
+        },
+        {
+          "storeId": "afel",
+          "price": 2000,
+          "recordedAt": "2026-04-01T23:15:29.905Z"
+        },
+        {
+          "storeId": "afel",
+          "price": 3000,
+          "recordedAt": "2026-04-01T23:15:29.905Z"
         }
       ]
     },
@@ -1507,8 +1519,8 @@
       ]
     },
     {
-      "slug": "protector-plastico-extrusor-artillery-x1",
-      "id": "protector-plastico-extrusor-artillery-x1",
+      "slug": "rsp-extrusor-artillery-sidewinder",
+      "id": "rsp-extrusor-artillery-sidewinder",
       "name": "Protector Plástico Extrusor Artillery X1",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -1521,16 +1533,22 @@
         "partType": "Extrusor",
         "compatibleWith": "Artillery Sidewinder"
       },
-      "minPrice": 2800,
-      "maxPrice": 2800,
-      "storeCount": 1,
+      "minPrice": 6990,
+      "maxPrice": 47992,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T19:02:10.373Z",
       "entries": [
         {
           "storeId": "afel",
-          "url": "https://afel.cl/products/protector-plastico-extrusor-artillery-x1",
-          "price": 2800,
+          "url": "https://afel.cl/products/extrusor-completo-artillery-x1",
+          "price": 47992,
+          "stock": "out"
+        },
+        {
+          "storeId": "horus3d",
+          "url": "https://horus3d.cl/producto/flex-x1-e/",
+          "price": 6990,
           "stock": "out"
         }
       ],
@@ -1539,6 +1557,16 @@
           "storeId": "afel",
           "price": 2800,
           "recordedAt": "2026-04-01T18:39:28.373Z"
+        },
+        {
+          "storeId": "afel",
+          "price": 47992,
+          "recordedAt": "2026-04-01T18:39:28.373Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 6990,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
     },
@@ -2023,8 +2051,8 @@
       ]
     },
     {
-      "slug": "placa-pcb-eje-z-artillery-x1",
-      "id": "placa-pcb-eje-z-artillery-x1",
+      "slug": "rsp-placa-artillery-sidewinder",
+      "id": "rsp-placa-artillery-sidewinder",
       "name": "Placa PCB eje Z Artillery X1",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -2037,16 +2065,16 @@
         "partType": "Placa",
         "compatibleWith": "Artillery Sidewinder"
       },
-      "minPrice": 5600,
-      "maxPrice": 5600,
+      "minPrice": 6400,
+      "maxPrice": 6400,
       "storeCount": 1,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T19:01:56.586Z",
       "entries": [
         {
           "storeId": "afel",
-          "url": "https://afel.cl/products/placa-pcb-eje-z-artillery-x1",
-          "price": 5600,
+          "url": "https://afel.cl/products/placa-pcb-eje-x-artillery-x1",
+          "price": 6400,
           "stock": "out"
         }
       ],
@@ -2054,6 +2082,11 @@
         {
           "storeId": "afel",
           "price": 5600,
+          "recordedAt": "2026-04-01T18:39:28.373Z"
+        },
+        {
+          "storeId": "afel",
+          "price": 6400,
           "recordedAt": "2026-04-01T18:39:28.373Z"
         }
       ]
@@ -2492,8 +2525,8 @@
       ]
     },
     {
-      "slug": "placa-pcb-eje-z-artillery-genius",
-      "id": "placa-pcb-eje-z-artillery-genius",
+      "slug": "rsp-placa-artillery-genius",
+      "id": "rsp-placa-artillery-genius",
       "name": "Placa PCB eje Z Artillery Genius",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -2662,42 +2695,6 @@
           "storeId": "cimech3d",
           "price": 14990,
           "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
-      "slug": "placa-pcb-eje-x-artillery-x1",
-      "id": "placa-pcb-eje-x-artillery-x1",
-      "name": "Placa PCB eje X Artillery X1",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F23762Fpcb_eje_x_artillery_x1_1200x900_c37643fe-0f7e-4492-bdb9-4e2ce790fcef.jpg?v=1720900902"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Placa",
-        "compatibleWith": "Artillery Sidewinder"
-      },
-      "minPrice": 6400,
-      "maxPrice": 6400,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:54.155Z",
-      "entries": [
-        {
-          "storeId": "afel",
-          "url": "https://afel.cl/products/placa-pcb-eje-x-artillery-x1",
-          "price": 6400,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "afel",
-          "price": 6400,
-          "recordedAt": "2026-04-01T18:39:28.373Z"
         }
       ]
     },
@@ -3310,53 +3307,6 @@
           "storeId": "cimech3d",
           "price": 9990,
           "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
-      "slug": "palanca-extrusor-artillery",
-      "id": "palanca-extrusor-artillery",
-      "name": "Palanca extrusor Artillery",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2023/07/artillery_palanca_extrusor_imperio3d-300x300.webp"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Extrusor",
-        "compatibleWith": "Artillery"
-      },
-      "minPrice": 3990,
-      "maxPrice": 3990,
-      "storeCount": 2,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-03-31T13:43:38.459Z",
-      "entries": [
-        {
-          "storeId": "afel",
-          "url": "https://afel.cl/products/palanca-extrusor-artillery",
-          "price": 6000,
-          "stock": "out"
-        },
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/palanca-extrusor-artillery/",
-          "price": 3990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 3990,
-          "recordedAt": "2026-03-31T13:32:28.467Z"
-        },
-        {
-          "storeId": "afel",
-          "price": 6000,
-          "recordedAt": "2026-04-01T18:39:28.373Z"
         }
       ]
     },
@@ -5243,8 +5193,8 @@
       ]
     },
     {
-      "slug": "motor-paso-a-paso-eje-y-48mm-artillery",
-      "id": "motor-paso-a-paso-eje-y-48mm-artillery",
+      "slug": "rsp-motor-artillery",
+      "id": "rsp-motor-artillery",
       "name": "Motor paso a paso eje Y 48mm Artillery",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -5257,47 +5207,11 @@
         "partType": "Motor",
         "compatibleWith": "Artillery"
       },
-      "minPrice": 14400,
-      "maxPrice": 14400,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:39.941Z",
-      "entries": [
-        {
-          "storeId": "afel",
-          "url": "https://afel.cl/products/motor-paso-a-paso-eje-y-48mm-artillery",
-          "price": 14400,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "afel",
-          "price": 14400,
-          "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "motor-paso-a-paso-eje-x-y-z-40mm-artillery",
-      "id": "motor-paso-a-paso-eje-x-y-z-40mm-artillery",
-      "name": "Motor paso a paso eje X y Z 40mm Artillery",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F23882Fmotor_eje_x_y_z_1200x900_837a3d0e-bc80-4267-ad45-29033eb68bf4.jpg?v=1720899272"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Motor",
-        "compatibleWith": "Artillery"
-      },
       "minPrice": 17000,
       "maxPrice": 17000,
       "storeCount": 1,
       "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:39.626Z",
+      "createdAt": "2026-04-01T19:01:39.941Z",
       "entries": [
         {
           "storeId": "afel",
@@ -5307,6 +5221,11 @@
         }
       ],
       "history": [
+        {
+          "storeId": "afel",
+          "price": 14400,
+          "recordedAt": "2026-04-01T18:39:28.373Z"
+        },
         {
           "storeId": "afel",
           "price": 17000,
@@ -6635,42 +6554,6 @@
       ]
     },
     {
-      "slug": "extrusor-completo-artillery-x1",
-      "id": "extrusor-completo-artillery-x1",
-      "name": "Extrusor Completo Artillery X1",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F21772Fextrusor_completo_artillery.jpg?v=1720901505"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Extrusor",
-        "compatibleWith": "Artillery Sidewinder"
-      },
-      "minPrice": 47992,
-      "maxPrice": 47992,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:30.624Z",
-      "entries": [
-        {
-          "storeId": "afel",
-          "url": "https://afel.cl/products/extrusor-completo-artillery-x1",
-          "price": 47992,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "afel",
-          "price": 47992,
-          "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
       "slug": "extrusor-bloque-de-aluminio-mk8-sistema-bowden",
       "id": "extrusor-bloque-de-aluminio-mk8-sistema-bowden",
       "name": "Extrusor Bloque de Aluminio MK8 Sistema Bowden",
@@ -6850,44 +6733,8 @@
       ]
     },
     {
-      "slug": "engranaje-extrusor-artillery",
-      "id": "engranaje-extrusor-artillery",
-      "name": "Engranaje Extrusor Artillery",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F24812Fengranaje_extrusor_artillery_1200x900_07da49a4-03c1-4bb7-831f-b31fc674e358.jpg?v=1720900593"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Extrusor",
-        "compatibleWith": "Artillery"
-      },
-      "minPrice": 2000,
-      "maxPrice": 2000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:29.396Z",
-      "entries": [
-        {
-          "storeId": "afel",
-          "url": "https://afel.cl/products/engranaje-extrusor-artillery",
-          "price": 2000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "afel",
-          "price": 2000,
-          "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "driver-fs31w01-v2-para-impresora-artillery",
-      "id": "driver-fs31w01-v2-para-impresora-artillery",
+      "slug": "rsp-driver-motor-artillery",
+      "id": "rsp-driver-motor-artillery",
       "name": "Driver FS31W01 v2 para Impresora Artillery",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -6922,8 +6769,8 @@
       ]
     },
     {
-      "slug": "correa-dentada-cama-caliente-artillery-95cm",
-      "id": "correa-dentada-cama-caliente-artillery-95cm",
+      "slug": "rsp-correa-polea-artillery",
+      "id": "rsp-correa-polea-artillery",
       "name": "Correa Dentada cama caliente Artillery 95cm",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -6936,47 +6783,11 @@
         "partType": "Correa / Polea",
         "compatibleWith": "Artillery"
       },
-      "minPrice": 2000,
-      "maxPrice": 2000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:28.760Z",
-      "entries": [
-        {
-          "storeId": "afel",
-          "url": "https://afel.cl/products/correa-dentada-cama-caliente-artillery-1-metro",
-          "price": 2000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "afel",
-          "price": 2000,
-          "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "correa-dentada-cama-caliente-artillery-75cm",
-      "id": "correa-dentada-cama-caliente-artillery-75cm",
-      "name": "Correa Dentada cama caliente Artillery 75cm",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/correa_dentada_75cm.jpg?v=1734633296"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Correa / Polea",
-        "compatibleWith": "Artillery"
-      },
       "minPrice": 1500,
       "maxPrice": 1500,
       "storeCount": 1,
       "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:28.462Z",
+      "createdAt": "2026-04-01T19:01:28.760Z",
       "entries": [
         {
           "storeId": "afel",
@@ -6988,14 +6799,19 @@
       "history": [
         {
           "storeId": "afel",
+          "price": 2000,
+          "recordedAt": "2026-04-01T18:39:28.373Z"
+        },
+        {
+          "storeId": "afel",
           "price": 1500,
           "recordedAt": "2026-04-01T18:39:28.373Z"
         }
       ]
     },
     {
-      "slug": "correa-dentada-2gt-760-para-artillery-x1",
-      "id": "correa-dentada-2gt-760-para-artillery-x1",
+      "slug": "rsp-correa-polea-artillery-sidewinder",
+      "id": "rsp-correa-polea-artillery-sidewinder",
       "name": "Correa dentada 2GT-760 para Artillery X1",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -7030,8 +6846,8 @@
       ]
     },
     {
-      "slug": "correa-dentada-2gt-600-para-artillery-genius",
-      "id": "correa-dentada-2gt-600-para-artillery-genius",
+      "slug": "rsp-correa-polea-artillery-genius",
+      "id": "rsp-correa-polea-artillery-genius",
       "name": "Correa dentada 2GT-600 para Artillery Genius",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -7230,8 +7046,8 @@
       ]
     },
     {
-      "slug": "cartucho-original-calefactor-para-impresora-artillery",
-      "id": "cartucho-original-calefactor-para-impresora-artillery",
+      "slug": "rsp-hotend-artillery",
+      "id": "rsp-hotend-artillery",
       "name": "Cartucho original Calefactor para Impresora Artillery",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -7244,17 +7060,35 @@
         "partType": "Hotend",
         "compatibleWith": "Artillery"
       },
-      "minPrice": 3500,
-      "maxPrice": 3500,
-      "storeCount": 1,
+      "minPrice": 3000,
+      "maxPrice": 3990,
+      "storeCount": 4,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T19:01:25.857Z",
       "entries": [
         {
           "storeId": "afel",
-          "url": "https://afel.cl/products/cartucho-original-calefactor-para-impresora-artillery",
+          "url": "https://afel.cl/products/termistor-original-para-impresora-artillery",
           "price": 3500,
           "stock": "out"
+        },
+        {
+          "storeId": "cimech3d",
+          "url": "https://www.cimech3d.cl/producto/tubo-caliente-calefactor-para-impresora-3d-artillery/",
+          "price": 3000,
+          "stock": "available"
+        },
+        {
+          "storeId": "evstore",
+          "url": "https://evstore.cl/tienda/termistor-artillery/",
+          "price": 3990,
+          "stock": "available"
+        },
+        {
+          "storeId": "imperio3d",
+          "url": "https://imperio3d.com/producto/bloque-calefactor-artillery/",
+          "price": 3490,
+          "stock": "available"
         }
       ],
       "history": [
@@ -7262,12 +7096,42 @@
           "storeId": "afel",
           "price": 3500,
           "recordedAt": "2026-04-01T18:39:28.372Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 3000,
+          "recordedAt": "2026-04-01T18:30:45.324Z"
+        },
+        {
+          "storeId": "evstore",
+          "price": 3990,
+          "recordedAt": "2026-04-01T18:24:45.590Z"
+        },
+        {
+          "storeId": "evstore",
+          "price": 3990,
+          "recordedAt": "2026-04-01T18:24:45.590Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 5990,
+          "recordedAt": "2026-04-01T18:23:08.356Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 3490,
+          "recordedAt": "2026-03-31T13:32:28.466Z"
+        },
+        {
+          "storeId": "afel",
+          "price": 3500,
+          "recordedAt": "2026-04-01T23:15:29.905Z"
         }
       ]
     },
     {
-      "slug": "cartucho-calefactor-ender-3-v2",
-      "id": "cartucho-calefactor-ender-3-v2",
+      "slug": "rsp-hotend-ender-3",
+      "id": "rsp-hotend-ender-3",
       "name": "Cartucho Calefactor Ender 3 V2",
       "brand": "",
       "categoryId": "repuestos",
@@ -7279,9 +7143,9 @@
         "partType": "Hotend",
         "compatibleWith": "Ender 3"
       },
-      "minPrice": 3000,
-      "maxPrice": 3000,
-      "storeCount": 1,
+      "minPrice": 4990,
+      "maxPrice": 15000,
+      "storeCount": 4,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T19:01:25.530Z",
       "entries": [
@@ -7290,6 +7154,24 @@
           "url": "https://afel.cl/products/cartucho-calefactor-ender-3-v2",
           "price": 3000,
           "stock": "out"
+        },
+        {
+          "storeId": "evstore",
+          "url": "https://evstore.cl/tienda/hot-end-ender-3/",
+          "price": 15000,
+          "stock": "available"
+        },
+        {
+          "storeId": "imperio3d",
+          "url": "https://imperio3d.com/producto/calefactor-ender-3/",
+          "price": 4990,
+          "stock": "available"
+        },
+        {
+          "storeId": "horus3d",
+          "url": "https://horus3d.cl/producto/termistor-cr/",
+          "price": 2500,
+          "stock": "out"
         }
       ],
       "history": [
@@ -7297,6 +7179,31 @@
           "storeId": "afel",
           "price": 3000,
           "recordedAt": "2026-04-01T18:39:28.372Z"
+        },
+        {
+          "storeId": "evstore",
+          "price": 15000,
+          "recordedAt": "2026-04-01T18:24:45.591Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 14990,
+          "recordedAt": "2026-04-01T18:23:24.027Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 5990,
+          "recordedAt": "2026-04-01T18:23:12.507Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 4990,
+          "recordedAt": "2026-04-01T18:23:08.354Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 2500,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
     },
@@ -7460,42 +7367,6 @@
         {
           "storeId": "afel",
           "url": "https://afel.cl/products/cable-sensor-de-filamento-para-artillery-x1-y-x2",
-          "price": 2800,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "afel",
-          "price": 2800,
-          "recordedAt": "2026-04-01T18:39:28.372Z"
-        }
-      ]
-    },
-    {
-      "slug": "cable-sensor-de-filamento-para-artillery-genius-y-genius-pro",
-      "id": "cable-sensor-de-filamento-para-artillery-genius-y-genius-pro",
-      "name": "Cable sensor de filamento para Artillery Genius y Genius Pro",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F26842Fcable_sensor_filamento-1.jpg?v=1720900017"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Sensor",
-        "compatibleWith": "Artillery Genius"
-      },
-      "minPrice": 2800,
-      "maxPrice": 2800,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:23.483Z",
-      "entries": [
-        {
-          "storeId": "afel",
-          "url": "https://afel.cl/products/cable-sensor-de-filamento-para-artillery-genius-y-genius-pro",
           "price": 2800,
           "stock": "out"
         }
@@ -7848,8 +7719,8 @@
       ]
     },
     {
-      "slug": "aislante-termico-cama-caliente-artillery-x1",
-      "id": "aislante-termico-cama-caliente-artillery-x1",
+      "slug": "rsp-cama-superficie-artillery-sidewinder",
+      "id": "rsp-cama-superficie-artillery-sidewinder",
       "name": "Aislante Térmico Cama Caliente Artillery X1",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -7884,8 +7755,8 @@
       ]
     },
     {
-      "slug": "aislante-termico-cama-caliente-artillery-genius",
-      "id": "aislante-termico-cama-caliente-artillery-genius",
+      "slug": "rsp-cama-superficie-artillery-genius",
+      "id": "rsp-cama-superficie-artillery-genius",
       "name": "Aislante Térmico Cama Caliente Artillery Genius",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -7898,17 +7769,23 @@
         "partType": "Cama / Superficie",
         "compatibleWith": "Artillery Genius"
       },
-      "minPrice": 2400,
-      "maxPrice": 2400,
-      "storeCount": 1,
+      "minPrice": 29990,
+      "maxPrice": 29990,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T19:01:21.006Z",
       "entries": [
         {
           "storeId": "afel",
-          "url": "https://afel.cl/products/aislante-termico-cama-caliente-artillery-genius",
-          "price": 2400,
+          "url": "https://afel.cl/products/vidrio-templado-artillery-genius-y-genius-pro",
+          "price": 24000,
           "stock": "out"
+        },
+        {
+          "storeId": "cimech3d",
+          "url": "https://www.cimech3d.cl/producto/cama-caliente-con-tornillos-para-artillery-genius-pro/",
+          "price": 29990,
+          "stock": "available"
         }
       ],
       "history": [
@@ -7916,6 +7793,26 @@
           "storeId": "afel",
           "price": 2400,
           "recordedAt": "2026-04-01T18:39:28.372Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 3990,
+          "recordedAt": "2026-04-01T18:30:45.324Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 34990,
+          "recordedAt": "2026-04-01T18:30:45.324Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 29990,
+          "recordedAt": "2026-04-01T18:30:45.324Z"
+        },
+        {
+          "storeId": "afel",
+          "price": 24000,
+          "recordedAt": "2026-04-01T23:15:29.905Z"
         }
       ]
     },
@@ -11719,42 +11616,6 @@
       ]
     },
     {
-      "slug": "tubo-caliente-calefactor-para-impresora-3d-artillery",
-      "id": "tubo-caliente-calefactor-para-impresora-3d-artillery",
-      "name": "Tubo caliente calefactor para impresora 3D Artillery",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2024/01/Attachment_1601722225_7.jpg"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Hotend",
-        "compatibleWith": "Artillery"
-      },
-      "minPrice": 3000,
-      "maxPrice": 3000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:20.102Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/tubo-caliente-calefactor-para-impresora-3d-artillery/",
-          "price": 3000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 3000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "prensa-estopa-pg16-conector-de-nylon-a-prueba-de-agua-blanca",
       "id": "prensa-estopa-pg16-conector-de-nylon-a-prueba-de-agua-blanca",
       "name": "Prensa estopa PG16 conector de nylon a prueba de agua blanca",
@@ -11787,8 +11648,8 @@
       ]
     },
     {
-      "slug": "cama-caliente-magnetica-en-acero-para-artillery-310x310mm",
-      "id": "cama-caliente-magnetica-en-acero-para-artillery-310x310mm",
+      "slug": "rsp-cama-superficie-artillery",
+      "id": "rsp-cama-superficie-artillery",
       "name": "Cama caliente magnética en acero para Artillery 310x310mm",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -11801,60 +11662,40 @@
         "partType": "Cama / Superficie",
         "compatibleWith": "Artillery"
       },
-      "minPrice": 57990,
-      "maxPrice": 57990,
-      "storeCount": 1,
+      "minPrice": 2400,
+      "maxPrice": 34990,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:59:19.801Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/cama-caliente-magnetica-en-acero-para-artillery-310x310mm/",
-          "price": 57990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 57990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "cama-caliente-magnetica-en-acero-para-artillery-230x230mm",
-      "id": "cama-caliente-magnetica-en-acero-para-artillery-230x230mm",
-      "name": "Cama caliente magnética en acero para Artillery 230x230mm",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/07/3D-230x230-1.webp"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Cama / Superficie",
-        "compatibleWith": "Artillery"
-      },
-      "minPrice": 34990,
-      "maxPrice": 34990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:19.485Z",
       "entries": [
         {
           "storeId": "cimech3d",
           "url": "https://www.cimech3d.cl/producto/cama-caliente-magnetica-en-acero-para-artillery-230x230mm/",
           "price": 34990,
           "stock": "out"
+        },
+        {
+          "storeId": "afel",
+          "url": "https://afel.cl/products/tuerca-cama-caliente-impresoras-artillery",
+          "price": 2400,
+          "stock": "out"
         }
       ],
       "history": [
         {
           "storeId": "cimech3d",
+          "price": 57990,
+          "recordedAt": "2026-04-01T18:30:45.324Z"
+        },
+        {
+          "storeId": "cimech3d",
           "price": 34990,
           "recordedAt": "2026-04-01T18:30:45.324Z"
+        },
+        {
+          "storeId": "afel",
+          "price": 2400,
+          "recordedAt": "2026-04-01T23:15:29.905Z"
         }
       ]
     },
@@ -12090,42 +11931,6 @@
           "storeId": "cimech3d",
           "price": 290,
           "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "cable-sensor-de-filamento-710mm-254-3pin-artillery-genius-y-genius-pro",
-      "id": "cable-sensor-de-filamento-710mm-254-3pin-artillery-genius-y-genius-pro",
-      "name": "Cable sensor de filamento 710mm 2.54-3Pin Artillery Genius y Genius pro",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/07/cable-parada-sensor-de-filamento-artiler.jpg"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Sensor",
-        "compatibleWith": "Artillery Genius"
-      },
-      "minPrice": 2000,
-      "maxPrice": 2000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:18.258Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/cable-sensor-de-filamento-710mm-2-54-3pin-para-artillery-genius-genius-pro/",
-          "price": 2000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 2000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -13261,8 +13066,8 @@
       ]
     },
     {
-      "slug": "garganta-de-manguera-v6-para-artillery-genius",
-      "id": "garganta-de-manguera-v6-para-artillery-genius",
+      "slug": "rsp-piezas-hotend-artillery-genius",
+      "id": "rsp-piezas-hotend-artillery-genius",
       "name": "Garganta de manguera v6 para Artillery Genius",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -13329,8 +13134,8 @@
       ]
     },
     {
-      "slug": "boquilla-volcano-nozzle-04mm-artillery",
-      "id": "boquilla-volcano-nozzle-04mm-artillery",
+      "slug": "rsp-nozzle-artillery-04mm",
+      "id": "rsp-nozzle-artillery-04mm",
       "name": "Boquilla volcano Nozzle, 0.4mm  Artillery",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -13366,8 +13171,8 @@
       ]
     },
     {
-      "slug": "bloque-calefactor-volcano-para-artillery-genius-y-sw",
-      "id": "bloque-calefactor-volcano-para-artillery-genius-y-sw",
+      "slug": "rsp-hotend-artillery-genius",
+      "id": "rsp-hotend-artillery-genius",
       "name": "Bloque Calefactor Volcano para Artillery Genius y SW",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -13496,42 +13301,6 @@
       ]
     },
     {
-      "slug": "aislante-termico-de-algodon-para-cama-caliente-artillery-genius-pro",
-      "id": "aislante-termico-de-algodon-para-cama-caliente-artillery-genius-pro",
-      "name": "Aislante termico de algodón para cama caliente Artillery Genius-pro",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/06/aislante-termico-cama-caliente-artillery.jpg"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Cama / Superficie",
-        "compatibleWith": "Artillery Genius"
-      },
-      "minPrice": 3990,
-      "maxPrice": 3990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:11.351Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/aislante-termico-de-algodon-para-cama-caliente-artillery-genius-pro/",
-          "price": 3990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 3990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "socket-para-conector-de-alta-carga-con-4-polos",
       "id": "socket-para-conector-de-alta-carga-con-4-polos",
       "name": "Socket para conector de alta carga con 4 polos",
@@ -13560,42 +13329,6 @@
           "storeId": "cimech3d",
           "price": 2500,
           "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
-      "slug": "cama-caliente-de-silicona-para-artillery-genius-pro",
-      "id": "cama-caliente-de-silicona-para-artillery-genius-pro",
-      "name": "Cama caliente de silicona para Artillery Genius-pro",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/06/cama-caliente-silicona-artillery-genius-pro.jpg"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Cama / Superficie",
-        "compatibleWith": "Artillery Genius"
-      },
-      "minPrice": 34990,
-      "maxPrice": 34990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:11.039Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/conjunto-cama-caliente-de-silicona-para-artillery-genius-pro/",
-          "price": 34990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 34990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -13893,42 +13626,6 @@
           "storeId": "cimech3d",
           "price": 6500,
           "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
-      "slug": "cama-caliente-con-tornillos-para-artillery-genius-pro-230x230mm",
-      "id": "cama-caliente-con-tornillos-para-artillery-genius-pro-230x230mm",
-      "name": "Cama caliente con tornillos para Artillery Genius Pro 230x230mm",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/06/cama-caliente-vidrio-artillery-sx1-sx2-3.webp"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Cama / Superficie",
-        "compatibleWith": "Artillery Genius"
-      },
-      "minPrice": 29990,
-      "maxPrice": 29990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:09.502Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/cama-caliente-con-tornillos-para-artillery-genius-pro/",
-          "price": 29990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 29990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -25750,8 +25447,8 @@
       ]
     },
     {
-      "slug": "fdm-bambu-lab-bambulab-p2s-combo",
-      "id": "fdm-bambu-lab-bambulab-p2s-combo",
+      "slug": "fdm-bambu-lab-p2s-combo",
+      "id": "fdm-bambu-lab-p2s-combo",
       "name": "Impresora Bambulab P2S Combo",
       "brand": "Bambu Lab",
       "categoryId": "impresoras-fdm",
@@ -25853,8 +25550,8 @@
       ]
     },
     {
-      "slug": "fdm-bambu-lab-bambulab-h2s-combo",
-      "id": "fdm-bambu-lab-bambulab-h2s-combo",
+      "slug": "fdm-bambu-lab-h2s-combo",
+      "id": "fdm-bambu-lab-h2s-combo",
       "name": "Impresora Bambulab H2S Combo",
       "brand": "Bambu Lab",
       "categoryId": "impresoras-fdm",
@@ -25922,8 +25619,8 @@
       ]
     },
     {
-      "slug": "fdm-bambu-lab-bambulab-h2d-combo",
-      "id": "fdm-bambu-lab-bambulab-h2d-combo",
+      "slug": "fdm-bambu-lab-h2d-combo",
+      "id": "fdm-bambu-lab-h2d-combo",
       "name": "Impresora Bambulab H2D Combo",
       "brand": "Bambu Lab",
       "categoryId": "impresoras-fdm",
@@ -26025,8 +25722,8 @@
       ]
     },
     {
-      "slug": "fdm-bambu-lab-bambulab-a1-mini-combo-400000-con-transferencia",
-      "id": "fdm-bambu-lab-bambulab-a1-mini-combo-400000-con-transferencia",
+      "slug": "fdm-bambu-lab-a1-mini-combo-400000-con-transferencia",
+      "id": "fdm-bambu-lab-a1-mini-combo-400000-con-transferencia",
       "name": "Impresora Bambulab A1 Mini Combo ($400.000 con transferencia)",
       "brand": "Bambu Lab",
       "categoryId": "impresoras-fdm",
@@ -26128,8 +25825,8 @@
       ]
     },
     {
-      "slug": "fdm-bambu-lab-bambulab-a1-combo-550000-con-transferencia",
-      "id": "fdm-bambu-lab-bambulab-a1-combo-550000-con-transferencia",
+      "slug": "fdm-bambu-lab-a1-combo-550000-con-transferencia",
+      "id": "fdm-bambu-lab-a1-combo-550000-con-transferencia",
       "name": "Impresora Bambulab A1 Combo ($550.000 con transferencia)",
       "brand": "Bambu Lab",
       "categoryId": "impresoras-fdm",
@@ -26195,8 +25892,8 @@
       ]
     },
     {
-      "slug": "fdm-bambu-lab-bambulab-a1",
-      "id": "fdm-bambu-lab-bambulab-a1",
+      "slug": "impresora-bambulab-a1",
+      "id": "impresora-bambulab-a1",
       "name": "Impresora Bambulab A1",
       "brand": "Bambu Lab",
       "categoryId": "impresoras-fdm",
@@ -27990,42 +27687,6 @@
           "storeId": "cimech3d",
           "price": 4750,
           "recordedAt": "2026-04-01T18:30:45.322Z"
-        }
-      ]
-    },
-    {
-      "slug": "garganta-para-ender-3s1-con-teflon",
-      "id": "garganta-para-ender-3s1-con-teflon",
-      "name": "Garganta para Ender 3S1 con teflón",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2024/05/Garganta-Ender3S1.png"
-      ],
-      "specs": {
-        "partType": "Piezas Hotend",
-        "compatibleWith": "Ender 3 S1",
-        "diameter": "1.75"
-      },
-      "minPrice": 2500,
-      "maxPrice": 2500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:45:23.533Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/garganta-ender3s1/",
-          "price": 2500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 2500,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
     },
@@ -51084,8 +50745,8 @@
       ]
     },
     {
-      "slug": "motor-stepper-bipolar-nema-17-345v-150a-45ncm-1817hs15-1504s-x1",
-      "id": "motor-stepper-bipolar-nema-17-345v-150a-45ncm-1817hs15-1504s-x1",
+      "slug": "rsp-motor-bambu-x1",
+      "id": "rsp-motor-bambu-x1",
       "name": "Motor stepper bipolar NEMA 17 (3.45V, 1.50A, 45N.cm, 1.8°)(17HS15-1504S-X1)",
       "brand": "",
       "categoryId": "repuestos",
@@ -55535,8 +55196,8 @@
       ]
     },
     {
-      "slug": "creality-placa-madre-ender3",
-      "id": "creality-placa-madre-ender3",
+      "slug": "rsp-placa-ender-3",
+      "id": "rsp-placa-ender-3",
       "name": "Creality placa madre Ender3",
       "brand": "Creality",
       "categoryId": "repuestos",
@@ -55549,9 +55210,9 @@
         "partType": "Placa",
         "compatibleWith": "Ender 3"
       },
-      "minPrice": 45000,
-      "maxPrice": 45000,
-      "storeCount": 1,
+      "minPrice": 40950,
+      "maxPrice": 40950,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:52:44.659Z",
       "entries": [
@@ -55560,6 +55221,12 @@
           "url": "https://capital3d.cl/product/creality-placa-madre-ender3/",
           "price": 45000,
           "stock": "out"
+        },
+        {
+          "storeId": "evstore",
+          "url": "https://evstore.cl/tienda/pantalla-ender-3-bigtreetech/",
+          "price": 40950,
+          "stock": "available"
         }
       ],
       "history": [
@@ -55567,6 +55234,11 @@
           "storeId": "capital3d",
           "price": 45000,
           "recordedAt": "2026-04-01T18:29:47.666Z"
+        },
+        {
+          "storeId": "evstore",
+          "price": 40950,
+          "recordedAt": "2026-04-01T18:24:45.591Z"
         }
       ]
     },
@@ -55640,8 +55312,8 @@
       ]
     },
     {
-      "slug": "extrusor-creality-cr6-se",
-      "id": "extrusor-creality-cr6-se",
+      "slug": "rsp-extrusor-cr-6",
+      "id": "rsp-extrusor-cr-6",
       "name": "Extrusor CREALITY CR6 SE",
       "brand": "Creality",
       "categoryId": "repuestos",
@@ -58275,41 +57947,6 @@
       ]
     },
     {
-      "slug": "bigtreetech-pantalla-ender-3-tft35-e3-v30",
-      "id": "bigtreetech-pantalla-ender-3-tft35-e3-v30",
-      "name": "BIGTREETECH: Pantalla Ender 3 TFT35-E3 V3.0",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://evstore.cl/wp-content/uploads/2021/02/Pantalla-TFT35-E3-V3.0.jpg"
-      ],
-      "specs": {
-        "partType": "Placa",
-        "compatibleWith": "Ender 3"
-      },
-      "minPrice": 40950,
-      "maxPrice": 40950,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:50:23.481Z",
-      "entries": [
-        {
-          "storeId": "evstore",
-          "url": "https://evstore.cl/tienda/pantalla-ender-3-bigtreetech/",
-          "price": 40950,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "evstore",
-          "price": 40950,
-          "recordedAt": "2026-04-01T18:24:45.591Z"
-        }
-      ]
-    },
-    {
       "slug": "resortes-cama-caliente",
       "id": "resortes-cama-caliente",
       "name": "Resortes cama caliente",
@@ -58344,8 +57981,8 @@
       ]
     },
     {
-      "slug": "sensor-de-autonivelacion-anycubic-kossel-linear-plus",
-      "id": "sensor-de-autonivelacion-anycubic-kossel-linear-plus",
+      "slug": "rsp-sensor-kossel",
+      "id": "rsp-sensor-kossel",
       "name": "Sensor de autonivelación Anycubic Kossel Linear Plus",
       "brand": "Anycubic",
       "categoryId": "repuestos",
@@ -58478,8 +58115,8 @@
       ]
     },
     {
-      "slug": "extrusor-de-aluminio-ender-3",
-      "id": "extrusor-de-aluminio-ender-3",
+      "slug": "rsp-extrusor-ender-3",
+      "id": "rsp-extrusor-ender-3",
       "name": "Extrusor de Aluminio Ender 3",
       "brand": "",
       "categoryId": "repuestos",
@@ -58492,8 +58129,8 @@
         "compatibleWith": "Ender 3"
       },
       "minPrice": 7000,
-      "maxPrice": 7000,
-      "storeCount": 1,
+      "maxPrice": 39000,
+      "storeCount": 3,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:50:21.586Z",
       "entries": [
@@ -58502,6 +58139,18 @@
           "url": "https://evstore.cl/tienda/extrusor-aluminio-ender-3/",
           "price": 7000,
           "stock": "available"
+        },
+        {
+          "storeId": "makerschile",
+          "url": "https://makerschile.cl/producto/extrusor-metalico-para-impresora-3d-derecho-ender-3-5-cr10/",
+          "price": 13491,
+          "stock": "out"
+        },
+        {
+          "storeId": "horus3d",
+          "url": "https://horus3d.cl/producto/e-titan2/",
+          "price": 39000,
+          "stock": "available"
         }
       ],
       "history": [
@@ -58509,12 +58158,22 @@
           "storeId": "evstore",
           "price": 7000,
           "recordedAt": "2026-04-01T18:24:45.591Z"
+        },
+        {
+          "storeId": "makerschile",
+          "price": 13491,
+          "recordedAt": "2026-04-01T18:24:33.220Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 39000,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
     },
     {
-      "slug": "correas-gt2-6mm-ender-3-eje-x-y-eje-y",
-      "id": "correas-gt2-6mm-ender-3-eje-x-y-eje-y",
+      "slug": "rsp-sistema-de-movimiento-ender-3",
+      "id": "rsp-sistema-de-movimiento-ender-3",
       "name": "Correas Gt2 6mm Ender 3 Eje X y Eje Y",
       "brand": "",
       "categoryId": "repuestos",
@@ -58625,43 +58284,8 @@
       ]
     },
     {
-      "slug": "sistema-hotend-completo-ender-3",
-      "id": "sistema-hotend-completo-ender-3",
-      "name": "Sistema Hotend completo Ender 3",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://evstore.cl/wp-content/uploads/2021/03/Hotend-completo-y-funda-e1615423858102.jpg"
-      ],
-      "specs": {
-        "partType": "Hotend",
-        "compatibleWith": "Ender 3"
-      },
-      "minPrice": 15000,
-      "maxPrice": 15000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:50:20.260Z",
-      "entries": [
-        {
-          "storeId": "evstore",
-          "url": "https://evstore.cl/tienda/hot-end-ender-3/",
-          "price": 15000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "evstore",
-          "price": 15000,
-          "recordedAt": "2026-04-01T18:24:45.591Z"
-        }
-      ]
-    },
-    {
-      "slug": "sistema-hotend-completo-kossel-linear-plus",
-      "id": "sistema-hotend-completo-kossel-linear-plus",
+      "slug": "rsp-hotend-kossel",
+      "id": "rsp-hotend-kossel",
       "name": "Sistema hotend completo Kossel Linear Plus",
       "brand": "",
       "categoryId": "repuestos",
@@ -62353,80 +61977,8 @@
       ]
     },
     {
-      "slug": "cartucho-calefactor-artillery",
-      "id": "cartucho-calefactor-artillery",
-      "name": "Cartucho Calefactor Artillery",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://evstore.cl/wp-content/uploads/2023/01/Cartucho-Calefactor-Artillery.jpg"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Hotend",
-        "compatibleWith": "Artillery"
-      },
-      "minPrice": 3990,
-      "maxPrice": 3990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:49:29.572Z",
-      "entries": [
-        {
-          "storeId": "evstore",
-          "url": "https://evstore.cl/tienda/cartucho-calefactor-artillery/",
-          "price": 3990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "evstore",
-          "price": 3990,
-          "recordedAt": "2026-04-01T18:24:45.590Z"
-        }
-      ]
-    },
-    {
-      "slug": "termistor-artillery",
-      "id": "termistor-artillery",
-      "name": "Termistor Artillery",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://evstore.cl/wp-content/uploads/2023/01/Termistor-Artillery.jpg"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Hotend",
-        "compatibleWith": "Artillery"
-      },
-      "minPrice": 3990,
-      "maxPrice": 3990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:49:29.260Z",
-      "entries": [
-        {
-          "storeId": "evstore",
-          "url": "https://evstore.cl/tienda/termistor-artillery/",
-          "price": 3990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "evstore",
-          "price": 3990,
-          "recordedAt": "2026-04-01T18:24:45.590Z"
-        }
-      ]
-    },
-    {
-      "slug": "garganta-artillery",
-      "id": "garganta-artillery",
+      "slug": "rsp-piezas-hotend-artillery",
+      "id": "rsp-piezas-hotend-artillery",
       "name": "Garganta Artillery",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -62441,7 +61993,7 @@
       },
       "minPrice": 2990,
       "maxPrice": 2990,
-      "storeCount": 1,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:49:28.947Z",
       "entries": [
@@ -62450,6 +62002,12 @@
           "url": "https://evstore.cl/tienda/garganta-artillery/",
           "price": 2990,
           "stock": "available"
+        },
+        {
+          "storeId": "afel",
+          "url": "https://afel.cl/products/throat-garganta-artillery-original",
+          "price": 2500,
+          "stock": "out"
         }
       ],
       "history": [
@@ -62457,6 +62015,11 @@
           "storeId": "evstore",
           "price": 2990,
           "recordedAt": "2026-04-01T18:24:45.590Z"
+        },
+        {
+          "storeId": "afel",
+          "price": 2500,
+          "recordedAt": "2026-04-01T23:15:29.905Z"
         }
       ]
     },
@@ -63917,8 +63480,8 @@
       ]
     },
     {
-      "slug": "hotend-para-serie-k1",
-      "id": "hotend-para-serie-k1",
+      "slug": "rsp-hotend-k1",
+      "id": "rsp-hotend-k1",
       "name": "Hotend para Serie K1",
       "brand": "",
       "categoryId": "repuestos",
@@ -63930,83 +63493,11 @@
         "partType": "Hotend",
         "compatibleWith": "K1"
       },
-      "minPrice": 24990,
-      "maxPrice": 24990,
+      "minPrice": 7990,
+      "maxPrice": 7990,
       "storeCount": 1,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:49:12.688Z",
-      "entries": [
-        {
-          "storeId": "evstore",
-          "url": "https://evstore.cl/tienda/hotend-para-serie-k1/",
-          "price": 24990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "evstore",
-          "price": 24990,
-          "recordedAt": "2026-04-01T18:24:45.590Z"
-        }
-      ]
-    },
-    {
-      "slug": "termistor-creality-serie-k1",
-      "id": "termistor-creality-serie-k1",
-      "name": "Termistor Creality Serie K1",
-      "brand": "Creality",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://evstore.cl/wp-content/uploads/2025/07/Hotend-serie-K1-1.jpg"
-      ],
-      "specs": {
-        "brand": "Creality",
-        "partType": "Hotend",
-        "compatibleWith": "K1"
-      },
-      "minPrice": 7990,
-      "maxPrice": 7990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:49:12.378Z",
-      "entries": [
-        {
-          "storeId": "evstore",
-          "url": "https://evstore.cl/tienda/termistor-creality-serie-k1/",
-          "price": 7990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "evstore",
-          "price": 7990,
-          "recordedAt": "2026-04-01T18:24:45.590Z"
-        }
-      ]
-    },
-    {
-      "slug": "calefactor-ceramico-creality-serie-k1",
-      "id": "calefactor-ceramico-creality-serie-k1",
-      "name": "Calefactor Cerámico Creality Serie K1",
-      "brand": "Creality",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://evstore.cl/wp-content/uploads/2025/07/Calefactor-ceramico-K1.jpg"
-      ],
-      "specs": {
-        "brand": "Creality",
-        "partType": "Hotend",
-        "compatibleWith": "K1"
-      },
-      "minPrice": 7990,
-      "maxPrice": 7990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:49:12.054Z",
       "entries": [
         {
           "storeId": "evstore",
@@ -64016,6 +63507,16 @@
         }
       ],
       "history": [
+        {
+          "storeId": "evstore",
+          "price": 24990,
+          "recordedAt": "2026-04-01T18:24:45.590Z"
+        },
+        {
+          "storeId": "evstore",
+          "price": 7990,
+          "recordedAt": "2026-04-01T18:24:45.590Z"
+        },
         {
           "storeId": "evstore",
           "price": 7990,
@@ -64058,8 +63559,8 @@
       ]
     },
     {
-      "slug": "cama-caliente-ender-3",
-      "id": "cama-caliente-ender-3",
+      "slug": "rsp-cama-superficie-ender-3",
+      "id": "rsp-cama-superficie-ender-3",
       "name": "Cama caliente Ender 3",
       "brand": "",
       "categoryId": "repuestos",
@@ -64071,9 +63572,9 @@
         "partType": "Cama / Superficie",
         "compatibleWith": "Ender 3"
       },
-      "minPrice": 36550,
-      "maxPrice": 36550,
-      "storeCount": 1,
+      "minPrice": 18990,
+      "maxPrice": 18990,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:49:11.451Z",
       "entries": [
@@ -64082,6 +63583,12 @@
           "url": "https://evstore.cl/tienda/cama-caliente-ender-3/",
           "price": 36550,
           "stock": "out"
+        },
+        {
+          "storeId": "imperio3d",
+          "url": "https://imperio3d.com/producto/vidrio-templado-310x320-ender-3-max/",
+          "price": 18990,
+          "stock": "available"
         }
       ],
       "history": [
@@ -64089,6 +63596,11 @@
           "storeId": "evstore",
           "price": 36550,
           "recordedAt": "2026-04-01T18:24:45.590Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 18990,
+          "recordedAt": "2026-04-01T18:23:27.655Z"
         }
       ]
     },
@@ -64127,8 +63639,8 @@
       ]
     },
     {
-      "slug": "boquilla-ender-3-v3-se-compatible-con-ender-5-s1-ender-7-spider",
-      "id": "boquilla-ender-3-v3-se-compatible-con-ender-5-s1-ender-7-spider",
+      "slug": "rsp-nozzle-ender-3-v3-se",
+      "id": "rsp-nozzle-ender-3-v3-se",
       "name": "Boquilla Ender 3 V3 SE – Compatible con Ender 5 S1 / Ender 7 Spider",
       "brand": "",
       "categoryId": "repuestos",
@@ -64162,8 +63674,8 @@
       ]
     },
     {
-      "slug": "hotend-sprite-ender-3-s1-s1-pro",
-      "id": "hotend-sprite-ender-3-s1-s1-pro",
+      "slug": "rsp-hotend-ender-3-s1",
+      "id": "rsp-hotend-ender-3-s1",
       "name": "Hotend Sprite – Ender 3 S1 / S1 Pro",
       "brand": "",
       "categoryId": "repuestos",
@@ -64175,9 +63687,9 @@
         "partType": "Hotend",
         "compatibleWith": "Ender 3 S1"
       },
-      "minPrice": 15950,
+      "minPrice": 3500,
       "maxPrice": 15950,
-      "storeCount": 1,
+      "storeCount": 3,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:49:10.534Z",
       "entries": [
@@ -64186,6 +63698,18 @@
           "url": "https://evstore.cl/tienda/hotend-sprite-ender-3-s1-s1-pro/",
           "price": 15950,
           "stock": "available"
+        },
+        {
+          "storeId": "makerschile",
+          "url": "https://makerschile.cl/producto/hotend-extrusor-completo-sprite-ender-3-s1-creality/",
+          "price": 59391,
+          "stock": "out"
+        },
+        {
+          "storeId": "horus3d",
+          "url": "https://horus3d.cl/producto/calef-3s1/",
+          "price": 3500,
+          "stock": "available"
         }
       ],
       "history": [
@@ -64193,6 +63717,21 @@
           "storeId": "evstore",
           "price": 15950,
           "recordedAt": "2026-04-01T18:24:45.590Z"
+        },
+        {
+          "storeId": "makerschile",
+          "price": 59391,
+          "recordedAt": "2026-04-01T18:24:33.220Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 3500,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 3500,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
     },
@@ -64401,8 +63940,8 @@
       ]
     },
     {
-      "slug": "hotend-ceramico-ender-3-v3-seke",
-      "id": "hotend-ceramico-ender-3-v3-seke",
+      "slug": "rsp-hotend-ender-3-v3-se",
+      "id": "rsp-hotend-ender-3-v3-se",
       "name": "Hotend Cerámico Ender 3 V3 SE/KE",
       "brand": "",
       "categoryId": "repuestos",
@@ -64414,81 +63953,11 @@
         "partType": "Hotend",
         "compatibleWith": "Ender 3 V3 SE"
       },
-      "minPrice": 45550,
-      "maxPrice": 45550,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:49:08.068Z",
-      "entries": [
-        {
-          "storeId": "evstore",
-          "url": "https://evstore.cl/tienda/hotend-ceramico-ender-3-v3-se-ke/",
-          "price": 45550,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "evstore",
-          "price": 45550,
-          "recordedAt": "2026-04-01T18:24:45.590Z"
-        }
-      ]
-    },
-    {
-      "slug": "hotend-ender-3-v3-se",
-      "id": "hotend-ender-3-v3-se",
-      "name": "Hotend Ender 3 V3 SE",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://evstore.cl/wp-content/uploads/2025/09/Hotend-Ender-3-V3-SE.jpeg"
-      ],
-      "specs": {
-        "partType": "Hotend",
-        "compatibleWith": "Ender 3 V3 SE"
-      },
-      "minPrice": 15950,
-      "maxPrice": 15950,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:49:07.600Z",
-      "entries": [
-        {
-          "storeId": "evstore",
-          "url": "https://evstore.cl/tienda/hotend-ender-3-v3-se/",
-          "price": 15950,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "evstore",
-          "price": 15950,
-          "recordedAt": "2026-04-01T18:24:45.590Z"
-        }
-      ]
-    },
-    {
-      "slug": "termistor-y-resistencia-calefactora-ender-3-v3-se",
-      "id": "termistor-y-resistencia-calefactora-ender-3-v3-se",
-      "name": "Termistor y Resistencia Calefactora Ender 3 V3 SE",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://evstore.cl/wp-content/uploads/2025/09/Termistor-y-Resistencia-Calefactora-Ender-3-V3-SE.jpg"
-      ],
-      "specs": {
-        "partType": "Hotend",
-        "compatibleWith": "Ender 3 V3 SE"
-      },
       "minPrice": 7550,
       "maxPrice": 7550,
       "storeCount": 1,
       "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:49:07.286Z",
+      "createdAt": "2026-04-01T18:49:08.068Z",
       "entries": [
         {
           "storeId": "evstore",
@@ -64498,6 +63967,16 @@
         }
       ],
       "history": [
+        {
+          "storeId": "evstore",
+          "price": 45550,
+          "recordedAt": "2026-04-01T18:24:45.590Z"
+        },
+        {
+          "storeId": "evstore",
+          "price": 15950,
+          "recordedAt": "2026-04-01T18:24:45.590Z"
+        },
         {
           "storeId": "evstore",
           "price": 7550,
@@ -64666,8 +64145,8 @@
       ]
     },
     {
-      "slug": "extrusor-completo-artillery-genius-cabezal-direct-drive-de-repuesto",
-      "id": "extrusor-completo-artillery-genius-cabezal-direct-drive-de-repuesto",
+      "slug": "rsp-extrusor-artillery-genius",
+      "id": "rsp-extrusor-artillery-genius",
       "name": "Extrusor Completo Artillery Genius – Cabezal Direct Drive de Repuesto",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -64680,9 +64159,9 @@
         "partType": "Extrusor",
         "compatibleWith": "Artillery Genius"
       },
-      "minPrice": 65550,
+      "minPrice": 6990,
       "maxPrice": 65550,
-      "storeCount": 1,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:49:04.798Z",
       "entries": [
@@ -64691,6 +64170,12 @@
           "url": "https://evstore.cl/tienda/extrusor-completo-artillery-genius-cabezal-direct-drive-de-repuesto/",
           "price": 65550,
           "stock": "available"
+        },
+        {
+          "storeId": "horus3d",
+          "url": "https://horus3d.cl/producto/flex-24pin/",
+          "price": 6990,
+          "stock": "available"
         }
       ],
       "history": [
@@ -64698,12 +64183,17 @@
           "storeId": "evstore",
           "price": 65550,
           "recordedAt": "2026-04-01T18:24:45.590Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 6990,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
     },
     {
-      "slug": "hotend-artillery-hornet",
-      "id": "hotend-artillery-hornet",
+      "slug": "rsp-hotend-artillery-hornet",
+      "id": "rsp-hotend-artillery-hornet",
       "name": "Hotend Artillery Hornet",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -64716,9 +64206,9 @@
         "partType": "Hotend",
         "compatibleWith": "Artillery Hornet"
       },
-      "minPrice": 20550,
+      "minPrice": 3500,
       "maxPrice": 20550,
-      "storeCount": 1,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:49:04.487Z",
       "entries": [
@@ -64727,6 +64217,12 @@
           "url": "https://evstore.cl/tienda/hotend-artillery-hornet/",
           "price": 20550,
           "stock": "available"
+        },
+        {
+          "storeId": "horus3d",
+          "url": "https://horus3d.cl/producto/hornet-term/",
+          "price": 3500,
+          "stock": "available"
         }
       ],
       "history": [
@@ -64734,12 +64230,17 @@
           "storeId": "evstore",
           "price": 20550,
           "recordedAt": "2026-04-01T18:24:45.590Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 3500,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
     },
     {
-      "slug": "hotend-completo-ender-3-v3-ke",
-      "id": "hotend-completo-ender-3-v3-ke",
+      "slug": "rsp-hotend-ender-3-v3",
+      "id": "rsp-hotend-ender-3-v3",
       "name": "Hotend completo Ender 3 V3 KE",
       "brand": "",
       "categoryId": "repuestos",
@@ -64751,9 +64252,9 @@
         "partType": "Hotend",
         "compatibleWith": "Ender 3 V3"
       },
-      "minPrice": 25550,
-      "maxPrice": 25550,
-      "storeCount": 1,
+      "minPrice": 17990,
+      "maxPrice": 17990,
+      "storeCount": 3,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:49:04.156Z",
       "entries": [
@@ -64762,6 +64263,18 @@
           "url": "https://evstore.cl/tienda/hotend-completo-ender-3-v3-ke/",
           "price": 25550,
           "stock": "out"
+        },
+        {
+          "storeId": "imperio3d",
+          "url": "https://imperio3d.com/producto/generico-full-hotend-ender-3-v3-ender-3-v3-plus/",
+          "price": 17990,
+          "stock": "available"
+        },
+        {
+          "storeId": "horus3d",
+          "url": "https://horus3d.cl/producto/hotend-3v3ke/",
+          "price": 18000,
+          "stock": "out"
         }
       ],
       "history": [
@@ -64769,6 +64282,16 @@
           "storeId": "evstore",
           "price": 25550,
           "recordedAt": "2026-04-01T18:24:45.590Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 17990,
+          "recordedAt": "2026-04-01T18:23:27.652Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 18000,
+          "recordedAt": "2026-04-01T18:22:38.547Z"
         }
       ]
     },
@@ -66808,8 +66331,8 @@
       ]
     },
     {
-      "slug": "boquilla-nozzle-impresora-3d-volcano-m6-sidewinder-x1",
-      "id": "boquilla-nozzle-impresora-3d-volcano-m6-sidewinder-x1",
+      "slug": "rsp-nozzle-bambu-x1",
+      "id": "rsp-nozzle-bambu-x1",
       "name": "Boquilla Nozzle Impresora 3d Volcano M6 Sidewinder X1",
       "brand": "",
       "categoryId": "repuestos",
@@ -66821,16 +66344,22 @@
         "partType": "Nozzle",
         "compatibleWith": "Bambu X1"
       },
-      "minPrice": 2691,
-      "maxPrice": 2691,
-      "storeCount": 1,
+      "minPrice": 22491,
+      "maxPrice": 24990,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:48:43.316Z",
       "entries": [
         {
           "storeId": "makerschile",
-          "url": "https://makerschile.cl/producto/boquilla-nozzle-impresora-3d-volcano-m6-sidewinder-x1/",
-          "price": 2691,
+          "url": "https://makerschile.cl/producto/boquilla-bambu-lab-x1-y-p1-series-0-4-acero-reforzado/",
+          "price": 22491,
+          "stock": "available"
+        },
+        {
+          "storeId": "imperio3d",
+          "url": "https://imperio3d.com/producto/bambu-lab-hotend-con-boquilla-x1-p1/",
+          "price": 24990,
           "stock": "available"
         }
       ],
@@ -66839,12 +66368,22 @@
           "storeId": "makerschile",
           "price": 2691,
           "recordedAt": "2026-04-01T18:24:33.220Z"
+        },
+        {
+          "storeId": "makerschile",
+          "price": 22491,
+          "recordedAt": "2026-04-01T18:24:33.219Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 24990,
+          "recordedAt": "2026-04-01T18:23:31.230Z"
         }
       ]
     },
     {
-      "slug": "boquilla-nozzle-impresora-3d-m6-mk8-ender-3-v2-cr-6-se",
-      "id": "boquilla-nozzle-impresora-3d-m6-mk8-ender-3-v2-cr-6-se",
+      "slug": "rsp-nozzle-ender-3",
+      "id": "rsp-nozzle-ender-3",
       "name": "Boquilla Nozzle Impresora 3d M6 Mk8 Ender 3 V2 Cr-6 Se",
       "brand": "",
       "categoryId": "repuestos",
@@ -67659,41 +67198,6 @@
       ]
     },
     {
-      "slug": "extrusor-metalico-para-impresora-3d-derecho-ender-3-5-cr10",
-      "id": "extrusor-metalico-para-impresora-3d-derecho-ender-3-5-cr10",
-      "name": "Extrusor Metálico Para Impresora 3d  Derecho Ender 3 5 Cr10",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://makerschile.cl/wp-content/uploads/2025/05/D_699709-MLC45786887405_052021-F.jpg"
-      ],
-      "specs": {
-        "partType": "Extrusor",
-        "compatibleWith": "Ender 3"
-      },
-      "minPrice": 13491,
-      "maxPrice": 13491,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:48:32.700Z",
-      "entries": [
-        {
-          "storeId": "makerschile",
-          "url": "https://makerschile.cl/producto/extrusor-metalico-para-impresora-3d-derecho-ender-3-5-cr10/",
-          "price": 13491,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "makerschile",
-          "price": 13491,
-          "recordedAt": "2026-04-01T18:24:33.220Z"
-        }
-      ]
-    },
-    {
       "slug": "extrusor-metalico-doble-engranaje-dual-drive-stepper-motor",
       "id": "extrusor-metalico-doble-engranaje-dual-drive-stepper-motor",
       "name": "Extrusor Metálico Doble Engranaje Dual Drive Stepper Motor",
@@ -67797,8 +67301,8 @@
       ]
     },
     {
-      "slug": "tensor-correa-eje-x-2020-cr-1020-cr-10s-pro-ender-35-anet",
-      "id": "tensor-correa-eje-x-2020-cr-1020-cr-10s-pro-ender-35-anet",
+      "slug": "rsp-correa-polea-cr-10",
+      "id": "rsp-correa-polea-cr-10",
       "name": "Tensor Correa Eje X 2020 Cr-10/20 Cr-10s Pro Ender-3/5 Anet",
       "brand": "Anet",
       "categoryId": "repuestos",
@@ -67811,47 +67315,11 @@
         "partType": "Correa / Polea",
         "compatibleWith": "CR-10"
       },
-      "minPrice": 12591,
-      "maxPrice": 12591,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:48:31.531Z",
-      "entries": [
-        {
-          "storeId": "makerschile",
-          "url": "https://makerschile.cl/producto/tensor-correa-eje-x-2020-cr-10-20-cr-10s-pro-ender-3-5-anet/",
-          "price": 12591,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "makerschile",
-          "price": 12591,
-          "recordedAt": "2026-04-01T18:24:33.220Z"
-        }
-      ]
-    },
-    {
-      "slug": "tensor-correa-eje-y-2040-cr-1020-cr-10s-pro-ender-35-anet",
-      "id": "tensor-correa-eje-y-2040-cr-1020-cr-10s-pro-ender-35-anet",
-      "name": "Tensor Correa Eje Y 2040 Cr-10/20 Cr-10s Pro Ender-3/5 Anet",
-      "brand": "Anet",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://makerschile.cl/wp-content/uploads/2025/05/D_893907-MLC45787060434_052021-F.jpg"
-      ],
-      "specs": {
-        "brand": "Anet",
-        "partType": "Correa / Polea",
-        "compatibleWith": "CR-10"
-      },
       "minPrice": 17982,
       "maxPrice": 17982,
       "storeCount": 1,
       "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:48:31.214Z",
+      "createdAt": "2026-04-01T18:48:31.531Z",
       "entries": [
         {
           "storeId": "makerschile",
@@ -67861,6 +67329,11 @@
         }
       ],
       "history": [
+        {
+          "storeId": "makerschile",
+          "price": 12591,
+          "recordedAt": "2026-04-01T18:24:33.220Z"
+        },
         {
           "storeId": "makerschile",
           "price": 17982,
@@ -68043,8 +67516,8 @@
       ]
     },
     {
-      "slug": "sensor-filamento-impresora-3d-ender-3-cr10",
-      "id": "sensor-filamento-impresora-3d-ender-3-cr10",
+      "slug": "rsp-sensor-ender-3",
+      "id": "rsp-sensor-ender-3",
       "name": "Sensor Filamento Impresora 3d Ender 3 Cr10",
       "brand": "",
       "categoryId": "repuestos",
@@ -68056,9 +67529,9 @@
         "partType": "Sensor",
         "compatibleWith": "Ender 3"
       },
-      "minPrice": 6291,
-      "maxPrice": 6291,
-      "storeCount": 1,
+      "minPrice": 9990,
+      "maxPrice": 9990,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:48:29.262Z",
       "entries": [
@@ -68067,6 +67540,12 @@
           "url": "https://makerschile.cl/producto/sensor-filamento-impresora-3d-ender-3-cr10/",
           "price": 6291,
           "stock": "out"
+        },
+        {
+          "storeId": "imperio3d",
+          "url": "https://imperio3d.com/producto/creality-sensor-de-final-de-filamento-ender-3-v2/",
+          "price": 9990,
+          "stock": "available"
         }
       ],
       "history": [
@@ -68074,6 +67553,11 @@
           "storeId": "makerschile",
           "price": 6291,
           "recordedAt": "2026-04-01T18:24:33.220Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 9990,
+          "recordedAt": "2026-03-31T13:32:36.014Z"
         }
       ]
     },
@@ -71068,44 +70552,8 @@
       ]
     },
     {
-      "slug": "hotend-extrusor-completo-sprite-ender-3-s1-creality",
-      "id": "hotend-extrusor-completo-sprite-ender-3-s1-creality",
-      "name": "Hotend Extrusor Completo Sprite Ender 3 S1 Creality",
-      "brand": "Creality",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://makerschile.cl/wp-content/uploads/2025/05/SPRITE-Extruder.png"
-      ],
-      "specs": {
-        "brand": "Creality",
-        "partType": "Hotend",
-        "compatibleWith": "Ender 3 S1"
-      },
-      "minPrice": 59391,
-      "maxPrice": 59391,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:47:54.404Z",
-      "entries": [
-        {
-          "storeId": "makerschile",
-          "url": "https://makerschile.cl/producto/hotend-extrusor-completo-sprite-ender-3-s1-creality/",
-          "price": 59391,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "makerschile",
-          "price": 59391,
-          "recordedAt": "2026-04-01T18:24:33.220Z"
-        }
-      ]
-    },
-    {
-      "slug": "hotend-extrusor-completo-sprite-ender-3-s1-pro-creality",
-      "id": "hotend-extrusor-completo-sprite-ender-3-s1-pro-creality",
+      "slug": "rsp-hotend-ender-3-s1-pro",
+      "id": "rsp-hotend-ender-3-s1-pro",
       "name": "Hotend Extrusor Completo Sprite Ender 3 S1 Pro Creality",
       "brand": "Creality",
       "categoryId": "repuestos",
@@ -72208,8 +71656,8 @@
       ]
     },
     {
-      "slug": "placa-madre-creality-k1",
-      "id": "placa-madre-creality-k1",
+      "slug": "rsp-placa-k1",
+      "id": "rsp-placa-k1",
       "name": "Placa Madre Creality K1",
       "brand": "Creality",
       "categoryId": "repuestos",
@@ -72244,8 +71692,8 @@
       ]
     },
     {
-      "slug": "placa-madre-creality-k1-max",
-      "id": "placa-madre-creality-k1-max",
+      "slug": "rsp-placa-k1-max",
+      "id": "rsp-placa-k1-max",
       "name": "Placa Madre Creality K1 Max",
       "brand": "Creality",
       "categoryId": "repuestos",
@@ -73045,8 +72493,8 @@
       ]
     },
     {
-      "slug": "boquilla-bambu-lab-a1-series-04-acero-reforzado",
-      "id": "boquilla-bambu-lab-a1-series-04-acero-reforzado",
+      "slug": "rsp-nozzle-bambu-a1",
+      "id": "rsp-nozzle-bambu-a1",
       "name": "Boquilla Bambu Lab A1 Series 0.4 Acero Reforzado",
       "brand": "",
       "categoryId": "repuestos",
@@ -73058,9 +72506,9 @@
         "partType": "Nozzle",
         "compatibleWith": "Bambu A1"
       },
-      "minPrice": 19791,
+      "minPrice": 15990,
       "maxPrice": 19791,
-      "storeCount": 1,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:47:33.182Z",
       "entries": [
@@ -73069,6 +72517,12 @@
           "url": "https://makerschile.cl/producto/boquilla-bambu-lab-a1-series-0-4-acero-reforzado/",
           "price": 19791,
           "stock": "available"
+        },
+        {
+          "storeId": "imperio3d",
+          "url": "https://imperio3d.com/producto/bambu-lab-hotend-con-boquilla-serie-a1/",
+          "price": 15990,
+          "stock": "available"
         }
       ],
       "history": [
@@ -73076,47 +72530,17 @@
           "storeId": "makerschile",
           "price": 19791,
           "recordedAt": "2026-04-01T18:24:33.219Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 15990,
+          "recordedAt": "2026-04-01T18:23:24.028Z"
         }
       ]
     },
     {
-      "slug": "boquilla-bambu-lab-x1-y-p1-series-04-acero-reforzado",
-      "id": "boquilla-bambu-lab-x1-y-p1-series-04-acero-reforzado",
-      "name": "Boquilla Bambu Lab X1 Y P1 Series 0.4 Acero Reforzado",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://makerschile.cl/wp-content/uploads/2025/09/boquilla-hotend-bambu-lab-X1C-P1S.webp"
-      ],
-      "specs": {
-        "partType": "Nozzle",
-        "compatibleWith": "Bambu X1"
-      },
-      "minPrice": 22491,
-      "maxPrice": 22491,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:47:32.867Z",
-      "entries": [
-        {
-          "storeId": "makerschile",
-          "url": "https://makerschile.cl/producto/boquilla-bambu-lab-x1-y-p1-series-0-4-acero-reforzado/",
-          "price": 22491,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "makerschile",
-          "price": 22491,
-          "recordedAt": "2026-04-01T18:24:33.219Z"
-        }
-      ]
-    },
-    {
-      "slug": "placa-bambu-lab-pei-texturizado-x1-p1-y-a1-series",
-      "id": "placa-bambu-lab-pei-texturizado-x1-p1-y-a1-series",
+      "slug": "rsp-cama-superficie-bambu-a1",
+      "id": "rsp-cama-superficie-bambu-a1",
       "name": "Placa Bambu Lab Pei Texturizado X1 P1 Y A1 Series",
       "brand": "",
       "categoryId": "repuestos",
@@ -73129,8 +72553,8 @@
         "compatibleWith": "Bambu A1"
       },
       "minPrice": 41391,
-      "maxPrice": 41391,
-      "storeCount": 1,
+      "maxPrice": 79000,
+      "storeCount": 3,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:47:32.551Z",
       "entries": [
@@ -73139,6 +72563,18 @@
           "url": "https://makerschile.cl/producto/placa-bambu-lab-pei-texturizado-x1-p1-y-a1-series/",
           "price": 41391,
           "stock": "available"
+        },
+        {
+          "storeId": "horus3d",
+          "url": "https://horus3d.cl/producto/hotbed-a1/",
+          "price": 79000,
+          "stock": "available"
+        },
+        {
+          "storeId": "imperio3d",
+          "url": "https://imperio3d.com/producto/bambu-placa-pei-lisa-suave-para-bambu-lab-x1-p1-a1/",
+          "price": 56990,
+          "stock": "available"
         }
       ],
       "history": [
@@ -73146,6 +72582,21 @@
           "storeId": "makerschile",
           "price": 41391,
           "recordedAt": "2026-04-01T18:24:33.219Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 79000,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 64990,
+          "recordedAt": "2026-04-01T18:23:45.847Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 56990,
+          "recordedAt": "2026-03-31T13:32:20.161Z"
         }
       ]
     },
@@ -74226,8 +73677,8 @@
       ]
     },
     {
-      "slug": "fuente-de-poder-108w-24v-x1-p1fuente-de-poder-108w-24v-x1-p1",
-      "id": "fuente-de-poder-108w-24v-x1-p1fuente-de-poder-108w-24v-x1-p1",
+      "slug": "rsp-fuente-de-poder-bambu-x1",
+      "id": "rsp-fuente-de-poder-bambu-x1",
       "name": "Fuente de poder 108w 24v X1 P1Fuente de poder 108w 24v X1 P1",
       "brand": "",
       "categoryId": "repuestos",
@@ -74261,8 +73712,8 @@
       ]
     },
     {
-      "slug": "fuente-de-poder-450w-24v-bambu-lab-a1fuente-de-poder-450w-24v-bambu-lab-a1",
-      "id": "fuente-de-poder-450w-24v-bambu-lab-a1fuente-de-poder-450w-24v-bambu-lab-a1",
+      "slug": "rsp-fuente-de-poder-bambu-a1",
+      "id": "rsp-fuente-de-poder-bambu-a1",
       "name": "Fuente de poder 450w 24v Bambu Lab A1Fuente de poder 450w 24v Bambu Lab A1",
       "brand": "",
       "categoryId": "repuestos",
@@ -74360,53 +73811,6 @@
       ]
     },
     {
-      "slug": "cama-caliente-bambu-lab-a1cama-caliente-bambu-lab-a1",
-      "id": "cama-caliente-bambu-lab-a1cama-caliente-bambu-lab-a1",
-      "name": "Cama Caliente Bambu Lab A1Cama Caliente Bambu Lab A1",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2025/02/bmbl_FAC066-300x300.webp"
-      ],
-      "specs": {
-        "partType": "Cama / Superficie",
-        "compatibleWith": "Bambu A1",
-        "brand": "Bambu Lab"
-      },
-      "minPrice": 64990,
-      "maxPrice": 79000,
-      "storeCount": 2,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-03-31T03:23:13.086Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/hotbed-a1/",
-          "price": 79000,
-          "stock": "available"
-        },
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/cama-caliente-bambu-lab-a1/",
-          "price": 64990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 79000,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        },
-        {
-          "storeId": "imperio3d",
-          "price": 64990,
-          "recordedAt": "2026-04-01T18:23:45.847Z"
-        }
-      ]
-    },
-    {
       "slug": "pack-camara-serie-p1-y-luz-ledpack-camara-serie-p1-y-luz-led",
       "id": "pack-camara-serie-p1-y-luz-ledpack-camara-serie-p1-y-luz-led",
       "name": "Pack Cámara serie P1 y luz LEDPack Cámara serie P1 y luz LED",
@@ -74439,8 +73843,8 @@
       ]
     },
     {
-      "slug": "cama-caliente-a1-minicama-caliente-a1-mini",
-      "id": "cama-caliente-a1-minicama-caliente-a1-mini",
+      "slug": "rsp-cama-superficie-bambu-a1-mini",
+      "id": "rsp-cama-superficie-bambu-a1-mini",
       "name": "Cama caliente A1 MiniCama caliente A1 Mini",
       "brand": "",
       "categoryId": "repuestos",
@@ -74452,9 +73856,9 @@
         "partType": "Cama / Superficie",
         "compatibleWith": "Bambu A1 Mini"
       },
-      "minPrice": 62990,
+      "minPrice": 15000,
       "maxPrice": 62990,
-      "storeCount": 1,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-03-31T03:23:12.233Z",
       "entries": [
@@ -74463,6 +73867,12 @@
           "url": "https://imperio3d.com/producto/cama-caliente-a1-mini/",
           "price": 62990,
           "stock": "available"
+        },
+        {
+          "storeId": "horus3d",
+          "url": "https://horus3d.cl/producto/pei-peo-184mm/",
+          "price": 15000,
+          "stock": "available"
         }
       ],
       "history": [
@@ -74470,6 +73880,11 @@
           "storeId": "imperio3d",
           "price": 62990,
           "recordedAt": "2026-04-01T18:23:45.846Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 15000,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
     },
@@ -74538,8 +73953,8 @@
       ]
     },
     {
-      "slug": "extrusor-completo-bambu-lab-serie-a1extrusor-completo-bambu-lab-serie-a1",
-      "id": "extrusor-completo-bambu-lab-serie-a1extrusor-completo-bambu-lab-serie-a1",
+      "slug": "rsp-extrusor-bambu-a1",
+      "id": "rsp-extrusor-bambu-a1",
       "name": "Extrusor completo Bambu lab serie A1Extrusor completo Bambu lab serie A1",
       "brand": "",
       "categoryId": "repuestos",
@@ -74551,16 +73966,16 @@
         "partType": "Extrusor",
         "compatibleWith": "Bambu A1"
       },
-      "minPrice": 59990,
-      "maxPrice": 59990,
+      "minPrice": 29990,
+      "maxPrice": 29990,
       "storeCount": 1,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-03-31T03:23:10.933Z",
       "entries": [
         {
           "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/extrusor-completo-bambu-lab-a1/",
-          "price": 59990,
+          "url": "https://imperio3d.com/producto/bambulab-motor-extrusor-serie-a1/",
+          "price": 29990,
           "stock": "available"
         }
       ],
@@ -74569,6 +73984,11 @@
           "storeId": "imperio3d",
           "price": 59990,
           "recordedAt": "2026-04-01T18:23:45.846Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 29990,
+          "recordedAt": "2026-04-01T18:23:34.847Z"
         }
       ]
     },
@@ -74808,8 +74228,8 @@
       ]
     },
     {
-      "slug": "fuente-de-poder-a1-minifuente-de-poder-a1-mini",
-      "id": "fuente-de-poder-a1-minifuente-de-poder-a1-mini",
+      "slug": "rsp-fuente-de-poder-bambu-a1-mini",
+      "id": "rsp-fuente-de-poder-bambu-a1-mini",
       "name": "Fuente de Poder A1 MiniFuente de Poder A1 Mini",
       "brand": "",
       "categoryId": "repuestos",
@@ -74910,8 +74330,8 @@
       ]
     },
     {
-      "slug": "full-hotend-con-boquilla-de-acero-04mm-para-series-x1full-hotend-con-boquilla-de-acero-04mm-para-series-x1",
-      "id": "full-hotend-con-boquilla-de-acero-04mm-para-series-x1full-hotend-con-boquilla-de-acero-04mm-para-series-x1",
+      "slug": "rsp-nozzle-bambu-x1-04mm",
+      "id": "rsp-nozzle-bambu-x1-04mm",
       "name": "Full Hotend con Boquilla de Acero 0.4mm para series X1Full Hotend con Boquilla de Acero 0.4mm para series X1",
       "brand": "",
       "categoryId": "repuestos",
@@ -75114,8 +74534,8 @@
       ]
     },
     {
-      "slug": "placa-madre-ender-3-s1-proplaca-madre-ender-3-s1-pro",
-      "id": "placa-madre-ender-3-s1-proplaca-madre-ender-3-s1-pro",
+      "slug": "rsp-placa-ender-3-s1-pro",
+      "id": "rsp-placa-ender-3-s1-pro",
       "name": "Placa Madre Ender 3 S1 ProPlaca Madre Ender 3 S1 Pro",
       "brand": "",
       "categoryId": "repuestos",
@@ -75149,8 +74569,8 @@
       ]
     },
     {
-      "slug": "placa-madre-ender-3-s1-plusplaca-madre-ender-3-s1-plus",
-      "id": "placa-madre-ender-3-s1-plusplaca-madre-ender-3-s1-plus",
+      "slug": "rsp-placa-ender-3-s1",
+      "id": "rsp-placa-ender-3-s1",
       "name": "Placa Madre Ender 3 S1 PlusPlaca Madre Ender 3 S1 Plus",
       "brand": "",
       "categoryId": "repuestos",
@@ -75451,8 +74871,8 @@
       ]
     },
     {
-      "slug": "ventilador-auxiliar-series-x1-y-p1",
-      "id": "ventilador-auxiliar-series-x1-y-p1",
+      "slug": "rsp-ventilador-bambu-x1",
+      "id": "rsp-ventilador-bambu-x1",
       "name": "Ventilador auxiliar series X1 y P1",
       "brand": "",
       "categoryId": "repuestos",
@@ -75464,16 +74884,16 @@
         "partType": "Ventilador",
         "compatibleWith": "Bambu X1"
       },
-      "minPrice": 39990,
-      "maxPrice": 39990,
+      "minPrice": 15990,
+      "maxPrice": 15990,
       "storeCount": 1,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:47:13.818Z",
       "entries": [
         {
           "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/ventilador-auxiliar-series-x1-y-p1/",
-          "price": 39990,
+          "url": "https://imperio3d.com/producto/ventilador-de-placa-x1/",
+          "price": 15990,
           "stock": "available"
         }
       ],
@@ -75482,6 +74902,11 @@
           "storeId": "imperio3d",
           "price": 39990,
           "recordedAt": "2026-04-01T18:23:42.099Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 15990,
+          "recordedAt": "2026-04-01T18:23:24.028Z"
         }
       ]
     },
@@ -75518,8 +74943,8 @@
       ]
     },
     {
-      "slug": "cama-caliente-ender-3-s1-procama-caliente-ender-3-s1-pro",
-      "id": "cama-caliente-ender-3-s1-procama-caliente-ender-3-s1-pro",
+      "slug": "rsp-cama-superficie-ender-3-s1-pro",
+      "id": "rsp-cama-superficie-ender-3-s1-pro",
       "name": "Cama Caliente Ender 3 S1 ProCama Caliente Ender 3 S1 Pro",
       "brand": "",
       "categoryId": "repuestos",
@@ -75585,8 +75010,8 @@
       ]
     },
     {
-      "slug": "fuente-de-poder-serie-ender-3-v3fuente-de-poder-serie-ender-3-v3",
-      "id": "fuente-de-poder-serie-ender-3-v3fuente-de-poder-serie-ender-3-v3",
+      "slug": "rsp-fuente-de-poder-ender-3-v3",
+      "id": "rsp-fuente-de-poder-ender-3-v3",
       "name": "Fuente de Poder Serie Ender 3 V3Fuente de Poder Serie Ender 3 V3",
       "brand": "",
       "categoryId": "repuestos",
@@ -76240,8 +75665,8 @@
       ]
     },
     {
-      "slug": "placa-madre-cr10-smartplaca-madre-cr10-smart",
-      "id": "placa-madre-cr10-smartplaca-madre-cr10-smart",
+      "slug": "rsp-placa-cr-10",
+      "id": "rsp-placa-cr-10",
       "name": "Placa Madre CR10 SmartPlaca Madre CR10 Smart",
       "brand": "",
       "categoryId": "repuestos",
@@ -76541,41 +75966,6 @@
       ]
     },
     {
-      "slug": "bambu-lab-motor-extrusor-serie-a1bambu-lab-motor-extrusor-serie-a1",
-      "id": "bambu-lab-motor-extrusor-serie-a1bambu-lab-motor-extrusor-serie-a1",
-      "name": "Bambu Lab Motor Extrusor serie A1Bambu Lab Motor Extrusor serie A1",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2025/01/Bmbl_FAM008-300x300.webp"
-      ],
-      "specs": {
-        "partType": "Extrusor",
-        "compatibleWith": "Bambu A1"
-      },
-      "minPrice": 29990,
-      "maxPrice": 29990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-03-31T03:22:44.044Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/bambulab-motor-extrusor-serie-a1/",
-          "price": 29990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 29990,
-          "recordedAt": "2026-04-01T18:23:34.847Z"
-        }
-      ]
-    },
-    {
       "slug": "mecanismo-extrusor-q5mecanismo-extrusor-q5",
       "id": "mecanismo-extrusor-q5mecanismo-extrusor-q5",
       "name": "Mecanismo Extrusor Q5Mecanismo Extrusor Q5",
@@ -76610,8 +76000,8 @@
       ]
     },
     {
-      "slug": "mecanismo-extrusor-acero-endurecido-serie-x1-p1mecanismo-extrusor-acero-endurecido-serie-x1-p1",
-      "id": "mecanismo-extrusor-acero-endurecido-serie-x1-p1mecanismo-extrusor-acero-endurecido-serie-x1-p1",
+      "slug": "rsp-extrusor-bambu-x1",
+      "id": "rsp-extrusor-bambu-x1",
       "name": "Mecanismo Extrusor Acero Endurecido serie X1 P1Mecanismo Extrusor Acero Endurecido serie X1 P1",
       "brand": "",
       "categoryId": "repuestos",
@@ -76623,16 +76013,16 @@
         "partType": "Extrusor",
         "compatibleWith": "Bambu X1"
       },
-      "minPrice": 29990,
-      "maxPrice": 29990,
+      "minPrice": 16990,
+      "maxPrice": 16990,
       "storeCount": 1,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-03-31T03:22:42.736Z",
       "entries": [
         {
           "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/mecanismo-extrusor-acero/",
-          "price": 29990,
+          "url": "https://imperio3d.com/producto/placa-extrusor-v9-para-serie-x1/",
+          "price": 16990,
           "stock": "available"
         }
       ],
@@ -76641,6 +76031,11 @@
           "storeId": "imperio3d",
           "price": 29990,
           "recordedAt": "2026-04-01T18:23:34.846Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 16990,
+          "recordedAt": "2026-04-01T18:23:24.029Z"
         }
       ]
     },
@@ -76875,8 +76270,8 @@
       ]
     },
     {
-      "slug": "cama-caliente-anycubic-kobra-2-s010108cama-caliente-anycubic-kobra-2-s010108",
-      "id": "cama-caliente-anycubic-kobra-2-s010108cama-caliente-anycubic-kobra-2-s010108",
+      "slug": "rsp-cama-superficie-anycubic-kobra-i3",
+      "id": "rsp-cama-superficie-anycubic-kobra-i3",
       "name": "Cama Caliente Anycubic Kobra 2 S010108Cama Caliente Anycubic Kobra 2 S010108",
       "brand": "Anycubic",
       "categoryId": "repuestos",
@@ -77045,41 +76440,6 @@
       ]
     },
     {
-      "slug": "bambu-lab-hotend-con-boquilla-x1-p1bambu-lab-hotend-con-boquilla-x1-p1",
-      "id": "bambu-lab-hotend-con-boquilla-x1-p1bambu-lab-hotend-con-boquilla-x1-p1",
-      "name": "Bambu Lab Hotend con Boquilla X1 P1Bambu Lab Hotend con Boquilla X1 P1",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2024/05/Hotend_boquilla_X1_P1-300x300.webp"
-      ],
-      "specs": {
-        "partType": "Nozzle",
-        "compatibleWith": "Bambu X1"
-      },
-      "minPrice": 24990,
-      "maxPrice": 24990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-03-31T03:22:37.081Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/bambu-lab-hotend-con-boquilla-x1-p1/",
-          "price": 24990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 24990,
-          "recordedAt": "2026-04-01T18:23:31.230Z"
-        }
-      ]
-    },
-    {
       "slug": "cubierta-frontal-p1pcubierta-frontal-p1p",
       "id": "cubierta-frontal-p1pcubierta-frontal-p1p",
       "name": "Cubierta frontal P1PCubierta frontal P1P",
@@ -77184,8 +76544,8 @@
       ]
     },
     {
-      "slug": "cama-caliente-ender-5-pluscama-caliente-ender-5-plus",
-      "id": "cama-caliente-ender-5-pluscama-caliente-ender-5-plus",
+      "slug": "rsp-cama-superficie-ender-5",
+      "id": "rsp-cama-superficie-ender-5",
       "name": "Cama Caliente Ender 5 PlusCama Caliente Ender 5 Plus",
       "brand": "",
       "categoryId": "repuestos",
@@ -77318,8 +76678,8 @@
       ]
     },
     {
-      "slug": "termistor-para-serie-x1-3und",
-      "id": "termistor-para-serie-x1-3und",
+      "slug": "rsp-hotend-bambu-x1",
+      "id": "rsp-hotend-bambu-x1",
       "name": "Termistor para serie X1 3und",
       "brand": "",
       "categoryId": "repuestos",
@@ -77331,16 +76691,16 @@
         "partType": "Hotend",
         "compatibleWith": "Bambu X1"
       },
-      "minPrice": 19990,
-      "maxPrice": 19990,
+      "minPrice": 9590,
+      "maxPrice": 9590,
       "storeCount": 1,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:46:58.732Z",
       "entries": [
         {
           "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/termistor-para-serie-x1-3und/",
-          "price": 19990,
+          "url": "https://imperio3d.com/producto/silicona-protectora-del-hotend-3und/",
+          "price": 9590,
           "stock": "available"
         }
       ],
@@ -77349,41 +76709,16 @@
           "storeId": "imperio3d",
           "price": 19990,
           "recordedAt": "2026-04-01T18:23:31.227Z"
-        }
-      ]
-    },
-    {
-      "slug": "calefactor-de-ceramica-para-serie-x1-3undcalefactor-de-ceramica-para-serie-x1-3und",
-      "id": "calefactor-de-ceramica-para-serie-x1-3undcalefactor-de-ceramica-para-serie-x1-3und",
-      "name": "Calefactor de Cerámica para serie X1 3undCalefactor de Cerámica para serie X1 3und",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2024/05/Bmbl_FAH001-C-3-300x300.webp"
-      ],
-      "specs": {
-        "partType": "Hotend",
-        "compatibleWith": "Bambu X1"
-      },
-      "minPrice": 19990,
-      "maxPrice": 19990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-03-31T03:22:33.142Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/calefactor-de-ceramica-para-serie-x1-3-und/",
-          "price": 19990,
-          "stock": "available"
-        }
-      ],
-      "history": [
+        },
         {
           "storeId": "imperio3d",
           "price": 19990,
           "recordedAt": "2026-04-01T18:23:31.227Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 9590,
+          "recordedAt": "2026-04-01T18:23:16.701Z"
         }
       ]
     },
@@ -77422,8 +76757,8 @@
       ]
     },
     {
-      "slug": "cama-caliente-ender-6cama-caliente-ender-6",
-      "id": "cama-caliente-ender-6cama-caliente-ender-6",
+      "slug": "rsp-cama-superficie-ender-6",
+      "id": "rsp-cama-superficie-ender-6",
       "name": "Cama Caliente Ender 6Cama Caliente Ender 6",
       "brand": "",
       "categoryId": "repuestos",
@@ -77435,16 +76770,16 @@
         "partType": "Cama / Superficie",
         "compatibleWith": "Ender 6"
       },
-      "minPrice": 19990,
-      "maxPrice": 19990,
+      "minPrice": 18990,
+      "maxPrice": 18990,
       "storeCount": 1,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-03-31T03:22:32.265Z",
       "entries": [
         {
           "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/cama-caliente-ender-6/",
-          "price": 19990,
+          "url": "https://imperio3d.com/producto/vidrio-templado-290x290-ender-6/",
+          "price": 18990,
           "stock": "available"
         }
       ],
@@ -77453,6 +76788,11 @@
           "storeId": "imperio3d",
           "price": 19990,
           "recordedAt": "2026-04-01T18:23:31.226Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 18990,
+          "recordedAt": "2026-04-01T18:23:27.653Z"
         }
       ]
     },
@@ -77544,41 +76884,6 @@
         {
           "storeId": "imperio3d",
           "url": "https://imperio3d.com/producto/mecanismo-extrusor-acero-endurecido-serie-a1/",
-          "price": 18990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 18990,
-          "recordedAt": "2026-04-01T18:23:27.655Z"
-        }
-      ]
-    },
-    {
-      "slug": "vidrio-templado-310320-ender-3-max",
-      "id": "vidrio-templado-310320-ender-3-max",
-      "name": "Vidrio templado 310×320 Ender 3 Max",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2025/01/CR-4004090014-300x300.webp"
-      ],
-      "specs": {
-        "partType": "Cama / Superficie",
-        "compatibleWith": "Ender 3"
-      },
-      "minPrice": 18990,
-      "maxPrice": 18990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:46:56.861Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/vidrio-templado-310x320-ender-3-max/",
           "price": 18990,
           "stock": "available"
         }
@@ -77754,43 +77059,8 @@
       ]
     },
     {
-      "slug": "vidrio-templado-290290-ender-6",
-      "id": "vidrio-templado-290290-ender-6",
-      "name": "Vidrio templado 290×290 Ender 6",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2024/03/CR-4004090030-300x300.webp"
-      ],
-      "specs": {
-        "partType": "Cama / Superficie",
-        "compatibleWith": "Ender 6"
-      },
-      "minPrice": 18990,
-      "maxPrice": 18990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:46:55.225Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/vidrio-templado-290x290-ender-6/",
-          "price": 18990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 18990,
-          "recordedAt": "2026-04-01T18:23:27.653Z"
-        }
-      ]
-    },
-    {
-      "slug": "cama-caliente-245270-cr6-secama-caliente-245270-cr6-se",
-      "id": "cama-caliente-245270-cr6-secama-caliente-245270-cr6-se",
+      "slug": "rsp-cama-superficie-cr-6",
+      "id": "rsp-cama-superficie-cr-6",
       "name": "Cama Caliente 245×270 CR6 SECama Caliente 245×270 CR6 SE",
       "brand": "",
       "categoryId": "repuestos",
@@ -77845,41 +77115,6 @@
         {
           "storeId": "imperio3d",
           "url": "https://imperio3d.com/producto/generico-ender-3-v3-ke-full-hotend-ceramico/",
-          "price": 17990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 17990,
-          "recordedAt": "2026-04-01T18:23:27.652Z"
-        }
-      ]
-    },
-    {
-      "slug": "generico-full-hotend-ender-3-v3-ender-3-v3-plusgenerico-full-hotend-ender-3-v3-ender-3-v3-plus",
-      "id": "generico-full-hotend-ender-3-v3-ender-3-v3-plusgenerico-full-hotend-ender-3-v3-ender-3-v3-plus",
-      "name": "Genérico Full Hotend Ender 3 V3 / Ender 3 V3 PlusGenérico Full Hotend Ender 3 V3 / Ender 3 V3 Plus",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2026/01/LNK_full_hotend_v3_v3plus_LSTJ0114-300x300.webp"
-      ],
-      "specs": {
-        "partType": "Hotend",
-        "compatibleWith": "Ender 3 V3"
-      },
-      "minPrice": 17990,
-      "maxPrice": 17990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-03-31T03:22:26.669Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/generico-full-hotend-ender-3-v3-ender-3-v3-plus/",
           "price": 17990,
           "stock": "available"
         }
@@ -78159,41 +77394,6 @@
       ]
     },
     {
-      "slug": "placa-extrusor-v9-para-serie-x1placa-extrusor-v9-para-serie-x1",
-      "id": "placa-extrusor-v9-para-serie-x1placa-extrusor-v9-para-serie-x1",
-      "name": "Placa Extrusor V9 para serie X1Placa Extrusor V9 para serie X1",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2024/03/Bambulab_SPP042-300x300.webp"
-      ],
-      "specs": {
-        "partType": "Extrusor",
-        "compatibleWith": "Bambu X1"
-      },
-      "minPrice": 16990,
-      "maxPrice": 16990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-03-31T03:22:22.796Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/placa-extrusor-v9-para-serie-x1/",
-          "price": 16990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 16990,
-          "recordedAt": "2026-04-01T18:23:24.029Z"
-        }
-      ]
-    },
-    {
       "slug": "kit-modulo-wifi-cr-10-smartkit-modulo-wifi-cr-10-smart",
       "id": "kit-modulo-wifi-cr-10-smartkit-modulo-wifi-cr-10-smart",
       "name": "Kit Modulo Wifi CR-10 SmartKit Modulo Wifi CR-10 Smart",
@@ -78256,76 +77456,6 @@
           "storeId": "imperio3d",
           "price": 16990,
           "recordedAt": "2026-04-01T18:23:24.029Z"
-        }
-      ]
-    },
-    {
-      "slug": "bambu-lab-hotend-con-boquilla-serie-a1bambu-lab-hotend-con-boquilla-serie-a1",
-      "id": "bambu-lab-hotend-con-boquilla-serie-a1bambu-lab-hotend-con-boquilla-serie-a1",
-      "name": "Bambu Lab Hotend con Boquilla serie A1Bambu Lab Hotend con Boquilla serie A1",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2024/05/Bmbl_FAH018-300x300.webp"
-      ],
-      "specs": {
-        "partType": "Nozzle",
-        "compatibleWith": "Bambu A1"
-      },
-      "minPrice": 15990,
-      "maxPrice": 15990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-03-31T03:22:21.498Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/bambu-lab-hotend-con-boquilla-serie-a1/",
-          "price": 15990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 15990,
-          "recordedAt": "2026-04-01T18:23:24.028Z"
-        }
-      ]
-    },
-    {
-      "slug": "ventilador-de-placa-x1-y-serie-p1",
-      "id": "ventilador-de-placa-x1-y-serie-p1",
-      "name": "Ventilador de Placa X1 y serie P1",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2024/03/Bambulab_FAF005-N_2-300x300.webp"
-      ],
-      "specs": {
-        "partType": "Ventilador",
-        "compatibleWith": "Bambu X1"
-      },
-      "minPrice": 15990,
-      "maxPrice": 15990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:46:50.740Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/ventilador-de-placa-x1/",
-          "price": 15990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 15990,
-          "recordedAt": "2026-04-01T18:23:24.028Z"
         }
       ]
     },
@@ -78480,41 +77610,6 @@
         {
           "storeId": "imperio3d",
           "url": "https://imperio3d.com/producto/hotend-kit-ender-5-plus/",
-          "price": 14990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 14990,
-          "recordedAt": "2026-04-01T18:23:24.027Z"
-        }
-      ]
-    },
-    {
-      "slug": "calefactor-ender-3-v2calefactor-ender-3-v2",
-      "id": "calefactor-ender-3-v2calefactor-ender-3-v2",
-      "name": "Calefactor Ender 3 v2Calefactor Ender 3 v2",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2024/03/CR-4004060010-300x300.webp"
-      ],
-      "specs": {
-        "partType": "Hotend",
-        "compatibleWith": "Ender 3"
-      },
-      "minPrice": 14990,
-      "maxPrice": 14990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-03-31T03:22:18.041Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/calefactor-ender-3-v2/",
           "price": 14990,
           "stock": "available"
         }
@@ -78697,8 +77792,8 @@
       ]
     },
     {
-      "slug": "polea-tensora-serie-p1-x1polea-tensora-serie-p1-x1",
-      "id": "polea-tensora-serie-p1-x1polea-tensora-serie-p1-x1",
+      "slug": "rsp-correa-polea-bambu-x1",
+      "id": "rsp-correa-polea-bambu-x1",
       "name": "Polea tensora serie P1 X1Polea tensora serie P1 X1",
       "brand": "",
       "categoryId": "repuestos",
@@ -78710,16 +77805,16 @@
         "partType": "Correa / Polea",
         "compatibleWith": "Bambu X1"
       },
-      "minPrice": 12990,
-      "maxPrice": 12990,
+      "minPrice": 10990,
+      "maxPrice": 10990,
       "storeCount": 1,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-03-31T03:22:15.436Z",
       "entries": [
         {
           "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/polea-tensora-serie-p1-x1/",
-          "price": 12990,
+          "url": "https://imperio3d.com/producto/polea-del-motor-x1-p1/",
+          "price": 10990,
           "stock": "available"
         }
       ],
@@ -78728,6 +77823,11 @@
           "storeId": "imperio3d",
           "price": 12990,
           "recordedAt": "2026-04-01T18:23:24.026Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 10990,
+          "recordedAt": "2026-03-31T13:32:39.499Z"
         }
       ]
     },
@@ -78830,8 +77930,8 @@
       ]
     },
     {
-      "slug": "ventilador-de-capa-artillery",
-      "id": "ventilador-de-capa-artillery",
+      "slug": "rsp-ventilador-artillery",
+      "id": "rsp-ventilador-artillery",
       "name": "Ventilador de capa Artillery",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -78844,9 +77944,9 @@
         "partType": "Ventilador",
         "compatibleWith": "Artillery"
       },
-      "minPrice": 3990,
+      "minPrice": 3500,
       "maxPrice": 3990,
-      "storeCount": 1,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-03-31T13:43:39.028Z",
       "entries": [
@@ -78855,6 +77955,12 @@
           "url": "https://imperio3d.com/producto/ventilador-de-capa-artillery/",
           "price": 3990,
           "stock": "available"
+        },
+        {
+          "storeId": "horus3d",
+          "url": "https://horus3d.cl/producto/fan4020/",
+          "price": 3500,
+          "stock": "available"
         }
       ],
       "history": [
@@ -78862,6 +77968,11 @@
           "storeId": "imperio3d",
           "price": 3990,
           "recordedAt": "2026-03-31T13:32:28.467Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 3500,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
     },
@@ -79066,8 +78177,8 @@
       ]
     },
     {
-      "slug": "ventilador-de-capa-4010-24v-ender-5-plus",
-      "id": "ventilador-de-capa-4010-24v-ender-5-plus",
+      "slug": "rsp-ventilador-ender-5",
+      "id": "rsp-ventilador-ender-5",
       "name": "Ventilador de capa 4010 24v Ender 5 Plus",
       "brand": "",
       "categoryId": "repuestos",
@@ -79233,8 +78344,8 @@
       ]
     },
     {
-      "slug": "tensor-de-correa-xy-con-polea-p1p-serie-x1",
-      "id": "tensor-de-correa-xy-con-polea-p1p-serie-x1",
+      "slug": "rsp-correa-polea-bambu-p1",
+      "id": "rsp-correa-polea-bambu-p1",
       "name": "Tensor de correa XY con polea P1P, serie X1",
       "brand": "",
       "categoryId": "repuestos",
@@ -79246,16 +78357,16 @@
         "partType": "Correa / Polea",
         "compatibleWith": "Bambu P1"
       },
-      "minPrice": 11990,
-      "maxPrice": 11990,
+      "minPrice": 10990,
+      "maxPrice": 10990,
       "storeCount": 1,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-03-31T13:50:02.079Z",
       "entries": [
         {
           "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/tensor-de-correa-xy-con-polea-p1p-serie-x1/",
-          "price": 11990,
+          "url": "https://imperio3d.com/producto/polea-de-sincronizacion-de-correa-z-p1p-x1-x1c/",
+          "price": 10990,
           "stock": "available"
         }
       ],
@@ -79264,6 +78375,11 @@
           "storeId": "imperio3d",
           "price": 11990,
           "recordedAt": "2026-03-31T13:32:39.501Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 10990,
+          "recordedAt": "2026-03-31T13:32:36.016Z"
         }
       ]
     },
@@ -79300,8 +78416,8 @@
       ]
     },
     {
-      "slug": "ventilador-de-capa-4010-24v-ender-3-v2",
-      "id": "ventilador-de-capa-4010-24v-ender-3-v2",
+      "slug": "rsp-ventilador-ender-3",
+      "id": "rsp-ventilador-ender-3",
       "name": "Ventilador de capa 4010 24v Ender 3 v2",
       "brand": "",
       "categoryId": "repuestos",
@@ -79313,9 +78429,9 @@
         "partType": "Ventilador",
         "compatibleWith": "Ender 3"
       },
-      "minPrice": 4990,
+      "minPrice": 3500,
       "maxPrice": 4990,
-      "storeCount": 1,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:46:28.582Z",
       "entries": [
@@ -79324,6 +78440,12 @@
           "url": "https://imperio3d.com/producto/ventilador-de-capa-4010-24v-ender-3-v2/",
           "price": 4990,
           "stock": "available"
+        },
+        {
+          "storeId": "horus3d",
+          "url": "https://horus3d.cl/producto/fan4010-e3/",
+          "price": 3500,
+          "stock": "available"
         }
       ],
       "history": [
@@ -79331,6 +78453,11 @@
           "storeId": "imperio3d",
           "price": 4990,
           "recordedAt": "2026-04-01T18:23:08.354Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 3500,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
     },
@@ -79534,43 +78661,8 @@
       ]
     },
     {
-      "slug": "polea-del-motor-x1-p1",
-      "id": "polea-del-motor-x1-p1",
-      "name": "Polea del Motor X1 P1",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2025/02/bmbl_FAC057-300x300.webp"
-      ],
-      "specs": {
-        "partType": "Correa / Polea",
-        "compatibleWith": "Bambu X1"
-      },
-      "minPrice": 10990,
-      "maxPrice": 10990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-03-31T13:49:57.640Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/polea-del-motor-x1-p1/",
-          "price": 10990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 10990,
-          "recordedAt": "2026-03-31T13:32:39.499Z"
-        }
-      ]
-    },
-    {
-      "slug": "correa-eje-z-bambu-lab-a1correa-eje-z-bambu-lab-a1",
-      "id": "correa-eje-z-bambu-lab-a1correa-eje-z-bambu-lab-a1",
+      "slug": "rsp-correa-polea-bambu-a1",
+      "id": "rsp-correa-polea-bambu-a1",
       "name": "Correa eje Z Bambu Lab A1Correa eje Z Bambu Lab A1",
       "brand": "",
       "categoryId": "repuestos",
@@ -79604,43 +78696,8 @@
       ]
     },
     {
-      "slug": "polea-de-sincronizacion-de-correa-z-p1p-x1x1c",
-      "id": "polea-de-sincronizacion-de-correa-z-p1p-x1x1c",
-      "name": "Polea de sincronización de correa Z P1P, X1/X1C",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2025/02/bmbl_FAB005-300x300.webp"
-      ],
-      "specs": {
-        "partType": "Correa / Polea",
-        "compatibleWith": "Bambu P1"
-      },
-      "minPrice": 10990,
-      "maxPrice": 10990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-03-31T13:49:56.413Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/polea-de-sincronizacion-de-correa-z-p1p-x1-x1c/",
-          "price": 10990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 10990,
-          "recordedAt": "2026-03-31T13:32:36.016Z"
-        }
-      ]
-    },
-    {
-      "slug": "correas-eje-z-serie-x1-y-p1pcorreas-eje-z-serie-x1-y-p1p",
-      "id": "correas-eje-z-serie-x1-y-p1pcorreas-eje-z-serie-x1-y-p1p",
+      "slug": "rsp-sistema-de-movimiento-bambu-p1",
+      "id": "rsp-sistema-de-movimiento-bambu-p1",
       "name": "Correas Eje Z Serie X1 y P1PCorreas Eje Z Serie X1 y P1P",
       "brand": "",
       "categoryId": "repuestos",
@@ -79836,8 +78893,8 @@
       ]
     },
     {
-      "slug": "sensor-cama-caliente-serie-x1-y-p1",
-      "id": "sensor-cama-caliente-serie-x1-y-p1",
+      "slug": "rsp-sensor-bambu-x1",
+      "id": "rsp-sensor-bambu-x1",
       "name": "Sensor Cama Caliente serie X1 y P1",
       "brand": "",
       "categoryId": "repuestos",
@@ -79858,42 +78915,6 @@
         {
           "storeId": "imperio3d",
           "url": "https://imperio3d.com/producto/sensor-cama-caliente-serie-x1-y-p1/",
-          "price": 9990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 9990,
-          "recordedAt": "2026-03-31T13:32:36.014Z"
-        }
-      ]
-    },
-    {
-      "slug": "creality-sensor-de-final-de-filamento-ender-3-v2creality-sensor-de-final-de-filamento-ender-3-v2",
-      "id": "creality-sensor-de-final-de-filamento-ender-3-v2creality-sensor-de-final-de-filamento-ender-3-v2",
-      "name": "Creality Sensor de Final de Filamento Ender 3 V2Creality Sensor de Final de Filamento Ender 3 V2",
-      "brand": "Creality",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2025/01/CR-4001090008-300x300.webp"
-      ],
-      "specs": {
-        "brand": "Creality",
-        "partType": "Sensor",
-        "compatibleWith": "Ender 3"
-      },
-      "minPrice": 9990,
-      "maxPrice": 9990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-03-31T03:22:01.905Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/creality-sensor-de-final-de-filamento-ender-3-v2/",
           "price": 9990,
           "stock": "available"
         }
@@ -80068,41 +79089,6 @@
         {
           "storeId": "imperio3d",
           "price": 9890,
-          "recordedAt": "2026-04-01T18:23:16.701Z"
-        }
-      ]
-    },
-    {
-      "slug": "silicona-protectora-del-hotend-3und-x1-p1",
-      "id": "silicona-protectora-del-hotend-3und-x1-p1",
-      "name": "Silicona Protectora del hotend 3und X1 P1",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2024/05/Bmbl_FAH001-5-3-300x300.webp"
-      ],
-      "specs": {
-        "partType": "Hotend",
-        "compatibleWith": "Bambu X1"
-      },
-      "minPrice": 9590,
-      "maxPrice": 9590,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:46:38.428Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/silicona-protectora-del-hotend-3und/",
-          "price": 9590,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 9590,
           "recordedAt": "2026-04-01T18:23:16.701Z"
         }
       ]
@@ -80598,8 +79584,8 @@
       ]
     },
     {
-      "slug": "cable-de-senal-cama-caliente-bambu-lab-x1-p1cable-de-senal-cama-caliente-bambu-lab-x1-p1",
-      "id": "cable-de-senal-cama-caliente-bambu-lab-x1-p1cable-de-senal-cama-caliente-bambu-lab-x1-p1",
+      "slug": "rsp-cama-superficie-bambu-x1",
+      "id": "rsp-cama-superficie-bambu-x1",
       "name": "Cable de señal cama caliente Bambu Lab X1 P1Cable de señal cama caliente Bambu Lab X1 P1",
       "brand": "",
       "categoryId": "repuestos",
@@ -80767,41 +79753,6 @@
       ]
     },
     {
-      "slug": "set-2-bloque-calefactor-ender-3-v2",
-      "id": "set-2-bloque-calefactor-ender-3-v2",
-      "name": "Set 2 Bloque Calefactor Ender 3 v2",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2024/03/CR-4004040011-300x300.webp"
-      ],
-      "specs": {
-        "partType": "Hotend",
-        "compatibleWith": "Ender 3"
-      },
-      "minPrice": 5990,
-      "maxPrice": 5990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:46:32.032Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/set-2-bloque-calefactor-ender-3-v2/",
-          "price": 5990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 5990,
-          "recordedAt": "2026-04-01T18:23:12.507Z"
-        }
-      ]
-    },
-    {
       "slug": "placa-del-boton-y-temperatura-interiorplaca-del-boton-y-temperatura-interior",
       "id": "placa-del-boton-y-temperatura-interiorplaca-del-boton-y-temperatura-interior",
       "name": "Placa del botón y temperatura interiorPlaca del botón y temperatura interior",
@@ -80903,8 +79854,8 @@
       ]
     },
     {
-      "slug": "termistor-hotend-cr6-se",
-      "id": "termistor-hotend-cr6-se",
+      "slug": "rsp-hotend-cr-6",
+      "id": "rsp-hotend-cr-6",
       "name": "Termistor Hotend CR6 SE",
       "brand": "",
       "categoryId": "repuestos",
@@ -80934,42 +79885,6 @@
           "storeId": "imperio3d",
           "price": 4990,
           "recordedAt": "2026-04-01T18:23:08.355Z"
-        }
-      ]
-    },
-    {
-      "slug": "calentador-calefactor-hotend-artillerycalentador-calefactor-hotend-artillery",
-      "id": "calentador-calefactor-hotend-artillerycalentador-calefactor-hotend-artillery",
-      "name": "Calentador Calefactor Hotend ArtilleryCalentador Calefactor Hotend Artillery",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2023/07/artillery_cable_calefactor_hotend_imperio3d-300x300.webp"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Hotend",
-        "compatibleWith": "Artillery"
-      },
-      "minPrice": 5990,
-      "maxPrice": 5990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-03-31T03:21:46.423Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/calentador-calefactor-hotend-artillery/",
-          "price": 5990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 5990,
-          "recordedAt": "2026-04-01T18:23:08.356Z"
         }
       ]
     },
@@ -81040,8 +79955,8 @@
       ]
     },
     {
-      "slug": "polea-eje-xy-a1-mini",
-      "id": "polea-eje-xy-a1-mini",
+      "slug": "rsp-correa-polea-bambu-a1-mini",
+      "id": "rsp-correa-polea-bambu-a1-mini",
       "name": "Polea eje X/Y A1 Mini",
       "brand": "",
       "categoryId": "repuestos",
@@ -81054,8 +79969,8 @@
         "compatibleWith": "Bambu A1 Mini"
       },
       "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
+      "maxPrice": 11990,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:46:29.469Z",
       "entries": [
@@ -81064,6 +79979,12 @@
           "url": "https://imperio3d.com/producto/polea-eje-x-y-a1-mini/",
           "price": 4990,
           "stock": "available"
+        },
+        {
+          "storeId": "horus3d",
+          "url": "https://horus3d.cl/producto/correa-y-a1mini/",
+          "price": 11990,
+          "stock": "available"
         }
       ],
       "history": [
@@ -81071,77 +79992,16 @@
           "storeId": "imperio3d",
           "price": 4990,
           "recordedAt": "2026-04-01T18:23:08.355Z"
-        }
-      ]
-    },
-    {
-      "slug": "calefactor-ender-3calefactor-ender-3",
-      "id": "calefactor-ender-3calefactor-ender-3",
-      "name": "Calefactor Ender 3Calefactor Ender 3",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2024/03/CR-4004060004-300x300.webp"
-      ],
-      "specs": {
-        "partType": "Hotend",
-        "compatibleWith": "Ender 3"
-      },
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-03-31T03:21:44.246Z",
-      "entries": [
+        },
         {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/calefactor-ender-3/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
+          "storeId": "horus3d",
+          "price": 11990,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
+        },
         {
-          "storeId": "imperio3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:23:08.354Z"
-        }
-      ]
-    },
-    {
-      "slug": "sensor-de-final-de-filamento-artillery",
-      "id": "sensor-de-final-de-filamento-artillery",
-      "name": "Sensor de final de Filamento Artillery",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2023/07/artillery_sensor_filamento_imperio3d-300x300.webp"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Sensor",
-        "compatibleWith": "Artillery"
-      },
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:46:28.283Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/sensor-de-final-de-filamento-artillery/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:23:08.354Z"
+          "storeId": "horus3d",
+          "price": 11990,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
     },
@@ -81247,8 +80107,8 @@
       ]
     },
     {
-      "slug": "correas-ender-5-plus-ejes-xycorreas-ender-5-plus-ejes-xy",
-      "id": "correas-ender-5-plus-ejes-xycorreas-ender-5-plus-ejes-xy",
+      "slug": "rsp-sistema-de-movimiento-ender-5",
+      "id": "rsp-sistema-de-movimiento-ender-5",
       "name": "Correas Ender 5 Plus ejes XYCorreas Ender 5 Plus ejes XY",
       "brand": "",
       "categoryId": "repuestos",
@@ -81282,44 +80142,8 @@
       ]
     },
     {
-      "slug": "bloque-calefactor-artillerybloque-calefactor-artillery",
-      "id": "bloque-calefactor-artillerybloque-calefactor-artillery",
-      "name": "Bloque calefactor ArtilleryBloque calefactor Artillery",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2023/07/artillery_bloque_calefactor_imperio3d-300x300.webp"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Hotend",
-        "compatibleWith": "Artillery"
-      },
-      "minPrice": 3490,
-      "maxPrice": 3490,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-03-31T03:21:40.315Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/bloque-calefactor-artillery/",
-          "price": 3490,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 3490,
-          "recordedAt": "2026-03-31T13:32:28.466Z"
-        }
-      ]
-    },
-    {
-      "slug": "garganta-cr-10-2-und",
-      "id": "garganta-cr-10-2-und",
+      "slug": "rsp-piezas-hotend-cr-10",
+      "id": "rsp-piezas-hotend-cr-10",
       "name": "Garganta CR 10 2 und",
       "brand": "",
       "categoryId": "repuestos",
@@ -81417,41 +80241,6 @@
           "storeId": "imperio3d",
           "price": 1090,
           "recordedAt": "2026-03-31T13:32:28.466Z"
-        }
-      ]
-    },
-    {
-      "slug": "bambu-placa-pei-lisasuave-para-bambu-lab-x1-p1-a1bambu-placa-pei-lisasuave-para-bambu-lab-x1-p1-a1",
-      "id": "bambu-placa-pei-lisasuave-para-bambu-lab-x1-p1-a1bambu-placa-pei-lisasuave-para-bambu-lab-x1-p1-a1",
-      "name": "Bambu Placa PEI Lisa/Suave para Bambu Lab X1, P1, A1Bambu Placa PEI Lisa/Suave para Bambu Lab X1, P1, A1",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2024/05/Bmbl_FAP010-300x300.webp"
-      ],
-      "specs": {
-        "partType": "Cama / Superficie",
-        "compatibleWith": "Bambu A1"
-      },
-      "minPrice": 56990,
-      "maxPrice": 56990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-03-31T03:21:36.737Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/bambu-placa-pei-lisa-suave-para-bambu-lab-x1-p1-a1/",
-          "price": 56990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 56990,
-          "recordedAt": "2026-03-31T13:32:20.161Z"
         }
       ]
     },
@@ -83249,42 +82038,6 @@
       ]
     },
     {
-      "slug": "cable-flex-extrusor-artillery-genius",
-      "id": "cable-flex-extrusor-artillery-genius",
-      "name": "Cable Flex extrusor Artillery Genius",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2021/10/Flex-Artillery-24pin.jpg"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Extrusor",
-        "compatibleWith": "Artillery Genius"
-      },
-      "minPrice": 6990,
-      "maxPrice": 6990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:46:05.880Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/flex-24pin/",
-          "price": 6990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 6990,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        }
-      ]
-    },
-    {
       "slug": "boquillas-para-impresoras-3d",
       "id": "boquillas-para-impresoras-3d",
       "name": "Boquillas para impresoras 3D",
@@ -83554,42 +82307,6 @@
         {
           "storeId": "horus3d",
           "price": 26000,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        }
-      ]
-    },
-    {
-      "slug": "ventilador-de-capa-artillery-4020-24v",
-      "id": "ventilador-de-capa-artillery-4020-24v",
-      "name": "Ventilador de capa Artillery 4020 24V",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2022/05/AG-fan-2040-24v.jpg"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Ventilador",
-        "compatibleWith": "Artillery"
-      },
-      "minPrice": 3500,
-      "maxPrice": 3500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:46:02.013Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/fan4020/",
-          "price": 3500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 3500,
           "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
@@ -84281,42 +82998,6 @@
       ]
     },
     {
-      "slug": "termistor-para-creality-ender-3",
-      "id": "termistor-para-creality-ender-3",
-      "name": "Termistor para Creality Ender 3",
-      "brand": "Creality",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2023/02/Termistor-Ender3.png"
-      ],
-      "specs": {
-        "brand": "Creality",
-        "partType": "Hotend",
-        "compatibleWith": "Ender 3"
-      },
-      "minPrice": 2500,
-      "maxPrice": 2500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:45:54.058Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/termistor-cr/",
-          "price": 2500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 2500,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        }
-      ]
-    },
-    {
       "slug": "calefactor-para-creality-12v",
       "id": "calefactor-para-creality-12v",
       "name": "Calefactor para Creality 12V",
@@ -84585,41 +83266,6 @@
         {
           "storeId": "horus3d",
           "price": 35000,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        }
-      ]
-    },
-    {
-      "slug": "extrusor-titan-directo-kingroon-para-ender-3",
-      "id": "extrusor-titan-directo-kingroon-para-ender-3",
-      "name": "Extrusor Titan directo Kingroon para Ender 3",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2023/03/Extrusor-Titan-Ender3-ruedas.png"
-      ],
-      "specs": {
-        "partType": "Extrusor",
-        "compatibleWith": "Ender 3"
-      },
-      "minPrice": 39000,
-      "maxPrice": 39000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:45:51.111Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/e-titan2/",
-          "price": 39000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 39000,
           "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
@@ -85452,42 +84098,6 @@
       ]
     },
     {
-      "slug": "termistor-para-artillery-hornet",
-      "id": "termistor-para-artillery-hornet",
-      "name": "Termistor para Artillery Hornet",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2023/09/Termistor-Hornet.png"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Hotend",
-        "compatibleWith": "Artillery Hornet"
-      },
-      "minPrice": 3500,
-      "maxPrice": 3500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:45:40.968Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/hornet-term/",
-          "price": 3500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 3500,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        }
-      ]
-    },
-    {
       "slug": "kit-hotend-sprite-para-ender-3-s1",
       "id": "kit-hotend-sprite-para-ender-3-s1",
       "name": "Kit Hotend Sprite para Ender 3 S1",
@@ -85552,41 +84162,6 @@
         {
           "storeId": "horus3d",
           "price": 12000,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        }
-      ]
-    },
-    {
-      "slug": "ventilador-de-capa-4010-24v-para-ender-3",
-      "id": "ventilador-de-capa-4010-24v-para-ender-3",
-      "name": "Ventilador de capa 4010 24V para Ender 3",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2023/09/Ventilador-de-capa-Ender-3.png"
-      ],
-      "specs": {
-        "partType": "Ventilador",
-        "compatibleWith": "Ender 3"
-      },
-      "minPrice": 3500,
-      "maxPrice": 3500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:45:40.012Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/fan4010-e3/",
-          "price": 3500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 3500,
           "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
@@ -86213,42 +84788,6 @@
       ]
     },
     {
-      "slug": "cable-flex-extrusor-artillery-sidewinder-x1",
-      "id": "cable-flex-extrusor-artillery-sidewinder-x1",
-      "name": "Cable Flex extrusor Artillery Sidewinder X1",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2024/04/Flex-Artillery-X1-20-pines.png"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Extrusor",
-        "compatibleWith": "Artillery Sidewinder"
-      },
-      "minPrice": 6990,
-      "maxPrice": 6990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:45:30.666Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/flex-x1-e/",
-          "price": 6990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 6990,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        }
-      ]
-    },
-    {
       "slug": "sensor-abl-artillery-x3-y-x4",
       "id": "sensor-abl-artillery-x3-y-x4",
       "name": "Sensor ABL Artillery X3 y X4",
@@ -86531,42 +85070,6 @@
       ]
     },
     {
-      "slug": "lamina-pei-peo-bambulab-a1-mini",
-      "id": "lamina-pei-peo-bambulab-a1-mini",
-      "name": "Lamina PEI / PEO Bambulab A1 Mini",
-      "brand": "Bambu Lab",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2024/05/Lamina-PEI-PEO-2.png"
-      ],
-      "specs": {
-        "brand": "Bambu Lab",
-        "partType": "Cama / Superficie",
-        "compatibleWith": "Bambu A1 Mini"
-      },
-      "minPrice": 15000,
-      "maxPrice": 15000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:45:27.752Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/pei-peo-184mm/",
-          "price": 15000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 15000,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        }
-      ]
-    },
-    {
       "slug": "motor-paso-a-paso-nema-14",
       "id": "motor-paso-a-paso-nema-14",
       "name": "Motor paso a paso Nema 14",
@@ -86601,8 +85104,8 @@
       ]
     },
     {
-      "slug": "silicona-bloque-bambulab-x1p1p",
-      "id": "silicona-bloque-bambulab-x1p1p",
+      "slug": "rsp-piezas-hotend-bambu-p1",
+      "id": "rsp-piezas-hotend-bambu-p1",
       "name": "Silicona bloque Bambulab X1/P1P",
       "brand": "Bambu Lab",
       "categoryId": "repuestos",
@@ -86704,8 +85207,8 @@
       ]
     },
     {
-      "slug": "cable-termistor-para-bambulab-x1p1p",
-      "id": "cable-termistor-para-bambulab-x1p1p",
+      "slug": "rsp-hotend-bambu-p1",
+      "id": "rsp-hotend-bambu-p1",
       "name": "Cable termistor para Bambulab X1/P1P",
       "brand": "Bambu Lab",
       "categoryId": "repuestos",
@@ -86718,17 +85221,17 @@
         "partType": "Hotend",
         "compatibleWith": "Bambu P1"
       },
-      "minPrice": 3500,
-      "maxPrice": 3500,
+      "minPrice": 25000,
+      "maxPrice": 25000,
       "storeCount": 1,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:45:25.502Z",
       "entries": [
         {
           "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/termistor-x1-p1p/",
-          "price": 3500,
-          "stock": "out"
+          "url": "https://horus3d.cl/producto/hotend-x1-p1p/",
+          "price": 25000,
+          "stock": "available"
         }
       ],
       "history": [
@@ -86736,41 +85239,15 @@
           "storeId": "horus3d",
           "price": 3500,
           "recordedAt": "2026-04-01T18:22:38.548Z"
-        }
-      ]
-    },
-    {
-      "slug": "cable-calefactor-para-bambulab-x1p1p",
-      "id": "cable-calefactor-para-bambulab-x1p1p",
-      "name": "Cable calefactor para Bambulab X1/P1P",
-      "brand": "Bambu Lab",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2024/05/Calefactor-Bambulab-X1-P1P.png"
-      ],
-      "specs": {
-        "brand": "Bambu Lab",
-        "partType": "Hotend",
-        "compatibleWith": "Bambu P1"
-      },
-      "minPrice": 4000,
-      "maxPrice": 4000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:45:25.188Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/calefactor-x1-p1p/",
-          "price": 4000,
-          "stock": "available"
-        }
-      ],
-      "history": [
+        },
         {
           "storeId": "horus3d",
           "price": 4000,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 25000,
           "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
@@ -86837,42 +85314,6 @@
         {
           "storeId": "horus3d",
           "price": 4000,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        }
-      ]
-    },
-    {
-      "slug": "hotend-para-bambulab-x1p1p",
-      "id": "hotend-para-bambulab-x1p1p",
-      "name": "Hotend para Bambulab X1/P1P",
-      "brand": "Bambu Lab",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2024/05/Kit-hotend-bambulab-x1-y-p1p.webp"
-      ],
-      "specs": {
-        "brand": "Bambu Lab",
-        "partType": "Hotend",
-        "compatibleWith": "Bambu P1"
-      },
-      "minPrice": 25000,
-      "maxPrice": 25000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:45:24.197Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/hotend-x1-p1p/",
-          "price": 25000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 25000,
           "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
@@ -86946,8 +85387,8 @@
       ]
     },
     {
-      "slug": "boquilla-bambulab-x1p1p",
-      "id": "boquilla-bambulab-x1p1p",
+      "slug": "rsp-nozzle-bambu-p1",
+      "id": "rsp-nozzle-bambu-p1",
       "name": "Boquilla Bambulab X1/P1P",
       "brand": "Bambu Lab",
       "categoryId": "repuestos",
@@ -86982,8 +85423,8 @@
       ]
     },
     {
-      "slug": "boquilla-creality-k1-ender-3v3-ke",
-      "id": "boquilla-creality-k1-ender-3v3-ke",
+      "slug": "rsp-nozzle-ender-3-v3",
+      "id": "rsp-nozzle-ender-3-v3",
       "name": "Boquilla Creality K1 / Ender 3V3 KE",
       "brand": "Creality",
       "categoryId": "repuestos",
@@ -87014,53 +85455,6 @@
           "storeId": "horus3d",
           "price": 3500,
           "recordedAt": "2026-04-01T18:22:38.548Z"
-        }
-      ]
-    },
-    {
-      "slug": "tubo-guia-extrusor-artillery",
-      "id": "tubo-guia-extrusor-artillery",
-      "name": "Tubo guía extrusor Artillery",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2024/05/Guia-filamento-Artillery.png"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Extrusor",
-        "compatibleWith": "Artillery"
-      },
-      "minPrice": 2000,
-      "maxPrice": 2000,
-      "storeCount": 2,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:45:21.875Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/guia-artillery/",
-          "price": 2000,
-          "stock": "available"
-        },
-        {
-          "storeId": "afel",
-          "url": "https://afel.cl/products/tubo-guia-extrusor-artillery",
-          "price": 2000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 2000,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        },
-        {
-          "storeId": "afel",
-          "price": 2000,
-          "recordedAt": "2026-04-01T23:15:29.905Z"
         }
       ]
     },
@@ -87156,76 +85550,6 @@
         {
           "storeId": "horus3d",
           "price": 19990,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        }
-      ]
-    },
-    {
-      "slug": "correa-eje-x-para-a1-mini",
-      "id": "correa-eje-x-para-a1-mini",
-      "name": "Correa eje X para A1 Mini",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2024/09/Correa-X-A1Mini.jpg"
-      ],
-      "specs": {
-        "partType": "Correa / Polea",
-        "compatibleWith": "Bambu A1 Mini"
-      },
-      "minPrice": 11990,
-      "maxPrice": 11990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:45:19.825Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/correa-x-a1mini/",
-          "price": 11990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 11990,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        }
-      ]
-    },
-    {
-      "slug": "correa-eje-y-para-a1-mini",
-      "id": "correa-eje-y-para-a1-mini",
-      "name": "Correa eje Y para A1 Mini",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2024/09/Correa-Y-A1Mini.jpg"
-      ],
-      "specs": {
-        "partType": "Correa / Polea",
-        "compatibleWith": "Bambu A1 Mini"
-      },
-      "minPrice": 11990,
-      "maxPrice": 11990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:45:19.469Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/correa-y-a1mini/",
-          "price": 11990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 11990,
           "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
@@ -87527,8 +85851,8 @@
       ]
     },
     {
-      "slug": "placa-madre-a1-mini",
-      "id": "placa-madre-a1-mini",
+      "slug": "rsp-placa-bambu-a1-mini",
+      "id": "rsp-placa-bambu-a1-mini",
       "name": "Placa madre A1 Mini",
       "brand": "",
       "categoryId": "repuestos",
@@ -87693,76 +86017,6 @@
         {
           "storeId": "horus3d",
           "price": 315000,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        }
-      ]
-    },
-    {
-      "slug": "cable-termistor-para-ender-3-s1",
-      "id": "cable-termistor-para-ender-3-s1",
-      "name": "Cable Termistor para Ender 3 S1",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2024/10/Termistor-Ender3S1.png"
-      ],
-      "specs": {
-        "partType": "Hotend",
-        "compatibleWith": "Ender 3 S1"
-      },
-      "minPrice": 3500,
-      "maxPrice": 3500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:45:14.238Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/term-3s1/",
-          "price": 3500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 3500,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        }
-      ]
-    },
-    {
-      "slug": "cable-calefactor-para-ender-3-s1",
-      "id": "cable-calefactor-para-ender-3-s1",
-      "name": "Cable Calefactor para Ender 3 S1",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2024/10/Calefactor-Ender3S1.png"
-      ],
-      "specs": {
-        "partType": "Hotend",
-        "compatibleWith": "Ender 3 S1"
-      },
-      "minPrice": 3500,
-      "maxPrice": 3500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:45:13.922Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/calef-3s1/",
-          "price": 3500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 3500,
           "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
@@ -88114,8 +86368,8 @@
       ]
     },
     {
-      "slug": "extrusor-completo-anycubic-kobra-2-plusmax",
-      "id": "extrusor-completo-anycubic-kobra-2-plusmax",
+      "slug": "rsp-extrusor-anycubic-kobra-i3",
+      "id": "rsp-extrusor-anycubic-kobra-i3",
       "name": "Extrusor completo Anycubic Kobra 2 PLUS/MAX",
       "brand": "Anycubic",
       "categoryId": "repuestos",
@@ -88128,17 +86382,17 @@
         "partType": "Extrusor",
         "compatibleWith": "Anycubic Kobra / i3"
       },
-      "minPrice": 45000,
-      "maxPrice": 45000,
+      "minPrice": 62000,
+      "maxPrice": 62000,
       "storeCount": 1,
       "updatedAt": "2026-04-02T00:57:48.133Z",
       "createdAt": "2026-04-01T18:45:09.767Z",
       "entries": [
         {
           "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/printhead-kobra2pm/",
-          "price": 45000,
-          "stock": "out"
+          "url": "https://horus3d.cl/producto/cabezal-k3max/",
+          "price": 62000,
+          "stock": "available"
         }
       ],
       "history": [
@@ -88146,6 +86400,16 @@
           "storeId": "horus3d",
           "price": 45000,
           "recordedAt": "2026-04-01T18:22:38.548Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 30000,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 62000,
+          "recordedAt": "2026-04-01T18:22:38.547Z"
         }
       ]
     },
@@ -88319,42 +86583,6 @@
         {
           "storeId": "horus3d",
           "price": 16000,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        }
-      ]
-    },
-    {
-      "slug": "extrusor-anycubic-kobra-3",
-      "id": "extrusor-anycubic-kobra-3",
-      "name": "Extrusor Anycubic Kobra 3",
-      "brand": "Anycubic",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2025/02/Extrusor-Kobra-3.png"
-      ],
-      "specs": {
-        "brand": "Anycubic",
-        "partType": "Extrusor",
-        "compatibleWith": "Anycubic Kobra / i3"
-      },
-      "minPrice": 30000,
-      "maxPrice": 30000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:45:07.354Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/extrusor-kobra3/",
-          "price": 30000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 30000,
           "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
@@ -88740,42 +86968,6 @@
       ]
     },
     {
-      "slug": "extrusor-completo-anycubic-kobra-3-max",
-      "id": "extrusor-completo-anycubic-kobra-3-max",
-      "name": "Extrusor completo Anycubic Kobra 3 Max",
-      "brand": "Anycubic",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2025/06/Cabezal-completo-Kobra-3-Max.png"
-      ],
-      "specs": {
-        "brand": "Anycubic",
-        "partType": "Extrusor",
-        "compatibleWith": "Anycubic Kobra / i3"
-      },
-      "minPrice": 62000,
-      "maxPrice": 62000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:45:02.857Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/cabezal-k3max/",
-          "price": 62000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 62000,
-          "recordedAt": "2026-04-01T18:22:38.547Z"
-        }
-      ]
-    },
-    {
       "slug": "resina-jamg-he-art-engineering",
       "id": "resina-jamg-he-art-engineering",
       "name": "Resina Jamg He Art-Engineering",
@@ -89011,43 +87203,8 @@
       ]
     },
     {
-      "slug": "hotend-para-ender-3v3-ke",
-      "id": "hotend-para-ender-3v3-ke",
-      "name": "Hotend para Ender 3V3 KE",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2025/09/Hotend-3v3KE.webp"
-      ],
-      "specs": {
-        "partType": "Hotend",
-        "compatibleWith": "Ender 3 V3"
-      },
-      "minPrice": 18000,
-      "maxPrice": 18000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:44:58.712Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/hotend-3v3ke/",
-          "price": 18000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 18000,
-          "recordedAt": "2026-04-01T18:22:38.547Z"
-        }
-      ]
-    },
-    {
-      "slug": "extrusor-creality-k2-plus",
-      "id": "extrusor-creality-k2-plus",
+      "slug": "rsp-extrusor-k2-plus",
+      "id": "rsp-extrusor-k2-plus",
       "name": "Extrusor Creality K2 Plus",
       "brand": "Creality",
       "categoryId": "repuestos",
@@ -89082,8 +87239,8 @@
       ]
     },
     {
-      "slug": "extrusor-creality-ender-3v3-ke",
-      "id": "extrusor-creality-ender-3v3-ke",
+      "slug": "rsp-extrusor-ender-3-v3",
+      "id": "rsp-extrusor-ender-3-v3",
       "name": "Extrusor Creality Ender 3V3 KE",
       "brand": "Creality",
       "categoryId": "repuestos",
@@ -89118,8 +87275,8 @@
       ]
     },
     {
-      "slug": "hotend-para-creality-k1k1-max",
-      "id": "hotend-para-creality-k1k1-max",
+      "slug": "rsp-hotend-k1-max",
+      "id": "rsp-hotend-k1-max",
       "name": "Hotend para Creality K1/K1 Max",
       "brand": "Creality",
       "categoryId": "repuestos",
@@ -89154,8 +87311,8 @@
       ]
     },
     {
-      "slug": "hotend-para-creality-k2-plus",
-      "id": "hotend-para-creality-k2-plus",
+      "slug": "rsp-hotend-k2-plus",
+      "id": "rsp-hotend-k2-plus",
       "name": "Hotend para Creality K2 Plus",
       "brand": "Creality",
       "categoryId": "repuestos",
@@ -89260,8 +87417,8 @@
       ]
     },
     {
-      "slug": "boquilla-06mm-para-k2-plus-y-hi-combo",
-      "id": "boquilla-06mm-para-k2-plus-y-hi-combo",
+      "slug": "rsp-nozzle-k2-plus-06mm",
+      "id": "rsp-nozzle-k2-plus-06mm",
       "name": "Boquilla 0.6mm para K2 Plus y Hi Combo",
       "brand": "",
       "categoryId": "repuestos",
@@ -89296,8 +87453,8 @@
       ]
     },
     {
-      "slug": "boquilla-de-laton-y-acero-04mm-para-k13v3ke",
-      "id": "boquilla-de-laton-y-acero-04mm-para-k13v3ke",
+      "slug": "rsp-nozzle-k1-04mm",
+      "id": "rsp-nozzle-k1-04mm",
       "name": "Boquilla de latón y acero 0.4mm para K1/3V3KE",
       "brand": "",
       "categoryId": "repuestos",
@@ -89332,8 +87489,8 @@
       ]
     },
     {
-      "slug": "extrusor-para-creality-k1-k1-max",
-      "id": "extrusor-para-creality-k1-k1-max",
+      "slug": "rsp-extrusor-k1-max",
+      "id": "rsp-extrusor-k1-max",
       "name": "Extrusor para Creality K1 / K1 Max",
       "brand": "Creality",
       "categoryId": "repuestos",
@@ -89437,8 +87594,8 @@
       ]
     },
     {
-      "slug": "ventilador-de-refrigeracion-2510-anycubic-kobra-s1",
-      "id": "ventilador-de-refrigeracion-2510-anycubic-kobra-s1",
+      "slug": "rsp-ventilador-anycubic-kobra-i3",
+      "id": "rsp-ventilador-anycubic-kobra-i3",
       "name": "Ventilador de refrigeración 2510 Anycubic Kobra S1",
       "brand": "Anycubic",
       "categoryId": "repuestos",
@@ -89459,7 +87616,7 @@
       "entries": [
         {
           "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/fan2510-anys1/",
+          "url": "https://horus3d.cl/producto/fan5020-anys1/",
           "price": 12000,
           "stock": "available"
         }
@@ -89469,38 +87626,7 @@
           "storeId": "horus3d",
           "price": 12000,
           "recordedAt": "2026-04-01T18:22:38.547Z"
-        }
-      ]
-    },
-    {
-      "slug": "ventilador-de-capa-5020-anycubic-kobra-s1",
-      "id": "ventilador-de-capa-5020-anycubic-kobra-s1",
-      "name": "Ventilador de capa 5020 Anycubic Kobra S1",
-      "brand": "Anycubic",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2025/10/Ventilador-5020-Anycubic-S1.png"
-      ],
-      "specs": {
-        "brand": "Anycubic",
-        "partType": "Ventilador",
-        "compatibleWith": "Anycubic Kobra / i3"
-      },
-      "minPrice": 12000,
-      "maxPrice": 12000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:44:53.313Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/fan5020-anys1/",
-          "price": 12000,
-          "stock": "available"
-        }
-      ],
-      "history": [
+        },
         {
           "storeId": "horus3d",
           "price": 12000,
@@ -89851,8 +87977,8 @@
       ]
     },
     {
-      "slug": "boquilla-04mm-para-k2-plus-y-hi-combo",
-      "id": "boquilla-04mm-para-k2-plus-y-hi-combo",
+      "slug": "rsp-nozzle-k2-plus-04mm",
+      "id": "rsp-nozzle-k2-plus-04mm",
       "name": "Boquilla 0.4mm para K2 Plus y Hi Combo",
       "brand": "",
       "categoryId": "repuestos",
@@ -89983,8 +88109,8 @@
       ]
     },
     {
-      "slug": "hotend-para-creality-ender-5-max",
-      "id": "hotend-para-creality-ender-5-max",
+      "slug": "rsp-hotend-ender-5",
+      "id": "rsp-hotend-ender-5",
       "name": "Hotend para Creality Ender 5 Max",
       "brand": "Creality",
       "categoryId": "repuestos",
@@ -90187,17 +88313,18 @@
       ]
     },
     {
-      "slug": "rsp-anycubic-wash-and-cure-wc3-plus-maquina-de-curado-y-lavado-alta-precision",
-      "id": "rsp-anycubic-wash-and-cure-wc3-plus-maquina-de-curado-y-lavado-alta-precision",
+      "slug": "wash-and-cure-wc3-plus-anycubic-maquina-3d-de-curado-y-lavado-alta-precision",
+      "id": "wash-and-cure-wc3-plus-anycubic-maquina-3d-de-curado-y-lavado-alta-precision",
       "name": "Wash And Cure WC3 Plus Anycubic | Máquina 3D de Curado y Lavado | Alta Precisión",
       "brand": "Anycubic",
-      "categoryId": "impresoras-resina",
+      "categoryId": "accesorios-resina",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/45984816/resize/306/172?1709213432"
       ],
       "specs": {
-        "brand": "Anycubic"
+        "brand": "Anycubic",
+        "type": "Wash & Cure"
       },
       "minPrice": 179990,
       "maxPrice": 179990,
@@ -90221,17 +88348,18 @@
       ]
     },
     {
-      "slug": "rsp-anycubic-wash-and-cure-wc3-maquina-de-curado-y-lavado-alta-precision",
-      "id": "rsp-anycubic-wash-and-cure-wc3-maquina-de-curado-y-lavado-alta-precision",
+      "slug": "wash-and-cure-wc3-anycubic-maquina-3d-de-curado-y-lavado-alta-precision",
+      "id": "wash-and-cure-wc3-anycubic-maquina-3d-de-curado-y-lavado-alta-precision",
       "name": "Wash And Cure WC3  Anycubic | Máquina 3D de Curado y Lavado | Alta Precisión",
       "brand": "Anycubic",
-      "categoryId": "impresoras-resina",
+      "categoryId": "accesorios-resina",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/45533656/resize/306/172?1707921640"
       ],
       "specs": {
-        "brand": "Anycubic"
+        "brand": "Anycubic",
+        "type": "Wash & Cure"
       },
       "minPrice": 99990,
       "maxPrice": 99990,
@@ -90255,17 +88383,18 @@
       ]
     },
     {
-      "slug": "rsp-anycubic-wash-and-cure-machine-plus-maquina-de-curado-y-lavado-alta-precision",
-      "id": "rsp-anycubic-wash-and-cure-machine-plus-maquina-de-curado-y-lavado-alta-precision",
+      "slug": "wash-and-cure-machine-plus-anycubic-maquina-3d-de-curado-y-lavado-alta-precision",
+      "id": "wash-and-cure-machine-plus-anycubic-maquina-3d-de-curado-y-lavado-alta-precision",
       "name": "Wash And Cure Machine Plus Anycubic | Máquina 3D de Curado y Lavado | Alta Precisión",
       "brand": "Anycubic",
-      "categoryId": "impresoras-resina",
+      "categoryId": "accesorios-resina",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/18497692/resize/306/172?1672260598"
       ],
       "specs": {
-        "brand": "Anycubic"
+        "brand": "Anycubic",
+        "type": "Wash & Cure"
       },
       "minPrice": 194990,
       "maxPrice": 194990,
@@ -90289,17 +88418,18 @@
       ]
     },
     {
-      "slug": "rsp-anycubic-wash-and-cure-machine-20-maquina-de-curado-y-lavado-alta-precision",
-      "id": "rsp-anycubic-wash-and-cure-machine-20-maquina-de-curado-y-lavado-alta-precision",
+      "slug": "wash-and-cure-machine-20-anycubic-maquina-3d-de-curado-y-lavado-alta-precision",
+      "id": "wash-and-cure-machine-20-anycubic-maquina-3d-de-curado-y-lavado-alta-precision",
       "name": "Wash And Cure Machine 2.0 Anycubic | Máquina 3D de Curado y Lavado | Alta Precisión",
       "brand": "Anycubic",
-      "categoryId": "impresoras-resina",
+      "categoryId": "accesorios-resina",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/18822798/resize/306/172?1672259212"
       ],
       "specs": {
-        "brand": "Anycubic"
+        "brand": "Anycubic",
+        "type": "Wash & Cure"
       },
       "minPrice": 99990,
       "maxPrice": 99990,
@@ -90323,17 +88453,18 @@
       ]
     },
     {
-      "slug": "rsp-anycubic-wash-and-cure-3-max-maquina-de-curado-y-lavado-alta-precision",
-      "id": "rsp-anycubic-wash-and-cure-3-max-maquina-de-curado-y-lavado-alta-precision",
+      "slug": "wash-and-cure-3-max-anycubic-maquina-3d-de-curado-y-lavado-alta-precision",
+      "id": "wash-and-cure-3-max-anycubic-maquina-3d-de-curado-y-lavado-alta-precision",
       "name": "Wash and Cure 3 Max Anycubic | Máquina 3D de Curado y Lavado | Alta Precisión",
       "brand": "Anycubic",
-      "categoryId": "impresoras-resina",
+      "categoryId": "accesorios-resina",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/67063291/resize/306/172?1756507715"
       ],
       "specs": {
-        "brand": "Anycubic"
+        "brand": "Anycubic",
+        "type": "Wash & Cure"
       },
       "minPrice": 299980,
       "maxPrice": 299980,
@@ -90357,17 +88488,18 @@
       ]
     },
     {
-      "slug": "rsp-creality-uw-03-maquina-de-curado-y-lavado-alta-precision",
-      "id": "rsp-creality-uw-03-maquina-de-curado-y-lavado-alta-precision",
+      "slug": "uw-03-creality-maquina-3d-de-curado-y-lavado-alta-precision",
+      "id": "uw-03-creality-maquina-3d-de-curado-y-lavado-alta-precision",
       "name": "UW-03 Creality | Máquina 3D de Curado y Lavado | Alta Precisión",
       "brand": "Creality",
-      "categoryId": "impresoras-resina",
+      "categoryId": "accesorios-resina",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/48174536/resize/306/172?1715015681"
       ],
       "specs": {
-        "brand": "Creality"
+        "brand": "Creality",
+        "type": "Wash & Cure"
       },
       "minPrice": 139990,
       "maxPrice": 139990,
@@ -90423,17 +88555,18 @@
       ]
     },
     {
-      "slug": "rsp-graphy-tera-harz-care-lavadora-ultrasonica-maquina-lavadora",
-      "id": "rsp-graphy-tera-harz-care-lavadora-ultrasonica-maquina-lavadora",
+      "slug": "tera-harz-care-lavadora-ultrasonica-graphy-maquina-3d-lavadora",
+      "id": "tera-harz-care-lavadora-ultrasonica-graphy-maquina-3d-lavadora",
       "name": "Tera Harz Care Lavadora Ultrasonica Graphy | Máquina 3D Lavadora",
       "brand": "Graphy",
-      "categoryId": "impresoras-resina",
+      "categoryId": "accesorios-resina",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/65402722/resize/306/172?1752598919"
       ],
       "specs": {
-        "brand": "Graphy"
+        "brand": "Graphy",
+        "type": "Wash & Cure"
       },
       "minPrice": 79980,
       "maxPrice": 79980,
@@ -90530,12 +88663,14 @@
       "id": "mercury-xs-maquina-3d-de-curado-y-lavado-alta-precision",
       "name": "Mercury XS | Máquina 3D de Curado y Lavado | Alta Precisión",
       "brand": "",
-      "categoryId": "impresoras-resina",
+      "categoryId": "accesorios-resina",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/36168614/resize/306/172?1686117173"
       ],
-      "specs": {},
+      "specs": {
+        "type": "Wash & Cure"
+      },
       "minPrice": 139990,
       "maxPrice": 139990,
       "storeCount": 1,
@@ -90562,12 +88697,14 @@
       "id": "mercury-plus-v30-maquina-3d-de-curado-y-lavado-alta-precision",
       "name": "Mercury Plus V3.0 | Máquina 3D de Curado y Lavado | Alta Precisión",
       "brand": "",
-      "categoryId": "impresoras-resina",
+      "categoryId": "accesorios-resina",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/59184452/resize/306/172?1737055691"
       ],
-      "specs": {},
+      "specs": {
+        "type": "Wash & Cure"
+      },
       "minPrice": 119990,
       "maxPrice": 119990,
       "storeCount": 1,
@@ -92476,78 +90613,6 @@
       ]
     },
     {
-      "slug": "termistor-original-para-impresora-artillery",
-      "id": "termistor-original-para-impresora-artillery",
-      "name": "Termistor original para Impresora Artillery",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F21322Ftermistor_artillery_1200x900_b86712f8-1b29-47e9-b640-23b6360b01b8.jpg?v=1720901657"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Hotend",
-        "compatibleWith": "Artillery"
-      },
-      "minPrice": 3500,
-      "maxPrice": 3500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T23:15:29.905Z",
-      "entries": [
-        {
-          "storeId": "afel",
-          "url": "https://afel.cl/products/termistor-original-para-impresora-artillery",
-          "price": 3500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "afel",
-          "price": 3500,
-          "recordedAt": "2026-04-01T23:15:29.905Z"
-        }
-      ]
-    },
-    {
-      "slug": "throat-garganta-artillery-original",
-      "id": "throat-garganta-artillery-original",
-      "name": "Throat Garganta Artillery Original",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F21792Fthroat_artillery.jpg?v=1720901502"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Piezas Hotend",
-        "compatibleWith": "Artillery"
-      },
-      "minPrice": 2500,
-      "maxPrice": 2500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T23:15:29.905Z",
-      "entries": [
-        {
-          "storeId": "afel",
-          "url": "https://afel.cl/products/throat-garganta-artillery-original",
-          "price": 2500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "afel",
-          "price": 2500,
-          "recordedAt": "2026-04-01T23:15:29.905Z"
-        }
-      ]
-    },
-    {
       "slug": "tubo-de-teflon-ptfe-capricorn-por-metro",
       "id": "tubo-de-teflon-ptfe-capricorn-por-metro",
       "name": "Tubo de Teflón PTFE Capricorn por Metro",
@@ -92612,80 +90677,8 @@
       ]
     },
     {
-      "slug": "tuerca-cama-caliente-impresoras-artillery",
-      "id": "tuerca-cama-caliente-impresoras-artillery",
-      "name": "Tuerca cama caliente Impresoras Artillery",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F24792Ftuerca_cama_caliente_artillery_1200x900_8929544b-63ff-46dc-9125-041192d86c3a.jpg?v=1720900599"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Cama / Superficie",
-        "compatibleWith": "Artillery"
-      },
-      "minPrice": 2400,
-      "maxPrice": 2400,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T23:15:29.905Z",
-      "entries": [
-        {
-          "storeId": "afel",
-          "url": "https://afel.cl/products/tuerca-cama-caliente-impresoras-artillery",
-          "price": 2400,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "afel",
-          "price": 2400,
-          "recordedAt": "2026-04-01T23:15:29.905Z"
-        }
-      ]
-    },
-    {
-      "slug": "ventilador-extrusor-4010-24v-artillery",
-      "id": "ventilador-extrusor-4010-24v-artillery",
-      "name": "Ventilador Extrusor 4010 24v Artillery",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F23942Fventilador_4010_artillery_1200x900_9de3edf0-f9c0-4d6e-9698-5b757f4bfc12.jpg?v=1720900865"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Extrusor",
-        "compatibleWith": "Artillery"
-      },
-      "minPrice": 3000,
-      "maxPrice": 3000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T23:15:29.905Z",
-      "entries": [
-        {
-          "storeId": "afel",
-          "url": "https://afel.cl/products/ventilador-extrusor-4010-24v-artillery",
-          "price": 3000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "afel",
-          "price": 3000,
-          "recordedAt": "2026-04-01T23:15:29.905Z"
-        }
-      ]
-    },
-    {
-      "slug": "ventilador-placa-madre-8020-24v-artillery",
-      "id": "ventilador-placa-madre-8020-24v-artillery",
+      "slug": "rsp-placa-artillery",
+      "id": "rsp-placa-artillery",
       "name": "Ventilador Placa Madre 8020 24v Artillery",
       "brand": "Artillery",
       "categoryId": "repuestos",
@@ -92715,42 +90708,6 @@
         {
           "storeId": "afel",
           "price": 3500,
-          "recordedAt": "2026-04-01T23:15:29.905Z"
-        }
-      ]
-    },
-    {
-      "slug": "vidrio-templado-artillery-genius-y-genius-pro",
-      "id": "vidrio-templado-artillery-genius-y-genius-pro",
-      "name": "Vidrio Templado Artillery Genius y Genius Pro",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F23732Fvidrio_templado_artillery_x1_1200x900_74a10abe-14f9-4de5-813d-055399dc38ad.jpg?v=1720900912"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Cama / Superficie",
-        "compatibleWith": "Artillery Genius"
-      },
-      "minPrice": 24000,
-      "maxPrice": 24000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T23:15:29.905Z",
-      "entries": [
-        {
-          "storeId": "afel",
-          "url": "https://afel.cl/products/vidrio-templado-artillery-genius-y-genius-pro",
-          "price": 24000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "afel",
-          "price": 24000,
           "recordedAt": "2026-04-01T23:15:29.905Z"
         }
       ]

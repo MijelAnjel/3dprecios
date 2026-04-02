@@ -65,6 +65,7 @@ export const STORES: StoreConfig[] = [
   // ── Retail técnico con sección 3D ────────────────────────────────────────
   { id: 'todotoner',        name: 'TodoToner',            slug: 'todotoner',        baseUrl: 'https://www.todotoner.cl',        logo: 'https://www.todotoner.cl/favicon.ico',        isActive: true  },
   { id: 'pcfactory',        name: 'PC Factory',           slug: 'pcfactory',        baseUrl: 'https://www.pcfactory.cl',        logo: 'https://www.pcfactory.cl/favicon.ico',        isActive: true  },
+  { id: 'bambulab',         name: 'Bambu Lab Chile',      slug: 'bambulab',         baseUrl: 'https://bambulab.com',            logo: 'https://bambulab.com/favicon.ico',            isActive: true  },
   // ── Retail general ───────────────────────────────────────────────────────
   { id: 'falabella',        name: 'Falabella',            slug: 'falabella',        baseUrl: 'https://www.falabella.com',       logo: 'https://www.falabella.com/favicon.ico',       isActive: true  },
   { id: 'sodimac',          name: 'Sodimac',              slug: 'sodimac',          baseUrl: 'https://www.sodimac.cl',          logo: 'https://www.sodimac.cl/favicon.ico',          isActive: true  },

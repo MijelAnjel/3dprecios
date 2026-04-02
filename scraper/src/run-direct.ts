@@ -45,6 +45,7 @@ import { scrapeEinsumos }         from './stores/einsumos';
 // ── Retail técnico ────────────────────────────────────────────
 import { scrapeTodotoner }        from './stores/todotoner';
 import { scrapePcfactory }        from './stores/pcfactory';
+import { scrapeBambulab }         from './stores/bambulab';
 // ── Retail general ────────────────────────────────────────────
 import { scrapeFalabella }        from './stores/falabella';
 import { scrapeSodimac }          from './stores/sodimac';
@@ -148,6 +149,7 @@ const STORE_SCRAPERS: Record<string, StoreScraperFn> = {
   einsumos:         scrapeEinsumos,
   todotoner:        scrapeTodotoner,
   pcfactory:        scrapePcfactory,
+  bambulab:         scrapeBambulab,
   falabella:        scrapeFalabella,
   sodimac:          scrapeSodimac,
   paris:            scrapeParis,
@@ -224,7 +226,7 @@ function mergeCatalog(
       const reCat = inferCategory(prod.name, '');
       const isDowngradeSafe = prod.categoryId === 'general'
         ? reCat !== 'general'
-        : ['repuestos', 'resinas', 'accesorios'].includes(reCat);
+          : ['repuestos', 'resinas', 'accesorios', 'accesorios-resina'].includes(reCat);
       if (isDowngradeSafe) {
         prod.categoryId = reCat;
         // Re-extraer specs con la categoría correcta
@@ -238,7 +240,7 @@ function mergeCatalog(
 
     // Re-extraer specs para productos ya en 'repuestos'/'impresoras-resina'
     // para aplicar nuevas reglas de partType, compatibleWith, resolution, etc.
-    if (prod.categoryId === 'repuestos' || prod.categoryId === 'impresoras-resina') {
+    if (prod.categoryId === 'repuestos' || prod.categoryId === 'impresoras-resina' || prod.categoryId === 'accesorios-resina') {
       const freshSpecs = extractSpecs(prod.name, prod.categoryId);
       if (Object.keys(freshSpecs).length > 0) {
         prod.specs = { ...prod.specs, ...freshSpecs }; // freshSpecs override stale values

@@ -185,6 +185,28 @@ const CATEGORIES: Category[] = [
     ],
   },
   {
+    id: 'accesorios-resina',
+    slug: 'accesorios-resina',
+    name: 'Accesorios de Resina',
+    icon: '🧴',
+    specFields: [
+      {
+        key: 'brand',
+        label: 'Marca',
+        type: 'select',
+        options: ['Anycubic', 'Creality', 'Elegoo', 'Flashforge', 'Phrozen'],
+        filterable: true,
+      },
+      {
+        key: 'type',
+        label: 'Tipo',
+        type: 'select',
+        options: ['Wash & Cure', 'Lámpara UV', 'PPE / Seguridad', 'Herramienta', 'Contenedor'],
+        filterable: true,
+      },
+    ],
+  },
+  {
     id: 'repuestos',
     slug: 'repuestos',
     name: 'Repuestos',

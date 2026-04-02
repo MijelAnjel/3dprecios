@@ -307,6 +307,20 @@ export function inferCategory(name: string, path: string): string {
     /\b3doodler\b|\bmynt3d\b|\bscribbler\b/i.test(n)
   ) return 'lapices-3d';
 
+  // ── 1e. Accesorios de resina (Wash & Cure, UV, PPE, herramientas) ───────
+  // Detección ANTES de filamentos para capturar "filtro resina" y similares.
+  if (
+    /wash\s*[&y]\s*cure|wash[\s-]cure|cure[\s-]wash|lavad[ao][\s&y+]+curad[ao]|curad[ao][\s&y+]+lavad[ao]/i.test(n) ||
+    /lavadora\s*ultra|washing\s*(station|machine)|curing\s*(station|unit|machine)|m[aá]quina\s*(de\s*)?curado/i.test(n) ||
+    /\bmercury\s*(plus|2|v\d|wash|cure|station)?\b/i.test(n) ||
+    /l[aá]mpara\s*(de\s*)?(uv|ultravioleta)|uv\s*lamp|uv\s*light|uv\s*curing\s*light|flash\s*cure|curing\s*lamp/i.test(n) ||
+    /filtro.*resina|resina.*filtro|embudo.*resina|resina.*embudo/i.test(n) ||
+    /guantes?\s*(de\s*)?(l[aá]tex|nitrilo|vinilo).*resina|guantes?.*resina|resina.*guantes/i.test(n) ||
+    /mascarilla.*resina|gafas.*uv|kit.*seguridad.*resina/i.test(n) ||
+    /bandeja.*resina|resina.*bandeja|cubeta.*lavado|tina.*resina|resina.*tina/i.test(n) ||
+    /esp[aá]tula.*resina|rasqueta.*resina|herramienta.*resina|resina.*herramienta/i.test(n)
+  ) return 'accesorios-resina';
+
   // ── 1. Filamentos ──────────────────────────────────────────────────────
   const filamentByPath = /filament/i.test(p);
   // Un producto es filamento si su nombre contiene keywords de material
@@ -343,8 +357,6 @@ export function inferCategory(name: string, path: string): string {
 
   // ── 3. Impresoras de resina y estaciones wash & cure ──────────────────
   if (/impresora.*resina|resina.*impresora|impresoras-resina/i.test(p)) return 'impresoras-resina';
-  // Estaciones de lavado y curado → accesorios esenciales de impresión resina
-  if (/wash.*cure|cure.*wash|curado.*lavado|lavado.*curado|lavadora\s*ultras|washing\s*station|curing\s*station|m[aá]quina.*curado/i.test(n)) return 'impresoras-resina';
   // Modelos conocidos de impresoras resina
   if (/\bsaturn\b|\bmars\s*\d|\bphoton\b|\bhalot\b|mono\s*x|\bphrozen\b|anycubic\s*m\d|elegoo\s*saturn|sonic\s*mini/i.test(n)) return 'impresoras-resina';
   if (isPrinterWord && /\bresina\b|\bresin\b|\bsla\b|\bmsla\b|\bdlp\b/i.test(n)) return 'impresoras-resina';
@@ -452,6 +464,8 @@ export function buildCanonicalKey(
         .toLowerCase()
         .replace(/\b(impresora|impresion|printer|3d|fdm|sla|msla|dlp|de\s+resina|resina)\b/g, ' ')
         .replace(new RegExp(`\\b${brandSlug.replace(/-/g, '[\\s\\-]+')}\\b`, 'gi'), ' ')
+        // Capturar variante sin separador: "bambulab" cuando brand slug es "bambu-lab"
+        .replace(new RegExp(`\\b${brandSlug.replace(/-/g, '')}\\b`, 'gi'), ' ')
         .replace(/\s{2,}/g, ' ')
         .trim();
       const modelSlug = slugify(modelStr);
@@ -459,6 +473,21 @@ export function buildCanonicalKey(
         const prefix = categoryId === 'impresoras-fdm' ? 'fdm' : 'rsp';
         return `${prefix}-${brandSlug}-${modelSlug}`;
       }
+    }
+  }
+
+  // ── Repuestos ──────────────────────────────────────────────────────────
+  if (categoryId === 'repuestos') {
+    const partType  = specs['partType']       as string | undefined;
+    const compat    = specs['compatibleWith']  as string | undefined;
+    const nozzleDia = specs['nozzleDiameter']  as string | undefined;
+    // No fusionar kits/sets — son productos distintos con precio diferente
+    const isKit = /\bkit\b|\bpack\b|\bx\s*[2-9]\b|\d+\s*unidades?\b/i.test(normalizedName);
+    if (partType && compat && !isKit) {
+      const diaStr = (partType === 'Nozzle' && nozzleDia)
+        ? `-${nozzleDia.replace('.', '')}mm`
+        : '';
+      return `rsp-${slugify(partType)}-${slugify(compat)}${diaStr}`;
     }
   }
 
@@ -706,6 +735,23 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
     else if (/\b8k\b|\b12k\b|\b16k\b/i.test(name))             specs['type'] = 'Alta Resolución';
     else if (/dental|castable|joyería|jewelry/i.test(name))     specs['type'] = 'Especializada';
     else                                                          specs['type'] = 'Estándar';
+  }
+
+  // ── Accesorios de Resina ──────────────────────────────────────────────
+  if (categorySlug === 'accesorios-resina') {
+    for (const [re, brand] of RESIN_BRANDS) {
+      if (re.test(name)) { specs['brand'] = brand; break; }
+    }
+    if (/wash\s*[&y]\s*cure|wash[\s-]cure|cure[\s-]wash|curing\s*(station|unit|machine)|lavad[ao].*curad[ao]|curad[ao].*lavad[ao]|lavadora\s*ultra|\bmercury\b/i.test(name))
+      specs['type'] = 'Wash & Cure';
+    else if (/l[aá]mpara\s*(uv|ultravioleta)|uv\s*lamp|uv\s*light|uv\s*curing|flash\s*cure/i.test(name))
+      specs['type'] = 'Lámpara UV';
+    else if (/guantes?|mascarilla|gafas\s*(uv|seguridad)|ppe/i.test(name))
+      specs['type'] = 'PPE / Seguridad';
+    else if (/filtro|embudo|esp[aá]tula|rasqueta/i.test(name))
+      specs['type'] = 'Herramienta';
+    else if (/bandeja|cubeta|tina|contenedor/i.test(name))
+      specs['type'] = 'Contenedor';
   }
 
   // ── Repuestos ─────────────────────────────────────────────────────────
