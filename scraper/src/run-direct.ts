@@ -5,7 +5,7 @@ import * as fs   from 'fs';
 import * as path from 'path';
 
 import { ScraperResult, STORES, StoreConfig } from './models';
-import { slugify, normalizeProductName, extractSpecs } from './utils';
+import { slugify, normalizeProductName, extractSpecs, buildCanonicalKey, inferCategory } from './utils';
 
 // ── Tiendas especializadas ────────────────────────────────────
 import { scrapeHorus3d }          from './stores/horus3d';
@@ -209,10 +209,53 @@ function mergeCatalog(
   const now           = new Date().toISOString();
   const ninetyDaysAgo = new Date(Date.now() - 90 * 24 * 60 * 60 * 1000).toISOString();
 
-  // Clonar mapa slug → producto (deep copy para no mutar el original durante iteración)
-  const productMap = new Map<string, CatalogProduct>(
-    existing.products.map(p => [p.slug, JSON.parse(JSON.stringify(p)) as CatalogProduct]),
-  );
+  // ── Productos existentes: re-indexar con clave canónica si es posible ───
+  // Esto hace que los productos ya almacenados adopten las nuevas claves
+  // canónicas (fil-…, fdm-…, res-…) sin necesidad de re-scrape.
+  const productMap = new Map<string, CatalogProduct>();
+
+  for (const p of existing.products) {
+    const prod = JSON.parse(JSON.stringify(p)) as CatalogProduct;
+
+    // Re-inferir categoría si sigue siendo 'general' — puede que nuevas reglas la clasifiquen
+    if (prod.categoryId === 'general') {
+      const reCat = inferCategory(prod.name, '');
+      if (reCat !== 'general') {
+        prod.categoryId = reCat;
+        // Re-extraer specs con la categoría correcta
+        const reSpecs = extractSpecs(prod.name, reCat);
+        if (Object.keys(reSpecs).length > Object.keys(prod.specs).length) {
+          prod.specs    = reSpecs;
+          prod.brand    = prod.brand || (reSpecs['brand'] as string | undefined) || '';
+        }
+      }
+    }
+
+    // Construir clave canónica y re-insertar bajo esa clave
+    const canonKey = buildCanonicalKey(prod.categoryId, prod.specs, prod.name);
+    if (canonKey !== prod.slug && !productMap.has(canonKey)) {
+      // Producto migrado a clave canónica
+      prod.slug = canonKey;
+      prod.id   = canonKey;
+    } else if (productMap.has(canonKey) && canonKey !== prod.slug) {
+      // Ya existe un producto con la misma clave canónica → fusionar entries
+      const existing_canon = productMap.get(canonKey)!;
+      for (const entry of prod.entries) {
+        const idx = existing_canon.entries.findIndex(e => e.storeId === entry.storeId);
+        if (idx >= 0) {
+          existing_canon.entries[idx] = entry;
+        } else {
+          existing_canon.entries.push(entry);
+        }
+      }
+      for (const h of prod.history) {
+        existing_canon.history.push(h);
+      }
+      continue; // no re-insertar el producto duplicado
+    }
+
+    productMap.set(prod.slug, prod);
+  }
 
   // ── Procesar cada resultado del scrape ──────────────────────────────────
   for (const result of results) {
@@ -225,12 +268,16 @@ function mergeCatalog(
         : rawName;
 
     const normalizedName = normalizeProductName(cleanName);
-    const slug = slugify(normalizedName);
-    if (!slug) continue;
+    if (!slugify(normalizedName)) continue;
 
     const validImage =
       result.imageUrl && !result.imageUrl.startsWith('data:') ? result.imageUrl : undefined;
     const categoryId = result.categorySlug ?? 'general';
+
+    // Extraer specs desde el nombre original (antes de normalización) para
+    // capturar colores en paréntesis ("PLA Rojo (1kg)") antes de que se eliminen
+    const specs      = extractSpecs(cleanName, categoryId);
+    const canonKey   = buildCanonicalKey(categoryId, specs, normalizedName);
 
     const newEntry: CatalogEntry = {
       storeId: result.storeId,
@@ -240,14 +287,13 @@ function mergeCatalog(
       ...(result.sku ? { sku: result.sku } : {}),
     };
 
-    const prod = productMap.get(slug);
+    const prod = productMap.get(canonKey);
 
     if (!prod) {
       // ── Producto nuevo ─────────────────────────────────────────
-      const specs = extractSpecs(normalizedName, categoryId);
-      productMap.set(slug, {
-        slug,
-        id:          slug,
+      productMap.set(canonKey, {
+        slug:        canonKey,
+        id:          canonKey,
         name:        cleanName,
         brand:       result.brand ?? (specs['brand'] as string | undefined) ?? '',
         categoryId,
@@ -284,6 +330,11 @@ function mergeCatalog(
       // Actualizar categoría si la nueva es más específica
       if (categoryId !== 'general' && prod.categoryId === 'general') {
         prod.categoryId = categoryId;
+        // Re-extraer specs con la categoría correcta
+        const betterSpecs = extractSpecs(cleanName, categoryId);
+        if (Object.keys(betterSpecs).length > Object.keys(prod.specs).length) {
+          prod.specs = betterSpecs;
+        }
       }
 
       // Actualizar imagen si no hay una válida
@@ -297,6 +348,15 @@ function mergeCatalog(
 
   // ── Recalcular minPrice / maxPrice / storeCount ─────────────────────────
   for (const prod of productMap.values()) {
+    // Deduplicar entries por (storeId + url) — previene duplicados del catálogo anterior
+    const seenEntryKeys = new Set<string>();
+    prod.entries = prod.entries.filter(entry => {
+      const key = `${entry.storeId}:${entry.url}`;
+      if (seenEntryKeys.has(key)) return false;
+      seenEntryKeys.add(key);
+      return true;
+    });
+
     if (prod.entries.length > 0) {
       const available = prod.entries.filter(e => e.stock !== 'out');
       const priceSrc  = available.length > 0 ? available : prod.entries;
@@ -426,6 +486,8 @@ async function main(): Promise<void> {
   console.log(`[3DPrecios Scraper] ${new Date().toISOString()}`);
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
 
+  const isReprocess = process.argv.includes('--reprocess');
+
   // ── Cargar catálogo existente ──────────────────────────────────────────
   const catalogPath = path.resolve(__dirname, '../../src/assets/data/catalog.json');
   let existingCatalog: CatalogData = {
@@ -439,6 +501,32 @@ async function main(): Promise<void> {
     console.log(`[Direct] Catálogo existente: ${existingCatalog.products.length} productos`);
   } else {
     console.log('[Direct] No existe catálogo previo — creando desde cero');
+  }
+
+  // ── Modo --reprocess: re-categoriza y re-deduplica sin scraping ────────
+  // Ideal para aplicar nuevas reglas de categorización/deduplicación
+  // sobre el catálogo existente sin necesitar volver a hacer scraping.
+  if (isReprocess) {
+    console.log('[Direct] Modo --reprocess: re-procesando catálogo existente...');
+    const catalog = mergeCatalog(existingCatalog, [], new Set());
+    fs.writeFileSync(catalogPath, JSON.stringify(catalog, null, 2), 'utf-8');
+
+    // Estadísticas post-reprocess
+    const multiStore = catalog.products.filter(p => p.storeCount > 1).length;
+    const byCat = catalog.products.reduce<Record<string, number>>((acc, p) => {
+      acc[p.categoryId] = (acc[p.categoryId] ?? 0) + 1;
+      return acc;
+    }, {});
+    console.log(`[Direct] ✓ catalog.json: ${catalog.products.length} productos`);
+    console.log(`[Direct] Productos en múltiples tiendas: ${multiStore}`);
+    console.log('[Direct] Distribución por categoría:');
+    Object.entries(byCat).sort((a, b) => b[1] - a[1]).forEach(([cat, count]) => {
+      console.log(`  ${cat}: ${count}`);
+    });
+
+    generateSitemap(catalog);
+    console.log('\n[3DPrecios Scraper] ✓ Re-proceso completado.');
+    return;
   }
 
   // ── Ejecutar scrapers ──────────────────────────────────────────────────

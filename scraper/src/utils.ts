@@ -157,17 +157,22 @@ export function normalizeProductName(name: string): string {
   // 4. Quitar sufijos de marketing: "- Importado", "| Oferta"
   n = n.replace(/\s*[-–|]\s*(importado|import|oferta|sale|nuevo|new|stock|disponible|sección)\b.*/gi, '');
 
-  // 5. Normalizar pesos/medidas: "1 Kg" → "1kg"
+  // 5. Quitar frases de descripción verbosas (cimech3d, otros WooCommerce)
+  //    "para impresión 3D marca X" → eliminar la frase descriptiva pero mantener la marca
+  n = n.replace(/\s+para\s+(impresi[oó]n|impresoras?)\s+3d\b/gi, '');
+  n = n.replace(/\s+marca\s+(?=\S)/gi, ' '); // "marca eSUN" → " eSUN"
+
+  // 6. Normalizar pesos/medidas: "1 Kg" → "1kg"
   n = n.replace(/(\d)\s*kg\b/gi, '$1kg');
   n = n.replace(/(\d)\s*g\b(?!r)/gi, '$1g');
   n = n.replace(/(\d)\s*ml\b/gi, '$1ml');
   n = n.replace(/(\d)\s*mm\b/gi, '$1mm');
 
-  // 6. Normalizar nombres de marca para consistencia entre tiendas
+  // 7. Normalizar nombres de marca para consistencia entre tiendas
   n = n.replace(/bambu\.?lab\b/gi, 'Bambu Lab');
   n = n.replace(/\be-?sun\b/gi, 'eSUN');
 
-  // 7. Compactar espacios
+  // 8. Compactar espacios
   n = n.replace(/\s+/g, ' ').trim();
 
   return n;
@@ -202,21 +207,37 @@ export function inferCategory(name: string, path: string): string {
     /\bcalefactor\b|\bheater[\s-]?block\b|\btermistor\b|thermistor|thermocouple|termopar|heatbreak|heat\s*break/i.test(n) ||
     // Boquillas y extrusores
     /\bnozzle\b|\bboquilla\b|\bextrusor\b|\bextruder\b|\bbowden\b|\bptfe\b(?!\s*filament)|\bhotend\b/i.test(n) ||
-    // Motion: correas, poleas, rodamientos, raíles
-    /\bcorrea\b|\bpulley\b|\brodamiento\b|\bbearing\b|rail\s*lineal|lead[\s-]?screw|trapezoidal|varilla\s*roscada/i.test(n) ||
+    // Motion: correas, poleas, rodamientos, raíles (EN + ES)
+    /\bcorrea\b|\bpulley\b|\bpolea\b|\brodamiento\b|\bbearing\b|rail\s*lineal|lead[\s-]?screw|trapezoidal|varilla\s*roscada/i.test(n) ||
     // Ventiladores específicos (4010, 5015, hotend, capa) — no ventilador genérico
     /ventilador\s*de\s*capa|layer\s*fan|hotend\s*fan|ventilador.*\b\d{4}\b|\b\d{4}\b.*ventilador/i.test(n) ||
-    // Cama y superficie de impresión
-    /cama\s*caliente|heated\s*bed|vidrio\s*templado|placa\s*de\s*construcci|spring\s*steel|\bpei\b|build\s*plate/i.test(n) ||
+    // Cama y superficie de impresión / placas de impresión reemplazables
+    /cama\s*caliente|heated\s*bed|vidrio\s*templado|placa\s*de\s*construcci|spring\s*steel|\bpei\b|build\s*plate|\bcryogrip\b|cryo\s*grip|\bflexplate\b|panda.*plate/i.test(n) ||
     // Protectores de pantalla FEP para resina
     /protector\s*de\s*pantalla|\bfep\b|\bnfep\b|release\s*film|pantalla\s*fep/i.test(n) ||
     // Piezas estructurales / paneles de impresoras por marca
     /panel\s*(hr|hl|lateral|frontal|trasero|derecho|izquierdo)|panel.*bambu|bambu.*panel/i.test(n) ||
     /estructura\s*bambu|bambu.*enclosure|enclosure.*bambu|bambu.*estructura/i.test(n) ||
-    // Electrónica de impresoras
+    // Electrónica de impresoras 3D (mainboards, placas madre 3D)
     /\bmainboard\b|placa\s*madre.*impr|placa\s*base.*impr|raspberry.*impr/i.test(n) ||
+    /placa\s*(madre|pcb|controladora)\s*(artillery|creality|ender|bambu|prusa|anycubic|elegoo)/i.test(n) ||
+    /placa\s*(madre|pcb|controladora)\s*(eje|x\d?|z\d?)/i.test(n) ||
     // Controladores de impresoras (BTT, MKS, etc.)
     /\bbigtreetech\b|\bbtt\b|\bmks\s*(gen|sbase|robin)|skr\s*(mini|pro|v\d)|octopus\s*pro|spider\s*v\d/i.test(n) ||
+    /\bramps\s*\d\.?\d?\b|tarjeta\s+controlador\s+ramps/i.test(n) ||
+    // Drivers de motores para impresoras 3D
+    /\ba4988\b|\bdrv8825\b|driver\s+motor\s+paso|driver\s+stepper/i.test(n) ||
+    // Pantallas LCD/TFT de impresoras 3D
+    /pantalla\s+(lcd|tft|t[aá]ctil).*(artillery|creality|ender|prusa|bambu|anycubic|elegoo)/i.test(n) ||
+    /(artillery|creality|ender|prusa|bambu|anycubic|elegoo).*pantalla\s+(lcd|tft|t[aá]ctil)/i.test(n) ||
+    // Motores paso a paso para impresoras 3D (cuando se menciona eje o marca de impresora)
+    /motor\s+paso\s+a\s+paso.*(eje|artillery|ender|creality)/i.test(n) ||
+    /(eje\s+[xyz]|artillery|ender|creality).*motor\s+paso/i.test(n) ||
+    // Fuentes de poder para impresoras 3D
+    /fuente\s+(de\s+)?poder.*(impres|artillery|creality|ender|prusa|bambu|meanwell)/i.test(n) ||
+    /\bmeanwell\b.*\d+[vV]\s*\d/i.test(n) ||
+    // Sistemas de extrusión nombrados
+    /sistema\s+de\s+extrusi[oó]n|extrus[oó]n\s+titan|titan\s+extrus/i.test(n) ||
     // Kits de repuesto explícitos
     /kit\s*correa|kit\s*nozzle|kit\s*hotend|upgrade\s*kit\s*(ender|bambu|prusa)/i.test(n);
 
@@ -225,9 +246,10 @@ export function inferCategory(name: string, path: string): string {
   // ── 1b. Secadores de filamento ─────────────────────────────────────────
   // Antes de filamentos, para que "Secador de Filamento" no caiga en filamentos-pla
   if (
-    /\bsecador\b.*filament|\bfilament.*secador\b/i.test(n) ||
+    /secador[a]?.*filament|filament.*secador[a]?/i.test(n) ||
     /dry[\s-]?box|drybox\b|filament[\s-]?dryer|dryer.*filament/i.test(n) ||
-    /\bsunlu\s*s[12]\b|\bpolymaker\s*polydryer\b|\badu\b.*filament/i.test(n)
+    /\bsunlu\s*s[12]\b|\bpolymaker\s*polydryer\b|\badu\b.*filament/i.test(n) ||
+    /\besun\s*lite\b.*secar|secar.*\besun/i.test(n)
   ) return 'secadores';
 
   // ── 1c. Scanners 3D ────────────────────────────────────────────────────
@@ -249,7 +271,13 @@ export function inferCategory(name: string, path: string): string {
   const filamentByName = /\bpla\b|polil[aá]ctico|\bpetg\b|\babs\b|\basa\b|\btpu\b|\btpe\b|\bfilamento\b|\bfilament\b/i.test(n);
   const isPrinterWord  = /\bimpresora\b|\bprinter\b/i.test(n);
 
-  if (filamentByPath || (filamentByName && !isPrinterWord)) {
+  // Excluir accesorios que mencionan filamento en su nombre pero NO son filamento
+  const isFilamentoAccessory =
+    /soporte.*(carrete|bobina|spool)|carrete.*(soporte|holder)|spool\s*holder/i.test(n) ||   // soportes de carrete
+    /filtro.*resina|resina.*filtro|filtro.*impresi/i.test(n) ||                               // filtros de resina
+    /guia.*filament|filament.*guia|guia.*ptfe/i.test(n);                                      // guías/tubos
+
+  if (!isFilamentoAccessory && (filamentByPath || (filamentByName && !isPrinterWord))) {
     if (/\bpetg\b/i.test(n) || /petg/i.test(p))                   return 'filamentos-petg';
     if (/\babs\b|\basa\b/i.test(n) || /\babs\b|\basa\b/i.test(p)) return 'filamentos-abs';
     if (/\btpu\b|\btpe\b/i.test(n) || /tpu|tpe/i.test(p))         return 'filamentos-tpu';
@@ -284,19 +312,118 @@ export function inferCategory(name: string, path: string): string {
   if (/\bbambu\b|\bbambu\s+lab\b/i.test(n) && !filamentByName) return 'impresoras-fdm';
   if (isPrinterWord && !/resina|resin|sla|msla|dlp/i.test(n)) return 'impresoras-fdm';
 
-  // ── 5. Repuestos generales (por path) ─────────────────────────────────
+  // ── 5. Repuestos generales (por path o nombre) ─────────────────────────────
   if (/repuesto|accesorio|spare|upgrade|hotend|nozzle|extrusor|accesorios/i.test(p)) return 'repuestos';
   if (/\bnozzle\b|\bhotend\b|\bextrusor\b|\bbowden\b|\bptfe\b|motor\s*nema|\brodamiento\b|cama\s*caliente|rail/i.test(n)) return 'repuestos';
+  // Poleas y sistemas de movimiento (español)
+  if (/\bpolea\b|gt2\s*(\d+\s*dientes|pulley|belt)|correa\s*gt2/i.test(n)) return 'repuestos';
+  // Fuentes de poder / switching power supplies genéricas
+  if (/fuente\s+(de\s+)?poder|fuente\s+switching|switching\s+power\s+supply/i.test(n)) return 'repuestos';
+  // Motores paso a paso / stepper motors genéricos
+  if (/motor\s+paso\s+a\s+paso|\bnema\s*\d+\b|stepper\s+motor/i.test(n)) return 'repuestos';
+  // Placas madre y electrónica 3D genérica
+  if (/\bplaca\s+madre\b|placa\s+pcb\b|relé\s+estado|rel[eé].*s[oó]lido|solid\s+state\s+relay|\bssr\s+dc/i.test(n)) return 'repuestos';
+
+  // ── 5b. Insumos y herramientas de tienda → accesorios ─────────────────
+  if (/\/insumos\/|\/herramientas/i.test(p)) {
+    // Sub-items que caen en repuestos aunque vengan de insumos
+    // (las boquillas ya fueron capturadas por isRepuesto arriba)
+    return 'accesorios';
+  }
 
   // ── 6. Accesorios generales ─────────────────────────────────────────────
   if (
-    /\benclosure\b|\bcubierta\s*impresora\b|\bcaja\s*impresora\b/i.test(n) ||
-    /\bglue\s*stick\b|\bpegamento.*impr|\bspray.*impr|\badhesivo.*impr/i.test(n) ||
+    // Enclosures / gabinetes / cubiertas de impresora (incluye eEnclosure de eSUN)
+    /enclosure|\bcubierta\s*impresora\b|\bcaja\s*impresora\b|\bgabinete.*impresi|\bgabinete.*3d\b/i.test(n) ||
+    // Adhesivos y lacas para impresión 3D
+    /\bglue\s*stick\b|\bpegamento.*impr|\bspray.*impr|\badhesivo.*impr|laca.*impresi|impresi.*laca/i.test(n) ||
+    // Superficies de impresión
     /\bsuperficie\s*de\s*impresi[oó]n\b|\bbuild\s*surface\b|\balfombrilla\s*magn/i.test(n) ||
-    /\bcapricorn\b|\bptfe\s*tube\b|\btube\s*ptfe\b/i.test(n)
+    // Tubos PTFE y accesorios de extrusión genéricos
+    /\bcapricorn\b|\bptfe\s*tube\b|\btube\s*ptfe\b/i.test(n) ||
+    // Almacenamiento de filamentos
+    /\bevacuum\b|\bespool\b|vacupack.*filament|filament.*vacuum|almacen.*filament|contenedor.*filament/i.test(n) ||
+    // Carrete reutilizable / spool
+    /carrete\s*reutilizable|\brespoolable\b|refill\s*spool|\bespool\b/i.test(n)
   ) return 'accesorios';
 
+  // ── 7. Path-based fallbacks ────────────────────────────────────────────
+  if (/mantenimiento/i.test(p)) return 'accesorios';
+
   return 'general';
+}
+
+// ── Clave canónica para comparar el MISMO producto entre tiendas ──────────
+//
+// Problema: "Filamento PLA Blanco para impresión 3D marca eSUN 1.75mm 1Kg" (cimech3d)
+//            vs "PLA Blanco eSUN" (evstore) son el mismo producto → no deben crear
+//            fichas separadas en el catálogo.
+//
+// Solución: derivar la clave de atributos estructurales (brand, material, weight…)
+// en vez de del nombre completo slugificado.
+//
+// Se llama DESPUÉS de extractSpecs para disponer de los specs ya parseados.
+// Si no hay suficiente info estructurada se devuelve el slug de nombre como fallback.
+export function buildCanonicalKey(
+  categoryId:    string,
+  specs:         Record<string, string | number>,
+  normalizedName: string,
+): string {
+  const fallback = slugify(normalizedName);
+
+  // ── Filamentos ──────────────────────────────────────────────────────────
+  if (categoryId.startsWith('filamento')) {
+    const brand    = specs['brand']    as string | undefined;
+    const material = specs['material'] as string | undefined;
+    const weight   = specs['weight']   as string | undefined;   // gramos
+    const diameter = specs['diameter'] as string | undefined;   // "1.75" | "2.85"
+    const color    = specs['color']    as string | undefined;
+
+    // Necesitamos al menos marca + material para una clave útil
+    if (brand && material) {
+      // "1.75" → "175mm"  |  "2.85" → "285mm"
+      const diamStr   = diameter ? diameter.replace('.', '') + 'mm' : '175mm';
+      // peso en gramos, o 1000g por defecto (el 90% del mercado es 1kg)
+      const weightStr = weight ? weight + 'g' : '1000g';
+      // color normalizado o "sc" (sin color) si no se detectó
+      const colorStr  = color ? slugify(color) : 'sc';
+      return `fil-${slugify(brand)}-${slugify(material)}-${weightStr}-${diamStr}-${colorStr}`;
+    }
+  }
+
+  // ── Impresoras FDM / Resina ─────────────────────────────────────────────
+  if (categoryId === 'impresoras-fdm' || categoryId === 'impresoras-resina') {
+    const brand = specs['brand'] as string | undefined;
+    if (brand) {
+      const brandSlug = slugify(brand);
+      // Eliminar marca y palabras genéricas de categoría para aislar el modelo
+      const modelStr = normalizedName
+        .toLowerCase()
+        .replace(/\b(impresora|impresion|printer|3d|fdm|sla|msla|dlp|de\s+resina|resina)\b/g, ' ')
+        .replace(new RegExp(`\\b${brandSlug.replace(/-/g, '[\\s\\-]+')}\\b`, 'gi'), ' ')
+        .replace(/\s{2,}/g, ' ')
+        .trim();
+      const modelSlug = slugify(modelStr);
+      if (modelSlug.length >= 3) {
+        const prefix = categoryId === 'impresoras-fdm' ? 'fdm' : 'rsp';
+        return `${prefix}-${brandSlug}-${modelSlug}`;
+      }
+    }
+  }
+
+  // ── Resinas líquidas ─────────────────────────────────────────────────────
+  if (categoryId === 'resinas') {
+    const brand  = specs['brand']  as string | undefined;
+    const type   = specs['type']   as string | undefined;
+    const volume = specs['volume'] as string | undefined;  // ml
+
+    if (brand && volume) {
+      const typeSlug = type ? slugify(type) : 'estandar';
+      return `res-${slugify(brand)}-${typeSlug}-${volume}ml`;
+    }
+  }
+
+  return fallback;
 }
 
 // ── Extrae specs estructurados desde el nombre del producto ───────────────
@@ -313,6 +440,7 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
     [/\belegoo\b/i, 'Elegoo'],
     [/\bsunlu\b/i, 'Sunlu'],
     [/\banycubic\b/i, 'Anycubic'],
+    [/\bisanmate\b/i, 'iSANMATE'],
     // Alta gama y rendimiento
     [/\bpolymaker\b/i, 'Polymaker'],
     [/\bprusament\b|\bprusa\b.*filament/i, 'Prusament'],
@@ -339,6 +467,9 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
     // Regionales
     [/\bgrilon3?\b|\bgrilon\s*3\b/i, 'Grilon3'],
     [/\bprintalot\b/i, 'Printalot'],
+    [/\bpopbit\b/i, 'PopBit'],
+    [/\bsunhokey\b/i, 'Sunhokey'],
+    [/\bhello3d\b/i, 'Hello3D'],
     // Otras
     [/\b3dl[aá]c\b|3d\s*lac/i, '3DLac'],
     [/\braiser3d\b|\braise3d\b/i, 'Raise3D'],
@@ -445,7 +576,7 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
       [/azul\s*oscuro|dark\s*blue|navy/i, 'Azul Oscuro'],
       [/\bverde\b|\bgreen\b/i, 'Verde'],
       [/\bamarillo\b|\byellow\b/i, 'Amarillo'],
-      [/\bnaranja\b|\borange\b/i, 'Naranja'],
+      [/\bnaranja\b|\bnaranjo\b|\borange\b/i, 'Naranja'],
       [/\bgris\b|\bgray\b|\bgrey\b/i, 'Gris'],
       [/\bmorado\b|\bvioleta\b|\bpurple\b/i, 'Morado'],
       [/\btransparente\b|\btransparent\b|\bclear\b/i, 'Transparente'],
