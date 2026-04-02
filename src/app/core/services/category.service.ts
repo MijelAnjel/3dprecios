@@ -2,18 +2,20 @@ import { Injectable } from '@angular/core';
 import { Category, SpecField } from '../models';
 
 // Marcas de filamento disponibles en Chile (fuente: tiendas monitoreadas + tiendasypaginas.md)
+// IMPORTANTE: mantener sincronizado con FILAMENT_BRANDS en scraper/src/utils.ts
 const FILAMENT_BRANDS: string[] = [
   // Globales dominantes
-  'Anycubic', 'Bambu Lab', 'Creality', 'eSUN', 'Elegoo', 'Sunlu',
+  'Anycubic', 'Bambu Lab', 'Creality', 'eSUN', 'Elegoo', 'iSANMATE', 'Sunlu',
   // Alta gama y rendimiento
   'AzureFilm', 'Fiberlogy', 'Flashforge', 'FormFutura', 'Hatchbox',
-  'Overture', 'Polymaker', 'Prusament',
+  'Overture', 'Polymaker', 'Prusament', 'Raise3D',
   // Especializadas e ingeniería
   'Colorfabb', 'NinjaTek', 'Proto-Pasta', 'Smartfil', 'Spectrum', 'Taulman3D',
   // Económicas y de batallas
   'Anet', 'GeeeTech', 'Jayo', 'Kingroon', 'Voxelab', 'Zaxe',
-  // Regionales (Argentina/Chile)
-  'Grilon3', 'Printalot',
+  // Regionales/locales (Argentina/Chile y otras)
+  'Grilon3', 'Hello3D', 'Jamg He', 'MakersChile', 'Panchroma',
+  'Plastar', 'PopBit', 'Printalot', 'Sunhokey', 'Winkle',
 ];
 
 // Campos de spec compartidos para filamentos estándar (PLA, PETG, ABS, TPU)

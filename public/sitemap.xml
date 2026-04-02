@@ -1598,7 +1598,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-azul</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-verde</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -1617,12 +1617,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-plateado</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-verde</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -3056,7 +3050,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-tpu-1000g-175mm-sc</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-tpu-1000g-175mm-naranja</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -3122,7 +3116,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-polymaker-pla-1000g-175mm-sc</loc>
+    <loc>https://dprecios.web.app/productos/fil-polymaker-pla-1000g-175mm-naranja</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -3806,7 +3800,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-sunlu-pla-silk-1000g-175mm-sc</loc>
+    <loc>https://dprecios.web.app/productos/fil-sunlu-pla-silk-1000g-175mm-naranja</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -4640,19 +4634,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/pla-f-makerschile</loc>
+    <loc>https://dprecios.web.app/productos/fil-makerschile-pla-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/fil-creality-pla-1000g-175mm-sc</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pla-f-madera-makers-chile</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -5108,25 +5096,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/abs-makerschile</loc>
+    <loc>https://dprecios.web.app/productos/fil-makerschile-abs-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/petg-makerschile</loc>
+    <loc>https://dprecios.web.app/productos/fil-makerschile-petg-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/tpu-makerschile</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pla-makerschile</loc>
+    <loc>https://dprecios.web.app/productos/fil-makerschile-tpu-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -5204,19 +5186,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/pla-hd-winkle</loc>
+    <loc>https://dprecios.web.app/productos/fil-winkle-pla-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/pla-hd-marmol-winkle</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pla-hd-metalizado-silk-winkle</loc>
+    <loc>https://dprecios.web.app/productos/fil-winkle-pla-silk-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -5714,7 +5690,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/pla-basic-bambu-lab</loc>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-pla-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -5732,7 +5708,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/pla-mate-bambu-lab</loc>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-pla-matte-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -6206,25 +6182,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-bambu-lab-asa-aero-1kg-175mm</loc>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-asa-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-bambu-pva-clear-500-grs</loc>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-pva-1000g-175mm-transparente</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/filamento-esun-epla-cf-fibra-de-carbono</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamentos-bambu-lab-asa-1kg-175mm</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -6242,19 +6212,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamentos-bambu-lab-abs-azure-celeste-1kg-175mm</loc>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-abs-1000g-175mm-celeste</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamentos-bambu-lab-petg-translucido-1kg-175mm</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamentos-bambu-lab-pla-basico-degradado-1kg-175mm</loc>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-petg-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -6266,37 +6230,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamentos-refill-bambu-lab-pla-mate-1kg-175mm</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamentos-bambu-lab-pla-basico-1kg-175mm</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamentos-bambu-lab-pla-mate-1kg-175mm</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/fil-esun-pla-matte-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamentos-refill-bambu-lab-pla-basico-1kg-175mm</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-pla-plastar-175mm-1kg</loc>
+    <loc>https://dprecios.web.app/productos/fil-plastar-pla-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -6854,13 +6794,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-jamg-he-pla</loc>
+    <loc>https://dprecios.web.app/productos/fil-jamg-he-pla-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-jamg-he-pla-silk</loc>
+    <loc>https://dprecios.web.app/productos/fil-jamg-he-pla-silk-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -6926,37 +6866,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-jamg-he-pla-silk-arcoiris</loc>
+    <loc>https://dprecios.web.app/productos/fil-jamg-he-pla-cf-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-jamg-he-pla-dual-silk</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-jamg-he-tri-pla-silk</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-jamg-he-fibra-de-carbono-pla</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-jamg-he-tpu</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-jamg-he-fibra-de-vidrio-pla</loc>
+    <loc>https://dprecios.web.app/productos/fil-jamg-he-tpu-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -7100,13 +7016,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-jamg-he-petg-negro</loc>
+    <loc>https://dprecios.web.app/productos/fil-jamg-he-petg-1000g-175mm-negro</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-jamg-he-abs</loc>
+    <loc>https://dprecios.web.app/productos/fil-jamg-he-abs-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -7185,12 +7101,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/escaner-3d-creality-sermoon-s1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-jamg-he-pla-basic</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -7292,7 +7202,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-pla-verde-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-pla-1000g-175mm-verde</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -7304,31 +7214,31 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-pla-seda-plata-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-pla-silk-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-pla-seda-dorado-u-oro-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-pla-silk-1000g-175mm-dorado</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-pla-seda-cobre-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-pla-silk-1000g-175mm-cobre</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-pla-seda-blanco-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-pla-silk-1000g-175mm-blanco</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-pla-rojo-vino-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-pla-1000g-175mm-rojo</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -7340,13 +7250,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-pla-piel-claro-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-pla-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-pla-negro-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-pla-1000g-175mm-negro</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -7358,19 +7268,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-pla-naranjo-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-pla-1000g-175mm-naranja</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-pla-morado-1kg-todotonercl-filamentos</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-pla-madera-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-pla-1000g-175mm-morado</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -7382,19 +7286,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-pla-glitter-brilla-en-oscuridad-verde-neon-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-pla-1000g-175mm-rosa</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-pla-fucsia-1kg-todotonercl-filamentos</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-pla-blanco-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-pla-1000g-175mm-blanco</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -7406,7 +7304,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-pla-azul-profundo-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-pla-1000g-175mm-azul</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -7418,7 +7316,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-pla-amarillo-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-pla-1000g-175mm-amarillo</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -7430,31 +7328,25 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-pla-alta-velocidad-madera-claro-10-fibra-madera-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-petg-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-petg-piel-claro-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-petg-1000g-175mm-negro</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-petg-negro-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-petg-1000g-175mm-blanco</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-petg-blanco-1kg-todotonercl-filamentos</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-petg-azul-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-petg-1000g-175mm-azul</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -7478,49 +7370,31 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-hyper-petg-alta-velodad-piel-clara-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-petg-1000g-175mm-gris</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-hyper-petg-alta-velodad-gris-espacial-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-abs-1000g-175mm-naranja</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-hyper-petg-alta-velodad-gris-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-asa-1000g-175mm-negro</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-hyper-petg-alta-velodad-blanco-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-asa-1000g-175mm-blanco</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-hyper-abs-alta-velocidad-naranjo-1kg-todotonercl-filamentos</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-asa-alta-velocidad-negro-1kg-todotonercl-filamentos</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-asa-alta-velocidad-blanco-1kg-todotonercl-filamentos</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-abs-negro-1kg-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-abs-1000g-175mm-negro</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -7719,12 +7593,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/rsp-anycubic-mono-4</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bambu-lab-filamento-pla-lite-1kg-175mm</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -8924,12 +8792,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-sunlu-pla-silk-1000g-175mm-naranja</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/fil-sunlu-petg-1000g-175mm-naranja</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -8966,19 +8828,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-polymaker-pla-1000g-175mm-naranja</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/fil-esun-abs-1000g-175mm-naranja</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-tpu-1000g-175mm-naranja</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -9458,133 +9308,73 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-marmol-sand-stone</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-marmol-slate-grey</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-1000g-175mm-gris</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-army-brown</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-matte-1000g-175mm-cafe</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-army-dark-green</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-matte-1000g-175mm-verde</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-army-light-green</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-matte-1000g-175mm-morado</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-army-purple</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-matte-1000g-175mm-blanco</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-cotton-white</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-matte-1000g-175mm-azul</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-earth-brown</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-matte-1000g-175mm-rojo</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-muted-blue</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-matte-1000g-175mm-sc</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-muted-green</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-matte-1000g-175mm-menta</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-muted-purple</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-matte-1000g-175mm-rosa</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-muted-red</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-muted-white</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-pastel-banana</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-pastel-candy</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-pastel-ice</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-pastel-mint</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-pastel-periwinkle</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-pastel-watermelon</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-sakura-pink</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-sunrise-orange</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-wood-brown</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-matte-1000g-175mm-naranja</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10064,109 +9854,31 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-marmol-blanco</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-1000g-175mm-blanco</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-marmol-brick</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-1000g-175mm-lima</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-marmol-lime-stone</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-matte-1000g-175mm-negro</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-army-beige</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-matte-1000g-175mm-gris</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-army-blue</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-army-red</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-artic-teal</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-charcoal-black</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-electric-indigo</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-forrest-green</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-fossil-grey</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-lava-red</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-lavender-purple</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-lime-green</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-pastel-peach</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-pastel-peanut</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-sapphire-blue</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panchroma-pla-matte-savannah-yellow</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-matte-1000g-175mm-amarillo</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10256,25 +9968,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/pla-panchroma-neon-green</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-1000g-175mm-verde</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/pla-panchroma-neon-magenta</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-1000g-175mm-naranja</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/pla-panchroma-neon-orange</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pla-panchroma-neon-yellow</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-1000g-175mm-amarillo</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -11624,7 +11330,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-petg-transparente-1kg-marca-todotonercl-filamentos</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-petg-1000g-175mm-transparente</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13664,19 +13370,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-tpu-gris-para-impresion-3d-marca-popbit-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/fuente-de-poder-switching-meanwell-12v-10a-150w</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-tpu-blanco-para-impresion-3d-marca-popbit-175mm-1kg</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13706,19 +13400,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-petg-rojo-para-impresion-3d-marca-popbit-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/fuente-de-poder-switching-meanwell-lrs-48v-94a-450w</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-petg-blanco-para-impresion-3d-marca-popbit-175mm-1kg</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13730,19 +13412,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/filamento-petg-gris-para-impresion-3d-marca-popbit-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/fuente-de-poder-switching-meanwell-lrs-24v-188a-450w</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-petg-negro-para-impresion-3d-marca-popbit-175mm-1kg</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13755,108 +13425,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/fuente-de-poder-switching-meanwell-36v-97a-350w</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-petg-amarillo-para-impresion-3d-marca-sunhokey-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-petg-blanco-para-impresion-3d-marca-sunhokey-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-abs-amarillo-para-impresion-3d-marca-popbit-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-abs-piel-para-impresion-3d-marca-popbit-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-abs-rojo-para-impresion-3d-marca-popbit-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-abs-verde-para-impresion-3d-marca-popbit-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-abs-negro-para-impresion-3d-marca-popbit-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-abs-gris-para-impresion-3d-marca-popbit-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-abs-plateado-para-impresion-3d-marca-popbit-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-abs-cafe-para-impresion-3d-marca-popbit-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-abs-blanco-para-impresion-3d-marca-popbit-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-abs-cafe-para-impresion-3d-marca-hello3d-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-abs-verde-oscuro-para-impresion-3d-marca-hello3d-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-abs-verde-flourescente-para-impresion-3d-marca-sunhokey-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-abs-piel-para-impresion-3d-marca-sunhokey-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-abs-dorado-para-impresion-3d-marca-sunhokey-175mm-1kg</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-abs-purpura-para-impresion-3d-marca-sunhokey-175mm-1kg</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -19407,12 +18975,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/bolsas-para-sellado-al-vacio-33-x-38-cmbolsas-para-sellado-al-vacio-33-x-38-cm</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bambu-lab-filamento-pla-lite-1kg-175mmbambu-lab-filamento-pla-lite-1kg-175mm</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

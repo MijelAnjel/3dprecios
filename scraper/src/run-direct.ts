@@ -260,6 +260,14 @@ function mergeCatalog(
       }
     }
 
+    // Siempre re-extraer specs para filamentos (brand, material, peso, color)
+    // para aplicar nuevas marcas/colores sin necesidad de re-scraping completo
+    if (prod.categoryId.startsWith('filamento')) {
+      const freshSpecs = extractSpecs(prod.name, prod.categoryId);
+      prod.specs = freshSpecs; // reemplazar completamente (specs de filamento son deterministas)
+      prod.brand = (freshSpecs['brand'] as string | undefined) || prod.brand || '';
+    }
+
     // Construir clave canónica y re-insertar bajo esa clave
     const canonKey = buildCanonicalKey(prod.categoryId, prod.specs, prod.name);
     if (canonKey !== prod.slug && !productMap.has(canonKey)) {

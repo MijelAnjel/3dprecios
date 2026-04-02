@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-04-02T20:43:19.461Z",
-    "productCount": 3191
+    "generatedAt": "2026-04-02T20:54:13.214Z",
+    "productCount": 3118
   },
   "stores": [
     {
@@ -9848,57 +9848,62 @@
       ]
     },
     {
-      "slug": "fil-esun-pla-1000g-175mm-azul",
-      "id": "fil-esun-pla-1000g-175mm-azul",
-      "name": "Filamento PLA Bicolor eSilk Verde Azul para impresión 3D marca eSUN 1.75mm 1Kg",
+      "slug": "fil-esun-pla-1000g-175mm-verde",
+      "id": "fil-esun-pla-1000g-175mm-verde",
+      "name": "Filamento PLA+ Verde Luminoso para impresión 3D marca eSUN 1.75mm 1Kg",
       "brand": "eSUN",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/11/pla-magic-blue-green-1.jpg"
+        "https://www.cimech3d.cl/wp-content/uploads/2021/05/PLA-LUMINOUS-GREEN-3.jpg"
       ],
       "specs": {
         "brand": "eSUN",
-        "material": "PLA",
+        "material": "PLA+",
         "diameter": "1.75",
         "weight": "1000",
-        "color": "Azul"
+        "color": "Verde"
       },
-      "minPrice": 17000,
-      "maxPrice": 21990,
+      "minPrice": 14450,
+      "maxPrice": 17000,
       "storeCount": 4,
       "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-01T18:58:41.186Z",
+      "createdAt": "2026-04-01T18:58:38.959Z",
       "entries": [
         {
           "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-pla-azul-luminoso-para-impresion-3d-marca-esun-1-75mm-1kg/",
-          "price": 13990,
+          "url": "https://www.cimech3d.cl/producto/filamento-pla-bicolor-esilk-verde-azul-para-impresion-3d-marca-esun-1-75mm-1kg/",
+          "price": 22990,
           "stock": "out"
         },
         {
           "storeId": "capital3d",
-          "url": "https://capital3d.cl/product/pla-esun-azul/",
+          "url": "https://capital3d.cl/product/pla-esun-verde-claro/",
           "price": 17000,
           "stock": "available"
         },
         {
           "storeId": "evstore",
-          "url": "https://evstore.cl/tienda/pla-azul-esun/",
+          "url": "https://evstore.cl/tienda/pla-verde-esun/",
           "price": 13550,
           "stock": "out"
         },
         {
           "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/pla-chameleon-galaxy-blue-esun/",
-          "price": 21990,
+          "url": "https://www.maxi3d.cl/producto/filamento-esun-pla-pro-verde-pino/",
+          "price": 14450,
           "stock": "unknown"
         }
       ],
       "history": [
         {
           "storeId": "cimech3d",
-          "price": 22990,
+          "price": 13990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 13990,
           "recordedAt": "2026-04-01T18:30:45.323Z"
         },
         {
@@ -9925,6 +9930,26 @@
           "storeId": "capital3d",
           "price": 17000,
           "recordedAt": "2026-04-01T18:29:47.666Z"
+        },
+        {
+          "storeId": "capital3d",
+          "price": 17000,
+          "recordedAt": "2026-04-01T18:29:47.666Z"
+        },
+        {
+          "storeId": "capital3d",
+          "price": 17000,
+          "recordedAt": "2026-04-01T18:29:47.665Z"
+        },
+        {
+          "storeId": "evstore",
+          "price": 13550,
+          "recordedAt": "2026-04-01T18:24:45.592Z"
+        },
+        {
+          "storeId": "evstore",
+          "price": 13550,
+          "recordedAt": "2026-04-01T18:24:45.592Z"
         },
         {
           "storeId": "evstore",
@@ -9947,11 +9972,6 @@
           "recordedAt": "2026-04-02T06:55:56.047Z"
         },
         {
-          "storeId": "cimech3d",
-          "price": 22990,
-          "recordedAt": "2026-04-02T06:55:56.047Z"
-        },
-        {
           "storeId": "evstore",
           "price": 19550,
           "recordedAt": "2026-04-02T12:43:59.136Z"
@@ -9967,33 +9987,28 @@
           "recordedAt": "2026-04-02T12:43:59.136Z"
         },
         {
-          "storeId": "maxi3d",
-          "price": 21990,
+          "storeId": "cimech3d",
+          "price": 22990,
           "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "evstore",
+          "price": 19550,
+          "recordedAt": "2026-04-02T18:41:49.732Z"
+        },
+        {
+          "storeId": "evstore",
+          "price": 13550,
+          "recordedAt": "2026-04-02T18:41:49.732Z"
         },
         {
           "storeId": "cimech3d",
           "price": 13990,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        },
-        {
-          "storeId": "evstore",
-          "price": 19550,
           "recordedAt": "2026-04-02T18:41:49.732Z"
         },
         {
-          "storeId": "evstore",
-          "price": 13550,
-          "recordedAt": "2026-04-02T18:41:49.732Z"
-        },
-        {
-          "storeId": "maxi3d",
-          "price": 14450,
-          "recordedAt": "2026-04-02T18:41:49.732Z"
-        },
-        {
-          "storeId": "maxi3d",
-          "price": 21990,
+          "storeId": "cimech3d",
+          "price": 22990,
           "recordedAt": "2026-04-02T18:41:49.732Z"
         }
       ]
@@ -10821,172 +10836,6 @@
         {
           "storeId": "cimech3d",
           "price": 19990,
-          "recordedAt": "2026-04-02T18:41:49.732Z"
-        }
-      ]
-    },
-    {
-      "slug": "fil-esun-pla-1000g-175mm-verde",
-      "id": "fil-esun-pla-1000g-175mm-verde",
-      "name": "Filamento PLA+ Verde Luminoso para impresión 3D marca eSUN 1.75mm 1Kg",
-      "brand": "eSUN",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/05/PLA-LUMINOUS-GREEN-3.jpg"
-      ],
-      "specs": {
-        "brand": "eSUN",
-        "material": "PLA+",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Verde"
-      },
-      "minPrice": 14450,
-      "maxPrice": 17000,
-      "storeCount": 4,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-01T18:58:38.959Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-pla-bicolor-esilk-verde-azul-para-impresion-3d-marca-esun-1-75mm-1kg/",
-          "price": 22990,
-          "stock": "out"
-        },
-        {
-          "storeId": "capital3d",
-          "url": "https://capital3d.cl/product/pla-esun-verde-claro/",
-          "price": 17000,
-          "stock": "available"
-        },
-        {
-          "storeId": "evstore",
-          "url": "https://evstore.cl/tienda/pla-verde-esun/",
-          "price": 13550,
-          "stock": "out"
-        },
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/filamento-esun-pla-pro-verde-pino/",
-          "price": 14450,
-          "stock": "unknown"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 13990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        },
-        {
-          "storeId": "cimech3d",
-          "price": 13990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        },
-        {
-          "storeId": "cimech3d",
-          "price": 13990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        },
-        {
-          "storeId": "cimech3d",
-          "price": 13990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 17000,
-          "recordedAt": "2026-04-01T18:29:47.666Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 17000,
-          "recordedAt": "2026-04-01T18:29:47.666Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 17000,
-          "recordedAt": "2026-04-01T18:29:47.666Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 17000,
-          "recordedAt": "2026-04-01T18:29:47.666Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 17000,
-          "recordedAt": "2026-04-01T18:29:47.665Z"
-        },
-        {
-          "storeId": "evstore",
-          "price": 13550,
-          "recordedAt": "2026-04-01T18:24:45.592Z"
-        },
-        {
-          "storeId": "evstore",
-          "price": 13550,
-          "recordedAt": "2026-04-01T18:24:45.592Z"
-        },
-        {
-          "storeId": "evstore",
-          "price": 13550,
-          "recordedAt": "2026-04-01T18:24:45.592Z"
-        },
-        {
-          "storeId": "evstore",
-          "price": 13550,
-          "recordedAt": "2026-04-01T18:24:45.592Z"
-        },
-        {
-          "storeId": "evstore",
-          "price": 19550,
-          "recordedAt": "2026-04-01T18:24:45.592Z"
-        },
-        {
-          "storeId": "evstore",
-          "price": 13550,
-          "recordedAt": "2026-04-02T06:55:56.047Z"
-        },
-        {
-          "storeId": "evstore",
-          "price": 19550,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        },
-        {
-          "storeId": "evstore",
-          "price": 13550,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        },
-        {
-          "storeId": "maxi3d",
-          "price": 14450,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        },
-        {
-          "storeId": "cimech3d",
-          "price": 22990,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        },
-        {
-          "storeId": "evstore",
-          "price": 19550,
-          "recordedAt": "2026-04-02T18:41:49.732Z"
-        },
-        {
-          "storeId": "evstore",
-          "price": 13550,
-          "recordedAt": "2026-04-02T18:41:49.732Z"
-        },
-        {
-          "storeId": "cimech3d",
-          "price": 13990,
-          "recordedAt": "2026-04-02T18:41:49.732Z"
-        },
-        {
-          "storeId": "cimech3d",
-          "price": 22990,
           "recordedAt": "2026-04-02T18:41:49.732Z"
         }
       ]
@@ -16727,16 +16576,16 @@
       "slug": "fil-isanmate-abs-1000g-175mm-sc",
       "id": "fil-isanmate-abs-1000g-175mm-sc",
       "name": "ABS CF Fibra Carbono – iSANMATE",
-      "brand": "",
+      "brand": "iSANMATE",
       "categoryId": "filamentos-abs",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2024/03/ABS-CF-Fibra-Carbono-11-600x600.jpg"
       ],
       "specs": {
+        "brand": "iSANMATE",
         "material": "ABS",
-        "diameter": "1.75",
-        "brand": "iSANMATE"
+        "diameter": "1.75"
       },
       "minPrice": 25000,
       "maxPrice": 25000,
@@ -19125,8 +18974,8 @@
       ]
     },
     {
-      "slug": "fil-esun-tpu-1000g-175mm-sc",
-      "id": "fil-esun-tpu-1000g-175mm-sc",
+      "slug": "fil-esun-tpu-1000g-175mm-naranja",
+      "id": "fil-esun-tpu-1000g-175mm-naranja",
       "name": "Filamento eSUN TPU TPU-95A Naranjo",
       "brand": "eSUN",
       "categoryId": "filamentos-tpu",
@@ -19137,24 +18986,19 @@
       "specs": {
         "brand": "eSUN",
         "material": "TPU",
-        "diameter": "1.75"
+        "diameter": "1.75",
+        "color": "Naranja"
       },
-      "minPrice": 22000,
+      "minPrice": 31000,
       "maxPrice": 31000,
-      "storeCount": 2,
+      "storeCount": 1,
       "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-01T18:53:04.951Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "capital3d",
-          "url": "https://capital3d.cl/product/filamento-esun-tpu-95a-rosado/",
+          "url": "https://capital3d.cl/product/filamento-esun-tpu-95a-naranjo/",
           "price": 31000,
-          "stock": "available"
-        },
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/esun-tpu95a/",
-          "price": 22000,
           "stock": "available"
         }
       ],
@@ -19162,17 +19006,7 @@
         {
           "storeId": "capital3d",
           "price": 31000,
-          "recordedAt": "2026-04-01T18:29:47.666Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 31000,
-          "recordedAt": "2026-04-01T18:29:47.666Z"
-        },
-        {
-          "storeId": "horus3d",
-          "price": 22000,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
+          "recordedAt": "2026-04-02T06:55:56.047Z"
         }
       ]
     },
@@ -19728,138 +19562,44 @@
       ]
     },
     {
-      "slug": "fil-polymaker-pla-1000g-175mm-sc",
-      "id": "fil-polymaker-pla-1000g-175mm-sc",
-      "name": "Filamento Polymaker PolyLite PLA PRO Naranjo",
+      "slug": "fil-polymaker-pla-1000g-175mm-naranja",
+      "id": "fil-polymaker-pla-1000g-175mm-naranja",
+      "name": "Filamento Polymaker Polyterra PLA Naranjo",
       "brand": "Polymaker",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
-        "https://capital3d.cl/wp-content/uploads/2023/03/capital3d-polyterra-filament-plapro-naranja.webp"
+        "https://capital3d.cl/wp-content/uploads/2023/03/capital3d-polyterra-filament-pla-naranja.webp"
       ],
       "specs": {
         "brand": "Polymaker",
         "material": "PLA",
-        "diameter": "1.75"
+        "diameter": "1.75",
+        "color": "Naranja"
       },
-      "minPrice": 20000,
-      "maxPrice": 20000,
+      "minPrice": 23000,
+      "maxPrice": 23000,
       "storeCount": 1,
       "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-01T18:52:58.653Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "capital3d",
-          "url": "https://capital3d.cl/product/filamento-polymaker-polyterra-pla-calipso/",
-          "price": 20000,
-          "stock": "out"
+          "url": "https://capital3d.cl/product/filamento-polymaker-polylite-pla-pro-naranja/",
+          "price": 23000,
+          "stock": "available"
         }
       ],
       "history": [
         {
           "storeId": "capital3d",
-          "price": 23000,
-          "recordedAt": "2026-04-01T18:29:47.666Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 20000,
-          "recordedAt": "2026-04-01T18:29:47.666Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 20000,
-          "recordedAt": "2026-04-01T18:29:47.666Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 20000,
-          "recordedAt": "2026-04-01T18:29:47.666Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 15000,
-          "recordedAt": "2026-04-01T18:29:47.666Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 15000,
-          "recordedAt": "2026-04-01T18:29:47.666Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 20000,
-          "recordedAt": "2026-04-01T18:29:47.666Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 15000,
-          "recordedAt": "2026-04-01T18:29:47.666Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 20000,
-          "recordedAt": "2026-04-01T18:29:47.666Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 15000,
-          "recordedAt": "2026-04-01T18:29:47.666Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 23000,
-          "recordedAt": "2026-04-01T18:29:47.666Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 15000,
-          "recordedAt": "2026-04-02T06:55:56.047Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 20000,
-          "recordedAt": "2026-04-02T06:55:56.047Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 15000,
-          "recordedAt": "2026-04-02T06:55:56.047Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 20000,
-          "recordedAt": "2026-04-02T06:55:56.047Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 15000,
-          "recordedAt": "2026-04-02T06:55:56.047Z"
-        },
-        {
-          "storeId": "capital3d",
           "price": 20000,
           "recordedAt": "2026-04-02T06:55:56.047Z"
         },
         {
           "storeId": "capital3d",
           "price": 23000,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 15000,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 20000,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 15000,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
+          "recordedAt": "2026-04-02T06:55:56.047Z"
         },
         {
           "storeId": "capital3d",
@@ -19869,12 +19609,7 @@
         {
           "storeId": "capital3d",
           "price": 23000,
-          "recordedAt": "2026-04-02T18:41:49.732Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 15000,
-          "recordedAt": "2026-04-02T18:41:49.732Z"
+          "recordedAt": "2026-04-02T12:43:59.136Z"
         },
         {
           "storeId": "capital3d",
@@ -19883,12 +19618,7 @@
         },
         {
           "storeId": "capital3d",
-          "price": 15000,
-          "recordedAt": "2026-04-02T18:41:49.732Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 20000,
+          "price": 23000,
           "recordedAt": "2026-04-02T18:41:49.732Z"
         }
       ]
@@ -22300,7 +22030,7 @@
       "slug": "filamento-esun-magic-bicolor-tornasol-negro-verde",
       "id": "filamento-esun-magic-bicolor-tornasol-negro-verde",
       "name": "Filamento eSUN Magic Bicolor Tornasol Negro Verde",
-      "brand": "",
+      "brand": "eSUN",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -22336,7 +22066,7 @@
       "slug": "filamento-esun-magic-bicolor-tornasol-negro-purpura",
       "id": "filamento-esun-magic-bicolor-tornasol-negro-purpura",
       "name": "Filamento eSUN Magic Bicolor Tornasol Negro Purpura",
-      "brand": "",
+      "brand": "eSUN",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -22372,7 +22102,7 @@
       "slug": "filamento-esun-magic-bicolor-tornasol-negro-dorado",
       "id": "filamento-esun-magic-bicolor-tornasol-negro-dorado",
       "name": "Filamento eSUN Magic Bicolor Tornasol Negro Dorado",
-      "brand": "",
+      "brand": "eSUN",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -22408,7 +22138,7 @@
       "slug": "etwinkling-1kg-silver-esun",
       "id": "etwinkling-1kg-silver-esun",
       "name": "eTwinkling 1KG Silver – eSUN",
-      "brand": "",
+      "brand": "eSUN",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -22445,7 +22175,7 @@
       "slug": "etwinkling-1kg-rosa-esun",
       "id": "etwinkling-1kg-rosa-esun",
       "name": "eTwinkling 1KG Rosa – eSUN",
-      "brand": "",
+      "brand": "eSUN",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -22482,7 +22212,7 @@
       "slug": "etwinkling-1kg-oro-esun",
       "id": "etwinkling-1kg-oro-esun",
       "name": "eTwinkling 1KG Oro – eSUN",
-      "brand": "",
+      "brand": "eSUN",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -22518,7 +22248,7 @@
       "slug": "etwinkling-1kg-negro-esun",
       "id": "etwinkling-1kg-negro-esun",
       "name": "eTwinkling 1KG Negro – eSUN",
-      "brand": "",
+      "brand": "eSUN",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -22555,7 +22285,7 @@
       "slug": "etwinkling-1kg-azul-esun",
       "id": "etwinkling-1kg-azul-esun",
       "name": "eTwinkling 1KG Azul – eSUN",
-      "brand": "",
+      "brand": "eSUN",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -22592,7 +22322,7 @@
       "slug": "esun-epla-lw-negro",
       "id": "esun-epla-lw-negro",
       "name": "eSUN ePLA-LW – Negro",
-      "brand": "",
+      "brand": "eSUN",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -22628,7 +22358,7 @@
       "slug": "esun-epla-lw-blanco",
       "id": "esun-epla-lw-blanco",
       "name": "eSUN ePLA-LW – Blanco",
-      "brand": "",
+      "brand": "eSUN",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -22664,7 +22394,7 @@
       "slug": "cored-luminous-purpura-esun",
       "id": "cored-luminous-purpura-esun",
       "name": "Cored Luminous Purpura – eSUN",
-      "brand": "",
+      "brand": "eSUN",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -22699,7 +22429,7 @@
       "slug": "cored-luminous-orange-esun",
       "id": "cored-luminous-orange-esun",
       "name": "Cored Luminous Orange – eSUN",
-      "brand": "",
+      "brand": "eSUN",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -22735,7 +22465,7 @@
       "slug": "cored-luminous-green-esun",
       "id": "cored-luminous-green-esun",
       "name": "Cored Luminous Green – eSUN",
-      "brand": "",
+      "brand": "eSUN",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -24518,8 +24248,8 @@
       ]
     },
     {
-      "slug": "fil-sunlu-pla-silk-1000g-175mm-sc",
-      "id": "fil-sunlu-pla-silk-1000g-175mm-sc",
+      "slug": "fil-sunlu-pla-silk-1000g-175mm-naranja",
+      "id": "fil-sunlu-pla-silk-1000g-175mm-naranja",
       "name": "PLA+ Seda Naranjo SUNLU",
       "brand": "Sunlu",
       "categoryId": "filamentos-pla",
@@ -24530,30 +24260,19 @@
       "specs": {
         "brand": "Sunlu",
         "material": "PLA Silk",
-        "diameter": "1.75"
+        "diameter": "1.75",
+        "color": "Naranja"
       },
-      "minPrice": 14000,
+      "minPrice": 16990,
       "maxPrice": 16990,
-      "storeCount": 3,
+      "storeCount": 1,
       "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-01T18:49:55.143Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "evstore",
-          "url": "https://evstore.cl/tienda/pla-seda-rosado-sunlu/",
+          "url": "https://evstore.cl/tienda/pla-seda-naranjo-sunlu/",
           "price": 16990,
-          "stock": "available"
-        },
-        {
-          "storeId": "makerschile",
-          "url": "https://makerschile.cl/producto/pla-silk-sunlu/",
-          "price": 15282,
-          "stock": "out"
-        },
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/sunlu-silk/",
-          "price": 14000,
           "stock": "available"
         }
       ],
@@ -24561,112 +24280,7 @@
         {
           "storeId": "evstore",
           "price": 16990,
-          "recordedAt": "2026-04-01T18:24:45.591Z"
-        },
-        {
-          "storeId": "evstore",
-          "price": 16990,
-          "recordedAt": "2026-04-01T18:24:45.591Z"
-        },
-        {
-          "storeId": "evstore",
-          "price": 16990,
-          "recordedAt": "2026-04-01T18:24:45.591Z"
-        },
-        {
-          "storeId": "evstore",
-          "price": 16990,
-          "recordedAt": "2026-04-01T18:24:45.591Z"
-        },
-        {
-          "storeId": "evstore",
-          "price": 16990,
-          "recordedAt": "2026-04-01T18:24:45.591Z"
-        },
-        {
-          "storeId": "evstore",
-          "price": 16990,
-          "recordedAt": "2026-04-01T18:24:45.591Z"
-        },
-        {
-          "storeId": "evstore",
-          "price": 16990,
-          "recordedAt": "2026-04-01T18:24:45.591Z"
-        },
-        {
-          "storeId": "makerschile",
-          "price": 15282,
-          "recordedAt": "2026-04-01T18:24:33.220Z"
-        },
-        {
-          "storeId": "makerschile",
-          "price": 21591,
-          "recordedAt": "2026-04-01T18:24:33.220Z"
-        },
-        {
-          "storeId": "horus3d",
-          "price": 14000,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        },
-        {
-          "storeId": "horus3d",
-          "price": 19000,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        },
-        {
-          "storeId": "horus3d",
-          "price": 19000,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        },
-        {
-          "storeId": "horus3d",
-          "price": 14000,
           "recordedAt": "2026-04-02T06:55:56.047Z"
-        },
-        {
-          "storeId": "makerschile",
-          "price": 15282,
-          "recordedAt": "2026-04-02T06:55:56.047Z"
-        },
-        {
-          "storeId": "horus3d",
-          "price": 19000,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        },
-        {
-          "storeId": "horus3d",
-          "price": 14000,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        },
-        {
-          "storeId": "makerschile",
-          "price": 21591,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        },
-        {
-          "storeId": "makerschile",
-          "price": 15282,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        },
-        {
-          "storeId": "horus3d",
-          "price": 19000,
-          "recordedAt": "2026-04-02T18:41:49.732Z"
-        },
-        {
-          "storeId": "horus3d",
-          "price": 14000,
-          "recordedAt": "2026-04-02T18:41:49.732Z"
-        },
-        {
-          "storeId": "makerschile",
-          "price": 21591,
-          "recordedAt": "2026-04-02T18:41:49.732Z"
-        },
-        {
-          "storeId": "makerschile",
-          "price": 15282,
-          "recordedAt": "2026-04-02T18:41:49.732Z"
         }
       ]
     },
@@ -26660,7 +26274,7 @@
       "specs": {
         "material": "PLA",
         "diameter": "1.75",
-        "color": "Azul"
+        "color": "Amarillo"
       },
       "minPrice": 47000,
       "maxPrice": 47000,
@@ -26731,7 +26345,8 @@
       ],
       "specs": {
         "material": "PLA+",
-        "diameter": "1.75"
+        "diameter": "1.75",
+        "color": "Naranja"
       },
       "minPrice": 39550,
       "maxPrice": 39550,
@@ -29686,29 +29301,30 @@
       ]
     },
     {
-      "slug": "pla-f-makerschile",
-      "id": "pla-f-makerschile",
+      "slug": "fil-makerschile-pla-1000g-175mm-sc",
+      "id": "fil-makerschile-pla-1000g-175mm-sc",
       "name": "PLA F MakersChile",
-      "brand": "",
+      "brand": "MakersChile",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/PLA-F-TODOS.png"
       ],
       "specs": {
+        "brand": "MakersChile",
         "material": "PLA",
         "diameter": "1.75"
       },
-      "minPrice": 12591,
-      "maxPrice": 12591,
+      "minPrice": 13041,
+      "maxPrice": 13041,
       "storeCount": 1,
       "updatedAt": "2026-04-02T18:41:49.732Z",
       "createdAt": "2026-04-01T18:48:51.057Z",
       "entries": [
         {
           "storeId": "makerschile",
-          "url": "https://makerschile.cl/producto/pla-f-makerschile/",
-          "price": 12591,
+          "url": "https://makerschile.cl/producto/pla-makerschile/",
+          "price": 13041,
           "stock": "out"
         }
       ],
@@ -29716,6 +29332,16 @@
         {
           "storeId": "makerschile",
           "price": 12591,
+          "recordedAt": "2026-04-01T18:24:33.220Z"
+        },
+        {
+          "storeId": "makerschile",
+          "price": 15282,
+          "recordedAt": "2026-04-01T18:24:33.220Z"
+        },
+        {
+          "storeId": "makerschile",
+          "price": 13041,
           "recordedAt": "2026-04-01T18:24:33.220Z"
         }
       ]
@@ -29940,41 +29566,6 @@
           "storeId": "todotoner",
           "price": 23990,
           "recordedAt": "2026-04-02T18:41:49.732Z"
-        }
-      ]
-    },
-    {
-      "slug": "pla-f-madera-makers-chile",
-      "id": "pla-f-madera-makers-chile",
-      "name": "PLA F Madera Makers Chile",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://makerschile.cl/wp-content/uploads/2025/05/PLA-F-MADERA.jpg"
-      ],
-      "specs": {
-        "material": "PLA",
-        "diameter": "1.75"
-      },
-      "minPrice": 15282,
-      "maxPrice": 15282,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-01T18:48:50.428Z",
-      "entries": [
-        {
-          "storeId": "makerschile",
-          "url": "https://makerschile.cl/producto/pla-f-madera-makers-chile/",
-          "price": 15282,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "makerschile",
-          "price": 15282,
-          "recordedAt": "2026-04-01T18:24:33.220Z"
         }
       ]
     },
@@ -32935,16 +32526,17 @@
       ]
     },
     {
-      "slug": "abs-makerschile",
-      "id": "abs-makerschile",
+      "slug": "fil-makerschile-abs-1000g-175mm-sc",
+      "id": "fil-makerschile-abs-1000g-175mm-sc",
       "name": "ABS+ Makerschile",
-      "brand": "",
+      "brand": "MakersChile",
       "categoryId": "filamentos-abs",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/ROJO-Filamento-MakersChile.jpg"
       ],
       "specs": {
+        "brand": "MakersChile",
         "material": "ABS",
         "diameter": "1.75"
       },
@@ -32970,16 +32562,17 @@
       ]
     },
     {
-      "slug": "petg-makerschile",
-      "id": "petg-makerschile",
+      "slug": "fil-makerschile-petg-1000g-175mm-sc",
+      "id": "fil-makerschile-petg-1000g-175mm-sc",
       "name": "PETG Makerschile",
-      "brand": "",
+      "brand": "MakersChile",
       "categoryId": "filamentos-petg",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/GRIS-Filamento-MakersChile.jpg"
       ],
       "specs": {
+        "brand": "MakersChile",
         "material": "PETG",
         "diameter": "1.75"
       },
@@ -33005,16 +32598,17 @@
       ]
     },
     {
-      "slug": "tpu-makerschile",
-      "id": "tpu-makerschile",
+      "slug": "fil-makerschile-tpu-1000g-175mm-sc",
+      "id": "fil-makerschile-tpu-1000g-175mm-sc",
       "name": "TPU Makerschile",
-      "brand": "",
+      "brand": "MakersChile",
       "categoryId": "filamentos-tpu",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/AZUL-Filamento-MakersChile.jpg"
       ],
       "specs": {
+        "brand": "MakersChile",
         "material": "TPU",
         "diameter": "1.75"
       },
@@ -33035,41 +32629,6 @@
         {
           "storeId": "makerschile",
           "price": 18356,
-          "recordedAt": "2026-04-01T18:24:33.220Z"
-        }
-      ]
-    },
-    {
-      "slug": "pla-makerschile",
-      "id": "pla-makerschile",
-      "name": "PLA Makerschile",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://makerschile.cl/wp-content/uploads/2025/05/AMARILLO-Filamento-MakersChile.jpg"
-      ],
-      "specs": {
-        "material": "PLA",
-        "diameter": "1.75"
-      },
-      "minPrice": 13041,
-      "maxPrice": 13041,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-01T18:48:18.315Z",
-      "entries": [
-        {
-          "storeId": "makerschile",
-          "url": "https://makerschile.cl/producto/pla-makerschile/",
-          "price": 13041,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "makerschile",
-          "price": 13041,
           "recordedAt": "2026-04-01T18:24:33.220Z"
         }
       ]
@@ -33487,51 +33046,17 @@
       ]
     },
     {
-      "slug": "pla-hd-winkle",
-      "id": "pla-hd-winkle",
+      "slug": "fil-winkle-pla-1000g-175mm-sc",
+      "id": "fil-winkle-pla-1000g-175mm-sc",
       "name": "PLA-HD Winkle",
-      "brand": "",
+      "brand": "Winkle",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/Blanco-Glaciar-scaled-1.jpg"
       ],
       "specs": {
-        "material": "PLA",
-        "diameter": "1.75"
-      },
-      "minPrice": 14841,
-      "maxPrice": 14841,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-01T18:48:12.429Z",
-      "entries": [
-        {
-          "storeId": "makerschile",
-          "url": "https://makerschile.cl/producto/pla-hd-winkle/",
-          "price": 14841,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "makerschile",
-          "price": 14841,
-          "recordedAt": "2026-04-01T18:24:33.220Z"
-        }
-      ]
-    },
-    {
-      "slug": "pla-hd-marmol-winkle",
-      "id": "pla-hd-marmol-winkle",
-      "name": "PLA-HD Marmol Winkle",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://makerschile.cl/wp-content/uploads/2025/05/Light-Marble-scaled-1.jpg"
-      ],
-      "specs": {
+        "brand": "Winkle",
         "material": "PLA",
         "diameter": "1.75"
       },
@@ -33539,7 +33064,7 @@
       "maxPrice": 18441,
       "storeCount": 1,
       "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-01T18:48:12.105Z",
+      "createdAt": "2026-04-01T18:48:12.429Z",
       "entries": [
         {
           "storeId": "makerschile",
@@ -33551,22 +33076,28 @@
       "history": [
         {
           "storeId": "makerschile",
+          "price": 14841,
+          "recordedAt": "2026-04-01T18:24:33.220Z"
+        },
+        {
+          "storeId": "makerschile",
           "price": 18441,
           "recordedAt": "2026-04-01T18:24:33.220Z"
         }
       ]
     },
     {
-      "slug": "pla-hd-metalizado-silk-winkle",
-      "id": "pla-hd-metalizado-silk-winkle",
+      "slug": "fil-winkle-pla-silk-1000g-175mm-sc",
+      "id": "fil-winkle-pla-silk-1000g-175mm-sc",
       "name": "PLA-HD Metalizado Silk Winkle",
-      "brand": "",
+      "brand": "Winkle",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/Azul-Interferencia-scaled-1.jpg"
       ],
       "specs": {
+        "brand": "Winkle",
         "material": "PLA Silk",
         "diameter": "1.75"
       },
@@ -36516,22 +36047,23 @@
       ]
     },
     {
-      "slug": "pla-basic-bambu-lab",
-      "id": "pla-basic-bambu-lab",
+      "slug": "fil-bambu-lab-pla-1000g-175mm-sc",
+      "id": "fil-bambu-lab-pla-1000g-175mm-sc",
       "name": "PLA Basic Bambu Lab",
-      "brand": "",
+      "brand": "Bambu Lab",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/09/rojo-bambulab-pla-basic-scaled-1.webp"
       ],
       "specs": {
+        "brand": "Bambu Lab",
         "material": "PLA",
         "diameter": "1.75"
       },
-      "minPrice": 21591,
+      "minPrice": 11590,
       "maxPrice": 21591,
-      "storeCount": 1,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T18:41:49.732Z",
       "createdAt": "2026-04-01T18:47:36.668Z",
       "entries": [
@@ -36540,6 +36072,12 @@
           "url": "https://makerschile.cl/producto/pla-basic-bambu-lab/",
           "price": 21591,
           "stock": "available"
+        },
+        {
+          "storeId": "imperio3d",
+          "url": "https://imperio3d.com/producto/filamentos-bambu-lab-pla-lite-1kg-1-75mm/",
+          "price": 11590,
+          "stock": "available"
         }
       ],
       "history": [
@@ -36547,6 +36085,31 @@
           "storeId": "makerschile",
           "price": 21591,
           "recordedAt": "2026-04-01T18:24:33.219Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 16990,
+          "recordedAt": "2026-03-31T13:32:11.450Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 15490,
+          "recordedAt": "2026-03-31T13:32:11.448Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 14590,
+          "recordedAt": "2026-03-31T13:32:11.448Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 11590,
+          "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 11590,
+          "recordedAt": "2026-03-31T13:32:11.445Z"
         }
       ]
     },
@@ -36632,22 +36195,23 @@
       ]
     },
     {
-      "slug": "pla-mate-bambu-lab",
-      "id": "pla-mate-bambu-lab",
+      "slug": "fil-bambu-lab-pla-matte-1000g-175mm-sc",
+      "id": "fil-bambu-lab-pla-matte-1000g-175mm-sc",
       "name": "Pla Mate Bambu Lab",
-      "brand": "",
+      "brand": "Bambu Lab",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/09/PLA-Matte_Charcoal-scaled-1.webp"
       ],
       "specs": {
+        "brand": "Bambu Lab",
         "material": "PLA Matte",
         "diameter": "1.75"
       },
-      "minPrice": 17982,
-      "maxPrice": 17982,
-      "storeCount": 1,
+      "minPrice": 15490,
+      "maxPrice": 15490,
+      "storeCount": 2,
       "updatedAt": "2026-04-02T18:41:49.732Z",
       "createdAt": "2026-04-01T18:47:34.744Z",
       "entries": [
@@ -36656,6 +36220,12 @@
           "url": "https://makerschile.cl/producto/pla-mate-bambu-lab/",
           "price": 17982,
           "stock": "out"
+        },
+        {
+          "storeId": "imperio3d",
+          "url": "https://imperio3d.com/producto/filamentos-bambu-lab-pla-mate-1kg-1-75mm/",
+          "price": 15490,
+          "stock": "available"
         }
       ],
       "history": [
@@ -36663,6 +36233,16 @@
           "storeId": "makerschile",
           "price": 17982,
           "recordedAt": "2026-04-01T18:24:33.219Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 15990,
+          "recordedAt": "2026-03-31T13:32:11.449Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 15490,
+          "recordedAt": "2026-03-31T13:32:11.448Z"
         }
       ]
     },
@@ -39540,30 +39120,31 @@
       ]
     },
     {
-      "slug": "filamento-bambu-lab-asa-aero-1kg-175mm",
-      "id": "filamento-bambu-lab-asa-aero-1kg-175mm",
+      "slug": "fil-bambu-lab-asa-1000g-175mm-sc",
+      "id": "fil-bambu-lab-asa-1000g-175mm-sc",
       "name": "Filamento Bambu Lab ASA AERO 1kg 1.75mm",
-      "brand": "",
+      "brand": "Bambu Lab",
       "categoryId": "filamentos-abs",
       "description": "",
       "images": [
         "https://imperio3d.com/wp-content/uploads/2026/01/Bambulab_asa_Aero_-300x300.webp"
       ],
       "specs": {
+        "brand": "Bambu Lab",
         "material": "ASA",
         "diameter": "1.75",
         "weight": "1000"
       },
-      "minPrice": 44990,
-      "maxPrice": 44990,
+      "minPrice": 23990,
+      "maxPrice": 23990,
       "storeCount": 1,
       "updatedAt": "2026-04-02T18:41:49.732Z",
       "createdAt": "2026-03-31T13:43:21.286Z",
       "entries": [
         {
           "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/filamentos-bambu-lab-asa-aero-1kg-1-75mm/",
-          "price": 44990,
+          "url": "https://imperio3d.com/producto/filamentos-bambu-lab-asa/",
+          "price": 23990,
           "stock": "available"
         }
       ],
@@ -39572,23 +39153,29 @@
           "storeId": "imperio3d",
           "price": 44990,
           "recordedAt": "2026-03-31T13:32:15.560Z"
+        },
+        {
+          "storeId": "imperio3d",
+          "price": 23990,
+          "recordedAt": "2026-03-31T13:32:15.559Z"
         }
       ]
     },
     {
-      "slug": "filamento-bambu-pva-clear-500-grs",
-      "id": "filamento-bambu-pva-clear-500-grs",
+      "slug": "fil-bambu-lab-pva-1000g-175mm-transparente",
+      "id": "fil-bambu-lab-pva-1000g-175mm-transparente",
       "name": "Filamento Bambu PVA Clear 500 grs",
-      "brand": "",
+      "brand": "Bambu Lab",
       "categoryId": "filamentos-especiales",
       "description": "",
       "images": [
         "https://imperio3d.com/wp-content/uploads/2026/01/Filbmbl_PVA_1-300x300.webp"
       ],
       "specs": {
+        "brand": "Bambu Lab",
+        "material": "PVA",
         "diameter": "1.75",
-        "color": "Transparente",
-        "material": "PVA"
+        "color": "Transparente"
       },
       "minPrice": 30990,
       "maxPrice": 30990,
@@ -39647,42 +39234,6 @@
       ]
     },
     {
-      "slug": "filamentos-bambu-lab-asa-1kg-175mm",
-      "id": "filamentos-bambu-lab-asa-1kg-175mm",
-      "name": "Filamentos Bambu Lab ASA 1kg 1.75mm",
-      "brand": "",
-      "categoryId": "filamentos-abs",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2026/01/Filbmbl_ASA_negro-300x300.webp"
-      ],
-      "specs": {
-        "material": "ASA",
-        "diameter": "1.75",
-        "weight": "1000"
-      },
-      "minPrice": 23990,
-      "maxPrice": 23990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-03-31T13:43:19.078Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/filamentos-bambu-lab-asa/",
-          "price": 23990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 23990,
-          "recordedAt": "2026-03-31T13:32:15.559Z"
-        }
-      ]
-    },
-    {
       "slug": "fil-esun-pc-500g-175mm-sc",
       "id": "fil-esun-pc-500g-175mm-sc",
       "name": "Filamento Esun ePC Policarbonato 1.75mm 0.5kg",
@@ -39723,17 +39274,17 @@
       "slug": "fil-printalot-pla-1000g-175mm-sc",
       "id": "fil-printalot-pla-1000g-175mm-sc",
       "name": "PrintaLot PLA MAX 1.75mm 1kg",
-      "brand": "",
+      "brand": "Printalot",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://imperio3d.com/wp-content/uploads/2023/08/Printalot_pla_max_blanco_imperio3d-300x300.webp"
       ],
       "specs": {
+        "brand": "Printalot",
         "material": "PLA",
         "diameter": "1.75",
-        "weight": "1000",
-        "brand": "Printalot"
+        "weight": "1000"
       },
       "minPrice": 17890,
       "maxPrice": 17890,
@@ -39787,16 +39338,17 @@
       ]
     },
     {
-      "slug": "filamentos-bambu-lab-abs-azure-celeste-1kg-175mm",
-      "id": "filamentos-bambu-lab-abs-azure-celeste-1kg-175mm",
+      "slug": "fil-bambu-lab-abs-1000g-175mm-celeste",
+      "id": "fil-bambu-lab-abs-1000g-175mm-celeste",
       "name": "Filamentos Bambu Lab ABS – Azure (Celeste) 1kg 1.75mm",
-      "brand": "",
+      "brand": "Bambu Lab",
       "categoryId": "filamentos-abs",
       "description": "",
       "images": [
         "https://imperio3d.com/wp-content/uploads/2026/01/bmbl_abs-300x300.webp"
       ],
       "specs": {
+        "brand": "Bambu Lab",
         "material": "ABS",
         "diameter": "1.75",
         "weight": "1000",
@@ -39824,16 +39376,17 @@
       ]
     },
     {
-      "slug": "filamentos-bambu-lab-petg-translucido-1kg-175mm",
-      "id": "filamentos-bambu-lab-petg-translucido-1kg-175mm",
+      "slug": "fil-bambu-lab-petg-1000g-175mm-sc",
+      "id": "fil-bambu-lab-petg-1000g-175mm-sc",
       "name": "Filamentos Bambu Lab PETG Translúcido 1kg 1.75mm",
-      "brand": "",
+      "brand": "Bambu Lab",
       "categoryId": "filamentos-petg",
       "description": "",
       "images": [
         "https://imperio3d.com/wp-content/uploads/2026/01/Bambu_petgt_orange-300x300.webp"
       ],
       "specs": {
+        "brand": "Bambu Lab",
         "material": "PETG",
         "diameter": "1.75",
         "weight": "1000"
@@ -39860,55 +39413,19 @@
       ]
     },
     {
-      "slug": "filamentos-bambu-lab-pla-basico-degradado-1kg-175mm",
-      "id": "filamentos-bambu-lab-pla-basico-degradado-1kg-175mm",
-      "name": "Filamentos Bambu Lab PLA Básico Degradado 1kg 1.75mm",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2026/01/Filbmbl_basic_deg_mint_green-300x300.webp"
-      ],
-      "specs": {
-        "material": "PLA",
-        "diameter": "1.75",
-        "weight": "1000"
-      },
-      "minPrice": 16990,
-      "maxPrice": 16990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-03-31T13:43:12.169Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/filamentos-bambu-lab-pla-basico-degradado-1kg-1-75mm/",
-          "price": 16990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 16990,
-          "recordedAt": "2026-03-31T13:32:11.450Z"
-        }
-      ]
-    },
-    {
       "slug": "filamento-printalot-pvoh-soluble-en-agua-175mm-025kg",
       "id": "filamento-printalot-pvoh-soluble-en-agua-175mm-025kg",
       "name": "Filamento PrintaLot PVOH Soluble en Agua 1.75mm 0.25kg",
-      "brand": "",
+      "brand": "Printalot",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://imperio3d.com/wp-content/uploads/2024/10/Printalot_pvoh_natural_transparente_imperio3d-300x300.webp"
       ],
       "specs": {
+        "brand": "Printalot",
         "diameter": "1.75",
-        "weight": "250",
-        "brand": "Printalot"
+        "weight": "250"
       },
       "minPrice": 16990,
       "maxPrice": 16990,
@@ -39928,114 +39445,6 @@
           "storeId": "imperio3d",
           "price": 16990,
           "recordedAt": "2026-03-31T13:32:11.449Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamentos-refill-bambu-lab-pla-mate-1kg-175mm",
-      "id": "filamentos-refill-bambu-lab-pla-mate-1kg-175mm",
-      "name": "Filamentos Refill Bambu Lab PLA Mate 1kg 1.75mm",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2025/11/bmbl_PLA-Matte_terracota-300x300.webp"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75",
-        "weight": "1000"
-      },
-      "minPrice": 15990,
-      "maxPrice": 15990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-03-31T13:43:11.043Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/filamentos-refill-bambu-lab-pla-mate-1kg-1-75mm/",
-          "price": 15990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 15990,
-          "recordedAt": "2026-03-31T13:32:11.449Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamentos-bambu-lab-pla-basico-1kg-175mm",
-      "id": "filamentos-bambu-lab-pla-basico-1kg-175mm",
-      "name": "Filamentos Bambu Lab PLA Básico 1kg 1.75mm",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2025/04/Filbmbl_basic_jade_white-300x300.webp"
-      ],
-      "specs": {
-        "material": "PLA",
-        "diameter": "1.75",
-        "weight": "1000"
-      },
-      "minPrice": 15490,
-      "maxPrice": 15490,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-03-31T13:43:09.924Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/filamentos-bambu-lab-pla-basico-1kg-1-75mm/",
-          "price": 15490,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 15490,
-          "recordedAt": "2026-03-31T13:32:11.448Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamentos-bambu-lab-pla-mate-1kg-175mm",
-      "id": "filamentos-bambu-lab-pla-mate-1kg-175mm",
-      "name": "Filamentos Bambu Lab PLA Mate 1kg 1.75mm",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2025/04/bmbl_PLA-Matte_verde_oscuro-300x300.webp"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75",
-        "weight": "1000"
-      },
-      "minPrice": 15490,
-      "maxPrice": 15490,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-03-31T13:43:09.344Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/filamentos-bambu-lab-pla-mate-1kg-1-75mm/",
-          "price": 15490,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 15490,
-          "recordedAt": "2026-03-31T13:32:11.448Z"
         }
       ]
     },
@@ -40077,52 +39486,17 @@
       ]
     },
     {
-      "slug": "filamentos-refill-bambu-lab-pla-basico-1kg-175mm",
-      "id": "filamentos-refill-bambu-lab-pla-basico-1kg-175mm",
-      "name": "Filamentos Refill Bambu Lab PLA Básico 1kg 1.75mm",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2025/04/bmbl_PLA-Basico_refill_gris_claro-300x300.webp"
-      ],
-      "specs": {
-        "material": "PLA",
-        "diameter": "1.75",
-        "weight": "1000"
-      },
-      "minPrice": 14590,
-      "maxPrice": 14590,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-03-31T13:43:08.144Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/filamentos-refill-bambu-lab-pla-basico-1kg-1-75mm/",
-          "price": 14590,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 14590,
-          "recordedAt": "2026-03-31T13:32:11.448Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-pla-plastar-175mm-1kg",
-      "id": "filamento-pla-plastar-175mm-1kg",
+      "slug": "fil-plastar-pla-1000g-175mm-sc",
+      "id": "fil-plastar-pla-1000g-175mm-sc",
       "name": "Filamento PLA Plastar 1.75mm 1kg",
-      "brand": "",
+      "brand": "Plastar",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://imperio3d.com/wp-content/uploads/2023/08/plastar_pla_azul_imperio3d-300x300.webp"
       ],
       "specs": {
+        "brand": "Plastar",
         "material": "PLA",
         "diameter": "1.75",
         "weight": "1000"
@@ -43330,29 +42704,30 @@
       ]
     },
     {
-      "slug": "filamento-jamg-he-pla",
-      "id": "filamento-jamg-he-pla",
+      "slug": "fil-jamg-he-pla-1000g-175mm-sc",
+      "id": "fil-jamg-he-pla-1000g-175mm-sc",
       "name": "Filamento Jamg He PLA+",
-      "brand": "",
+      "brand": "Jamg He",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2024/11/Jamg-He-White.webp"
       ],
       "specs": {
+        "brand": "Jamg He",
         "material": "PLA+",
         "diameter": "1.75"
       },
-      "minPrice": 10000,
-      "maxPrice": 10000,
+      "minPrice": 9000,
+      "maxPrice": 9000,
       "storeCount": 1,
       "updatedAt": "2026-04-02T18:41:49.732Z",
       "createdAt": "2026-04-01T18:45:13.600Z",
       "entries": [
         {
           "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/jh-plaplus/",
-          "price": 10000,
+          "url": "https://horus3d.cl/producto/jh-basic/",
+          "price": 9000,
           "stock": "available"
         }
       ],
@@ -43361,34 +42736,45 @@
           "storeId": "horus3d",
           "price": 10000,
           "recordedAt": "2026-04-01T18:22:38.548Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 18000,
+          "recordedAt": "2026-04-01T18:22:38.547Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 9000,
+          "recordedAt": "2026-04-01T18:22:38.545Z"
         }
       ]
     },
     {
-      "slug": "filamento-jamg-he-pla-silk",
-      "id": "filamento-jamg-he-pla-silk",
+      "slug": "fil-jamg-he-pla-silk-1000g-175mm-sc",
+      "id": "fil-jamg-he-pla-silk-1000g-175mm-sc",
       "name": "Filamento Jamg He PLA Silk",
-      "brand": "",
+      "brand": "Jamg He",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2024/11/Jamg-He-Silk-Gold.jpg"
       ],
       "specs": {
+        "brand": "Jamg He",
         "material": "PLA Silk",
         "diameter": "1.75"
       },
-      "minPrice": 12000,
-      "maxPrice": 12000,
+      "minPrice": 14000,
+      "maxPrice": 14000,
       "storeCount": 1,
       "updatedAt": "2026-04-02T18:41:49.732Z",
       "createdAt": "2026-04-01T18:45:13.272Z",
       "entries": [
         {
           "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/jh-silk/",
-          "price": 12000,
-          "stock": "available"
+          "url": "https://horus3d.cl/producto/jh-tri/",
+          "price": 14000,
+          "stock": "out"
         }
       ],
       "history": [
@@ -43396,6 +42782,21 @@
           "storeId": "horus3d",
           "price": 12000,
           "recordedAt": "2026-04-01T18:22:38.548Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 15000,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 14000,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 14000,
+          "recordedAt": "2026-04-01T18:22:38.547Z"
         }
       ]
     },
@@ -43783,121 +43184,17 @@
       ]
     },
     {
-      "slug": "filamento-jamg-he-pla-silk-arcoiris",
-      "id": "filamento-jamg-he-pla-silk-arcoiris",
-      "name": "Filamento Jamg He PLA Silk Arcoiris",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2025/06/Jamg-He-Silk-Rainbow.webp"
-      ],
-      "specs": {
-        "material": "PLA Silk",
-        "diameter": "1.75"
-      },
-      "minPrice": 15000,
-      "maxPrice": 15000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-01T18:45:06.283Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/jh-rainbow/",
-          "price": 15000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 15000,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-jamg-he-pla-dual-silk",
-      "id": "filamento-jamg-he-pla-dual-silk",
-      "name": "Filamento Jamg He PLA Dual Silk",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2025/06/Jamg-He-Dual-Black-Red.jpg"
-      ],
-      "specs": {
-        "material": "PLA Silk",
-        "diameter": "1.75"
-      },
-      "minPrice": 14000,
-      "maxPrice": 14000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-01T18:45:05.966Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/jh-dual/",
-          "price": 14000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 14000,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-jamg-he-tri-pla-silk",
-      "id": "filamento-jamg-he-tri-pla-silk",
-      "name": "Filamento Jamg He Tri PLA Silk",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2025/06/Jamg-He-Tri-Black-Purple-Blue.jpg"
-      ],
-      "specs": {
-        "material": "PLA Silk",
-        "diameter": "1.75"
-      },
-      "minPrice": 14000,
-      "maxPrice": 14000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-01T18:45:05.641Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/jh-tri/",
-          "price": 14000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 14000,
-          "recordedAt": "2026-04-01T18:22:38.547Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-jamg-he-fibra-de-carbono-pla",
-      "id": "filamento-jamg-he-fibra-de-carbono-pla",
+      "slug": "fil-jamg-he-pla-cf-1000g-175mm-sc",
+      "id": "fil-jamg-he-pla-cf-1000g-175mm-sc",
       "name": "Filamento Jamg He Fibra de Carbono PLA",
-      "brand": "",
+      "brand": "Jamg He",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2025/06/JH-CF-PLA.webp"
       ],
       "specs": {
+        "brand": "Jamg He",
         "material": "PLA-CF",
         "diameter": "1.75"
       },
@@ -43923,16 +43220,17 @@
       ]
     },
     {
-      "slug": "filamento-jamg-he-tpu",
-      "id": "filamento-jamg-he-tpu",
+      "slug": "fil-jamg-he-tpu-1000g-175mm-sc",
+      "id": "fil-jamg-he-tpu-1000g-175mm-sc",
       "name": "Filamento Jamg He TPU",
-      "brand": "",
+      "brand": "Jamg He",
       "categoryId": "filamentos-tpu",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2025/06/JH-TPU-White.webp"
       ],
       "specs": {
+        "brand": "Jamg He",
         "material": "TPU",
         "diameter": "1.75"
       },
@@ -43945,41 +43243,6 @@
         {
           "storeId": "horus3d",
           "url": "https://horus3d.cl/producto/jh-tpu/",
-          "price": 18000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 18000,
-          "recordedAt": "2026-04-01T18:22:38.547Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-jamg-he-fibra-de-vidrio-pla",
-      "id": "filamento-jamg-he-fibra-de-vidrio-pla",
-      "name": "Filamento Jamg He Fibra de Vidrio PLA",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2025/06/JH-Glass-Fiber.webp"
-      ],
-      "specs": {
-        "material": "PLA",
-        "diameter": "1.75"
-      },
-      "minPrice": 18000,
-      "maxPrice": 18000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-01T18:45:04.624Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/jh-fv-pla/",
           "price": 18000,
           "stock": "available"
         }
@@ -44800,16 +44063,17 @@
       ]
     },
     {
-      "slug": "filamento-jamg-he-petg-negro",
-      "id": "filamento-jamg-he-petg-negro",
+      "slug": "fil-jamg-he-petg-1000g-175mm-negro",
+      "id": "fil-jamg-he-petg-1000g-175mm-negro",
       "name": "Filamento Jamg He PetG Negro",
-      "brand": "",
+      "brand": "Jamg He",
       "categoryId": "filamentos-petg",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2025/11/JH-PetG-Negro.png"
       ],
       "specs": {
+        "brand": "Jamg He",
         "material": "PETG",
         "diameter": "1.75",
         "color": "Negro"
@@ -44836,16 +44100,17 @@
       ]
     },
     {
-      "slug": "filamento-jamg-he-abs",
-      "id": "filamento-jamg-he-abs",
+      "slug": "fil-jamg-he-abs-1000g-175mm-sc",
+      "id": "fil-jamg-he-abs-1000g-175mm-sc",
       "name": "Filamento Jamg He ABS",
-      "brand": "",
+      "brand": "Jamg He",
       "categoryId": "filamentos-abs",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2025/11/JH-Abs-Black.png"
       ],
       "specs": {
+        "brand": "Jamg He",
         "material": "ABS",
         "diameter": "1.75"
       },
@@ -45307,41 +44572,6 @@
       ]
     },
     {
-      "slug": "filamento-jamg-he-pla-basic",
-      "id": "filamento-jamg-he-pla-basic",
-      "name": "Filamento Jamg He PLA+ Basic",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2026/02/PLA-Basic-Red.jpeg"
-      ],
-      "specs": {
-        "material": "PLA+",
-        "diameter": "1.75"
-      },
-      "minPrice": 9000,
-      "maxPrice": 9000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-01T18:44:43.715Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/jh-basic/",
-          "price": 9000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 9000,
-          "recordedAt": "2026-04-01T18:22:38.545Z"
-        }
-      ]
-    },
-    {
       "slug": "hotend-a1-series-acero-inoxidable-04mm-original",
       "id": "hotend-a1-series-acero-inoxidable-04mm-original",
       "name": "Hotend A1 Series Acero inoxidable 0.4mm Original",
@@ -45794,7 +45024,7 @@
       "slug": "fil-creality-tpu-1000g-175mm-negro",
       "id": "fil-creality-tpu-1000g-175mm-negro",
       "name": "Filamento TPU 1kg Negro Creality | Filamentos",
-      "brand": "",
+      "brand": "Creality",
       "categoryId": "filamentos-tpu",
       "description": "",
       "images": [
@@ -45832,7 +45062,7 @@
       "slug": "fil-creality-tpu-1000g-175mm-blanco",
       "id": "fil-creality-tpu-1000g-175mm-blanco",
       "name": "Filamento TPU 1kg Blanco Creality | Filamentos",
-      "brand": "",
+      "brand": "Creality",
       "categoryId": "filamentos-tpu",
       "description": "",
       "images": [
@@ -45870,7 +45100,7 @@
       "slug": "fil-creality-tpu-1000g-175mm-azul",
       "id": "fil-creality-tpu-1000g-175mm-azul",
       "name": "Filamento TPU 1kg Azul Creality | Filamentos",
-      "brand": "",
+      "brand": "Creality",
       "categoryId": "filamentos-tpu",
       "description": "",
       "images": [
@@ -45905,31 +45135,32 @@
       ]
     },
     {
-      "slug": "filamento-pla-verde-1kg-todotonercl-filamentos",
-      "id": "filamento-pla-verde-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-pla-1000g-175mm-verde",
+      "id": "fil-todotoner-pla-1000g-175mm-verde",
       "name": "Filamento PLA Verde 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/71961522/resize/306/172?1768962477"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PLA",
         "diameter": "1.75",
         "weight": "1000",
         "color": "Verde"
       },
-      "minPrice": 9490,
-      "maxPrice": 9490,
+      "minPrice": 14990,
+      "maxPrice": 14990,
       "storeCount": 1,
       "updatedAt": "2026-04-02T18:41:49.732Z",
       "createdAt": "2026-03-31T09:31:14.237Z",
       "entries": [
         {
           "storeId": "todotoner",
-          "url": "https://www.todotoner.cl/impresoras/impresoras-3d/filamentos/pla-1kg-verde-todotoner",
-          "price": 9490,
+          "url": "https://www.todotoner.cl/impresoras/impresoras-3d/filamentos/pla-mas-glitter-brilla-oscuridad-verde-neon-todotoner",
+          "price": 14990,
           "stock": "available"
         }
       ],
@@ -45938,6 +45169,11 @@
           "storeId": "todotoner",
           "price": 9490,
           "recordedAt": "2026-03-31T09:23:34.002Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14990,
+          "recordedAt": "2026-03-31T09:23:34.008Z"
         }
       ]
     },
@@ -45945,7 +45181,7 @@
       "slug": "fil-creality-pla-1000g-175mm-verde",
       "id": "fil-creality-pla-1000g-175mm-verde",
       "name": "Filamento PLA Verde 1kg Creality | Filamentos",
-      "brand": "",
+      "brand": "Creality",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -45980,16 +45216,17 @@
       ]
     },
     {
-      "slug": "filamento-pla-seda-plata-1kg-todotonercl-filamentos",
-      "id": "filamento-pla-seda-plata-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-pla-silk-1000g-175mm-sc",
+      "id": "fil-todotoner-pla-silk-1000g-175mm-sc",
       "name": "Filamento PLA Seda Plata 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/71961838/resize/306/172?1768963837"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PLA Silk",
         "diameter": "1.75",
         "weight": "1000"
@@ -46016,16 +45253,17 @@
       ]
     },
     {
-      "slug": "filamento-pla-seda-dorado-u-oro-1kg-todotonercl-filamentos",
-      "id": "filamento-pla-seda-dorado-u-oro-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-pla-silk-1000g-175mm-dorado",
+      "id": "fil-todotoner-pla-silk-1000g-175mm-dorado",
       "name": "Filamento PLA Seda Dorado u Oro 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/71961901/resize/306/172?1768963955"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PLA Silk",
         "diameter": "1.75",
         "weight": "1000",
@@ -46053,19 +45291,21 @@
       ]
     },
     {
-      "slug": "filamento-pla-seda-cobre-1kg-todotonercl-filamentos",
-      "id": "filamento-pla-seda-cobre-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-pla-silk-1000g-175mm-cobre",
+      "id": "fil-todotoner-pla-silk-1000g-175mm-cobre",
       "name": "Filamento PLA Seda Cobre 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/64352499/resize/306/172?1749485234"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PLA Silk",
         "diameter": "1.75",
-        "weight": "1000"
+        "weight": "1000",
+        "color": "Cobre"
       },
       "minPrice": 14990,
       "maxPrice": 14990,
@@ -46089,16 +45329,17 @@
       ]
     },
     {
-      "slug": "filamento-pla-seda-blanco-1kg-todotonercl-filamentos",
-      "id": "filamento-pla-seda-blanco-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-pla-silk-1000g-175mm-blanco",
+      "id": "fil-todotoner-pla-silk-1000g-175mm-blanco",
       "name": "Filamento PLA Seda Blanco 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/71961804/resize/306/172?1768963810"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PLA Silk",
         "diameter": "1.75",
         "weight": "1000",
@@ -46126,16 +45367,17 @@
       ]
     },
     {
-      "slug": "filamento-pla-rojo-vino-1kg-todotonercl-filamentos",
-      "id": "filamento-pla-rojo-vino-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-pla-1000g-175mm-rojo",
+      "id": "fil-todotoner-pla-1000g-175mm-rojo",
       "name": "Filamento PLA Rojo Vino 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/74032160/resize/306/172?1772466231"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PLA",
         "diameter": "1.75",
         "weight": "1000",
@@ -46166,7 +45408,7 @@
       "slug": "fil-creality-pla-1000g-175mm-rojo",
       "id": "fil-creality-pla-1000g-175mm-rojo",
       "name": "Filamento PLA Rojo 1kg Creality | Filamentos",
-      "brand": "",
+      "brand": "Creality",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -46201,30 +45443,31 @@
       ]
     },
     {
-      "slug": "filamento-pla-piel-claro-1kg-todotonercl-filamentos",
-      "id": "filamento-pla-piel-claro-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-pla-1000g-175mm-sc",
+      "id": "fil-todotoner-pla-1000g-175mm-sc",
       "name": "Filamento PLA Piel Claro 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/71961542/resize/306/172?1768962639"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PLA",
         "diameter": "1.75",
         "weight": "1000"
       },
-      "minPrice": 9490,
-      "maxPrice": 9490,
+      "minPrice": 15990,
+      "maxPrice": 15990,
       "storeCount": 1,
       "updatedAt": "2026-04-02T18:41:49.732Z",
       "createdAt": "2026-03-31T09:31:19.407Z",
       "entries": [
         {
           "storeId": "todotoner",
-          "url": "https://www.todotoner.cl/impresoras/impresoras-3d/filamentos/pla-1kg-piel-claro-ppc",
-          "price": 9490,
+          "url": "https://www.todotoner.cl/impresoras/impresoras-3d/filamentos/pla-alta-velocidad-madera-claro-fibra-1kg-todotoner",
+          "price": 15990,
           "stock": "available"
         }
       ],
@@ -46233,20 +45476,31 @@
           "storeId": "todotoner",
           "price": 9490,
           "recordedAt": "2026-03-31T09:23:34.006Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-03-31T09:23:34.003Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 15990,
+          "recordedAt": "2026-03-31T09:23:34.008Z"
         }
       ]
     },
     {
-      "slug": "filamento-pla-negro-1kg-todotonercl-filamentos",
-      "id": "filamento-pla-negro-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-pla-1000g-175mm-negro",
+      "id": "fil-todotoner-pla-1000g-175mm-negro",
       "name": "Filamento PLA Negro 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/71961455/resize/306/172?1768947294"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PLA",
         "diameter": "1.75",
         "weight": "1000",
@@ -46277,7 +45531,7 @@
       "slug": "fil-creality-pla-1000g-175mm-negro",
       "id": "fil-creality-pla-1000g-175mm-negro",
       "name": "Filamento PLA Negro 1kg Creality | Filamentos",
-      "brand": "",
+      "brand": "Creality",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -46312,19 +45566,21 @@
       ]
     },
     {
-      "slug": "filamento-pla-naranjo-1kg-todotonercl-filamentos",
-      "id": "filamento-pla-naranjo-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-pla-1000g-175mm-naranja",
+      "id": "fil-todotoner-pla-1000g-175mm-naranja",
       "name": "Filamento PLA Naranjo 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/71961428/resize/306/172?1768947192"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PLA",
         "diameter": "1.75",
-        "weight": "1000"
+        "weight": "1000",
+        "color": "Naranja"
       },
       "minPrice": 9490,
       "maxPrice": 9490,
@@ -46348,16 +45604,17 @@
       ]
     },
     {
-      "slug": "filamento-pla-morado-1kg-todotonercl-filamentos",
-      "id": "filamento-pla-morado-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-pla-1000g-175mm-morado",
+      "id": "fil-todotoner-pla-1000g-175mm-morado",
       "name": "Filamento PLA Morado 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/71961414/resize/306/172?1768947164"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PLA",
         "diameter": "1.75",
         "weight": "1000",
@@ -46385,46 +45642,10 @@
       ]
     },
     {
-      "slug": "filamento-pla-madera-1kg-todotonercl-filamentos",
-      "id": "filamento-pla-madera-1kg-todotonercl-filamentos",
-      "name": "Filamento PLA Madera 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://cdnx.jumpseller.com/todo-toner/image/64363865/resize/306/172?1749503100"
-      ],
-      "specs": {
-        "material": "PLA",
-        "diameter": "1.75",
-        "weight": "1000"
-      },
-      "minPrice": 13990,
-      "maxPrice": 13990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-03-31T09:31:15.680Z",
-      "entries": [
-        {
-          "storeId": "todotoner",
-          "url": "https://www.todotoner.cl/impresoras/impresoras-3d/filamentos/pla-1kg-madera-todotoner",
-          "price": 13990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "todotoner",
-          "price": 13990,
-          "recordedAt": "2026-03-31T09:23:34.003Z"
-        }
-      ]
-    },
-    {
       "slug": "fil-creality-pla-1000g-175mm-gris",
       "id": "fil-creality-pla-1000g-175mm-gris",
       "name": "Filamento PLA Gris 1kg Creality | Filamentos",
-      "brand": "",
+      "brand": "Creality",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -46459,56 +45680,21 @@
       ]
     },
     {
-      "slug": "filamento-pla-glitter-brilla-en-oscuridad-verde-neon-1kg-todotonercl-filamentos",
-      "id": "filamento-pla-glitter-brilla-en-oscuridad-verde-neon-1kg-todotonercl-filamentos",
-      "name": "Filamento PLA+ Glitter Brilla en Oscuridad Verde Neón 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://cdnx.jumpseller.com/todo-toner/image/74862850/resize/306/172?1773930419"
-      ],
-      "specs": {
-        "material": "PLA+",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Verde"
-      },
-      "minPrice": 14990,
-      "maxPrice": 14990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-03-31T09:31:26.332Z",
-      "entries": [
-        {
-          "storeId": "todotoner",
-          "url": "https://www.todotoner.cl/impresoras/impresoras-3d/filamentos/pla-mas-glitter-brilla-oscuridad-verde-neon-todotoner",
-          "price": 14990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "todotoner",
-          "price": 14990,
-          "recordedAt": "2026-03-31T09:23:34.008Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-pla-fucsia-1kg-todotonercl-filamentos",
-      "id": "filamento-pla-fucsia-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-pla-1000g-175mm-rosa",
+      "id": "fil-todotoner-pla-1000g-175mm-rosa",
       "name": "Filamento PLA Fucsia 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/18175918/resize/306/172?1650928668"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PLA",
         "diameter": "1.75",
-        "weight": "1000"
+        "weight": "1000",
+        "color": "Rosa"
       },
       "minPrice": 9490,
       "maxPrice": 9490,
@@ -46532,16 +45718,17 @@
       ]
     },
     {
-      "slug": "filamento-pla-blanco-1kg-todotonercl-filamentos",
-      "id": "filamento-pla-blanco-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-pla-1000g-175mm-blanco",
+      "id": "fil-todotoner-pla-1000g-175mm-blanco",
       "name": "Filamento PLA Blanco 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/71961072/resize/306/172?1768946890"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PLA",
         "diameter": "1.75",
         "weight": "1000",
@@ -46572,7 +45759,7 @@
       "slug": "fil-creality-pla-1000g-175mm-blanco",
       "id": "fil-creality-pla-1000g-175mm-blanco",
       "name": "Filamento PLA Blanco 1kg Creality | Filamentos",
-      "brand": "",
+      "brand": "Creality",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -46607,16 +45794,17 @@
       ]
     },
     {
-      "slug": "filamento-pla-azul-profundo-1kg-todotonercl-filamentos",
-      "id": "filamento-pla-azul-profundo-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-pla-1000g-175mm-azul",
+      "id": "fil-todotoner-pla-1000g-175mm-azul",
       "name": "Filamento PLA AZUL PROFUNDO 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/72182572/resize/306/172?1769097365"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PLA",
         "diameter": "1.75",
         "weight": "1000",
@@ -46647,7 +45835,7 @@
       "slug": "fil-creality-pla-1000g-175mm-azul",
       "id": "fil-creality-pla-1000g-175mm-azul",
       "name": "Filamento PLA Azul 1kg Creality | Filamentos",
-      "brand": "",
+      "brand": "Creality",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
@@ -46682,16 +45870,17 @@
       ]
     },
     {
-      "slug": "filamento-pla-amarillo-1kg-todotonercl-filamentos",
-      "id": "filamento-pla-amarillo-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-pla-1000g-175mm-amarillo",
+      "id": "fil-todotoner-pla-1000g-175mm-amarillo",
       "name": "Filamento PLA Amarillo 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/71960948/resize/306/172?1768946783"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PLA",
         "diameter": "1.75",
         "weight": "1000",
@@ -46722,7 +45911,7 @@
       "slug": "fil-creality-pla-1000g-175mm-amarillo",
       "id": "fil-creality-pla-1000g-175mm-amarillo",
       "name": "Filamento PLA Amarillo 1kg Creality | Filamentos",
-      "brand": "",
+      "brand": "Creality",
       "categoryId": "filamentos-tpu",
       "description": "",
       "images": [
@@ -46757,66 +45946,31 @@
       ]
     },
     {
-      "slug": "filamento-pla-alta-velocidad-madera-claro-10-fibra-madera-1kg-todotonercl-filamentos",
-      "id": "filamento-pla-alta-velocidad-madera-claro-10-fibra-madera-1kg-todotonercl-filamentos",
-      "name": "Filamento PLA Alta Velocidad Madera Claro 10% Fibra Madera 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://cdnx.jumpseller.com/todo-toner/image/74862927/resize/306/172?1773930574"
-      ],
-      "specs": {
-        "material": "PLA",
-        "diameter": "1.75",
-        "weight": "1000"
-      },
-      "minPrice": 15990,
-      "maxPrice": 15990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-03-31T09:31:25.645Z",
-      "entries": [
-        {
-          "storeId": "todotoner",
-          "url": "https://www.todotoner.cl/impresoras/impresoras-3d/filamentos/pla-alta-velocidad-madera-claro-fibra-1kg-todotoner",
-          "price": 15990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "todotoner",
-          "price": 15990,
-          "recordedAt": "2026-03-31T09:23:34.008Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-petg-piel-claro-1kg-todotonercl-filamentos",
-      "id": "filamento-petg-piel-claro-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-petg-1000g-175mm-sc",
+      "id": "fil-todotoner-petg-1000g-175mm-sc",
       "name": "Filamento PETG Piel Claro 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-petg",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/71960841/resize/306/172?1768945466"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PETG",
         "diameter": "1.75",
         "weight": "1000"
       },
-      "minPrice": 9990,
-      "maxPrice": 9990,
+      "minPrice": 10990,
+      "maxPrice": 10990,
       "storeCount": 1,
       "updatedAt": "2026-04-02T18:41:49.732Z",
       "createdAt": "2026-03-31T09:31:18.735Z",
       "entries": [
         {
           "storeId": "todotoner",
-          "url": "https://www.todotoner.cl/impresoras/impresoras-3d/filamentos/petg-1kg-piel-claro-todotoner",
-          "price": 9990,
+          "url": "https://www.todotoner.cl/impresoras/impresoras-3d/filamentos/hyper-petg-alta-velocidad-piel-clara-1kg-todotoner",
+          "price": 10990,
           "stock": "available"
         }
       ],
@@ -46825,20 +45979,26 @@
           "storeId": "todotoner",
           "price": 9990,
           "recordedAt": "2026-03-31T09:23:34.005Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 10990,
+          "recordedAt": "2026-03-31T09:23:34.007Z"
         }
       ]
     },
     {
-      "slug": "filamento-petg-negro-1kg-todotonercl-filamentos",
-      "id": "filamento-petg-negro-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-petg-1000g-175mm-negro",
+      "id": "fil-todotoner-petg-1000g-175mm-negro",
       "name": "Filamento PETG Negro 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-petg",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/72102297/resize/306/172?1768945435"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PETG",
         "diameter": "1.75",
         "weight": "1000",
@@ -46866,31 +46026,32 @@
       ]
     },
     {
-      "slug": "filamento-petg-blanco-1kg-todotonercl-filamentos",
-      "id": "filamento-petg-blanco-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-petg-1000g-175mm-blanco",
+      "id": "fil-todotoner-petg-1000g-175mm-blanco",
       "name": "Filamento PETG Blanco 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-petg",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/71960824/resize/306/172?1768945301"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PETG",
         "diameter": "1.75",
         "weight": "1000",
         "color": "Blanco"
       },
-      "minPrice": 9990,
-      "maxPrice": 9990,
+      "minPrice": 10990,
+      "maxPrice": 10990,
       "storeCount": 1,
       "updatedAt": "2026-04-02T18:41:49.732Z",
       "createdAt": "2026-03-31T09:31:18.404Z",
       "entries": [
         {
           "storeId": "todotoner",
-          "url": "https://www.todotoner.cl/impresoras/impresoras-3d/filamentos/petg-1kg-blanco-todotoner",
-          "price": 9990,
+          "url": "https://www.todotoner.cl/impresoras/impresoras-3d/filamentos/hyper-petg-alta-velocidad-blanco-1kg-todotoner",
+          "price": 10990,
           "stock": "available"
         }
       ],
@@ -46899,20 +46060,26 @@
           "storeId": "todotoner",
           "price": 9990,
           "recordedAt": "2026-03-31T09:23:34.005Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 10990,
+          "recordedAt": "2026-03-31T09:23:34.008Z"
         }
       ]
     },
     {
-      "slug": "filamento-petg-azul-1kg-todotonercl-filamentos",
-      "id": "filamento-petg-azul-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-petg-1000g-175mm-azul",
+      "id": "fil-todotoner-petg-1000g-175mm-azul",
       "name": "Filamento PETG Azul 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-petg",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/71960800/resize/306/172?1768945193"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PETG",
         "diameter": "1.75",
         "weight": "1000",
@@ -46943,13 +46110,14 @@
       "slug": "filamento-peba-90a-transparente-800g-todotonercl-filamentos",
       "id": "filamento-peba-90a-transparente-800g-todotonercl-filamentos",
       "name": "Filamento PEBA 90A Transparente 800g TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/74863263/resize/306/172?1773931391"
       ],
       "specs": {
+        "brand": "Todotoner",
         "diameter": "1.75",
         "weight": "750",
         "color": "Transparente"
@@ -46979,13 +46147,14 @@
       "slug": "filamento-peba-90a-negro-800g-todotonercl-filamentos",
       "id": "filamento-peba-90a-negro-800g-todotonercl-filamentos",
       "name": "Filamento PEBA 90A Negro 800g TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/74863239/resize/306/172?1773931352"
       ],
       "specs": {
+        "brand": "Todotoner",
         "diameter": "1.75",
         "weight": "750",
         "color": "Negro"
@@ -47015,13 +46184,14 @@
       "slug": "filamento-peba-90a-blanco-800g-todotonercl-filamentos",
       "id": "filamento-peba-90a-blanco-800g-todotonercl-filamentos",
       "name": "Filamento PEBA 90A Blanco 800g TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/74863212/resize/306/172?1773931316"
       ],
       "specs": {
+        "brand": "Todotoner",
         "diameter": "1.75",
         "weight": "750",
         "color": "Blanco"
@@ -47048,52 +46218,17 @@
       ]
     },
     {
-      "slug": "filamento-hyper-petg-alta-velodad-piel-clara-1kg-todotonercl-filamentos",
-      "id": "filamento-hyper-petg-alta-velodad-piel-clara-1kg-todotonercl-filamentos",
-      "name": "Filamento Hyper Petg Alta velodad Piel Clara 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
-      "categoryId": "filamentos-petg",
-      "description": "",
-      "images": [
-        "https://cdnx.jumpseller.com/todo-toner/image/74863116/resize/306/172?1773931012"
-      ],
-      "specs": {
-        "material": "PETG",
-        "diameter": "1.75",
-        "weight": "1000"
-      },
-      "minPrice": 10990,
-      "maxPrice": 10990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-03-31T09:31:24.110Z",
-      "entries": [
-        {
-          "storeId": "todotoner",
-          "url": "https://www.todotoner.cl/impresoras/impresoras-3d/filamentos/hyper-petg-alta-velocidad-piel-clara-1kg-todotoner",
-          "price": 10990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "todotoner",
-          "price": 10990,
-          "recordedAt": "2026-03-31T09:23:34.007Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-hyper-petg-alta-velodad-gris-espacial-1kg-todotonercl-filamentos",
-      "id": "filamento-hyper-petg-alta-velodad-gris-espacial-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-petg-1000g-175mm-gris",
+      "id": "fil-todotoner-petg-1000g-175mm-gris",
       "name": "Filamento Hyper Petg Alta velodad Gris Espacial 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-petg",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/74863130/resize/306/172?1773931048"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PETG",
         "diameter": "1.75",
         "weight": "1000",
@@ -47107,43 +46242,6 @@
       "entries": [
         {
           "storeId": "todotoner",
-          "url": "https://www.todotoner.cl/impresoras/impresoras-3d/filamentos/hyper-petg-alta-velocidad-gris-espacial-1kg-todotoner",
-          "price": 10990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "todotoner",
-          "price": 10990,
-          "recordedAt": "2026-03-31T09:23:34.007Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-hyper-petg-alta-velodad-gris-1kg-todotonercl-filamentos",
-      "id": "filamento-hyper-petg-alta-velodad-gris-1kg-todotonercl-filamentos",
-      "name": "Filamento Hyper Petg Alta velodad Gris 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
-      "categoryId": "filamentos-petg",
-      "description": "",
-      "images": [
-        "https://cdnx.jumpseller.com/todo-toner/image/74863108/resize/306/172?1773930978"
-      ],
-      "specs": {
-        "material": "PETG",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Gris"
-      },
-      "minPrice": 10990,
-      "maxPrice": 10990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-03-31T09:31:24.652Z",
-      "entries": [
-        {
-          "storeId": "todotoner",
           "url": "https://www.todotoner.cl/impresoras/impresoras-3d/filamentos/hyper-petg-alta-velocidad-gris-1kg-todotoner",
           "price": 10990,
           "stock": "available"
@@ -47153,40 +46251,8 @@
         {
           "storeId": "todotoner",
           "price": 10990,
-          "recordedAt": "2026-03-31T09:23:34.008Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-hyper-petg-alta-velodad-blanco-1kg-todotonercl-filamentos",
-      "id": "filamento-hyper-petg-alta-velodad-blanco-1kg-todotonercl-filamentos",
-      "name": "Filamento Hyper Petg Alta velodad Blanco 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
-      "categoryId": "filamentos-petg",
-      "description": "",
-      "images": [
-        "https://cdnx.jumpseller.com/todo-toner/image/74863083/resize/306/172?1773930938"
-      ],
-      "specs": {
-        "material": "PETG",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Blanco"
-      },
-      "minPrice": 10990,
-      "maxPrice": 10990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-03-31T09:31:25.217Z",
-      "entries": [
-        {
-          "storeId": "todotoner",
-          "url": "https://www.todotoner.cl/impresoras/impresoras-3d/filamentos/hyper-petg-alta-velocidad-blanco-1kg-todotoner",
-          "price": 10990,
-          "stock": "available"
-        }
-      ],
-      "history": [
+          "recordedAt": "2026-03-31T09:23:34.007Z"
+        },
         {
           "storeId": "todotoner",
           "price": 10990,
@@ -47195,19 +46261,21 @@
       ]
     },
     {
-      "slug": "filamento-hyper-abs-alta-velocidad-naranjo-1kg-todotonercl-filamentos",
-      "id": "filamento-hyper-abs-alta-velocidad-naranjo-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-abs-1000g-175mm-naranja",
+      "id": "fil-todotoner-abs-1000g-175mm-naranja",
       "name": "Filamento Hyper ABS Alta Velocidad Naranjo 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-abs",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/74863171/resize/306/172?1773931143"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "ABS",
         "diameter": "1.75",
-        "weight": "1000"
+        "weight": "1000",
+        "color": "Naranja"
       },
       "minPrice": 10990,
       "maxPrice": 10990,
@@ -47231,16 +46299,17 @@
       ]
     },
     {
-      "slug": "filamento-asa-alta-velocidad-negro-1kg-todotonercl-filamentos",
-      "id": "filamento-asa-alta-velocidad-negro-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-asa-1000g-175mm-negro",
+      "id": "fil-todotoner-asa-1000g-175mm-negro",
       "name": "Filamento ASA Alta Velocidad Negro 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-abs",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/74863746/resize/306/172?1773932628"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "ASA",
         "diameter": "1.75",
         "weight": "1000",
@@ -47268,16 +46337,17 @@
       ]
     },
     {
-      "slug": "filamento-asa-alta-velocidad-blanco-1kg-todotonercl-filamentos",
-      "id": "filamento-asa-alta-velocidad-blanco-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-asa-1000g-175mm-blanco",
+      "id": "fil-todotoner-asa-1000g-175mm-blanco",
       "name": "Filamento ASA Alta Velocidad Blanco 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-abs",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/74863771/resize/306/172?1773932661"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "ASA",
         "diameter": "1.75",
         "weight": "1000",
@@ -47305,16 +46375,17 @@
       ]
     },
     {
-      "slug": "filamento-abs-negro-1kg-todotonercl-filamentos",
-      "id": "filamento-abs-negro-1kg-todotonercl-filamentos",
+      "slug": "fil-todotoner-abs-1000g-175mm-negro",
+      "id": "fil-todotoner-abs-1000g-175mm-negro",
       "name": "Filamento ABS Negro 1kg TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-abs",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/71958989/resize/306/172?1768943586"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "ABS",
         "diameter": "1.75",
         "weight": "1000",
@@ -48559,42 +47630,6 @@
         {
           "storeId": "horus3d",
           "price": 229990,
-          "recordedAt": "2026-04-02T06:55:56.047Z"
-        }
-      ]
-    },
-    {
-      "slug": "bambu-lab-filamento-pla-lite-1kg-175mm",
-      "id": "bambu-lab-filamento-pla-lite-1kg-175mm",
-      "name": "Bambu Lab Filamento PLA Lite 1kg 1.75mm",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2026/01/Filbmbl_lite_sunflower_yellow-300x300.webp"
-      ],
-      "specs": {
-        "material": "PLA",
-        "diameter": "1.75",
-        "weight": "1000"
-      },
-      "minPrice": 11590,
-      "maxPrice": 11590,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T06:55:56.047Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/filamentos-bambu-lab-pla-lite-1kg-1-75mm/",
-          "price": 11590,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 11590,
           "recordedAt": "2026-04-02T06:55:56.047Z"
         }
       ]
@@ -55458,43 +54493,6 @@
       ]
     },
     {
-      "slug": "fil-sunlu-pla-silk-1000g-175mm-naranja",
-      "id": "fil-sunlu-pla-silk-1000g-175mm-naranja",
-      "name": "PLA+ Seda Naranjo SUNLU",
-      "brand": "Sunlu",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://evstore.cl/wp-content/uploads/2022/01/PLA-Seda-SUNLU-Naranjo.jpg"
-      ],
-      "specs": {
-        "brand": "Sunlu",
-        "material": "PLA Silk",
-        "diameter": "1.75",
-        "color": "Naranja"
-      },
-      "minPrice": 16990,
-      "maxPrice": 16990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T06:55:56.047Z",
-      "entries": [
-        {
-          "storeId": "evstore",
-          "url": "https://evstore.cl/tienda/pla-seda-naranjo-sunlu/",
-          "price": 16990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "evstore",
-          "price": 16990,
-          "recordedAt": "2026-04-02T06:55:56.047Z"
-        }
-      ]
-    },
-    {
       "slug": "fil-sunlu-petg-1000g-175mm-naranja",
       "id": "fil-sunlu-petg-1000g-175mm-naranja",
       "name": "PETG Naranjo SUNLU",
@@ -55720,68 +54718,6 @@
       ]
     },
     {
-      "slug": "fil-polymaker-pla-1000g-175mm-naranja",
-      "id": "fil-polymaker-pla-1000g-175mm-naranja",
-      "name": "Filamento Polymaker Polyterra PLA Naranjo",
-      "brand": "Polymaker",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://capital3d.cl/wp-content/uploads/2023/03/capital3d-polyterra-filament-pla-naranja.webp"
-      ],
-      "specs": {
-        "brand": "Polymaker",
-        "material": "PLA",
-        "diameter": "1.75",
-        "color": "Naranja"
-      },
-      "minPrice": 23000,
-      "maxPrice": 23000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T06:55:56.047Z",
-      "entries": [
-        {
-          "storeId": "capital3d",
-          "url": "https://capital3d.cl/product/filamento-polymaker-polylite-pla-pro-naranja/",
-          "price": 23000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "capital3d",
-          "price": 20000,
-          "recordedAt": "2026-04-02T06:55:56.047Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 23000,
-          "recordedAt": "2026-04-02T06:55:56.047Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 20000,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 23000,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 20000,
-          "recordedAt": "2026-04-02T18:41:49.732Z"
-        },
-        {
-          "storeId": "capital3d",
-          "price": 23000,
-          "recordedAt": "2026-04-02T18:41:49.732Z"
-        }
-      ]
-    },
-    {
       "slug": "fil-esun-abs-1000g-175mm-naranja",
       "id": "fil-esun-abs-1000g-175mm-naranja",
       "name": "Filamento eSUN ABS ABS+ Naranjo",
@@ -55830,43 +54766,6 @@
       ]
     },
     {
-      "slug": "fil-esun-tpu-1000g-175mm-naranja",
-      "id": "fil-esun-tpu-1000g-175mm-naranja",
-      "name": "Filamento eSUN TPU TPU-95A Naranjo",
-      "brand": "eSUN",
-      "categoryId": "filamentos-tpu",
-      "description": "",
-      "images": [
-        "https://capital3d.cl/wp-content/uploads/2023/01/capital3d-esun-filament-tpu-95a-klar-naranjo.webp"
-      ],
-      "specs": {
-        "brand": "eSUN",
-        "material": "TPU",
-        "diameter": "1.75",
-        "color": "Naranja"
-      },
-      "minPrice": 31000,
-      "maxPrice": 31000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T06:55:56.047Z",
-      "entries": [
-        {
-          "storeId": "capital3d",
-          "url": "https://capital3d.cl/product/filamento-esun-tpu-95a-naranjo/",
-          "price": 31000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "capital3d",
-          "price": 31000,
-          "recordedAt": "2026-04-02T06:55:56.047Z"
-        }
-      ]
-    },
-    {
       "slug": "fil-sunhokey-abs-1000g-175mm-sc",
       "id": "fil-sunhokey-abs-1000g-175mm-sc",
       "name": "Filamento ABS Purpura para impresión 3D marca Sunhokey 1.75mm 1Kg",
@@ -55888,9 +54787,9 @@
       "entries": [
         {
           "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-abs-piel-para-impresion-3d-marca-sunhokey-1-75mm-1kg/",
+          "url": "https://www.cimech3d.cl/producto/filamento-abs-purpura-para-impresion-3d-marca-sunhokey-1-75mm-1kg/",
           "price": 6990,
-          "stock": "out"
+          "stock": "available"
         }
       ],
       "history": [
@@ -55898,6 +54797,16 @@
           "storeId": "cimech3d",
           "price": 6990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 6990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 6990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -55934,6 +54843,11 @@
           "storeId": "cimech3d",
           "price": 6990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 6990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -55970,6 +54884,11 @@
           "storeId": "cimech3d",
           "price": 6990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 6990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -56008,6 +54927,11 @@
           "storeId": "cimech3d",
           "price": 13490,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 13490,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -56046,6 +54970,11 @@
           "storeId": "cimech3d",
           "price": 12990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 12990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -56084,6 +55013,11 @@
           "storeId": "cimech3d",
           "price": 12990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 12990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -56122,6 +55056,11 @@
           "storeId": "cimech3d",
           "price": 12990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 12990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -56160,6 +55099,11 @@
           "storeId": "cimech3d",
           "price": 12990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 12990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -56198,6 +55142,11 @@
           "storeId": "cimech3d",
           "price": 12990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 12990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -56236,6 +55185,11 @@
           "storeId": "cimech3d",
           "price": 12990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 12990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -56274,6 +55228,11 @@
           "storeId": "cimech3d",
           "price": 12990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 12990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -56312,6 +55271,11 @@
           "storeId": "cimech3d",
           "price": 12990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 12990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -56349,6 +55313,11 @@
           "storeId": "cimech3d",
           "price": 12990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 12990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -56387,6 +55356,11 @@
           "storeId": "cimech3d",
           "price": 12990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 12990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -56425,6 +55399,11 @@
           "storeId": "cimech3d",
           "price": 12990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 12990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -56461,6 +55440,11 @@
           "storeId": "cimech3d",
           "price": 12990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 12990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -56499,6 +55483,11 @@
           "storeId": "cimech3d",
           "price": 15990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 15990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -56537,6 +55526,11 @@
           "storeId": "cimech3d",
           "price": 15990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 15990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -56575,6 +55569,11 @@
           "storeId": "cimech3d",
           "price": 15990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 15990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -56613,6 +55612,11 @@
           "storeId": "cimech3d",
           "price": 15990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 15990,
+          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -56651,6 +55655,11 @@
           "storeId": "cimech3d",
           "price": 14990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 14990,
+          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -56687,6 +55696,11 @@
           "storeId": "cimech3d",
           "price": 14990,
           "recordedAt": "2026-04-02T06:55:56.047Z"
+        },
+        {
+          "storeId": "cimech3d",
+          "price": 14990,
+          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -58804,30 +57818,31 @@
       ]
     },
     {
-      "slug": "panchroma-pla-marmol-sand-stone",
-      "id": "panchroma-pla-marmol-sand-stone",
+      "slug": "fil-panchroma-pla-1000g-175mm-sc",
+      "id": "fil-panchroma-pla-1000g-175mm-sc",
       "name": "Panchroma PLA Mármol Sand Stone",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2025/06/PLA-Marmol-Sand-Stone-2-600x600.jpg"
       ],
       "specs": {
+        "brand": "Panchroma",
         "material": "PLA",
         "diameter": "1.75"
       },
-      "minPrice": 18990,
-      "maxPrice": 18990,
+      "minPrice": 99999,
+      "maxPrice": 99999,
       "storeCount": 1,
       "updatedAt": "2026-04-02T18:41:49.732Z",
       "createdAt": "2026-04-02T12:43:59.136Z",
       "entries": [
         {
           "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-marmol-sand-stone/",
-          "price": 18990,
-          "stock": "unknown"
+          "url": "https://www.maxi3d.cl/producto/pla-panchroma-neon-magenta/",
+          "price": 99999,
+          "stock": "out"
         }
       ],
       "history": [
@@ -58835,20 +57850,31 @@
           "storeId": "maxi3d",
           "price": 18990,
           "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 18990,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 99999,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
         }
       ]
     },
     {
-      "slug": "panchroma-pla-marmol-slate-grey",
-      "id": "panchroma-pla-marmol-slate-grey",
+      "slug": "fil-panchroma-pla-1000g-175mm-gris",
+      "id": "fil-panchroma-pla-1000g-175mm-gris",
       "name": "Panchroma PLA Mármol Slate Grey",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Marmol-Slate-Grey-2-600x600.jpg"
       ],
       "specs": {
+        "brand": "Panchroma",
         "material": "PLA",
         "diameter": "1.75",
         "color": "Gris"
@@ -58875,16 +57901,17 @@
       ]
     },
     {
-      "slug": "panchroma-pla-matte-army-brown",
-      "id": "panchroma-pla-matte-army-brown",
+      "slug": "fil-panchroma-pla-matte-1000g-175mm-cafe",
+      "id": "fil-panchroma-pla-matte-1000g-175mm-cafe",
       "name": "Panchroma PLA Matte Army Brown",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Army-Brown-2.jpg"
       ],
       "specs": {
+        "brand": "Panchroma",
         "material": "PLA Matte",
         "diameter": "1.75",
         "color": "Café"
@@ -58897,7 +57924,7 @@
       "entries": [
         {
           "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-army-brown/",
+          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-wood-brown/",
           "price": 16500,
           "stock": "unknown"
         }
@@ -58907,20 +57934,31 @@
           "storeId": "maxi3d",
           "price": 16500,
           "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
         }
       ]
     },
     {
-      "slug": "panchroma-pla-matte-army-dark-green",
-      "id": "panchroma-pla-matte-army-dark-green",
+      "slug": "fil-panchroma-pla-matte-1000g-175mm-verde",
+      "id": "fil-panchroma-pla-matte-1000g-175mm-verde",
       "name": "Panchroma PLA Matte Army Dark Green",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Army-Dark-Green-2.jpg"
       ],
       "specs": {
+        "brand": "Panchroma",
         "material": "PLA Matte",
         "diameter": "1.75",
         "color": "Verde"
@@ -58933,12 +57971,32 @@
       "entries": [
         {
           "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-army-dark-green/",
+          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-lime-green/",
           "price": 16500,
-          "stock": "unknown"
+          "stock": "out"
         }
       ],
       "history": [
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
         {
           "storeId": "maxi3d",
           "price": 16500,
@@ -58947,52 +58005,17 @@
       ]
     },
     {
-      "slug": "panchroma-pla-matte-army-light-green",
-      "id": "panchroma-pla-matte-army-light-green",
-      "name": "Panchroma PLA Matte Army Light Green",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Army-Light-Green-2.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75",
-        "color": "Verde"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-army-light-green/",
-          "price": 16500,
-          "stock": "unknown"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-army-purple",
-      "id": "panchroma-pla-matte-army-purple",
+      "slug": "fil-panchroma-pla-matte-1000g-175mm-morado",
+      "id": "fil-panchroma-pla-matte-1000g-175mm-morado",
       "name": "Panchroma PLA Matte Army Purple",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Army-Purple-1.jpg"
       ],
       "specs": {
+        "brand": "Panchroma",
         "material": "PLA Matte",
         "diameter": "1.75",
         "color": "Morado"
@@ -59005,12 +58028,22 @@
       "entries": [
         {
           "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-army-purple/",
+          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-lavender-purple/",
           "price": 16500,
-          "stock": "unknown"
+          "stock": "out"
         }
       ],
       "history": [
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
         {
           "storeId": "maxi3d",
           "price": 16500,
@@ -59019,232 +58052,17 @@
       ]
     },
     {
-      "slug": "panchroma-pla-matte-cotton-white",
-      "id": "panchroma-pla-matte-cotton-white",
+      "slug": "fil-panchroma-pla-matte-1000g-175mm-blanco",
+      "id": "fil-panchroma-pla-matte-1000g-175mm-blanco",
       "name": "Panchroma PLA Matte Cotton White",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Cotton-White-1-600x600.jpg"
       ],
       "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75",
-        "color": "Blanco"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-cotton-white/",
-          "price": 16500,
-          "stock": "unknown"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-earth-brown",
-      "id": "panchroma-pla-matte-earth-brown",
-      "name": "Panchroma PLA Matte Earth Brown",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Earth-Brown-2.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75",
-        "color": "Café"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-earth-brown/",
-          "price": 16500,
-          "stock": "unknown"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-muted-blue",
-      "id": "panchroma-pla-matte-muted-blue",
-      "name": "Panchroma PLA Matte Muted Blue",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Muted-Blue-2.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75",
-        "color": "Azul"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-muted-blue/",
-          "price": 16500,
-          "stock": "unknown"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-muted-green",
-      "id": "panchroma-pla-matte-muted-green",
-      "name": "Panchroma PLA Matte Muted Green",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Muted-Green-3.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75",
-        "color": "Verde"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-muted-green/",
-          "price": 16500,
-          "stock": "unknown"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-muted-purple",
-      "id": "panchroma-pla-matte-muted-purple",
-      "name": "Panchroma PLA Matte Muted Purple",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Muted-Purple-2.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75",
-        "color": "Morado"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-muted-purple/",
-          "price": 16500,
-          "stock": "unknown"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-muted-red",
-      "id": "panchroma-pla-matte-muted-red",
-      "name": "Panchroma PLA Matte Muted Red",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Muted-Red-3.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75",
-        "color": "Rojo"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-muted-red/",
-          "price": 16500,
-          "stock": "unknown"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-muted-white",
-      "id": "panchroma-pla-matte-muted-white",
-      "name": "Panchroma PLA Matte Muted White",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Muted-White-3.jpg"
-      ],
-      "specs": {
+        "brand": "Panchroma",
         "material": "PLA Matte",
         "diameter": "1.75",
         "color": "Blanco"
@@ -59267,20 +58085,120 @@
           "storeId": "maxi3d",
           "price": 16500,
           "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
         }
       ]
     },
     {
-      "slug": "panchroma-pla-matte-pastel-banana",
-      "id": "panchroma-pla-matte-pastel-banana",
+      "slug": "fil-panchroma-pla-matte-1000g-175mm-azul",
+      "id": "fil-panchroma-pla-matte-1000g-175mm-azul",
+      "name": "Panchroma PLA Matte Muted Blue",
+      "brand": "Panchroma",
+      "categoryId": "filamentos-pla",
+      "description": "",
+      "images": [
+        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Muted-Blue-2.jpg"
+      ],
+      "specs": {
+        "brand": "Panchroma",
+        "material": "PLA Matte",
+        "diameter": "1.75",
+        "color": "Azul"
+      },
+      "minPrice": 16500,
+      "maxPrice": 16500,
+      "storeCount": 1,
+      "updatedAt": "2026-04-02T18:41:49.732Z",
+      "createdAt": "2026-04-02T12:43:59.136Z",
+      "entries": [
+        {
+          "storeId": "maxi3d",
+          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-sapphire-blue/",
+          "price": 16500,
+          "stock": "out"
+        }
+      ],
+      "history": [
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        }
+      ]
+    },
+    {
+      "slug": "fil-panchroma-pla-matte-1000g-175mm-rojo",
+      "id": "fil-panchroma-pla-matte-1000g-175mm-rojo",
+      "name": "Panchroma PLA Matte Muted Red",
+      "brand": "Panchroma",
+      "categoryId": "filamentos-pla",
+      "description": "",
+      "images": [
+        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Muted-Red-3.jpg"
+      ],
+      "specs": {
+        "brand": "Panchroma",
+        "material": "PLA Matte",
+        "diameter": "1.75",
+        "color": "Rojo"
+      },
+      "minPrice": 16500,
+      "maxPrice": 16500,
+      "storeCount": 1,
+      "updatedAt": "2026-04-02T18:41:49.732Z",
+      "createdAt": "2026-04-02T12:43:59.136Z",
+      "entries": [
+        {
+          "storeId": "maxi3d",
+          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-lava-red/",
+          "price": 16500,
+          "stock": "out"
+        }
+      ],
+      "history": [
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        }
+      ]
+    },
+    {
+      "slug": "fil-panchroma-pla-matte-1000g-175mm-sc",
+      "id": "fil-panchroma-pla-matte-1000g-175mm-sc",
       "name": "Panchroma PLA Matte Pastel Banana",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Pastel-Banana-3.jpg"
       ],
       "specs": {
+        "brand": "Panchroma",
         "material": "PLA Matte",
         "diameter": "1.75"
       },
@@ -59292,12 +58210,57 @@
       "entries": [
         {
           "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-pastel-banana/",
+          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-pastel-peanut/",
           "price": 16500,
-          "stock": "unknown"
+          "stock": "out"
         }
       ],
       "history": [
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
+        {
+          "storeId": "maxi3d",
+          "price": 16500,
+          "recordedAt": "2026-04-02T12:43:59.136Z"
+        },
         {
           "storeId": "maxi3d",
           "price": 16500,
@@ -59306,86 +58269,17 @@
       ]
     },
     {
-      "slug": "panchroma-pla-matte-pastel-candy",
-      "id": "panchroma-pla-matte-pastel-candy",
-      "name": "Panchroma PLA Matte Pastel Candy",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Army-Red-4.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-pastel-candy/",
-          "price": 16500,
-          "stock": "unknown"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-pastel-ice",
-      "id": "panchroma-pla-matte-pastel-ice",
-      "name": "Panchroma PLA Matte Pastel Ice",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Pastel-Ice-3.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-pastel-ice/",
-          "price": 16500,
-          "stock": "unknown"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-pastel-mint",
-      "id": "panchroma-pla-matte-pastel-mint",
+      "slug": "fil-panchroma-pla-matte-1000g-175mm-menta",
+      "id": "fil-panchroma-pla-matte-1000g-175mm-menta",
       "name": "Panchroma PLA Matte Pastel Mint",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2025/08/Panchroma-PLA-Matte-Pastel-Mint-3.jpg"
       ],
       "specs": {
+        "brand": "Panchroma",
         "material": "PLA Matte",
         "diameter": "1.75",
         "color": "Menta"
@@ -59412,86 +58306,17 @@
       ]
     },
     {
-      "slug": "panchroma-pla-matte-pastel-periwinkle",
-      "id": "panchroma-pla-matte-pastel-periwinkle",
-      "name": "Panchroma PLA Matte Pastel Periwinkle",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Pastel-Periwinkle-3.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-pastel-periwinkle/",
-          "price": 16500,
-          "stock": "unknown"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-pastel-watermelon",
-      "id": "panchroma-pla-matte-pastel-watermelon",
-      "name": "Panchroma PLA Matte Pastel Watermelon",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Pastel-Watermelon-3.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-pastel-watermelon/",
-          "price": 16500,
-          "stock": "unknown"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-sakura-pink",
-      "id": "panchroma-pla-matte-sakura-pink",
+      "slug": "fil-panchroma-pla-matte-1000g-175mm-rosa",
+      "id": "fil-panchroma-pla-matte-1000g-175mm-rosa",
       "name": "Panchroma PLA Matte Sakura Pink",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Sakura-Pink-1.jpg"
       ],
       "specs": {
+        "brand": "Panchroma",
         "material": "PLA Matte",
         "diameter": "1.75",
         "color": "Rosa"
@@ -59518,16 +58343,17 @@
       ]
     },
     {
-      "slug": "panchroma-pla-matte-sunrise-orange",
-      "id": "panchroma-pla-matte-sunrise-orange",
+      "slug": "fil-panchroma-pla-matte-1000g-175mm-naranja",
+      "id": "fil-panchroma-pla-matte-1000g-175mm-naranja",
       "name": "Panchroma PLA Matte Sunrise Orange",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Sunrise-Orange-2.jpg"
       ],
       "specs": {
+        "brand": "Panchroma",
         "material": "PLA Matte",
         "diameter": "1.75",
         "color": "Naranja"
@@ -59541,42 +58367,6 @@
         {
           "storeId": "maxi3d",
           "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-sunrise-orange/",
-          "price": 16500,
-          "stock": "unknown"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-wood-brown",
-      "id": "panchroma-pla-matte-wood-brown",
-      "name": "Panchroma PLA Matte Wood Brown",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Wood-Brown-2.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75",
-        "color": "Café"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-wood-brown/",
           "price": 16500,
           "stock": "unknown"
         }
@@ -62410,13 +61200,14 @@
       "slug": "panchroma-luminous-rainbow",
       "id": "panchroma-luminous-rainbow",
       "name": "Panchroma Luminous Rainbow",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2025/12/Panchroma-Luminous-Rainbow-2-600x600.jpg"
       ],
       "specs": {
+        "brand": "Panchroma",
         "diameter": "1.75"
       },
       "minPrice": 30000,
@@ -62441,16 +61232,17 @@
       ]
     },
     {
-      "slug": "panchroma-pla-marmol-blanco",
-      "id": "panchroma-pla-marmol-blanco",
+      "slug": "fil-panchroma-pla-1000g-175mm-blanco",
+      "id": "fil-panchroma-pla-1000g-175mm-blanco",
       "name": "Panchroma PLA Mármol Blanco",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Marmol-Blanco-9-600x600.jpg"
       ],
       "specs": {
+        "brand": "Panchroma",
         "material": "PLA",
         "diameter": "1.75",
         "color": "Blanco"
@@ -62477,51 +61269,17 @@
       ]
     },
     {
-      "slug": "panchroma-pla-marmol-brick",
-      "id": "panchroma-pla-marmol-brick",
-      "name": "Panchroma PLA Mármol Brick",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Marmol-Brick-1-600x600.jpg"
-      ],
-      "specs": {
-        "material": "PLA",
-        "diameter": "1.75"
-      },
-      "minPrice": 18990,
-      "maxPrice": 18990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-marmol-brick/",
-          "price": 18990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 18990,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-marmol-lime-stone",
-      "id": "panchroma-pla-marmol-lime-stone",
+      "slug": "fil-panchroma-pla-1000g-175mm-lima",
+      "id": "fil-panchroma-pla-1000g-175mm-lima",
       "name": "Panchroma PLA Mármol Lime Stone",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2025/06/PLA-Marmol-Lime-Stone-2-600x600.jpg"
       ],
       "specs": {
+        "brand": "Panchroma",
         "material": "PLA",
         "diameter": "1.75",
         "color": "Lima"
@@ -62548,158 +61306,17 @@
       ]
     },
     {
-      "slug": "panchroma-pla-matte-army-beige",
-      "id": "panchroma-pla-matte-army-beige",
-      "name": "Panchroma PLA Matte Army Beige",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Army-Beige-2.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-army-beige/",
-          "price": 16500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-army-blue",
-      "id": "panchroma-pla-matte-army-blue",
-      "name": "Panchroma PLA Matte Army Blue",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Army-Blue-2.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75",
-        "color": "Azul"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-army-blue/",
-          "price": 16500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-army-red",
-      "id": "panchroma-pla-matte-army-red",
-      "name": "Panchroma PLA Matte Army Red",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/New-Panchroma-PLA-Matte-Army-Red-3.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75",
-        "color": "Rojo"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-army-red/",
-          "price": 16500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-artic-teal",
-      "id": "panchroma-pla-matte-artic-teal",
-      "name": "Panchroma PLA Matte Artic Teal",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/08/Panchroma-PLA-Matte-Artic-Teal-3.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-artic-teal/",
-          "price": 16500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-charcoal-black",
-      "id": "panchroma-pla-matte-charcoal-black",
+      "slug": "fil-panchroma-pla-matte-1000g-175mm-negro",
+      "id": "fil-panchroma-pla-matte-1000g-175mm-negro",
       "name": "Panchroma PLA Matte Charcoal Black",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Charcoal-Black-2-600x600.jpg"
       ],
       "specs": {
+        "brand": "Panchroma",
         "material": "PLA Matte",
         "diameter": "1.75",
         "color": "Negro"
@@ -62726,87 +61343,17 @@
       ]
     },
     {
-      "slug": "panchroma-pla-matte-electric-indigo",
-      "id": "panchroma-pla-matte-electric-indigo",
-      "name": "Panchroma PLA Matte Electric Indigo",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Electric-Indigo-2.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-electric-indigo/",
-          "price": 16500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-forrest-green",
-      "id": "panchroma-pla-matte-forrest-green",
-      "name": "Panchroma PLA Matte Forrest Green",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Forrest-Green-2.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75",
-        "color": "Verde"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-forrest-green/",
-          "price": 16500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-fossil-grey",
-      "id": "panchroma-pla-matte-fossil-grey",
+      "slug": "fil-panchroma-pla-matte-1000g-175mm-gris",
+      "id": "fil-panchroma-pla-matte-1000g-175mm-gris",
       "name": "Panchroma PLA Matte Fossil Grey",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Fossil-Grey-1.jpg"
       ],
       "specs": {
+        "brand": "Panchroma",
         "material": "PLA Matte",
         "diameter": "1.75",
         "color": "Gris"
@@ -62833,230 +61380,17 @@
       ]
     },
     {
-      "slug": "panchroma-pla-matte-lava-red",
-      "id": "panchroma-pla-matte-lava-red",
-      "name": "Panchroma PLA Matte Lava Red",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Lava-Red-2.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75",
-        "color": "Rojo"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-lava-red/",
-          "price": 16500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-lavender-purple",
-      "id": "panchroma-pla-matte-lavender-purple",
-      "name": "Panchroma PLA Matte Lavender Purple",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Lavender-Purple-1.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75",
-        "color": "Morado"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-lavender-purple/",
-          "price": 16500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-lime-green",
-      "id": "panchroma-pla-matte-lime-green",
-      "name": "Panchroma PLA Matte Lime Green",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Lime-Green-1.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75",
-        "color": "Verde"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-lime-green/",
-          "price": 16500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-pastel-peach",
-      "id": "panchroma-pla-matte-pastel-peach",
-      "name": "Panchroma PLA Matte Pastel Peach",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Pastel-Peach-3.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-pastel-peach/",
-          "price": 16500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-pastel-peanut",
-      "id": "panchroma-pla-matte-pastel-peanut",
-      "name": "Panchroma PLA Matte Pastel Peanut",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Pastel-Peanut-1.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-pastel-peanut/",
-          "price": 16500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-sapphire-blue",
-      "id": "panchroma-pla-matte-sapphire-blue",
-      "name": "Panchroma PLA Matte Sapphire Blue",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Sapphire-Blue-3.jpg"
-      ],
-      "specs": {
-        "material": "PLA Matte",
-        "diameter": "1.75",
-        "color": "Azul"
-      },
-      "minPrice": 16500,
-      "maxPrice": 16500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/panchroma-pla-matte-sapphire-blue/",
-          "price": 16500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 16500,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "panchroma-pla-matte-savannah-yellow",
-      "id": "panchroma-pla-matte-savannah-yellow",
+      "slug": "fil-panchroma-pla-matte-1000g-175mm-amarillo",
+      "id": "fil-panchroma-pla-matte-1000g-175mm-amarillo",
       "name": "Panchroma PLA Matte Savannah Yellow",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2025/06/Panchroma-PLA-Matte-Savannah-Yellow-4.jpg"
       ],
       "specs": {
+        "brand": "Panchroma",
         "material": "PLA Matte",
         "diameter": "1.75",
         "color": "Amarillo"
@@ -63591,16 +61925,17 @@
       ]
     },
     {
-      "slug": "pla-panchroma-neon-green",
-      "id": "pla-panchroma-neon-green",
+      "slug": "fil-panchroma-pla-1000g-175mm-verde",
+      "id": "fil-panchroma-pla-1000g-175mm-verde",
       "name": "PLA Panchroma Neon Green",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2026/03/PLA-Panchroma-Neon-Green-1-600x600.jpg"
       ],
       "specs": {
+        "brand": "Panchroma",
         "material": "PLA",
         "diameter": "1.75",
         "color": "Verde"
@@ -63627,51 +61962,17 @@
       ]
     },
     {
-      "slug": "pla-panchroma-neon-magenta",
-      "id": "pla-panchroma-neon-magenta",
-      "name": "PLA Panchroma Neon Magenta",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://www.maxi3d.cl/wp-content/uploads/2026/03/PLA-Panchroma-Neon-Magenta-2-600x600.jpg"
-      ],
-      "specs": {
-        "material": "PLA",
-        "diameter": "1.75"
-      },
-      "minPrice": 99999,
-      "maxPrice": 99999,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "maxi3d",
-          "url": "https://www.maxi3d.cl/producto/pla-panchroma-neon-magenta/",
-          "price": 99999,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "maxi3d",
-          "price": 99999,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "pla-panchroma-neon-orange",
-      "id": "pla-panchroma-neon-orange",
+      "slug": "fil-panchroma-pla-1000g-175mm-naranja",
+      "id": "fil-panchroma-pla-1000g-175mm-naranja",
       "name": "PLA Panchroma Neon Orange",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2026/03/PLA-Panchroma-Neon-Orange-1-600x600.jpg"
       ],
       "specs": {
+        "brand": "Panchroma",
         "material": "PLA",
         "diameter": "1.75",
         "color": "Naranja"
@@ -63698,16 +61999,17 @@
       ]
     },
     {
-      "slug": "pla-panchroma-neon-yellow",
-      "id": "pla-panchroma-neon-yellow",
+      "slug": "fil-panchroma-pla-1000g-175mm-amarillo",
+      "id": "fil-panchroma-pla-1000g-175mm-amarillo",
       "name": "PLA Panchroma Neon Yellow",
-      "brand": "",
+      "brand": "Panchroma",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2026/03/PLA-Panchroma-Neon-Yellow-3.png"
       ],
       "specs": {
+        "brand": "Panchroma",
         "material": "PLA",
         "diameter": "1.75",
         "color": "Amarillo"
@@ -66945,13 +65247,14 @@
       "slug": "filamento-jamg-he-wood-madera",
       "id": "filamento-jamg-he-wood-madera",
       "name": "Filamento Jamg He Wood (Madera)",
-      "brand": "",
+      "brand": "Jamg He",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2025/01/Wood-Portada.jpg"
       ],
       "specs": {
+        "brand": "Jamg He",
         "diameter": "1.75"
       },
       "minPrice": 13000,
@@ -66979,13 +65282,14 @@
       "slug": "filamento-jamg-he-marble-marmol",
       "id": "filamento-jamg-he-marble-marmol",
       "name": "Filamento Jamg He Marble (Mármol)",
-      "brand": "",
+      "brand": "Jamg He",
       "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2025/01/Jamg-He-Marble.webp"
       ],
       "specs": {
+        "brand": "Jamg He",
         "diameter": "1.75"
       },
       "minPrice": 13000,
@@ -69144,7 +67448,7 @@
       "specs": {
         "material": "PLA+",
         "diameter": "1.75",
-        "color": "Azul"
+        "color": "Gris"
       },
       "minPrice": 13950,
       "maxPrice": 13950,
@@ -72451,16 +70755,17 @@
       ]
     },
     {
-      "slug": "filamento-petg-transparente-1kg-marca-todotonercl-filamentos",
-      "id": "filamento-petg-transparente-1kg-marca-todotonercl-filamentos",
+      "slug": "fil-todotoner-petg-1000g-175mm-transparente",
+      "id": "fil-todotoner-petg-1000g-175mm-transparente",
       "name": "Filamento PETG Transparente 1kg Marca TODOTONER.CL | Filamentos",
-      "brand": "",
+      "brand": "Todotoner",
       "categoryId": "filamentos-petg",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/64351914/resize/306/172?1749484426"
       ],
       "specs": {
+        "brand": "Todotoner",
         "material": "PETG",
         "diameter": "1.75",
         "weight": "1000",
@@ -83564,41 +81869,6 @@
       ]
     },
     {
-      "slug": "filamento-tpu-gris-para-impresion-3d-marca-popbit-175mm-1kg",
-      "id": "filamento-tpu-gris-para-impresion-3d-marca-popbit-175mm-1kg",
-      "name": "Filamento TPU Gris para impresión 3D marca PopBit 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-tpu",
-      "description": "",
-      "images": [],
-      "specs": {
-        "material": "TPU",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Gris"
-      },
-      "minPrice": 14990,
-      "maxPrice": 14990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:59.705Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-tpu-gris-para-impresion-3d-marca-popbit-1-75mm-1kg/",
-          "price": 14990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 14990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "fuente-de-poder-switching-meanwell-12v-10a-150w",
       "id": "fuente-de-poder-switching-meanwell-12v-10a-150w",
       "name": "Fuente de poder switching (Meanwell) 12V 10A 150W",
@@ -83629,43 +81899,6 @@
           "storeId": "cimech3d",
           "price": 22500,
           "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-tpu-blanco-para-impresion-3d-marca-popbit-175mm-1kg",
-      "id": "filamento-tpu-blanco-para-impresion-3d-marca-popbit-175mm-1kg",
-      "name": "Filamento TPU Blanco para impresión 3D marca PopBit 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-tpu",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/01/PLA-white.jpg"
-      ],
-      "specs": {
-        "material": "TPU",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Blanco"
-      },
-      "minPrice": 14990,
-      "maxPrice": 14990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:59.379Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-tpu-blanco-para-impresion-3d-marca-popbit-1-75mm-1kg/",
-          "price": 14990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 14990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -83806,43 +82039,6 @@
       ]
     },
     {
-      "slug": "filamento-petg-rojo-para-impresion-3d-marca-popbit-175mm-1kg",
-      "id": "filamento-petg-rojo-para-impresion-3d-marca-popbit-175mm-1kg",
-      "name": "Filamento PETG Rojo para impresión 3D marca PopBit 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-petg",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/01/PLA-red.jpg"
-      ],
-      "specs": {
-        "material": "PETG",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Rojo"
-      },
-      "minPrice": 15990,
-      "maxPrice": 15990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:57.817Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-petg-rojo-para-impresion-3d-marca-popbit-1-75mm-1kg/",
-          "price": 15990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 15990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        }
-      ]
-    },
-    {
       "slug": "fuente-de-poder-switching-meanwell-lrs-48v-94a-450w",
       "id": "fuente-de-poder-switching-meanwell-lrs-48v-94a-450w",
       "name": "Fuente de poder switching (Meanwell) LRS 48V 9.4A 450W",
@@ -83873,43 +82069,6 @@
           "storeId": "cimech3d",
           "price": 56990,
           "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-petg-blanco-para-impresion-3d-marca-popbit-175mm-1kg",
-      "id": "filamento-petg-blanco-para-impresion-3d-marca-popbit-175mm-1kg",
-      "name": "Filamento PETG Blanco para impresión 3D marca PopBit 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-petg",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/01/PLA-white.jpg"
-      ],
-      "specs": {
-        "material": "PETG",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Blanco"
-      },
-      "minPrice": 15990,
-      "maxPrice": 15990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:57.518Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-petg-blanco-para-impresion-3d-marca-popbit-1-75mm-1kg/",
-          "price": 15990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 15990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -83948,43 +82107,6 @@
       ]
     },
     {
-      "slug": "filamento-petg-gris-para-impresion-3d-marca-popbit-175mm-1kg",
-      "id": "filamento-petg-gris-para-impresion-3d-marca-popbit-175mm-1kg",
-      "name": "Filamento PETG Gris para impresión 3D marca PopBit 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-petg",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/01/PLA-grey.jpg"
-      ],
-      "specs": {
-        "material": "PETG",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Gris"
-      },
-      "minPrice": 15990,
-      "maxPrice": 15990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:57.218Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-petg-gris-para-impresion-3d-marca-popbit-1-75mm-1kg/",
-          "price": 15990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 15990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        }
-      ]
-    },
-    {
       "slug": "fuente-de-poder-switching-meanwell-lrs-24v-188a-450w",
       "id": "fuente-de-poder-switching-meanwell-lrs-24v-188a-450w",
       "name": "Fuente de poder switching (Meanwell) LRS 24V 18.8A 450W",
@@ -84015,43 +82137,6 @@
           "storeId": "cimech3d",
           "price": 56990,
           "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-petg-negro-para-impresion-3d-marca-popbit-175mm-1kg",
-      "id": "filamento-petg-negro-para-impresion-3d-marca-popbit-175mm-1kg",
-      "name": "Filamento PETG Negro para impresión 3D marca PopBit 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-petg",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/01/PLA-black.jpg"
-      ],
-      "specs": {
-        "material": "PETG",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Negro"
-      },
-      "minPrice": 15990,
-      "maxPrice": 15990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:56.919Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-petg-negro-para-impresion-3d-marca-popbit-1-75mm-1kg/",
-          "price": 15990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 15990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -84120,622 +82205,6 @@
           "storeId": "cimech3d",
           "price": 44990,
           "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-petg-amarillo-para-impresion-3d-marca-sunhokey-175mm-1kg",
-      "id": "filamento-petg-amarillo-para-impresion-3d-marca-sunhokey-175mm-1kg",
-      "name": "Filamento PETG Amarillo para impresión 3D marca Sunhokey 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-petg",
-      "description": "",
-      "images": [],
-      "specs": {
-        "material": "PETG",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Amarillo"
-      },
-      "minPrice": 12990,
-      "maxPrice": 12990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:55.999Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-petg-amarillo-para-impresion-3d-marca-sunhokey-1-75mm-1kg/",
-          "price": 12990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 12990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-petg-blanco-para-impresion-3d-marca-sunhokey-175mm-1kg",
-      "id": "filamento-petg-blanco-para-impresion-3d-marca-sunhokey-175mm-1kg",
-      "name": "Filamento PETG Blanco para impresión 3D marca Sunhokey 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-petg",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/01/PETG-WHITE.jpg"
-      ],
-      "specs": {
-        "material": "PETG",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Blanco"
-      },
-      "minPrice": 12990,
-      "maxPrice": 12990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:55.702Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-petg-blanco-para-impresion-3d-marca-sunhokey-1-75mm-1kg/",
-          "price": 12990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 12990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-abs-amarillo-para-impresion-3d-marca-popbit-175mm-1kg",
-      "id": "filamento-abs-amarillo-para-impresion-3d-marca-popbit-175mm-1kg",
-      "name": "Filamento ABS+ Amarillo para impresión 3D marca PopBit 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-abs",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/01/PLA-yellow.jpg"
-      ],
-      "specs": {
-        "material": "ABS",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Amarillo"
-      },
-      "minPrice": 12990,
-      "maxPrice": 12990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:52.311Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-abs-amarillo-para-impresion-3d-marca-popbit-1-75mm-1kg/",
-          "price": 12990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 12990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-abs-piel-para-impresion-3d-marca-popbit-175mm-1kg",
-      "id": "filamento-abs-piel-para-impresion-3d-marca-popbit-175mm-1kg",
-      "name": "Filamento ABS+ Piel para impresión 3D marca PopBit 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-abs",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/01/PLA-skin.jpg"
-      ],
-      "specs": {
-        "material": "ABS",
-        "diameter": "1.75",
-        "weight": "1000"
-      },
-      "minPrice": 12990,
-      "maxPrice": 12990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:52.001Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-abs-piel-para-impresion-3d-marca-popbit-1-75mm-1kg/",
-          "price": 12990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 12990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-abs-rojo-para-impresion-3d-marca-popbit-175mm-1kg",
-      "id": "filamento-abs-rojo-para-impresion-3d-marca-popbit-175mm-1kg",
-      "name": "Filamento ABS+ Rojo para impresión 3D marca PopBit 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-abs",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/01/PLA-red.jpg"
-      ],
-      "specs": {
-        "material": "ABS",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Rojo"
-      },
-      "minPrice": 12990,
-      "maxPrice": 12990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:51.698Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-abs-rojo-para-impresion-3d-marca-popbit-1-75mm-1kg/",
-          "price": 12990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 12990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-abs-verde-para-impresion-3d-marca-popbit-175mm-1kg",
-      "id": "filamento-abs-verde-para-impresion-3d-marca-popbit-175mm-1kg",
-      "name": "Filamento ABS+ Verde para impresión 3D marca PopBit 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-abs",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/01/PLA-green.jpg"
-      ],
-      "specs": {
-        "material": "ABS",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Verde"
-      },
-      "minPrice": 12990,
-      "maxPrice": 12990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:51.398Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-abs-verde-para-impresion-3d-marca-popbit-1-75mm-1kg/",
-          "price": 12990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 12990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-abs-negro-para-impresion-3d-marca-popbit-175mm-1kg",
-      "id": "filamento-abs-negro-para-impresion-3d-marca-popbit-175mm-1kg",
-      "name": "Filamento ABS+ Negro para impresión 3D marca PopBit 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-abs",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/01/PLA-black.jpg"
-      ],
-      "specs": {
-        "material": "ABS",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Negro"
-      },
-      "minPrice": 12990,
-      "maxPrice": 12990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:51.047Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-abs-negro-para-impresion-3d-marca-popbit-1-75mm-1kg/",
-          "price": 12990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 12990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-abs-gris-para-impresion-3d-marca-popbit-175mm-1kg",
-      "id": "filamento-abs-gris-para-impresion-3d-marca-popbit-175mm-1kg",
-      "name": "Filamento ABS+ Gris para impresión 3D marca PopBit 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-abs",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/01/PLA-grey.jpg"
-      ],
-      "specs": {
-        "material": "ABS",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Gris"
-      },
-      "minPrice": 12990,
-      "maxPrice": 12990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:50.684Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-abs-gris-para-impresion-3d-marca-popbit-1-75mm-1kg/",
-          "price": 12990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 12990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-abs-plateado-para-impresion-3d-marca-popbit-175mm-1kg",
-      "id": "filamento-abs-plateado-para-impresion-3d-marca-popbit-175mm-1kg",
-      "name": "Filamento ABS+ Plateado para impresión 3D marca PopBit 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-abs",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/01/PLA-sliver.jpg"
-      ],
-      "specs": {
-        "material": "ABS",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Plateado"
-      },
-      "minPrice": 12990,
-      "maxPrice": 12990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:50.384Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-abs-plateado-para-impresion-3d-marca-popbit-1-75mm-1kg/",
-          "price": 12990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 12990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-abs-cafe-para-impresion-3d-marca-popbit-175mm-1kg",
-      "id": "filamento-abs-cafe-para-impresion-3d-marca-popbit-175mm-1kg",
-      "name": "Filamento ABS+ Cafe para impresión 3D marca PopBit 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-abs",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/01/PLA-brown.jpg"
-      ],
-      "specs": {
-        "material": "ABS",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Café"
-      },
-      "minPrice": 12990,
-      "maxPrice": 12990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:50.073Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-abs-cafe-para-impresion-3d-marca-popbit-1-75mm-1kg/",
-          "price": 12990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 12990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-abs-blanco-para-impresion-3d-marca-popbit-175mm-1kg",
-      "id": "filamento-abs-blanco-para-impresion-3d-marca-popbit-175mm-1kg",
-      "name": "Filamento ABS+ Blanco para impresión 3D marca PopBit 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-abs",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/01/PLA-white.jpg"
-      ],
-      "specs": {
-        "material": "ABS",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Blanco"
-      },
-      "minPrice": 12990,
-      "maxPrice": 12990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:49.770Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-abs-blanco-para-impresion-3d-marca-popbit-1-75mm-1kg/",
-          "price": 12990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 12990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-abs-cafe-para-impresion-3d-marca-hello3d-175mm-1kg",
-      "id": "filamento-abs-cafe-para-impresion-3d-marca-hello3d-175mm-1kg",
-      "name": "Filamento ABS Cafe para impresión 3D marca Hello3D 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-abs",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/01/ABS-Brown.jpg"
-      ],
-      "specs": {
-        "material": "ABS",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Café"
-      },
-      "minPrice": 12990,
-      "maxPrice": 12990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:46.704Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-abs-cafe-para-impresion-3d-marca-hello3d-1-75mm-1kg/",
-          "price": 12990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 12990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-abs-verde-oscuro-para-impresion-3d-marca-hello3d-175mm-1kg",
-      "id": "filamento-abs-verde-oscuro-para-impresion-3d-marca-hello3d-175mm-1kg",
-      "name": "Filamento ABS Verde oscuro para impresión 3D marca Hello3D 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-abs",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/01/ABS-Dark-Green.jpg"
-      ],
-      "specs": {
-        "material": "ABS",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Verde"
-      },
-      "minPrice": 13490,
-      "maxPrice": 13490,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:46.395Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-abs-verde-oscuro-para-impresion-3d-marca-hello3d-1-75mm-1kg/",
-          "price": 13490,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 13490,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-abs-verde-flourescente-para-impresion-3d-marca-sunhokey-175mm-1kg",
-      "id": "filamento-abs-verde-flourescente-para-impresion-3d-marca-sunhokey-175mm-1kg",
-      "name": "Filamento ABS Verde flourescente para impresión 3D marca Sunhokey 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-abs",
-      "description": "",
-      "images": [],
-      "specs": {
-        "material": "ABS",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Verde"
-      },
-      "minPrice": 6990,
-      "maxPrice": 6990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:43.040Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-abs-verde-flourescente-para-impresion-3d-marca-sunhokey-1-75mm-1kg/",
-          "price": 6990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 6990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-abs-piel-para-impresion-3d-marca-sunhokey-175mm-1kg",
-      "id": "filamento-abs-piel-para-impresion-3d-marca-sunhokey-175mm-1kg",
-      "name": "Filamento ABS Piel para impresión 3D marca Sunhokey 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-abs",
-      "description": "",
-      "images": [],
-      "specs": {
-        "material": "ABS",
-        "diameter": "1.75",
-        "weight": "1000"
-      },
-      "minPrice": 6990,
-      "maxPrice": 6990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:42.731Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-abs-piel-para-impresion-3d-marca-sunhokey-1-75mm-1kg/",
-          "price": 6990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 6990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-abs-dorado-para-impresion-3d-marca-sunhokey-175mm-1kg",
-      "id": "filamento-abs-dorado-para-impresion-3d-marca-sunhokey-175mm-1kg",
-      "name": "Filamento ABS Dorado para impresión 3D marca Sunhokey 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-abs",
-      "description": "",
-      "images": [],
-      "specs": {
-        "material": "ABS",
-        "diameter": "1.75",
-        "weight": "1000",
-        "color": "Dorado"
-      },
-      "minPrice": 6990,
-      "maxPrice": 6990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:42.428Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-abs-dorado-para-impresion-3d-marca-sunhokey-1-75mm-1kg/",
-          "price": 6990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 6990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
-        }
-      ]
-    },
-    {
-      "slug": "filamento-abs-purpura-para-impresion-3d-marca-sunhokey-175mm-1kg",
-      "id": "filamento-abs-purpura-para-impresion-3d-marca-sunhokey-175mm-1kg",
-      "name": "Filamento ABS Purpura para impresión 3D marca Sunhokey 1.75mm 1Kg",
-      "brand": "",
-      "categoryId": "filamentos-abs",
-      "description": "",
-      "images": [],
-      "specs": {
-        "material": "ABS",
-        "diameter": "1.75",
-        "weight": "1000"
-      },
-      "minPrice": 6990,
-      "maxPrice": 6990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:58:42.133Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/filamento-abs-purpura-para-impresion-3d-marca-sunhokey-1-75mm-1kg/",
-          "price": 6990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 6990,
-          "recordedAt": "2026-04-01T18:30:45.323Z"
         }
       ]
     },
@@ -115437,42 +112906,6 @@
           "storeId": "imperio3d",
           "price": 990,
           "recordedAt": "2026-03-31T13:32:20.155Z"
-        }
-      ]
-    },
-    {
-      "slug": "bambu-lab-filamento-pla-lite-1kg-175mmbambu-lab-filamento-pla-lite-1kg-175mm",
-      "id": "bambu-lab-filamento-pla-lite-1kg-175mmbambu-lab-filamento-pla-lite-1kg-175mm",
-      "name": "Bambu Lab Filamento PLA Lite 1kg 1.75mmBambu Lab Filamento PLA Lite 1kg 1.75mm",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://imperio3d.com/wp-content/uploads/2026/01/Filbmbl_lite_sunflower_yellow-300x300.webp"
-      ],
-      "specs": {
-        "material": "PLA",
-        "diameter": "1.75",
-        "weight": "1000"
-      },
-      "minPrice": 11590,
-      "maxPrice": 11590,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-03-31T03:21:11.205Z",
-      "entries": [
-        {
-          "storeId": "imperio3d",
-          "url": "https://imperio3d.com/producto/filamentos-bambu-lab-pla-lite-1kg-1-75mm/",
-          "price": 11590,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "imperio3d",
-          "price": 11590,
-          "recordedAt": "2026-03-31T13:32:11.445Z"
         }
       ]
     },

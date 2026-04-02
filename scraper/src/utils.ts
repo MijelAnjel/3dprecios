@@ -727,7 +727,8 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
   // ── Marcas por categoría ───────────────────────────────────────────────
   const FILAMENT_BRANDS: [RegExp, string][] = [
     // Globales dominantes
-    [/bambu\.?lab\b/i, 'Bambu Lab'],
+    // \bbambu\b cubre "Bambu Lab", "BambuLab", "Bambu" solos (en contexto filamento siempre = Bambu Lab)
+    [/\bbambu\b/i, 'Bambu Lab'],
     [/\bcreality\b/i, 'Creality'],
     [/\besun\b|\be-sun\b/i, 'eSUN'],
     [/\belegoo\b/i, 'Elegoo'],
@@ -770,7 +771,7 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
     [/\bantinsky\b/i, 'Antinsky'],
     // Marcas locales/regionales adicionales
     [/\bjamg[-\s]?he\b/i, 'Jamg He'],
-    [/\bplastar\b/i, 'Plastar'],
+    [/\bplast\.?ar\b/i, 'Plastar'],  // cubre "Plastar" y "Plast.ar"
     [/\bmakers[-\s]?chile\b|\bmakersch\b/i, 'MakersChile'],
     [/\bwinkle\b/i, 'Winkle'],
     [/\bpanchroma\b/i, 'Panchroma'],
