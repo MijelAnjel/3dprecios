@@ -332,7 +332,33 @@ export function inferCategory(name: string, path: string): string {
     // Cepillo de limpieza (para impresoras 3D, mantenimiento)
     /cepillo\s+(para|de)\s*(limpieza|nozzle|boquilla|extrusor)/i.test(n) ||
     // Bolsas de sellado al vacío para almacenamiento de filamento (categorizan como repuesto para evitar el bloque de filamentos)
-    /bolsas?\s*(para|de)\s*(sellado|vac[ií]o)|sellado.*vac[ií]o.*filament/i.test(n);
+    /bolsas?\s*(para|de)\s*(sellado|vac[ií]o)|sellado.*vac[ií]o.*filament/i.test(n) ||
+    // Aceite lubricante / grasa de mantenimiento para impresoras
+    /\baceite\s+lubricante\b/i.test(n) ||
+    /\bgrasa\s*(para\s*(impresoras?|impresi[oó]n|3d)\b)/i.test(n) ||
+    // Bomba de sellado al vacío (manual o eléctrica)
+    /bomba\s*(de\s*)?(sellado|vac[ií]o)/i.test(n) ||
+    // Resortes para cama de impresora (bed springs)
+    /resortes?\s*(para\s*)?(cama|impresora)\b/i.test(n) ||
+    // Alicate de corte diagonal (herramienta de remoción de soportes)
+    /alicate\s*(de\s*corte|diagonal)/i.test(n) ||
+    // Gomitas de nivelación / almohadillas de esquinas de cama
+    /gomitas?\s*(para\s*)?(nivelaci[oó]n|cama)\b/i.test(n) ||
+    // Cama / pad de aislamiento térmico
+    /\baislamiento\s*t[eé]rmico\b/i.test(n) ||
+    // Disipador heatsink para hotend — E3D V6, Volcano, etc.
+    /\bdisipador\b.*(e3d|v6|hotend|cold[\s-]?end|volcano)/i.test(n) ||
+    // Producto marcado explícitamente con "Repuesto" al inicio del nombre
+    /^repuesto\b/i.test(n) ||
+    // Placa carruaje de eje X/Y/Z
+    /placa\s+(de\s+)?eje\s+[xyz]\b/i.test(n) ||
+    // Cable flex / flexible para ejes de impresoras
+    /cable\s*(flex|flexible)\b.*(eje|artillery|ender|creality|prusa|bambu|anycubic|elegoo)\b/i.test(n) ||
+    /(eje|artillery|ender|creality|prusa|anycubic).*cable\s*(flex|flexible)\b/i.test(n) ||
+    // Teflón (tubo PTFE) para modelo/marca específica de impresora
+    /tefl[oó]n\s+(para|de)\s*(ace\b|kobra\b|photon\b|mega\b|bambu\b|ender\b|creality\b|anycubic\b|artillery\b|prusa\b|3d\b)/i.test(n) ||
+    // Hub de filamento para impresoras específicas
+    /\bhub\s+(para|de)\s*(anycubic|bambu|bambulab|creality|ender|prusa|artillery|kobra|impresora)\b/i.test(n);
 
   if (isRepuesto) return 'repuestos';
 
@@ -424,11 +450,15 @@ export function inferCategory(name: string, path: string): string {
   // ── 4. Impresoras FDM ─────────────────────────────────────────────────
   // NO usar "fdm" sólo: "Filamento FDM" es filamento, no impresora
   if (/impresora|printer|impresion-3d|impresoras-3d|impresoras-fdm/i.test(p) && !/resina|resin/i.test(p)) return 'impresoras-fdm';
-  if (/\bartillery\b|\bender\b|\bneptune\b|\bkobra\b|\baquila\b|\bvoxelab\b|adventurer|flashforge|\bprusa\b|\bvoron\b|bambu\s*(a1|p1|x1|a1\s*mini|p1s|p1p|x1c)|elegoo\s*(neptune|centauri)|\bqidi\b/i.test(n)) return 'impresoras-fdm';
+  // AMS / AMS Lite (sistema multi-material Bambu Lab) → accesorios, no impresora FDM
+  // DEBE ir antes de los checks de modelos para que "Ams Lite Bambulab A1" no caiga en FDM
+  if (/\bams\s*(lite|combo)?\s*(bambu|bambulab|a1\b|x1\b|p1\b|a1\s*series)/i.test(n) ||
+      /(bambu|bambulab).*\bams\s*(lite|combo)?\b/i.test(n)) return 'accesorios';
+  if (/\bartillery\b|\bender\b|\bneptune\b|\bkobra\b|\baquila\b|\bvoxelab\b|adventurer|flashforge|\bprusa\b|\bvoron\b|bambu\s*lab?\s*(a1|p1|x1|a1\s*mini|p1s|p1p|p2s|x1c|h2s|h2d)|\bbambulab\s*(a1|p1|x1|p2s|h2s|h2d|a1\s*mini)|elegoo\s*(neptune|centauri)|\bqidi\b/i.test(n)) return 'impresoras-fdm';
   // Modelos Creality FDM adicionales (K-series, CR-series, etc.)
   if (/\bcreality\b.*\b(k1|k2|cr[\s-]?\d+|sonic\s*pad|nebula)/i.test(n)) return 'impresoras-fdm';
-  // Bambu Lab con nombre de modelo sin "bambu" inmediatamente antes (e.g. "Bambu Lab A1C")
-  if (/\bbambu\b|\bbambu\s+lab\b/i.test(n) && !filamentByName) return 'impresoras-fdm';
+  // Bambu Lab con nombre de modelo sin "bambu" inmediatamente antes (e.g. "Bambu Lab A1C", "Bambulab")
+  if (/bambu\.?lab\b|\bbambulab\b|\bbambu\s+lab\b/i.test(n) && !filamentByName) return 'impresoras-fdm';
   // Only classify as FDM if it's not "para impresora" (accessory description) or a repuesto
   if (isPrinterWord
     && !/resina|resin|sla|msla|dlp/i.test(n)
@@ -467,7 +497,9 @@ export function inferCategory(name: string, path: string): string {
     // Almacenamiento de filamentos
     /\bevacuum\b|\bespool\b|vacupack.*filament|filament.*vacuum|almacen.*filament|contenedor.*filament/i.test(n) ||
     // Carrete reutilizable / spool
-    /carrete\s*reutilizable|\brespoolable\b|refill\s*spool|\bespool\b/i.test(n)
+    /carrete\s*reutilizable|\brespoolable\b|refill\s*spool|\bespool\b/i.test(n) ||
+    // Soporte de carrete de filamento (spool holder, friedless stand)
+    /soporte\s*(sin\s*fricci[oó]n\s*)?(para\s*)?(carrete|bobina|spool)\b/i.test(n)
   ) return 'accesorios';
 
   // ── 7. Path-based fallbacks ────────────────────────────────────────────
@@ -615,6 +647,13 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
     [/\braiser3d\b|\braise3d\b/i, 'Raise3D'],
     [/\bprimavalue\b|\bprima\s*value\b/i, 'PrimaValue'],
     [/\bantinsky\b/i, 'Antinsky'],
+    // Marcas locales/regionales adicionales
+    [/\bjamg[-\s]?he\b/i, 'Jamg He'],
+    [/\bplastar\b/i, 'Plastar'],
+    [/\bmakers[-\s]?chile\b|\bmakersch\b/i, 'MakersChile'],
+    [/\bwinkle\b/i, 'Winkle'],
+    [/\bpanchroma\b/i, 'Panchroma'],
+    [/\btodotoner\b|\btodo[-\s]?toner\b/i, 'Todotoner'],
   ];
 
   const PRINTER_BRANDS: [RegExp, string][] = [

@@ -237,7 +237,7 @@ function mergeCatalog(
       const isDowngradeSafe = prod.categoryId === 'general'
         ? reCat !== 'general'
         : FILAMENT_CATS.has(prod.categoryId) || prod.categoryId === 'accesorios'
-          ? ['repuestos', 'resinas', 'accesorios-resina', 'secadores', 'accesorios'].includes(reCat)
+          ? ['repuestos', 'resinas', 'accesorios-resina', 'secadores', 'accesorios', 'impresoras-fdm', 'impresoras-resina'].includes(reCat)
           : ['repuestos', 'resinas', 'accesorios', 'accesorios-resina'].includes(reCat);
       if (isDowngradeSafe) {
         prod.categoryId = reCat;
