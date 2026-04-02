@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-02T20:54:13.214Z",
+    "generatedAt": "2026-04-02T21:19:52.512Z",
     "productCount": 3118
   },
   "stores": [
@@ -18765,7 +18765,7 @@
       "id": "grabadora-laser-acr-cnc-8211-plateada",
       "name": "Grabadora Laser ACR CNC &#8211; Plateada",
       "brand": "",
-      "categoryId": "general",
+      "categoryId": "grabadoras-laser",
       "description": "",
       "images": [
         "https://www.cimech3d.cl/wp-content/uploads/2020/05/DSC00166-编辑2.jpg"
@@ -40787,14 +40787,15 @@
       "slug": "extrusor-titan-directo-kingroon",
       "id": "extrusor-titan-directo-kingroon",
       "name": "Extrusor Titan directo Kingroon",
-      "brand": "",
+      "brand": "Kingroon",
       "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2023/03/Extrusor-Titan-Ender3.png"
       ],
       "specs": {
-        "partType": "Extrusor"
+        "partType": "Extrusor",
+        "brand": "Kingroon"
       },
       "minPrice": 35000,
       "maxPrice": 35000,
@@ -41304,14 +41305,15 @@
       "slug": "hotend-kingroon-kp3s",
       "id": "hotend-kingroon-kp3s",
       "name": "Hotend Kingroon KP3S",
-      "brand": "",
+      "brand": "Kingroon",
       "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2023/09/KP3S-Kit-Hotend.png"
       ],
       "specs": {
-        "partType": "Hotend"
+        "partType": "Hotend",
+        "brand": "Kingroon"
       },
       "minPrice": 12000,
       "maxPrice": 12000,
@@ -41756,14 +41758,15 @@
       "slug": "calefactor-para-kingroon-kp3s-24v",
       "id": "calefactor-para-kingroon-kp3s-24v",
       "name": "Calefactor para Kingroon KP3S 24V",
-      "brand": "",
+      "brand": "Kingroon",
       "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2023/09/Cable-calefactor-kp3s-2.png"
       ],
       "specs": {
-        "partType": "Hotend"
+        "partType": "Hotend",
+        "brand": "Kingroon"
       },
       "minPrice": 3000,
       "maxPrice": 3000,
@@ -44243,13 +44246,16 @@
       "slug": "cnc-grabado-y-corte-laser-creality-falcon-a1-10w",
       "id": "cnc-grabado-y-corte-laser-creality-falcon-a1-10w",
       "name": "CNC Grabado y Corte láser Creality Falcon A1 10W",
-      "brand": "",
-      "categoryId": "general",
+      "brand": "Creality",
+      "categoryId": "grabadoras-laser",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2025/12/Creality-Falcon-A1-10W.png"
       ],
-      "specs": {},
+      "specs": {
+        "brand": "Creality",
+        "watt": "10W"
+      },
       "minPrice": 525000,
       "maxPrice": 525000,
       "storeCount": 1,
@@ -44412,7 +44418,7 @@
       "id": "elevador-para-grabado-cr-laser-falcon",
       "name": "Elevador para Grabado CR-Laser Falcon",
       "brand": "",
-      "categoryId": "general",
+      "categoryId": "grabadoras-laser",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2025/12/Falcon-Risers.png"
@@ -108039,12 +108045,15 @@
       "id": "maquina-grabadora-y-cortadora-laser-alpha-20w-8211-400x400mm",
       "name": "Maquina grabadora y cortadora láser Alpha 20W &#8211; 400x400mm",
       "brand": "",
-      "categoryId": "general",
+      "categoryId": "grabadoras-laser",
       "description": "",
       "images": [
         "https://www.cimech3d.cl/wp-content/uploads/2023/11/Alpha.jpg"
       ],
-      "specs": {},
+      "specs": {
+        "watt": "20W",
+        "workArea": "400x400mm"
+      },
       "minPrice": 749993,
       "maxPrice": 749993,
       "storeCount": 1,

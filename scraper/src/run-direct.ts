@@ -227,7 +227,7 @@ function mergeCatalog(
     const RECATEGORIZE_ALL = [
       'general', 'impresoras-fdm', 'impresoras-resina',
       'filamentos-pla', 'filamentos-abs', 'filamentos-petg', 'filamentos-tpu', 'filamentos-especiales',
-      'accesorios',
+      'accesorios', 'grabadoras-laser',
     ];
     const FILAMENT_CATS = new Set([
       'filamentos-pla', 'filamentos-abs', 'filamentos-petg', 'filamentos-tpu', 'filamentos-especiales',

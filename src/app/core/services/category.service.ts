@@ -116,7 +116,7 @@ const CATEGORIES: Category[] = [
         key: 'brand',
         label: 'Marca',
         type: 'select',
-        options: ['Anet', 'AnkerMake', 'Anycubic', 'Artillery', 'Bambu Lab', 'Creality', 'Elegoo', 'Flashforge', 'Prusa', 'Qidi', 'Raise3D', 'Snapmaker', 'Voxelab'],
+        options: ['Anet', 'AnkerMake', 'Anycubic', 'Artillery', 'Bambu Lab', 'Creality', 'Eazao', 'Elegoo', 'Flashforge', 'Kingroon', 'Prusa', 'Qidi', 'Raise3D', 'Snapmaker', 'Sovol', 'TwoTrees', 'Voxelab'],
         filterable: true,
       },
       {
@@ -179,7 +179,7 @@ const CATEGORIES: Category[] = [
         key: 'brand',
         label: 'Marca',
         type: 'select',
-        options: ['Anycubic', 'Bambu Lab', 'Creality', 'Elegoo', 'Flashforge', 'Graphy', 'Phrozen', 'Shining 3D', 'Uniz'],
+        options: ['Anycubic', 'Bambu Lab', 'Creality', 'Eazao', 'Elegoo', 'Flashforge', 'Graphy', 'Phrozen', 'Shining 3D', 'Uniz'],
         filterable: true,
       },
       {
@@ -356,6 +356,35 @@ const CATEGORIES: Category[] = [
         type: 'select',
         options: ['3Doodler', 'MYNT3D', 'Scribbler'],
         filterable: true,
+      },
+    ],
+  },
+  {
+    id: 'grabadoras-laser',
+    slug: 'grabadoras-laser',
+    name: 'Grabadoras Láser',
+    icon: '🔦',
+    specFields: [
+      {
+        key: 'brand',
+        label: 'Marca',
+        type: 'select',
+        options: ['Anycubic', 'Atomstack', 'Comgrow', 'Creality', 'Ortur', 'Sculpfun', 'TwoTrees', 'xTool'],
+        filterable: true,
+      },
+      {
+        key: 'watt',
+        label: 'Potencia',
+        unit: 'W',
+        type: 'select',
+        options: ['1.6W', '5W', '10W', '10W Pro', '12W', '20W', '20W Pro', '22W', '40W', '40W Pro', '60W'],
+        filterable: true,
+      },
+      {
+        key: 'workArea',
+        label: 'Área de trabajo',
+        type: 'text',
+        filterable: false,
       },
     ],
   },

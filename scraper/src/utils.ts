@@ -269,8 +269,10 @@ export function inferCategory(name: string, path: string): string {
     // Piezas estructurales / paneles de impresoras por marca
     /panel\s*(hr|hl|lateral|frontal|trasero|derecho|izquierdo)|panel.*bambu|bambu.*panel/i.test(n) ||
     /estructura\s*bambu|bambu.*enclosure|enclosure.*bambu|bambu.*estructura/i.test(n) ||
-    // Electrónica de impresoras 3D (mainboards, placas madre 3D)
+    // Electrónica de impresoras 3D y grabadoras (mainboards, placas madre)
     /\bmainboard\b|placa\s*madre.*impr|placa\s*base.*impr|raspberry.*impr/i.test(n) ||
+    // Placa madre de grabadora láser o CNC
+    /placa\s*(madre|pcb|controladora)\s*(grab[a]+dora|laser|l[aá]ser|cnc|ortur|xtool|sculpfun)/i.test(n) ||
     /placa\s*(madre|pcb|controladora)\s*(para\s*)?(artillery|creality|ender|bambu|prusa|anycubic|elegoo)/i.test(n) ||
     /placa\s*(madre|pcb|controladora)\s*(eje|x\d?|z\d?)/i.test(n) ||
     // Placa madre/silenciosa para impresoras (con o sin "madre" antes de "silenciosa")
@@ -486,6 +488,28 @@ export function inferCategory(name: string, path: string): string {
     /\b3doodler\b|\bmynt3d\b|\bscribbler\b/i.test(n)
   ) return 'lapices-3d';
 
+  // ── 1e-bis. Grabadoras / cortadoras láser (máquinas completas) ─────────
+  // Deben detectarse ANTES de impresoras-fdm porque Creality Falcon, TwoTrees TTC, etc.
+  // son grabadoras láser aunque la tienda los ponga en categoría de impresoras.
+  // isRepuesto ya capturó módulos láser y placa madre de grabadora.
+  if (
+    // Nombres que describen la máquina grabadora + láser directamente
+    /m[aá]quina\s+(grab[a]+dora|cortadora)[\s-](?:y\s*(?:cortadora|grab[a]+dora)[\s-])?l[aá]ser/i.test(n) ||
+    /grab[a]+dora[\s-]+(?:y\s*cortadora[\s-]+)?l[aá]ser\b/i.test(n) ||
+    /(cnc\s+)?grab(?:ado|adora)\s+y\s+corte\s+l[aá]ser/i.test(n) ||
+    // Creality Falcon (línea grabadora — distinto de impresoras Creality K/CR)
+    /creality\s+(?:cr[\s-]?laser\s+)?falcon\b/i.test(n) ||
+    /\bcr[\s-]?laser\s+falcon\b/i.test(n) ||
+    // TwoTrees modelos láser TTC series
+    /\bttc\s*\d{2,4}\b|\bttc\d{2,4}\b/i.test(n) ||
+    /\btwotrees\b.*(?:ttc|l[aá]ser|grabador[a]?)/i.test(n) ||
+    // Marcas especialistas de grabadoras láser
+    /\bxtool\b(?!.*filament)/i.test(n) ||
+    /\bsculpfun\b/i.test(n) ||
+    /\batomstack\b/i.test(n) ||
+    /\bortur\s+(laser|master)\b/i.test(n)
+  ) return 'grabadoras-laser';
+
   // ── 1e. Accesorios de resina (Wash & Cure, UV, PPE, herramientas) ───────
   // Detección ANTES de filamentos para capturar "filtro resina" y similares.
   if (
@@ -576,8 +600,16 @@ export function inferCategory(name: string, path: string): string {
   if (/\bams\s*(lite|combo)?\s*(bambu|bambulab|a1\b|x1\b|p1\b|a1\s*series)/i.test(n) ||
       /(bambu|bambulab).*\bams\s*(lite|combo)?\b/i.test(n)) return 'accesorios';
   if (/\bartillery\b|\bender\b|\bneptune\b|\bkobra\b|\baquila\b|\bvoxelab\b|adventurer|flashforge|\bprusa\b|\bvoron\b|bambu\s*lab?\s*(a1|p1|x1|a1\s*mini|p1s|p1p|p2s|x1c|h2s|h2d)|\bbambulab\s*(a1|p1|x1|p2s|h2s|h2d|a1\s*mini)|elegoo\s*(neptune|centauri)|\bqidi\b/i.test(n)) return 'impresoras-fdm';
-  // Modelos Creality FDM adicionales (K-series, CR-series, etc.)
+  // Modelos Creality FDM adicionales (K-series, CR-series, etc. — NO Falcon que es láser)
   if (/\bcreality\b.*\b(k1|k2|cr[\s-]?\d+|sonic\s*pad|nebula)/i.test(n)) return 'impresoras-fdm';
+  // TwoTrees FDM (Sapphire, Bluer, SP series)
+  if (/\btwotrees\b.*\b(sapphire|bluer|sp[\s-]?\d)|(?:sapphire|bluer).*\btwotrees\b/i.test(n)) return 'impresoras-fdm';
+  // Eazao (impresoras de cerámica/arcilla — tipo FDM extrusión)
+  if (/\beazao\b/i.test(n)) return 'impresoras-fdm';
+  // Sovol (SV series FDM printers)
+  if (/\bsovol\b.*\bsv\s*\d|\bsv\s*\d.*\bsovol\b/i.test(n)) return 'impresoras-fdm';
+  // Kingroon FDM
+  if (/\bkingroon\b.*(?:kp3s|kp5l|kp\d)|kp3s|kp5l/i.test(n)) return 'impresoras-fdm';
   // Bambu Lab con nombre de modelo sin "bambu" inmediatamente antes (e.g. "Bambu Lab A1C", "Bambulab")
   if (/bambu\.?lab\b|\bbambulab\b|\bbambu\s+lab\b/i.test(n) && !filamentByName) return 'impresoras-fdm';
   // Only classify as FDM if it's not "para impresora" (accessory description) or a repuesto
@@ -796,6 +828,10 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
     [/\bsnapmake[rr]?\b/i, 'Snapmaker'],
     [/\bshining\s*3d\b/i, 'Shining 3D'],
     [/\buniz\b/i, 'Uniz'],
+    [/\btwotrees\b|two[\s-]trees/i, 'TwoTrees'],
+    [/\beazao\b/i, 'Eazao'],
+    [/\bsovol\b/i, 'Sovol'],
+    [/\bkingroon\b/i, 'Kingroon'],
   ];
 
   const RESIN_BRANDS: [RegExp, string][] = [
@@ -903,6 +939,33 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
     for (const [re, color] of COLOR_MAP) {
       if (re.test(name)) { specs['color'] = color; break; }
     }
+  }
+
+  // ── Grabadoras láser: marca, potencia, área de trabajo ────────────────
+  if (categorySlug === 'grabadoras-laser') {
+    const LASER_BRANDS: [RegExp, string][] = [
+      [/\bxtool\b/i, 'xTool'],
+      [/\bsculpfun\b/i, 'Sculpfun'],
+      [/\bortur\b/i, 'Ortur'],
+      [/\batomstack\b/i, 'Atomstack'],
+      [/\btwotrees\b|two[\s-]trees/i, 'TwoTrees'],
+      [/\bcreality\b/i, 'Creality'],
+      [/\banycubic\b/i, 'Anycubic'],
+      [/\bcomgrow\b/i, 'Comgrow'],
+    ];
+    for (const [re, brand] of LASER_BRANDS) {
+      if (re.test(name)) { specs['brand'] = brand; break; }
+    }
+    // Potencia: "10W", "20W Pro", "40W Ultra"
+    const wattMatch = name.match(/(\d+(?:[.,]\d+)?)\s*w(?:\s*pro|\s*ultra)?\b/i);
+    if (wattMatch) {
+      const wVal = wattMatch[1].replace(',', '.');
+      const wSuffix = /pro/i.test(wattMatch[0]) ? 'W Pro' : /ultra/i.test(wattMatch[0]) ? 'W Ultra' : 'W';
+      specs['watt'] = wVal + wSuffix;
+    }
+    // Área de trabajo
+    const areaMatch = name.match(/(\d{2,4})\s*[xX×]\s*(\d{2,4})\s*mm/i);
+    if (areaMatch) specs['workArea'] = `${areaMatch[1]}x${areaMatch[2]}mm`;
   }
 
   // ── Impresoras FDM / Resina ────────────────────────────────────────────
