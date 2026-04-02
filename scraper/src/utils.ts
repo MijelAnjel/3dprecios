@@ -212,6 +212,11 @@ export function inferCategory(name: string, path: string): string {
     /\bgarganta\b|\bthroat\b|tubo\s*(de\s*)?calor/i.test(n) ||
     // Engranajes y piezas de extrusión
     /\bengranaje\b|\bgear\b.*extru|extru.*\bgear\b|\bmk8\b|\bmk\s*8\b|\bdual\s*drive\b|\bbmg\b/i.test(n) ||
+    // Cables planos FFC/FPC para ejes de impresoras
+    /cable\s*(plano|ffc|fpc).*(eje|artillery|ender|bambu|creality|prusa)/i.test(n) ||
+    /(eje\s*[xyz]|artillery|ender|bambu|creality).*cable\s*(plano|ffc|fpc)/i.test(n) ||
+    // Block de aluminio de tipo Volcano y similares (repuesto hotend)
+    /block\s*aluminio\s*(volcano|v6|mk8)|volcano\s*block|bloque\s*aluminio\s*volcano/i.test(n) ||
     // Acoples y conectores de cabeza de impresora
     /acople\s*cabeza|conector\s*acople\s*cabeza|head\s*connector/i.test(n) ||
     // Silicona para bloques / protectores de hotend

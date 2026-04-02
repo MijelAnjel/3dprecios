@@ -501,7 +501,8 @@ async function main(): Promise<void> {
   console.log(`[3DPrecios Scraper] ${new Date().toISOString()}`);
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
 
-  const isReprocess = process.argv.includes('--reprocess');
+  const isReprocess   = process.argv.includes('--reprocess');
+  const isPurgeNon3d  = process.argv.includes('--purge-non3d');
 
   // ── Cargar catálogo existente ──────────────────────────────────────────
   const catalogPath = path.resolve(__dirname, '../../src/assets/data/catalog.json');
@@ -541,6 +542,42 @@ async function main(): Promise<void> {
 
     generateSitemap(catalog);
     console.log('\n[3DPrecios Scraper] ✓ Re-proceso completado.');
+    return;
+  }
+
+  // ── Modo --purge-non3d: elimina productos non-3D del catálogo legado ───
+  // Para tiendas "mixtas" (cimech3d, electronicat, etc.) que scrapeaban
+  // productos de Arduino/CNC/fresas antes de que se implementara el filtro.
+  if (isPurgeNon3d) {
+    const NON3D_STORES = new Set(['cimech3d', 'electronicat', 'mcielectronics', 'afel']);
+    // Blacklist estricta: solo patrones inequívocamente NO relacionados con impresión 3D
+    const NON_3D_BLACKLIST = /\barduino\b|\batmega\b|\bgrbl\b|\bmach3\b|fluid\s*cnc|spring\s+collet|er\s*\d+\s+collet|kit\s+de\s+brocas\s+cnc|kit\s+capacitor|kit\s+transistor|kit\s+diod[eo]|kit\s+boton|kit\s+potenci|shield.*cnc|cnc.*shield|\buno\s+r3\b|\bnano\s+33\b|\bmega\s+2560\b|controlador.*mach3|mach3.*controlador|microcontrolador\s+arduino|fresa\s+(en\s+espiral|de\s+grabado|redondeo|c[oó]nica|ranura|corte|desbaste)|spring\s+collet\s+er|kit\s+de\s+fresas|simulador\s+de\s+carreras|caja\s+organizadora|caja\s+pl[aá]stica\s+apilable|slot\s+cover\s+\d|adaptador\s+de\s+collet|fresa\s+para\s+(acrilico|aluminio|madera|neon|aplanar|esquina|desbarbado|conica)|servicio\s+de\s+(corte|grabado|laser|cnc|router\s+cnc|modelado\s+3d\s+por\s+hora)|cajon\s+de\s+madera\s+para\s+maquina|modulo\s+relay\s+5v|adaptador\s+12v\s+\d+a\b|regulador\s+de\s+voltaje\s+lm|driver\s+l298n|m[oó]dulo\s+encoder\s+rotatorio\s+arduino|m[oó]dulo\s+lector\s+tarjeta\s+sd\s+arduino|kit\s+para\s+arduino/i;
+
+    const before = existingCatalog.products.length;
+    existingCatalog.products = existingCatalog.products.filter(prod => {
+      const name = prod.name.toLowerCase();
+      // Solo purgar si: viene de tienda mixta Y nombre está en blacklist non-3D
+      const fromMixedStore = prod.entries?.some(e => NON3D_STORES.has(e.storeId));
+      if (!fromMixedStore) return true;
+      return !NON_3D_BLACKLIST.test(name);
+    });
+
+    const removed = before - existingCatalog.products.length;
+    console.log(`[Direct] --purge-non3d: eliminados ${removed} productos non-3D (${before} → ${existingCatalog.products.length})`);
+
+    // Guardar y mostrar distribución
+    const catalog = mergeCatalog(existingCatalog, [], new Set());
+    fs.writeFileSync(catalogPath, JSON.stringify(catalog, null, 2), 'utf-8');
+    const byCatP = catalog.products.reduce<Record<string, number>>((acc, p) => {
+      acc[p.categoryId] = (acc[p.categoryId] ?? 0) + 1;
+      return acc;
+    }, {});
+    console.log('[Direct] Distribución post-purga:');
+    Object.entries(byCatP).sort((a, b) => b[1] - a[1]).forEach(([cat, count]) => {
+      console.log(`  ${cat}: ${count}`);
+    });
+    generateSitemap(catalog);
+    console.log('\n[3DPrecios Scraper] ✓ Purga completada.');
     return;
   }
 

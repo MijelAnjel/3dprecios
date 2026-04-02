@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-04-02T04:05:00.868Z",
-    "productCount": 2839
+    "generatedAt": "2026-04-02T04:31:24.893Z",
+    "productCount": 2704
   },
   "stores": [
     {
@@ -2834,38 +2834,6 @@
       ]
     },
     {
-      "slug": "regulador-de-voltaje-lm2596s-adj",
-      "id": "regulador-de-voltaje-lm2596s-adj",
-      "name": "Regulador de voltaje LM2596S-ADJ",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2025/04/Regulador-de-voltaje-LM2596S-ADJ-1.jpg"
-      ],
-      "specs": {},
-      "minPrice": 2500,
-      "maxPrice": 2500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:21.541Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/regulador-de-voltaje-lm2596s-adj/",
-          "price": 2500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 2500,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "placa-madre-silenciosa-cr-30",
       "id": "placa-madre-silenciosa-cr-30",
       "name": "Placa Madre Silenciosa CR-30",
@@ -2896,36 +2864,6 @@
           "storeId": "afel",
           "price": 38400,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "modulo-relay-5v-de-1-canal",
-      "id": "modulo-relay-5v-de-1-canal",
-      "name": "Modulo Relay 5V de 1 canal",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [],
-      "specs": {},
-      "minPrice": 2500,
-      "maxPrice": 2500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:21.242Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/modulo-relay-5v-de-1-canal/",
-          "price": 2500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 2500,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -2966,38 +2904,6 @@
       ]
     },
     {
-      "slug": "adaptador-12v-5a",
-      "id": "adaptador-12v-5a",
-      "name": "Adaptador 12V 5A",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2020/02/002-Adaptador-12V-5A-Santiago-Chile.jpg"
-      ],
-      "specs": {},
-      "minPrice": 11990,
-      "maxPrice": 11990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:20.933Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/adaptador-12-v-5a/",
-          "price": 11990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 11990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "placa-madre-artillery-x3-pro",
       "id": "placa-madre-artillery-x3-pro",
       "name": "Placa madre Artillery X3 Pro",
@@ -3030,38 +2936,6 @@
           "storeId": "afel",
           "price": 50000,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "kit-para-arduino-37-sensores-en-1",
-      "id": "kit-para-arduino-37-sensores-en-1",
-      "name": "Kit para arduino 37 sensores en 1",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/02/kit-sensores-arduino-2.webp"
-      ],
-      "specs": {},
-      "minPrice": 19990,
-      "maxPrice": 19990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:20.573Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/kit-para-arduino-37-sensores-en-1/",
-          "price": 19990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 19990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -3102,38 +2976,6 @@
       ]
     },
     {
-      "slug": "driver-l298n-doble-accionamiento-para-arduino",
-      "id": "driver-l298n-doble-accionamiento-para-arduino",
-      "name": "Driver L298N doble accionamiento para arduino",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/02/modulo-driver-L298N-para-arduino.webp"
-      ],
-      "specs": {},
-      "minPrice": 2990,
-      "maxPrice": 2990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:20.249Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/driver-l298n-doble-accionamiento-para-arduino/",
-          "price": 2990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 2990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "placa-madre-z-076-genius-pro-and-x2",
       "id": "placa-madre-z-076-genius-pro-and-x2",
       "name": "Placa madre  Z-076 genius pro and x2",
@@ -3168,38 +3010,6 @@
       ]
     },
     {
-      "slug": "modulo-encoder-rotatorio-arduino",
-      "id": "modulo-encoder-rotatorio-arduino",
-      "name": "Módulo encoder rotatorio Arduino",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2020/02/Modulo-encoder-rotatorio-arduino-Cimech3D.jpg"
-      ],
-      "specs": {},
-      "minPrice": 2500,
-      "maxPrice": 2500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:19.951Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/modulo-encoder-rotatorio-arduino/",
-          "price": 2500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 2500,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "placa-controladora-mks-gen-v14-5-drivers-tmc2130",
       "id": "placa-controladora-mks-gen-v14-5-drivers-tmc2130",
       "name": "Placa controladora MKS Gen V1.4 + 5 Drivers TMC2130",
@@ -3230,38 +3040,6 @@
           "storeId": "afel",
           "price": 64000,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "modulo-lector-tarjeta-sd-arduino",
-      "id": "modulo-lector-tarjeta-sd-arduino",
-      "name": "Módulo lector tarjeta SD Arduino",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2020/02/Modulo-lector-tarjeta-sd-arduino-Chile.jpg"
-      ],
-      "specs": {},
-      "minPrice": 1250,
-      "maxPrice": 1250,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:19.647Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/modulo-lector-tarjeta-sd-arduino/",
-          "price": 1250,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 1250,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -3945,38 +3723,6 @@
       ]
     },
     {
-      "slug": "shield-v30-expansion-para-arduino-nano",
-      "id": "shield-v30-expansion-para-arduino-nano",
-      "name": "Shield V3.0 Expansion para arduino nano",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/02/shield-nano-v30.webp"
-      ],
-      "specs": {},
-      "minPrice": 3990,
-      "maxPrice": 3990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:16.445Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/shield-v3-0-expansion-para-arduino-nano/",
-          "price": 3990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 3990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "nozzle-punta-volcano-acero-inoxidable-04mm",
       "id": "nozzle-punta-volcano-acero-inoxidable-04mm",
       "name": "Nozzle Punta Volcano Acero Inoxidable 0,4mm",
@@ -4011,38 +3757,6 @@
       ]
     },
     {
-      "slug": "shield-cnc-para-arduino-uno",
-      "id": "shield-cnc-para-arduino-uno",
-      "name": "Shield CNC para Arduino UNO",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2020/02/001-Shield-CNC.jpg"
-      ],
-      "specs": {},
-      "minPrice": 3990,
-      "maxPrice": 3990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:16.141Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/shield-cnc-para-arduino-uno/",
-          "price": 3990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 3990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "nozzle-punta-volcano-acero-inoxidable-03-mm",
       "id": "nozzle-punta-volcano-acero-inoxidable-03-mm",
       "name": "Nozzle Punta Volcano Acero Inoxidable 0,3 mm",
@@ -4073,38 +3787,6 @@
           "storeId": "afel",
           "price": 1200,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "case-protector-acrilico-transparente-para-arduino-uno-r3",
-      "id": "case-protector-acrilico-transparente-para-arduino-uno-r3",
-      "name": "Case protector acrílico transparente para Arduino UNO R3",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/08/case-aruino-uno..jpg"
-      ],
-      "specs": {},
-      "minPrice": 1750,
-      "maxPrice": 1750,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:15.836Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/case-protector-acrilico-transparente-para-arduino-uno-r3/",
-          "price": 1750,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 1750,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -4277,70 +3959,6 @@
       ]
     },
     {
-      "slug": "controlador-mega-2560-r3-cable-usb-compatible-con-arduino",
-      "id": "controlador-mega-2560-r3-cable-usb-compatible-con-arduino",
-      "name": "Controlador MEGA 2560 R3 + Cable USB (compatible con Arduino)",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2020/02/003-Arduino-MEGA-chile.jpg"
-      ],
-      "specs": {},
-      "minPrice": 14990,
-      "maxPrice": 14990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:14.802Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/mega-2560-r3-cable-usb-version-compatible/",
-          "price": 14990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 14990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
-      "slug": "kit-inicial-controlador-uno-r3-compatible-con-arduino",
-      "id": "kit-inicial-controlador-uno-r3-compatible-con-arduino",
-      "name": "Kit inicial controlador UNO R3 (compatible con Arduino)",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2020/02/001-Kit-Arduino-UNO.jpg"
-      ],
-      "specs": {},
-      "minPrice": 14990,
-      "maxPrice": 14990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:14.476Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/kit-inicial-uno-r3-version-compatible/",
-          "price": 14990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 14990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "nozzle-punta-volcano-02mm",
       "id": "nozzle-punta-volcano-02mm",
       "name": "Nozzle Punta Volcano 0.2mm",
@@ -4371,38 +3989,6 @@
           "storeId": "afel",
           "price": 1500,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "controlador-uno-r3-ch340g-cable-usb-compatible-con-arduino",
-      "id": "controlador-uno-r3-ch340g-cable-usb-compatible-con-arduino",
-      "name": "Controlador UNO R3 (CH340G) + Cable USB (compatible con Arduino)",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2020/02/001-Arduino-Uno-R3-compatible.jpg"
-      ],
-      "specs": {},
-      "minPrice": 6990,
-      "maxPrice": 6990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:14.175Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/uno-r3-ch340g-cable-usb/",
-          "price": 6990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 6990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -4441,38 +4027,6 @@
       ]
     },
     {
-      "slug": "controlador-usb-de-4-ejes-drivers-tb6560-integrados-para-mach3",
-      "id": "controlador-usb-de-4-ejes-drivers-tb6560-integrados-para-mach3",
-      "name": "Controlador USB de 4 ejes + drivers TB6560 integrados (para Mach3)",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2020/02/001-Controlador-4-ejes-USBdrivers-integrados.jpg"
-      ],
-      "specs": {},
-      "minPrice": 55000,
-      "maxPrice": 55000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:13.870Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/controlador-usb-de-4-ejes-drivers-tb6560-integrados-para-mach3/",
-          "price": 55000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 55000,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "nozzle-punta-impresora-3d-08mm-m6",
       "id": "nozzle-punta-impresora-3d-08mm-m6",
       "name": "Nozzle Punta Impresora 3D 0,8mm M6",
@@ -4503,38 +4057,6 @@
           "storeId": "afel",
           "price": 1000,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "controlador-usb-de-3-ejes-drivers-tb6560-integrados-para-mach3",
-      "id": "controlador-usb-de-3-ejes-drivers-tb6560-integrados-para-mach3",
-      "name": "Controlador USB de 3 ejes + drivers TB6560 integrados (para Mach3)",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2020/02/001-Controlador-3-ejes-USBdrivers-integrados.jpg"
-      ],
-      "specs": {},
-      "minPrice": 97990,
-      "maxPrice": 97990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:13.544Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/controlador-usb-de-3-ejes-drivers-tb6560-integrados-para-mach3/",
-          "price": 97990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 97990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -4573,38 +4095,6 @@
       ]
     },
     {
-      "slug": "controlador-avanzado-de-6-ejes-para-fluid-cnc",
-      "id": "controlador-avanzado-de-6-ejes-para-fluid-cnc",
-      "name": "Controlador Avanzado de 6 ejes para Fluid CNC",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2025/04/Controlador-Avanzado-de-6-ejes-para-Fluid-CNC-1.jpg"
-      ],
-      "specs": {},
-      "minPrice": 159990,
-      "maxPrice": 159990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:13.220Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/controlador-avanzado-de-6-ejes-para-fluid-cnc/",
-          "price": 159990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 159990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "nozzle-punta-impresora-3d-05mm-m6",
       "id": "nozzle-punta-impresora-3d-05mm-m6",
       "name": "Nozzle Punta Impresora 3D 0,5mm M6",
@@ -4639,38 +4129,6 @@
       ]
     },
     {
-      "slug": "controlador-usb-de-5-ejes-para-mach3-verde",
-      "id": "controlador-usb-de-5-ejes-para-mach3-verde",
-      "name": "Controlador USB de 5 ejes para Mach3 (Verde)",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2020/02/001-Controlador-CNC-USB-5-ejes.jpg"
-      ],
-      "specs": {},
-      "minPrice": 29000,
-      "maxPrice": 29000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:12.899Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/controlador-usb-de-5-ejes-para-mach3-verde/",
-          "price": 29000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 29000,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "nozzle-punta-impresora-3d-04mm-m6",
       "id": "nozzle-punta-impresora-3d-04mm-m6",
       "name": "Nozzle Punta Impresora 3D 0,4mm M6",
@@ -4701,38 +4159,6 @@
           "storeId": "afel",
           "price": 1000,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "controlador-usb-de-4-ejes-para-mach3-rojo",
-      "id": "controlador-usb-de-4-ejes-para-mach3-rojo",
-      "name": "Controlador USB de 4 ejes para Mach3 (Rojo)",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2020/02/001-Mach-3-USB-controlador.jpg"
-      ],
-      "specs": {},
-      "minPrice": 52990,
-      "maxPrice": 52990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:12.500Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/controlador-usb-de-4-ejes-para-mach3-rojo/",
-          "price": 52990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 52990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -5021,38 +4447,6 @@
       ]
     },
     {
-      "slug": "kit-de-inicio-microcontrolador-arduino-en-espanol",
-      "id": "kit-de-inicio-microcontrolador-arduino-en-espanol",
-      "name": "Kit de inicio microcontrolador Arduino en Español",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/03/arduino-kit-espaol-2.jpg"
-      ],
-      "specs": {},
-      "minPrice": 116990,
-      "maxPrice": 116990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:11.189Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/kit-de-inicio-microcontrolador-arduino-en-espanol/",
-          "price": 116990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 116990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "nozzle-metal-punta-impresora-3d-03mm-m6",
       "id": "nozzle-metal-punta-impresora-3d-03mm-m6",
       "name": "Nozzle Metal Punta Impresora 3D 0,3mm M6",
@@ -5083,38 +4477,6 @@
           "storeId": "afel",
           "price": 1200,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "microcontrolador-arduino-nano-33-ble-sin-cabezales",
-      "id": "microcontrolador-arduino-nano-33-ble-sin-cabezales",
-      "name": "Microcontrolador Arduino Nano 33 BLE sin cabezales",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/03/arduino-33-ble-3.jpg"
-      ],
-      "specs": {},
-      "minPrice": 36990,
-      "maxPrice": 36990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:10.877Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/microcontrolador-arduino-nano-33-ble-sin-cabezales/",
-          "price": 36990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 36990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -5153,38 +4515,6 @@
       ]
     },
     {
-      "slug": "microcontrolador-arduino-nano-33-iot-sin-cabezales",
-      "id": "microcontrolador-arduino-nano-33-iot-sin-cabezales",
-      "name": "Microcontrolador Arduino Nano 33 IoT sin cabezales",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/03/arduino-lot-33-3.jpg"
-      ],
-      "specs": {},
-      "minPrice": 36990,
-      "maxPrice": 36990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:10.562Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/microcontrolador-arduino-nano-33-iot-sin-cabezales/",
-          "price": 36990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 36990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "nozzle-08-mm-e3d",
       "id": "nozzle-08-mm-e3d",
       "name": "Nozzle 0,8 mm E3D",
@@ -5215,38 +4545,6 @@
           "storeId": "afel",
           "price": 1000,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "microcontrolador-arduino-nano-every-sin-cabezales",
-      "id": "microcontrolador-arduino-nano-every-sin-cabezales",
-      "name": "Microcontrolador Arduino Nano Every sin cabezales",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/03/nano-every-3.jpg"
-      ],
-      "specs": {},
-      "minPrice": 19500,
-      "maxPrice": 19500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:10.236Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/microcontrolador-arduino-nano-every-sin-cabezales/",
-          "price": 19500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 19500,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -5285,38 +4583,6 @@
       ]
     },
     {
-      "slug": "microcontrolador-arduino-leonardo-con-cabezales",
-      "id": "microcontrolador-arduino-leonardo-con-cabezales",
-      "name": "Microcontrolador Arduino Leonardo con cabezales",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/03/arduino-leonardo..jpg"
-      ],
-      "specs": {},
-      "minPrice": 36990,
-      "maxPrice": 36990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:09.933Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/microcontrolador-arduino-leonardo-con-cabezales/",
-          "price": 36990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 36990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "nozzle-06mm-acero-inoxidable",
       "id": "nozzle-06mm-acero-inoxidable",
       "name": "Nozzle 0,6mm Acero Inoxidable",
@@ -5347,38 +4613,6 @@
           "storeId": "afel",
           "price": 6000,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "microcontrolador-arduino-uno-r3-smd",
-      "id": "microcontrolador-arduino-uno-r3-smd",
-      "name": "Microcontrolador Arduino UNO R3 SMD",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/03/1000-750-max-2..jpg"
-      ],
-      "specs": {},
-      "minPrice": 29500,
-      "maxPrice": 29500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:09.623Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/arduino-uno-r3-smd/",
-          "price": 29500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 29500,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -6665,38 +5899,6 @@
       ]
     },
     {
-      "slug": "spring-collet-er-20-para-spindle-drea-varias",
-      "id": "spring-collet-er-20-para-spindle-drea-varias",
-      "name": "Spring collet ER 20 para Spindle DREA – Varias",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/09/ER11-collets.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:04.024Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-20-para-spindle-drea-varias/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "kit-extrusor-hotend-j-head-v6-bowden-12v-40w",
       "id": "kit-extrusor-hotend-j-head-v6-bowden-12v-40w",
       "name": "Kit Extrusor Hotend J-Head V6 Bowden 12v 40w",
@@ -6727,70 +5929,6 @@
           "storeId": "afel",
           "price": 12792,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "spring-collet-er-20-para-spindle-para-fresa-12mm",
-      "id": "spring-collet-er-20-para-spindle-para-fresa-12mm",
-      "name": "Spring collet ER 20 para Spindle para fresa 12mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:03.724Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-20-para-spindle-para-fresa-12mm/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
-      "slug": "spring-collet-er-20-para-spindle-para-fresa-10mm",
-      "id": "spring-collet-er-20-para-spindle-para-fresa-10mm",
-      "name": "Spring collet ER 20 para Spindle para fresa 10mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:03.423Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-20-para-spindle-para-fresa-10mm/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -6829,38 +5967,6 @@
       ]
     },
     {
-      "slug": "spring-collet-er-20-para-spindle-para-fresa-8mm",
-      "id": "spring-collet-er-20-para-spindle-para-fresa-8mm",
-      "name": "Spring collet ER 20 para Spindle para fresa 8mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:03.121Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-20-para-spindle-para-fresa-8mm/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "kit-de-limpieza-para-impresora-3d",
       "id": "kit-de-limpieza-para-impresora-3d",
       "name": "Kit de limpieza para impresora 3D",
@@ -6889,38 +5995,6 @@
           "storeId": "afel",
           "price": 9990,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "spring-collet-er-20-para-spindle-para-fresa-6mm",
-      "id": "spring-collet-er-20-para-spindle-para-fresa-6mm",
-      "name": "Spring collet ER 20 para Spindle para fresa 6mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:02.809Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-20-para-spindle-para-fresa-6mm/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -6996,38 +6070,6 @@
       ]
     },
     {
-      "slug": "spring-collet-er-20-para-spindle-para-fresa-3mm",
-      "id": "spring-collet-er-20-para-spindle-para-fresa-3mm",
-      "name": "Spring collet ER 20 para Spindle para fresa 3mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:02.451Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-20-para-spindle-para-fresa-3mm/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "kit-20-puntas-plateadas-para-impresora-3d",
       "id": "kit-20-puntas-plateadas-para-impresora-3d",
       "name": "Kit 20 puntas plateadas para impresora 3D",
@@ -7060,38 +6102,6 @@
       ]
     },
     {
-      "slug": "spring-collet-er-20-para-spindle-para-fresa-12",
-      "id": "spring-collet-er-20-para-spindle-para-fresa-12",
-      "name": "Spring collet ER 20 para Spindle para fresa 1/2″",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:02.120Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-20-para-spindle-para-fresa-1-2%e2%80%b3/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "kit-20-puntas-para-impresora-3d",
       "id": "kit-20-puntas-para-impresora-3d",
       "name": "Kit 20 puntas para impresora 3D",
@@ -7120,38 +6130,6 @@
           "storeId": "afel",
           "price": 9990,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "spring-collet-er-20-para-spindle-para-fresa-38",
-      "id": "spring-collet-er-20-para-spindle-para-fresa-38",
-      "name": "Spring collet ER 20 para Spindle para fresa 3/8″",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:01.797Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-20-para-spindle-para-fresa-3-8%e2%80%b3/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -7190,38 +6168,6 @@
       ]
     },
     {
-      "slug": "spring-collet-er-20-para-spindle-para-fresa-14",
-      "id": "spring-collet-er-20-para-spindle-para-fresa-14",
-      "name": "Spring collet ER 20 para Spindle para fresa 1/4″",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:01.470Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-20-para-spindle-para-fresa-1-4%e2%80%b3/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "kit-2-bloques-de-disipacion-ender-3-v2",
       "id": "kit-2-bloques-de-disipacion-ender-3-v2",
       "name": "Kit 2 Bloques de Disipación Ender 3 V2",
@@ -7252,38 +6198,6 @@
           "storeId": "afel",
           "price": 3200,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "spring-collet-er-20-para-spindle-para-fresa-18",
-      "id": "spring-collet-er-20-para-spindle-para-fresa-18",
-      "name": "Spring collet ER 20 para Spindle para fresa 1/8″",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:01.142Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-20-para-spindle-para-fresa-1-8%e2%80%b3/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -7320,38 +6234,6 @@
       ]
     },
     {
-      "slug": "spring-collet-er-16-para-spindle-drea-varias",
-      "id": "spring-collet-er-16-para-spindle-drea-varias",
-      "name": "Spring collet ER 16 para Spindle DREA – Varias",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/09/ER11-collets.jpg"
-      ],
-      "specs": {},
-      "minPrice": 2500,
-      "maxPrice": 2500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:00.815Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-16-para-spindle-drea-varias/",
-          "price": 2500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 2500,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "kit-1m-tubo-ptfe-175mm-conector-pc4-01",
       "id": "kit-1m-tubo-ptfe-175mm-conector-pc4-01",
       "name": "Kit 1m Tubo PTFE 1,75mm  + Conector PC4-01",
@@ -7384,38 +6266,6 @@
       ]
     },
     {
-      "slug": "spring-collet-er-16-para-spindle-para-fresa-10mm",
-      "id": "spring-collet-er-16-para-spindle-para-fresa-10mm",
-      "name": "Spring collet ER 16 para Spindle para fresa 10mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:00.498Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-16-para-spindle-para-fresa-10mm/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "kit-10-puntas-de-acero-endurecido-e3d-impresora-3d",
       "id": "kit-10-puntas-de-acero-endurecido-e3d-impresora-3d",
       "name": "Kit 10 Puntas de Acero Endurecido E3D Impresora 3D",
@@ -7444,38 +6294,6 @@
           "storeId": "afel",
           "price": 15992,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "spring-collet-er-16-para-spindle-para-fresa-8mm",
-      "id": "spring-collet-er-16-para-spindle-para-fresa-8mm",
-      "name": "Spring collet ER 16 para Spindle para fresa 8mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:00:00.159Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-16-para-spindle-para-fresa-8mm/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -7514,38 +6332,6 @@
       ]
     },
     {
-      "slug": "spring-collet-er-16-para-spindle-para-fresa-6mm",
-      "id": "spring-collet-er-16-para-spindle-para-fresa-6mm",
-      "name": "Spring collet ER 16 para Spindle para fresa 6mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:59.850Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-16-para-spindle-para-fresa-6mm/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "extrusor-titan-aero-metalico",
       "id": "extrusor-titan-aero-metalico",
       "name": "Extrusor Titan AERO Metálico",
@@ -7576,38 +6362,6 @@
           "storeId": "afel",
           "price": 28000,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "spring-collet-er-16-para-spindle-para-fresa-3mm",
-      "id": "spring-collet-er-16-para-spindle-para-fresa-3mm",
-      "name": "Spring collet ER 16 para Spindle para fresa 3mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:59.543Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-16-para-spindle-para-fresa-3mm/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -7683,38 +6437,6 @@
       ]
     },
     {
-      "slug": "spring-collet-er-16-para-spindle-para-fresa-38",
-      "id": "spring-collet-er-16-para-spindle-para-fresa-38",
-      "name": "Spring collet ER 16 para Spindle para fresa 3/8″",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 2500,
-      "maxPrice": 2500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:59.221Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-16-para-spindle-para-fresa-3-8%e2%80%b3/",
-          "price": 2500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 2500,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "extrusor-titan-40h-12v-v6",
       "id": "extrusor-titan-40h-12v-v6",
       "name": "Extrusor Titan 40H 12V V6",
@@ -7745,38 +6467,6 @@
           "storeId": "afel",
           "price": 21600,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "spring-collet-er-16-para-spindle-para-fresa-14",
-      "id": "spring-collet-er-16-para-spindle-para-fresa-14",
-      "name": "Spring collet ER 16 para Spindle para fresa 1/4″",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:58.903Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-16-para-spindle-para-fresa-1-4%e2%80%b3/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -7815,38 +6505,6 @@
       ]
     },
     {
-      "slug": "spring-collet-er-16-para-spindle-para-fresa-18",
-      "id": "spring-collet-er-16-para-spindle-para-fresa-18",
-      "name": "Spring collet ER 16 para Spindle para fresa 1/8″",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:58.583Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-16-para-spindle-para-fresa-1-8%e2%80%b3/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "extrusor-e3d-all-metal-ventilador-04mm-175mm-24v",
       "id": "extrusor-e3d-all-metal-ventilador-04mm-175mm-24v",
       "name": "Extrusor E3D All Metal + Ventilador 0,4mm 1,75mm 24V",
@@ -7877,38 +6535,6 @@
           "storeId": "afel",
           "price": 11200,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "spring-collet-er-11-para-spindle-drea-varias",
-      "id": "spring-collet-er-11-para-spindle-drea-varias",
-      "name": "Spring collet ER 11 para Spindle DREA – Varias",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/09/ER11-collets.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:58.255Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-11-para-spindle-drea-varias/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -7949,38 +6575,6 @@
       ]
     },
     {
-      "slug": "spring-collet-er-11-para-spindle-para-fresa-6mm",
-      "id": "spring-collet-er-11-para-spindle-para-fresa-6mm",
-      "name": "Spring collet ER 11 para Spindle para fresa 6mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:57.941Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-11-para-spindle-para-fresa-6mm/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "extrusor-completo-artillery-x2-y-pro",
       "id": "extrusor-completo-artillery-x2-y-pro",
       "name": "Extrusor Completo Artillery X2 y Pro",
@@ -8013,38 +6607,6 @@
           "storeId": "afel",
           "price": 69990,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "spring-collet-er-11-para-spindle-para-fresa-3mm",
-      "id": "spring-collet-er-11-para-spindle-para-fresa-3mm",
-      "name": "Spring collet ER 11 para Spindle para fresa 3mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:57.602Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-11-para-spindle-para-fresa-3mm/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -8085,38 +6647,6 @@
       ]
     },
     {
-      "slug": "spring-collet-er-11-para-spindle-para-fresa-14",
-      "id": "spring-collet-er-11-para-spindle-para-fresa-14",
-      "name": "Spring collet ER 11 para Spindle para fresa 1/4″",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:57.277Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-11-para-spindle-para-fresa-1-4%e2%80%b3/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "extrusor-bloque-de-aluminio-mk8-sistema-bowden",
       "id": "extrusor-bloque-de-aluminio-mk8-sistema-bowden",
       "name": "Extrusor Bloque de Aluminio MK8 Sistema Bowden",
@@ -8147,38 +6677,6 @@
           "storeId": "afel",
           "price": 7500,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "spring-collet-er-11-para-spindle-para-fresa-18",
-      "id": "spring-collet-er-11-para-spindle-para-fresa-18",
-      "name": "Spring collet ER 11 para Spindle para fresa 1/8″",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:56.954Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-11-para-spindle-para-fresa-1-8%e2%80%b3/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -8296,38 +6794,6 @@
       ]
     },
     {
-      "slug": "kit-de-fresas-para-cnc-10-unidades-08-30-mm",
-      "id": "kit-de-fresas-para-cnc-10-unidades-08-30-mm",
-      "name": "Kit de fresas para CNC, 10 unidades, (0.8 – 3.0 mm)",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2019/12/Kit-fresas-CNC.jpg"
-      ],
-      "specs": {},
-      "minPrice": 13000,
-      "maxPrice": 13000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:56.624Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/kit-de-fresas-para-cnc-0-8-3-0mm/",
-          "price": 13000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 13000,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "espiral-negro-8mm-13mts-impresora-3d",
       "id": "espiral-negro-8mm-13mts-impresora-3d",
       "name": "Espiral Negro 8mm 13mts - Impresora 3D",
@@ -8356,38 +6822,6 @@
           "storeId": "afel",
           "price": 5200,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "adaptador-de-collet-de-127mm-12-a-8mm-para-router",
-      "id": "adaptador-de-collet-de-127mm-12-a-8mm-para-router",
-      "name": "Adaptador de collet de 12.7mm (1/2) a 8mm para Router",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/06/H7deb0d8e66ad4b32953dc8d98757282ay.jpg"
-      ],
-      "specs": {},
-      "minPrice": 9990,
-      "maxPrice": 9990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:56.301Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/adaptador-de-collet-de-12-7mm-1-2-a-8mm-para-router/",
-          "price": 9990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 9990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -8428,70 +6862,6 @@
       ]
     },
     {
-      "slug": "adaptador-de-collet-de-128243-a-148243-para-router",
-      "id": "adaptador-de-collet-de-128243-a-148243-para-router",
-      "name": "Adaptador de collet de 1/2&#8243; a 1/4&#8243; para Router",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/06/H7deb0d8e66ad4b32953dc8d98757282ay.jpg"
-      ],
-      "specs": {},
-      "minPrice": 9990,
-      "maxPrice": 9990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:55.953Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/adaptador-de-collet-de-1-2-a-1-4-para-router/",
-          "price": 9990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 9990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
-      "slug": "adaptador-de-collet-de-128243-a-188243-para-router",
-      "id": "adaptador-de-collet-de-128243-a-188243-para-router",
-      "name": "Adaptador de collet de 1/2&#8243; a 1/8&#8243; para Router",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/06/H7deb0d8e66ad4b32953dc8d98757282ay.jpg"
-      ],
-      "specs": {},
-      "minPrice": 9990,
-      "maxPrice": 9990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:55.632Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/adaptador-de-collet-de-1-2-a-1-8-para-router/",
-          "price": 9990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 9990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "driver-fs31w01-v2-para-impresora-artillery",
       "id": "driver-fs31w01-v2-para-impresora-artillery",
       "name": "Driver FS31W01 v2 para Impresora Artillery",
@@ -8528,38 +6898,6 @@
       ]
     },
     {
-      "slug": "adaptador-de-collet-de-635mm-14-a-4mm-para-router",
-      "id": "adaptador-de-collet-de-635mm-14-a-4mm-para-router",
-      "name": "Adaptador de collet de 6.35mm (1/4) a 4mm para Router",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/06/H22ca8c3710ea4049a863427991181dbfN.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:55.310Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/adaptador-de-collet-de-6-35mm-1-4-a-4mm-para-router/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "correa-dentada-cama-caliente-artillery-95cm",
       "id": "correa-dentada-cama-caliente-artillery-95cm",
       "name": "Correa Dentada cama caliente Artillery 95cm",
@@ -8592,38 +6930,6 @@
           "storeId": "afel",
           "price": 2000,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "adaptador-de-collet-de-6mm-a-4mm-para-router",
-      "id": "adaptador-de-collet-de-6mm-a-4mm-para-router",
-      "name": "Adaptador de collet de 6mm a 4mm para Router",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/collet-adaptador.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:54.981Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/adaptador-de-collet-de-6mm-a-4mm-para-router/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -8700,38 +7006,6 @@
       ]
     },
     {
-      "slug": "adaptador-de-collet-de-6mm-a-3175mm-18-para-router",
-      "id": "adaptador-de-collet-de-6mm-a-3175mm-18-para-router",
-      "name": "Adaptador de collet de 6mm a 3,175mm (1/8) para Router",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/collet-adaptador.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:54.666Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/adaptador-de-collet-de-6mm-a-3175mm-1-8-para-router/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "correa-dentada-2gt-600-para-artillery-genius",
       "id": "correa-dentada-2gt-600-para-artillery-genius",
       "name": "Correa dentada 2GT-600 para Artillery Genius",
@@ -8764,38 +7038,6 @@
           "storeId": "afel",
           "price": 3600,
           "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "adaptador-de-collet-de-148243-a-188243-para-router",
-      "id": "adaptador-de-collet-de-148243-a-188243-para-router",
-      "name": "Adaptador de collet de 1/4&#8243; a 1/8&#8243; para Router",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/collet-adaptador.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:54.355Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/adaptador-para-collet-de-1-4-a-1-8/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -8834,36 +7076,6 @@
       ]
     },
     {
-      "slug": "kit-de-fresas-para-trabajar-acrilico-con-toma-de-188243",
-      "id": "kit-de-fresas-para-trabajar-acrilico-con-toma-de-188243",
-      "name": "Kit de fresas para trabajar acrilico con toma de 1/8&#8243;",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [],
-      "specs": {},
-      "minPrice": 16000,
-      "maxPrice": 16000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:54.022Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/kit-de-fresas-para-trabajar-acrilico-con-toma-de-1-8/",
-          "price": 16000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 16000,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "conector-tubo-neumatico-pc6-01-3mm",
       "id": "conector-tubo-neumatico-pc6-01-3mm",
       "name": "Conector Tubo Neumático PC6-01 3mm",
@@ -8892,66 +7104,6 @@
           "storeId": "afel",
           "price": 1000,
           "recordedAt": "2026-04-01T18:39:28.372Z"
-        }
-      ]
-    },
-    {
-      "slug": "kit-de-fresas-para-trabajar-aluminio-con-toma-de-188243",
-      "id": "kit-de-fresas-para-trabajar-aluminio-con-toma-de-188243",
-      "name": "Kit de fresas para trabajar aluminio con toma de 1/8&#8243;",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [],
-      "specs": {},
-      "minPrice": 22500,
-      "maxPrice": 22500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:53.712Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/kit-de-fresas-para-trabajar-aluminio-con-toma-de-1-8/",
-          "price": 22500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 22500,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
-      "slug": "kit-de-fresas-para-trabajar-madera-con-toma-de-188243",
-      "id": "kit-de-fresas-para-trabajar-madera-con-toma-de-188243",
-      "name": "Kit de fresas para trabajar madera con toma de 1/8&#8243;",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [],
-      "specs": {},
-      "minPrice": 25000,
-      "maxPrice": 25000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:53.399Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/kit-de-fresas-para-trabajar-madera-con-toma-de-1-8/",
-          "price": 25000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 25000,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -8988,36 +7140,6 @@
       ]
     },
     {
-      "slug": "kit-de-fresas-para-trabajar-acrilico-con-toma-de-148243",
-      "id": "kit-de-fresas-para-trabajar-acrilico-con-toma-de-148243",
-      "name": "Kit de fresas para trabajar acrilico con toma de 1/4&#8243;",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [],
-      "specs": {},
-      "minPrice": 47500,
-      "maxPrice": 47500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:53.092Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/kit-de-fresas-para-trabajar-acrilico-con-toma-de-1-4/",
-          "price": 47500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 47500,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
-        }
-      ]
-    },
-    {
       "slug": "conector-tubo-neumatico-pc4-01-175mm",
       "id": "conector-tubo-neumatico-pc4-01-175mm",
       "name": "Conector Tubo Neumático PC4-01 1.75mm",
@@ -9046,36 +7168,6 @@
           "storeId": "afel",
           "price": 1000,
           "recordedAt": "2026-04-01T18:39:28.372Z"
-        }
-      ]
-    },
-    {
-      "slug": "kit-de-fresas-para-trabajar-aluminio-con-toma-de-148243",
-      "id": "kit-de-fresas-para-trabajar-aluminio-con-toma-de-148243",
-      "name": "Kit de fresas para trabajar aluminio con toma de 1/4&#8243;",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [],
-      "specs": {},
-      "minPrice": 60000,
-      "maxPrice": 60000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:52.752Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/kit-de-fresas-para-trabajar-aluminio-con-toma-de-1-4/",
-          "price": 60000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 60000,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -9110,36 +7202,6 @@
           "storeId": "afel",
           "price": 650,
           "recordedAt": "2026-04-01T18:39:28.372Z"
-        }
-      ]
-    },
-    {
-      "slug": "kit-de-fresas-para-trabajar-madera-con-toma-de-148243",
-      "id": "kit-de-fresas-para-trabajar-madera-con-toma-de-148243",
-      "name": "Kit de fresas para trabajar madera con toma de 1/4&#8243;",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [],
-      "specs": {},
-      "minPrice": 60000,
-      "maxPrice": 60000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:52.437Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/kit-de-fresas-para-trabajar-madera-con-toma-de-1-4/",
-          "price": 60000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 60000,
-          "recordedAt": "2026-04-01T18:30:45.325Z"
         }
       ]
     },
@@ -9180,38 +7242,6 @@
       ]
     },
     {
-      "slug": "fresa-ranurado-para-neon-led-dia-vastago-10mm-dia-corte-8mm",
-      "id": "fresa-ranurado-para-neon-led-dia-vastago-10mm-dia-corte-8mm",
-      "name": "Fresa ranurado para Neon Led Dia. Vastago 10mm, Dia. Corte 8mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2024/11/011000-130-VAR-Fresa-ranuna-para-neon-led-1-Con-Logo-2.jpg"
-      ],
-      "specs": {},
-      "minPrice": 28990,
-      "maxPrice": 28990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:51.929Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-ranurado-para-neon-led-dia-vastago-10mm-dia-corte-8mm/",
-          "price": 28990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 28990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "cartucho-calefactor-ender-3-v2",
       "id": "cartucho-calefactor-ender-3-v2",
       "name": "Cartucho Calefactor Ender 3 V2",
@@ -9243,38 +7273,6 @@
           "storeId": "afel",
           "price": 3000,
           "recordedAt": "2026-04-01T18:39:28.372Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-ranurado-para-neon-led-dia-vastago-10mm-dia-corte-6mm",
-      "id": "fresa-ranurado-para-neon-led-dia-vastago-10mm-dia-corte-6mm",
-      "name": "Fresa ranurado para Neon Led Dia. Vastago 10mm, Dia. Corte 6mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2024/11/011000-130-VAR-Fresa-ranuna-para-neon-led-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 14500,
-      "maxPrice": 14500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:51.608Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-ranurado-para-neon-led-dia-vastago-10mm-dia-corte-6mm/",
-          "price": 14500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 14500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -9313,38 +7311,6 @@
       ]
     },
     {
-      "slug": "fresa-ranurado-para-neon-led-dia-vastago-6mm-dia-corte-8mm",
-      "id": "fresa-ranurado-para-neon-led-dia-vastago-6mm-dia-corte-8mm",
-      "name": "Fresa ranurado para Neon Led Dia. Vastago 6mm, Dia. Corte 8mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2024/11/011000-130-VAR-Fresa-ranuna-para-neon-led-1-Con-Logo-1.jpg"
-      ],
-      "specs": {},
-      "minPrice": 34990,
-      "maxPrice": 34990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:51.267Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-ranurado-para-neon-led-dia-vastago-6mm-dia-corte-8mm/",
-          "price": 34990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 34990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "cama-caliente-magnetica-310x310",
       "id": "cama-caliente-magnetica-310x310",
       "name": "Cama Caliente Magnética 310x310",
@@ -9375,38 +7341,6 @@
           "storeId": "afel",
           "price": 17400,
           "recordedAt": "2026-04-01T18:39:28.372Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-ranura-tipo-t-2-flautas-dia-vastago-14-dia-corte-128243",
-      "id": "fresa-ranura-tipo-t-2-flautas-dia-vastago-14-dia-corte-128243",
-      "name": "Fresa ranura tipo T, 2 flautas, Dia. Vástago 1/4, Dia. Corte 1/2&#8243;",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/06/011000-120-VAR-Fresa-ranuna-tipo-T-1-Con-Logo-1.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:50.940Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-ranura-tipo-t-2-flautas-dia-vastago-1-4-dia-corte-1-2/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -9445,38 +7379,6 @@
       ]
     },
     {
-      "slug": "fresa-ranura-tipo-t-2-flautas-dia-vastago-14-dia-corte-388243",
-      "id": "fresa-ranura-tipo-t-2-flautas-dia-vastago-14-dia-corte-388243",
-      "name": "Fresa ranura tipo T, 2 flautas, Dia. Vástago 1/4, Dia. Corte 3/8&#8243;",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/06/011000-120-VAR-Fresa-ranuna-tipo-T-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:50.603Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-ranura-tipo-t-2-flautas-dia-vastago-1-4-dia-corte-3-8/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "calentador-cartucho-extrusor-12v-40w",
       "id": "calentador-cartucho-extrusor-12v-40w",
       "name": "Calentador Cartucho Extrusor 12v 40w",
@@ -9507,38 +7409,6 @@
           "storeId": "afel",
           "price": 2500,
           "recordedAt": "2026-04-01T18:39:28.372Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-ranurado-recto-2-flautas-dia-vastago-14-dia-corte-14-largo-filo-18243",
-      "id": "fresa-ranurado-recto-2-flautas-dia-vastago-14-dia-corte-14-largo-filo-18243",
-      "name": "Fresa ranurado recto, 2 flautas, Dia. vástago 1/4, Dia. corte 1/4, Largo filo 1&#8243;",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/09/011000-110-VAR-Fresa-ranurado-recto-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 17500,
-      "maxPrice": 17500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:50.284Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-grabado-2-flautas-dia-vastago-1-4-dia-corte-1-4-largo-filo-1/",
-          "price": 17500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 17500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -9575,38 +7445,6 @@
           "storeId": "afel",
           "price": 2800,
           "recordedAt": "2026-04-01T18:39:28.372Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-ranurado-recto-2-flautas-dia-vastago-18-dia-corte-18-largo-filo-22",
-      "id": "fresa-ranurado-recto-2-flautas-dia-vastago-18-dia-corte-18-largo-filo-22",
-      "name": "Fresa ranurado recto, 2 flautas, Dia. vástago 1/8, Dia. corte 1/8, Largo filo 22",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/07/011000-110-VAR-Fresa-ranurado-recto-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:49.961Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-grabado-2-flautas-dia-vastago-1-8-dia-corte-1-8-largo-filo-22mm/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -9714,13 +7552,16 @@
       "slug": "cable-plano-ffc-500mm-eje-x-artillery-x2",
       "id": "cable-plano-ffc-500mm-eje-x-artillery-x2",
       "name": "Cable Plano FFC 500mm eje X Artillery X2",
-      "brand": "",
-      "categoryId": "general",
+      "brand": "Artillery",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F24872Fcable_plano_ffc_artillery_x2_1200x900_8e9d287d-966b-4894-913c-64b93f0c6f11.jpg?v=1720900555"
       ],
-      "specs": {},
+      "specs": {
+        "brand": "Artillery",
+        "compatibleWith": "Artillery Genius"
+      },
       "minPrice": 7992,
       "maxPrice": 7992,
       "storeCount": 1,
@@ -9780,48 +7621,19 @@
       ]
     },
     {
-      "slug": "fresa-de-grabado-en-v-dia-vastago-188243-angulo-60-ancho-punta-01mm",
-      "id": "fresa-de-grabado-en-v-dia-vastago-188243-angulo-60-ancho-punta-01mm",
-      "name": "Fresa de grabado en V, Dia. vástago 1/8&#8243;, Ángulo 60°, Ancho punta 0.1mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/02/011000-090-VAR-Fresa-de-grabado-en-V-1-Con-Logo-2.jpg"
-      ],
-      "specs": {},
-      "minPrice": 7500,
-      "maxPrice": 7500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:49.007Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-de-grabado-en-v-3175-60-01/",
-          "price": 7500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 7500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "cable-plano-eje-z-artillery-x2",
       "id": "cable-plano-eje-z-artillery-x2",
       "name": "Cable Plano eje Z Artillery X2",
-      "brand": "",
-      "categoryId": "general",
+      "brand": "Artillery",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F24882Fcable_plano_eje_z_artllery_x2_1200x900_c1713662-aa5a-4be0-8fe6-2910eb9dfb91.jpg?v=1720900552"
       ],
-      "specs": {},
+      "specs": {
+        "brand": "Artillery",
+        "compatibleWith": "Artillery Genius"
+      },
       "minPrice": 7992,
       "maxPrice": 7992,
       "storeCount": 1,
@@ -9844,48 +7656,19 @@
       ]
     },
     {
-      "slug": "fresa-de-grabado-en-v-dia-vastago-188243-angulo-30-ancho-punta-01mm",
-      "id": "fresa-de-grabado-en-v-dia-vastago-188243-angulo-30-ancho-punta-01mm",
-      "name": "Fresa de grabado en V, Dia. vástago 1/8&#8243;, Ángulo 30°, Ancho punta 0.1mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/02/011000-090-VAR-Fresa-de-grabado-en-V-1-Con-Logo-1.jpg"
-      ],
-      "specs": {},
-      "minPrice": 7500,
-      "maxPrice": 7500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:48.673Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-de-grabado-en-v-3175-30-01/",
-          "price": 7500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 7500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "cable-plano-eje-z-artillery-genius-pro",
       "id": "cable-plano-eje-z-artillery-genius-pro",
       "name": "Cable Plano eje Z Artillery Genius Pro",
-      "brand": "",
-      "categoryId": "general",
+      "brand": "Artillery",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F24892Fcable_plano_eje_z_artllery_x2_1200x900_d32ea058-a5d9-477e-8818-9f598ed5aa14.jpg?v=1720900549"
       ],
-      "specs": {},
+      "specs": {
+        "brand": "Artillery",
+        "compatibleWith": "Artillery Genius"
+      },
       "minPrice": 7992,
       "maxPrice": 7992,
       "storeCount": 1,
@@ -9904,38 +7687,6 @@
           "storeId": "afel",
           "price": 7992,
           "recordedAt": "2026-04-01T18:39:28.372Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-de-grabado-en-v-dia-vastago-188243-angulo-20-ancho-punta-01mm",
-      "id": "fresa-de-grabado-en-v-dia-vastago-188243-angulo-20-ancho-punta-01mm",
-      "name": "Fresa de grabado en V, Dia. vástago 1/8&#8243;, Ángulo 20°, Ancho punta 0.1mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/02/011000-090-VAR-Fresa-de-grabado-en-V-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 7500,
-      "maxPrice": 7500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:48.271Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-de-grabado-en-v-3175-20-01/",
-          "price": 7500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 7500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -9974,38 +7725,6 @@
       ]
     },
     {
-      "slug": "fresa-redondeo-interno-2-flautas-dia-vastago-14-dia-corte-1905mm",
-      "id": "fresa-redondeo-interno-2-flautas-dia-vastago-14-dia-corte-1905mm",
-      "name": "Fresa redondeo interno, 2 flautas, Dia. vástago 1/4, Dia. corte 19.05mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/09/011000-081-VAR-Fresa-redondeo-interno-1-Con-Logo-1.jpg"
-      ],
-      "specs": {},
-      "minPrice": 10000,
-      "maxPrice": 10000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:47.958Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-redondeo-interno-2-flautas-dia-vastago-1-4-dia-corte-19-5mm/",
-          "price": 10000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 10000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "bloque-disipador-de-aluminio-impresora-3d",
       "id": "bloque-disipador-de-aluminio-impresora-3d",
       "name": "Bloque Disipador de Aluminio Impresora 3D",
@@ -10038,48 +7757,19 @@
       ]
     },
     {
-      "slug": "fresa-redondeo-interno-2-flautas-dia-vastago-14-dia-corte-159mm",
-      "id": "fresa-redondeo-interno-2-flautas-dia-vastago-14-dia-corte-159mm",
-      "name": "Fresa redondeo interno, 2 flautas, Dia. vástago 1/4, Dia. corte 15.9mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/09/011000-081-VAR-Fresa-redondeo-interno-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 10000,
-      "maxPrice": 10000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:47.649Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-redondeo-interno-2-flautas-dia-vastago-1-4-dia-corte-15-9mm/",
-          "price": 10000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 10000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "block-aluminio-volcano-artillery-original",
       "id": "block-aluminio-volcano-artillery-original",
       "name": "Block Aluminio Volcano Artillery Original",
-      "brand": "",
-      "categoryId": "general",
+      "brand": "Artillery",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/stock_pictures2F21802Fblock_aluminio_artillery-1.jpg?v=1720901499"
       ],
-      "specs": {},
+      "specs": {
+        "brand": "Artillery",
+        "compatibleWith": "Artillery"
+      },
       "minPrice": 3500,
       "maxPrice": 3500,
       "storeCount": 1,
@@ -10166,38 +7856,6 @@
           "storeId": "afel",
           "price": 3200,
           "recordedAt": "2026-04-01T18:39:28.372Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-para-aplanar-superficies-4-flautas-dia-vastago-8mm-dia-corte-40mm",
-      "id": "fresa-para-aplanar-superficies-4-flautas-dia-vastago-8mm-dia-corte-40mm",
-      "name": "Fresa para aplanar superficies, 4 flautas, Dia. vástago 8mm, Dia. corte 40mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2025/05/Sd44df6a562324f43b60e21ec904dcb4a2.webp"
-      ],
-      "specs": {},
-      "minPrice": 50000,
-      "maxPrice": 50000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:47.025Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-para-aplanar-superficies-4-flautas-dia-vastago-8mm-dia-corte-40mm/",
-          "price": 50000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 50000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -10312,38 +7970,6 @@
       ]
     },
     {
-      "slug": "fresa-para-aplanar-superficies-4-flautas-dia-vastago-148243-dia-corte-40mm",
-      "id": "fresa-para-aplanar-superficies-4-flautas-dia-vastago-148243-dia-corte-40mm",
-      "name": "Fresa para aplanar superficies, 4 flautas, Dia. vástago 1/4&#8243;, Dia. corte 40mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/02/011000-080-VAR-Fresa-para-aplanar-superficies-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 12500,
-      "maxPrice": 12500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:46.673Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-para-aplanar-superficies-dia-corte-40mm-4-flautas/",
-          "price": 12500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 12500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "servicio-diagnostico-inicial-de-maquina-con-fallas-en-casa-matriz-cimech-3d",
       "id": "servicio-diagnostico-inicial-de-maquina-con-fallas-en-casa-matriz-cimech-3d",
       "name": "Servicio diagnóstico inicial de máquina con fallas (en casa matriz Cimech 3D)",
@@ -10401,70 +8027,6 @@
       ]
     },
     {
-      "slug": "fresa-de-grabado-ranura-en-v-dia-vastago-8mm-dia-corte-22mm-angulo-120",
-      "id": "fresa-de-grabado-ranura-en-v-dia-vastago-8mm-dia-corte-22mm-angulo-120",
-      "name": "Fresa de grabado ranura en V, Dia. vastago 8mm, Dia. corte 22mm, angulo 120°",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/06/011000-070-VAR-Fresa-de-corte-ranura-en-V-3-Con-Logo-2.jpg"
-      ],
-      "specs": {},
-      "minPrice": 7500,
-      "maxPrice": 7500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:46.338Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-de-grabado-ranura-en-v-dia-vastago-8mm-dia-corte-22mm-angulo-120/",
-          "price": 7500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 7500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-de-grabado-ranura-en-v-dia-vastago-8mm-dia-corte-22mm-angulo-90",
-      "id": "fresa-de-grabado-ranura-en-v-dia-vastago-8mm-dia-corte-22mm-angulo-90",
-      "name": "Fresa de grabado ranura en V, Dia. vástago 8mm, Dia. corte 22mm, ángulo 90°",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/06/011000-070-VAR-Fresa-de-corte-ranura-en-V-3-Con-Logo-1.jpg"
-      ],
-      "specs": {},
-      "minPrice": 7500,
-      "maxPrice": 7500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:46.012Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-de-grabado-ranura-en-v-dia-vastago-8mm-dia-corte-22mm-angulo-90/",
-          "price": 7500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 7500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "armadoensamble-actuador-lineal",
       "id": "armadoensamble-actuador-lineal",
       "name": "Armado/ensamble actuador lineal",
@@ -10497,38 +8059,6 @@
       ]
     },
     {
-      "slug": "fresa-de-grabado-ranura-en-v-dia-vastago-8mm-dia-corte-22mm-angulo-60",
-      "id": "fresa-de-grabado-ranura-en-v-dia-vastago-8mm-dia-corte-22mm-angulo-60",
-      "name": "Fresa de grabado ranura en V, Dia. vastago 8mm, Dia. corte 22mm, angulo 60°",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/06/011000-070-VAR-Fresa-de-corte-ranura-en-V-3-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 7500,
-      "maxPrice": 7500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:45.691Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-de-grabado-ranura-en-v-dia-vastago-8mm-dia-corte-22mm-angulo-60/",
-          "price": 7500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 7500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "armadoensamble-kit-maquina-router-cnc-wb",
       "id": "armadoensamble-kit-maquina-router-cnc-wb",
       "name": "Armado/ensamble kit máquina router CNC WB",
@@ -10557,38 +8087,6 @@
           "storeId": "cimech3d",
           "price": 300000,
           "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-de-grabado-ranura-en-v-dia-vastago-14-dia-corte-34-angulo-90",
-      "id": "fresa-de-grabado-ranura-en-v-dia-vastago-14-dia-corte-34-angulo-90",
-      "name": "Fresa de grabado ranura en V, Dia. vastago 1/4, Dia. corte 3/4, angulo 90",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/02/011000-070-VAR-Fresa-de-corte-ranura-en-V-3-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 6000,
-      "maxPrice": 6000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:45.336Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-de-corte-ranura-en-v-dia-vastago-1-4-dia-corte-3-4-angulo-90/",
-          "price": 6000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 6000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -10746,38 +8244,6 @@
       ]
     },
     {
-      "slug": "fresa-para-esquina-redondeada-4-flautas-dia-vastago-14-radio-interno-0088243",
-      "id": "fresa-para-esquina-redondeada-4-flautas-dia-vastago-14-radio-interno-0088243",
-      "name": "Fresa para esquina redondeada, 4 flautas, Dia. Vastago 1/4, Radio interno 0.08&#8243;",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/09/011000-061-VAR-Fresa-de-esquina-redondeada-1-Con-Logo-1.jpg"
-      ],
-      "specs": {},
-      "minPrice": 15000,
-      "maxPrice": 15000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:44.281Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-para-esquina-redondeada-4-flautas-dia-vastago-1-4-radio-interno-0-08/",
-          "price": 15000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 15000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "armadoensamble-kit-maquina-cnc-de-escritorio-mini250x390mm",
       "id": "armadoensamble-kit-maquina-cnc-de-escritorio-mini250x390mm",
       "name": "Armado/ensamble kit máquina CNC de escritorio (mini)(250x390mm)",
@@ -10806,38 +8272,6 @@
           "storeId": "cimech3d",
           "price": 170000,
           "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-para-esquina-redondeada-4-flautas-dia-vastago-14-radio-interno-0068243",
-      "id": "fresa-para-esquina-redondeada-4-flautas-dia-vastago-14-radio-interno-0068243",
-      "name": "Fresa para esquina redondeada, 4 flautas, Dia. Vástago 1/4, Radio interno 0.06&#8243;",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/09/011000-061-VAR-Fresa-de-esquina-redondeada-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 17500,
-      "maxPrice": 17500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:43.955Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-para-esquina-redondeada-4-flautas-dia-vastago-1-4-radio-interno-0-06/",
-          "price": 17500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 17500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -10906,38 +8340,6 @@
       ]
     },
     {
-      "slug": "simulador-de-carreras-kit-completo-8211-s09",
-      "id": "simulador-de-carreras-kit-completo-8211-s09",
-      "name": "Simulador de carreras kit completo &#8211; S09",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/07/Especificaciones-Kit.png"
-      ],
-      "specs": {},
-      "minPrice": 279990,
-      "maxPrice": 279990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:17.613Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/kit-simulador-de-carreras-completo-s09/",
-          "price": 279990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 279990,
-          "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
       "slug": "fresa-de-desbarbado-desbaste-4-flautas-dia-vastago-148243-angulo-60",
       "id": "fresa-de-desbarbado-desbaste-4-flautas-dia-vastago-148243-angulo-60",
       "name": "Fresa de desbarbado / desbaste, 4 flautas, Dia. vástago 1/4&#8243;, Ángulo 60°",
@@ -10966,198 +8368,6 @@
           "storeId": "cimech3d",
           "price": 15000,
           "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-conica-con-punta-redonda-2-flautas-dia-vastago-148243-radio-corte-10mm",
-      "id": "fresa-conica-con-punta-redonda-2-flautas-dia-vastago-148243-radio-corte-10mm",
-      "name": "Fresa cónica con punta redonda, 2 flautas, Dia. vástago 1/4&#8243;, Radio corte 1.0mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/02/011000-050-VAR-Fresa-conica-con-punta-redonda-1-Con-Logo-4.jpg"
-      ],
-      "specs": {},
-      "minPrice": 20000,
-      "maxPrice": 20000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:42.970Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-conica-con-punta-redonda-r1-1-1-4-d1-4/",
-          "price": 20000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 20000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "soporte-palanca-de-cambios-para-simulador-de-carreras-s09",
-      "id": "soporte-palanca-de-cambios-para-simulador-de-carreras-s09",
-      "name": "Soporte palanca de cambios para simulador de carreras (S09)",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/10/LRS09-GR-01...jpg"
-      ],
-      "specs": {},
-      "minPrice": 19990,
-      "maxPrice": 19990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:17.306Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/soporte-palanca-de-cambios-shifter-para-simulador-de-carreras-s09/",
-          "price": 19990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 19990,
-          "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-conica-con-punta-redonda-2-flautas-dia-vastago-14-radio-corte-075mm",
-      "id": "fresa-conica-con-punta-redonda-2-flautas-dia-vastago-14-radio-corte-075mm",
-      "name": "Fresa conica con punta redonda-2 flautas-Dia vastago 1/4-Radio corte 0.75mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/07/011000-050-VAR-Fresa-conica-con-punta-redonda-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 20000,
-      "maxPrice": 20000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:42.637Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-conica-punta-redonda-2-flautas-dia-vastago-1-4-radio-corte-0-75mm/",
-          "price": 20000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 20000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "servicio-de-cortegrabado-en-maquina-laser-por-hora",
-      "id": "servicio-de-cortegrabado-en-maquina-laser-por-hora",
-      "name": "Servicio de corte/grabado en máquina láser por hora",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/06/DSC00142.jpg"
-      ],
-      "specs": {},
-      "minPrice": 25000,
-      "maxPrice": 25000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:16.998Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/corte-grabado-en-maquina-laser-por-hora/",
-          "price": 25000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 25000,
-          "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-conica-con-punta-redonda-2-flautas-dia-vastago-148243-radio-corte-05mm",
-      "id": "fresa-conica-con-punta-redonda-2-flautas-dia-vastago-148243-radio-corte-05mm",
-      "name": "Fresa cónica con punta redonda, 2 flautas, Dia. vástago 1/4&#8243;, Radio corte 0.5mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/02/011000-050-VAR-Fresa-conica-con-punta-redonda-1-Con-Logo-3.jpg"
-      ],
-      "specs": {},
-      "minPrice": 20000,
-      "maxPrice": 20000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:42.339Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-conica-con-punta-redonda-r05-1-1-4-d1-4/",
-          "price": 20000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 20000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "servicio-de-cortetallado-en-router-cnc-por-hora",
-      "id": "servicio-de-cortetallado-en-router-cnc-por-hora",
-      "name": "Servicio de corte/tallado en router CNC por hora",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/06/IMG_5744.jpg"
-      ],
-      "specs": {},
-      "minPrice": 25000,
-      "maxPrice": 25000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:16.692Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/servicio-de-corte-tallado-en-router-cnc-por-hora/",
-          "price": 25000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 25000,
-          "recordedAt": "2026-04-01T18:30:45.327Z"
         }
       ]
     },
@@ -11204,70 +8414,6 @@
       ]
     },
     {
-      "slug": "fresa-conica-con-punta-redonda-2-flautas-dia-vastago-188243-radio-corte-10mm",
-      "id": "fresa-conica-con-punta-redonda-2-flautas-dia-vastago-188243-radio-corte-10mm",
-      "name": "Fresa cónica con punta redonda, 2 flautas, Dia. vástago 1/8&#8243;, Radio corte 1.0mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/02/011000-050-VAR-Fresa-conica-con-punta-redonda-1-Con-Logo-2.jpg"
-      ],
-      "specs": {},
-      "minPrice": 10000,
-      "maxPrice": 10000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:42.037Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-conica-con-punta-redonda-r1-15-d1-8-2f/",
-          "price": 10000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 10000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "servicio-de-modelado-3d-por-hora",
-      "id": "servicio-de-modelado-3d-por-hora",
-      "name": "Servicio de modelado 3D por hora",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2025/02/Servicio-modelado-3D-1.jpg"
-      ],
-      "specs": {},
-      "minPrice": 40000,
-      "maxPrice": 40000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:16.380Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/servicio-de-modelado-3d-por-hora/",
-          "price": 40000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 40000,
-          "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
       "slug": "servicio-de-mantenimiento-o-reparacion-de-maquinas-por-hora",
       "id": "servicio-de-mantenimiento-o-reparacion-de-maquinas-por-hora",
       "name": "Servicio de mantenimiento o reparación de máquinas (por hora)",
@@ -11295,228 +8441,6 @@
         {
           "storeId": "cimech3d",
           "price": 40000,
-          "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-conica-con-punta-redonda-2-flautas-dia-vastago-188243-radio-corte-075mm",
-      "id": "fresa-conica-con-punta-redonda-2-flautas-dia-vastago-188243-radio-corte-075mm",
-      "name": "Fresa cónica con punta redonda, 2 flautas, Dia. vástago 1/8&#8243;, Radio corte 0.75mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/02/011000-050-VAR-Fresa-conica-con-punta-redonda-1-Con-Logo-1.jpg"
-      ],
-      "specs": {},
-      "minPrice": 10000,
-      "maxPrice": 10000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:41.726Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-conica-con-punta-redonda-r075-15-d1-8-2f/",
-          "price": 10000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 10000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "cajon-de-madera-para-maquina-1500x1500mm",
-      "id": "cajon-de-madera-para-maquina-1500x1500mm",
-      "name": "Cajon de madera para maquina 1500x1500mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [],
-      "specs": {},
-      "minPrice": 139990,
-      "maxPrice": 139990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:15.743Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/caja-de-madera-para-maquina-1500x1500mm/",
-          "price": 139990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 139990,
-          "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-conica-con-punta-redonda-2-flautas-dia-vastago-188243-radio-corte-05mm",
-      "id": "fresa-conica-con-punta-redonda-2-flautas-dia-vastago-188243-radio-corte-05mm",
-      "name": "Fresa cónica con punta redonda, 2 flautas, Dia. vástago 1/8&#8243;, Radio corte 0.5mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/02/011000-050-VAR-Fresa-conica-con-punta-redonda-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 10000,
-      "maxPrice": 10000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:41.426Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-conica-con-punta-redonda-r05-15-d1-8-2f/",
-          "price": 10000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 10000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "caja-organizadora-de-plastico-con-36-compartimientos",
-      "id": "caja-organizadora-de-plastico-con-36-compartimientos",
-      "name": "Caja organizadora de plastico con 36 compartimientos",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/03/caja-36-compartimientos.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:15.417Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/caja-organizadora-de-plastico-con-36-compartimientos/",
-          "price": 4990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-en-espiral-1-flauta-dia-vastago-8mm-dia-corte-8mm-largo-filo-32mm",
-      "id": "fresa-en-espiral-1-flauta-dia-vastago-8mm-dia-corte-8mm-largo-filo-32mm",
-      "name": "Fresa en espiral, 1 flauta, Dia. vástago 8mm, Dia. corte 8mm, Largo filo 32mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2025/05/011000-040-VAR-Fresa-en-espiral-1-flauta-1-Con-Logo-2.jpg"
-      ],
-      "specs": {},
-      "minPrice": 22500,
-      "maxPrice": 22500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:41.085Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-en-espiral-1-flauta-dia-vastago-8mm-dia-corte-8mm-largo-filo-32mm/",
-          "price": 22500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 22500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-en-espiral-1-flau-dia-vas-635mm-dia-corte-635mm-largo-filo-381mm",
-      "id": "fresa-en-espiral-1-flau-dia-vas-635mm-dia-corte-635mm-largo-filo-381mm",
-      "name": "Fresa en espiral, 1 flau, Dia. vás 6,35mm, Dia. corte 6,35mm, Largo filo 38.1mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2025/10/011000-040-VAR-Fresa-en-espiral-1-flauta-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 20000,
-      "maxPrice": 20000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:40.776Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-en-espiral-1-flau-dia-vas-635mm-dia-corte-635mm-largo-filo-38-1mm/",
-          "price": 20000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 20000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "caja-organizadora-de-plastico-con-24-compartimientos",
-      "id": "caja-organizadora-de-plastico-con-24-compartimientos",
-      "name": "Caja organizadora de plastico con 24 compartimientos",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/03/caja-24-compartimientos..jpeg"
-      ],
-      "specs": {},
-      "minPrice": 3490,
-      "maxPrice": 3490,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:15.115Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/caja-organizadora-de-plastico-con-24-compartimientos/",
-          "price": 3490,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 3490,
           "recordedAt": "2026-04-01T18:30:45.327Z"
         }
       ]
@@ -11569,388 +8493,6 @@
       ]
     },
     {
-      "slug": "fresa-en-espiral-1-flau-dia-vas-635mm-dia-corte-635mm-largo-filo-3175mm",
-      "id": "fresa-en-espiral-1-flau-dia-vas-635mm-dia-corte-635mm-largo-filo-3175mm",
-      "name": "Fresa en espiral, 1 flau, Dia. vás 6,35mm, Dia. corte 6,35mm, Largo filo 31.75mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2025/05/011000-040-VAR-Fresa-en-espiral-1-flauta-1-Con-Logo-1.jpg"
-      ],
-      "specs": {},
-      "minPrice": 20000,
-      "maxPrice": 20000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:40.473Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-en-espiral-1-flauta-dia-vastago-6-35mm-dia-corte-6-35mm-largo-filo-31-75mm/",
-          "price": 20000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 20000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "caja-organizadora-de-plastico-con-15-compartimientos",
-      "id": "caja-organizadora-de-plastico-con-15-compartimientos",
-      "name": "Caja organizadora de plastico con 15 compartimientos",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/03/caja-15-compartimientos.jpeg"
-      ],
-      "specs": {},
-      "minPrice": 2990,
-      "maxPrice": 2990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:14.779Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/caja-organizadora-de-plastico-con-15-compartimientos/",
-          "price": 2990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 2990,
-          "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-en-espiral-1-flauta-dia-vastago-14-dia-corte-14-largo-filo-1",
-      "id": "fresa-en-espiral-1-flauta-dia-vastago-14-dia-corte-14-largo-filo-1",
-      "name": "Fresa en espiral-1 flauta-Dia vastago 1/4-Dia corte 1/4-Largo filo 1",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/07/011000-040-VAR-Fresa-en-espiral-1-flauta-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 17500,
-      "maxPrice": 17500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:40.154Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-en-espiral-1-flauta-dia-vastago-1-4-dia-corte-1-4mm-largo-filo-1/",
-          "price": 17500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 17500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "caja-organizadora-de-plastico-con-10-compartimientos",
-      "id": "caja-organizadora-de-plastico-con-10-compartimientos",
-      "name": "Caja organizadora de plastico con 10 compartimientos",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/03/caja-10-compartimientos.png"
-      ],
-      "specs": {},
-      "minPrice": 1990,
-      "maxPrice": 1990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:14.466Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/caja-organizadora-de-plastico-con-10-compartimientos/",
-          "price": 1990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 1990,
-          "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-en-espiral-1-flauta-dia-vastago-6mm-dia-corte-6mm-largo-filo-32mm",
-      "id": "fresa-en-espiral-1-flauta-dia-vastago-6mm-dia-corte-6mm-largo-filo-32mm",
-      "name": "Fresa en espiral, 1 flauta, Dia. vástago 6mm, Dia. corte 6mm, Largo filo 32mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2025/05/011000-040-VAR-Fresa-en-espiral-1-flauta-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 15000,
-      "maxPrice": 15000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:39.839Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-en-espiral-1-flauta-dia-vastago-6mm-dia-corte-6mm-largo-filo-32mm/",
-          "price": 15000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 15000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "caja-plastica-apilable-multifuncion-rojo-180x110x80mm",
-      "id": "caja-plastica-apilable-multifuncion-rojo-180x110x80mm",
-      "name": "Caja plastica apilable multifuncion rojo 180x110x80mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/03/caja-plastiza-rojo.webp"
-      ],
-      "specs": {},
-      "minPrice": 2990,
-      "maxPrice": 2990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:14.158Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/caja-plastica-apilable-multifuncion-rojo-180x110x80mm/",
-          "price": 2990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 2990,
-          "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-en-espiral-1-flauta-dia-vastago-6mm-dia-corte-6mm-largo-filo-22mm",
-      "id": "fresa-en-espiral-1-flauta-dia-vastago-6mm-dia-corte-6mm-largo-filo-22mm",
-      "name": "Fresa en espiral, 1 flauta, Dia. vastago 6mm, Dia. corte 6mm, Largo filo 22mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2024/11/011000-040-VAR-Fresa-en-espiral-1-flauta-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 12500,
-      "maxPrice": 12500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:39.526Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-en-espiral-1-flauta-dia-vastago-6mm-dia-corte-6mm-largo-filo-22mm/",
-          "price": 12500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 12500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "caja-plastica-apilable-multifuncion-amarillo-180x110x80mm",
-      "id": "caja-plastica-apilable-multifuncion-amarillo-180x110x80mm",
-      "name": "Caja plastica apilable multifuncion amarillo 180x110x80mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/03/caja-plastica-amarilla.webp"
-      ],
-      "specs": {},
-      "minPrice": 2990,
-      "maxPrice": 2990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:13.858Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/caja-plastica-apilable-multifuncion-amarillo-180x110x80mm/",
-          "price": 2990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 2990,
-          "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-en-espiral-1-flauta-dia-vastago-4mm-dia-corte-4mm-largo-filo-22mm",
-      "id": "fresa-en-espiral-1-flauta-dia-vastago-4mm-dia-corte-4mm-largo-filo-22mm",
-      "name": "Fresa en espiral, 1 flauta, Dia. vástago 4mm, Dia. corte 4mm, Largo filo 22mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/02/011000-040-VAR-Fresa-en-espiral-1-flauta-1-Con-Logo-1.jpg"
-      ],
-      "specs": {},
-      "minPrice": 10000,
-      "maxPrice": 10000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:39.222Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-en-espiral-sp1f-d4-l22/",
-          "price": 10000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 10000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "caja-plastica-apilable-multifuncion-azul-180x110x80mm",
-      "id": "caja-plastica-apilable-multifuncion-azul-180x110x80mm",
-      "name": "Caja plastica apilable multifuncion azul 180x110x80mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/03/caja-plastiza-acul.jpg"
-      ],
-      "specs": {},
-      "minPrice": 2990,
-      "maxPrice": 2990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:13.548Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/caja-plastica-apilable-multifuncion-azul-180x110x80mm/",
-          "price": 2990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 2990,
-          "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-en-espiral-1-flauta-dia-vastago-188243-dia-corte-3175mm-largo-filo-17",
-      "id": "fresa-en-espiral-1-flauta-dia-vastago-188243-dia-corte-3175mm-largo-filo-17",
-      "name": "Fresa en espiral, 1 flauta, Dia. vástago 1/8&#8243;, Dia. corte 3.175mm, Largo filo 17",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/02/011000-040-VAR-Fresa-en-espiral-1-flauta-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 7500,
-      "maxPrice": 7500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:38.927Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-en-espiral-sp1f-d3-175-l17/",
-          "price": 7500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 7500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "cajon-de-madera-para-maquina-1000x1500mm",
-      "id": "cajon-de-madera-para-maquina-1000x1500mm",
-      "name": "Cajon de madera para maquina 1000x1500mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [],
-      "specs": {},
-      "minPrice": 124990,
-      "maxPrice": 124990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:13.242Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/cajon-de-madera-para-maquina-1000x1500mm/",
-          "price": 124990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 124990,
-          "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
       "slug": "fil-sunlu-pla-1000g-175mm-amarillo",
       "id": "fil-sunlu-pla-1000g-175mm-amarillo",
       "name": "PLA+ Amarillo SUNLU",
@@ -11993,38 +8535,6 @@
       ]
     },
     {
-      "slug": "fresa-en-espiral-1-flauta-dia-vastago-188243-dia-corte-2mm-largo-filo-8mm",
-      "id": "fresa-en-espiral-1-flauta-dia-vastago-188243-dia-corte-2mm-largo-filo-8mm",
-      "name": "Fresa en espiral, 1 flauta, Dia. vástago 1/8&#8243;, Dia. corte 2mm, Largo filo 8mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/02/011000-040-VAR-Fresa-en-espiral-1-flauta-2-Con-Logo-1.jpg"
-      ],
-      "specs": {},
-      "minPrice": 7500,
-      "maxPrice": 7500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:38.620Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-en-espiral-sp1f-d2-l08/",
-          "price": 7500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 7500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "licencia-software-de-control-mach4-8211-industrial",
       "id": "licencia-software-de-control-mach4-8211-industrial",
       "name": "Licencia software de control Mach4 &#8211; Industrial",
@@ -12053,38 +8563,6 @@
           "storeId": "cimech3d",
           "price": 1400000,
           "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-en-espiral-1-flauta-dia-vastago-188243-dia-corte-1mm-largo-filo-4mm",
-      "id": "fresa-en-espiral-1-flauta-dia-vastago-188243-dia-corte-1mm-largo-filo-4mm",
-      "name": "Fresa en espiral, 1 flauta, Dia. vástago 1/8&#8243;, Dia. corte 1mm, Largo filo 4mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/02/011000-040-VAR-Fresa-en-espiral-1-flauta-2-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 7500,
-      "maxPrice": 7500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:38.305Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-en-espiral-sp1f-d1-l04/",
-          "price": 7500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 7500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -12149,38 +8627,6 @@
           "storeId": "cimech3d",
           "price": 17500,
           "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "licencia-software-de-control-mach3",
-      "id": "licencia-software-de-control-mach3",
-      "name": "Licencia software de control Mach3",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2020/07/mach3-hobby-software-cnc-cad-cam-cimech3d.jpg"
-      ],
-      "specs": {},
-      "minPrice": 200000,
-      "maxPrice": 200000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:12.311Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/licencia-software-de-control-mach3/",
-          "price": 200000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 200000,
-          "recordedAt": "2026-04-01T18:30:45.327Z"
         }
       ]
     },
@@ -12313,38 +8759,6 @@
       ]
     },
     {
-      "slug": "fresa-corte-2-flautas-down-cut-dia-vastago-8mm-dia-corte-8mm-largo-filo-32mm",
-      "id": "fresa-corte-2-flautas-down-cut-dia-vastago-8mm-dia-corte-8mm-largo-filo-32mm",
-      "name": "Fresa corte-2 flautas-DOWN CUT-Dia vástago 8mm-Dia corte 8mm-Largo filo 32mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/07/011000-020-VAR-Fresa-corte-2-flautas-DOWN-CUT-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 17500,
-      "maxPrice": 17500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:37.092Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-corte-2-flautas-down-cut-dia-vastago-8mm-dia-corte-8mm-largo-filo-32mm/",
-          "price": 17500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 17500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "slot-cover-color-negro-8x2000mm",
       "id": "slot-cover-color-negro-8x2000mm",
       "name": "Slot cover color negro 8x2000mm",
@@ -12373,102 +8787,6 @@
           "storeId": "cimech3d",
           "price": 1000,
           "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-corte-2-flautas-down-cut-dia-vastago-6mm-dia-corte-6mm-largo-filo-24mm",
-      "id": "fresa-corte-2-flautas-down-cut-dia-vastago-6mm-dia-corte-6mm-largo-filo-24mm",
-      "name": "Fresa corte-2 flautas-DOWN CUT-Dia vastago 6mm-Dia corte 6mm-Largo filo 24mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2024/11/011000-020-VAR-Fresa-corte-2-flautas-DOWN-CUT-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 15000,
-      "maxPrice": 15000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:36.795Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-corte-2-flautas-down-cut-dia-vastago-6mm-dia-corte-6mm-largo-filo-24mm/",
-          "price": 15000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 15000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "slot-cover-6x1000mm-8211-varios-colores",
-      "id": "slot-cover-6x1000mm-8211-varios-colores",
-      "name": "Slot cover 6x1000mm &#8211; varios colores",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2023/01/110302695120_001.jpg"
-      ],
-      "specs": {},
-      "minPrice": 500,
-      "maxPrice": 500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:11.036Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/slot-cover-1000mm-varios-colores/",
-          "price": 500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 500,
-          "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-corte-2-flautas-down-cut-dia-vastago-14-dia-corte-14-largo-filo-1",
-      "id": "fresa-corte-2-flautas-down-cut-dia-vastago-14-dia-corte-14-largo-filo-1",
-      "name": "Fresa corte-2 flautas-DOWN CUT-Dia vastago 1/4-Dia corte 1/4-Largo filo 1",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/07/011000-020-VAR-Fresa-corte-2-flautas-DOWN-CUT-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 15000,
-      "maxPrice": 15000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:36.487Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-corte-2-flautas-down-cut-dia-vastago-1-4-dia-corte-1-4-largo-filo-1/",
-          "price": 15000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 15000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -12505,38 +8823,6 @@
       ]
     },
     {
-      "slug": "fresa-corte-2-flautas-down-cut-dia-vastago-14-dia-corte-18-mm-largo-filo-12",
-      "id": "fresa-corte-2-flautas-down-cut-dia-vastago-14-dia-corte-18-mm-largo-filo-12",
-      "name": "Fresa corte-2 flautas-DOWN CUT-Dia vastago 1/4-Dia corte 1/8-mm-Largo filo 1/2",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/07/011000-020-VAR-Fresa-corte-2-flautas-DOWN-CUT-2-Con-Logo-1.jpg"
-      ],
-      "specs": {},
-      "minPrice": 12500,
-      "maxPrice": 12500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:36.181Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-corte-2-flautas-down-cut-dia-vastago-1-4-dia-corte-1-8-mm-largo-filo-1-2/",
-          "price": 12500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 12500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "slot-cover-color-negro-1000mm",
       "id": "slot-cover-color-negro-1000mm",
       "name": "Slot cover color negro 1000mm",
@@ -12565,38 +8851,6 @@
           "storeId": "cimech3d",
           "price": 500,
           "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-corte-2-flautas-down-cut-dia-vastago-18-dia-corte-3175mm-largo-filo-22mm",
-      "id": "fresa-corte-2-flautas-down-cut-dia-vastago-18-dia-corte-3175mm-largo-filo-22mm",
-      "name": "Fresa corte-2 flautas-DOWN CUT-Dia vastago 1/8-Dia corte 3.175mm-Largo filo 22mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/07/011000-020-VAR-Fresa-corte-2-flautas-DOWN-CUT-1-Con-Logo-1.jpg"
-      ],
-      "specs": {},
-      "minPrice": 10000,
-      "maxPrice": 10000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:35.875Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-corte-2-flautas-down-cut-dia-vastago-1-8-dia-corte-3-175mm-largo-filo-22mm/",
-          "price": 10000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 10000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -12633,38 +8887,6 @@
       ]
     },
     {
-      "slug": "fresa-corte-2-flautas-up-cut-dia-vastago-8mm-dia-corte-8mm-largo-filo-32mm",
-      "id": "fresa-corte-2-flautas-up-cut-dia-vastago-8mm-dia-corte-8mm-largo-filo-32mm",
-      "name": "Fresa corte -2 flautas- UP CUT-Dia vastago 8mm-Dia corte 8mm-Largo filo 32mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/07/011000-010-VAR-Fresa-corte-2-flautas-UP-CUT-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 17500,
-      "maxPrice": 17500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:35.581Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-corte-2-flautas-up-cut-dia-vastago-8mm-dia-corte-8mm-largo-filo-32mm/",
-          "price": 17500,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 17500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "slot-cover-color-amarillo-1000mm",
       "id": "slot-cover-color-amarillo-1000mm",
       "name": "Slot cover color amarillo 1000mm",
@@ -12693,38 +8915,6 @@
           "storeId": "cimech3d",
           "price": 1490,
           "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-corte-2-flautas-up-cut-dia-vastago-6mm-dia-corte-6mm-largo-filo-24mm",
-      "id": "fresa-corte-2-flautas-up-cut-dia-vastago-6mm-dia-corte-6mm-largo-filo-24mm",
-      "name": "Fresa corte-2 flautas-UP CUT-Dia vastago 6mm-Dia corte 6mm-Largo filo 24mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2024/11/011000-010-VAR-Fresa-corte-2-flautas-UP-CUT-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 15000,
-      "maxPrice": 15000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:35.275Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-corte-2-flautas-up-cut-dia-vastago-6mm-dia-corte-6mm-largo-filo-32mm/",
-          "price": 15000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 15000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -12761,38 +8951,6 @@
       ]
     },
     {
-      "slug": "fresa-corte-2-flautas-up-cut-dia-vastago-14-dia-corte-14-largo-filo-1",
-      "id": "fresa-corte-2-flautas-up-cut-dia-vastago-14-dia-corte-14-largo-filo-1",
-      "name": "Fresa corte-2 flautas-UP CUT-Dia vastago 1/4-Dia corte 1/4-Largo filo 1",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/07/011000-010-VAR-Fresa-corte-2-flautas-UP-CUT-1-Con-Logo.jpg"
-      ],
-      "specs": {},
-      "minPrice": 15000,
-      "maxPrice": 15000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:34.969Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-corte-2-flautas-up-cut-dia-vastago-1-4-dia-corte-1-4-largo-filo-1/",
-          "price": 15000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 15000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "herramienta-para-extraer-chips-plcc-ic",
       "id": "herramienta-para-extraer-chips-plcc-ic",
       "name": "Herramienta para extraer chips PLCC IC",
@@ -12825,38 +8983,6 @@
       ]
     },
     {
-      "slug": "fresa-corte-2-flautas-up-cut-dia-vastago-14-dia-corte-18-largo-filo-12",
-      "id": "fresa-corte-2-flautas-up-cut-dia-vastago-14-dia-corte-18-largo-filo-12",
-      "name": "Fresa corte-2 flautas-UP CUT-Dia vastago 1/4-Dia corte 1/8-Largo filo 1/2",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/07/011000-010-VAR-Fresa-corte-2-flautas-UP-CUT-2-Con-Logo-1.jpg"
-      ],
-      "specs": {},
-      "minPrice": 12500,
-      "maxPrice": 12500,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:34.669Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-corte-2-flautas-up-cut-dia-vastago-1-4-dia-corte-1-8-mm-largo-filo-1-2/",
-          "price": 12500,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 12500,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "cortador-de-cable-o-cortafrio-modelo-170",
       "id": "cortador-de-cable-o-cortafrio-modelo-170",
       "name": "Cortador de cable o cortafrio modelo 170",
@@ -12885,38 +9011,6 @@
           "storeId": "cimech3d",
           "price": 4290,
           "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "fresa-corte-2-flautas-up-cut-dia-vastago-18-dia-corte-3175mm-largo-filo-22mm",
-      "id": "fresa-corte-2-flautas-up-cut-dia-vastago-18-dia-corte-3175mm-largo-filo-22mm",
-      "name": "Fresa corte-2 flautas-UP CUT-Dia vastago 1/8-Dia corte 3.175mm-Largo filo 22mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/07/011000-010-VAR-Fresa-corte-2-flautas-UP-CUT-1-Con-Logo-1.jpg"
-      ],
-      "specs": {},
-      "minPrice": 10000,
-      "maxPrice": 10000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:34.363Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/fresa-corte-2-flautas-up-cut-dia-vastago-1-8-dia-corte-3-175mm-largo-filo-22mm/",
-          "price": 10000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 10000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -13642,38 +9736,6 @@
       ]
     },
     {
-      "slug": "spring-collet-er-20-para-spindle-8211-varias-dimensiones",
-      "id": "spring-collet-er-20-para-spindle-8211-varias-dimensiones",
-      "name": "Spring collet ER 20 para Spindle &#8211; Varias dimensiones",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:31.167Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-20-para-spindle-varias-dimensiones/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "modulo-diodo-laser-10000mw-grabado-y-corte-laser",
       "id": "modulo-diodo-laser-10000mw-grabado-y-corte-laser",
       "name": "Módulo diodo láser 10000mW. Grabado y corte laser",
@@ -13702,70 +9764,6 @@
           "storeId": "cimech3d",
           "price": 449990,
           "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "spring-collet-er-20-para-spindle-para-fresa-148243",
-      "id": "spring-collet-er-20-para-spindle-para-fresa-148243",
-      "name": "Spring collet ER 20 para Spindle para fresa 1/4&#8243;",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:30.849Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-20-para-spindle-para-fresa-1-4/",
-          "price": 4990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
-      "slug": "spring-collet-er-20-para-spindle-para-fresa-188243",
-      "id": "spring-collet-er-20-para-spindle-para-fresa-188243",
-      "name": "Spring collet ER 20 para Spindle para fresa 1/8&#8243;",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:30.547Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-20-para-spindle-para-fresa-1-8/",
-          "price": 4990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -13802,70 +9800,6 @@
       ]
     },
     {
-      "slug": "kit-diodo-laser-fb03-2500mw-accesorios-de-montaje-lentes-proteccion",
-      "id": "kit-diodo-laser-fb03-2500mw-accesorios-de-montaje-lentes-proteccion",
-      "name": "Kit diodo Láser FB03-2500mW + Accesorios de montaje + Lentes protección",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2020/07/001-Kit-laser-2500mw-con-accesorios-de-montaje-Chile.jpg"
-      ],
-      "specs": {},
-      "minPrice": 175000,
-      "maxPrice": 175000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T19:01:03.527Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/kit-laser-fb03-2500mw-accesorios-de-montaje-copia/",
-          "price": 175000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 175000,
-          "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "spring-collet-er-16-para-spindle-8211-varias-dimensiones",
-      "id": "spring-collet-er-16-para-spindle-8211-varias-dimensiones",
-      "name": "Spring collet ER 16 para Spindle &#8211; Varias dimensiones",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:30.242Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-16-para-spindle-varias-dimensiones/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "kit-de-cabezales-dupont-macho-hembra-por-310u",
       "id": "kit-de-cabezales-dupont-macho-hembra-por-310u",
       "name": "Kit de cabezales dupont macho + hembra por 310u",
@@ -13894,38 +9828,6 @@
           "storeId": "cimech3d",
           "price": 9990,
           "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "spring-collet-er-16-para-spindle-para-fresa-148243",
-      "id": "spring-collet-er-16-para-spindle-para-fresa-148243",
-      "name": "Spring collet ER 16 para Spindle para fresa 1/4&#8243;",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:29.943Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-16-para-spindle-para-fresa-1-4/",
-          "price": 4990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -13962,38 +9864,6 @@
       ]
     },
     {
-      "slug": "spring-collet-er-16-para-spindle-para-fresa-188243",
-      "id": "spring-collet-er-16-para-spindle-para-fresa-188243",
-      "name": "Spring collet ER 16 para Spindle para fresa 1/8&#8243;",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:29.631Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-16-para-spindle-para-fresa-1-8/",
-          "price": 4990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "extension-06m-cable-usb-c-macho-hembra-para-montaje-en-panel",
       "id": "extension-06m-cable-usb-c-macho-hembra-para-montaje-en-panel",
       "name": "Extensión 0.6m cable USB-C Macho-Hembra para montaje en panel",
@@ -14022,38 +9892,6 @@
           "storeId": "cimech3d",
           "price": 12990,
           "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "spring-collet-er-11-para-spindle-8211-varias-dimensiones",
-      "id": "spring-collet-er-11-para-spindle-8211-varias-dimensiones",
-      "name": "Spring collet ER 11 para Spindle &#8211; Varias dimensiones",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:29.331Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-11-para-spindle-varias-dimensiones/",
-          "price": 4990,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -14090,38 +9928,6 @@
       ]
     },
     {
-      "slug": "spring-collet-er-11-para-spindle-para-fresa-148243",
-      "id": "spring-collet-er-11-para-spindle-para-fresa-148243",
-      "name": "Spring collet ER 11 para Spindle para fresa 1/4&#8243;",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:29.035Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-11-para-spindle-para-fresa-1-4/",
-          "price": 4990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
-        }
-      ]
-    },
-    {
       "slug": "extension-05m-cable-usb-tipo-b-macho-hembra-para-montaje-en-panel",
       "id": "extension-05m-cable-usb-tipo-b-macho-hembra-para-montaje-en-panel",
       "name": "Extensión 0.5m cable USB (Tipo B) Macho-Hembra para montaje en panel",
@@ -14150,38 +9956,6 @@
           "storeId": "cimech3d",
           "price": 2990,
           "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "spring-collet-er-11-para-spindle-para-fresa-188243",
-      "id": "spring-collet-er-11-para-spindle-para-fresa-188243",
-      "name": "Spring collet ER 11 para Spindle para fresa 1/8&#8243;",
-      "brand": "",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2021/12/spring-collet-ER.jpg"
-      ],
-      "specs": {},
-      "minPrice": 4990,
-      "maxPrice": 4990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:28.658Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/spring-collet-er-11-para-spindle-para-fresa-1-8/",
-          "price": 4990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 4990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -15786,36 +11560,6 @@
           "storeId": "cimech3d",
           "price": 290,
           "recordedAt": "2026-04-01T18:30:45.327Z"
-        }
-      ]
-    },
-    {
-      "slug": "cajon-de-madera-para-maquina-1000x1000mm",
-      "id": "cajon-de-madera-para-maquina-1000x1000mm",
-      "name": "Cajon de madera para maquina 1000x1000mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [],
-      "specs": {},
-      "minPrice": 200000,
-      "maxPrice": 200000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:59:20.707Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/cajon-de-madera-para-maquina-1000x1000mm/",
-          "price": 200000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 200000,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -58477,36 +54221,6 @@
       ]
     },
     {
-      "slug": "cajon-de-madera-para-maquina-laser-500x500mm",
-      "id": "cajon-de-madera-para-maquina-laser-500x500mm",
-      "name": "Cajon de madera para maquina laser 500x500mm",
-      "brand": "",
-      "categoryId": "general",
-      "description": "",
-      "images": [],
-      "specs": {},
-      "minPrice": 150000,
-      "maxPrice": 150000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:53:12.185Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/cajon-de-madera-para-maquina-laser-500x500mm/",
-          "price": 150000,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 150000,
-          "recordedAt": "2026-04-01T18:30:45.317Z"
-        }
-      ]
-    },
-    {
       "slug": "fil-esun-pla-1000g-175mm-cafe",
       "id": "fil-esun-pla-1000g-175mm-cafe",
       "name": "Filamento PLA+ ESUN CAFE CLARO 1.75mm 1Kg",
@@ -83023,7 +78737,7 @@
       "id": "cable-plano-flexible-fpc-para-placa-th-bambu-lab-v9cable-plano-flexible-fpc-para-placa-th-bambu-lab-v9",
       "name": "Cable plano flexible (FPC) para placa TH Bambu Lab V9Cable plano flexible (FPC) para placa TH Bambu Lab V9",
       "brand": "",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://imperio3d.com/wp-content/uploads/2025/02/bmbl_CAB012-300x300.webp"
