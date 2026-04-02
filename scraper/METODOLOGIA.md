@@ -8,20 +8,27 @@
 ## 1. Arquitectura General (Zero Cost)
 
 ```
-Tiendas (40+)
+Tiendas (40+ registradas, ~11 activas)
     │
     ▼
-[Scraper TypeScript]  ──run-direct.ts──►  src/assets/data/catalog.json
-                                               │
-                                               ▼
-                                      Firebase Hosting CDN
-                                               │
-                                               ▼
-                                    Angular App (3DPrecios)
-                                    CatalogService → localStorage (30min)
+[run-direct.ts]  ────────────────────────►  src/assets/data/catalog.json
+    │  (scrapers + inferCategory + deduplica)         │
+    │                                                 ▼
+    └── --reprocess  (sin internet, ~5 seg)   Firebase Hosting CDN
+    └── --purge-non3d (elimina non-3D)               │
+                                                      ▼
+                                             Angular App (3DPrecios)
+                                             CatalogService → localStorage (30min)
 ```
 
-**Principio clave:** No hay base de datos en producción. Todo es un JSON estático de ~3 MB en CDN. El scraper se ejecuta manualmente (o en CI) y produce el JSON. El frontend lo lee una vez y lo cachea 30 minutos.
+**Principio clave:** No hay base de datos en producción. Todo es un JSON estático de ~3 MB en CDN. El scraper se ejecuta manualmente y produce el JSON directamente. El frontend lo lee una vez y lo cachea 30 minutos.
+
+**Flujo de mantención típico:**
+1. `npx ts-node src/run-direct.ts` → genera nuevo `catalog.json`
+2. `npm run build` → compila Angular
+3. `firebase deploy --only hosting` → publica en CDN
+
+**Nota histórica:** La arquitectura anterior usaba GitHub Actions + Firestore (escritura Admin SDK) + `export.ts`. Ese pipeline fue reemplazado por `run-direct.ts` que escribe directamente a `catalog.json` sin Firestore, reduciendo latencia y complejidad.
 
 ---
 
@@ -307,148 +314,112 @@ node -e "var d=JSON.parse(require('fs').readFileSync('src/assets/data/catalog.js
 
 ---
 
-## 9. Análisis del Catálogo Actual (Abril 2026)
+## 9. Estado del Catálogo (Abril 2026)
 
-### Estado de categorías (2839 productos totales):
+### Distribución de categorías (3.166 productos, 11 tiendas activas con productos):
+
 | Categoría | Productos | Calidad |
-|-----------|-----------|---------|
-| repuestos | 1528 | ✅ Buena — 62% con partType |
-| general | 676 | ⚠️ Ver tabla de problemas abajo |
-| filamentos-pla | 211 | ✅ Correcta |
-| impresoras-fdm | 170 | ✅ Limpia (−29 vs anterior) |
-| impresoras-resina | 66 | ✅ Limpia (−11 vs anterior) |
-| filamentos-abs | 49 | ✅ Correcta |
-| filamentos-petg | 43 | ✅ Correcta |
-| filamentos-tpu | 29 | ✅ Correcta |
-| resinas | 32 | ✅ Mejorada (+3 vs anterior) |
-| secadores | 18 | ✅ Correcta |
+|-----------|-----------|--------|
+| repuestos | 1.766 | ✅ Buena — isRepuesto cubre >200 patrones |
+| general | 470 | ⚠️ ~350 son electrónica/CNC de tiendas mixtas (cimech3d, mcielectronics) |
+| filamentos-pla | 438 | ✅ Limpia tras corrección de boquillas/gargantas/embudo AMS |
+| impresoras-fdm | 171 | ✅ Correcta |
+| filamentos-abs | 64 | ✅ Limpia (Resinas ABS Like movidas a `resinas`) |
+| filamentos-petg | 61 | ✅ Correcta |
+| impresoras-resina | 58 | ✅ Correcta |
+| filamentos-tpu | 41 | ✅ Correcta |
+| resinas | 38 | ✅ Mejorada (+3 por corrección de orden ABS/resina) |
+| secadores | 19 | ✅ Correcta |
+| accesorios | 14 | ✅ Correcta |
+| accesorios-resina | 11 | ✅ Correcta |
+| filamentos-especiales | 10 | ✅ Correcta |
+| scanner-3d | 4 | ✅ Correcta |
+| lapices-3d | 1 | ✅ Correcta |
 
-### Análisis de los 676 productos en `general`:
+### Sobre los 470 productos en `general`:
+La mayoría son legados de cimech3d y mcielectronics — tiendas con catálogos mixtos (electrónica/CNC + 3D). El filtro `is3DRelated()` ya opera en sus scrapers para productos nuevos, pero los anteriores permanecen en `general`. Se limpian con `--purge-non3d` o desaparecen naturalmente en el próximo scrape completo.
 
-| Tipo de contenido | Cantidad estimada | Acción recomendada |
-|-------------------|------------------|--------------------|
-| Arduino / CNC / fresas (cimech3d legacy) | ~350 | Purgar: son productos pre-filtro, se eliminan en el próximo scrape completo |
-| Spring collets / fresas router | ~120 | Purgar (no 3D) |
-| Cable plano FFC Artillery | ~5 | Mover a `repuestos` (son cables de impresoras) |
-| Block Aluminio Volcano Artillery | ~2 | Mover a `repuestos` |
-| Servicios (modelado 3D, corte CNC, laser hora) | ~15 | Filtrar o nueva categoría `servicios` |
-| Cajas organizadoras, storage | ~10 | Filtrar (no son materiales 3D) |
-| Simulador de carreras (error de tienda) | ~3 | Filtrar |
-| Accesorios generales inclasificables | ~170 | Requieren análisis adicional |
+### Productos sin imagen (23 total):
+- cimech3d: 22 — cables/conectores com imágenes JS-rendered (no accesibles al scraper)
+- makerschile: 1 — lazy load no capturado
 
-**Nota:** La mayoría de los productos Arduino/CNC en `general` son productos **legacy** de antes de que se agregara el filtro `is3DRelated()` en cimech3d. Desaparecerán naturalmente en el **próximo ciclo de scraping completo** (porque cimech3d ya los filtra, y `--reprocess` no borra los que ya están clasificados como `general`).
-
----
-
-## 10. Qué Falta / Próximas Mejoras
-
-### 10.1 Calidad de Datos (Alta Prioridad)
-
-**A. Purgar productos non-3D del catálogo legado**
-Los ~470 productos Arduino/CNC/fresas en `general` vienen de scrapes anteriores a la implementación del filtro. Solución: implementar un flag `--purge-non3d` que elimine del catálogo productos cuyo `storeId` es `cimech3d` y que no pasen `is3DRelated()`, más los `undefined` storeId.
-
-**B. Cables planos FFC → repuestos**
-"Cable Plano FFC 500mm eje X Artillery X2" debería ser `repuestos`. Agregar a `isRepuesto`:
-```typescript
-/cable\s*(plano|ffc|flex).*eje\s*[xyz]|eje\s*[xyz].*cable\s*(plano|ffc)/i.test(n)
-```
-
-**C. Más `compatibleWith` en extractSpecs**
-Solo el 10-15% de repuestos tienen `compatibleWith` poblado porque los nombres no siempre mencionan el modelo exacto. Expandir con más variantes: "Ender3", "E3V2", "E3S1", "K1C", "K2Plus", etc.
-
-**D. Color de filamentos más completo**
-La extracción de color falla para nombres como "Marfil", "Hueso", "Champagne", "Terracota", "Borgona", "Coral". Ampliar la tabla de colores.
-
-### 10.2 Deduplicación (Alta Prioridad)
-
-**E. Deduplicación de repuestos**
-Solo 61 de 2839 productos están en múltiples tiendas. Los filamentos deduplicados bien (clave canónica funciona). Pero repuestos aún tienen clave basada en nombre, que varía entre tiendas.
-
-Mejorar: expandir `buildCanonicalKey()` para repuestos con formato:
-```
-rep-{partType}-{brand}-{modelo-compatible}-{specs}
-```
-Ej: `rep-nozzle-e3d-ender3-04mm` para "Nozzle 0.4mm para Ender 3" de cualquier tienda.
-
-**F. Impresoras FDM: clave canónica más robusta**
-Actualmente: `fdm-bambu-lab-a1-mini`. Si una tienda dice "Bambu A1 Mini" y otra "Bambulab A1 Mini Combo" → claves distintas. Mejorar `buildCanonicalKey` con normalize del modelo.
-
-### 10.3 Nuevas Categorías / Filtros (Prioridad Media)
-
-**G. Specs para impresoras FDM**
-Actualmente solo `brand`. Agregar:
-- `workArea`: volumen de trabajo `"220x220x250"` extraído de regex `\b\d+[xX]\d+[xX]\d+\b`
-- `extruderCount`: "Combo" / "AMS" implica multi-extrusor
-
-**H. Filtro por grado de nozzle en Repuestos**
-El diámetro de boquilla (0.2mm, 0.4mm, 0.6mm, 0.8mm) es el filtro más buscado. Extraer con:
-```typescript
-/(\d+[.,]\d+)\s*mm.*nozzle|nozzle.*(\d+[.,]\d+)\s*mm/i
-specs['nozzleDiameter'] = match
-```
-Agregar `nozzleDiameter` a `extractSpecs` y a `specFields` de `repuestos`.
-
-**I. Sub-categoría para Wash & Cure stations**
-Actualmente están en `impresoras-resina`. Son un tipo de producto diferente — estaciones de posprocesado. Podrían tener su propio filtro o estar en `accesorios`.
-
-**J. Grado de filamento (Standard vs Premium)**
-Algunas marcas tienen líneas distintas (eSUN PLA vs eSUN PLA+) que impactan el precio. Extraer `grade`: Standard / Plus / Silk / Pro / Matte / CF / etc.
-
-### 10.4 Nuevas Tiendas (Prioridad Media)
-
-**Potenciales tiendas a agregar:**
-
-| Tienda | Tipo | Observaciones |
-|--------|------|---------------|
-| `abcdin.cl` | Retailer | Tienen impresoras Creality |
-| `lider.cl` / Walmart | Retailer | Venden impresoras FDM masivas |
-| `pcfactory.cl` | Electrónica | Tienen impresoras Bambu, Creality |
-| `todoclick.cl` | Electrónica | Tienen filamentos y planchas |
-| `3dmakersclub.cl` | Especializada | Tienda nueva, buen catálogo filamentos |
-| `bambulab.com/es-cl` | Oficial | Precios oficiales Bambu Chile |
-| `creality.com` | Oficial | Precios oficiales Creality |
-
-**Criterio para agregar una tienda:**
-- ¿Tiene stock activo en Chile con precios CLP?
-- ¿Tiene >20 productos 3D?
-- ¿El scraping es técnicamente viable (no requiere JS rendering)?
-
-### 10.5 Infraestructura (Prioridad Baja)
-
-**K. `--purge-non3d` flag**
-Implementar en `run-direct.ts` un flag que elimine del catálogo productos que:
-- Tienen `storeId` de tiendas conocidas como "mixtas" (cimech3d, electronicat, mcielectronics)  
-- **Y** no pasan un filtro de keywords 3D
-
-**L. Historial de precios visible en frontend**
-El campo `history[]` ya existe en el modelo. Implementar gráfico de precio en el tiempo en la página de producto (una línea por tienda).
-
-**M. `--test-store {id}` completo**
-Actualmente se puede probar una tienda individualmente. Mejorar el output para mostrar:
-- Distribución de categorías resultante
-- Productos que caen en `general` (indicador de calidad)
-- Productos con specs vacíos
+Esto es esperado: el frontend muestra un placeholder cuando `imageUrl` está vacío.
 
 ---
 
-## 11. Comandos Útiles de Diagnóstico
+## 10. Lecciones Aprendidas (Errores Históricos)
 
+Esta sección documenta problemas reales y sus soluciones para no repetirlos.
+
+### 10.1 Orden de detección en `inferCategory` es CRÍTICO
+
+`isRepuesto` debe ser la **primera** verificación, antes de cualquier check de filamentos o impresoras. Si un nombre contiene un keyword inequívoco de pieza (sensor, nozzle, boquilla, garganta, hotend...) → siempre es `repuestos`, sin importar si también menciona "filamento".
+
+> **Ejemplo del bug:** "Sensor de Final de **Filamento** Artillery" → cayó en `filamentos-pla` porque el check de filamentos corría antes.
+
+### 10.2 Plurales en `isRepuesto`
+
+Usar `\bboquillas?\b` (el `?` hace la `s` opcional), no `\bboquilla\b`. Siempre verificar los plurales en español al agregar patterns.
+
+### 10.3 "Resina ABS Like" cae en `filamentos-abs`
+
+El check de `\babs\b` corría ANTES del check de resinas. Solución: añadir un guard de resina (`/^resina\b/i`) ANTES del bloque de filamentos, y otro guard (`/\bresina\b/i`) DENTRO del bloque para capturar nombres como "Marca Resina ABS Like".
+
+**Regla:** la detección de resinas siempre debe correr antes de los subfiltros de material (ABS, TPU, etc.).
+
+### 10.4 `RECATEGORIZE_ALL` debe incluir categorías de filamento
+
+Sin `filamentos-*` en la lista, `--reprocess` no podía corregir boquillas/gargantas que llegaron bajo categoría `filamentos` por la API WooCommerce de la tienda. Ahora están incluidas con guard para solo permitir movimiento a `repuestos`/`resinas`/`accesorios-resina`/`secadores`.
+
+### 10.5 `--store dream3d` (con espacio) corre TODAS las tiendas
+
+El argumento se parsea buscando `a.startsWith('--store=')`. Sin el `=`, el flag no se reconoce y se scrapean todas las tiendas. **Siempre usar `--store=ID`** (con signo igual).
+
+### 10.6 `images` en WC Store API es array de objetos, no de strings
+
+Algunos scrapers hacían `p.images[0]`` esperando un string. La respuesta real es `{ id, src, thumbnail, alt }`. Siempre usar `p.images?.[0]?.src ?? ''`.
+
+### 10.7 Tiendas con protección Cloudflare
+
+`fetchHtml` recibía HTML del challenge "One moment, please" sin error HTTP. Solución: detectar el texto CF en la respuesta y lanzar `CF-BLOCKED` explícito. La tienda se omite y sigue el scrape.
+
+### 10.8 Accesorios del sistema AMS caen en filamentos
+
+"Embudo para **filamento** AMS Lite" contiene "filamento" → cayó en `filamentos-pla`. Solución: patterns específicos en `isRepuesto`: `/(embudo|funnel)\s*(para\s*)?(filamento|ams|bambu)/i`.
+
+---
+
+## 11. Workflow para Corregir Categorización
+
+### Cuando aparece un producto mal clasificado:
+1. Identificar el nombre exacto del producto
+2. Testear clasificación en TypeScript:
 ```bash
-# Ver distribución de categorías
-node -e "var d=JSON.parse(require('fs').readFileSync('src/assets/data/catalog.json','utf8')); var c={}; d.products.forEach(function(p){c[p.categoryId]=(c[p.categoryId]||0)+1;}); Object.keys(c).sort(function(a,b){return c[b]-c[a];}).forEach(function(k){console.log(c[k]+' '+k);});"
-
-# Muestrear una categoría
-node -e "var d=JSON.parse(require('fs').readFileSync('src/assets/data/catalog.json','utf8')); d.products.filter(function(p){return p.categoryId==='impresoras-fdm';}).slice(0,30).forEach(function(p){console.log(p.name);});"
-
-# Ver cobertura de specs en repuestos
-node -e "var d=JSON.parse(require('fs').readFileSync('src/assets/data/catalog.json','utf8')); var r=d.products.filter(function(p){return p.categoryId==='repuestos';}); var wt=r.filter(function(p){return p.specs&&p.specs.partType;}); console.log('Con partType:',wt.length,'/',r.length,'('+Math.round(wt.length/r.length*100)+'%)');"
-
-# Ver multi-tienda
-node -e "var d=JSON.parse(require('fs').readFileSync('src/assets/data/catalog.json','utf8')); var mt=d.products.filter(function(p){return p.entries&&p.entries.length>1;}); console.log('Multi-tienda:',mt.length,'/',d.products.length); mt.slice(0,10).forEach(function(p){console.log(p.entries.length,' tiendas | ',p.name.substring(0,60));});"
-
-# Ejecutar re-proceso (sin scraping)
-npx ts-node --project tsconfig.json src/run-direct.ts --reprocess
-
-# Scrape completo
-npx ts-node --project tsconfig.json src/run-direct.ts
+cd scraper
+npx ts-node --project tsconfig.json -e "import { inferCategory } from './src/utils'; console.log(inferCategory('Nombre del producto', ''));"
 ```
+3. Identificar qué pattern falta y en qué etapa de `inferCategory`
+4. Agregar el pattern (a `isRepuesto` o la etapa correspondiente en `utils.ts`)
+5. Ejecutar `--reprocess` para aplicar sin re-scraping
+6. Verificar distribución de categorías en output
+
+### Checklist de calidad de categorías:
+```bash
+# Distribución actual (desde la raíz del proyecto)
+node -e "const d=require('./src/assets/data/catalog.json'); const c={}; d.products.forEach(p=>{c[p.categoryId]=(c[p.categoryId]||0)+1;}); Object.entries(c).sort((a,b)=>b[1]-a[1]).forEach(([k,v])=>console.log(v,k));"
+
+# Final de una categoría (recién agregados, más probables de tener errores)
+node -e "const d=require('./src/assets/data/catalog.json'); d.products.filter(p=>p.categoryId==='filamentos-pla').slice(-20).forEach(p=>console.log(p.entries?.[0]?.storeId,'|',p.name));"
+
+# Buscar por keyword sospechosa
+node -e "const d=require('./src/assets/data/catalog.json'); d.products.filter(p=>/garganta|boquilla|embudo/i.test(p.name)).forEach(p=>console.log(p.categoryId,'|',p.name));"
+
+# Productos multi-tienda
+node -e "const d=require('./src/assets/data/catalog.json'); const mt=d.products.filter(p=>p.entries?.length>1); console.log('Multi-tienda:',mt.length,'/',d.products.length); mt.slice(0,10).forEach(p=>console.log(p.entries.length,'tiendas |',p.name.substring(0,60)));"
+```
+
+### Pendientes de calidad (baja prioridad):
+- **Color de filamentos:** Agregar colores chilenos/españoles no capturados: Marfil, Hueso, Champagne, Terracota, Borgoña, Coral
+- **Specs para impresoras FDM:** Añadir `workArea` (`\b\d+[xX]\d+[xX]\d+\b`) y `extruderCount`
+- **Diámetro de boquilla en repuestos:** `nozzleDiameter` desde regex `(\d+[.,]\d+)\s*mm` es el filtro más buscado
+- **Deduplicación de repuestos:** clave canónica `rep-{partType}-{brand}-{modelo}-{specs}` para cruzar tiendas

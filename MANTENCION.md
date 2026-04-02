@@ -8,59 +8,77 @@ Repositorio: **https://github.com/MijelAnjel/3dprecios**
 ## Cómo funciona el sistema
 
 ```
-Scrapers (GitHub Actions)
-    ↓  cada 6 horas — Admin SDK escribe en Firestore
-Firestore (solo escritura desde scraper)
-    ↓  Admin SDK lee una vez al terminar el scrape
-export.ts → src/assets/catalog.json
-    ↓  git commit + push → Firebase Hosting CDN
-dprecios.web.app
-    ↓  HTTP GET catalog.json (1× por sesión, cache localStorage 30min)
-Angular (in-memory, 0 lecturas Firestore)
+[PowerShell local]
+    ↓  npx ts-node src/run-direct.ts
+[run-direct.ts]  ──scrape todas las tiendas──►  src/assets/data/catalog.json
+                                                     ↓  git commit + push
+                                              Firebase Hosting CDN
+                                                     ↓  HTTP GET (1× por sesión)
+                                        CatalogService (Angular in-memory)
+                                                     ↓  localStorage cache 30 min
+                                              Usuario (0 lecturas a DB)
 ```
 
-El scraper visita cada tienda, extrae productos y precios, los guarda en Firestore, y luego genera `catalog.json` — un snapshot estático del catálogo completo que el sitio sirve desde CDN. El navegador del usuario **nunca lee Firestore directamente**.
+**Arquitectura Zero-Cost:** No hay base de datos en producción. `run-direct.ts` scraped las tiendas y escribe **directamente** a `src/assets/data/catalog.json`. El sitio Angular lee este JSON estático una vez y lo cachea. El navegador del usuario nunca necesita autenticación ni DB.
+
+**No se usa Firestore en producción.** Firestore existe en el proyecto como legado pero el pipeline actual no lo requiere.
 
 ---
 
 ## Ejecutar el scraper manualmente
 
-1. Ir a: https://github.com/MijelAnjel/3dprecios/actions/workflows/scrape.yml
-2. Clic en **"Run workflow"** → **"Run workflow"**
-3. Esperar ~20-30 minutos
-4. El workflow actualiza Firestore **y** regenera `catalog.json` automáticamente
-5. Refresh del sitio — aparecen los productos actualizados
+El scraper se ejecuta **localmente** desde PowerShell. No hay cron automático — correrlo cuando se quiera actualizar el catálogo.
 
-### Scraper de una sola tienda (más rápido)
+### Todas las tiendas (scrape completo)
+```powershell
+cd scraper
+npx ts-node --project tsconfig.json src/run-direct.ts
+```
+Tarda ~15-30 minutos dependiendo de la cantidad de tiendas activas.
 
-En el mismo formulario de "Run workflow", ingresar el ID de la tienda en el campo opcional:
+### Una sola tienda (más rápido, para debug)
+```powershell
+# IMPORTANTE: usar --store=ID con signo = (sin = corre TODAS las tiendas)
+npx ts-node --project tsconfig.json src/run-direct.ts --store=horus3d
+```
 
-| ID           | Tienda          | Método             | Estado   |
-|--------------|-----------------|--------------------|----------|
-| `horus3d`    | Horus3D         | WC Store API       | ✅ Activo |
-| `imperio3d`  | Imperio 3D      | WooCommerce HTML   | ✅ Activo |
-| `makerschile`| Makers Chile    | WC Store API       | ✅ Activo |
-| `evstore`    | eVStore         | WC Store API       | ✅ Activo |
-| `capital3d`  | Capital 3D      | WC Store API       | ✅ Activo |
-| `maxi3d`     | Maxi3D          | WooCommerce HTML   | ✅ Activo |
-| `todotoner`  | TodoToner       | Jumpseller SSR     | ✅ Activo |
-| `make3d`     | Make3D          | Jumpseller SSR     | ✅ Activo |
-| `falabella`  | Falabella       | API JSON           | ⚠️ Pocos  |
-| `pcfactory`  | PC Factory      | JS-rendered        | ⚠️ Sin datos |
+### Tiendas activas (produciendo productos en el catálogo)
 
-### Scraper automático (sin hacer nada)
+| ID              | Tienda           | Método             | Productos | Estado         |
+|-----------------|------------------|--------------------|-----------|----------------|
+| `horus3d`       | Horus3D          | WC Store API       | ~600      | ✅ Activo       |
+| `makerschile`   | Makers Chile     | WC Store API       | ~400      | ✅ Activo       |
+| `evstore`       | eVStore          | WC Store API       | ~300      | ✅ Activo       |
+| `capital3d`     | Capital 3D       | WC Store API       | ~250      | ✅ Activo       |
+| `cimech3d`      | Cimech 3D        | WC Store API       | ~300      | ✅ Activo (mezcla no-3D) |
+| `imperio3d`     | Imperio 3D       | WooCommerce HTML   | ~200      | ✅ Activo       |
+| `maxi3d`        | Maxi3D           | WooCommerce HTML   | ~300      | ✅ Activo       |
+| `make3d`        | Make 3D          | Jumpseller SSR     | ~100      | ✅ Activo       |
+| `dream3d`       | Dream 3D         | WooCommerce HTML   | ~120      | ✅ Activo       |
+| `mcielectronics`| MCI Electronics  | WC Store API       | ~50       | ✅ Activo (mezcla no-3D) |
+| `3dworks`       | 3DWorks          | WooCommerce HTML   | ~100      | ⚠️ Variable     |
+| `filamento`     | Filamento.cl     | —                  | 0         | ❌ Inactivo (dominio caído) |
+| `crealitychile` | Creality Chile   | —                  | 0         | ❌ Inactivo (dominio caído) |
+| `artillerychile`| Artillery Chile  | —                  | 0         | ❌ Inactivo (dominio caído) |
+| `tresd`         | 3D.cl            | —                  | 0         | ❌ Inactivo (dominio caído) |
 
-El scraper corre automáticamente **cada 6 horas** (00:00, 06:00, 12:00, 18:00 UTC). No requiere acción manual.
+> Para desactivar una tienda con dominio caído: poner `isActive: false` en `scraper/src/models.ts`.
 
 ---
 
-## Deploy del sitio (automático)
+## Deploy del sitio
 
-Cada `git push` a la rama `master` dispara el deploy automáticamente. No hay que hacer nada extra.
+Después de un scrape, hacer `git commit + push` para que Firebase Hosting sirva el nuevo catálogo:
 
-Para deployar manualmente:
-1. https://github.com/MijelAnjel/3dprecios/actions/workflows/deploy.yml
-2. Clic en **"Run workflow"**
+```powershell
+cd c:\Users\Miguel\Desktop\ANGULAR\3DPRINT-WEB\print3d-web
+git add -A
+git commit -m "chore: actualizar catálogo [fecha]"
+npm run build
+firebase deploy --only hosting
+```
+
+O si ya hay CI/CD configurado en GitHub Actions, el `git push` dispara deploy automático.
 
 ---
 
@@ -87,19 +105,32 @@ Las categorías son estáticas — están en `src/app/core/services/category.ser
 
 ---
 
-## Regenerar catalog.json manualmente
+## Re-procesar catálogo sin re-scraping
 
-`catalog.json` se genera automáticamente al final de cada scrape. Si necesitas regenerarlo sin correr el scraper completo (por ejemplo, tras cambiar `inferCategory` o después de `--fix-dupes`):
+Cuando se cambia lógica de `inferCategory` o se agregan nuevos patrones `isRepuesto`, se puede aplicar los cambios al catálogo actual **sin volver a scraper todas las tiendas**:
 
 ```powershell
 cd scraper
-$env:FIREBASE_SERVICE_ACCOUNT = Get-Content "dprecios-firebase-adminsdk-fbsvc-5fc52d6967.json" -Raw
-npx ts-node check.ts --export
+npx ts-node --project tsconfig.json src/run-direct.ts --reprocess
 ```
 
-Esto lee TODO Firestore via Admin SDK (~1.600 lecturas) y sobreescribe `src/assets/catalog.json`. Luego hacer `git commit + push` para que Firebase Hosting lo sirva.
+**¿Qué hace `--reprocess`?**
+- Re-ejecuta `inferCategory()` en todos los productos del catálogo existente
+- Mueve productos mal clasificados a su categoría correcta (boquillas, gargantas, resinas, etc.)
+- Re-extrae specs con la categoría correcta
+- Guarda el nuevo `catalog.json` en ~5 segundos (sin acceso a internet)
 
-> **Nota:** El archivo resultante va a `src/assets/catalog.json` — no a `public/`. Angular Build lo copia a `dist/` automáticamente.
+**Guarda de seguridad:** Solo re-clasifica si el nuevo resultado es "más específico" (nunca baja de categoría concreta a `general`).
+
+### Limpiar productos non-3D del catálogo (heredados)
+
+```powershell
+npx ts-node --project tsconfig.json src/run-direct.ts --purge-non3d
+```
+
+Elimina del catálogo productos en categoría `general` que no tienen keywords de impresión 3D. Útil después de añadir tiendas con catálogos mixtos (electrónica, CNC, etc.). Solo afecta productos en `general`, no toca repuestos ni filamentos.
+
+> **Localización del catálogo:** `src/assets/data/catalog.json`. Angular Build lo copia a `dist/` automáticamente.
 
 ---
 
@@ -166,40 +197,85 @@ Si el JSON de la cuenta de servicio vence o se revoca, hay que:
 
 ---
 
-## Comandos locales útiles
+## Comandos de mantención (PowerShell)
 
-```bash
-# Correr el scraper localmente (todas las tiendas)
+```powershell
+# ── Scraping ──────────────────────────────────────────────────────────────
+
+# Scrape completo (todas las tiendas activas → ~15-30 min)
 cd scraper
-$env:FIREBASE_SERVICE_ACCOUNT = Get-Content "dprecios-firebase-adminsdk-fbsvc-5fc52d6967.json" -Raw
-npm run scrape
+npx ts-node --project tsconfig.json src/run-direct.ts
 
-# Correr el scraper de una tienda específica
-npm run scrape -- --store=impresalta
+# Scrape de una tienda (IMPORTANTE: usar = sin espacio)
+npx ts-node --project tsconfig.json src/run-direct.ts --store=horus3d
 
-# Seed de datos de prueba (resetea productos de muestra)
-npm run seed
+# Re-aplicar reglas de clasificación sin internet (~5 seg)
+npx ts-node --project tsconfig.json src/run-direct.ts --reprocess
 
-# Desarrollo local del sitio
+# Eliminar productos non-3D del catálogo (categoría general)
+npx ts-node --project tsconfig.json src/run-direct.ts --purge-non3d
+
+# ── Diagnóstico ──────────────────────────────────────────────────────────
+
+# Distribución de categorías
 cd ..
-npm start
+node -e "const d=require('./src/assets/data/catalog.json'); const c={}; d.products.forEach(p=>{c[p.categoryId]=(c[p.categoryId]||0)+1;}); Object.entries(c).sort((a,b)=>b[1]-a[1]).forEach(([k,v])=>console.log(v,k));"
 
-# Build de producción
+# Ver los últimos 20 productos de una categoría
+node -e "const d=require('./src/assets/data/catalog.json'); d.products.filter(p=>p.categoryId==='filamentos-pla').slice(-20).forEach(p=>console.log(p.entries[0]?.storeId,'|',p.name));"
+
+# Verificar que un nombre clasifica correctamente
+cd scraper
+npx ts-node --project tsconfig.json -e "import { inferCategory } from './src/utils'; console.log(inferCategory('Boquilla MK8 0.4mm para Ender 3', ''));"
+
+# ── Deploy ────────────────────────────────────────────────────────────────
+
+cd c:\Users\Miguel\Desktop\ANGULAR\3DPRINT-WEB\print3d-web
+git add -A
+git commit -m "chore: actualizar catálogo"
 npm run build
+firebase deploy --only hosting
+
+# ── Frontend ──────────────────────────────────────────────────────────────
+
+npm start          # desarrollo local
+npm run build      # build de producción
 ```
 
 ---
 
-## Estructura de Firestore
+## Estructura de catalog.json
 
-```
-stores/
-  {storeId}          ← configuración de cada tienda
+El catálogo es un JSON estático en `src/assets/data/catalog.json`, generado por `run-direct.ts`:
 
-products/
-  {productSlug}      ← producto canónico (nombre, marca, categoryId, minPrice, maxPrice, storeCount)
-    entries/
-      {storeId}_{slug}  ← precio actual en esa tienda (url, price, stock, lastChecked)
-    history/
-      {timestamp}    ← historial de precios (para el gráfico)
+```typescript
+{
+  version:    number,      // incrementa con cada scrape
+  exportedAt: string,      // ISO timestamp
+  stores:     StoreConfig[],
+  products: [
+    {
+      id:         string,  // slug canónico (clave de dedup)
+      name:       string,  // nombre normalizado
+      categoryId: string,  // 'filamentos-pla', 'repuestos', etc.
+      brand:      string,
+      imageUrl:   string,
+      minPrice:   number,  // CLP
+      maxPrice:   number,  // CLP
+      storeCount: number,  // cuántas tiendas lo venden
+      specs:      Record<string, string | number>,
+      entries: [           // precios por tienda (inline, no subcollection)
+        {
+          storeId:     string,
+          price:       number,
+          stock:       'available' | 'out',
+          url:         string,
+          lastChecked: string,
+        }
+      ]
+    }
+  ]
+}
 ```
+
+> Nota: Firestore existía en la arquitectura anterior y el proyecto aún lo incluye como dependencia, pero el pipeline de producción actual escribe directamente a `catalog.json` sin pasar por Firestore.

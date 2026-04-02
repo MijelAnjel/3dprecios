@@ -53,52 +53,42 @@ Funcionalidades actuales:
 
 El proyecto corre completamente **gratis** usando los tiers gratuitos de cada servicio.
 
-### Flujo de datos
+### Flujo de datos actual
 
 ```
-GitHub Actions (cron cada 6h)
+PowerShell local
     │
-    ├── scraper/src/run.ts  →  cada tienda
-    │       ↓ Admin SDK (escritura)
-    │   Firestore (~1.600 lecturas Admin SDK por scrape)
-    │       ↓ Admin SDK (lectura única post-scrape)
-    └── scraper/src/export.ts  →  src/assets/catalog.json
-                                        ↓ git commit + push
-                                  Firebase Hosting / CDN
-                                        ↓ HTTP GET (1x por sesión)
-                                  CatalogService (Angular)
-                                        ↓ in-memory, 0 Firestore
-                              ProductService / PriceService / StoreService
-                                        ↓
-                                  Usuario (0 lecturas Firestore)
+    └── scraper/src/run-direct.ts  →  cada tienda activa
+            │  (scrapers + classify + deduplica)
+            ▼
+        src/assets/data/catalog.json  (~3 MB JSON estático)
+            │
+            ├── --reprocess  ← aplica nuevas reglas sin internet
+            ├── --purge-non3d ← limpia productos non-3D
+            │
+            ↓  git commit + npm run build + firebase deploy
+        Firebase Hosting / CDN
+            ↓  HTTP GET (1x por sesión)
+        CatalogService (Angular)
+            ↓  in-memory, 0 lecturas DB
+        ProductService / PriceService / StoreService
+            ↓
+        Usuario (0 lecturas Firestore)
 ```
-
-### Comparativa de coste
-
-| Métrica | Arquitectura anterior | Arquitectura actual |
-|---|---|---|
-| Lecturas Firestore por carga de página | ~400 | **0** |
-| Lecturas diarias (125 visitas) | 50.000 (cuota agotada) | **0** |
-| Lecturas Admin SDK por scrape | — | ~1.600 (1×/6h) |
-| Tamaño de catalog.json | — | ~150-200 KB |
-| Costo mensual extrapolado (10M users) | ~$208.800 | **~$1.200** |
 
 ### Por qué funciona
 
-- **Firestore es write-only desde usuarios** — solo el scraper Admin SDK escribe
-- **`catalog.json` en CDN** — descargado en ~50 ms desde Firebase Hosting, cacheado en service worker NGSW
-- **localStorage 30 min TTL** — segunda carga es instantánea (0 red)
-- **Alertas de precio** — único camino donde el usuario escribe en Firestore (acción explícita)
+- **0 base de datos en producción** — `catalog.json` es el único origen de datos del frontend
+- **`catalog.json` en CDN** — ~50 ms inicial desde Firebase Hosting, luego service worker NGSW
+- **localStorage 30 min TTL** — segunda carga es instantánea
+- **Firestore** — existente como legado pero no usado en el pipeline actual
 
 ### Servicios de Firebase y sus límites gratuitos
 
 | Servicio | Uso | Tier gratuito |
 |---|---|---|
-| **Firebase Hosting** | Serve del sitio + `catalog.json` | 10 GB transfer/mes, 1 GB storage |
-| **Cloud Firestore** | Escritura desde scraper; lectura solo Admin SDK | 1 GB datos, 50K reads/día, 20K writes/día |
-| **Firebase Auth** | Cuentas usuario (alertas futuras) | 10K users/mes |
-| **GitHub Actions** | Scraping cron + CI/CD | Ilimitado en repos públicos |
-| **Resend.com** | Emails de alertas de precio | 3.000 emails/mes |
+| **Firebase Hosting** | Sitio + `catalog.json` + assets | 10 GB transfer/mes, 1 GB storage |
+| **GitHub Actions** | CI/CD de deploy (push → build → deploy) | Ilimitado en repos públicos |
 
 ---
 
@@ -356,32 +346,44 @@ products/filamento-pla-basic-bambu-lab-1kg/
 
 ## 6. Pipeline de scraping
 
-### Flujo completo
+### Flujo actual (run-direct.ts)
 
 ```
-GitHub Actions cron (cada 6h) o trigger manual
+PowerShell local
     ↓
-scraper/src/run.ts
+scraper/src/run-direct.ts
     ├── Lee STORES[] de models.ts
     ├── Filtra tiendas con isActive: true
-    ├── Para cada tienda llama su scraper específico
+    ├── Para cada tienda llama su scraper (STORE_SCRAPERS[store.id])
     │     ↓
     │   scraper/src/stores/{tienda}.ts
-    │     ├── Visita URLs de categoría
+    │     ├── Visita URLs de categoría (o llama WC Store API)
     │     ├── Extrae: nombre, URL, precio, stock, imagen
     │     ├── Llama inferCategory(nombre, urlPath) → categorySlug
     │     └── Devuelve ScraperResult[]
     │
-    ├── scraper/src/firebase.ts → saveResults()
-    │     ├── normalizeProductName(nombre) → quita ruido
-    │     ├── slugify(nombreNormalizado) → productSlug (ID del documento)
-    │     ├── Si producto no existe → crea el documento
-    │     ├── Si existe → actualiza categoría y/o imagen si mejoró
-    │     ├── Upsert entry: /products/{slug}/entries/{storeId}_{slug}
-    │     └── Si precio cambió → append /products/{slug}/history/{ts}
+    ├── normalizeProductName(nombre) → quita ruido tipográfico
+    ├── inferCategory(nombre, '') → categorySlug definitivo
+    ├── extractSpecs(nombre, categorySlug) → specs estructuradas
+    ├── buildCanonicalKey(categorySlug, specs, nombre) → slug de dedup
     │
-    └── syncStores() → actualiza colección /stores/ en Firestore
+    ├── Si slug ya existe → merge entries / actualiza precio mínimo
+    ├── Si slug nuevo → crea nuevo CatalogProduct
+    │
+    └── Escribe src/assets/data/catalog.json
+         ├── Genera sitemap.xml en public/
+         └── Muestra distribución de categorías en consola
 ```
+
+**Flags disponibles:**
+
+| Flag | Descripción | Cuándo usar |
+|------|-------------|------------|
+| `--store=ID` | Scrapea solo esa tienda | Debug, tienda nueva |
+| `--reprocess` | Re-clasifica catálogo existente sin internet | Tras mejorar `inferCategory` |
+| `--purge-non3d` | Elimina productos non-3D de `general` | Limpiar legacy de tiendas mixtas |
+
+> **⚠️ Nota:** `--store dream3d` (con espacio) ignora el argumento y corre TODAS las tiendas. Siempre usar `--store=ID`.
 
 ### Utilidades del scraper (`scraper/src/utils.ts`)
 
@@ -975,59 +977,60 @@ constructor() {
 
 ## 14. Tiendas activas y método de scraping
 
-| ID | Nombre | Método | Estado | Productos esperados |
-|---|---|---|---|---|
-| `horus3d` | Horus3D | WC Store API | ✅ Activo | ~100+ |
-| `imperio3d` | Imperio 3D | WooCommerce HTML + Cheerio | ✅ Activo | ~305 |
-| `makerschile` | Makers Chile | WC Store API (todos, filtrado) | ✅ Activo | ~300 |
-| `evstore` | eVStore | WC Store API (todos) | ✅ Activo | ~300 |
-| `capital3d` | Capital 3D | WC Store API (categorías) | ✅ Activo | ~130 |
-| `maxi3d` | Maxi3D | WooCommerce HTML + Cheerio | ✅ Activo | ~280+ |
-| `make3d` | Make3D | Jumpseller SSR + Cheerio | ✅ Activo | ~58 |
-| `todotoner` | TodoToner | Jumpseller SSR + Cheerio | ✅ Activo | ~65 |
-| `pcfactory` | PC Factory | JS-rendered | ⚠️ Sin datos | 0 |
-| `falabella` | Falabella | API JSON | ⚠️ Pocos | ~10 |
-| `impresalta` | Impresalta | — | ❌ Inactivo | — |
-| `ahi3d` | AHI 3D | — | ❌ Inactivo | — |
-| `formageo` | Formageo | — | ❌ Inactivo | — |
-| `mercadolibre` | Mercado Libre | — | ❌ Inactivo | — |
+### Tiendas con productos en el catálogo (Abril 2026)
 
-**Nota:** Las tiendas `inactivo` están registradas en `STORES` con `isActive: false`. No corren en el scraper pero la UI puede mostrarlas si se activan.
+| ID | Nombre | Método | Productos | Estado |
+|---|---|---|---|---|
+| `horus3d` | Horus3D | WC Store API | ~600 | ✅ Activo |
+| `makerschile` | Makers Chile | WC Store API (filtrado) | ~400 | ✅ Activo |
+| `evstore` | eVStore | WC Store API | ~300 | ✅ Activo |
+| `capital3d` | Capital 3D | WC Store API (categorías) | ~250 | ✅ Activo |
+| `cimech3d` | Cimech 3D | WC Store API (filtrado) | ~300 | ✅ Activo — mezcla no-3D |
+| `maxi3d` | Maxi3D | WooCommerce HTML | ~300 | ✅ Activo |
+| `imperio3d` | Imperio 3D | WooCommerce HTML | ~200 | ✅ Activo |
+| `dream3d` | Dream 3D | WooCommerce HTML | ~120 | ✅ Activo |
+| `make3d` | Make 3D | Jumpseller SSR | ~100 | ✅ Activo |
+| `3dworks` | 3DWorks | WooCommerce HTML | ~100 | ⚠️ Variable |
+| `mcielectronics` | MCI Electronics | WC Store API (filtrado) | ~50 | ✅ Activo — mezcla no-3D |
+
+### Tiendas inactivas (dominio caído)
+
+| ID | Nombre | Razón |
+|---|---|---|
+| `filamento` | Filamento.cl | Dominio caído |
+| `crealitychile` | Creality Chile | Dominio caído |
+| `artillerychile` | Artillery Chile | Dominio caído |
+| `tresd` | 3D.cl | Dominio caído |
+
+### Tiendas registradas con scraper pero sin datos aún
+
+Hay ~30 tiendas más en `models.ts` con `isActive: true` que aún retornan 0 productos (scraper pendiente de ajuste o tienda sin stock 3D activo). Ver `scraper/src/models.ts` para la lista completa.
 
 ---
 
-## 15. Pendientes y roadmap
-
-### Pendiente (requiere Firestore — correr cuando quota se restablezca)
-
-| Tarea | Comando |
-|---|---|
-| **Poblar catalog.json** con datos reales | `cd scraper && npx ts-node check.ts --export` |
-| **Migrar slugs duplicados** (ej. Bambu Lab eje X) | `npx ts-node check.ts --fix-dupes --dry-run` luego `--fix-dupes` |
-| **Re-scrape tiendas con bugs corregidos** | `npx ts-node src/run.ts --store=maxi3d` (y make3d, filamento, capital3d) |
-| **Re-categorizar con nuevas categorías** | `npx ts-node check.ts --recategorize` |
+## 15. Roadmap
 
 ### Alta prioridad
 
 | Tarea | Descripción |
 |---|---|
-| **pcfactory.ts** | JS-rendered; buscar si tiene API interna en DevTools > Network |
-| **filamento.ts tiendas adicionales** | Agregar más paths de categoría (TPU especiales, composites) |
-| **Activar tiendas pendientes** | Impresalta, AHI3D — investigar plataforma y crear scrapers |
+| **Ajustar scrapers que retornan 0** | Para cada tienda en models.ts con `isActive: true` y 0 productos, investigar el DOM/API y actualizar CATEGORY_PATHS o categoryIds |
+| **Deduplicación de repuestos** | `buildCanonicalKey` para repuestos: `rep-{partType}-{brand}-{modelo}-{specs}` — actualmente solo el 3% de repuestos se comparten entre tiendas |
+| **`nozzleDiameter` en specs** | El diámetro de boquilla (0.2-1.2mm) es el filtro más buscado; extraer de regex `(\d+[.,]\d+)\s*mm` en `extractSpecs` |
 
 ### Media prioridad
 
 | Tarea | Descripción |
 |---|---|
-| **Sistema de alertas** | `AlertFormComponent` guardó el diseño pero falta Firebase Auth + Resend trigger |
-| **Comparador lado a lado** | Seleccionar 2-3 productos y comparar specs y precios en tabla |
-| **Más tiendas** | ~35 tiendas chilenas identificadas en `tiendasypaginas.md` — priorizar las más grandes |
+| **Specs para impresoras FDM** | Agregar `workArea` (`\d+x\d+x\d+`) y `extruderCount` |
+| **Historial de precios en frontend** | El campo `history[]` existe en el modelo; falta el gráfico de línea en product-detail |
+| **Más tiendas activas** | pcfactory (investigar API), bambulab.com/es-cl, todoclick.cl |
+| **Sistema de alertas** | `AlertFormComponent` existe; falta Firebase Auth + Resend trigger |
 
-### Baja prioridad / futuro
+### Baja prioridad
 
 | Tarea | Descripción |
 |---|---|
-| **Blaze plan Firebase** | Escalar con budget alerts ($5/mes recommended) para persistencia a largo plazo |
-| **Exportar historial CSV** | Botón de descarga en la ficha de producto |
-| **Notificaciones push** | Web Push API para alertas sin email |
-| **Panel admin** | UI para gestionar tiendas, productos y categorías manualmente |
+| **Colores adicionales** | Marfil, Hueso, Champagne, Terracota, Borgoña, Coral no capturados |
+| **Comparador lado a lado** | Seleccionar 2-3 productos y comparar specs/precios en tabla |
+| **Exportar CSV** | Botón de descarga en ficha de producto |
