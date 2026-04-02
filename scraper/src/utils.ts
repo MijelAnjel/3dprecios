@@ -209,7 +209,7 @@ export function inferCategory(name: string, path: string): string {
   // pero NO son el producto principal. Detectar antes que cualquier otra categoría.
   const isRepuesto =
     // Sensores y finales de carrera
-    /\bsensor\b|endstop|final\s*de\s*carrera|\bprobe\b|bltouch|cr[\s-]?touch|inductive\s*probe/i.test(n) ||
+    /\bsensor\b|endstop|final\s*de\s*carrera|l[ií]mite\s*de\s*carrera|\bprobe\b|bltouch|cr[\s-]?touch|inductive\s*probe/i.test(n) ||
     // Módulo de detección de filamento
     /modulo\s*(de\s*)?detecci[oó]n\s*(de\s*)?filament|filament\s*detector|run[\s-]?out\s*sensor/i.test(n) ||
     // Herramientas de filamento (cortadores, palancas, etc.)
@@ -222,7 +222,7 @@ export function inferCategory(name: string, path: string): string {
     // Engranajes y piezas de extrusión
     /\bengranaje\b|\bgear\b.*extru|extru.*\bgear\b|\bmk8\b|\bmk\s*8\b|\bdual\s*drive\b|\bbmg\b/i.test(n) ||
     // Cables planos FFC/FPC para ejes de impresoras
-    /cable\s*(plano|ffc|fpc).*(eje|artillery|ender|bambu|creality|prusa)/i.test(n) ||
+    /cable\b.*(plano|ffc|fpc).*(eje|artillery|ender|bambu|creality|prusa)/i.test(n) ||
     /(eje\s*[xyz]|artillery|ender|bambu|creality).*cable\s*(plano|ffc|fpc)/i.test(n) ||
     // Block de aluminio de tipo Volcano y similares (repuesto hotend)
     /block\s*aluminio\s*(volcano|v6|mk8)|volcano\s*block|bloque\s*aluminio\s*volcano/i.test(n) ||
@@ -305,7 +305,23 @@ export function inferCategory(name: string, path: string): string {
     /(embudo|funnel)\s*(para\s*)?(filamento|ams|bambu)/i.test(n) ||
     /placa\s*de\s*conexi[oó]n\s*buffer|buffer.*plate.*filament|ams\s*buffer/i.test(n) ||
     // Filamento de limpieza (eClean, etc.) — herramienta, no material de impresión
-    /\beclean\b|filamento\s*de\s*limpieza|limpieza\s*filamento|cleaning\s*filament/i.test(n);
+    /\beclean\b|filamento\s*de\s*limpieza|limpieza\s*filamento|cleaning\s*filament/i.test(n) ||
+    // Motor del eje Z/X/Y de impresora (repuesto de movimiento)
+    /motor\s*(del?\s*)?(eje|axis)\s*[xyz]?\b|motor\s+para\s+eje\s+[xyz]/i.test(n) ||
+    // Cables y packs de cable para impresoras 3D por marca
+    /cables?\s+(para|de)\s*(bambu|bambulab|bambu\s*lab|a1\b|x1\b|p1[sp]?\b|creality|ender|artillery|prusa|anycubic|elegoo)\b/i.test(n) ||
+    /cable\s*(para|de)\s*(cama|heated[\s-]?bed)/i.test(n) ||
+    // Limpiador de purga (sistemas multimaterial como Bambu AMS)
+    /limpiador\s*(de|para)?\s*purga\b/i.test(n) ||
+    // Partes del motor alimentador AMS (Bambu Lab multi-material)
+    /partes?\s*(del?\s*)?motor\s*(alimentador)?\s*(ams|bambu\s*lab?|lite)\b/i.test(n) ||
+    /motor\s+alimentador\s+(ams|bambu|lite)\b/i.test(n) ||
+    // Conjunto de calefacción para impresoras 3D
+    /conjunto\s*(de\s*)?calefacci[oó]n\s*(para\s*)?(a1|x1|p1|bambu|creality|ender|prusa|anycubic)\b/i.test(n) ||
+    // Abrazaderas y bloques de marca (piezas estructurales de impresora)
+    /(abrazadera|bloque)\s*(para\s*)?(bambu|bambulab|bambu\s+lab\b|a1\b|x1\b|p1[sp]?\b)/i.test(n) ||
+    // Cámara para impresora 3D
+    /c[aá]mara\s*(para|de)\s*(bambu|bambulab|a1|x1|p1|impresora|3d)\b/i.test(n);
 
   if (isRepuesto) return 'repuestos';
 
@@ -341,7 +357,9 @@ export function inferCategory(name: string, path: string): string {
     /guantes?\s*(de\s*)?(l[aá]tex|nitrilo|vinilo).*resina|guantes?.*resina|resina.*guantes/i.test(n) ||
     /mascarilla.*resina|gafas.*uv|kit.*seguridad.*resina/i.test(n) ||
     /bandeja.*resina|resina.*bandeja|cubeta.*lavado|tina.*resina|resina.*tina/i.test(n) ||
-    /esp[aá]tula.*resina|rasqueta.*resina|herramienta.*resina|resina.*herramienta/i.test(n)
+    /esp[aá]tula.*resina|rasqueta.*resina|herramienta.*resina|resina.*herramienta/i.test(n) ||
+    // Curadoras UV / lavadoras de resina (incluso con HTML entities como &#038; en lugar de &)
+    /\bcuradora\b/i.test(n)
   ) return 'accesorios-resina';
 
   // ── 1. Filamentos ──────────────────────────────────────────────────────
@@ -352,7 +370,7 @@ export function inferCategory(name: string, path: string): string {
   const filamentByPath = /filament/i.test(p);
   // Un producto es filamento si su nombre contiene keywords de material
   // SIN mencionar "impresora/printer" (evita "Filamento compatible con impresora X")
-  const filamentByName = /\bpla\b|polil[aá]ctico|\bpetg\b|\babs\b|\basa\b|\btpu\b|\btpe\b|\bfilamento\b|\bfilament\b/i.test(n);
+  const filamentByName = /\bpla\b|polil[aá]ctico|\bpetg\b|\babs\b|\basa\b|\btpu\b|\btpe\b|\bpa\s*nylon\b|\bfilamento\b|\bfilament\b/i.test(n);
   const isPrinterWord  = /\bimpresora\b|\bprinter\b/i.test(n);
 
   // Excluir accesorios que mencionan filamento en su nombre pero NO son filamento
@@ -380,7 +398,8 @@ export function inferCategory(name: string, path: string): string {
   // isLiquidResin: tiene "resina" en nombre Y (hay cantidad en g/ml o marcadores de resina líquida)
   const hasResinaWord   = /\bresina\b|\bresin\b/i.test(n);
   const hasLiquidMarker = /\d+\s*(g|ml|kg|litro)\b/i.test(n)
-    || /\bliquida?\b|\best[aá]ndar\b|\bmodeling\b|\bnormal\b|\btranspar|\bwater[\s-]?wash|\babs[\s-]?like/i.test(n);
+    || /\bliquida?\b|\best[aá]ndar\b|\bstandard\b|\bmodeling\b|\bnormal\b|\btranspar|\bwater[\s-]?wash|\babs[\s-]?like/i.test(n)
+    || /\bpack\b.*\d+\s*unidades?|\d+\s*unidades?.*\bpack\b/i.test(n);
 
   if (/resina|resin/i.test(p) && !/impresora.*resina|impresoras-resina/i.test(p)) return 'resinas';
   if (hasResinaWord && hasLiquidMarker && !isPrinterWord) return 'resinas';
@@ -394,7 +413,7 @@ export function inferCategory(name: string, path: string): string {
   // ── 4. Impresoras FDM ─────────────────────────────────────────────────
   // NO usar "fdm" sólo: "Filamento FDM" es filamento, no impresora
   if (/impresora|printer|impresion-3d|impresoras-3d|impresoras-fdm/i.test(p) && !/resina|resin/i.test(p)) return 'impresoras-fdm';
-  if (/\bender\b|\bneptune\b|\bkobra\b|\baquila\b|\bvoxelab\b|adventurer|flashforge|\bprusa\b|\bvoron\b|bambu\s*(a1|p1|x1|a1\s*mini|p1s|p1p|x1c)|elegoo\s*(neptune|centauri)|\bqidi\b/i.test(n)) return 'impresoras-fdm';
+  if (/\bartillery\b|\bender\b|\bneptune\b|\bkobra\b|\baquila\b|\bvoxelab\b|adventurer|flashforge|\bprusa\b|\bvoron\b|bambu\s*(a1|p1|x1|a1\s*mini|p1s|p1p|x1c)|elegoo\s*(neptune|centauri)|\bqidi\b/i.test(n)) return 'impresoras-fdm';
   // Modelos Creality FDM adicionales (K-series, CR-series, etc.)
   if (/\bcreality\b.*\b(k1|k2|cr[\s-]?\d+|sonic\s*pad|nebula)/i.test(n)) return 'impresoras-fdm';
   // Bambu Lab con nombre de modelo sin "bambu" inmediatamente antes (e.g. "Bambu Lab A1C")
@@ -429,7 +448,7 @@ export function inferCategory(name: string, path: string): string {
     // Enclosures / gabinetes / cubiertas de impresora (incluye eEnclosure de eSUN)
     /enclosure|\bcubierta\s*impresora\b|\bcaja\s*impresora\b|\bgabinete.*impresi|\bgabinete.*3d\b/i.test(n) ||
     // Adhesivos y lacas para impresión 3D
-    /\bglue\s*stick\b|\bpegamento.*impr|\bspray.*impr|\badhesivo.*impr|laca.*impresi|impresi.*laca/i.test(n) ||
+    /\bglue\s*stick\b|\bpegamento.*impr|\bspray.*impr|\badhesivo.*impr|laca.*impresi|impresi.*laca|\b3dlac\b|\blaca\s+3d\b/i.test(n) ||
     // Superficies de impresión
     /\bsuperficie\s*de\s*impresi[oó]n\b|\bbuild\s*surface\b|\balfombrilla\s*magn/i.test(n) ||
     // Tubos PTFE y accesorios de extrusión genéricos
