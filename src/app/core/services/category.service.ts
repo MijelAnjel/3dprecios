@@ -16,6 +16,8 @@ const FILAMENT_BRANDS: string[] = [
   // Regionales/locales (Argentina/Chile y otras)
   'Grilon3', 'Hello3D', 'Jamg He', 'MakersChile', 'Panchroma',
   'Plastar', 'PopBit', 'Printalot', 'Sunhokey', 'Winkle',
+  // Locales chilenas
+  'Soleyin', 'Todotoner',
 ];
 
 // Campos de spec compartidos para filamentos estándar (PLA, PETG, ABS, TPU)
@@ -31,7 +33,7 @@ const FILAMENT_SPEC_FIELDS: SpecField[] = [
     key: 'material',
     label: 'Material',
     type: 'select',
-    options: ['PLA', 'PLA+', 'PLA Silk', 'PLA Matte', 'PLA HF', 'PLA-CF', 'PETG', 'PETG-CF', 'PETG-HF', 'ABS', 'ASA', 'ASA-CF', 'TPU', 'TPE', 'Nylon', 'Nylon-CF', 'PC', 'HIPS', 'PVA', 'PEEK', 'PEI'],
+    options: ['PLA', 'PLA+', 'PLA Silk', 'PLA Matte', 'PLA HF', 'PLA-CF', 'PETG', 'PETG-CF', 'PETG-HF', 'ABS', 'ASA', 'ASA-CF', 'TPU', 'TPE', 'Nylon', 'Nylon-CF', 'PC', 'PC-HT', 'HIPS', 'PVA', 'PEEK', 'ePEEK', 'PEI', 'PEBA', 'PCL'],
     filterable: true,
   },
   {

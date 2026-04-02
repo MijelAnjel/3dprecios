@@ -568,7 +568,7 @@ export function inferCategory(name: string, path: string): string {
     if (/\bpetg\b/i.test(n) || /petg/i.test(p))                   return 'filamentos-petg';
     if (/\babs\b|\basa\b/i.test(n) || /\babs\b|\basa\b/i.test(p)) return 'filamentos-abs';
     if (/\btpu\b|\btpe\b/i.test(n) || /tpu|tpe/i.test(p))         return 'filamentos-tpu';
-    if (/\bnylon\b|\bpa12\b|\bpa6\b|\bpa\b(?=[\s-]?\d)|policarbonato|\bpc\b(?![\s-]*factory)|-cf\b|-gf\b|fibra[\s-]*(carbono|vidrio)|\bhips\b|\bpva\b|\bpeek\b|\bpei\b|\bultem\b|\bppa\b|\bpps\b/i.test(n))
+    if (/\bnylon\b|\bpa12\b|\bpa6\b|\bpa\b(?=[\s-]?\d)|policarbonato|\bpc\b(?![\s-]*factory)|-cf\b|-gf\b|fibra[\s-]*(carbono|vidrio)|\bhips\b|\bpva\b|\bpeek\b|\bepeek\b|\bpei\b|\bultem\b|\bppa\b|\bpps\b|\bpeba\b|\bpcl\b|\bpc[-\s]?ht\b/i.test(n))
       return 'filamentos-especiales';
     return 'filamentos-pla';
   }
@@ -808,6 +808,7 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
     [/\bwinkle\b/i, 'Winkle'],
     [/\bpanchroma\b/i, 'Panchroma'],
     [/\btodotoner\b|\btodo[-\s]?toner\b/i, 'Todotoner'],
+    [/\bsoleyin\b/i, 'Soleyin'],
   ];
 
   const PRINTER_BRANDS: [RegExp, string][] = [
@@ -869,8 +870,12 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
     else if (/policarbonato|\bpc\b(?![\s-]*factory)/i.test(name))     specs['material'] = 'PC';
     else if (/\bhips\b/i.test(name))                                   specs['material'] = 'HIPS';
     else if (/\bpva\b/i.test(name))                                    specs['material'] = 'PVA';
+    else if (/\bepeek\b/i.test(name))                                  specs['material'] = 'ePEEK';
     else if (/\bpeek\b/i.test(name))                                   specs['material'] = 'PEEK';
     else if (/\bpei\b|\bultem\b/i.test(name))                         specs['material'] = 'PEI';
+    else if (/\bpeba\b/i.test(name))                                   specs['material'] = 'PEBA';
+    else if (/\bpcl\b/i.test(name))                                    specs['material'] = 'PCL';
+    else if (/\bpc[-\s]?ht\b/i.test(name))                            specs['material'] = 'PC-HT';
     else if (/\babs\b/i.test(name))                                    specs['material'] = 'ABS';
     else if (/\bpla\b/i.test(name)) {
       if (/-cf\b|carbono/i.test(name))                                 specs['material'] = 'PLA-CF';
