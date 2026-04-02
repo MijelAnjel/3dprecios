@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-04-02T20:07:11.704Z",
-    "productCount": 3193
+    "generatedAt": "2026-04-02T20:43:19.461Z",
+    "productCount": 3191
   },
   "stores": [
     {
@@ -26100,17 +26100,18 @@
       ]
     },
     {
-      "slug": "fdm-artillery-hot-end",
-      "id": "fdm-artillery-hot-end",
+      "slug": "hot-end-artillery",
+      "id": "hot-end-artillery",
       "name": "Hot End Artillery",
       "brand": "Artillery",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://evstore.cl/wp-content/uploads/2023/01/Hotend-Artillery.jpg"
       ],
       "specs": {
-        "brand": "Artillery"
+        "brand": "Artillery",
+        "compatibleWith": "Artillery"
       },
       "minPrice": 11550,
       "maxPrice": 11550,
@@ -31909,17 +31910,18 @@
       ]
     },
     {
-      "slug": "fdm-creality-placa-silenciosa-ender-5-ender-3-v2",
-      "id": "fdm-creality-placa-silenciosa-ender-5-ender-3-v2",
+      "slug": "creality-placa-silenciosa-impresora-3d-ender-5-ender-3-v2",
+      "id": "creality-placa-silenciosa-impresora-3d-ender-5-ender-3-v2",
       "name": "Creality Placa Silenciosa Impresora 3d Ender 5 Ender 3 V2 +",
       "brand": "Creality",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/D_773562-MLC45788605836_052021-F.jpg"
       ],
       "specs": {
-        "brand": "Creality"
+        "brand": "Creality",
+        "compatibleWith": "Ender 3"
       },
       "minPrice": 50391,
       "maxPrice": 50391,
@@ -38542,12 +38544,14 @@
       "id": "kit-motor-4234-paso-a-paso-ender-5-plus",
       "name": "Kit Motor 42/34 paso a paso Ender 5 Plus",
       "brand": "",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://imperio3d.com/wp-content/uploads/2024/03/CR-4004100032-300x300.webp"
       ],
-      "specs": {},
+      "specs": {
+        "compatibleWith": "Ender 5"
+      },
       "minPrice": 11990,
       "maxPrice": 11990,
       "storeCount": 1,
@@ -38673,12 +38677,14 @@
       "id": "kit-motor-4248-paso-a-paso-eje-x-ender-6",
       "name": "Kit Motor 42/48 paso a paso eje X Ender 6",
       "brand": "",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://imperio3d.com/wp-content/uploads/2024/03/CR-4004100022-300x300.webp"
       ],
-      "specs": {},
+      "specs": {
+        "compatibleWith": "Ender 6"
+      },
       "minPrice": 10990,
       "maxPrice": 10990,
       "storeCount": 1,
@@ -40776,18 +40782,19 @@
       ]
     },
     {
-      "slug": "fdm-artillery-kit-volcano-para",
-      "id": "fdm-artillery-kit-volcano-para",
+      "slug": "kit-volcano-para-artillery",
+      "id": "kit-volcano-para-artillery",
       "name": "Kit Volcano para Artillery",
       "brand": "Artillery",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2022/05/KitVolcano.png"
       ],
       "specs": {
         "brand": "Artillery",
-        "kinematics": "Cartesiana"
+        "kinematics": "Cartesiana",
+        "compatibleWith": "Artillery"
       },
       "minPrice": 10000,
       "maxPrice": 10000,
@@ -64617,74 +64624,6 @@
       ]
     },
     {
-      "slug": "fdm-artillery-kit-de-nivelacion-automatica-abl-para-x2-y-genius-pro",
-      "id": "fdm-artillery-kit-de-nivelacion-automatica-abl-para-x2-y-genius-pro",
-      "name": "Kit de nivelación automática ABL para Artillery X2 y genius pro",
-      "brand": "Artillery",
-      "categoryId": "impresoras-fdm",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/06/ABL-Sensor-Automatic-Bed-Leveling-Artillery-02.jpg"
-      ],
-      "specs": {
-        "brand": "Artillery"
-      },
-      "minPrice": 24990,
-      "maxPrice": 24990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/kit-de-nivelacion-automatica-abl-para-artillery-x2-genius-pro/",
-          "price": 24990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 24990,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
-      "slug": "fdm-artillery-placa-madre-para-x3-pro-y-x3-plus",
-      "id": "fdm-artillery-placa-madre-para-x3-pro-y-x3-plus",
-      "name": "Placa madre para Artillery X3 Pro y X3 Plus",
-      "brand": "Artillery",
-      "categoryId": "impresoras-fdm",
-      "description": "",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/1a_a33d17d4-4ecd-41d8-bdb6-1c4ce1f9f494.png?v=1756763294"
-      ],
-      "specs": {
-        "brand": "Artillery"
-      },
-      "minPrice": 45000,
-      "maxPrice": 45000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T12:43:59.136Z",
-      "entries": [
-        {
-          "storeId": "afel",
-          "url": "https://afel.cl/products/motherboards",
-          "price": 45000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "afel",
-          "price": 45000,
-          "recordedAt": "2026-04-02T12:43:59.136Z"
-        }
-      ]
-    },
-    {
       "slug": "fil-isanmate-abs-1000g-175mm-blanco",
       "id": "fil-isanmate-abs-1000g-175mm-blanco",
       "name": "ABS iSANMATE Blanco 1Kg",
@@ -66062,6 +66001,77 @@
       ]
     },
     {
+      "slug": "kit-de-nivelacion-automatica-abl-para-artillery-x2-y-genius-pro",
+      "id": "kit-de-nivelacion-automatica-abl-para-artillery-x2-y-genius-pro",
+      "name": "Kit de nivelación automática ABL para Artillery X2 y genius pro",
+      "brand": "Artillery",
+      "categoryId": "repuestos",
+      "description": "",
+      "images": [
+        "https://www.cimech3d.cl/wp-content/uploads/2022/06/ABL-Sensor-Automatic-Bed-Leveling-Artillery-02.jpg"
+      ],
+      "specs": {
+        "brand": "Artillery",
+        "compatibleWith": "Artillery Genius"
+      },
+      "minPrice": 24990,
+      "maxPrice": 24990,
+      "storeCount": 1,
+      "updatedAt": "2026-04-02T06:55:56.047Z",
+      "createdAt": "2026-04-01T18:59:15.120Z",
+      "entries": [
+        {
+          "storeId": "cimech3d",
+          "url": "https://www.cimech3d.cl/producto/kit-de-nivelacion-automatica-abl-para-artillery-x2-genius-pro/",
+          "price": 24990,
+          "stock": "out"
+        }
+      ],
+      "history": [
+        {
+          "storeId": "cimech3d",
+          "price": 24990,
+          "recordedAt": "2026-04-01T18:30:45.324Z"
+        }
+      ]
+    },
+    {
+      "slug": "placa-madre-para-artillery-x3-pro-y-x3-plus",
+      "id": "placa-madre-para-artillery-x3-pro-y-x3-plus",
+      "name": "Placa madre para Artillery X3 Pro y X3 Plus",
+      "brand": "Artillery",
+      "categoryId": "repuestos",
+      "description": "",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/1a_a33d17d4-4ecd-41d8-bdb6-1c4ce1f9f494.png?v=1756763294"
+      ],
+      "specs": {
+        "brand": "Artillery",
+        "partType": "Placa",
+        "compatibleWith": "Artillery Hornet"
+      },
+      "minPrice": 45000,
+      "maxPrice": 45000,
+      "storeCount": 1,
+      "updatedAt": "2026-04-02T06:55:56.047Z",
+      "createdAt": "2026-04-01T19:01:52.938Z",
+      "entries": [
+        {
+          "storeId": "afel",
+          "url": "https://afel.cl/products/motherboards",
+          "price": 45000,
+          "stock": "out"
+        }
+      ],
+      "history": [
+        {
+          "storeId": "afel",
+          "price": 45000,
+          "recordedAt": "2026-04-01T18:39:28.373Z"
+        }
+      ]
+    },
+    {
       "slug": "disipador-artillery",
       "id": "disipador-artillery",
       "name": "Disipador Artillery",
@@ -66718,77 +66728,6 @@
           "storeId": "tecnosistec",
           "price": 17990,
           "recordedAt": "2026-04-01T23:15:29.905Z"
-        }
-      ]
-    },
-    {
-      "slug": "placa-madre-para-artillery-x3-pro-y-x3-plus",
-      "id": "placa-madre-para-artillery-x3-pro-y-x3-plus",
-      "name": "Placa madre para Artillery X3 Pro y X3 Plus",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/1a_a33d17d4-4ecd-41d8-bdb6-1c4ce1f9f494.png?v=1756763294"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "partType": "Placa",
-        "compatibleWith": "Artillery Hornet"
-      },
-      "minPrice": 45000,
-      "maxPrice": 45000,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T06:55:56.047Z",
-      "createdAt": "2026-04-01T19:01:52.938Z",
-      "entries": [
-        {
-          "storeId": "afel",
-          "url": "https://afel.cl/products/motherboards",
-          "price": 45000,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "afel",
-          "price": 45000,
-          "recordedAt": "2026-04-01T18:39:28.373Z"
-        }
-      ]
-    },
-    {
-      "slug": "kit-de-nivelacion-automatica-abl-para-artillery-x2-y-genius-pro",
-      "id": "kit-de-nivelacion-automatica-abl-para-artillery-x2-y-genius-pro",
-      "name": "Kit de nivelación automática ABL para Artillery X2 y genius pro",
-      "brand": "Artillery",
-      "categoryId": "repuestos",
-      "description": "",
-      "images": [
-        "https://www.cimech3d.cl/wp-content/uploads/2022/06/ABL-Sensor-Automatic-Bed-Leveling-Artillery-02.jpg"
-      ],
-      "specs": {
-        "brand": "Artillery",
-        "compatibleWith": "Artillery Genius"
-      },
-      "minPrice": 24990,
-      "maxPrice": 24990,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T06:55:56.047Z",
-      "createdAt": "2026-04-01T18:59:15.120Z",
-      "entries": [
-        {
-          "storeId": "cimech3d",
-          "url": "https://www.cimech3d.cl/producto/kit-de-nivelacion-automatica-abl-para-artillery-x2-genius-pro/",
-          "price": 24990,
-          "stock": "out"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "cimech3d",
-          "price": 24990,
-          "recordedAt": "2026-04-01T18:30:45.324Z"
         }
       ]
     },
@@ -71733,11 +71672,11 @@
       ]
     },
     {
-      "slug": "fdm-creality-kit-lampara-led-para-serie-ender",
-      "id": "fdm-creality-kit-lampara-led-para-serie-ender",
+      "slug": "kit-lampara-led-para-impresora-3d-creality-serie-ender",
+      "id": "kit-lampara-led-para-impresora-3d-creality-serie-ender",
       "name": "Kit Lampara Led para Impresora 3D Creality Serie Ender",
       "brand": "Creality",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://cdn.shopify.com/s/files/1/0658/3133/8136/files/kit_lampara_Impresora.png?v=1767482447"

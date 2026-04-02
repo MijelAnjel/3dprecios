@@ -217,15 +217,17 @@ export function inferCategory(name: string, path: string): string {
     // Térmicos y hotend
     /\bcalefactor\b|\bheater[\s-]?block\b|\btermistor\b|thermistor|thermocouple|termopar|heatbreak|heat\s*break/i.test(n) ||
     // Boquillas (singular y plural), gargantas y extrusores
-    /\bnozzle\b|\bboquillas?\b|\bextrusor\b|\bextruder\b|\bbowden\b|\bptfe\b(?!\s*filament)|\bhotend\b/i.test(n) ||
+    /\bnozzle\b|\bboquillas?\b|\bextrusor\b|\bextruder\b|\bbowden\b|\bptfe\b(?!\s*filament)|\bhotend\b|\bhot[\s-]?end\b/i.test(n) ||
     /\bgarganta\b|\bthroat\b|tubo\s*(de\s*)?calor/i.test(n) ||
     // Engranajes y piezas de extrusión
     /\bengranaje\b|\bgear\b.*extru|extru.*\bgear\b|\bmk8\b|\bmk\s*8\b|\bdual\s*drive\b|\bbmg\b/i.test(n) ||
     // Cables planos FFC/FPC para ejes de impresoras
     /cable\b.*(plano|ffc|fpc).*(eje|artillery|ender|bambu|creality|prusa)/i.test(n) ||
     /(eje\s*[xyz]|artillery|ender|bambu|creality).*cable\s*(plano|ffc|fpc)/i.test(n) ||
+    // Volcano / E3D Volcano (ecosistema de boquilla/hotend de alto caudal) — siempre repuesto
+    /\bvolcano\b/i.test(n) ||
     // Block de aluminio de tipo Volcano y similares (repuesto hotend)
-    /block\s*aluminio\s*(volcano|v6|mk8)|volcano\s*block|bloque\s*aluminio\s*volcano/i.test(n) ||
+    /block\s*aluminio\s*(v6|mk8)|volcano\s*block|bloque\s*aluminio\s*volcano/i.test(n) ||
     // Acoples y conectores de cabeza de impresora
     /acople\s*cabeza|conector\s*acople\s*cabeza|head\s*connector/i.test(n) ||
     // Silicona para bloques / protectores de hotend
@@ -269,10 +271,10 @@ export function inferCategory(name: string, path: string): string {
     /estructura\s*bambu|bambu.*enclosure|enclosure.*bambu|bambu.*estructura/i.test(n) ||
     // Electrónica de impresoras 3D (mainboards, placas madre 3D)
     /\bmainboard\b|placa\s*madre.*impr|placa\s*base.*impr|raspberry.*impr/i.test(n) ||
-    /placa\s*(madre|pcb|controladora)\s*(artillery|creality|ender|bambu|prusa|anycubic|elegoo)/i.test(n) ||
+    /placa\s*(madre|pcb|controladora)\s*(para\s*)?(artillery|creality|ender|bambu|prusa|anycubic|elegoo)/i.test(n) ||
     /placa\s*(madre|pcb|controladora)\s*(eje|x\d?|z\d?)/i.test(n) ||
-    // Placa madre genérica / silenciosa para impresoras (sin marca en el nombre pero con modelo)
-    /placa\s*madre\s*(silenciosa|32[\s-]?bit)\b/i.test(n) ||
+    // Placa madre/silenciosa para impresoras (con o sin "madre" antes de "silenciosa")
+    /placa\s*(madre\s*)?(silenciosa|32[\s-]?bit)\b/i.test(n) ||
     // Placa de impresora por marca/modelo específico
     /placa\s*(impresora|impresi[oó]n)\s*3d\b/i.test(n) ||
     /\bplaca\s*(madre|pcb)\s*32[\s-]?bit\b/i.test(n) ||
@@ -285,8 +287,9 @@ export function inferCategory(name: string, path: string): string {
     /pantalla\s+(lcd|tft|t[aá]ctil).*(artillery|creality|ender|prusa|bambu|anycubic|elegoo)/i.test(n) ||
     /(artillery|creality|ender|prusa|bambu|anycubic|elegoo).*pantalla\s+(lcd|tft|t[aá]ctil)/i.test(n) ||
     // Motores paso a paso para impresoras 3D (cuando se menciona eje o marca de impresora)
-    /motor\s+paso\s+a\s+paso.*(eje|artillery|ender|creality)/i.test(n) ||
-    /(eje\s+[xyz]|artillery|ender|creality).*motor\s+paso/i.test(n) ||
+    // Soporta variantes como "Motor 42/48 paso a paso eje X Ender 6"
+    /motor(\s+[\d/]+)?\s+paso\s+a\s+paso.*(eje|artillery|ender|creality)/i.test(n) ||
+    /(eje\s+[xyz]|artillery|ender|creality).*motor(\s+[\d/]+)?\s+paso/i.test(n) ||
     // Fuentes de poder para impresoras 3D
     /fuente\s+(de\s+)?poder.*(impres|artillery|creality|ender|prusa|bambu|meanwell)/i.test(n) ||
     /\bmeanwell\b.*\d+[vV]\s*\d/i.test(n) ||
@@ -298,6 +301,8 @@ export function inferCategory(name: string, path: string): string {
     /acoplamiento\s*flexible|acopl.*flexi|flexible.*acopl|spider\s*coupling|jaw\s*coupling/i.test(n) ||
     // Módulos LED / iluminación específica para impresoras 3D
     /m[oó]dulo\s*led.*(impresi|artillery|creality|ender|bambu|prusa)|led.*(strip|tira).*impresi/i.test(n) ||
+    /l[aá]mpara\s*led.*(impres|creality|ender|bambu|artillery|prusa)/i.test(n) ||
+    /(creality|ender|bambu|artillery|prusa).*l[aá]mpara\s*led/i.test(n) ||
     // Cables de motor stepper (mayormente para impresoras 3D)
     /cable.*(motor\s*stepper|stepper\s*motor)|stepper.*cable.*motor/i.test(n) ||
     // Kits de herramientas y limpieza asociados a impresoras (no genéricos)
@@ -421,7 +426,8 @@ export function inferCategory(name: string, path: string): string {
     // Ensamblaje de varillas / eje de carbono para impresoras
     /ensamblaje\s*(de\s*)?(varillas|eje)\s*(carbono|x|y|z)?\s*(bambu|creality|ender|artillery|prusa)/i.test(n) ||
     // Kit de nivelación automática ABL (sensor + soporte) para impresoras
-    /kit\s*(de\s*)?nivelaci[oó]n\s*(autom[aá]tica|abl)\s*(para\s*)?(artillery|creality|ender|bambu|prusa)/i.test(n) ||
+    // Soporta "Kit de nivelación automática ABL para Artillery" (ABL puede ir entre automática y para)
+    /kit\s*(de\s*)?nivelaci[oó]n\s*(autom[aá]tica\s*)?(abl\s*)?(para\s*)?(artillery|creality|ender|bambu|prusa)/i.test(n) ||
     // Aguja / punta de repuesto para sistema de nivelación ABL
     /aguja\s*(de\s*)?repuesto\s*(para\s*)?(nivelaci[oó]n|abl)\b/i.test(n) ||
     /\baguja\b.*(nivelaci[oó]n|abl|artillery|creality|ender)\b/i.test(n) ||
@@ -451,8 +457,11 @@ export function inferCategory(name: string, path: string): string {
     // Relé de estado sólido SSR para impresoras
     /rel[eé]\s*(estado\s*)?s[oó]lido\s*(ssr|dc|ac)?\b/i.test(n) ||
     /\bssr\s*(dc|ac|[\s-]\d+[av])\b/i.test(n) ||
-    // Hub de filamento para impresoras específicas (última línea — sin ||)
-    /\bhub\s+(para|de)\s*(anycubic|bambu|bambulab|creality|ender|prusa|artillery|kobra|impresora)\b/i.test(n);
+    // Hub de filamento para impresoras específicas
+    /\bhub\s+(para|de)\s*(anycubic|bambu|bambulab|creality|ender|prusa|artillery|kobra|impresora)\b/i.test(n) ||
+    // Catch-all sistémico: «Kit/Set [componente] para [marca conocida]» → siempre repuesto
+    // Evita que nuevos accesorios no cubiertos caigan en impresoras-fdm
+    /^(kit|set)\b.{3,60}\bpara\s+(artillery|creality|ender\b|bambu|bambulab|prusa|anycubic|elegoo|anet|qidi|voron)\b/i.test(n);
 
   if (isRepuesto) return 'repuestos';
 
@@ -501,14 +510,22 @@ export function inferCategory(name: string, path: string): string {
   const filamentByPath = /filament/i.test(p);
   // Un producto es filamento si su nombre contiene keywords de material
   // SIN mencionar "impresora/printer" (evita "Filamento compatible con impresora X")
-  const filamentByName = /\bpla\b|polil[aá]ctico|\bpetg\b|\babs\b|\basa\b|\btpu\b|\btpe\b|\bpa\s*nylon\b|\bfilamento\b|\bfilament\b/i.test(n);
+  // filamentByName: detecta nombres con material de filamento; incluye plural "Filamentos"
+  const filamentByName = /\bpla\b|polil[aá]ctico|\bpetg\b|\babs\b|\basa\b|\btpu\b|\btpe\b|\bpa\s*nylon\b|\bfilamentos?\b|\bfilament\b/i.test(n);
   const isPrinterWord  = /\bimpresora\b|\bprinter\b/i.test(n);
 
   // Detectar si el producto es claramente una impresora FDM por nombre (marca+modelo conocidos)
   // aunque venga bajo path /filamentos/ (ej. Imperio3D categoriza impresoras Bambu bajo filamentos)
+  // isClearlyPrinterFDM: verdadero sólo cuando el nombre incluye marca + modelo explícito de impresora.
+  // IMPORTANTE: no usar sólo la marca (ej. "bambu lab") porque "Filamentos Bambu Lab PPA-CF"
+  // también tiene la marca pero es un filamento, no una impresora.
   const isClearlyPrinterFDM =
-    /bambu\.?lab\b|\bbambulab\b/i.test(n) ||
-    /\bartillery\s+sidewinder|\bartillery\s+genius|\bartillery\s+hornet/i.test(n) ||
+    // Bambu Lab/Bambulab/Bambu + modelo de impresora específico
+    // bambu[\s.]*lab cubre "Bambu Lab", "BambuLab", "Bambu.Lab" y "Bambulab"
+    /bambu[\s.]*lab\s*(a1\b|a1\s*mini\b|a1\s*max\b|p1[sp]?\b|x1[ce]?\b|h2[sd]?\b|p2s\b|h2d\b)/i.test(n) ||
+    /\bbambulab\s*(a1\b|a1\s*mini\b|a1\s*max\b|p1[sp]?\b|x1[ce]?\b|h2[sd]?\b|p2s\b)/i.test(n) ||
+    /\bbambu\s+(a1\b|a1\s*mini\b|p1[sp]?\b|x1[ce]?\b)/i.test(n) ||
+    /\bartillery\s+(sidewinder|genius|hornet)/i.test(n) ||
     /\bprusa\s+(mk\d|xl\b|mini|core)/i.test(n) ||
     /elegoo\s*(neptune|centauri|saturn(?!\s*wash))/i.test(n) ||
     /\bams\s*(lite|combo)?\s*(bambu|bambulab|a1\b|x1\b|p1\b|a1\s*series)/i.test(n) ||
@@ -527,7 +544,7 @@ export function inferCategory(name: string, path: string): string {
     if (/\bpetg\b/i.test(n) || /petg/i.test(p))                   return 'filamentos-petg';
     if (/\babs\b|\basa\b/i.test(n) || /\babs\b|\basa\b/i.test(p)) return 'filamentos-abs';
     if (/\btpu\b|\btpe\b/i.test(n) || /tpu|tpe/i.test(p))         return 'filamentos-tpu';
-    if (/\bnylon\b|\bpa12\b|\bpa6\b|\bpa\b(?=[\s-]?\d)|policarbonato|\bpc\b(?![\s-]*factory)|-cf\b|fibra[\s-]*(carbono|vidrio)|\bhips\b|\bpva\b|\bpeek\b|\bpei\b|\bultem\b/i.test(n))
+    if (/\bnylon\b|\bpa12\b|\bpa6\b|\bpa\b(?=[\s-]?\d)|policarbonato|\bpc\b(?![\s-]*factory)|-cf\b|-gf\b|fibra[\s-]*(carbono|vidrio)|\bhips\b|\bpva\b|\bpeek\b|\bpei\b|\bultem\b|\bppa\b|\bpps\b/i.test(n))
       return 'filamentos-especiales';
     return 'filamentos-pla';
   }

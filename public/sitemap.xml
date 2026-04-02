@@ -4064,7 +4064,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fdm-artillery-hot-end</loc>
+    <loc>https://dprecios.web.app/productos/hot-end-artillery</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -4934,7 +4934,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fdm-creality-placa-silenciosa-ender-5-ender-3-v2</loc>
+    <loc>https://dprecios.web.app/productos/creality-placa-silenciosa-impresora-3d-ender-5-ender-3-v2</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -6416,7 +6416,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fdm-artillery-kit-volcano-para</loc>
+    <loc>https://dprecios.web.app/productos/kit-volcano-para-artillery</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10436,18 +10436,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fdm-artillery-kit-de-nivelacion-automatica-abl-para-x2-y-genius-pro</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-artillery-placa-madre-para-x3-pro-y-x3-plus</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/fil-isanmate-abs-1000g-175mm-blanco</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -10521,6 +10509,18 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/bambu-lab-p1s-combo-con-ams</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-de-nivelacion-automatica-abl-para-artillery-x2-y-genius-pro</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-madre-para-artillery-x3-pro-y-x3-plus</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10629,18 +10629,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/fuente-de-poder-para-impresora-3d-anet-et4</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-madre-para-artillery-x3-pro-y-x3-plus</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-de-nivelacion-automatica-abl-para-artillery-x2-y-genius-pro</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -11498,7 +11486,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fdm-creality-kit-lampara-led-para-serie-ender</loc>
+    <loc>https://dprecios.web.app/productos/kit-lampara-led-para-impresora-3d-creality-serie-ender</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
