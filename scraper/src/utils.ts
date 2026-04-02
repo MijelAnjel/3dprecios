@@ -271,6 +271,11 @@ export function inferCategory(name: string, path: string): string {
     /\bmainboard\b|placa\s*madre.*impr|placa\s*base.*impr|raspberry.*impr/i.test(n) ||
     /placa\s*(madre|pcb|controladora)\s*(artillery|creality|ender|bambu|prusa|anycubic|elegoo)/i.test(n) ||
     /placa\s*(madre|pcb|controladora)\s*(eje|x\d?|z\d?)/i.test(n) ||
+    // Placa madre genérica / silenciosa para impresoras (sin marca en el nombre pero con modelo)
+    /placa\s*madre\s*(silenciosa|32[\s-]?bit)\b/i.test(n) ||
+    // Placa de impresora por marca/modelo específico
+    /placa\s*(impresora|impresi[oó]n)\s*3d\b/i.test(n) ||
+    /\bplaca\s*(madre|pcb)\s*32[\s-]?bit\b/i.test(n) ||
     // Controladores de impresoras (BTT, MKS, etc.)
     /\bbigtreetech\b|\bbtt\b|\bmks\s*(gen|sbase|robin)|skr\s*(mini|pro|v\d)|octopus\s*pro|spider\s*v\d/i.test(n) ||
     /\bramps\s*\d\.?\d?\b|tarjeta\s+controlador\s+ramps/i.test(n) ||
@@ -335,19 +340,22 @@ export function inferCategory(name: string, path: string): string {
     /bolsas?\s*(para|de)\s*(sellado|vac[ií]o)|sellado.*vac[ií]o.*filament/i.test(n) ||
     // Aceite lubricante / grasa de mantenimiento para impresoras
     /\baceite\s+lubricante\b/i.test(n) ||
-    /\bgrasa\s*(para\s*(impresoras?|impresi[oó]n|3d)\b)/i.test(n) ||
+    /\bgrasa\s+lubricante\b|\bgrasa\s*(para\s*(impresoras?|impresi[oó]n|3d)\b)/i.test(n) ||
     // Bomba de sellado al vacío (manual o eléctrica)
     /bomba\s*(de\s*)?(sellado|vac[ií]o)/i.test(n) ||
     // Resortes para cama de impresora (bed springs)
     /resortes?\s*(para\s*)?(cama|impresora)\b/i.test(n) ||
-    // Alicate de corte diagonal (herramienta de remoción de soportes)
-    /alicate\s*(de\s*corte|diagonal)/i.test(n) ||
+    // Kit de resortes de nivelación de cama
+    /kit\s*\d*\s*resortes?\s*(de\s*)?(nivelaci[oó]n|cama)\b/i.test(n) ||
+    // Alicate / alicates de corte (herramienta de remoción de soportes)
+    /alicates?\s*(de\s*corte|diagonal|precision)/i.test(n) ||
     // Gomitas de nivelación / almohadillas de esquinas de cama
     /gomitas?\s*(para\s*)?(nivelaci[oó]n|cama)\b/i.test(n) ||
     // Cama / pad de aislamiento térmico
     /\baislamiento\s*t[eé]rmico\b/i.test(n) ||
-    // Disipador heatsink para hotend — E3D V6, Volcano, etc.
-    /\bdisipador\b.*(e3d|v6|hotend|cold[\s-]?end|volcano)/i.test(n) ||
+    // Disipador heatsink para hotend — E3D V6, Volcano, etc. o marca de impresora
+    /\bdisipador\b.*(e3d|v6|hotend|cold[\s-]?end|volcano|artillery|creality|ender|bambu|prusa|anycubic)/i.test(n) ||
+    /\bdisipador\s+(artillery|creality|ender|bambu|prusa|anycubic)\b/i.test(n) ||
     // Producto marcado explícitamente con "Repuesto" al inicio del nombre
     /^repuesto\b/i.test(n) ||
     // Placa carruaje de eje X/Y/Z
@@ -355,9 +363,95 @@ export function inferCategory(name: string, path: string): string {
     // Cable flex / flexible para ejes de impresoras
     /cable\s*(flex|flexible)\b.*(eje|artillery|ender|creality|prusa|bambu|anycubic|elegoo)\b/i.test(n) ||
     /(eje|artillery|ender|creality|prusa|anycubic).*cable\s*(flex|flexible)\b/i.test(n) ||
+    // Cable gold finger (conector FFC específico de impresoras Artillery)
+    /cable\s*gold[\s-]?finger/i.test(n) ||
     // Teflón (tubo PTFE) para modelo/marca específica de impresora
     /tefl[oó]n\s+(para|de)\s*(ace\b|kobra\b|photon\b|mega\b|bambu\b|ender\b|creality\b|anycubic\b|artillery\b|prusa\b|3d\b)/i.test(n) ||
     // Hub de filamento para impresoras específicas
+    /\bhub\s+(para|de)\s*(anycubic|bambu|bambulab|creality|ender|prusa|artillery|kobra|impresora)\b/i.test(n) ||
+    // Protector de silicona para bloque calefactor (hotend)
+    /protector\s*(de\s*)?silicona\s*(creality|artillery|bambu|ender|prusa|anycubic|k1\b|serie)/i.test(n) ||
+    /protector\s*(de\s*)?silicona\s*(para\s*)?(hotend|bloque|impresora)/i.test(n) ||
+    // Espátula de despegue para impresión 3D
+    /esp[aá]tula\s*(de\s*)?(despegue|remoci[oó]n)\b/i.test(n) ||
+    // Espiral / recubrimiento de cables (nombrado con marca o mm)
+    /espiral\s*(negro|blanco|cable|mm|mts?|para|impresora)/i.test(n) ||
+    // Placa de vidrio / carborundum (superficie de impresión reemplazable)
+    /placa\s*(de\s*)?vidrio\s*(carborundum|templado|borosilicato)?\s*(anet|creality|ender|bambu|artillery|prusa|\d+[xX]\d+)/i.test(n) ||
+    /placa\s*de\s*vidrio\b/i.test(n) ||
+    // Filtro de aire (carbón activado, HEPA, malla) para impresoras
+    /filtro\s*(de\s*)?aire\s*(de\s*)?(carbon|carbón|activado|hepa|creality|bambu|x1|p1|ender)/i.test(n) ||
+    /(bambu|creality|ender|artillery).*filtro\s*(de\s*)?aire/i.test(n) ||
+    // Antena WiFi para impresoras 3D por marca
+    /antena\s*(wifi|wi-fi)\s*(para\s*)?(bambu|creality|ender|anycubic|elegoo|artillery|prusa)\b/i.test(n) ||
+    // Adaptador de tubo PTFE (Bambu 4-en-1, etc.)
+    /adaptador\s*(de\s*tubo|tubo)\s*(de\s*)?(tefl[oó]n|ptfe)/i.test(n) ||
+    /(bambu|creality|ender)\s*adaptador.*tubo/i.test(n) ||
+    // Bus cable / cable de bus para impresoras Bambu
+    /\bbus\s*cable\b|\bcable\s*bus\b/i.test(n) ||
+    // Cable USB específico para impresoras (Bambu USB-C, etc.)
+    /(bambu|creality|ender|artillery|anycubic)\s*.*usb[\s-]?c?\s*cable/i.test(n) ||
+    /cable\s*usb[\s-]?c?\s*(para|de)\s*(bambu|creality|ender|impresora)/i.test(n) ||
+    // Cama magnética / flexible (superficie de impresión)
+    /cama\s*magn[eé]tica\s*\d+[xX]\d+/i.test(n) ||
+    // Base antivibración para impresoras
+    /base\s*antivibrac[ií][oó]n\b/i.test(n) ||
+    // Driver TMC, A4988, DRV genérico sin marca de placa controladora
+    /driver\s*silencioso\s*(tmc|a4988|drv)\d*/i.test(n) ||
+    /\btmc\s*22[01]\d\b|\btmc\s*25\d\d\b/i.test(n) ||
+    // Kit de pantalla / LCD para modelos Ender/Artillery/Bambu
+    /kit\s*pantalla\s*(ender|bambu|artillery|creality|prusa|anycubic)\b/i.test(n) ||
+    /kit\s*pantalla\s*ender\b/i.test(n) ||
+    // Pantalla táctil / LCD para impresoras (por modelo)
+    /pantalla\s*(touch|lcd|tft|t[aá]ctil|original)\s*(bambu|creality|ender|anet|prusa|artillery|anycubic)\b/i.test(n) ||
+    /(bambu|creality|ender|anet|prusa|artillery|anycubic)\s*.*pantalla\s*(touch|lcd|tft|t[aá]ctil)/i.test(n) ||
+    // Motor XY / motor de eje para impresoras Bambu/Ender/Artillery
+    /(bambu|ender|creality|artillery|prusa)\s*(lab\s*)?(motor|motor\s*(xy|x|y|z)\b)/i.test(n) ||
+    /motor\s*(xy|nema)\s*(artillery|ender|bambu|creality|prusa)\b/i.test(n) ||
+    // Cubierta de vidrio superior para Bambu Lab
+    /(bambu|creality|ender)\s*(lab\s*)?cubierta\s*(de\s*)?(vidrio|cristal)/i.test(n) ||
+    /cubierta\s*(de\s*)?(vidrio|cristal)\s*(bambu|creality|ender)/i.test(n) ||
+    // Kit de extrusión directa / upgrade de extrusor para Ender/Artillery
+    /kit\s*extrusi[oó]n\s*(directa|dual|bmg)?\s*(ender|artillery|creality|prusa|bambu)/i.test(n) ||
+    // Set de extrusión para impresoras específicas
+    /set\s*(de\s*)?extrusi[oó]n\s*(para\s*)?(impresora|ender|anet|creality|artillery)/i.test(n) ||
+    // Cabezal de impresión completo (hotend assembly) para impresoras
+    /cabezal\s*(completo|de\s*impresi[oó]n)\s*(anycubic|bambu|creality|ender|artillery|prusa)/i.test(n) ||
+    /(anycubic|bambu|creality|ender|artillery|prusa)\s*cabezal\s*(completo)?/i.test(n) ||
+    // Ensamblaje de varillas / eje de carbono para impresoras
+    /ensamblaje\s*(de\s*)?(varillas|eje)\s*(carbono|x|y|z)?\s*(bambu|creality|ender|artillery|prusa)/i.test(n) ||
+    // Kit de nivelación automática ABL (sensor + soporte) para impresoras
+    /kit\s*(de\s*)?nivelaci[oó]n\s*(autom[aá]tica|abl)\s*(para\s*)?(artillery|creality|ender|bambu|prusa)/i.test(n) ||
+    // Aguja / punta de repuesto para sistema de nivelación ABL
+    /aguja\s*(de\s*)?repuesto\s*(para\s*)?(nivelaci[oó]n|abl)\b/i.test(n) ||
+    /\baguja\b.*(nivelaci[oó]n|abl|artillery|creality|ender)\b/i.test(n) ||
+    // Arduino UNO (electrónica de propósito general, no impresora)
+    /\barduino\s*(uno|nano|mega|r3)\b/i.test(n) ||
+    // Servicios / cursos / mantenimiento preventivo (no productos físicos)
+    /\bcurso\s*(impresi[oó]n|3d|impresora)/i.test(n) ||
+    /\baprende\s*(a\s*)?(usar|imprimir)\b/i.test(n) ||
+    /\barmado\s*y\s*puesta\s*a\s*punto\b/i.test(n) ||
+    /\bmantenimiento\s*(preventivo|correctivo)\s*(de\s*)?(ender|bambu|creality|artillery|prusa|impresora)\b/i.test(n) ||
+    // Caja de herramientas para impresoras
+    /caja\s*(de\s*)?herramientas\s*(para\s*)?(impresora|3d|impresi[oó]n)/i.test(n) ||
+    // Kit de herramientas + limpieza genérico para impresión 3D
+    /kit\s*(de\s*)?(herramientas|limpieza)\s*(y\s*(limpieza|herramientas))?\s*(para\s*)?(impresoras?|impresi[oó]n\s*3d|3d)\b/i.test(n) ||
+    // Conjunto/kit de relé sólido para impresoras
+    /conjunto.*rel[eé]\s*(s[oó]lido|solido)\b/i.test(n) ||
+    // Lápiz de impresión 3D (en nombre con "impresión" no "impresora")
+    /l[aá]piz\s*(de\s*)?impresi[oó]n\s*3d/i.test(n) ||
+    // Cámara para impresoras 3D (por marca — distinto de cámara genérica)
+    /c[aá]mara\s*(para|de|bambu|bambulab|x1|a1|p1|impresora|3d)\b/i.test(n) ||
+    /(bambu|creality|ender|artillery)\s*(lab\s*)?c[aá]mara\b/i.test(n) ||
+    // Ensamblaje de varillas / ejes de carbono (repuesto estructural de impresoras)
+    /ensamblaje\s*(de\s*)?(varillas?|ejes?)\s*(de\s*)?(carbono|carbon|x\b|y\b|z\b)\s*(bambu|creality|ender|artillery|prusa|de\s*bambu|del\s*eje)?/i.test(n) ||
+    // Kit de mantenimiento y upgrade por marca (Artillery, Creality, etc.)
+    /kit\s*(de\s*)?(mantenimiento|upgrade|reparaci[oó]n)\s*(y\s*(upgrade|mantenimiento))?\s*(artillery|bambu|creality|ender|prusa|anycubic)\b/i.test(n) ||
+    /\bkit\s+mantenimiento\b|\bkit\s+upgrade\s+(artillery|bambu|creality|ender)\b/i.test(n) ||
+    // Relé de estado sólido SSR para impresoras
+    /rel[eé]\s*(estado\s*)?s[oó]lido\s*(ssr|dc|ac)?\b/i.test(n) ||
+    /\bssr\s*(dc|ac|[\s-]\d+[av])\b/i.test(n) ||
+    // Hub de filamento para impresoras específicas (última línea — sin ||)
     /\bhub\s+(para|de)\s*(anycubic|bambu|bambulab|creality|ender|prusa|artillery|kobra|impresora)\b/i.test(n);
 
   if (isRepuesto) return 'repuestos';
@@ -805,7 +899,49 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
     const waMatch = name.match(/(\d{2,4})\s*[xX×]\s*(\d{2,4})\s*[xX×]\s*(\d{2,4})/);
     if (waMatch) {
       specs['workArea'] = `${waMatch[1]}×${waMatch[2]}×${waMatch[3]}mm`;
+      // Rango de volumen de impresión
+      const minDim = Math.min(parseInt(waMatch[1]), parseInt(waMatch[2]));
+      if (minDim >= 400)       specs['buildVolume'] = 'Industrial / XL (400mm+)';
+      else if (minDim >= 300)  specs['buildVolume'] = 'Grande (300mm+)';
+      else if (minDim >= 220)  specs['buildVolume'] = 'Estándar (220-299mm)';
+      else                     specs['buildVolume'] = 'Pequeño (hasta 220mm)';
     }
+
+    // Cinemática
+    if (/\bcorexY\b|core[\s-]?xy/i.test(name))              specs['kinematics'] = 'CoreXY';
+    else if (/\bdelta\b|\bflsun\b|kossel/i.test(name))       specs['kinematics'] = 'Delta';
+    else if (/bed[\s-]?slinger|cartesian|cartesiana/i.test(name)) specs['kinematics'] = 'Cartesiana';
+    // Inferir por modelos conocidos
+    else if (/bambu\s*(lab\s*)?(a1|p1|x1|h2)|voron|k[12]\b|prusa\s*core|ratrig/i.test(name)) specs['kinematics'] = 'CoreXY';
+    else if (/\bender\b|\bneptune\b|\bartillery\b|aquila|cr[\s-]?\d+/i.test(name))            specs['kinematics'] = 'Cartesiana';
+
+    // Tipo de extrusión
+    if (/direct[\s-]?drive|extrusi[oó]n\s*directa/i.test(name))  specs['extruderType'] = 'Directa';
+    else if (/bowden/i.test(name))                                  specs['extruderType'] = 'Bowden';
+    // Inferir por modelos
+    else if (/bambu|prusa\s*(mk4|xl)|k[12]\b|voron|ender[\s-]?3\s*(s1|pro\+)|artist/i.test(name)) specs['extruderType'] = 'Directa';
+    else if (/ender[\s-]?3\s*(v2|pro\b)|neptune[\s-]?2/i.test(name)) specs['extruderType'] = 'Bowden';
+
+    // Cerramiento
+    if (/enclosure|cerrada|enclosed|cerra[dm]/i.test(name))      specs['enclosure'] = 'Cerrada';
+    else if (/abierta|open[\s-]?frame/i.test(name))               specs['enclosure'] = 'Abierta';
+    // Inferir por modelos
+    else if (/bambu\s*(lab\s*)?(p1s|x1c|x1e|h2)|qidi.*speed|voron.*v[23]/i.test(name)) specs['enclosure'] = 'Cerrada';
+    else if (/bambu\s*(lab\s*)?(a1\b|p1p)/i.test(name))           specs['enclosure'] = 'Abierta';
+
+    // Velocidad de impresión
+    if (/\b[3-9]\d{2}\s*mm\/s|\b[1-9]\d{3}\s*mm\/s/i.test(name))    specs['maxSpeed'] = 'Ultra (300+mm/s)';
+    else if (/\b[1-2]\d{2}\s*mm\/s/i.test(name))                      specs['maxSpeed'] = 'Alta (100-299mm/s)';
+    // Inferir por modelos
+    else if (/bambu|k[12]\b|voron|ender[\s-]?3\s*s1\s*pro|neptune[\s-]?4\s*pro/i.test(name)) specs['maxSpeed'] = 'Ultra (300+mm/s)';
+
+    // Nivelación automática
+    if (/auto[\s-]?level|nivelaci[oó]n\s*autom[aá]tica|abl\b|crtouch|bltouch|cr[\s-]?touch/i.test(name))
+      specs['autoLevel'] = 'Sí';
+
+    // Multimaterial / multicolor
+    if (/ams\b|mmu\b|multi[\s-]?material|multi[\s-]?color|multicolor|combo/i.test(name))
+      specs['multiMaterial'] = 'Sí';
   }
 
   // ── Impresoras de Resina: resolución UV y tecnología ─────────────────
