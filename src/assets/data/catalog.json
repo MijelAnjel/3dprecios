@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-04-02T06:06:55.231Z",
-    "productCount": 3167
+    "generatedAt": "2026-04-02T06:26:56.850Z",
+    "productCount": 3166
   },
   "stores": [
     {
@@ -6932,13 +6932,13 @@
       "id": "filtros-para-resina-de-impresion-3d",
       "name": "Filtros para resina de impresión 3D",
       "brand": "",
-      "categoryId": "filamentos-pla",
+      "categoryId": "accesorios-resina",
       "description": "",
       "images": [
         "https://capital3d.cl/wp-content/uploads/2024/08/filtro-resina.jpg"
       ],
       "specs": {
-        "type": "Estándar",
+        "type": "Herramienta",
         "diameter": "1.75"
       },
       "minPrice": 2500,
@@ -23466,7 +23466,7 @@
       "id": "agujas-limpia-boquillas",
       "name": "Agujas Limpia Boquillas",
       "brand": "",
-      "categoryId": "general",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://evstore.cl/wp-content/uploads/2022/05/Agujas-limpiadoras.jpg"
@@ -24278,6 +24278,11 @@
           "storeId": "horus3d",
           "price": 2200,
           "recordedAt": "2026-04-02T06:05:24.913Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 2200,
+          "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
     },
@@ -26157,12 +26162,14 @@
       "id": "boquillas-para-bambu-lab-series-x1-y-p1",
       "name": "Boquillas para Bambu Lab Series X1 y P1",
       "brand": "",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://evstore.cl/wp-content/uploads/2025/09/Boquillas-para-Bambu-Lab-Series-X1-y-P1-de-acero-endurecido-04-mm.jpg"
       ],
-      "specs": {},
+      "specs": {
+        "compatibleWith": "Bambu X1"
+      },
       "minPrice": 15550,
       "maxPrice": 15550,
       "storeCount": 1,
@@ -26189,7 +26196,7 @@
       "id": "boquillas-bambu-lab-serie-h2",
       "name": "Boquillas Bambu Lab Serie H2",
       "brand": "",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://evstore.cl/wp-content/uploads/2025/09/Boquillas-Bambu-Lab-Serie-H2-alto-flujo-02-mm.jpg"
@@ -26221,12 +26228,14 @@
       "id": "boquillas-bambu-lab-serie-a1",
       "name": "Boquillas Bambu Lab Serie A1",
       "brand": "",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://evstore.cl/wp-content/uploads/2025/09/Boquillas-Bambu-Lab-Serie-A1.jpg"
       ],
-      "specs": {},
+      "specs": {
+        "compatibleWith": "Bambu A1"
+      },
       "minPrice": 17550,
       "maxPrice": 17550,
       "storeCount": 1,
@@ -27384,14 +27393,15 @@
       "id": "garganta-bimetal-para-creality",
       "name": "Garganta bimetal para Creality",
       "brand": "Creality",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2022/08/Garganta-Ender-Bimetal4.png"
       ],
       "specs": {
         "brand": "Creality",
-        "diameter": "1.75"
+        "diameter": "1.75",
+        "partType": "Piezas Hotend"
       },
       "minPrice": 10000,
       "maxPrice": 10000,
@@ -27419,14 +27429,15 @@
       "id": "garganta-para-impresoras-creality",
       "name": "Garganta para impresoras Creality",
       "brand": "Creality",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2022/08/Garganta-Creality3.png"
       ],
       "specs": {
         "brand": "Creality",
-        "diameter": "1.75"
+        "diameter": "1.75",
+        "partType": "Piezas Hotend"
       },
       "minPrice": 2200,
       "maxPrice": 2200,
@@ -27659,14 +27670,15 @@
       "id": "silicona-para-bloque-mk8-de-creality",
       "name": "Silicona para bloque Mk8 de Creality",
       "brand": "Creality",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2022/09/Silicona-MK8-3.png"
       ],
       "specs": {
         "brand": "Creality",
-        "diameter": "1.75"
+        "diameter": "1.75",
+        "partType": "Extrusor"
       },
       "minPrice": 2000,
       "maxPrice": 2000,
@@ -28003,14 +28015,15 @@
       "id": "fuente-de-poder-kingroon-kp3s-24v-15a",
       "name": "Fuente de poder Kingroon KP3S 24V 15A",
       "brand": "Kingroon",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2023/04/Fuente-poder-KP3S.png"
       ],
       "specs": {
         "brand": "Kingroon",
-        "diameter": "1.75"
+        "diameter": "1.75",
+        "partType": "Fuente de Poder"
       },
       "minPrice": 25000,
       "maxPrice": 25000,
@@ -28038,13 +28051,14 @@
       "id": "silicona-para-bloque-v6",
       "name": "Silicona para bloque V6",
       "brand": "",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2023/05/NewV6.png"
       ],
       "specs": {
-        "diameter": "1.75"
+        "diameter": "1.75",
+        "partType": "Piezas Hotend"
       },
       "minPrice": 2000,
       "maxPrice": 2000,
@@ -28072,14 +28086,15 @@
       "id": "placa-madre-kingroon-kp3s-30",
       "name": "Placa madre Kingroon KP3S 3.0",
       "brand": "Kingroon",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2023/06/PlacaKP3S.png"
       ],
       "specs": {
         "brand": "Kingroon",
-        "diameter": "1.75"
+        "diameter": "1.75",
+        "partType": "Placa"
       },
       "minPrice": 45000,
       "maxPrice": 45000,
@@ -28107,14 +28122,15 @@
       "id": "placa-madre-kingroon-kp3s-pro-kp5l",
       "name": "Placa madre Kingroon KP3S PRO / KP5L",
       "brand": "Kingroon",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2023/06/PlacaKP3SPRO.png"
       ],
       "specs": {
         "brand": "Kingroon",
-        "diameter": "1.75"
+        "diameter": "1.75",
+        "partType": "Placa"
       },
       "minPrice": 46000,
       "maxPrice": 46000,
@@ -28291,14 +28307,15 @@
       "id": "garganta-para-kingroon-kp3s",
       "name": "Garganta para Kingroon KP3S",
       "brand": "Kingroon",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2023/09/Garganta-KP3S.png"
       ],
       "specs": {
         "brand": "Kingroon",
-        "diameter": "1.75"
+        "diameter": "1.75",
+        "partType": "Piezas Hotend"
       },
       "minPrice": 2200,
       "maxPrice": 2200,
@@ -28466,7 +28483,7 @@
       "id": "conector-neumatico-jp4-01",
       "name": "Conector neumático JP4-01",
       "brand": "",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2023/09/Conector-neumatico-JP4-01.png"
@@ -29023,13 +29040,14 @@
       "id": "motor-paso-a-paso-nema-14",
       "name": "Motor paso a paso Nema 14",
       "brand": "",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2024/05/Motor-Nema-14.png"
       ],
       "specs": {
-        "diameter": "1.75"
+        "diameter": "1.75",
+        "partType": "Motor"
       },
       "minPrice": 15000,
       "maxPrice": 15000,
@@ -29954,7 +29972,7 @@
       "id": "resina-jamg-he-abs-like-1kg",
       "name": "Resina Jamg He Abs Like 1KG",
       "brand": "",
-      "categoryId": "filamentos-abs",
+      "categoryId": "resinas",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2025/02/JH-Abs-Like-Grey.jpg"
@@ -31405,14 +31423,15 @@
       "id": "placa-madre-creality-hi",
       "name": "Placa madre Creality HI",
       "brand": "Creality",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2025/12/Placa-Madre-Creality-HI.png"
       ],
       "specs": {
         "brand": "Creality",
-        "diameter": "1.75"
+        "diameter": "1.75",
+        "partType": "Placa"
       },
       "minPrice": 58000,
       "maxPrice": 58000,
@@ -31741,7 +31760,7 @@
       "id": "pantalla-tactil-creality-hi",
       "name": "Pantalla táctil Creality HI",
       "brand": "Creality",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2026/03/Pantalla-Creality-HI.png"
@@ -42204,7 +42223,7 @@
       "id": "boquillas-v6-laton",
       "name": "Boquillas V6 Latón",
       "brand": "",
-      "categoryId": "accesorios",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2022/02/BoquillasV6-2.jpg"
@@ -42236,7 +42255,7 @@
       "id": "boquillas-volcano-acero",
       "name": "Boquillas Volcano Acero",
       "brand": "",
-      "categoryId": "accesorios",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2021/04/2021-04-09-21_53_03-E3d-V5-V6-Stainless-Steel-Brass-Volcano-Nozzle-For-3d-Printers-Hotend-For-E3d-Vo.png"
@@ -42268,7 +42287,7 @@
       "id": "boquillas-volcano-laton",
       "name": "Boquillas Volcano Laton",
       "brand": "",
-      "categoryId": "accesorios",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2021/04/2021-04-09-21_52_53-E3d-V5-V6-Stainless-Steel-Brass-Volcano-Nozzle-For-3d-Printers-Hotend-For-E3d-Vo.png"
@@ -55304,14 +55323,15 @@
       "id": "silicona-para-bloque-e3d-v5-kingroon-kp3s",
       "name": "Silicona para bloque E3D V5 (Kingroon KP3S)",
       "brand": "Kingroon",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2023/05/CalcetinV5.png"
       ],
       "specs": {
         "brand": "Kingroon",
-        "diameter": "1.75"
+        "diameter": "1.75",
+        "partType": "Piezas Hotend"
       },
       "minPrice": 2000,
       "maxPrice": 2000,
@@ -55437,7 +55457,7 @@
       "id": "limpiador-de-boquillas-5-unidades-04mm",
       "name": "Limpiador de boquillas 5 Unidades (0.4mm)",
       "brand": "",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2023/03/Nozzle-Cleaning.png"
@@ -55776,7 +55796,7 @@
       "id": "boquillas-para-impresoras-3d",
       "name": "Boquillas para impresoras 3D",
       "brand": "",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2021/10/boquillas-all2.jpg"
@@ -57268,7 +57288,7 @@
       "id": "filamento-esun-eclean-limpiador",
       "name": "Filamento esun eclean (Limpiador)",
       "brand": "",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://www.maxi3d.cl/wp-content/uploads/2024/04/Esun-eCleaner-3-600x600.png"
@@ -98612,11 +98632,11 @@
       ]
     },
     {
-      "slug": "fil-creality-abs-500g-175mm-sc",
-      "id": "fil-creality-abs-500g-175mm-sc",
+      "slug": "resina-creality-500g-abs-like",
+      "id": "resina-creality-500g-abs-like",
       "name": "Resina Creality 500g ABS Like",
       "brand": "Creality",
-      "categoryId": "filamentos-abs",
+      "categoryId": "resinas",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/creality-resina-500g-abs-like.jpg"
@@ -99960,7 +99980,7 @@
       "id": "resina-phrozen-abs-like-1000g",
       "name": "Resina Phrozen ABS Like 1000g",
       "brand": "",
-      "categoryId": "filamentos-abs",
+      "categoryId": "resinas",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/Phrozen-Resina-ABS-MatteGray-1.png"
@@ -103415,7 +103435,7 @@
       "id": "pack-3-cepillos-de-limpieza-para-boquillaspack-3-cepillos-de-limpieza-para-boquillas",
       "name": "Pack 3 Cepillos de Limpieza para BoquillasPack 3 Cepillos de Limpieza para Boquillas",
       "brand": "",
-      "categoryId": "general",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://imperio3d.com/wp-content/uploads/2026/01/LNK_cepillos_limpieza-300x300.jpg"
@@ -104895,17 +104915,18 @@
       ]
     },
     {
-      "slug": "fdm-creality-set-boquillas-k1-serie-2023",
-      "id": "fdm-creality-set-boquillas-k1-serie-2023",
+      "slug": "set-boquillas-creality-k1-serie-2023",
+      "id": "set-boquillas-creality-k1-serie-2023",
       "name": "Set Boquillas Creality K1 (Serie 2023)",
-      "brand": "",
-      "categoryId": "impresoras-fdm",
+      "brand": "Creality",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://imperio3d.com/wp-content/uploads/2025/01/CR-4008030052-2-300x300.webp"
       ],
       "specs": {
-        "brand": "Creality"
+        "brand": "Creality",
+        "compatibleWith": "K1"
       },
       "minPrice": 41990,
       "maxPrice": 41990,
@@ -106090,7 +106111,7 @@
       "id": "embudo-para-filamento-ams-liteembudo-para-filamento-ams-lite",
       "name": "Embudo para filamento AMS LiteEmbudo para filamento AMS Lite",
       "brand": "",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://imperio3d.com/wp-content/uploads/2025/02/bmbl_SAA023-1-300x300.webp"
@@ -107151,7 +107172,7 @@
       "id": "placa-de-conexion-buffer-filamentoplaca-de-conexion-buffer-filamento",
       "name": "Placa de Conexión Buffer filamentoPlaca de Conexión Buffer filamento",
       "brand": "",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://imperio3d.com/wp-content/uploads/2024/03/Bambulab_SPP003_2-300x300.webp"
@@ -111321,7 +111342,7 @@
       "id": "filamento-limpieza-esun-eclean",
       "name": "Filamento limpieza Esun eClean",
       "brand": "eSUN",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://imperio3d.com/wp-content/uploads/2024/04/Filamento_Esun_eClean_imperio3d-300x300.webp"
@@ -111802,40 +111823,6 @@
           "storeId": "imperio3d",
           "price": 219990,
           "recordedAt": "2026-03-31T13:32:05.455Z"
-        }
-      ]
-    },
-    {
-      "slug": "garganta-para-impresoras-artillery",
-      "id": "garganta-para-impresoras-artillery",
-      "name": "Garganta para impresoras Artillery",
-      "brand": "",
-      "categoryId": "filamentos-pla",
-      "description": "",
-      "images": [
-        "https://horus3d.cl/wp-content/uploads/2022/05/GargantaVolcano.png"
-      ],
-      "specs": {
-        "diameter": "1.75"
-      },
-      "minPrice": 2200,
-      "maxPrice": 2200,
-      "storeCount": 1,
-      "updatedAt": "2026-04-02T00:57:48.133Z",
-      "createdAt": "2026-04-01T18:46:01.366Z",
-      "entries": [
-        {
-          "storeId": "horus3d",
-          "url": "https://horus3d.cl/producto/gar-vol/",
-          "price": 2200,
-          "stock": "available"
-        }
-      ],
-      "history": [
-        {
-          "storeId": "horus3d",
-          "price": 2200,
-          "recordedAt": "2026-04-01T18:22:38.548Z"
         }
       ]
     },

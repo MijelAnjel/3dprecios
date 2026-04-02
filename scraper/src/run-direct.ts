@@ -219,13 +219,25 @@ function mergeCatalog(
   for (const p of existing.products) {
     const prod = JSON.parse(JSON.stringify(p)) as CatalogProduct;
 
-    // Re-inferir categoría: desde 'general' siempre; desde 'impresoras-fdm'/'impresoras-resina'
-    // sólo si el nuevo resultado es 'repuestos', 'resinas' o 'accesorios' (correcciones conocidas).
-    const RECATEGORIZE_ALL = ['general', 'impresoras-fdm', 'impresoras-resina'];
+    // Re-inferir categoría desde varias categorías fuente:
+    //   - 'general': cualquier categoría más específica
+    //   - impresoras-*: sólo si nuevo resultado es repuesto/resina/accesorio
+    //   - filamentos-*: sólo si nuevo resultado es repuesto/resina/accesorio-resina/secador
+    //     (corrige gargantas/boquillas/resinas que quedaron en filamentos por bug)
+    const RECATEGORIZE_ALL = [
+      'general', 'impresoras-fdm', 'impresoras-resina',
+      'filamentos-pla', 'filamentos-abs', 'filamentos-petg', 'filamentos-tpu', 'filamentos-especiales',
+      'accesorios',
+    ];
+    const FILAMENT_CATS = new Set([
+      'filamentos-pla', 'filamentos-abs', 'filamentos-petg', 'filamentos-tpu', 'filamentos-especiales',
+    ]);
     if (RECATEGORIZE_ALL.includes(prod.categoryId)) {
       const reCat = inferCategory(prod.name, '');
       const isDowngradeSafe = prod.categoryId === 'general'
         ? reCat !== 'general'
+        : FILAMENT_CATS.has(prod.categoryId) || prod.categoryId === 'accesorios'
+          ? ['repuestos', 'resinas', 'accesorios-resina', 'secadores', 'accesorios'].includes(reCat)
           : ['repuestos', 'resinas', 'accesorios', 'accesorios-resina'].includes(reCat);
       if (isDowngradeSafe) {
         prod.categoryId = reCat;

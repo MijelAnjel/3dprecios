@@ -216,8 +216,8 @@ export function inferCategory(name: string, path: string): string {
     /cortador.*filament|palanca.*cort|cutter.*filament|cizalla|palanca\s+corta/i.test(n) ||
     // Térmicos y hotend
     /\bcalefactor\b|\bheater[\s-]?block\b|\btermistor\b|thermistor|thermocouple|termopar|heatbreak|heat\s*break/i.test(n) ||
-    // Boquillas, gargantas y extrusores
-    /\bnozzle\b|\bboquilla\b|\bextrusor\b|\bextruder\b|\bbowden\b|\bptfe\b(?!\s*filament)|\bhotend\b/i.test(n) ||
+    // Boquillas (singular y plural), gargantas y extrusores
+    /\bnozzle\b|\bboquillas?\b|\bextrusor\b|\bextruder\b|\bbowden\b|\bptfe\b(?!\s*filament)|\bhotend\b/i.test(n) ||
     /\bgarganta\b|\bthroat\b|tubo\s*(de\s*)?calor/i.test(n) ||
     // Engranajes y piezas de extrusión
     /\bengranaje\b|\bgear\b.*extru|extru.*\bgear\b|\bmk8\b|\bmk\s*8\b|\bdual\s*drive\b|\bbmg\b/i.test(n) ||
@@ -297,7 +297,15 @@ export function inferCategory(name: string, path: string): string {
     /cable.*(motor\s*stepper|stepper\s*motor)|stepper.*cable.*motor/i.test(n) ||
     // Kits de herramientas y limpieza asociados a impresoras (no genéricos)
     /kit\s*(de\s*)?(herramientas|limpieza|boquillas)\s*(para\s*)?(impres|ender|bambu|creality|artillery)/i.test(n) ||
-    /(ender|bambu|creality|artillery|prusa|anycubic).*kit\s*(boquill|nozzle|hotend|repuest)/i.test(n);
+    /(ender|bambu|creality|artillery|prusa|anycubic).*kit\s*(boquill|nozzle|hotend|repuest)/i.test(n) ||
+    // Limpiadores y cepillos de boquillas/nozzle
+    /(limpiador|cepillo)\s*(de|para)?\s*boquillas?/i.test(n) ||
+    /limpiador\s*(de|para)?\s*nozzle|nozzle\s*cleaner/i.test(n) ||
+    // Herramientas/accesorios del sistema AMS (Bambu Lab multi-material) — no son filamento
+    /(embudo|funnel)\s*(para\s*)?(filamento|ams|bambu)/i.test(n) ||
+    /placa\s*de\s*conexi[oó]n\s*buffer|buffer.*plate.*filament|ams\s*buffer/i.test(n) ||
+    // Filamento de limpieza (eClean, etc.) — herramienta, no material de impresión
+    /\beclean\b|filamento\s*de\s*limpieza|limpieza\s*filamento|cleaning\s*filament/i.test(n);
 
   if (isRepuesto) return 'repuestos';
 
@@ -337,6 +345,10 @@ export function inferCategory(name: string, path: string): string {
   ) return 'accesorios-resina';
 
   // ── 1. Filamentos ──────────────────────────────────────────────────────
+  // Resinas líquidas — detectar ANTES de keywords de filamento para evitar
+  // que "Resina ABS Like" o similar caiga en filamentos-abs.
+  if (/^resina\b/i.test(n)) return 'resinas';
+
   const filamentByPath = /filament/i.test(p);
   // Un producto es filamento si su nombre contiene keywords de material
   // SIN mencionar "impresora/printer" (evita "Filamento compatible con impresora X")
@@ -350,6 +362,9 @@ export function inferCategory(name: string, path: string): string {
     /guia.*filament|filament.*guia|guia.*ptfe/i.test(n);                                      // guías/tubos
 
   if (!isFilamentoAccessory && (filamentByPath || (filamentByName && !isPrinterWord))) {
+    // Si el nombre contiene "resina" junto con keywords de material (p.ej. "Resina ABS Like")
+    // → es una resina líquida, no un filamento
+    if (/\bresina\b|\bresin\b/i.test(n)) return 'resinas';
     if (/\bpetg\b/i.test(n) || /petg/i.test(p))                   return 'filamentos-petg';
     if (/\babs\b|\basa\b/i.test(n) || /\babs\b|\basa\b/i.test(p)) return 'filamentos-abs';
     if (/\btpu\b|\btpe\b/i.test(n) || /tpu|tpe/i.test(p))         return 'filamentos-tpu';
