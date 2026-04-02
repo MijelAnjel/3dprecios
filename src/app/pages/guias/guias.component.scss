@@ -1,9 +1,9 @@
-@use '../../../styles/variables' as *;
+﻿@use '../../../styles/variables' as *;
 
 .guias {
   padding-block: clamp(2rem, 5vw, 4rem);
 
-  // ── Header ──────────────────────────────────────────────────────
+  // ── Page header ──────────────────────────────────────────────────
   &__header {
     margin-bottom: 2.5rem;
   }
@@ -18,240 +18,213 @@
   &__sub {
     color: $text-muted;
     font-size: 1.05rem;
-    max-width: 640px;
+    max-width: 660px;
+    line-height: 1.55;
   }
 
-  // ── Symptom finder ──────────────────────────────────────────────
-  &__finder {
+  // ── Two-column layout ────────────────────────────────────────────
+  &__layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: start;
+
+    @media (min-width: $bp-md) {
+      grid-template-columns: 280px 1fr;
+      gap: 2rem;
+    }
+
+    @media (min-width: $bp-lg) {
+      grid-template-columns: 300px 1fr;
+    }
+  }
+
+  // ── Sidebar ──────────────────────────────────────────────────────
+  &__sidebar {
+    position: sticky;
+    top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  &__group {
     background: $bg-card;
     border: 1px solid $border-color;
     border-radius: $border-radius;
-    padding: 1.5rem;
-    margin-bottom: 2.5rem;
+    overflow: hidden;
   }
 
-  &__finder-header {
-    margin-bottom: 1.25rem;
-  }
-
-  &__finder-title {
-    font-size: clamp(1rem, 2.5vw, 1.25rem);
-    font-weight: 700;
-    color: $text-primary;
-    margin-bottom: 0.25rem;
+  &__group-title {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-  }
-
-  &__finder-hint {
-    color: $text-muted;
-    font-size: 0.875rem;
-  }
-
-  &__symptoms {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  &__symptom-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.375rem;
-    padding: 0.35rem 0.8rem;
-    background: $bg-elevated;
-    border: 1px solid $border-color;
-    border-radius: 2rem;
-    color: $text-secondary;
-    font-size: 0.82rem;
-    font-family: inherit;
-    cursor: pointer;
-    transition:
-      border-color $transition-normal,
-      color $transition-normal,
-      background $transition-normal,
-      transform 80ms ease;
-
-    &:hover {
-      border-color: rgba($accent, 0.4);
-      color: $text-primary;
-      background: rgba($accent, 0.06);
-    }
-
-    &:active {
-      transform: scale(0.97);
-    }
-
-    &:focus-visible {
-      outline: 2px solid $accent;
-      outline-offset: 3px;
-    }
-
-    &--active {
-      background: rgba($accent, 0.15);
-      border-color: $accent;
-      color: $accent;
-      font-weight: 600;
-    }
-  }
-
-  &__filter-banner {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-top: 1rem;
     padding: 0.75rem 1rem;
-    background: rgba($accent, 0.08);
-    border: 1px solid rgba($accent, 0.25);
-    border-radius: $border-radius-sm;
-    color: $text-secondary;
-    font-size: 0.875rem;
-
-    strong {
-      color: $text-primary;
-    }
-  }
-
-  &__clear-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-    padding: 0.25rem 0.625rem;
-    background: transparent;
-    border: 1px solid rgba($accent, 0.35);
-    border-radius: 2rem;
-    color: $accent;
-    font-size: 0.8rem;
-    font-family: inherit;
-    cursor: pointer;
-    transition: background $transition-normal, border-color $transition-normal;
-
-    &:hover {
-      background: rgba($accent, 0.12);
-      border-color: $accent;
-    }
-
-    &:focus-visible {
-      outline: 2px solid $accent;
-      outline-offset: 3px;
-    }
-  }
-
-  // ── Table of contents ───────────────────────────────────────────
-  &__toc {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 3rem;
-  }
-
-  &__toc-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.375rem;
-    padding: 0.4rem 0.875rem;
-    background: $bg-card;
-    border: 1px solid $border-color;
-    border-radius: 2rem;
-    color: $text-secondary;
-    font-size: 0.85rem;
-    font-family: inherit;
-    cursor: pointer;
-    transition:
-      border-color $transition-normal,
-      color $transition-normal,
-      background $transition-normal;
-
-    &:hover {
-      border-color: rgba($accent, 0.5);
-      color: $text-primary;
-      background: $bg-elevated;
-    }
-
-    &:focus-visible {
-      outline: 2px solid $accent;
-      outline-offset: 3px;
-    }
-  }
-
-  // ── Empty state ─────────────────────────────────────────────────
-  &__empty {
-    text-align: center;
-    padding: 3rem 1rem;
-    color: $text-muted;
-    font-size: 1rem;
-  }
-
-  // ── Guide sections ──────────────────────────────────────────────
-  &__section {
-    margin-bottom: 3.5rem;
-  }
-
-  &__section-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    margin-bottom: 1.25rem;
-  }
-
-  &__section-icon {
-    font-size: 2rem;
-    line-height: 1;
-    flex-shrink: 0;
-    margin-top: 0.125rem;
-  }
-
-  &__section-title {
-    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    font-size: 0.78rem;
     font-weight: 700;
-    color: $text-primary;
-    margin-bottom: 0.25rem;
-  }
-
-  &__section-desc {
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
     color: $text-muted;
-    font-size: 0.9rem;
+    background: $bg-elevated;
+    border-bottom: 1px solid $border-color;
+    margin: 0;
   }
 
-  // ── Grid of guide cards ─────────────────────────────────────────
-  &__grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.625rem;
+  &__problem-list {
     list-style: none;
     padding: 0;
     margin: 0;
 
-    @media (min-width: $bp-sm) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media (min-width: $bp-lg) {
-      grid-template-columns: repeat(3, 1fr);
+    li + li {
+      border-top: 1px solid rgba($border-color, 0.6);
     }
   }
 
-  &__card {
+  &__problem-btn {
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 1rem 1.125rem;
-    background: $bg-card;
-    border: 1px solid $border-color;
-    border-radius: $border-radius-sm;
-    text-decoration: none;
-    color: $text-primary;
+    align-items: center;
+    gap: 0.625rem;
+    width: 100%;
+    padding: 0.65rem 0.875rem;
+    background: transparent;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-family: inherit;
     transition:
-      transform $transition-normal,
-      border-color $transition-normal,
-      box-shadow $transition-normal;
+      background $transition-normal,
+      color $transition-normal;
 
     &:hover {
-      transform: translateY(-2px);
-      border-color: rgba($accent, 0.35);
-      box-shadow: 0 6px 20px rgba($accent, 0.08);
+      background: rgba($accent, 0.06);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: -2px;
+    }
+
+    &--active {
+      background: rgba($accent, 0.12);
+
+      .guias__problem-label {
+        color: $accent;
+        font-weight: 700;
+      }
+
+      .guias__problem-chevron {
+        color: $accent;
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &__problem-emoji {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    width: 1.5rem;
+    text-align: center;
+  }
+
+  &__problem-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__problem-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: $text-primary;
+    line-height: 1.3;
+  }
+
+  &__problem-tagline {
+    font-size: 0.73rem;
+    color: $text-muted;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__problem-chevron {
+    font-size: 1.1rem;
+    color: $text-muted;
+    flex-shrink: 0;
+    transition:
+      transform $transition-normal,
+      color $transition-normal;
+    line-height: 1;
+  }
+
+  // ── Main panel ───────────────────────────────────────────────────
+  &__main {
+    min-height: 400px;
+  }
+
+  // ── Welcome state ────────────────────────────────────────────────
+  &__welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 2rem;
+    background: $bg-card;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+  }
+
+  &__welcome-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+
+  &__welcome-title {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 0.75rem;
+  }
+
+  &__welcome-hint {
+    color: $text-muted;
+    font-size: 0.95rem;
+    max-width: 480px;
+    line-height: 1.55;
+    margin-bottom: 2rem;
+  }
+
+  &__welcome-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  &__welcome-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.75rem;
+    background: $bg-elevated;
+    border: 1px solid $border-color;
+    border-radius: 2rem;
+    color: $text-secondary;
+    font-size: 0.8rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition:
+      border-color $transition-normal,
+      background $transition-normal,
+      color $transition-normal;
+
+    &:hover {
+      border-color: rgba($accent, 0.4);
+      background: rgba($accent, 0.07);
+      color: $text-primary;
     }
 
     &:focus-visible {
@@ -260,47 +233,341 @@
     }
   }
 
-  &__card-top {
+  // ── Problem detail article ───────────────────────────────────────
+  &__detail {
+    background: $bg-card;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    overflow: hidden;
+  }
+
+  &__detail-header {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
-    gap: 0.5rem;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: $bg-elevated;
+    border-bottom: 1px solid $border-color;
   }
 
-  &__card-name {
-    font-weight: 600;
-    font-size: 0.95rem;
-    color: $text-primary;
-    flex: 1;
-    line-height: 1.35;
-  }
-
-  &__card-arrow {
-    color: $accent;
-    font-size: 0.9rem;
-    opacity: 0.7;
+  &__detail-emoji {
+    font-size: 2.25rem;
+    line-height: 1;
     flex-shrink: 0;
-    transition: opacity $transition-normal;
-    margin-top: 0.1rem;
-
-    .guias__card:hover & {
-      opacity: 1;
-    }
   }
 
-  &__card-desc {
-    font-size: 0.8rem;
-    color: $text-muted;
-    line-height: 1.45;
+  &__detail-heading {
     flex: 1;
+    min-width: 0;
+  }
+
+  &__detail-title {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: 800;
+    color: $text-primary;
+    margin-bottom: 0.2rem;
+    line-height: 1.2;
+  }
+
+  &__detail-tagline {
+    color: $text-muted;
+    font-size: 0.9rem;
     margin: 0;
   }
 
-  &__card-meta {
+  &__close-btn {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.375rem;
-    margin-top: 0.125rem;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: 1px solid $border-color;
+    border-radius: 50%;
+    color: $text-muted;
+    font-size: 0.9rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition:
+      background $transition-normal,
+      border-color $transition-normal,
+      color $transition-normal;
+
+    &:hover {
+      background: rgba($primary, 0.1);
+      border-color: rgba($primary, 0.3);
+      color: $primary-light;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 3px;
+    }
+  }
+
+  // ── Sections inside detail ───────────────────────────────────────
+  &__section {
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba($border-color, 0.6);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &--external {
+      background: rgba($accent, 0.025);
+    }
+  }
+
+  &__section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  &__section-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: rgba($accent, 0.15);
+    border: 1px solid rgba($accent, 0.3);
+    border-radius: 50%;
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: $accent;
+    flex-shrink: 0;
+    letter-spacing: 0;
+  }
+
+  // "What is it" + visual hint
+  &__what {
+    color: $text-secondary;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin-bottom: 1rem;
+  }
+
+  &__visual-hint {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.875rem;
+    padding: 0.875rem 1rem;
+    background: rgba(255, 184, 0, 0.06);
+    border: 1px solid rgba(255, 184, 0, 0.2);
+    border-radius: $border-radius-sm;
+    color: $text-secondary;
+    font-size: 0.875rem;
+    line-height: 1.55;
+
+    strong {
+      display: block;
+      color: $warn;
+      margin-bottom: 0.25rem;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__visual-icon {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    margin-top: 0.05rem;
+  }
+
+  // Causes
+  &__causes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__cause {
+    padding: 0.75rem 0.875rem;
+    background: $bg-elevated;
+    border: 1px solid $border-color;
+    border-radius: $border-radius-sm;
+    border-left: 3px solid rgba($primary, 0.6);
+  }
+
+  &__cause-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.375rem;
+  }
+
+  &__cause-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: $primary-light;
+    flex-shrink: 0;
+  }
+
+  &__cause-title {
+    color: $text-primary;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  &__cause-text {
+    color: $text-muted;
+    font-size: 0.85rem;
+    line-height: 1.55;
+    margin: 0;
+    padding-left: 1rem;
+  }
+
+  // Steps
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: none;
+  }
+
+  &__step {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.875rem;
+  }
+
+  &__step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    min-width: 1.75rem;
+    background: $accent;
+    border-radius: 50%;
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  &__step-body {
+    flex: 1;
+    padding-top: 0.1rem;
+  }
+
+  &__step-action {
+    display: block;
+    color: $text-primary;
+    font-size: 0.925rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    line-height: 1.4;
+  }
+
+  &__step-detail {
+    color: $text-muted;
+    font-size: 0.84rem;
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  // Tips
+  &__tips {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__tip {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+    color: $text-secondary;
+    font-size: 0.875rem;
+    line-height: 1.55;
+  }
+
+  &__tip-icon {
+    flex-shrink: 0;
+    font-size: 0.9rem;
+    margin-top: 0.05rem;
+  }
+
+  // External guides
+  &__ext-intro {
+    color: $text-muted;
+    font-size: 0.875rem;
+    margin-bottom: 0.875rem;
+  }
+
+  &__ext-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__ext-link {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.625rem 0.875rem;
+    background: $bg-elevated;
+    border: 1px solid $border-color;
+    border-radius: $border-radius-sm;
+    text-decoration: none;
+    color: $text-primary;
+    font-size: 0.875rem;
+    transition:
+      border-color $transition-normal,
+      background $transition-normal;
+
+    &:hover {
+      border-color: rgba($accent, 0.4);
+      background: rgba($accent, 0.05);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 3px;
+    }
+  }
+
+  &__ext-name {
+    flex: 1;
+    font-weight: 600;
+  }
+
+  &__ext-arrow {
+    color: $accent;
+    font-size: 0.85rem;
+    opacity: 0.7;
+    flex-shrink: 0;
+
+    .guias__ext-link:hover & {
+      opacity: 1;
+    }
   }
 
   // ── Badges ──────────────────────────────────────────────────────
@@ -308,14 +575,15 @@
     display: inline-flex;
     align-items: center;
     gap: 0.2rem;
-    padding: 0.2rem 0.55rem;
+    padding: 0.15rem 0.45rem;
     border-radius: 2rem;
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 600;
-    letter-spacing: 0.01em;
     background: $bg-elevated;
     color: $text-muted;
     border: 1px solid $border-color;
+    white-space: nowrap;
+    flex-shrink: 0;
 
     &--es {
       background: rgba(0, 180, 80, 0.1);
@@ -327,24 +595,6 @@
       background: rgba(0, 150, 255, 0.1);
       color: #60b8ff;
       border-color: rgba(0, 150, 255, 0.2);
-    }
-
-    &--principiante {
-      background: rgba(0, 212, 170, 0.1);
-      color: $accent;
-      border-color: rgba(0, 212, 170, 0.2);
-    }
-
-    &--intermedio {
-      background: rgba(255, 184, 0, 0.1);
-      color: $warn;
-      border-color: rgba(255, 184, 0, 0.2);
-    }
-
-    &--experto {
-      background: rgba(255, 107, 53, 0.1);
-      color: $primary-light;
-      border-color: rgba(255, 107, 53, 0.2);
     }
   }
 }

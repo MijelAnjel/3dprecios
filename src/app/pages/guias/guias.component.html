@@ -1,118 +1,232 @@
-<main class="guias container" id="main-content">
+﻿<main class="guias container" id="main-content">
   <header class="guias__header">
     <h1 class="guias__title">Guías y Soluciones</h1>
     <p class="guias__sub">
-      Biblioteca de recursos para diagnosticar y resolver fallos de impresión 3D.
-      Desde stringing hasta fallo de resina — cada problema tiene solución.
+      Selecciona el problema que tiene tu impresión y encontrarás causas, soluciones paso a paso
+      y recursos adicionales — todo en esta misma página.
     </p>
   </header>
 
-  <!-- ── Buscador de síntomas ──────────────────────────────────── -->
-  <section class="guias__finder" aria-labelledby="finder-heading">
-    <div class="guias__finder-header">
-      <h2 class="guias__finder-title" id="finder-heading">
-        <span aria-hidden="true">🩺</span> ¿Qué le pasa a tu impresión?
-      </h2>
-      <p class="guias__finder-hint">Selecciona un síntoma para filtrar las guías relevantes.</p>
-    </div>
+  <div class="guias__layout">
+    <!-- ── Sidebar: selector de problemas ──────────────────────── -->
+    <nav class="guias__sidebar" aria-label="Seleccionar problema">
 
-    <div class="guias__symptoms" role="group" aria-label="Filtrar guías por síntoma">
-      @for (sym of symptoms; track sym.id) {
-        <button
-          type="button"
-          class="guias__symptom-btn"
-          [class.guias__symptom-btn--active]="activeSymptom() === sym.id"
-          [attr.aria-pressed]="activeSymptom() === sym.id"
-          (click)="selectSymptom(sym.id)"
-        >
-          <span aria-hidden="true">{{ sym.emoji }}</span>
-          {{ sym.label }}
-        </button>
-      }
-    </div>
-
-    @if (activeSymptomData(); as sym) {
-      <div class="guias__filter-banner" role="status" aria-live="polite" aria-atomic="true">
-        <span>
-          Mostrando guías para: <strong>{{ sym.emoji }} {{ sym.label }}</strong>
-        </span>
-        <button type="button" class="guias__clear-btn" (click)="clearSymptom()">
-          Quitar filtro ✕
-        </button>
+      <div class="guias__group">
+        <h2 class="guias__group-title">
+          <span aria-hidden="true">🖨️</span> Impresoras FDM / FFF
+        </h2>
+        <ul class="guias__problem-list" role="list">
+          @for (p of fdmProblems; track p.id) {
+            <li>
+              <button
+                type="button"
+                class="guias__problem-btn"
+                [class.guias__problem-btn--active]="activeId() === p.id"
+                [attr.aria-pressed]="activeId() === p.id"
+                [attr.aria-describedby]="p.id + '-tagline'"
+                (click)="select(p.id)"
+              >
+                <span class="guias__problem-emoji" aria-hidden="true">{{ p.emoji }}</span>
+                <span class="guias__problem-text">
+                  <span class="guias__problem-label">{{ p.label }}</span>
+                  <span class="guias__problem-tagline" [id]="p.id + '-tagline'">{{ p.tagline }}</span>
+                </span>
+                <span class="guias__problem-chevron" aria-hidden="true">›</span>
+              </button>
+            </li>
+          }
+        </ul>
       </div>
-    }
-  </section>
 
-  <!-- ── TOC (solo sin filtro activo) ─────────────────────────── -->
-  @if (!activeSymptom()) {
-    <nav class="guias__toc" aria-label="Ir a sección">
-      @for (cat of allCategories; track cat.id) {
-        <button type="button" class="guias__toc-link" (click)="scrollTo(cat.id)">
-          <span aria-hidden="true">{{ cat.icon }}</span>
-          {{ cat.title }}
-        </button>
-      }
+      <div class="guias__group">
+        <h2 class="guias__group-title">
+          <span aria-hidden="true">🧪</span> Impresoras de Resina (MSLA / DLP)
+        </h2>
+        <ul class="guias__problem-list" role="list">
+          @for (p of resinProblems; track p.id) {
+            <li>
+              <button
+                type="button"
+                class="guias__problem-btn"
+                [class.guias__problem-btn--active]="activeId() === p.id"
+                [attr.aria-pressed]="activeId() === p.id"
+                [attr.aria-describedby]="p.id + '-tagline'"
+                (click)="select(p.id)"
+              >
+                <span class="guias__problem-emoji" aria-hidden="true">{{ p.emoji }}</span>
+                <span class="guias__problem-text">
+                  <span class="guias__problem-label">{{ p.label }}</span>
+                  <span class="guias__problem-tagline" [id]="p.id + '-tagline'">{{ p.tagline }}</span>
+                </span>
+                <span class="guias__problem-chevron" aria-hidden="true">›</span>
+              </button>
+            </li>
+          }
+        </ul>
+      </div>
+
     </nav>
-  }
 
-  <!-- ── Sin resultados ────────────────────────────────────────── -->
-  @if (filteredCategories().length === 0) {
-    <p class="guias__empty" role="status" aria-live="polite">
-      No hay guías para ese síntoma. Prueba con otro.
-    </p>
-  }
+    <!-- ── Panel principal ─────────────────────────────────────── -->
+    <div class="guias__main" id="problem-detail">
 
-  <!-- ── Categorías de guías ───────────────────────────────────── -->
-  @for (cat of filteredCategories(); track cat.id) {
-    <section
-      class="guias__section"
-      [id]="cat.id"
-      [attr.aria-labelledby]="cat.id + '-heading'"
-    >
-      <header class="guias__section-header">
-        <span class="guias__section-icon" aria-hidden="true">{{ cat.icon }}</span>
-        <div>
-          <h2 class="guias__section-title" [id]="cat.id + '-heading'">{{ cat.title }}</h2>
-          <p class="guias__section-desc">{{ cat.description }}</p>
+      @if (!activeProblem()) {
+        <!-- Estado vacío: pide seleccionar -->
+        <div class="guias__welcome" role="status">
+          <div class="guias__welcome-icon" aria-hidden="true">🩺</div>
+          <h2 class="guias__welcome-title">¿Qué le pasa a tu impresión?</h2>
+          <p class="guias__welcome-hint">
+            Elige un problema del panel izquierdo y esta sección mostrará el diagnóstico
+            completo: qué es, por qué ocurre y cómo solucionarlo paso a paso.
+          </p>
+          <div class="guias__welcome-grid" role="list" aria-label="Lista rápida de problemas">
+            @for (p of allProblems; track p.id) {
+              <button
+                type="button"
+                class="guias__welcome-chip"
+                role="listitem"
+                (click)="select(p.id)"
+              >
+                <span aria-hidden="true">{{ p.emoji }}</span> {{ p.label }}
+              </button>
+            }
+          </div>
         </div>
-      </header>
+      }
 
-      <ul class="guias__grid" role="list">
-        @for (guide of cat.guides; track guide.url) {
-          <li>
-            <a
-              class="guias__card"
-              [href]="guide.url"
-              target="_blank"
-              rel="noopener noreferrer"
-              [attr.aria-label]="guide.name + ' — ' + guide.description + ' (' + guide.lang + ')'"
-            >
-              <div class="guias__card-top">
-                <span class="guias__card-name">{{ guide.name }}</span>
-                <span class="guias__card-arrow" aria-hidden="true">↗</span>
+      @if (activeProblem(); as problem) {
+        <article class="guias__detail" [attr.aria-labelledby]="problem.id + '-title'">
+
+          <!-- Header del problema -->
+          <header class="guias__detail-header">
+            <div class="guias__detail-emoji" aria-hidden="true">{{ problem.emoji }}</div>
+            <div class="guias__detail-heading">
+              <h2 class="guias__detail-title" [id]="problem.id + '-title'">{{ problem.label }}</h2>
+              <p class="guias__detail-tagline">{{ problem.tagline }}</p>
+            </div>
+            <button
+              type="button"
+              class="guias__close-btn"
+              aria-label="Cerrar detalle"
+              (click)="clearSelection()"
+            >✕</button>
+          </header>
+
+          <!-- ① Qué es este problema -->
+          <section class="guias__section" aria-labelledby="what-heading-{{ problem.id }}">
+            <h3 class="guias__section-title" [id]="'what-heading-' + problem.id">
+              <span class="guias__section-num" aria-hidden="true">01</span>
+              ¿Qué es este problema?
+            </h3>
+            <p class="guias__what">{{ problem.what }}</p>
+
+            <div class="guias__visual-hint" role="note">
+              <span class="guias__visual-icon" aria-hidden="true">👁</span>
+              <div>
+                <strong>¿Cómo se ve?</strong>
+                <p>{{ problem.visualHint }}</p>
               </div>
-              <p class="guias__card-desc">{{ guide.description }}</p>
-              <div class="guias__card-meta">
-                <span
-                  class="guias__badge"
-                  [class.guias__badge--es]="guide.lang === 'es'"
-                  [class.guias__badge--en]="guide.lang === 'en'"
-                >
-                  {{ guide.lang === 'es' ? '🇨🇱 Español' : '🌐 English' }}
-                </span>
-                <span
-                  class="guias__badge"
-                  [class.guias__badge--principiante]="guide.difficulty === 'principiante'"
-                  [class.guias__badge--intermedio]="guide.difficulty === 'intermedio'"
-                  [class.guias__badge--experto]="guide.difficulty === 'experto'"
-                >
-                  {{ guide.difficulty }}
-                </span>
-              </div>
-            </a>
-          </li>
-        }
-      </ul>
-    </section>
-  }
+            </div>
+          </section>
+
+          <!-- ② Causas probables -->
+          <section class="guias__section" aria-labelledby="causes-heading-{{ problem.id }}">
+            <h3 class="guias__section-title" [id]="'causes-heading-' + problem.id">
+              <span class="guias__section-num" aria-hidden="true">02</span>
+              Causas probables
+            </h3>
+            <ul class="guias__causes" role="list">
+              @for (cause of problem.causes; track cause.title) {
+                <li class="guias__cause">
+                  <div class="guias__cause-header">
+                    <span class="guias__cause-dot" aria-hidden="true"></span>
+                    <strong class="guias__cause-title">{{ cause.title }}</strong>
+                  </div>
+                  <p class="guias__cause-text">{{ cause.explanation }}</p>
+                </li>
+              }
+            </ul>
+          </section>
+
+          <!-- ③ Cómo solucionarlo -->
+          <section class="guias__section" aria-labelledby="solutions-heading-{{ problem.id }}">
+            <h3 class="guias__section-title" [id]="'solutions-heading-' + problem.id">
+              <span class="guias__section-num" aria-hidden="true">03</span>
+              Cómo solucionarlo — paso a paso
+            </h3>
+            <ol class="guias__steps" role="list">
+              @for (sol of problem.solutions; track sol.step) {
+                <li class="guias__step">
+                  <div class="guias__step-num" aria-label="Paso {{ sol.step }}">{{ sol.step }}</div>
+                  <div class="guias__step-body">
+                    <strong class="guias__step-action">{{ sol.action }}</strong>
+                    @if (sol.detail) {
+                      <p class="guias__step-detail">{{ sol.detail }}</p>
+                    }
+                  </div>
+                </li>
+              }
+            </ol>
+          </section>
+
+          <!-- ④ Tips y trucos -->
+          @if (problem.tips.length > 0) {
+            <section class="guias__section" aria-labelledby="tips-heading-{{ problem.id }}">
+              <h3 class="guias__section-title" [id]="'tips-heading-' + problem.id">
+                <span class="guias__section-num" aria-hidden="true">04</span>
+                Tips y trucos adicionales
+              </h3>
+              <ul class="guias__tips" role="list">
+                @for (tip of problem.tips; track tip) {
+                  <li class="guias__tip">
+                    <span class="guias__tip-icon" aria-hidden="true">💡</span>
+                    <span>{{ tip }}</span>
+                  </li>
+                }
+              </ul>
+            </section>
+          }
+
+          <!-- ⑤ Guías externas para profundizar -->
+          @if (problem.externalGuides.length > 0) {
+            <section class="guias__section guias__section--external" aria-labelledby="ext-heading-{{ problem.id }}">
+              <h3 class="guias__section-title" [id]="'ext-heading-' + problem.id">
+                <span class="guias__section-num" aria-hidden="true">+</span>
+                Para profundizar más
+              </h3>
+              <p class="guias__ext-intro">
+                ¿Quieres leer más sobre este problema? Estas guías externas son las más utilizadas
+                en la comunidad:
+              </p>
+              <ul class="guias__ext-list" role="list">
+                @for (guide of problem.externalGuides; track guide.url) {
+                  <li>
+                    <a
+                      class="guias__ext-link"
+                      [href]="guide.url"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      [attr.aria-label]="guide.name + ' — enlace externo, en ' + (guide.lang === 'es' ? 'español' : 'inglés')"
+                    >
+                      <span class="guias__ext-name">{{ guide.name }}</span>
+                      <span
+                        class="guias__badge"
+                        [class.guias__badge--es]="guide.lang === 'es'"
+                        [class.guias__badge--en]="guide.lang === 'en'"
+                      >
+                        {{ guide.lang === 'es' ? '🇨🇱 Español' : '🌐 English' }}
+                      </span>
+                      <span class="guias__ext-arrow" aria-hidden="true">↗</span>
+                    </a>
+                  </li>
+                }
+              </ul>
+            </section>
+          }
+
+        </article>
+      }
+
+    </div>
+  </div>
 </main>
