@@ -8,12 +8,13 @@ import { fetchHtml, parsePriceCLP, inferCategory } from '../utils';
 // Product selectors: h3 a (title/url), .current-price/.money (price)
 // ──────────────────────────────────────────────────────────────
 
+// Categorías verificadas en make3d.cl (Abril 2026)
 const CATEGORY_PATHS = [
   '/impresoras-3d',
   '/filamentos-para-impresion-3d',
+  '/resina',
   '/repuestos',
   '/insumos-para-impresion-3d',
-  // '/resina' — actualmente vacío
 ];
 
 export async function scrapeMake3d(store: StoreConfig): Promise<ScraperResult[]> {

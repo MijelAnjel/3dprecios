@@ -1,10 +1,10 @@
 import { ScraperResult, StoreConfig } from '../models';
 import { fetchHtml, parsePriceCLP, inferStock, inferCategory } from '../utils';
 
-// PC Factory — sección resinas y filamentos
+// PC Factory — impresoras 3D + filamentos/resinas
 const CATEGORY_PATHS = [
+  '/categoria/impresoras-y-suministros/impresoras-formatos-especiales/impresoras-3d',
   '/categoria/impresoras-y-suministros/otros-suministros-impresion/resinas-y-filamentos-impresion-3d',
-  '/catalogo/search?q=impresora+3d',
 ];
 
 export async function scrapePcfactory(store: StoreConfig): Promise<ScraperResult[]> {

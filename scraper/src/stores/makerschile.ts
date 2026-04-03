@@ -9,8 +9,9 @@ import { fetchWcStoreProducts, inferCategory } from '../utils';
 // ──────────────────────────────────────────────────────────────
 
 // Categorías WC de MakersChile que definitivamente no son 3D printing
+// Nota: maquinas-cnc-laser/laser-co2/laser-diodo SÍ son válidos (grabadoras láser)
 const NON_3D_SLUGS =
-  /maquinas-cnc-laser|laser-co2|laser-diodo|bater[íi]as?|lora\b|espressif|gsm|gprs|sensores|raspberry|scanner-3d|sin-categoria/i;
+  /bater[íi]as?|lora\b|espressif|gsm|gprs|sensores|raspberry|sin-categoria/i;
 
 // Marcas y categorías WC que SÍ son 3D printing (aunque no digan "impresora")
 const IS_3D_SLUG =

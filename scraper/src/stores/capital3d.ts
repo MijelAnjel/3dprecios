@@ -5,11 +5,9 @@ import { fetchWcStoreProducts, inferCategory } from '../utils';
 // Capital 3D — capital3d.cl — WooCommerce Store API
 // Site renders products client-side → HTML scraping returns 0
 // ──────────────────────────────────────────────────────────────
-// Category IDs:
-// 54 Impresoras 3D | 43 Resina | 49 Repuestos
-// 26 PLA | 29 ABS | 30 PETG | 27 TPU-95A | 50 Filamentos Especiales | 39 PLA Pro | 40 PolyTerra
-
-const CATEGORY_IDS = [54, 43, 49, 26, 29, 30, 27, 50, 39, 40];
+// Capital3D es tienda 100% dedicada a impresión 3D.
+// Fetching all products para no perder categorías nuevas (cd3d, plapro, polyterra, etc.)
+const CATEGORY_IDS: number[] = [];
 
 export async function scrapeCapital3d(store: StoreConfig): Promise<ScraperResult[]> {
   const products = await fetchWcStoreProducts(store.baseUrl, CATEGORY_IDS, { rateDelay: 1500 });

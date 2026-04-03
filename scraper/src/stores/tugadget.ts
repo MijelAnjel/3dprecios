@@ -2,30 +2,26 @@ import { ScraperResult, StoreConfig } from '../models';
 import { fetchHtml, parsePriceCLP, inferCategory, inferStock } from '../utils';
 
 // ──────────────────────────────────────────────────────────────
-// Tecnosistec — tecnosistec.cl — PrestaShop
-// Tienda de electrónica y repuestos con sección de impresión 3D
-// URL de la sección 3D: /154-repuestos-impresoras-3d
+// TuGadget — tugadget.cl — PrestaShop
+// Tienda de electrónica con sección de impresión 3D
+// Categorías 3D verificadas (Abril 2026):
+//   /68-impresion-3d          /76-accesorios-y-repuestos-para-impresoras-3d
+//   /70-impresoras-de-filamento-   /82-escaner-3d-scanners-3d-portatiles-y-escritorio-
+//   /71-impresoras-de-resina
 // ──────────────────────────────────────────────────────────────
 
-// Categorías 3D confirmadas en tecnosistec.cl (Abril 2026)
-// Nota: /113-impresion-3d es la categoría padre que duplica todas las sub-categorías, se omite
 const CATEGORY_PATHS = [
-  '/117-impresoras-3d',
-  '/119-filamento-pla',
-  '/118-filamento-abs',
-  '/149-filamento-tpu-flexible',
-  '/150-filamentos-petg',
-  '/157-filamento-fibra-de-carbono',
-  '/151-resina',
-  '/154-repuestos-impresoras-3d',
-  '/155-scanner-3d',
-  '/148-lapiz-3d',
+  '/68-impresion-3d',
+  '/70-impresoras-de-filamento-',
+  '/71-impresoras-de-resina',
+  '/76-accesorios-y-repuestos-para-impresoras-3d',
+  '/82-escaner-3d-scanners-3d-portatiles-y-escritorio-',
 ];
 
-// Safety guard: PrestaShop stores rarely exceed 30 pages in a single category
+// Safety guard: PrestaShop stores rarely exceed 30 pages
 const MAX_PAGES = 30;
 
-export async function scrapeTecnosistec(store: StoreConfig): Promise<ScraperResult[]> {
+export async function scrapeTugadget(store: StoreConfig): Promise<ScraperResult[]> {
   const results: ScraperResult[] = [];
   const seen = new Set<string>();
 
@@ -37,7 +33,7 @@ export async function scrapeTecnosistec(store: StoreConfig): Promise<ScraperResu
       const url = page === 1
         ? `${store.baseUrl}${catPath}`
         : `${store.baseUrl}${catPath}?p=${page}`;
-      console.log(`[Tecnosistec] Scraping: ${url}`);
+      console.log(`[TuGadget] Scraping: ${url}`);
 
       try {
         const $ = await fetchHtml(url, { rateDelay: 1500 });
@@ -57,7 +53,7 @@ export async function scrapeTecnosistec(store: StoreConfig): Promise<ScraperResu
           const name     = titleEl.text().trim();
           const href     = titleEl.attr('href') ?? '';
           const priceRaw = $(el).find('.price, .product-price, [itemprop="price"]').first().text().trim();
-          const imgSrc   = $(el).find('img').attr('src') ?? $(el).find('img').attr('data-src') ?? '';
+          const imgSrc   = $(el).find('img').attr('data-src') ?? $(el).find('img').attr('src') ?? '';
           const stockTxt = $(el).find('.availability, .product-availability').text().trim();
 
           const price = parsePriceCLP(priceRaw);
@@ -87,20 +83,16 @@ export async function scrapeTecnosistec(store: StoreConfig): Promise<ScraperResu
           break;
         }
 
-        // PrestaShop: use the explicit pagination next link inside .pagination wrapper only
+        // PrestaShop next page link
         hasMore = $('.pagination a[rel="next"], #js-pagination a[rel="next"], .pagination-next a').length > 0;
         page++;
       } catch (err) {
-        console.error(`[Tecnosistec] Error en ${url}:`, err);
+        console.error(`[TuGadget] Error en ${url}:`, err);
         hasMore = false;
       }
     }
-
-    if (page > MAX_PAGES) {
-      console.warn(`[Tecnosistec] Límite de ${MAX_PAGES} páginas alcanzado en ${catPath}`);
-    }
   }
 
-  console.log(`[Tecnosistec] Total productos: ${results.length}`);
+  console.log(`[TuGadget] Total productos: ${results.length}`);
   return results;
 }
