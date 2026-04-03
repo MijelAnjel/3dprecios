@@ -199,7 +199,7 @@ function mergeCatalog(
         ? reCat !== 'general'
         : FILAMENT_CATS.has(prod.categoryId) || prod.categoryId === 'accesorios'
           ? ['repuestos', 'resinas', 'accesorios-resina', 'secadores', 'accesorios', 'impresoras-fdm', 'impresoras-resina'].includes(reCat)
-          : ['repuestos', 'resinas', 'accesorios', 'accesorios-resina'].includes(reCat);
+          : ['repuestos', 'resinas', 'accesorios', 'accesorios-resina', 'scanner-3d', 'grabadoras-laser', 'impresoras-resina'].includes(reCat);
       if (isDowngradeSafe) {
         prod.categoryId = reCat;
         // Re-extraer specs con la categoría correcta

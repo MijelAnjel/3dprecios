@@ -463,9 +463,141 @@ export function inferCategory(name: string, path: string): string {
     /\bhub\s+(para|de)\s*(anycubic|bambu|bambulab|creality|ender|prusa|artillery|kobra|impresora)\b/i.test(n) ||
     // Catch-all sistémico: «Kit/Set [componente] para [marca conocida]» → siempre repuesto
     // Evita que nuevos accesorios no cubiertos caigan en impresoras-fdm
-    /^(kit|set)\b.{3,60}\bpara\s+(artillery|creality|ender\b|bambu|bambulab|prusa|anycubic|elegoo|anet|qidi|voron)\b/i.test(n);
+    /^(kit|set)\b.{3,60}\bpara\s+(artillery|creality|ender\b|bambu|bambulab|prusa|anycubic|elegoo|anet|qidi|voron)\b/i.test(n) ||
+    // Tarjeta madre (motherboard — siempre repuesto en contexto de impresoras 3D)
+    /\btarjeta\s*madre\b/i.test(n) ||
+    // Detector de final / fin de filamento (run-out sensor — complementa patrón existente)
+    /detector\s*(de\s*)?(?:final|fin)\s*(de\s*)?filament/i.test(n) ||
+    // Tapón de filamento (filament cap/plug)
+    /tap[oó]n\s*(de\s*)?filament/i.test(n) ||
+    // Conector de filamento (filament joiner/connector)
+    /conector\s*(de\s*)?filament/i.test(n) ||
+    // Hub de filamento (hub part — complementa patrones de hub AMS existentes)
+    /hub\s*(de\s*)?filament/i.test(n) ||
+    // Alimentador de filamento (filament feeder unit)
+    /alimentador\s*(de\s*)?filament/i.test(n) ||
+    // Soporte de filamento numerado (Flashforge AD5X parts: "Soporte de Filamento 1 AD5X")
+    /soporte\s+de\s+filamento\s+\d/i.test(n) ||
+    // Salida / purga de filamento (filament exit port or purge waste outlet)
+    /salida\s*(de\s*)?filamento|purga\s*de\s*desecho/i.test(n) ||
+    // Cable de conexión a caja de filamento
+    /cable.*(?:caja|box).*filament/i.test(n) ||
+    // Tabla muestra de colores de filamentos (color swatch chart — not a filament roll)
+    /tabla\s*(?:muestra\s*)?colores?\s*(?:de\s*)?filament/i.test(n) ||
+    // Centro de filamentos AMS (AMS filament center hub part)
+    /centro\s*(de\s*)?filament/i.test(n) ||
+    // Varilla porta filamentos (filament holder rod)
+    /varilla\s*porta\s*filament/i.test(n) ||
+    // Rotador / sostenedor de filamento AMS (Bambu AMS part)
+    /rotador.*sostenedor|sostenedor\s*(del?\s*)?filamento/i.test(n) ||
+    // Módulo detector de quiebre / corte de filamento
+    /m[oó]dulo\s*(de\s*)?(detector|quiebre|corte).*filament/i.test(n) ||
+    // Caja de resguardo de filamentos / resinas (storage enclosure — not a filament)
+    /\bcaja\s*resguardo\b/i.test(n) ||
+    // Película ACF (anti-confusion release film for resin printers — like FEP)
+    /pel[ií]cula\s*acf\b|\bacf\s*(?:film|pack)/i.test(n) ||
+    // Husillo / leadscrew (motion component)
+    /\bhusillo\b/i.test(n) ||
+    // Motor screw / de liberación / + husillo (resin/FDM motor subtypes)
+    /motor\s*(?:screw|de\s*liberaci[oó]n)\b|motor\s*[+]\s*husillo/i.test(n) ||
+    // Switch de aproximación / proximidad (proximity switch)
+    /switch\s*(de\s*)?(?:aproximaci[oó]n|proximidad)\b/i.test(n) ||
+    // Cable / interruptor del límite (limit switch cable or interrupt)
+    /(?:cable|interruptor)\s*(del?\s*)?l[ií]mit/i.test(n) ||
+    // Cable de pantalla touch (touch screen cable for resin printer)
+    /cable\s*(de\s*)?pantalla\s*touch\b/i.test(n) ||
+    // USB Flash Drive (printer's storage device — always a spare part)
+    /\busb\s*flash\s*drive\b/i.test(n) ||
+    // Plataforma de impresión (build platform for resin printer)
+    /\bplataforma\s*(de\s*)?impresi[oó]n\b/i.test(n) ||
+    // Placa de impresión (build plate for resin printer)
+    /\bplaca\s*(de\s*)?impresi[oó]n\b/i.test(n) ||
+    // Pantalla LCD (screen component — always a spare part in 3D printing context)
+    /\bpantalla\s*lcd\b/i.test(n) ||
+    // Pack de protectores de pantalla (screen protector set for printer display)
+    /pack\s*(de\s*)?\d+\s*protectores?\s*(de\s*)?pantalla/i.test(n) ||
+    // Placa calentadora de cama (heated bed replacement plate)
+    /placa\s*calent[a]+dora\s*(de\s*)?cama/i.test(n) ||
+    // Tanque / tanke o VAT metálico (resin vat — consumable like FEP film)
+    /\btanke?\s*(o\s*)?vat\b|\bvat\s*met[aá]lico/i.test(n) ||
+    // Cámara AI de impresora de resina (AI camera for Saturn/Mars/etc.)
+    /c[aá]mara\s*ai\s*(saturn|mars|elegoo|anycubic)\b/i.test(n) ||
+    // Cámara genérica para impresoras (marca en cualquier posición del nombre)
+    /c[aá]mara\b.*(creality|ender|artillery|bambu|anycubic|elegoo|prusa)\b/i.test(n) ||
+    // Placa madre / placa base (motherboard — siempre repuesto)
+    /\bplaca\s*(madre|base)\b/i.test(n) ||
+    // Cabezal de impresión (printhead assembly — siempre repuesto)
+    /cabezal\s*(de\s*)?impresi[oó]n\b/i.test(n) ||
+    // Pantalla touch (touch screen — repuesto para impresora)
+    /\bpantalla\s*touch\b/i.test(n) ||
+    // Tanque / tanque o vat (resin vat — broader than existing pattern)
+    /\btan(?:k|qu)e?\s*(o\s*)?vat\b/i.test(n) ||
+    // Pack de films para impresora de resina (FEP/ACF film sheets)
+    /pack\s*(?:x\s*)?\d+\s*film\b/i.test(n) ||
+    // Patas antivibración (vibration dampening feet)
+    /patas?\s*antivibr/i.test(n) ||
+    // Módulo de enfriamiento (cooling module)
+    /m[oó]dulo\s*(de\s*)?enfriamiento\b/i.test(n) ||
+    // Bloque calentador cerámico (ceramic heater block)
+    /bloque\s*calentador|calentador\s*cer[aá]mico/i.test(n) ||
+    // Sufijo «| Repuestos 3D» añadido por scrapers (indica categoría en tienda)
+    /\|\s*repuestos?\s*3d\b/i.test(n);
 
   if (isRepuesto) return 'repuestos';
+
+  // ── 0.5. Accesorios de impresión 3D (sistemas multi-material y herramientas) ──
+  // Productos que mencionan filamento / kobra / creality / etc. en su nombre pero
+  // son accesorios → se resuelven ANTES de los checks de filamentos y FDM.
+  if (
+    // Sistemas multi-material completos (CFS, AMS, ACE Pro)
+    /sistema\s*multifilamento|\bmultifilamento\b/i.test(n) ||
+    /\bcfs\b.*(?:k1|k2|hi\s*series|series|kit)|(?:k1|k2)\b.*\bcfs\b/i.test(n) ||  // K1 Series CFS Kit
+    /\bace\s*pro\b\s*(kobra|anycubic|a1\s*mini|s1)/i.test(n) ||
+    // AMS multi-color systems (AMS 2 Pro, AMS HT, AMS Hub, AMS Multicolor, etc.) — no la impresora
+    /\bams\s*\d|\bams\s*(?:pro|ht|hub|multicolor)\b/i.test(n) ||
+    // Carcasa para cámara cerrada (enclosure add-on, no la impresora)
+    /carcasa\s+(?:para\s+)?c[aá]mara|carcasa.*cerrada/i.test(n) ||
+    // Lubricantes y productos de mantenimiento
+    /\blubricante\b/i.test(n) ||
+    // Cubiertas / enclosures de impresora
+    /cubierta\s*(para\s*)?(impresora|3d)\b|cubiertas?\s+impresora/i.test(n) ||
+    /cubierta\s*protectora\b/i.test(n) ||
+    // Accesorios de escaneo 3D (spray y marcadores)
+    /spray.*escaneo\b|tarnish\b/i.test(n) ||
+    /marcadores?\s*reflectantes\b/i.test(n) ||
+    // Herramientas manuales y eléctricas
+    /\bdestornillador\b/i.test(n) ||
+    /cuchillo\s*(de\s*)?corte\s*(ultras[oó]nico|de\s*alta\s*preci)|cuchillo.*ultras[oó]nico/i.test(n) ||
+    /\d+\s*brocas\s*recubiertas\s*de\s*titanio|kit\s*\d+\s*brocas\b/i.test(n) ||
+    /herramienta\s*rotador\b/i.test(n) ||
+    // Almacenamiento y cuidado de filamento (no secadores, no filamento)
+    /bolsas?\s*(?:de\s*)?cuidado\s*premium/i.test(n) ||
+    // Extensiones y kits de impresión
+    /extendedor\s*(de\s*)?impresi[oó]n\b/i.test(n) ||
+    /kit\s*(de\s*)?pintura\s*(de\s*)?(impresi[oó]n|3d)\b/i.test(n) ||
+    // Filtros de carbón activado para purificador Airpure
+    /carb[oó]n\s*activado.*airpure|\bairpure\b/i.test(n) ||
+    // Sostenedor de carrete (spool holder type — "sostenedor" vs. "soporte" ya cubierto)
+    /sostenedor\s*(de\s*)?carrete\b/i.test(n) ||
+    // Pegamento / adhesivo (glue for prints — accesorio)
+    /\bpegamento\b/i.test(n) ||
+    // Bolsa guarda / vacuum bag de filamento (storage, not a filament roll)
+    /\bvacuum\b.*filament|\bbolsas?\s*guard[ao]\b/i.test(n) ||
+    // Mango de escáner y accesorios de scanner 3D (handle, tripod, etc.)
+    /mango\s+para\s+esc[aá]ner|esc[aá]ner.*(?:wifi|raptor|otter)/i.test(n) ||
+    // Mini calentador para impresoras de resina (warming plate — no la impresora)
+    /mini\s*calentador.*resina|calentador.*impresora.*resina/i.test(n) ||
+    // Purificador de aire para impresión 3D
+    /purificador\s*(de\s*)?aire/i.test(n) ||
+    // Bobina/Carrete de refill (empty spool/refillable spool — accesorio)
+    /\brefill\s*spool\b|\bcarrete\s*refill\b|\bbobina\s*(para\s*)?refill\b/i.test(n) ||
+    // Sonic Pad / Nebula Pad (controlador Klipper para impresoras — accesorio, no FDM)
+    /\bsonic\s*pad\b|\bnebula\s*pad\b/i.test(n) ||
+    // Cobertor acrílico / cubierta para impresora (enclosure add-on)
+    /\bcobertor\b/i.test(n) ||
+    // Módulo láser (upgrade, no máquina grabadora completa)
+    /m[oó]dulo\s*l[aá]ser\b/i.test(n)
+  ) return 'accesorios';
 
   // ── 1b. Secadores de filamento ─────────────────────────────────────────
   // Antes de filamentos, para que "Secador de Filamento" no caiga en filamentos-pla
@@ -478,8 +610,9 @@ export function inferCategory(name: string, path: string): string {
 
   // ── 1c. Scanners 3D ────────────────────────────────────────────────────
   if (
-    /scanner[\s-]?3d|esc[aá]ner[\s-]?3d|3d[\s-]?scanner/i.test(n) ||
-    /\brevopoint\b|\bshining[\s-]?3d\b.*scan|scan.*\bshining[\s-]?3d\b/i.test(n)
+    /scanner[\s-]?3d|es?c[aá]ner[\s-]?3d|3d[\s-]?scanner/i.test(n) ||  // es?c cubre "ecáner" (typo)
+    /\brevopoint\b|\bshining[\s-]?3d\b.*scan|scan.*\bshining[\s-]?3d\b/i.test(n) ||
+    /escaner|scanner/i.test(p)   // path URL con "escaner" o "scanner"
   ) return 'scanner-3d';
 
   // ── 1d. Lápices 3D ────────────────────────────────────────────────────
@@ -495,8 +628,13 @@ export function inferCategory(name: string, path: string): string {
   if (
     // Nombres que describen la máquina grabadora + láser directamente
     /m[aá]quina\s+(grab[a]+dora|cortadora)[\s-](?:y\s*(?:cortadora|grab[a]+dora)[\s-])?l[aá]ser/i.test(n) ||
-    /grab[a]+dora[\s-]+(?:y\s*cortadora[\s-]+)?l[aá]ser\b/i.test(n) ||
+    /grab(?:ado|adora|ador)\s+l[aá]ser\b/i.test(n) ||       // captura "grabado láser", "grabadora láser", "grabador láser"
+    /cortador[a]?\s*l[aá]ser\b/i.test(n) ||               // captura "cortadora láser" y "cortador láser"
     /(cnc\s+)?grab(?:ado|adora)\s+y\s+corte\s+l[aá]ser/i.test(n) ||
+    // Falcon brand laser engravers (sin necesitar "Creality" antes del nombre)
+    /\bfalcon\b.*(?:l[aá]ser|grab[ao]|cnc)|(?:grab|cnc|l[aá]ser).*\bfalcon\b/i.test(n) ||
+    // URL path de tiendas que organizan grabadoras en sub-categoría "grabador-cortador-laser"
+    /grab.*?laser|laser.*?grab|cortador.*?laser/i.test(p) ||
     // Creality Falcon (línea grabadora — distinto de impresoras Creality K/CR)
     /creality\s+(?:cr[\s-]?laser\s+)?falcon\b/i.test(n) ||
     /\bcr[\s-]?laser\s+falcon\b/i.test(n) ||
@@ -523,7 +661,9 @@ export function inferCategory(name: string, path: string): string {
     /bandeja.*resina|resina.*bandeja|cubeta.*lavado|tina.*resina|resina.*tina/i.test(n) ||
     /esp[aá]tula.*resina|rasqueta.*resina|herramienta.*resina|resina.*herramienta/i.test(n) ||
     // Curadoras UV / lavadoras de resina (incluso con HTML entities como &#038; en lugar de &)
-    /\bcuradora\b/i.test(n)
+    /\bcuradora\b/i.test(n) ||
+    // Filtro para máquina wash & cure (no la máquina en sí)
+    /filtro\s*(anycubic\s*)?(wash|cure)\b/i.test(n)
   ) return 'accesorios-resina';
 
   // ── 1. Filamentos ──────────────────────────────────────────────────────
@@ -584,17 +724,23 @@ export function inferCategory(name: string, path: string): string {
     || /\bpack\b.*\d+\s*unidades?|\d+\s*unidades?.*\bpack\b/i.test(n);
 
   if (/resina|resin/i.test(p) && !/impresora.*resina|impresoras-resina/i.test(p)) return 'resinas';
+  // Pack de resinas líquidas ("resinas" plural + peso → material, no impresora)
+  if (/\bresinas\b/i.test(n) && /\d+\s*(?:g|ml|kg)\b/i.test(n)) return 'resinas';
   if (hasResinaWord && hasLiquidMarker && !isPrinterWord) return 'resinas';
 
   // ── 3. Impresoras de resina y estaciones wash & cure ──────────────────
-  if (/impresora.*resina|resina.*impresora|impresoras-resina/i.test(p)) return 'impresoras-resina';
+  // Excluir paths con "repuesto" o "accesorio" aunque contengan "resina"
+  if (/impresora.*resina|resina.*impresora|impresoras-resina/i.test(p) && !/repuesto|accesorio/i.test(p)) return 'impresoras-resina';
   // Modelos conocidos de impresoras resina
   if (/\bsaturn\b|\bmars\s*\d|\bphoton\b|\bhalot\b|mono\s*x|\bphrozen\b|anycubic\s*m\d|elegoo\s*saturn|sonic\s*mini/i.test(n)) return 'impresoras-resina';
+  // Anycubic Mono series (Mono 1, Mono 2, Mono 4, etc. — todas son resina MSLA)
+  if (/anycubic\s+mono\s*\d+/i.test(n)) return 'impresoras-resina';
   if (isPrinterWord && /\bresina\b|\bresin\b|\bsla\b|\bmsla\b|\bdlp\b/i.test(n)) return 'impresoras-resina';
 
   // ── 4. Impresoras FDM ─────────────────────────────────────────────────
   // NO usar "fdm" sólo: "Filamento FDM" es filamento, no impresora
-  if (/impresora|printer|impresion-3d|impresoras-3d|impresoras-fdm/i.test(p) && !/resina|resin/i.test(p)) return 'impresoras-fdm';
+  // Excluir paths con "repuesto" o "accesorio" que caerían en FDM falsamente
+  if (/impresora|printer|impresion-3d|impresoras-3d|impresoras-fdm/i.test(p) && !/resina|resin/i.test(p) && !/repuesto|accesorio/i.test(p)) return 'impresoras-fdm';
   // AMS / AMS Lite (sistema multi-material Bambu Lab) → accesorios, no impresora FDM
   // DEBE ir antes de los checks de modelos para que "Ams Lite Bambulab A1" no caiga en FDM
   if (/\bams\s*(lite|combo)?\s*(bambu|bambulab|a1\b|x1\b|p1\b|a1\s*series)/i.test(n) ||
