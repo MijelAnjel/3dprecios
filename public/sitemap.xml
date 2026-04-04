@@ -224,18 +224,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-sc</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-silk-1000g-175mm-sc</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/rsp-hotend-ender-3-v3</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -357,12 +345,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/fil-creality-pla-silk-1000g-175mm-sc</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fil-bambu-lab-pla-1000g-175mm-sc</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -752,13 +734,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-5000g-175mm-sc</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-5000g-175mm-sc</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-bambu-lab-asa-1000g-175mm-sc</loc>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-asa-1000g-175mm-aero</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -782,7 +764,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-printalot-pla-1000g-175mm-sc</loc>
+    <loc>https://dprecios.web.app/productos/fil-printalot-pla-1000g-175mm-max</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -1826,6 +1808,132 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://dprecios.web.app/productos/kit-lampara-led-rgb</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-motor</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-upgrade-prusa-mk4s-a-core-one</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-basico</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-1000g-175mm-refill</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-pla-1000g-175mm-lite</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-1000g-175mm-sc</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-printalot-pla-1000g-175mm-sc</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-pla-1000g-175mm-refill</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-pla-1000g-175mm-basico</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-rock</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-pla-matte-1000g-175mm-refill</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-pla-1000g-175mm-degradado</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-st</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-twinkling</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-pla-silk-1000g-175mm-metal</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-pla-silk-1000g-175mm-magic</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-luminous</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-stars</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-asa-1000g-175mm-sc</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-1000g-175mm-pack</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://dprecios.web.app/productos/flsun-t1-impresora-3d-fdm-maxima-velocidad-1000mms</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -1874,19 +1982,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/kit-lampara-led-rgb</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-marmol</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/kit-motor</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-upgrade-prusa-mk4s-a-core-one</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-pla-silk-1000g-175mm-arcoiris</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -7322,7 +7424,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-verde</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-1000g-175mm-verde</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -7334,37 +7436,37 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-blanco</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-1000g-175mm-blanco</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-morado</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-1000g-175mm-morado</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-gris</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-1000g-175mm-gris</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-amarillo</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-1000g-175mm-amarillo</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-negro</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-1000g-175mm-negro</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-cafe</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-1000g-175mm-cafe</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -7406,7 +7508,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-naranja</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-1000g-175mm-naranja</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -7454,7 +7556,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-3000g-175mm-negro</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-3000g-175mm-negro</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -7508,7 +7610,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-azul-oscuro</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-1000g-175mm-azul-oscuro</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -7550,7 +7652,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-azul</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-1000g-175mm-azul</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -8126,7 +8228,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-creality-pcl-1000g-175mm-sc</loc>
+    <loc>https://dprecios.web.app/productos/fil-creality-pcl-1000g-175mm-pack</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -8318,13 +8420,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-elegoo-pla-1000g-175mm-azul-oscuro</loc>
+    <loc>https://dprecios.web.app/productos/fil-elegoo-plaplus-1000g-175mm-azul-oscuro</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-elegoo-pla-1000g-175mm-transparente</loc>
+    <loc>https://dprecios.web.app/productos/fil-elegoo-plaplus-1000g-175mm-transparente</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -8378,7 +8480,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-elegoo-pla-1000g-175mm-plateado</loc>
+    <loc>https://dprecios.web.app/productos/fil-elegoo-plaplus-1000g-175mm-plateado</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -8828,49 +8930,49 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-3000g-175mm-blanco</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-3000g-175mm-blanco</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-3000g-175mm-azul</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-3000g-175mm-azul</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-3000g-175mm-gris</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-3000g-175mm-gris</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-3000g-175mm-plateado</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-3000g-175mm-plateado</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-3000g-175mm-morado</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-3000g-175mm-morado</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-3000g-175mm-naranja</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-3000g-175mm-naranja</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-5000g-175mm-negro</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-5000g-175mm-negro</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-5000g-175mm-blanco</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-5000g-175mm-blanco</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -9074,13 +9176,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-285mm-negro</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-1000g-285mm-negro</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-285mm-blanco</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-1000g-285mm-blanco</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -9344,49 +9446,49 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-flashforge-pla-1000g-175mm-blanco</loc>
+    <loc>https://dprecios.web.app/productos/fil-flashforge-plaplus-1000g-175mm-blanco</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-flashforge-pla-1000g-175mm-negro</loc>
+    <loc>https://dprecios.web.app/productos/fil-flashforge-plaplus-1000g-175mm-negro</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-flashforge-pla-1000g-175mm-rojo</loc>
+    <loc>https://dprecios.web.app/productos/fil-flashforge-plaplus-1000g-175mm-rojo</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-flashforge-pla-1000g-175mm-azul</loc>
+    <loc>https://dprecios.web.app/productos/fil-flashforge-plaplus-1000g-175mm-azul</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-flashforge-pla-1000g-175mm-verde</loc>
+    <loc>https://dprecios.web.app/productos/fil-flashforge-plaplus-1000g-175mm-verde</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-flashforge-pla-1000g-175mm-sc</loc>
+    <loc>https://dprecios.web.app/productos/fil-flashforge-plaplus-1000g-175mm-sc</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-flashforge-pla-1000g-175mm-naranja</loc>
+    <loc>https://dprecios.web.app/productos/fil-flashforge-plaplus-1000g-175mm-naranja</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-flashforge-pla-1000g-175mm-amarillo</loc>
+    <loc>https://dprecios.web.app/productos/fil-flashforge-plaplus-1000g-175mm-amarillo</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -9494,67 +9596,67 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-elegoo-pla-3000g-175mm-negro</loc>
+    <loc>https://dprecios.web.app/productos/fil-elegoo-plaplus-3000g-175mm-negro</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-elegoo-pla-3000g-175mm-blanco</loc>
+    <loc>https://dprecios.web.app/productos/fil-elegoo-plaplus-3000g-175mm-blanco</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-elegoo-pla-3000g-175mm-gris</loc>
+    <loc>https://dprecios.web.app/productos/fil-elegoo-plaplus-3000g-175mm-gris</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-elegoo-pla-3000g-175mm-azul</loc>
+    <loc>https://dprecios.web.app/productos/fil-elegoo-plaplus-3000g-175mm-azul</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-elegoo-pla-3000g-175mm-verde</loc>
+    <loc>https://dprecios.web.app/productos/fil-elegoo-plaplus-3000g-175mm-verde</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-elegoo-pla-3000g-175mm-rojo</loc>
+    <loc>https://dprecios.web.app/productos/fil-elegoo-plaplus-3000g-175mm-rojo</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-elegoo-pla-3000g-175mm-plateado</loc>
+    <loc>https://dprecios.web.app/productos/fil-elegoo-plaplus-3000g-175mm-plateado</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-elegoo-pla-3000g-175mm-naranja</loc>
+    <loc>https://dprecios.web.app/productos/fil-elegoo-plaplus-3000g-175mm-naranja</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-elegoo-pla-3000g-175mm-amarillo</loc>
+    <loc>https://dprecios.web.app/productos/fil-elegoo-plaplus-3000g-175mm-amarillo</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-elegoo-pla-3000g-175mm-sc</loc>
+    <loc>https://dprecios.web.app/productos/fil-elegoo-plaplus-3000g-175mm-sc</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-todotoner-pla-1000g-175mm-dorado</loc>
+    <loc>https://dprecios.web.app/productos/fil-todotoner-plaplus-1000g-175mm-dorado</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -11696,7 +11798,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-sunlu-pla-1000g-175mm-verde</loc>
+    <loc>https://dprecios.web.app/productos/fil-sunlu-plaplus-1000g-175mm-verde</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -11834,7 +11936,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-sunlu-pla-1000g-175mm-rojo</loc>
+    <loc>https://dprecios.web.app/productos/fil-sunlu-plaplus-1000g-175mm-rojo</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -11882,7 +11984,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-sunlu-pla-1000g-175mm-plateado</loc>
+    <loc>https://dprecios.web.app/productos/fil-sunlu-plaplus-1000g-175mm-plateado</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -11930,7 +12032,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-sunlu-pla-1000g-175mm-negro</loc>
+    <loc>https://dprecios.web.app/productos/fil-sunlu-plaplus-1000g-175mm-negro</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -12038,7 +12140,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-sunlu-pla-1000g-175mm-gris</loc>
+    <loc>https://dprecios.web.app/productos/fil-sunlu-plaplus-1000g-175mm-gris</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -12092,7 +12194,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-sunlu-pla-1000g-175mm-dorado</loc>
+    <loc>https://dprecios.web.app/productos/fil-sunlu-plaplus-1000g-175mm-dorado</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -12110,7 +12212,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-sunlu-pla-1000g-175mm-blanco</loc>
+    <loc>https://dprecios.web.app/productos/fil-sunlu-plaplus-1000g-175mm-blanco</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -12128,7 +12230,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-sunlu-pla-1000g-175mm-azul</loc>
+    <loc>https://dprecios.web.app/productos/fil-sunlu-plaplus-1000g-175mm-azul</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -12164,7 +12266,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-sunlu-pla-1000g-175mm-amarillo</loc>
+    <loc>https://dprecios.web.app/productos/fil-sunlu-plaplus-1000g-175mm-amarillo</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -12440,7 +12542,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-celeste</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-1000g-175mm-celeste</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -14384,7 +14486,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-sunlu-petg-1000g-175mm-sc</loc>
+    <loc>https://dprecios.web.app/productos/fil-sunlu-petg-1000g-175mm-arcoiris</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -15236,7 +15338,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-anet-pla-1000g-175mm-sc</loc>
+    <loc>https://dprecios.web.app/productos/fil-anet-pla-1000g-175mm-arcoiris</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -16838,7 +16940,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-jamg-he-pla-1000g-175mm-sc</loc>
+    <loc>https://dprecios.web.app/productos/fil-jamg-he-plaplus-1000g-175mm-sc</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -17528,7 +17630,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-sunlu-pla-1000g-175mm-naranja</loc>
+    <loc>https://dprecios.web.app/productos/fil-sunlu-plaplus-1000g-175mm-naranja</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -17738,7 +17840,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-sunlu-pla-1000g-175mm-rosa</loc>
+    <loc>https://dprecios.web.app/productos/fil-sunlu-plaplus-1000g-175mm-rosa</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -18014,7 +18116,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-1000g-175mm-sc</loc>
+    <loc>https://dprecios.web.app/productos/fil-panchroma-pla-1000g-175mm-marmol</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -18446,7 +18548,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-500g-175mm-sc</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-pla-500g-175mm-wood</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -18698,7 +18800,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-isanmate-pla-1000g-175mm-sc</loc>
+    <loc>https://dprecios.web.app/productos/fil-isanmate-plaplus-1000g-175mm-arcoiris</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -18812,7 +18914,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-lavanda</loc>
+    <loc>https://dprecios.web.app/productos/fil-esun-plaplus-1000g-175mm-lavanda</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -19118,24 +19220,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/bambulab-puerta-de-vidrio-frontal</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cama-caliente-bambulab-a1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/impresora-bambulab-a1</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/alicates-de-corte-precision-para-impresion-3d</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -19149,6 +19233,24 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/set-boquillas-creality-k1-serie-2023</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/bambulab-puerta-de-vidrio-frontal</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cama-caliente-bambulab-a1</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/impresora-bambulab-a1</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -19173,6 +19275,30 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/resina-phrozen-abs-like-1000g</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/flsun-t1-impresora-3d-fdm-maxima-velocidad-1000-mms</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fdm-prusa-kit-mk4s-no-ensamblada</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fdm-prusa-kit-core-one-no-ensamblada</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/tubo-de-teflon-4000-mm-blanco</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -19467,30 +19593,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/filamento-esun-silk-rainbow-arcoiris</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/flsun-t1-impresora-3d-fdm-maxima-velocidad-1000-mms</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-prusa-kit-mk4s-no-ensamblada</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-prusa-kit-core-one-no-ensamblada</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tubo-de-teflon-4000-mm-blanco</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

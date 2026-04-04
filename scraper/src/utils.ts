@@ -851,6 +851,7 @@ export function buildCanonicalKey(
     const weight   = specs['weight']   as string | undefined;   // gramos
     const diameter = specs['diameter'] as string | undefined;   // "1.75" | "2.85"
     const color    = specs['color']    as string | undefined;
+    const variant  = specs['variant']  as string | undefined;
 
     // Necesitamos al menos marca + material para una clave útil
     if (brand && material) {
@@ -858,9 +859,11 @@ export function buildCanonicalKey(
       const diamStr   = diameter ? diameter.replace('.', '') + 'mm' : '175mm';
       // peso en gramos, o 1000g por defecto (el 90% del mercado es 1kg)
       const weightStr = weight ? weight + 'g' : '1000g';
-      // color normalizado o "sc" (sin color) si no se detectó
-      const colorStr  = color ? slugify(color) : 'sc';
-      return `fil-${slugify(brand)}-${slugify(material)}-${weightStr}-${diamStr}-${colorStr}`;
+      // PLA+ → "pla-plus" para no colisionar con PLA → "pla"
+      const materialSlug = slugify(material.replace(/\+/g, 'plus').replace(/\b([A-Z]+)-([A-Z]+)\b/g, '$1-$2'));
+      // color normalizado, o variante del producto, o "sc" (sin color)
+      const colorStr = color ? slugify(color) : (variant ? variant : 'sc');
+      return `fil-${slugify(brand)}-${materialSlug}-${weightStr}-${diamStr}-${colorStr}`;
     }
   }
 
@@ -1108,6 +1111,34 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
     ];
     for (const [re, color] of COLOR_MAP) {
       if (re.test(name)) { specs['color'] = color; break; }
+    }
+
+    // Variante — diferencia productos del mismo material sin color detectado
+    // (ej: PLA Básico vs PLA Mármol vs PLA ST vs PLA Rock vs PLA Silk Magic)
+    // Se aplica sólo si no hay color específico para evitar clave doble.
+    if (!specs['color']) {
+      const VARIANT_MAP: [RegExp, string][] = [
+        [/\brefill\b/i,                     'refill'],
+        [/\bdegradado\b|\bgradient\b/i,     'degradado'],
+        [/\baero\b/i,                        'aero'],
+        [/\bmetales?\b|\bmetal\b/i,         'metal'],
+        [/\bmagic\b/i,                       'magic'],
+        [/\btwinkling\b|\bglitter\b/i,      'twinkling'],
+        [/\bluminous\b|\bluminoso\b/i,      'luminous'],
+        [/\bstars?\b/i,                      'stars'],
+        [/\brock\b/i,                        'rock'],
+        [/\bmax\b/i,                         'max'],
+        [/\bpla\s*st\b/i,                   'st'],
+        [/\blite\b/i,                        'lite'],
+        [/\bm[aá]rmol\b|\bmarble\b/i,       'marmol'],
+        [/\bwood\b|\bmadera\b/i,             'wood'],
+        [/\bb[aá]s[íi]c[ao]?\b/i,           'basico'],
+        [/\bpack\s*\d+\b|\bx\s*[2-9]\s*und/i, 'pack'],
+        [/\barco[íi]ris\b|\brainbow\b/i,    'arcoiris'],
+      ];
+      for (const [re, v] of VARIANT_MAP) {
+        if (re.test(name)) { specs['variant'] = v; break; }
+      }
     }
   }
 
