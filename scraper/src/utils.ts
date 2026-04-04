@@ -27,7 +27,9 @@ export async function fetchHtml(
     retries = 3,
     delayBetweenRetries = 3000,
     rateDelay = 2000,
-  }: { retries?: number; delayBetweenRetries?: number; rateDelay?: number } = {},
+    method = 'GET' as 'GET' | 'POST',
+    body,
+  }: { retries?: number; delayBetweenRetries?: number; rateDelay?: number; method?: 'GET' | 'POST'; body?: string } = {},
 ): Promise<CheerioAPI> {
   await delay(rateDelay);
 
@@ -36,6 +38,7 @@ export async function fetchHtml(
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
       const response = await fetch(url, {
+        method,
         headers: {
           'User-Agent': randomUA(),
           Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -43,7 +46,9 @@ export async function fetchHtml(
           'Accept-Encoding': 'gzip, deflate, br',
           Connection: 'keep-alive',
           'Cache-Control': 'no-cache',
+          ...(method === 'POST' ? { 'Content-Type': 'application/x-www-form-urlencoded' } : {}),
         },
+        ...(method === 'POST' && body ? { body } : {}),
       });
 
       if (!response.ok) {
@@ -142,7 +147,7 @@ export function inferStock(text: string): 'available' | 'low' | 'out' | 'unknown
   const t = text.toLowerCase();
   if (/sin stock|agotado|no disponible|out of stock/.test(t)) return 'out';
   if (/últimas? unidades?|pocas unidades?|quedan \d/.test(t))  return 'low';
-  if (/disponible|en stock|add to cart|agregar/.test(t))       return 'available';
+  if (/\d+\s+en\s+existencias?|disponible|en stock|add to cart|agregar/.test(t)) return 'available';
   return 'unknown';
 }
 
@@ -275,6 +280,10 @@ export function inferCategory(name: string, path: string): string {
     /placa\s*(madre|pcb|controladora)\s*(grab[a]+dora|laser|l[aá]ser|cnc|ortur|xtool|sculpfun)/i.test(n) ||
     /placa\s*(madre|pcb|controladora)\s*(para\s*)?(artillery|creality|ender|bambu|prusa|anycubic|elegoo)/i.test(n) ||
     /placa\s*(madre|pcb|controladora)\s*(eje|x\d?|z\d?)/i.test(n) ||
+    // Puerta de vidrio / cristal para impresora (componente panel — siempre repuesto)
+    /puerta\s*(de\s*)?(vidrio|cristal)\s*(frontal|posterior|lateral|superior|inferior)?\b/i.test(n) ||
+    // Upgrade kit (siempre es accesorio/pieza — nunca la impresora misma)
+    /\bupgrade\s+kit\b/i.test(n) ||
     // Placa madre/silenciosa para impresoras (con o sin "madre" antes de "silenciosa")
     /placa\s*(madre\s*)?(silenciosa|32[\s-]?bit)\b/i.test(n) ||
     // Placa de impresora por marca/modelo específico
@@ -555,6 +564,10 @@ export function inferCategory(name: string, path: string): string {
     /\bace\s*pro\b\s*(kobra|anycubic|a1\s*mini|s1)/i.test(n) ||
     // AMS multi-color systems (AMS 2 Pro, AMS HT, AMS Hub, AMS Multicolor, etc.) — no la impresora
     /\bams\s*\d|\bams\s*(?:pro|ht|hub|multicolor)\b/i.test(n) ||
+    // Pista de canicas / marble run (producto educativo — no impresora)
+    /pista\s*(de\s*)?canicas?\b/i.test(n) ||
+    // Centrifugadora 3D (máquina de centrifugado para resina/piezas — accesorio)
+    /\bcentrifugadora\b/i.test(n) ||
     // Carcasa para cámara cerrada (enclosure add-on, no la impresora)
     /carcasa\s+(?:para\s+)?c[aá]mara|carcasa.*cerrada/i.test(n) ||
     // Lubricantes y productos de mantenimiento
@@ -645,7 +658,13 @@ export function inferCategory(name: string, path: string): string {
     /\bxtool\b(?!.*filament)/i.test(n) ||
     /\bsculpfun\b/i.test(n) ||
     /\batomstack\b/i.test(n) ||
-    /\bortur\s+(laser|master)\b/i.test(n)
+    /\bortur\s+(laser|master)\b/i.test(n) ||
+    // CNC Routers, Fresadoras y Taladros CNC (máquinas de mecanizado — no impresoras)
+    /\bcnc\s*router\b/i.test(n) ||
+    /\bfresadora\b/i.test(n) ||
+    /\btaladro\b.*(?:cnc|perforac)|cnc.*\btaladro\b/i.test(n) ||
+    // TwoTrees TTC-H series y TTC-3018 (CNC routers — distintos de grabadoras láser TTC)
+    /\bttc\s*[-]?\s*h\s*\d+\b|\bttc\s*[-]?\s*3018\b/i.test(n)
   ) return 'grabadoras-laser';
 
   // ── 1e. Accesorios de resina (Wash & Cure, UV, PPE, herramientas) ───────
@@ -1212,6 +1231,66 @@ export function extractSpecs(name: string, categorySlug: string): Record<string,
     else if (/\b8k\b|\b12k\b|\b16k\b/i.test(name))             specs['type'] = 'Alta Resolución';
     else if (/dental|castable|joyería|jewelry/i.test(name))     specs['type'] = 'Especializada';
     else                                                          specs['type'] = 'Estándar';
+  }
+
+  // ── Secadores de Filamento ────────────────────────────────────────────
+  if (categorySlug === 'secadores') {
+    const DRYER_BRANDS: [RegExp, string][] = [
+      [/\bsunlu\b/i, 'SUNLU'],
+      [/\besun\b|\be-sun\b|esun/i, 'eSUN'],
+      [/\bcreality\b/i, 'Creality'],
+      [/\bbambu\b/i, 'Bambu Lab'],
+      [/\bpolymaker\b/i, 'Polymaker'],
+      [/\bsovol\b/i, 'Sovol'],
+    ];
+    for (const [re, brand] of DRYER_BRANDS) {
+      if (re.test(name)) { specs['brand'] = brand; break; }
+    }
+    // Capacity: detect 4-slot, 2-slot or default to 1-slot
+    if (/\bx4\b|\bs4\b|\b4\s*bobinas?\b|\bcuatro\b/i.test(name))  specs['capacity'] = '4 bobinas';
+    else if (/\bs2\b|\b2\s*bobinas?\b|\bdos\s*bobinas?\b/i.test(name)) specs['capacity'] = '2 bobinas';
+    else specs['capacity'] = '1 bobina';
+  }
+
+  // ── Accesorios 3D ─────────────────────────────────────────────────────
+  if (categorySlug === 'accesorios') {
+    const ACC_BRANDS: [RegExp, string][] = [
+      [/\banycubic\b/i, 'Anycubic'],
+      [/\bartillery\b/i, 'Artillery'],
+      [/\bbambu\.?lab\b|\bbambu\b/i, 'Bambu Lab'],
+      [/\bcreality\b/i, 'Creality'],
+      [/\besun\b|\be-sun\b/i, 'eSUN'],
+      [/\belegoo\b/i, 'Elegoo'],
+      [/\bflashforge\b/i, 'Flashforge'],
+      [/\bprusa\b/i, 'Prusa'],
+      [/\btwotrees\b|two[\s-]trees/i, 'TwoTrees'],
+      [/\b3dlac\b|3d\s*lac/i, '3DLac'],
+      [/\bsuperlube\b/i, 'Superlube'],
+    ];
+    for (const [re, brand] of ACC_BRANDS) {
+      if (re.test(name)) { specs['brand'] = brand; break; }
+    }
+    // Type classification
+    if (/\bams\b|\bace\s*pro\b|\bcfs\b|\bmultifilament|\bmulti[\s-]?color|\bmmu\b/i.test(name))
+      specs['type'] = 'AMS / Sistema Multifilamento';
+    else if (/enclosure|cubierta|cobertor|carcasa|gabinete/i.test(name))
+      specs['type'] = 'Enclosure / Cubierta';
+    else if (/\blubricante\b|\bsuperlube\b/i.test(name))
+      specs['type'] = 'Lubricante';
+    else if (/purificador.*aire|air.*purif/i.test(name))
+      specs['type'] = 'Purificador de Aire';
+    else if (/pegamento|adhesivo|laca|spray.*cama|3dlac/i.test(name))
+      specs['type'] = 'Adhesivo / Pegamento';
+    else if (/sostenedor.*carrete|carrete.*refill|bobina.*refill|refill.*spool|soporte.*spool/i.test(name))
+      specs['type'] = 'Soporte de Carrete';
+    else if (/\bvacuum\b|\bvac[ií]o\b|dry\s*bag|bolsas?\s*(guard|cuidado|sellado)/i.test(name))
+      specs['type'] = 'Almacenamiento';
+    else if (/sonic\s*pad|nebula\s*pad|klipper\s*pad|controlador.*imp|pad\s*basado/i.test(name))
+      specs['type'] = 'Controlador / Pad';
+    else if (/alicate|destornillador|cuchillo|cortante|herramienta|spray.*escaneo|tarnish|marcadores.*reflectantes|centrifugadora|extendedor/i.test(name))
+      specs['type'] = 'Herramienta';
+    else if (/m[oó]dulo\s*l[aá]ser|cobertor\b/i.test(name))
+      specs['type'] = 'Enclosure / Cubierta';
   }
 
   // ── Accesorios de Resina ──────────────────────────────────────────────

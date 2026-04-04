@@ -111,7 +111,7 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/tiendas/imperio3d</loc>
-    <lastmod>2026-04-03</lastmod>
+    <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -224,25 +224,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-abs-1000g-175mm-negro</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/fil-esun-pla-1000g-175mm-sc</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/res-anycubic-estandar-1000ml</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-placa-ender-3</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -254,61 +236,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-silk-1000g-175mm-dorado</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-silk-1000g-175mm-plateado</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-extrusor-ender-3</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-nozzle-ender-3-v3-se</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-hotend-ender-3-v3-se</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/rsp-hotend-ender-3-v3</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/res-creality-estandar-1000ml</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/res-creality-estandar-500ml</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/rsp-nozzle-bambu-x1</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/res-creality-especializada-500ml</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -351,6 +285,1674 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/rsp-correa-polea-bambu-a1-mini</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-bambu-a1-mini</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-bambu-x1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-correa-polea-bambu-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-extrusor-bambu-x1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-cr-6</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-ender-5</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-ender-3-s1-pro</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-placa-ender-3-s1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-fuente-de-poder-bambu-a1-mini</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-petg-1000g-175mm-sc</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-creality-pla-1000g-175mm-sc</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-creality-pla-silk-1000g-175mm-sc</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-pla-1000g-175mm-sc</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-creality-pla-matte-1000g-175mm-sc</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-pla-matte-1000g-175mm-sc</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-pla-matte-1000g-175mm-sc</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-sensor-artillery</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-extrusor-artillery</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-artillery</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-ender-3</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-esun-evacuum-pro-3-kit-de-sellado-al-vacio</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-nylon-cf-1000g-175mm-sc</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-ender-3</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-sensor-ender-3</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fdm-creality-ender-3-v3-plus</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-nozzle-bambu-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/set-de-llaves-allen-hexagonales-de-colores-9-piezas</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-upgrade-p1p-a-p1s-cierre-para-p1p</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/unidad-de-alimentacion-ams-lite</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/tapa-superior-ams</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/vidrio-super-racer</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/soporte-ams-lite</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/soporte-rotatorio-de-carrete-ams-lite</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-ender-6</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/soporte-frontal-del-cabezal-p1-x1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/tensor-del-eje-y-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/ventilador-interior-camara</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/ventilador-hotend-serie-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/soporte-unidad-de-alimentacion-ams-lite</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/sensor-de-cama-caliente-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/tensor-del-eje-z-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-ventilador-artillery</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-rfid-ams</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-sensor-cama-caliente</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/full-hotend-artillery-x1-x2-genius-genius-pro</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-ventilador-ender-5</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/pack-4-tubos-de-teflon-2x580mm2x700mm-gris</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/tensor-del-eje-z-serie-p1-x1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-motor-4234-paso-a-paso-gt20</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-ventilador-ender-3</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/motor-4224-paso-a-paso-eje-z</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/hotend-ender-2-pro</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-correa-eje-x-cr6-se</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-motor-4234-paso-a-paso-ender-5-plus</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/ventilador-capa-super-racer</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-motor-4248-paso-a-paso-eje-x-ender-6</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/ventilador-axial-v400</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/ventilador-axial-super-racer</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/ventilador-axial-4010-24v-placa-madre</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/tapa-del-alimentador-ams-lite</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/silicona-protectora-del-hotend-serie-h2-3und</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/sensor-de-final-de-filamento-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/silicona-protectora-del-hotend-serie-a1-3und</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/silicona-protectora-hotend-v400</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-cr-6</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/soporte-de-goma-para-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-final-de-carrrera-eje-x-cr6-se-cr6-se-max</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-correa-eje-y-ender-6</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-piezas-hotend-cr-10</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/polea-de-distribucion-gt2-20-6mm</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/spray-adhesivo-printalot-400ml-290grs</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/protector-de-pantalla-para-photon-mono-4k-5und</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/protector-de-pantalla-para-photon-mono-x2-x-6ks</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/mini-espatula-de-limpieza</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/filamentos-bambu-lab-pps-cf-750gr</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/filamentos-bambu-lab-ppa-cf-750g</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-nylon-cf-750g-175mm-sc</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-pla-5000g-175mm-sc</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-asa-1000g-175mm-sc</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-pva-1000g-175mm-transparente</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/filamento-esun-epla-cf-fibra-de-carbono</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-pc-500g-175mm-sc</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-printalot-pla-1000g-175mm-sc</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-abs-1000g-175mm-celeste</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-bambu-lab-petg-1000g-175mm-sc</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/filamento-printalot-pvoh-soluble-en-agua-175mm-025kg</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-plastar-pla-1000g-175mm-sc</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/filamento-limpieza-esun-eclean</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fdm-prusa-xl-semi-ensamblado</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/impresora-3d-bambu-lab-h2c-combo-con-ams-2-pro-impresion-multimaterial-profesional</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/impresora-3d-bambu-lab-h2s-combo-con-ams-2-pro</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/impresora-3d-bambu-lab-h2s-alta-velocidad-y-gran-formato-profesional</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/impresora-3d-bambu-lab-p2s-combo-con-ams-2-pro-multimaterial-automatico</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/impresora-3d-bambu-lab-p2s-alta-velocidad-precision-y-control-termico</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/impresora-3d-bambu-lab-a1-combo-con-ams-lite-multicolor</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/impresora-3d-bambu-lab-a1-mini-combo-ams-lite-multicolor</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/impresora-3d-bambu-lab-a1-la-mas-usada-de-2026</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/impresora-3d-bambu-lab-a1-mini-automatica-rapida-y-precisa</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/lokbuild</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/hotend-q5</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/vidrio-q5</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/camara-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/bolsas-para-sellado-al-vacio-33-x-38-cm</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cortador-de-tubo-ptfe-de-alta-precision</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/base-antivibracion-2-sets-bambu-lab-x1-p1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/creality-tubo-de-teflon-capricorn</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/bomba-de-vacio-electrica-carga-usb-modelo-bs-01</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/ams-hub-serie-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/creality-placa-pei-magnetica-377370-esmerilada</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/bambu-placa-pei-esmerilada-para-bambu-lab</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/ams-hub-serie-p1-y-x1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/ams-2-pro-upgrade-kit-1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/creality-modulo-laser-5w</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/boquilla-volcano</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-sistema-de-movimiento-ender-5</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/conector-neumatico</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/conector-tubo-de-teflon-a1-mini</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/flsun-v400-nozzle-boquilla-alta-velocidad</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-final-de-carrera-eje-z-cr6-se-cr6-se-max</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-del-boton-y-temperatura-interior</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/calefactor-super-racer</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/calefactor-v400</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cortador-de-filamentos-bambu-lab-3-und</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-ruedas-nivelacion-grandes-4und</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cable-conexion-display-serie-p1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/pack-3-tubos-de-teflon-1x370mm2x550mm</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cubierta-superior-eje-z-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/palanca-cortador-filamento-para-series-x1-y-p1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/palanca-cortador-filamento-para-serie-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/pack-4-tubos-de-teflon-2x530mm-2x30mm-blanco</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/luz-led-serie-p1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/pinza-del-soporte-rotatorio-de-carrete-ams-lite</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/limpiador-de-purga-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-magnetica-138x85mm-2-unidades-ld002h</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/antena-wifi-para-serie-x1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cable-cabezal-p1p</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/bambu-filtro-de-aire-de-carbon-activado-x1-p1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/antena-wifi-para-bambu-lab-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cubierta-superior-eje-y-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/eje-rotativo-soporte-frontal-ams-rodillo-activo</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-sistema-de-movimiento-bambu-p1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/antena-wifi-para-serie-p1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/carcasa-media-cabezal-serie-p1-x1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/bambu-adaptador-4-en-1-de-tubo-de-teflon</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/bambu-bus-cable-6pin-510mm</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/bambu-usb-c-cable</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-sensor-filamento-v400</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cable-plano-flexible-fpc-para-placa-th-bambu-lab-v9</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/luz-led-serie-x1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cubierta-inferior-a1-mini</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/motor-del-alimentador-del-ams-lite</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-de-conexion-del-extrusor-para-serie-p1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/hotend-kit-ender-5-plus</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/carcasa-del-motor-eje-x-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/pack-4-tubos-de-teflon-2x730mm-2x830mm</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-cama-de-vidrio-con-superficie-de-carbono-245255</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/plataforma-de-impresion-ld-002h</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-modulo-wifi-cr-10-smart</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cable-cabezal-p1s</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/conjunto-del-interruptor-de-encendido-p1-x1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-instalacion-puerta-frontal</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/generico-ender-3-v3-ke-full-hotend-ceramico</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-pantalla-touch-ld002</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-de-conexion-buffer-filamento</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-de-poder-ams</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-de-conexion-ams</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cable-4-pin-ams-lite</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/mecanismo-extrusor-acero-endurecido-serie-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cadena-porta-cables-x1-p1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cubierta-inferior-trasera-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cama-caliente-280280-ender-7</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cubierta-inferior-frontal-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/full-hotend-kit-ender-3</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-cama-caliente-k1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-motor-4248-motor-paso-a-paso-eje-ender-6-v24-con-sorporte</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cubierta-frontal-p1p</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/panel-metalico-trasero-x1x1c</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/panel-metalico-trasero-serie-p1p</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/bambu-lab-hotend-con-boquilla-serie-h2-p2</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-anycubic-kobra-i3</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/bambu-lab-motor-eje-x-serie-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/bambu-lab-motor-eje-y-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/panel-metalico-trasero-serie-p1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/prusa-nozzle-brass-cht-04</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/full-hotend-kit-ender-5-plus</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-pantalla-ender-7</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-pantalla-ender-2-pro</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/mecanismo-extrusor-q5</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-extrusor-bambu-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/embudo-para-filamento-ams-lite</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/bambu-lab-motor-eje-z-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/estructura-principal-ams-v3</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/mecanismo-extrusor-super-racer</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/ensamble-de-calentamiento-del-hotend-serie-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/calefactor-de-ceramica-y-termistor-serie-p1-3und</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-cr-touch-autonivelacion</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-placa-cr-10</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/pantalla-touch-bambu-lab-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/bambu-lab-cubierta-de-vidrio-superior</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/sensor-de-nivelacion-automatica-bltouch</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-pantalla-cr5-pro</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/carcasa-frontal-cabezal-series-p1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-extrusion-directa-ender-5-plus</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-del-cabezal-serie-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/carcasa-base-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-placa-ender-6</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/pantalla-q5</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/hotend-v400</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-extrusor-titan-con-motor-cr-10v2</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/ensamble-de-calentamiento-del-hotend-serie-h2d-h2c</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/ensamble-de-calentamiento-del-hotend-serie-h2s</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-pantalla-ender-3-s1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/bambu-motor-xy</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/bambu-lab-motor-xy-para-serie-p1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-fuente-de-poder-ender-3-v3</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/motor-hub-interno-ams</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-th-para-serie-p1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/alimentador-primera-etapa-ams</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/carcasa-exterior-ams-lite</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/pantalla-serie-p1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/full-hotend-kit-para-creality-cr-m4</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-pantalla-cr-10-smart</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cabezal-completo-anycubic-kobra-neo-s010102</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-madre-ender-7</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-placa-ender-3-s1-pro</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/ensamble-completo-eje-z-a1-mini</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/pantalla-touch-a1-mini</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fuente-de-poder-24v</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-nozzle-bambu-x1-04mm</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/full-hotend-con-boquilla-de-acero-04mm-para-series-p1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/pantalla-super-racer</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-mc-para-serie-p1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/prusa-nozzle-obxidian-06</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/camara-serie-p1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-madre-q5</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-madre-ams-lite</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/ensamblaje-del-eje-x-a1-mini</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-madre-ams-v2</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/riel-lineal-del-eje-x-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/riel-lineal-del-eje-y-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/pack-camara-serie-p1-y-luz-led</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/camara-bambu-lab-x1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cubierta-inferior-del-ams</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-fuente-de-poder-bambu-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-fuente-de-poder-bambu-x1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/pantalla-touch-de-alta-resolucion-x1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/ensamblaje-de-varillas-de-carbono-del-eje-x-de-bambu-lab</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/panel-izquierdo-hl-bambu-lab-x1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/panel-derecho-hr-bambu-lab-x1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cama-caliente-v3-serie-p1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-ap-v2-para-x1x1c</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/estructura-bambu-lab-a1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/grasa-lubricante-50-grs</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/pack-3-cepillos-de-limpieza-para-boquillas</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/pasta-termica-de-alta-temperatura-400c</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/disipador-artillery</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/flsun-t1-impresora-3d-fdm-maxima-velocidad-1000mms</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fdm-prusa-kit-mk4s</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fdm-prusa-kit-core-one</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/alicates-de-corte-precision</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/tubo-de-teflon-4000mm-blanco</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/bambu-lab-motor-z</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/set-boquillas-creality-k1</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/bambu-lab-puerta-de-vidrio-frontal</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-lampara-led-rgb</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-motor</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/kit-upgrade-prusa-mk4s-a-core-one</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-abs-1000g-175mm-negro</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/res-anycubic-estandar-1000ml</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-placa-ender-3</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-pla-silk-1000g-175mm-dorado</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fil-esun-pla-silk-1000g-175mm-plateado</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-extrusor-ender-3</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-nozzle-ender-3-v3-se</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/rsp-hotend-ender-3-v3-se</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/res-creality-estandar-1000ml</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/res-creality-estandar-500ml</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/res-creality-especializada-500ml</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -651,60 +2253,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/rsp-hotend-bambu-p1</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-bambu-a1-mini</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-bambu-x1</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-correa-polea-bambu-a1</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-extrusor-bambu-x1</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-cr-6</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-ender-5</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-ender-3-s1-pro</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-placa-ender-3-s1</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-fuente-de-poder-bambu-a1-mini</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -5672,12 +7220,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-petg-1000g-175mm-sc</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/fil-esun-petg-1000g-175mm-amarillo</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -5888,12 +7430,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-creality-pla-1000g-175mm-sc</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/fil-creality-abs-1000g-175mm-sc</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -5906,37 +7442,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-creality-pla-silk-1000g-175mm-sc</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/fil-creality-pla-cf-1000g-175mm-sc</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fil-bambu-lab-pla-1000g-175mm-sc</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fil-creality-pla-matte-1000g-175mm-sc</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fil-bambu-lab-pla-matte-1000g-175mm-sc</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-matte-1000g-175mm-sc</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -8348,402 +9854,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/mini-laca-fijadora-cama-caliente-3dlac-75ml-accesorio-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/superficie-de-vidrio-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/sticker-magnetico-235x235cm-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fuente-de-poder-et5-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cama-caliente-et4-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/sticker-para-plataforma-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/sticker-magnetico-31x31cm-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cr-touch-kit-de-autonivelacion-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/caja-de-herramientas-creality-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fuente-de-poder-slim-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fuente-de-poder-hornet-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-adaptadora-e-axis-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/x-axis-pcb-adaptador-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-adaptadora-z-axis-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-vidrio-ultrabase-megax-330mm-310mm-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fuente-de-poder-ender-2-pro-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/sticker-magnetico-ender-2-pro-185x170cm-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-5-boquillas-mk-hf-cobre-de-alta-temperatura-creality-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/dry-box-ebox-lite-para-filamentos-esun</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/heatsink-12x4332x355-serie-ender-neo-creality-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-impresion-photon-m3-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-impresion-mono-xmono-x-6km3-plus-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-impresion-photon-mono-m3-max-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pegamento-especializado-3d-para-cama-stick-3dlac-80ml-accesorio-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pack-x-10-bolsas-de-cuidado-premium-1kg-esun-dry-bag</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pegamento-para-cama-stick-3d-creality-accesorio-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bomba-de-vacio-epump-usb-esun-epump</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-impresion-mars-3-mars-3-pro-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-impresion-saturn-2-8k-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/recipiente-de-resina-metalico-saturn-8k-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-impresion-saturn-8k-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fuente-de-poder-neptune-3-pro-elegoo-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-impresion-photon-mono-2-4k-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fep-film-o-pelicula-fep-mono-2-4k-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/x1-carbon-combo-multifilamento-bambu-lab-tamano-imp-256256256mm-impresora-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/p1s-combo-multifilamento-bambu-lab-tamano-imp-256256256mm-impresora-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/a1-mini-combo-multifilamento-bambu-lab-tamano-imp-180180180mm-impresora-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/dry-box-20-para-filamentos-creality</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/multicolor-a1-combo-con-ams-4-colores-bambu-lab-tamano-imp-256256256mm-impresora-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-impresion-photon-mono-m5s-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/dry-box-space-pi-para-filamentos-creality</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-impresion-mars-4-max-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tanque-o-vat-de-resina-mars-4-max-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-impresion-mars-4-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tanque-o-vat-de-resina-mars-4-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tanque-o-vat-de-resina-jupiter-se-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-impresion-jupiter-se-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-impresion-saturn-3-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tanque-o-vat-de-resina-saturn-3-ultra-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-impresion-saturn-3-ultra-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-impresion-halot-lite-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pack-x-2-fep-film-o-pelicula-fep-mono-2-4k-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-impresion-saturn-4-ultra-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tanque-o-vat-de-resina-saturn-4-ultra-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/caja-secadora-de-filamento-dual-s4-sunlu</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pf002-a-eu1-a1-sola-sin-ams-bambu-lab-tamano-imp-256256256mm-impresora-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tanque-o-vat-de-resina-mars-5-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tanque-o-vat-de-resina-mars-5-ultra-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-de-herramientas-creality-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-plataforma-de-impresion-mars-5-series-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-uniz-ubee-volumen-imp-198x124x180mm-dental</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-plataforma-de-impresion-halot-r6-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-eazao-potter-greda-arcilla-ceramica-tamano-imp-165165280mm</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-eazao-bio-para-materiales-viscosos-tamano-imp-150150240mm</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pack-x-2-fep-film-de-alta-velocidad-mono-4-ultra-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pack-x-2-fep-film-de-alta-velocidad-m7-max-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/fdm-uniz-tanque-de-restauracion-ubee-accesorio-dental</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -8786,577 +9896,403 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/spray-de-escaneo-3d-sublimante-tarnish-11-tiempo-de-1-3-horas-500ml-reflecon-escaner-3d</loc>
+    <loc>https://dprecios.web.app/productos/taza-de-sifon-con-tapa-de-metal-para-mobius-sp-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/spray-de-escaneo-3d-sublimante-tarnish-12-tiempo-de-1-2-horas-500ml-reflecon</loc>
+    <loc>https://dprecios.web.app/productos/premium-series-ghpm-mobius-02mm-marca-gaahleri-aerografo</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/spray-de-escaneo-3d-sublimante-tarnish-50-tiempo-de-5-8-horas-500ml-reflecon</loc>
+    <loc>https://dprecios.web.app/productos/copa-de-nivel-de-espejo-110-oz-3ml-general-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/spray-de-escaneo-3d-sublimante-tarnish-90-permanente-500ml-reflecon</loc>
+    <loc>https://dprecios.web.app/productos/premium-series-ghpm-mobius-03mm-marca-gaahleri-aerografo</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/dry-box-o-secadora-de-filamentos-spacepi-x4-creality</loc>
+    <loc>https://dprecios.web.app/productos/copa-de-nivel-de-espejo-ultra-13-oz-10ml-general-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/mango-para-escaner-wifi-serie-raptor-creality</loc>
+    <loc>https://dprecios.web.app/productos/premium-series-ghpm-mobius-sp-03-05mm-marca-gaahieri-aerografo</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/mango-para-escaner-wifi-serie-otter-creality</loc>
+    <loc>https://dprecios.web.app/productos/vaso-de-fluido-de-gravedad-de-nivel-suave-de-12-oz-15ml-advance-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/modulo-laser-10w-h2d-series-accesorio-3d-bambu-lab-repuestos-3d</loc>
+    <loc>https://dprecios.web.app/productos/premium-series-ghpm-mobius-tg-marca-gaahieri-aerografo</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/ams-2-pro-multicolor-4-colores-h2d-series-accesorio-3d-bambu-lab</loc>
+    <loc>https://dprecios.web.app/productos/vaso-de-fluido-de-gravedad-de-nivel-suave-de-14-oz-7ml-advance-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/taza-de-sifon-con-tapa-de-metal-para-mobius-sp-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/advanced-series-ghad-39-marca-gaahieri-aerografo</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/premium-series-ghpm-mobius-02mm-gaahleri-aerografo</loc>
+    <loc>https://dprecios.web.app/productos/copa-de-nivel-de-espejo-ultra-23-oz-20ml-general-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/copa-de-nivel-de-espejo-110-oz-3ml-general-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/ace-series-ghac-swallowtail-barbatos-rex-marca-gaahieri-aerografo</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/premium-series-ghpm-mobius-03mm-gaahleri-aerografo</loc>
+    <loc>https://dprecios.web.app/productos/mango-principal-tipo-t-para-mobius-series-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/copa-de-nivel-de-espejo-ultra-13-oz-10ml-general-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/ace-series-ghac-swallowtail-studio-g-marca-gaahieri-aerografo</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/premium-series-ghpm-mobius-sp-03-05mm-gaahieri-aerografo</loc>
+    <loc>https://dprecios.web.app/productos/mango-principal-tipo-c-para-mobius-series-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/vaso-de-fluido-de-gravedad-de-nivel-suave-de-12-oz-15ml-advance-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/gt-918-para-todos-los-modelos-marca-gaahieri-kit-compresor</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/premium-series-ghpm-mobius-tg-gaahieri-aerografo</loc>
+    <loc>https://dprecios.web.app/productos/mango-principal-tipo-c-para-ace-advance-series-ghad-39-ghac-98d-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/vaso-de-fluido-de-gravedad-de-nivel-suave-de-14-oz-7ml-advance-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/ambition-series-gts-06-serenair-marca-gaahieri-mini-compresor</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/advanced-series-ghad-39-gaahieri-aerografo</loc>
+    <loc>https://dprecios.web.app/productos/mango-principal-tipo-r-para-ace-advance-series-ghad-39-ghac-98d-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/copa-de-nivel-de-espejo-ultra-23-oz-20ml-general-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/boquilla-02mm-para-mobius-series-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/ace-series-ghac-swallowtail-barbatos-rex-gaahieri-aerografo</loc>
+    <loc>https://dprecios.web.app/productos/gatillo-principal-para-ghac-swallowtail-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/mango-principal-tipo-t-para-mobius-series-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/boquilla-03mm-para-mobius-series-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/ace-series-ghac-swallowtail-studio-g-gaahieri-aerografo</loc>
+    <loc>https://dprecios.web.app/productos/sostenedor-para-aerografo-general-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/mango-principal-tipo-c-para-mobius-series-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/boquilla-05mm-para-mobius-series-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/gt-918-para-todos-los-modelos-gaahieri-kit-compresor</loc>
+    <loc>https://dprecios.web.app/productos/caja-almacenamiento-para-aerografo-general-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/mango-principal-tipo-c-para-ace-advance-series-ghad-39-ghac-98d-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/boquilla-035mm-para-advanced-series-ghad-39-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/ambition-series-gts-06-serenair-gaahieri-mini-compresor</loc>
+    <loc>https://dprecios.web.app/productos/adaptador-macho-rapido-para-aerografo-2-piezas-general-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/mango-principal-tipo-r-para-ace-advance-series-ghad-39-ghac-98d-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/boquilla-05mm-para-advanced-series-ghad-39-ghad-68-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-02mm-para-mobius-series-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/adaptador-hembra-de-desconexion-rapida-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/gatillo-principal-para-ghac-swallowtail-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/boquilla-028mm-para-ace-swallowtail-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-03mm-para-mobius-series-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/kit-de-limpieza-para-aerografo-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/sostenedor-para-aerografo-general-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/boquilla-05mm-para-ace-series-ghac-98d-swallowtail-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-05mm-para-mobius-series-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/manguera-de-aire-general-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/caja-almacenamiento-para-aerografo-general-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/boquilla-07mm-para-ace-swallowtail-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-035mm-para-advanced-series-ghad-39-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/anillo-teflon-boquillas-o-rings-blanco-x-2-para-mobius-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/adaptador-macho-rapido-para-aerografo-2-piezas-general-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/anillo-o-rings-negro-x-2-para-mobius-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-05mm-para-advanced-series-ghad-39-ghad-68-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/anillo-teflon-o-rings-para-tapa-x-2-para-mobius-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/adaptador-hembra-de-desconexion-rapida-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/anillo-teflon-boquillas-o-rings-blanco-x-2-para-ace-advance-series-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-028mm-para-ace-swallowtail-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/anillos-o-rings-negro-x-2-para-ace-advance-ghad-39-ghpm-65-ghac-98d-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/kit-de-limpieza-para-aerografo-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/anillo-teflon-o-rings-para-tapa-x-2-para-ace-advance-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-05mm-para-ace-series-ghac-98d-swallowtail-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/anillos-o-rings-negro-x-2-para-advance-swallowtail-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/manguera-de-aire-general-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/aguja-02mm-mobius-series-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/boquilla-07mm-para-ace-swallowtail-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/aguja-03mm-mobius-series-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/anillo-teflon-boquillas-o-rings-blanco-x-2-para-mobius-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/aguja-05mm-mobius-series-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/anillo-o-rings-negro-x-2-para-mobius-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/aguja-035mm-para-advance-ghad-39-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/anillo-teflon-o-rings-para-tapa-x-2-para-mobius-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/aguja-05mm-para-advance-ghad-39-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/anillo-teflon-boquillas-o-rings-blanco-x-2-para-ace-advance-series-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/aguja-028mm-alta-duracion-para-ghac-swallowtail-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/anillos-o-rings-negro-x-2-para-ace-advance-ghad-39-ghpm-65-ghac-98d-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/aguja-05mm-alta-duracion-para-ghac-swallowtail-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/anillo-teflon-o-rings-para-tapa-x-2-para-ace-advance-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/aguja-07mm-alta-duracion-para-ghac-swallowtail-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/anillos-o-rings-negro-x-2-para-advance-swallowtail-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/tapa-de-aire-redonda-y-ancha-premium-general-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/aguja-02mm-mobius-series-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/tapa-de-aire-redonda-y-estrecha-premium-general-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/aguja-03mm-mobius-series-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/tapa-de-aire-de-distancia-fija-premium-general-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/aguja-05mm-mobius-series-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/tapa-de-aire-de-linea-fina-premium-general-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/aguja-035mm-para-advance-ghad-39-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/tapa-de-aire-de-patron-redondo-premium-general-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/aguja-05mm-para-advance-ghad-39-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/tapa-de-aire-con-patron-de-corona-general-excepto-swallowtail-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/aguja-028mm-alta-duracion-para-ghac-swallowtail-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/tapa-de-aire-con-patron-de-6-orificios-general-excepto-swallowtail-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/aguja-05mm-alta-duracion-para-ghac-swallowtail-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/gorra-de-abanico-para-aerografo-para-ace-swallowtail-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/aguja-07mm-alta-duracion-para-ghac-swallowtail-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/tapa-de-aire-de-patron-redondo-para-ace-general-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/tapa-de-aire-redonda-y-ancha-premium-general-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/tapa-de-aire-con-patron-de-8-orificios-para-ace-general-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/tapa-de-aire-redonda-y-estrecha-premium-general-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/tapa-de-boquilla-02-para-mobius-series-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/tapa-de-aire-de-distancia-fija-premium-general-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/tapa-de-boquilla-03-para-mobius-series-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/tapa-de-aire-de-linea-fina-premium-general-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/tapa-de-boquilla-05-para-mobius-series-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/tapa-de-aire-de-patron-redondo-premium-general-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/tapa-de-boquilla-035-para-advanced-series-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/tapa-de-aire-con-patron-de-corona-general-excepto-swallowtail-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/tapa-de-boquilla-05-para-advanced-series-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/tapa-de-aire-con-patron-de-6-orificios-general-excepto-swallowtail-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/tapa-de-boquilla-028-para-ghac-swallowtail-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/gorra-de-abanico-para-aerografo-para-ace-swallowtail-gaahleri</loc>
+    <loc>https://dprecios.web.app/productos/tapa-de-boquilla-05-para-ghac-swallowtail-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/tapa-de-aire-de-patron-redondo-para-ace-general-gaahleri</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tapa-de-aire-con-patron-de-8-orificios-para-ace-general-gaahleri</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tapa-de-boquilla-02-para-mobius-series-gaahleri</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tapa-de-boquilla-03-para-mobius-series-gaahleri</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tapa-de-boquilla-05-para-mobius-series-gaahleri</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tapa-de-boquilla-035-para-advanced-series-gaahleri</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tapa-de-boquilla-05-para-advanced-series-gaahleri</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tapa-de-boquilla-028-para-ghac-swallowtail-gaahleri</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tapa-de-boquilla-05-para-ghac-swallowtail-gaahleri</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tapa-de-boquilla-07-para-ghac-swallowtail-gaahleri</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/falcon2-pro-s-super-22w-grabador-y-cortador-laser-creality</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/falcon2-pro-s-super-40w-grabador-y-cortador-laser-creality</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ecaner-3d-otter-lite-creality</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-impresion-saturn-4-ultra-16k-elegoo-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tarjeta-madre-f402-k1-v20-neptune-4-plus-max-elegoo-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tubo-de-teflon-ptfe-centauri-carbon-elegoo-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/boquilla-de-acero-endurecido-04-centauri-carbon-elegoo-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tarjeta-madre-centauri-carbon-elegoo-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tarjeta-madre-orange-storm-giga-elegoo-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cable-de-limite-de-eje-z-neptune-series-elegoo-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tarjeta-madre-saturn-4-ultra-16k-elegoo-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pack-boquillas-ender-5-max-de-cobre-de-impresora-3d-04mm-x-4-06mm-x-2-08mm-x-2-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pack-boquillas-de-acero-endurecido-ender-5-max-de-impresora-3d-04mm-x-4-06mm-x-2-08mm-x-2-repuestos-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-creality-k2-tamano-imp-260-x-260-x-260mm</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-creality-k2-combo-multicolor-tamano-imp-260-x-260-x-260mm</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/h2s-combo-multicolor-bambu-lab-tamano-imp-320-x-340-x-340mm-impresora-3d</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-flashforge-adventure-5m-preventa-20-abril-core-xy-tamano-imp-220-x-220-x-220mm</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-flashforge-adventure-5m-pro-preventa-20-de-abril-core-xy-tamano-imp-220-x-220-x-220mm</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-flashforge-adventure-ad5x-combo-multicolor-preventa-20-de-abril-core-xy-tamano-imp-220-x-220-x-220mm</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-flashforge-guider-3-ultra-core-xy-tamano-imp-330-x-330-x-600mm</loc>
+    <loc>https://dprecios.web.app/productos/tapa-de-boquilla-07-para-ghac-swallowtail-marca-gaahleri</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -9507,12 +10443,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/broca-para-madera-y-plastico-twotrees-accesorios-cnc-router</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pack-x-4-hotend-completo-ad5x-025-04-06-08mm-flashforge-repuestos-3d</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -9812,120 +10742,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/pegamento-especializado-3d-para-cama-stick-marca-3dlac-80ml-accesorio-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pegamento-para-cama-stick-3d-marca-creality-accesorio-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-flashforge-adventure-5m-preventa-20-abril-core-xy-tamano-imp-220-x-220-x-220-mm</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-flashforge-adventure-5m-pro-preventa-20-de-abril-core-xy-tamano-imp-220-x-220-x-220-mm</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/a1-mini-combo-multifilamento-bambu-lab-tamano-imp-180180180-mm-impresora-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pf002-a-eu1-a1-sola-sin-ams-bambu-lab-tamano-imp-256256256-mm-impresora-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-flashforge-adventure-ad5x-combo-multicolor-preventa-20-de-abril-core-xy-tamano-imp-220-x-220-x-220-mm</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/multicolor-a1-combo-con-ams-4-colores-bambu-lab-tamano-imp-256256256-mm-impresora-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-creality-k2-tamano-imp-260-x-260-x-260-mm</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-creality-k2-combo-multicolor-tamano-imp-260-x-260-x-260-mm</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/falcon2-pro-s-super-22w-grabador-y-cortador-laser-marca-creality</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/p1s-combo-multifilamento-bambu-lab-tamano-imp-256256256-mm-impresora-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-eazao-potter-greda-arcilla-ceramica-marca-tamano-imp-165165280-mm</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-eazao-bio-para-materiales-viscosos-tamano-imp-150150240-mm</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/falcon2-pro-s-super-40w-grabador-y-cortador-laser-marca-creality</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/x1-carbon-combo-multifilamento-bambu-lab-tamano-imp-256256256-mm-impresora-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/h2s-combo-multicolor-bambu-lab-tamano-imp-320-x-340-x-340-mm-impresora-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-flashforge-guider-3-ultra-core-xy-tamano-imp-330-x-330-x-600-mm</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-uniz-ubee-marca-volumen-imp-198x124x180mm-dental</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/superficie-de-vidrio-para-impresora-3d-repuestos-3d</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -9933,6 +10749,54 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/sticker-magnetico-para-impresora-3d-235x235cm-repuestos-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fuente-de-poder-para-impresora-3d-et5-repuestos-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cama-caliente-para-impresora-3d-et4-repuestos-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/sticker-para-plataforma-para-impresora-3d-repuestos-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/sticker-magnetico-para-impresora-3d-31x31cm-repuestos-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/cr-touch-kit-de-autonivelacion-para-impresora-3d-repuestos-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/caja-de-herramientas-para-impresora-3d-creality-repuestos-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fuente-de-poder-slim-para-impresora-3d-repuestos-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fuente-de-poder-para-impresora-3d-hornet-repuestos-3d</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -9956,85 +10820,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/caja-de-herramientas-para-impresora-3d-creality-repuestos-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tanque-o-vat-de-resina-para-impresora-3d-mars-5-ultra-repuestos-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tanque-o-vat-de-resina-para-impresora-3d-mars-5-repuestos-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/recipiente-de-resina-metalico-para-impresora-3d-saturn-8k-repuestos-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/sticker-magnetico-para-impresora-3d-31x31cm-repuestos-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fuente-de-poder-para-impresora-3d-et5-repuestos-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fuente-de-poder-slim-para-impresora-3d-repuestos-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cama-caliente-para-impresora-3d-et4-repuestos-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/sticker-para-plataforma-para-impresora-3d-repuestos-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cr-touch-kit-de-autonivelacion-para-impresora-3d-repuestos-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fuente-de-poder-para-impresora-3d-hornet-repuestos-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fuente-de-poder-para-impresora-3d-neptune-3-pro-elegoo-repuestos-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/placa-de-vidrio-ultrabase-megax-330mm-310mm-para-impresora-3d-repuestos-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/heatsink-12x4332x355-serie-ender-neo-marca-creality-repuestos-3d</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10052,7 +10838,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/placa-de-impresion-photon-mono-2-4k-para-impresora-3d-repuestos-3d</loc>
+    <loc>https://dprecios.web.app/productos/kit-5-boquillas-mk-hf-cobre-de-alta-temperatura-para-impresora-3d-creality-repuestos-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/dry-box-ebox-lite-para-filamentos-marca-esun</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/heatsink-12x4332x355-serie-ender-neo-marca-creality-repuestos-3d</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10076,6 +10874,30 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://dprecios.web.app/productos/pegamento-especializado-3d-para-cama-stick-marca-3dlac-80ml-accesorio-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/pack-x-10-bolsas-de-cuidado-premium-1kg-marca-esun-dry-bag</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/pegamento-para-cama-stick-3d-marca-creality-accesorio-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/bomba-de-vacio-epump-usb-marca-esun-epump</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://dprecios.web.app/productos/placa-de-impresion-mars-3-mars-3-pro-para-impresora-3d-repuestos-3d</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -10088,13 +10910,25 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://dprecios.web.app/productos/recipiente-de-resina-metalico-para-impresora-3d-saturn-8k-repuestos-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://dprecios.web.app/productos/placa-de-impresion-saturn-8k-para-impresora-3d-repuestos-3d</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/kit-5-boquillas-mk-hf-cobre-de-alta-temperatura-para-impresora-3d-creality-repuestos-3d</loc>
+    <loc>https://dprecios.web.app/productos/fuente-de-poder-para-impresora-3d-neptune-3-pro-elegoo-repuestos-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-de-impresion-photon-mono-2-4k-para-impresora-3d-repuestos-3d</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10106,7 +10940,43 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://dprecios.web.app/productos/x1-carbon-combo-multifilamento-bambu-lab-tamano-imp-256256256-mm-impresora-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/p1s-combo-multifilamento-bambu-lab-tamano-imp-256256256-mm-impresora-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/a1-mini-combo-multifilamento-bambu-lab-tamano-imp-180180180-mm-impresora-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/dry-box-20-para-filamentos-marca-creality</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/multicolor-a1-combo-con-ams-4-colores-bambu-lab-tamano-imp-256256256-mm-impresora-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://dprecios.web.app/productos/placa-de-impresion-photon-mono-m5s-para-impresora-3d-repuestos-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/dry-box-space-pi-para-filamentos-marca-creality</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10125,12 +10995,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/placa-de-impresion-mars-4-para-impresora-3d-repuestos-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-plataforma-de-impresion-halot-r6-para-impresora-3d-repuestos-3d</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10196,6 +11060,30 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://dprecios.web.app/productos/caja-secadora-de-filamento-dual-s4-marca-sunlu</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/pf002-a-eu1-a1-sola-sin-ams-bambu-lab-tamano-imp-256256256-mm-impresora-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/tanque-o-vat-de-resina-para-impresora-3d-mars-5-repuestos-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/tanque-o-vat-de-resina-para-impresora-3d-mars-5-ultra-repuestos-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://dprecios.web.app/productos/kit-de-herramientas-para-impresora-3d-creality-repuestos-3d</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -10208,6 +11096,30 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://dprecios.web.app/productos/fdm-uniz-ubee-marca-volumen-imp-198x124x180mm-dental</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/placa-plataforma-de-impresion-halot-r6-para-impresora-3d-repuestos-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fdm-eazao-potter-greda-arcilla-ceramica-marca-tamano-imp-165165280-mm</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fdm-eazao-bio-para-materiales-viscosos-tamano-imp-150150240-mm</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://dprecios.web.app/productos/pack-x-2-fep-film-de-alta-velocidad-mono-4-ultra-para-impresora-3d-repuestos-3d</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -10215,6 +11127,36 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/pack-x-2-fep-film-de-alta-velocidad-m7-max-para-impresora-3d-repuestos-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/spray-de-escaneo-3d-sublimante-tarnish-11-tiempo-de-1-3-horas-500ml-marca-reflecon-escaner-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/spray-de-escaneo-3d-sublimante-tarnish-12-tiempo-de-1-2-horas-500ml-marca-reflecon</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/spray-de-escaneo-3d-sublimante-tarnish-50-tiempo-de-5-8-horas-500ml-marca-reflecon</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/spray-de-escaneo-3d-sublimante-tarnish-90-permanente-500ml-marca-reflecon</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/dry-box-o-secadora-de-filamentos-spacepi-x4-marca-creality</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10239,6 +11181,24 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/ams-2-pro-multicolor-4-colores-h2d-series-accesorio-3d-marca-bambu-lab</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/falcon2-pro-s-super-22w-grabador-y-cortador-laser-marca-creality</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/falcon2-pro-s-super-40w-grabador-y-cortador-laser-marca-creality</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/ecaner-3d-otter-lite-marca-creality</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10304,79 +11264,49 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://dprecios.web.app/productos/fdm-creality-k2-tamano-imp-260-x-260-x-260-mm</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fdm-creality-k2-combo-multicolor-tamano-imp-260-x-260-x-260-mm</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/h2s-combo-multicolor-bambu-lab-tamano-imp-320-x-340-x-340-mm-impresora-3d</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fdm-flashforge-adventure-5m-preventa-20-abril-core-xy-tamano-imp-220-x-220-x-220-mm</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fdm-flashforge-adventure-5m-pro-preventa-20-de-abril-core-xy-tamano-imp-220-x-220-x-220-mm</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fdm-flashforge-adventure-ad5x-combo-multicolor-preventa-20-de-abril-core-xy-tamano-imp-220-x-220-x-220-mm</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/fdm-flashforge-guider-3-ultra-core-xy-tamano-imp-330-x-330-x-600-mm</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://dprecios.web.app/productos/pack-x-4-hotend-completo-ad5x-025-04-06-08-mm-flashforge-repuestos-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bomba-de-vacio-epump-usb-marca-esun-epump</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/dry-box-ebox-lite-para-filamentos-marca-esun</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/dry-box-20-para-filamentos-marca-creality</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/dry-box-space-pi-para-filamentos-marca-creality</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/caja-secadora-de-filamento-dual-s4-marca-sunlu</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/dry-box-o-secadora-de-filamentos-spacepi-x4-marca-creality</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pack-x-10-bolsas-de-cuidado-premium-1kg-marca-esun-dry-bag</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/spray-de-escaneo-3d-sublimante-tarnish-11-tiempo-de-1-3-horas-500ml-marca-reflecon-escaner-3d</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/spray-de-escaneo-3d-sublimante-tarnish-12-tiempo-de-1-2-horas-500ml-marca-reflecon</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/spray-de-escaneo-3d-sublimante-tarnish-50-tiempo-de-5-8-horas-500ml-marca-reflecon</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/spray-de-escaneo-3d-sublimante-tarnish-90-permanente-500ml-marca-reflecon</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ecaner-3d-otter-lite-marca-creality</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -10497,18 +11427,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/sensor-final-de-carrera-eje-x-artillery-x2-y-pro</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-sensor-artillery</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-extrusor-artillery</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -11084,18 +12002,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/rsp-hotend-artillery</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-hotend-ender-3</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/carrito-extrusor-impresora-eje-x-perfil-20x20</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -11571,12 +12477,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/kit-tubo-de-teflon-capricorn</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-esun-evacuum-pro-3-kit-de-sellado-al-vacio</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -13112,12 +14012,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-nylon-cf-1000g-175mm-sc</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/acoples-creality-neumaticos-clips</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -14096,12 +14990,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-ender-3</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/kit-de-hotend-serie-neo</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -14667,12 +15555,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/calefactor-hotend-creality-24v-40w-original</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-sensor-ender-3</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -15326,12 +16208,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/fdm-creality-ender-3-v3-plus</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/fdm-creality-ender-3-v3</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -15428,12 +16304,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/rsp-nozzle-bambu-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/fdm-snapmaker-pre-order-u1</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -15513,438 +16383,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/snapmaker-u1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/set-de-llaves-allen-hexagonales-de-colores-9-piezas</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-upgrade-p1p-a-p1s-cierre-para-p1p</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/unidad-de-alimentacion-ams-lite</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tapa-superior-ams</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/vidrio-super-racer</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/soporte-ams-lite</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/soporte-rotatorio-de-carrete-ams-lite</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-ender-6</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/soporte-frontal-del-cabezal-p1-x1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tensor-del-eje-y-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ventilador-interior-camara</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ventilador-hotend-serie-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/soporte-unidad-de-alimentacion-ams-lite</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/sensor-de-cama-caliente-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tensor-del-eje-z-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-ventilador-artillery</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-rfid-ams</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-sensor-cama-caliente</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/full-hotend-artillery-x1-x2-genius-genius-pro</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-ventilador-ender-5</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pack-4-tubos-de-teflon-2x580mm2x700mm-gris</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tensor-del-eje-z-serie-p1-x1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-motor-4234-paso-a-paso-gt20</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-ventilador-ender-3</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/motor-4224-paso-a-paso-eje-z</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/hotend-ender-2-pro</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-correa-eje-x-cr6-se</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-motor-4234-paso-a-paso-ender-5-plus</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ventilador-capa-super-racer</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-motor-4248-paso-a-paso-eje-x-ender-6</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ventilador-axial-v400</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ventilador-axial-super-racer</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ventilador-axial-4010-24v-placa-madre</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/tapa-del-alimentador-ams-lite</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/silicona-protectora-del-hotend-serie-h2-3und</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/sensor-de-final-de-filamento-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/silicona-protectora-del-hotend-serie-a1-3und</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/silicona-protectora-hotend-v400</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-hotend-cr-6</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/soporte-de-goma-para-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-final-de-carrrera-eje-x-cr6-se-cr6-se-max</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-correa-eje-y-ender-6</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-piezas-hotend-cr-10</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/polea-de-distribucion-gt2-20-6mm</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/spray-adhesivo-printalot-400ml-290grs</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/protector-de-pantalla-para-photon-mono-4k-5und</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/protector-de-pantalla-para-photon-mono-x2-x-6ks</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/mini-espatula-de-limpieza</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamentos-bambu-lab-pps-cf-750gr</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamentos-bambu-lab-ppa-cf-750g</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-nylon-cf-750g-175mm-sc</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pla-5000g-175mm-sc</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fil-bambu-lab-asa-1000g-175mm-sc</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fil-bambu-lab-pva-1000g-175mm-transparente</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-esun-epla-cf-fibra-de-carbono</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fil-esun-pc-500g-175mm-sc</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fil-printalot-pla-1000g-175mm-sc</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fil-bambu-lab-abs-1000g-175mm-celeste</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fil-bambu-lab-petg-1000g-175mm-sc</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-printalot-pvoh-soluble-en-agua-175mm-025kg</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fil-plastar-pla-1000g-175mm-sc</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/filamento-limpieza-esun-eclean</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fdm-prusa-xl-semi-ensamblado</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/impresora-3d-bambu-lab-h2c-combo-con-ams-2-pro-impresion-multimaterial-profesional</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/impresora-3d-bambu-lab-h2s-combo-con-ams-2-pro</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/impresora-3d-bambu-lab-h2s-alta-velocidad-y-gran-formato-profesional</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/impresora-3d-bambu-lab-p2s-combo-con-ams-2-pro-multimaterial-automatico</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/impresora-3d-bambu-lab-p2s-alta-velocidad-precision-y-control-termico</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/impresora-3d-bambu-lab-a1-combo-con-ams-lite-multicolor</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/impresora-3d-bambu-lab-a1-mini-combo-ams-lite-multicolor</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/impresora-3d-bambu-lab-a1-la-mas-usada-de-2026</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/impresora-3d-bambu-lab-a1-mini-automatica-rapida-y-precisa</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -16718,30 +17156,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/lokbuild</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/hotend-q5</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/vidrio-q5</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/camara-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/termistor-100k-ntc-3950</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -16887,924 +17301,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/rsp-anycubic-mono-4</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bolsas-para-sellado-al-vacio-33-x-38-cm</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cortador-de-tubo-ptfe-de-alta-precision</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/base-antivibracion-2-sets-bambu-lab-x1-p1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/creality-tubo-de-teflon-capricorn</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bomba-de-vacio-electrica-carga-usb-modelo-bs-01</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ams-hub-serie-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/creality-placa-pei-magnetica-377370-esmerilada</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bambu-placa-pei-esmerilada-para-bambu-lab</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ams-hub-serie-p1-y-x1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ams-2-pro-upgrade-kit-1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/creality-modulo-laser-5w</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/boquilla-volcano</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-sistema-de-movimiento-ender-5</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/conector-neumatico</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/conector-tubo-de-teflon-a1-mini</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/flsun-v400-nozzle-boquilla-alta-velocidad</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-final-de-carrera-eje-z-cr6-se-cr6-se-max</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-del-boton-y-temperatura-interior</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/calefactor-super-racer</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/calefactor-v400</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cortador-de-filamentos-bambu-lab-3-und</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-ruedas-nivelacion-grandes-4und</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cable-conexion-display-serie-p1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pack-3-tubos-de-teflon-1x370mm2x550mm</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cubierta-superior-eje-z-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/palanca-cortador-filamento-para-series-x1-y-p1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/palanca-cortador-filamento-para-serie-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pack-4-tubos-de-teflon-2x530mm-2x30mm-blanco</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/luz-led-serie-p1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pinza-del-soporte-rotatorio-de-carrete-ams-lite</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/limpiador-de-purga-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-magnetica-138x85mm-2-unidades-ld002h</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/antena-wifi-para-serie-x1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cable-cabezal-p1p</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bambu-filtro-de-aire-de-carbon-activado-x1-p1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/antena-wifi-para-bambu-lab-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cubierta-superior-eje-y-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/eje-rotativo-soporte-frontal-ams-rodillo-activo</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-sistema-de-movimiento-bambu-p1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/antena-wifi-para-serie-p1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/carcasa-media-cabezal-serie-p1-x1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bambu-adaptador-4-en-1-de-tubo-de-teflon</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bambu-bus-cable-6pin-510mm</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bambu-usb-c-cable</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-sensor-filamento-v400</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cable-plano-flexible-fpc-para-placa-th-bambu-lab-v9</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/luz-led-serie-x1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cubierta-inferior-a1-mini</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/motor-del-alimentador-del-ams-lite</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-conexion-del-extrusor-para-serie-p1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/hotend-kit-ender-5-plus</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/carcasa-del-motor-eje-x-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pack-4-tubos-de-teflon-2x730mm-2x830mm</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-cama-de-vidrio-con-superficie-de-carbono-245255</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/plataforma-de-impresion-ld-002h</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-modulo-wifi-cr-10-smart</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cable-cabezal-p1s</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/conjunto-del-interruptor-de-encendido-p1-x1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-instalacion-puerta-frontal</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/generico-ender-3-v3-ke-full-hotend-ceramico</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-pantalla-touch-ld002</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-conexion-buffer-filamento</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-poder-ams</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-de-conexion-ams</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cable-4-pin-ams-lite</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/mecanismo-extrusor-acero-endurecido-serie-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cadena-porta-cables-x1-p1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cubierta-inferior-trasera-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cama-caliente-280280-ender-7</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cubierta-inferior-frontal-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/full-hotend-kit-ender-3</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-cama-caliente-k1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-motor-4248-motor-paso-a-paso-eje-ender-6-v24-con-sorporte</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cubierta-frontal-p1p</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panel-metalico-trasero-x1x1c</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panel-metalico-trasero-serie-p1p</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bambu-lab-hotend-con-boquilla-serie-h2-p2</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-cama-superficie-anycubic-kobra-i3</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bambu-lab-motor-eje-x-serie-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bambu-lab-motor-eje-y-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panel-metalico-trasero-serie-p1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/prusa-nozzle-brass-cht-04</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/full-hotend-kit-ender-5-plus</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-pantalla-ender-7</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-pantalla-ender-2-pro</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/mecanismo-extrusor-q5</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-extrusor-bambu-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/embudo-para-filamento-ams-lite</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bambu-lab-motor-eje-z-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/estructura-principal-ams-v3</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/mecanismo-extrusor-super-racer</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ensamble-de-calentamiento-del-hotend-serie-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/calefactor-de-ceramica-y-termistor-serie-p1-3und</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-cr-touch-autonivelacion</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-placa-cr-10</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pantalla-touch-bambu-lab-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bambu-lab-cubierta-de-vidrio-superior</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/sensor-de-nivelacion-automatica-bltouch</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-pantalla-cr5-pro</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/carcasa-frontal-cabezal-series-p1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-extrusion-directa-ender-5-plus</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-del-cabezal-serie-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/carcasa-base-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-placa-ender-6</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pantalla-q5</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/hotend-v400</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-extrusor-titan-con-motor-cr-10v2</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ensamble-de-calentamiento-del-hotend-serie-h2d-h2c</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ensamble-de-calentamiento-del-hotend-serie-h2s</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-pantalla-ender-3-s1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bambu-motor-xy</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/bambu-lab-motor-xy-para-serie-p1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-fuente-de-poder-ender-3-v3</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/motor-hub-interno-ams</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-th-para-serie-p1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/alimentador-primera-etapa-ams</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/carcasa-exterior-ams-lite</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pantalla-serie-p1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/full-hotend-kit-para-creality-cr-m4</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/kit-pantalla-cr-10-smart</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cabezal-completo-anycubic-kobra-neo-s010102</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-madre-ender-7</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-placa-ender-3-s1-pro</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ensamble-completo-eje-z-a1-mini</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pantalla-touch-a1-mini</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/fuente-de-poder-24v</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-nozzle-bambu-x1-04mm</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/full-hotend-con-boquilla-de-acero-04mm-para-series-p1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pantalla-super-racer</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-mc-para-serie-p1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/prusa-nozzle-obxidian-06</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/camara-serie-p1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-madre-q5</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-madre-ams-lite</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ensamblaje-del-eje-x-a1-mini</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-madre-ams-v2</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/riel-lineal-del-eje-x-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/riel-lineal-del-eje-y-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pack-camara-serie-p1-y-luz-led</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/camara-bambu-lab-x1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cubierta-inferior-del-ams</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-fuente-de-poder-bambu-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/rsp-fuente-de-poder-bambu-x1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pantalla-touch-de-alta-resolucion-x1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/ensamblaje-de-varillas-de-carbono-del-eje-x-de-bambu-lab</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panel-izquierdo-hl-bambu-lab-x1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/panel-derecho-hr-bambu-lab-x1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/cama-caliente-v3-serie-p1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/placa-ap-v2-para-x1x1c</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/estructura-bambu-lab-a1</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/grasa-lubricante-50-grs</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pack-3-cepillos-de-limpieza-para-boquillas</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/pasta-termica-de-alta-temperatura-400c</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -19353,12 +18849,6 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/placa-madre-para-artillery-x3-pro-y-x3-plus</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dprecios.web.app/productos/disipador-artillery</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
