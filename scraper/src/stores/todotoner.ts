@@ -7,22 +7,15 @@ import { fetchHtml, parsePriceCLP, inferCategory } from '../utils';
 // Pagination: ?page=N — detected from max page= link on first page
 // ──────────────────────────────────────────────────────────────
 
-// Sub-categorías Jumpseller — más eficiente que scraping todo /todo-3d/
+// /todo-3d es la ruta agregadora de todo el catálogo 3D (59 páginas, ~2360 productos).
+// Es más completo y simple que scraping por sub-categorías, ya que la inferencia de
+// categoría se hace desde la URL del producto (e.g. /impresoras/impresoras-3d/filamentos/...).
 const SECTION_PATHS = [
-  '/filamentos',              // todos los filamentos (marca propia + Bambu, eSUN, Creality, Elegoo…)
-  '/impresoras-3d',           // impresoras FDM + resina
-  '/resinas',                 // resinas líquidas
-  '/repuestos-3d',            // repuestos Creality, Anycubic, etc.
-  '/accesorios-3d',           // accesorios
-  '/grabado-laser',           // grabadoras / cortadoras láser
-  '/dry-box',                 // secadores de filamento
-  '/scanner-3d',              // scanners 3D
-  '/lapices-3d',              // lápices 3D
-  '/todo-3d/lavado-y-curado', // wash & cure machines
+  '/todo-3d',
 ];
 
-// Pages cap per category to avoid runaway scraping on huge catalogs
-const MAX_PAGES = 30;
+// 59 páginas en /todo-3d (verificado en sitio). Margen de +5 por si crece.
+const MAX_PAGES = 65;
 
 export async function scrapeTodotoner(store: StoreConfig): Promise<ScraperResult[]> {
   const results: ScraperResult[] = [];
