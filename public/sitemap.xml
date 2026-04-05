@@ -16556,12 +16556,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dprecios.web.app/productos/ttc-450-pro-cnc-router-machine-twotrees-cnc-router</loc>
-    <lastmod>2026-04-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://dprecios.web.app/productos/filamento-esun-matte-rainbow</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -18507,6 +18501,12 @@
   </url>
   <url>
     <loc>https://dprecios.web.app/productos/rsp-anycubic-plataforma-de-impresion-de-66-pulgadas-photon-mono-2</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dprecios.web.app/productos/ttc-450-pro-cnc-router-machine-twotrees-cnc-router</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
