@@ -11,4 +11,4 @@ FIREBASE_PROJECT_ID = "dprecios"
 [[d1_databases]]
 binding = "DB"
 database_name = "forum-db"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id = "a689d86e-9815-4680-b089-2018a6a0ce52"
