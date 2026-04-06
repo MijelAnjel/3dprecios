@@ -11,7 +11,7 @@ import { DOCUMENT } from '@angular/common';
 import { Title, Meta } from '@angular/platform-browser';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map, switchMap } from 'rxjs/operators';
-import { Product, Category, SpecField } from '../../core/models';
+import { Product, Category, SpecField, CatalogProduct } from '../../core/models';
 import { BreadcrumbComponent, BreadcrumbItem } from '../../shared/components/breadcrumb/breadcrumb.component';
 import { FilterPanelComponent, ActiveFilters } from './components/filter-panel/filter-panel.component';
 import { SortBarComponent, SortOption } from './components/sort-bar/sort-bar.component';
@@ -38,14 +38,14 @@ export class CatalogComponent {
   // Señales de estado
   readonly mobileFiltersOpen = signal(false);
   readonly sort    = signal<SortOption>('price-asc');
-  readonly filters = signal<ActiveFilters>({ priceMin: null, priceMax: null, specs: {} });
+  readonly filters = signal<ActiveFilters>({ priceMin: null, priceMax: null, stockOnly: false, specs: {} });
   readonly loading = signal(false);
   readonly page    = signal(1);
   readonly PAGE_SIZE = 24;
 
   readonly hasActiveFilters = computed(() => {
-    const { priceMin, priceMax, specs } = this.filters();
-    return priceMin !== null || priceMax !== null || Object.values(specs).some(Boolean);
+    const { priceMin, priceMax, stockOnly, specs } = this.filters();
+    return priceMin !== null || priceMax !== null || stockOnly || Object.values(specs).some(Boolean);
   });
 
   // Slug de la ruta como signal
@@ -83,7 +83,7 @@ export class CatalogComponent {
 
   // Filtrado + sort con computed() — sin requests al servidor
   readonly visibleProducts = computed<Product[]>(() => {
-    const { priceMin, priceMax, specs } = this.filters();
+    const { priceMin, priceMax, stockOnly, specs } = this.filters();
     const q = this.searchQuery().toLowerCase();
     let list = this.allProducts();
 
@@ -92,6 +92,9 @@ export class CatalogComponent {
     }
     if (priceMin !== null) list = list.filter((p) => p.minPrice >= priceMin);
     if (priceMax !== null) list = list.filter((p) => p.minPrice <= priceMax);
+    if (stockOnly) {
+      list = list.filter((p) => (p as CatalogProduct).entries?.some(e => e.stock !== 'out') ?? true);
+    }
 
     for (const [key, val] of Object.entries(specs)) {
       if (val) list = list.filter((p) => String(p.specs[key]) === val);
@@ -143,18 +146,19 @@ export class CatalogComponent {
 
     // Leer estado inicial desde URL
     const snap = this.route.snapshot.queryParamMap;
-    const sortParam = snap.get('sort') as SortOption | null;
-    const priceMin  = snap.get('priceMin')  ? Number(snap.get('priceMin'))  : null;
-    const priceMax  = snap.get('priceMax')  ? Number(snap.get('priceMax'))  : null;
-    const pageParam = snap.get('page') ? Number(snap.get('page')) : 1;
+    const sortParam  = snap.get('sort') as SortOption | null;
+    const priceMin   = snap.get('priceMin')  ? Number(snap.get('priceMin'))  : null;
+    const priceMax   = snap.get('priceMax')  ? Number(snap.get('priceMax'))  : null;
+    const stockOnly  = snap.get('stockOnly') === '1';
+    const pageParam  = snap.get('page') ? Number(snap.get('page')) : 1;
     const specs: Record<string, string> = {};
     for (const key of snap.keys) {
       if (key.startsWith('s_')) specs[key.slice(2)] = snap.get(key) ?? '';
     }
     if (sortParam) this.sort.set(sortParam);
     if (pageParam > 1) this.page.set(pageParam);
-    if (priceMin !== null || priceMax !== null || Object.keys(specs).length) {
-      this.filters.set({ priceMin, priceMax, specs });
+    if (priceMin !== null || priceMax !== null || stockOnly || Object.keys(specs).length) {
+      this.filters.set({ priceMin, priceMax, stockOnly, specs });
     }
   }
 
@@ -163,10 +167,11 @@ export class CatalogComponent {
     const s = this.sort();
     const p = this.page();
     const params: Record<string, string | null | undefined> = {
-      sort:     s !== 'price-asc' ? s : null,
-      page:     p > 1 ? String(p) : null,
-      priceMin: f.priceMin !== null ? String(f.priceMin) : null,
-      priceMax: f.priceMax !== null ? String(f.priceMax) : null,
+      sort:      s !== 'price-asc' ? s : null,
+      page:      p > 1 ? String(p) : null,
+      priceMin:  f.priceMin !== null ? String(f.priceMin) : null,
+      priceMax:  f.priceMax !== null ? String(f.priceMax) : null,
+      stockOnly: f.stockOnly ? '1' : null,
     };
     for (const key of this.specFields().map(sf => sf.key)) {
       params[`s_${key}`] = f.specs[key] || null;

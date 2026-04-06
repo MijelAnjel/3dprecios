@@ -3,10 +3,82 @@ import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Product, CatalogProduct } from '../models';
 import { CatalogService } from './catalog.service';
+import { ViewTrackingService } from './view-tracking.service';
+
+/** Deterministic Fisher-Yates shuffle using an LCG seeded by `seed`. */
+function seededShuffle<T>(arr: T[], seed: number): T[] {
+  const result = [...arr];
+  let s = seed >>> 0;
+  for (let i = result.length - 1; i > 0; i--) {
+    s = (Math.imul(1664525, s) + 1013904223) >>> 0;
+    const j = s % (i + 1);
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+}
 
 @Injectable({ providedIn: 'root' })
 export class ProductService {
-  private readonly catalog = inject(CatalogService);
+  private readonly catalog      = inject(CatalogService);
+  private readonly viewTracking = inject(ViewTrackingService);
+
+  /**
+   * Selección diaria rotativa con diversidad de tiendas.
+   * El seed cambia cada día, por lo que la selección varía a diario.
+   */
+  getRotatingDailyPicks(limitCount = 8): Observable<Product[]> {
+    return this.withCatalog(products => {
+      const seed = Math.floor(Date.now() / 86400000); // día actual como semilla
+      const withImages = products.filter(p => p.images.length > 0 && p.minPrice > 0);
+      const shuffled = seededShuffle(withImages, seed);
+
+      const storeCounts: Record<string, number> = {};
+      const result: CatalogProduct[] = [];
+
+      for (const p of shuffled) {
+        const storeId = p.entries[0]?.storeId ?? '';
+        if ((storeCounts[storeId] ?? 0) >= 2) continue;
+        storeCounts[storeId] = (storeCounts[storeId] ?? 0) + 1;
+        result.push(p);
+        if (result.length >= limitCount) break;
+      }
+
+      return result;
+    });
+  }
+
+  /** Productos más visitados por el usuario actual, según localStorage.
+   *  Fallback: los más recientemente actualizados con imagen y en ≥2 tiendas. */
+  getPopularProducts(limitCount = 6): Observable<Product[]> {
+    const topViewed = this.viewTracking.getMostViewed(limitCount * 3);
+    if (topViewed.length > 0) {
+      const slugSet = new Set(topViewed.map(v => v.slug));
+      const viewMap = new Map(topViewed.map(v => [v.slug, v.count]));
+      return this.withCatalog(products =>
+        products
+          .filter(p => slugSet.has(p.slug))
+          .sort((a, b) => (viewMap.get(b.slug) ?? 0) - (viewMap.get(a.slug) ?? 0))
+          .slice(0, limitCount)
+      );
+    }
+    // Fallback: actualizados recientemente, presentes en ≥2 tiendas
+    return this.withCatalog(products =>
+      [...products]
+        .filter(p => p.images.length > 0 && p.storeCount >= 2)
+        .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))
+        .slice(0, limitCount)
+    );
+  }
+
+  /** Productos con más presencia en tiendas (mayor storeCount) = más competencia de precios. */
+  getFeaturedProducts(limitCount = 8): Observable<Product[]> {
+    return this.withCatalog(products =>
+      [...products]
+        .filter(p => p.images.length > 0 && p.storeCount >= 2)
+        .sort((a, b) => b.storeCount - a.storeCount)
+        .slice(0, limitCount)
+    );
+  }
 
   /** Top N productos ordenados por fecha de actualización (más reciente primero). */
   getTopProducts(limitCount = 8): Observable<Product[]> {

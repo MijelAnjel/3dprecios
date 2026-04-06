@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="90" fill="#0A0A0F"/>
+  <!-- Hexagon (pointy-top, matching ⬡ in header) — scaled 88% to center safely -->
+  <!-- Original verts: 429,156  256,56  83,156  83,356  256,456  429,356 -->
+  <!-- Scaled ×0.88, centered: each point = (orig - 256) * 0.88 + 256 -->
+  <polygon
+    points="404.52,167.12 256,76.32 107.48,167.12 107.48,344.88 256,435.68 404.52,344.88"
+    fill="#FF6B35"
+  />
+  <!-- "3D" text centered inside hexagon -->
+  <text
+    x="256" y="308"
+    text-anchor="middle"
+    font-family="Arial,Helvetica,sans-serif"
+    font-size="168"
+    font-weight="900"
+    letter-spacing="-8"
+    fill="#FFFFFF"
+  >3D</text>
+</svg>

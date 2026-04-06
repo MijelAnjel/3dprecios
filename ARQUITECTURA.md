@@ -1,7 +1,7 @@
 # 3DPrecios — Documentación Técnica
 
 > Comparador de precios de productos de impresión 3D en Chile.
-> Sitio live: **https://dprecios.web.app** · Repo: **https://github.com/MijelAnjel/3dprecios**
+> Sitio live: **https://3dprecios.cl** · Repo: **https://github.com/MijelAnjel/3dprecios**
 
 ---
 
@@ -11,7 +11,7 @@
 2. [Zero-Cost Architecture](#2-zero-cost-architecture)
 3. [Stack tecnológico](#3-stack-tecnológico)
 4. [Estructura de carpetas](#4-estructura-de-carpetas)
-5. [Modelo de datos (Firestore)](#5-modelo-de-datos-firestore)
+5. [Modelo de datos](#5-modelo-de-datos)
 6. [Pipeline de scraping](#6-pipeline-de-scraping)
 7. [Cómo añadir una tienda nueva](#7-cómo-añadir-una-tienda-nueva)
 8. [Sistema de categorías e inferencia](#8-sistema-de-categorías-e-inferencia)
@@ -29,11 +29,12 @@
 
 **3DPrecios** automatiza la comparación de precios de productos de impresión 3D vendidos en tiendas chilenas. El sistema:
 
-1. **Scrapers** corren cada 6 horas en GitHub Actions y visitan cada tienda
-2. Los productos y precios se guardan en **Firestore** (escritura Admin SDK únicamente)
-3. Tras cada scrape, `export.ts` genera `src/assets/catalog.json` — un snapshot estático del catálogo completo
-4. El sitio **Angular SSR** lee `catalog.json` una sola vez vía HTTP (cacheado en localStorage 30 min)
+1. El **scraper local** (`run-direct.ts`) se ejecuta desde PowerShell y visita cada tienda activa
+2. Los productos y precios se guardan directamente en **`catalog.json`** — sin base de datos intermedia
+3. `catalog.json` se despliega en Firebase Hosting CDN y se sirve como asset estático
+4. El sitio **Angular SSR** lee `catalog.json` una sola vez vía HTTP (cacheado en **IndexedDB 30 min**, sin bloquear el hilo principal)
 5. **0 lecturas Firestore** desde el navegador del usuario — todo opera sobre datos en memoria
+6. **Excepción:** `AlertFormComponent` escribe alertas de precio en Firestore (`priceAlerts`) — única operación de escritura iniciada por el usuario
 
 Funcionalidades actuales:
 - Navegación por **17 categorías** (filamentos por material, impresoras FDM/resina, resinas, repuestos, accesorios, secadores, escáneres, lápices 3D)
@@ -80,8 +81,8 @@ PowerShell local
 
 - **0 base de datos en producción** — `catalog.json` es el único origen de datos del frontend
 - **`catalog.json` en CDN** — ~50 ms inicial desde Firebase Hosting, luego service worker NGSW
-- **localStorage 30 min TTL** — segunda carga es instantánea
-- **Firestore** — existente como legado pero no usado en el pipeline actual
+- **IndexedDB 30 min TTL** — segunda carga es instantánea (caché async, sin bloquear el hilo principal)
+- **Firestore** — solo escribe alertas de precio (`priceAlerts`); no se usa para leer catálogo
 
 ### Servicios de Firebase y sus límites gratuitos
 
@@ -105,13 +106,14 @@ PowerShell local
 ### Scraper
 - **Node.js + TypeScript** — proyecto independiente en `/scraper/`
 - **Cheerio** — parsing HTML para sitios SSR
-- **Firebase Admin SDK** — escritura directa a Firestore
+- **Firebase Admin SDK** — legado (check.ts de diagnóstico); ya no se usa en el pipeline activo
 - **fetch nativo** — para llamadas HTTP y APIs REST
 
 ### Infraestructura
 - **Firebase** (Hosting + Firestore + Auth)
-- **GitHub Actions** — cron de scraping (cada 6h) + CI/CD de deploy
-- **Resend.com** — emails transaccionales
+- **GitHub Actions** — CI/CD de deploy automático (push a `master` → `ng build` → `firebase deploy`)
+- **Cloudflare** — DNS + regla de redirección www → apex (`3dprecios.cl`)
+- **Resend.com** — emails transaccionales (futuro)
 
 ---
 
@@ -139,7 +141,7 @@ print3d-web/
 │       ├── core/
 │       │   ├── models/index.ts    ← interfaces TypeScript
 │       │   └── services/
-│       │       ├── catalog.service.ts    ← carga catalog.json, cache localStorage 30min
+│       │       ├── catalog.service.ts    ← carga catalog.json, cache IndexedDB 30min (async)
 │       │       ├── category.service.ts   ← categorías estáticas
 │       │       ├── store.service.ts      ← tiendas desde CatalogService (0 Firestore)
 │       │       ├── product.service.ts    ← productos desde CatalogService (0 Firestore)
@@ -168,12 +170,13 @@ print3d-web/
 ├── scraper/
 │   ├── package.json               ← dependencias separadas del frontend
 │   ├── tsconfig.json
-│   ├── check.ts                   ← herramienta de diagnóstico
+│   ├── check.ts                   ← herramienta de diagnóstico (lee Firestore legado)
 │   └── src/
 │       ├── models.ts              ← ScraperResult, StoreConfig, STORES[]
-│       ├── run.ts                 ← punto de entrada del scraper; llama exportCatalog() al final
-│       ├── export.ts              ← Admin SDK lee Firestore y genera src/assets/catalog.json
-│       ├── firebase.ts            ← lógica de upsert a Firestore
+│       ├── run-direct.ts          ← punto de entrada principal; escribe catalog.json directamente
+│       ├── run.ts                 ← legado (usa Firestore + export.ts); no se usa en el pipeline activo
+│       ├── export.ts              ← legado (Admin SDK → Firestore); no se usa en el pipeline activo
+│       ├── firebase.ts            ← legado (upsert a Firestore); no se usa en el pipeline activo
 │       └── utils.ts               ← fetchHtml, fetchJson, fetchWcStoreProducts,
 │           │                         parsePriceCLP, inferCategory, slugify,
 │           │                         normalizeProductName
@@ -197,7 +200,6 @@ print3d-web/
 │
 ├── .github/workflows/
 │   ├── deploy.yml                 ← auto-deploy en cada push a master
-│   └── scrape.yml                 ← cron cada 6h + trigger manual
 │
 ├── firebase.json
 ├── ngsw-config.json               ← Service Worker config
@@ -210,31 +212,16 @@ print3d-web/
 
 ## 5. Modelo de datos
 
-### Firestore (write-only desde Admin SDK)
+### `catalog.json` — único origen de datos del frontend
 
-Firestore ya no es leído por el frontend. Solo el scraper Admin SDK escribe en él, y `export.ts` lo lee una vez para generar `catalog.json`.
-
-```
-/stores/{storeId}
-/products/{productSlug}
-    /entries/{storeId}_{productSlug}
-    /history/{timestamp}
-/users/{userId}
-    /alerts/{alertId}
-```
-
-### catalog.json — formato de exportación
-
-Generado por `scraper/src/export.ts` y servido como asset estático desde CDN.
+Generado por `scraper/src/run-direct.ts` y servido como asset estático desde CDN (`/assets/data/catalog.json`, `Cache-Control: max-age=1800, stale-while-revalidate=86400`).
 
 ```typescript
 interface CatalogData {
-  version:    number;           // incrementa con cada export
+  version:    number;           // incrementa con cada scrape
   exportedAt: string;           // ISO timestamp del último scrape
   stores:     CatalogStore[];
-  products:   CatalogProduct[];
-  entries:    Record<string, CatalogEntry[]>;    // productId → entries
-  history:    Record<string, CatalogHistoryPoint[]>; // productId → historial
+  products:   CatalogProduct[]; // entries inline por producto
 }
 
 interface CatalogStore {
@@ -246,14 +233,16 @@ interface CatalogStore {
 }
 
 interface CatalogProduct {
-  id:          string;  // slug del producto (PK)
-  name:        string;
-  category:    string;  // slugs de categoría
-  minPrice:    number;
-  maxPrice:    number;
-  storeCount:  number;
+  id:          string;  // slug canónico (clave de dedup)
+  name:        string;  // nombre normalizado
+  categoryId:  string;  // 'filamentos-pla', 'repuestos', etc.
+  brand:       string;
   imageUrl:    string;
+  minPrice:    number;  // CLP
+  maxPrice:    number;  // CLP
+  storeCount:  number;  // cuántas tiendas lo venden
   specs:       Record<string, string | number>;
+  entries:     CatalogEntry[];  // precios por tienda (inline, no subcolección)
 }
 
 interface CatalogEntry {
@@ -263,84 +252,24 @@ interface CatalogEntry {
   url:         string;
   lastChecked: string;  // ISO timestamp
 }
-
-interface CatalogHistoryPoint {
-  storeId: string;
-  price:   number;
-  date:    string;  // ISO timestamp
-}
 ```
 
-### Interfaces Firestore (solo para el scraper)
+### Firestore (write-only — solo `priceAlerts`)
 
-```typescript
-// Tienda registrada
-interface Store {
-  id: string;        // "imperio3d"
-  name: string;      // "Imperio 3D"
-  slug: string;      // "imperio3d"
-  url: string;       // "https://imperio3d.com"
-  logo: string;      // URL favicon/logo
-  country: 'CL';
-  isActive: boolean;
-  lastScraped: Timestamp;
-}
+Firestore solo recibe alertas de precio desde `AlertFormComponent`. No se usa para leer el catálogo.
 
-// Producto canónico — uno por producto real, independiente de cuántas tiendas lo vendan
-interface Product {
-  id: string;        // = slug
-  slug: string;      // "filamento-pla-1kg-bambu-lab-blanco"
-  name: string;      // nombre normalizado
-  brand: string;
-  categoryId: string;  // "filamentos-pla"
-  description: string;
-  images: string[];
-  specs: Record<string, string | number>;
-  minPrice: number;   // CLP — el más bajo entre todas las entries activas
-  maxPrice: number;   // CLP — el más alto
-  storeCount: number; // cuántas tiendas lo tienen activo
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
-}
-
-// Entrada de un producto en una tienda específica
-interface ProductEntry {
-  id: string;         // "{storeId}_{productSlug}"
-  productId: string;  // referencia al producto
-  storeId: string;    // "horus3d"
-  url: string;        // URL directa a la página del producto en la tienda
-  price: number;      // precio actual en CLP
-  currency: 'CLP';
-  stock: 'available' | 'low' | 'out' | 'unknown';
-  lastChecked: Timestamp;
-  isActive: boolean;
-}
-
-// Punto del historial de precios
-interface PriceHistory {
-  productId: string;
-  storeId: string;
-  price: number;
-  recordedAt: Timestamp;
-}
+```
+/priceAlerts/{alertId}
+    productId:   string
+    productName: string
+    targetPrice: number
+    email:       string
+    createdAt:   Timestamp
 ```
 
-### Cómo funcionan las comparativas
-
-La comparativa de precios en la ficha de un producto funciona porque:
-1. Todos los scrapers usan `slugify(normalizeProductName(nombre))` para generar el ID del documento
-2. Si dos tiendas venden el mismo producto con nombres similares → mismo slug → mismo documento en Firestore
-3. Cada tienda guarda su precio en una subcollección `entries/{storeId}_{slug}`
-4. La UI lee todas las entries del producto y las muestra ordenadas por precio
-
-**Ejemplo:**
-```
-products/filamento-pla-basic-bambu-lab-1kg/
-  entries/
-    imperio3d_filamento-pla-basic-bambu-lab-1kg   → price: 18990
-    horus3d_filamento-pla-basic-bambu-lab-1kg     → price: 19500
-    makerschile_filamento-pla-basic-bambu-lab-1kg → price: 17800
-```
+> **Nota histórica:** La arquitectura anterior usaba Firestore como base de datos activa
+> (`/products/`, `/entries/`, `/history/`) y `export.ts` para generar `catalog.json`.
+> Ese pipeline fue reemplazado por `run-direct.ts` que escribe directamente a `catalog.json`.
 
 ---
 
@@ -592,10 +521,10 @@ export async function scrapeNuevaTienda(store: StoreConfig): Promise<ScraperResu
 }
 ```
 
-### Paso 4 — Registrar el scraper en `run.ts`
+### Paso 4 — Registrar el scraper en `run-direct.ts`
 
 ```typescript
-// scraper/src/run.ts
+// scraper/src/run-direct.ts
 import { scrapeNuevaTienda } from './stores/nueva-tienda';
 
 const STORE_SCRAPERS = {
@@ -608,8 +537,7 @@ const STORE_SCRAPERS = {
 
 ```powershell
 cd scraper
-$env:FIREBASE_SERVICE_ACCOUNT = Get-Content "dprecios-firebase-adminsdk-fbsvc-5fc52d6967.json" -Raw
-npx ts-node src/run.ts --store=nueva-tienda
+npx ts-node --project tsconfig.json src/run-direct.ts --store=nueva-tienda
 ```
 
 ### Paso 6 — Verificar resultados
@@ -632,18 +560,20 @@ Verificar que:
 | ID / Slug | Nombre UI | Descripción |
 |---|---|---|
 | `filamentos-pla` | Filamentos PLA | PLA, PLA+, PLA Silk, PLA Matte, PLA HF |
-| `filamentos-abs` | Filamentos ABS | ABS, ABS+, ASA |
+| `filamentos-abs` | Filamentos ABS/ASA | ABS, ABS+, ASA |
 | `filamentos-petg` | Filamentos PETG | PETG, PETG-CF, PETG-HF |
 | `filamentos-tpu` | Filamentos TPU/TPE | Flexibles — TPU, TPE |
 | `filamentos-especiales` | Filamentos Especiales | Nylon, PC, PA12, PA-CF, PEEK, PEI, HIPS, PVA, ASA-CF, Nylon-CF, fibra carbono |
 | `impresoras-fdm` | Impresoras FDM | Bambu Lab, Creality, Prusa, Elegoo Neptune, Anycubic, Anet, AnkerMake, Snapmaker |
 | `impresoras-resina` | Impresoras Resina | Elegoo Saturn/Mars, Anycubic, Phrozen, Shining 3D, Uniz |
 | `resinas` | Resinas | Resina estándar, ABS-like, 8K, agua-lavable |
+| `accesorios-resina` | Accesorios Resina | FEP, náilons de impresión, tápers, guantes, funnels, pantallas |`
 | `repuestos` | Repuestos | Boquillas, hotends, camas, extrusores, BTT, Creality K-series |
 | `accesorios` | Accesorios | Herramientas, insumos, adhesivos, eVacuum, eSpool, enclosures |
 | `secadores` | Secadores de Filamento | Secadores, cajas de almacenamiento con calefacción |
 | `scanner-3d` | Escáneres 3D | Escáneres de escritorio y portátiles |
 | `lapices-3d` | Lápices 3D | Lápices 3D con filamento |
+| `grabadoras-laser` | Grabadoras Láser | Grabadoras y cortadoras láser de escritorio |
 | `general` | General | Fallback — productos sin categoría clara |
 
 ### `inferCategory(nombre, pathOSlug)` — lógica de clasificación
@@ -757,7 +687,7 @@ Para una solución completa se requeriría matching por embedding (NLP) — fuer
 ### Servicios de datos
 
 ```typescript
-// CatalogService — núcleo Zero Cost (catalog.json, cache localStorage 30min)
+// CatalogService — núcleo Zero Cost (catalog.json, cache IndexedDB 30min, async)
 // Todos los demás servicios dependen de este
 readonly catalog: Signal<CatalogData | null>;
 getProducts(): CatalogProduct[]
@@ -794,23 +724,18 @@ getHistory(productSlug: string): CatalogHistoryPoint[]
 - **Acción:** `ng build` → `firebase deploy --only hosting`
 - **Tiempo:** ~3-4 minutos
 
-### Scraping (`.github/workflows/scrape.yml`)
-- **Trigger:** cron `0 */6 * * *` (00:00, 06:00, 12:00, 18:00 UTC) + `workflow_dispatch` manual
-- **Acción:** Scrape todas las tiendas → `check.ts --export` (genera catalog.json + sitemap.xml) → `git commit + push` (dispara deploy.yml automáticamente)
+### Scraping (manual — local PowerShell)
+- **Cómo ejecutar:** `npx ts-node --project tsconfig.json src/run-direct.ts` desde `scraper/`
+- **No hay cron automático** — correr manualmente cuando se quiera actualizar el catálogo
+- **Tras el scrape:** `git commit + npm run build + firebase deploy --only hosting`
 - **Tiempo:** ~15-30 minutos según tiendas activas
 
-#### Secrets de GitHub requeridos
+#### Secrets de GitHub (solo para deploy.yml)
 
 | Secret | Descripción |
 |---|---|
-| `FIREBASE_SERVICE_ACCOUNT` | JSON completo de la cuenta de servicio Firebase |
+| `FIREBASE_SERVICE_ACCOUNT` | JSON de la cuenta de servicio Firebase (para `firebase deploy`) |
 | `FIREBASE_PROJECT_ID` | `dprecios` |
-| `RESEND_API_KEY` | Alertas email (futuro) |
-
-**Si `FIREBASE_SERVICE_ACCOUNT` expira:**
-1. Firebase Console → Configuración del proyecto → Cuentas de servicio → Generar nueva clave privada
-2. Copiar el JSON completo
-3. GitHub → Settings → Secrets → `FIREBASE_SERVICE_ACCOUNT` → Update
 
 ---
 
@@ -870,8 +795,7 @@ npx ts-node check.ts --clean
 
 ```powershell
 cd scraper
-$env:FIREBASE_SERVICE_ACCOUNT = Get-Content "dprecios-firebase-adminsdk-fbsvc-5fc52d6967.json" -Raw
-npx ts-node src/run.ts --store=horus3d
+npx ts-node --project tsconfig.json src/run-direct.ts --store=horus3d
 ```
 
 ### Servidore de desarrollo

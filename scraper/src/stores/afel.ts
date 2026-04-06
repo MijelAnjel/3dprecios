@@ -74,9 +74,15 @@ export async function scrapeAfel(store: StoreConfig): Promise<ScraperResult[]> {
 
           seen.add(productUrl);
 
+          // Shopify puede devolver inventory_quantity = null cuando el tracking
+          // está desactivado para ese producto pero available=true. En ese caso,
+          // confiamos en el flag available (ya filtrado arriba) y marcamos 'available'.
+          const qty = variant.inventory_quantity;
           const stock: 'available' | 'low' | 'out' =
-            variant.inventory_quantity > 5 ? 'available' :
-            variant.inventory_quantity > 0 ? 'low' : 'out';
+            qty === null || qty === undefined ? 'available' :
+            qty > 5  ? 'available' :
+            qty > 0  ? 'low' :
+            'out';
 
           results.push({
             storeId:      store.id,

@@ -2,6 +2,7 @@
 
 .guias {
   padding-block: clamp(2rem, 5vw, 4rem);
+  overflow-x: hidden;
 
   // ── Page header ──────────────────────────────────────────────────
   &__header {
@@ -28,6 +29,7 @@
     grid-template-columns: 1fr;
     gap: 1.5rem;
     align-items: start;
+    overflow-x: hidden;
 
     @media (min-width: $bp-md) {
       grid-template-columns: 280px 1fr;
@@ -41,11 +43,16 @@
 
   // ── Sidebar ──────────────────────────────────────────────────────
   &__sidebar {
-    position: sticky;
-    top: 1.5rem;
+    // Sticky solo en desktop; en móvil se apila normalmente para no tapar el contenido
+    @media (min-width: $bp-md) {
+      position: sticky;
+      top: 1.5rem;
+    }
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    min-width: 0;  // Evita que el grid hijo expanda más allá de 1fr
+    overflow: hidden;
   }
 
   &__group {
@@ -68,6 +75,8 @@
     background: $bg-elevated;
     border-bottom: 1px solid $border-color;
     margin: 0;
+    flex-wrap: wrap;       // Títulos largos ("Resina MSLA/DLP") se ajustan en móvil
+    word-break: break-word;
   }
 
   &__problem-list {
@@ -161,8 +170,10 @@
 
   // ── Main panel ───────────────────────────────────────────────────
   &__main {
-    min-height: 400px;
-  }
+    min-height: 400px;    min-width: 0;  // evita que el grid hijo se expanda más allá del grid container
+    overflow: hidden;
+    word-break: break-word;
+    overflow-wrap: break-word;  }
 
   // ── Welcome state ────────────────────────────────────────────────
   &__welcome {
@@ -239,6 +250,7 @@
     border: 1px solid $border-color;
     border-radius: $border-radius;
     overflow: hidden;
+    max-width: 100%;
   }
 
   &__detail-header {
@@ -248,6 +260,11 @@
     padding: 1.25rem 1.5rem;
     background: $bg-elevated;
     border-bottom: 1px solid $border-color;
+    flex-wrap: wrap;
+
+    @media (max-width: $bp-md) {
+      padding: 1rem;
+    }
   }
 
   &__detail-emoji {
@@ -310,6 +327,10 @@
     padding: 1.5rem;
     border-bottom: 1px solid rgba($border-color, 0.6);
 
+    @media (max-width: $bp-md) {
+      padding: 1rem 0.875rem;
+    }
+
     &:last-child {
       border-bottom: none;
     }
@@ -329,6 +350,8 @@
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.04em;
+    flex-wrap: wrap;       // Evita desbordamiento en pantallas < 400px
+    min-width: 0;
   }
 
   &__section-num {

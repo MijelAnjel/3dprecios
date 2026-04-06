@@ -107,9 +107,12 @@ export class PriceChartComponent implements AfterViewInit, OnDestroy {
   });
 
   constructor() {
-    // Re-render whenever filtered data changes (input signal or period change)
+    // Re-render whenever data OR canvas availability changes.
+    // chartCanvas() must be tracked so the effect re-runs when @if renders the
+    // <canvas> after filteredHistory() transitions from empty to non-empty.
     effect(() => {
-      void this.byStore(); // track dependency
+      const canvas = this.chartCanvas()?.nativeElement; // track view child
+      void this.byStore();                               // track data
       if (this.viewReady) this.renderChart();
     });
   }
@@ -133,14 +136,19 @@ export class PriceChartComponent implements AfterViewInit, OnDestroy {
 
   private renderChart(): void {
     const grouped = this.byStore();
-    if (grouped.size === 0) {
+    const canvas  = this.chartCanvas()?.nativeElement;
+
+    if (grouped.size === 0 || !canvas) {
       this.chart?.destroy();
       this.chart = null;
       return;
     }
 
-    const canvas = this.chartCanvas()?.nativeElement;
-    if (!canvas) return;
+    // If the canvas element changed (e.g. destroyed and recreated by @if), reset.
+    if (this.chart && this.chart.canvas !== canvas) {
+      this.chart.destroy();
+      this.chart = null;
+    }
 
     const multiStore = grouped.size > 1;
     const clpPipe   = this.clpPipe;
@@ -151,7 +159,7 @@ export class PriceChartComponent implements AfterViewInit, OnDestroy {
       const color    = STORE_COLORS[i % STORE_COLORS.length];
       return {
         label: this.storeName(storeId),
-        data: points.map(h => ({ x: new Date(h.recordedAt) as unknown as number, y: h.price })),
+        data: points.map(h => ({ x: new Date(h.recordedAt).getTime(), y: h.price })),
         borderColor: color,
         backgroundColor: multiStore ? 'transparent' : `${color}14`,
         fill:         !multiStore,

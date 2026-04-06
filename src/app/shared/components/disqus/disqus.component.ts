@@ -1,6 +1,7 @@
 import {
   ChangeDetectionStrategy,
   Component,
+  DestroyRef,
   effect,
   inject,
   input,
@@ -28,6 +29,7 @@ export class DisqusComponent {
 
   private readonly doc        = inject(DOCUMENT);
   private readonly platformId = inject(PLATFORM_ID);
+  private readonly destroyRef = inject(DestroyRef);
 
   constructor() {
     effect(() => {
@@ -36,9 +38,13 @@ export class DisqusComponent {
       if (!isPlatformBrowser(this.platformId) || !id) return;
 
       const win = this.doc.defaultView as Window & {
+        disqus_shortname?: string;
         disqus_config?: () => void;
         DISQUS?: { reset: (cfg: unknown) => void };
       };
+
+      // Required by some Disqus embed versions
+      win.disqus_shortname = environment.disqusShortname;
 
       if (win.DISQUS) {
         win.DISQUS.reset({
@@ -54,10 +60,19 @@ export class DisqusComponent {
           this.page.identifier = id;
         };
         const s = this.doc.createElement('script');
+        s.id    = 'disqus-embed-script';
         s.src   = `https://${environment.disqusShortname}.disqus.com/embed.js`;
         s.setAttribute('data-timestamp', String(Date.now()));
         s.async = true;
         this.doc.body.appendChild(s);
+
+        this.destroyRef.onDestroy(() => {
+          this.doc.getElementById('disqus-embed-script')?.remove();
+          const thread = this.doc.getElementById('disqus_thread');
+          if (thread) thread.innerHTML = '';
+          delete win.disqus_shortname;
+          delete win.disqus_config;
+        });
       }
     });
   }

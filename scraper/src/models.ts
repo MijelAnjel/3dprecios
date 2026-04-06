@@ -29,16 +29,16 @@ export interface StoreConfig {
 
 export const STORES: StoreConfig[] = [
   // ── Especializadas en impresión 3D ──────────────────────────────────────
-  { id: 'horus3d',          name: 'Horus3D',              slug: 'horus3d',          baseUrl: 'https://horus3d.cl',              logo: 'https://horus3d.cl/favicon.ico',              isActive: true  },
-  { id: 'imperio3d',        name: 'Imperio 3D',           slug: 'imperio3d',        baseUrl: 'https://imperio3d.com',           logo: 'https://imperio3d.com/favicon.ico',           isActive: true  },
-  { id: 'makerschile',      name: 'Makers Chile',         slug: 'makerschile',      baseUrl: 'https://makerschile.cl',          logo: 'https://makerschile.cl/favicon.ico',          isActive: true  },
-  { id: 'evstore',          name: 'eVStore',              slug: 'evstore',          baseUrl: 'https://evstore.cl',              logo: 'https://evstore.cl/favicon.ico',              isActive: true  },
-  { id: 'make3d',           name: 'Make 3D',              slug: 'make3d',           baseUrl: 'https://www.make3d.cl',           logo: 'https://www.make3d.cl/favicon.ico',           isActive: true  },
-  { id: 'maxi3d',           name: 'Maxi3D',               slug: 'maxi3d',           baseUrl: 'https://www.maxi3d.cl',           logo: 'https://www.maxi3d.cl/favicon.ico',           isActive: true  },
-  { id: 'capital3d',        name: 'Capital 3D',           slug: 'capital3d',        baseUrl: 'https://capital3d.cl',            logo: 'https://capital3d.cl/favicon.ico',            isActive: true  },
-  { id: 'cimech3d',         name: 'Cimech 3D',            slug: 'cimech3d',         baseUrl: 'https://www.cimech3d.cl',         logo: 'https://www.cimech3d.cl/favicon.ico',         isActive: true  },
-  { id: 'impakt',           name: 'Impakt',               slug: 'impakt',           baseUrl: 'https://impakt.cl',               logo: 'https://impakt.cl/favicon.ico',               isActive: true  },
-  { id: 'inkpact',          name: 'InkPact',              slug: 'inkpact',          baseUrl: 'https://inkpact.cl',              logo: 'https://inkpact.cl/favicon.ico',              isActive: true  },
+  { id: 'horus3d',          name: 'Horus3D',              slug: 'horus3d',          baseUrl: 'https://horus3d.cl',              logo: 'https://icons.duckduckgo.com/ip3/horus3d.cl.ico',              isActive: true  },
+  { id: 'imperio3d',        name: 'Imperio 3D',           slug: 'imperio3d',        baseUrl: 'https://imperio3d.com',           logo: 'https://icons.duckduckgo.com/ip3/imperio3d.com.ico',           isActive: true  },
+  { id: 'makerschile',      name: 'Makers Chile',         slug: 'makerschile',      baseUrl: 'https://makerschile.cl',          logo: 'https://icons.duckduckgo.com/ip3/makerschile.cl.ico',          isActive: true  },
+  { id: 'evstore',          name: 'eVStore',              slug: 'evstore',          baseUrl: 'https://evstore.cl',              logo: 'https://icons.duckduckgo.com/ip3/evstore.cl.ico',              isActive: true  },
+  { id: 'make3d',           name: 'Make 3D',              slug: 'make3d',           baseUrl: 'https://www.make3d.cl',           logo: 'https://icons.duckduckgo.com/ip3/make3d.cl.ico',              isActive: true  },
+  { id: 'maxi3d',           name: 'Maxi3D',               slug: 'maxi3d',           baseUrl: 'https://www.maxi3d.cl',           logo: 'https://icons.duckduckgo.com/ip3/maxi3d.cl.ico',              isActive: true  },
+  { id: 'capital3d',        name: 'Capital 3D',           slug: 'capital3d',        baseUrl: 'https://capital3d.cl',            logo: 'https://icons.duckduckgo.com/ip3/capital3d.cl.ico',            isActive: true  },
+  { id: 'cimech3d',         name: 'Cimech 3D',            slug: 'cimech3d',         baseUrl: 'https://www.cimech3d.cl',         logo: 'https://icons.duckduckgo.com/ip3/cimech3d.cl.ico',            isActive: true  },
+  { id: 'impakt',           name: 'Impakt',               slug: 'impakt',           baseUrl: 'https://impakt.cl',               logo: 'https://icons.duckduckgo.com/ip3/impakt.cl.ico',               isActive: true  },
+  { id: 'inkpact',          name: 'InkPact',              slug: 'inkpact',          baseUrl: 'https://inkpact.cl',              logo: 'https://icons.duckduckgo.com/ip3/inkpact.cl.ico',              isActive: true  },
   // ── Dominos caídos (verificados Abril 2026) ──────────────────────────────
   { id: '3dworks',          name: '3DWorks',              slug: '3dworks',          baseUrl: 'https://www.3dworks.cl',          logo: 'https://www.3dworks.cl/favicon.ico',          isActive: false },  // dominio caído
   { id: 'dream3d',          name: 'Dream 3D',             slug: 'dream3d',          baseUrl: 'https://dream3d.cl',              logo: 'https://dream3d.cl/favicon.ico',              isActive: false },  // dominio caído
@@ -60,20 +60,20 @@ export const STORES: StoreConfig[] = [
   { id: 'todotorner',       name: 'Todo Torner',          slug: 'todotorner',       baseUrl: 'https://todotorner.cl',           logo: 'https://todotorner.cl/favicon.ico',           isActive: false },  // entrada duplicada/typo
   { id: 'tresd',            name: '3D.cl',                slug: 'tresd',            baseUrl: 'https://3d.cl',                   logo: 'https://3d.cl/favicon.ico',                   isActive: false },  // dominio caído
   // ── Repuestos y electrónica con sección 3D ───────────────────────────────
-  { id: 'afel',             name: 'Afel',                 slug: 'afel',             baseUrl: 'https://afel.cl',                 logo: 'https://afel.cl/favicon.ico',                 isActive: true  },
-  { id: 'tecnosistec',      name: 'Tecnosistec',          slug: 'tecnosistec',      baseUrl: 'https://tecnosistec.cl',          logo: 'https://tecnosistec.cl/favicon.ico',          isActive: true  },
-  { id: 'mcielectronics',   name: 'MCI Electronics',      slug: 'mcielectronics',   baseUrl: 'https://mcielectronics.cl',       logo: 'https://mcielectronics.cl/favicon.ico',       isActive: true  },
+  { id: 'afel',             name: 'Afel',                 slug: 'afel',             baseUrl: 'https://afel.cl',                 logo: 'https://icons.duckduckgo.com/ip3/afel.cl.ico',                isActive: true  },
+  { id: 'tecnosistec',      name: 'Tecnosistec',          slug: 'tecnosistec',      baseUrl: 'https://tecnosistec.cl',          logo: 'https://icons.duckduckgo.com/ip3/tecnosistec.cl.ico',         isActive: true  },
+  { id: 'mcielectronics',   name: 'MCI Electronics',      slug: 'mcielectronics',   baseUrl: 'https://mcielectronics.cl',       logo: 'https://icons.duckduckgo.com/ip3/mcielectronics.cl.ico',      isActive: true  },
   { id: 'electronicat',     name: 'Electronicat',         slug: 'electronicat',     baseUrl: 'https://electronicat.cl',         logo: 'https://electronicat.cl/favicon.ico',         isActive: false },  // dominio caído
   { id: 'einsumos',         name: 'E-Insumos',            slug: 'einsumos',         baseUrl: 'https://e-insumos.cl',            logo: 'https://e-insumos.cl/favicon.ico',            isActive: false },  // dominio caído
   // ── Retail técnico con sección 3D ────────────────────────────────────────
-  { id: 'todotoner',        name: 'TodoToner',            slug: 'todotoner',        baseUrl: 'https://www.todotoner.cl',        logo: 'https://www.todotoner.cl/favicon.ico',        isActive: true  },
-  { id: 'pcfactory',        name: 'PC Factory',           slug: 'pcfactory',        baseUrl: 'https://www.pcfactory.cl',        logo: 'https://www.pcfactory.cl/favicon.ico',        isActive: true  },
-  { id: 'tugadget',         name: 'TuGadget',             slug: 'tugadget',         baseUrl: 'https://tugadget.cl',             logo: 'https://tugadget.cl/favicon.ico',             isActive: true  },
+  { id: 'todotoner',        name: 'TodoToner',            slug: 'todotoner',        baseUrl: 'https://www.todotoner.cl',        logo: 'https://icons.duckduckgo.com/ip3/todotoner.cl.ico',           isActive: true  },
+  { id: 'pcfactory',        name: 'PC Factory',           slug: 'pcfactory',        baseUrl: 'https://www.pcfactory.cl',        logo: 'https://icons.duckduckgo.com/ip3/pcfactory.cl.ico',           isActive: true  },
+  { id: 'tugadget',         name: 'TuGadget',             slug: 'tugadget',         baseUrl: 'https://tugadget.cl',             logo: 'https://icons.duckduckgo.com/ip3/tugadget.cl.ico',            isActive: true  },
   // ── Retail general ───────────────────────────────────────────────────────
-  { id: 'falabella',        name: 'Falabella',            slug: 'falabella',        baseUrl: 'https://www.falabella.com',       logo: 'https://www.falabella.com/favicon.ico',       isActive: true  },
-  { id: 'sodimac',          name: 'Sodimac',              slug: 'sodimac',          baseUrl: 'https://www.sodimac.cl',          logo: 'https://www.sodimac.cl/favicon.ico',          isActive: true  },
-  { id: 'paris',            name: 'Paris',                slug: 'paris',            baseUrl: 'https://www.paris.cl',            logo: 'https://www.paris.cl/favicon.ico',            isActive: true  },
-  { id: 'ripley',           name: 'Ripley',               slug: 'ripley',           baseUrl: 'https://simple.ripley.cl',        logo: 'https://simple.ripley.cl/favicon.ico',        isActive: true  },
+  { id: 'falabella',        name: 'Falabella',            slug: 'falabella',        baseUrl: 'https://www.falabella.com',       logo: 'https://icons.duckduckgo.com/ip3/falabella.com.ico',          isActive: true  },
+  { id: 'sodimac',          name: 'Sodimac',              slug: 'sodimac',          baseUrl: 'https://www.sodimac.cl',          logo: 'https://icons.duckduckgo.com/ip3/sodimac.cl.ico',             isActive: true  },
+  { id: 'paris',            name: 'Paris',                slug: 'paris',            baseUrl: 'https://www.paris.cl',            logo: 'https://icons.duckduckgo.com/ip3/paris.cl.ico',               isActive: true  },
+  { id: 'ripley',           name: 'Ripley',               slug: 'ripley',           baseUrl: 'https://simple.ripley.cl',        logo: 'https://icons.duckduckgo.com/ip3/ripley.cl.ico',              isActive: true  },
   // ── Sin scraper / deshabilitados ─────────────────────────────────────────
   { id: 'lider',            name: 'Lider',                slug: 'lider',            baseUrl: 'https://www.lider.cl',            logo: 'https://www.lider.cl/favicon.ico',            isActive: false },
   { id: 'easy',             name: 'Easy',                 slug: 'easy',             baseUrl: 'https://www.easy.cl',             logo: 'https://www.easy.cl/favicon.ico',             isActive: false },

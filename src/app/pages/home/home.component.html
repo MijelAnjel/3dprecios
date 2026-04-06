@@ -146,25 +146,31 @@
 
 <!-- ── Mejores precios ───────────────────────────── -->
 @defer (on viewport) {
-  <section class="top-products section" aria-labelledby="top-products-heading">
+  <section class="top-products section section--compact" aria-labelledby="top-products-heading">
     <div class="container">
       <div class="section__header">
-        <h2 id="top-products-heading" class="section__title">Mejores precios del día</h2>
-        <a class="section__link" routerLink="/categorias">Ver todos →</a>
+        <div>
+          <h2 id="top-products-heading" class="section__title">Mejores precios del día</h2>
+          <p class="section__subtitle">Selección diaria rotativa – cambia cada 24 horas</p>
+        </div>
+        <a class="section__link" routerLink="/categorias">Ver catálogo completo →</a>
       </div>
 
-      @if (loadingProducts()) {
-        <app-skeleton [count]="4" />
-      } @else if (topProducts().length === 0) {
+      @if (dailyPicksWithBadges().length === 0) {
         <div class="top-products__empty">
           <p>Los precios se actualizan cada 6 horas. Vuelve pronto 🚀</p>
           <a class="btn-primary" routerLink="/categorias">Explorar categorías</a>
         </div>
       } @else {
-        <ul class="products-grid" role="list">
-          @for (product of topProducts(); track product.id) {
-            <li>
-              <app-product-card [product]="product" />
+        <ul class="picks-row" role="list" aria-label="Mejores precios del día">
+          @for (item of dailyPicksWithBadges(); track item.product.id) {
+            <li class="picks-row__item">
+              @if (item.badge) {
+                <span [class]="'pick-badge ' + item.badge.cssClass" aria-hidden="true">
+                  {{ item.badge.icon }} {{ item.badge.label }}
+                </span>
+              }
+              <app-product-card [product]="item.product" />
             </li>
           }
         </ul>
@@ -175,9 +181,59 @@
   <div class="section section--placeholder" aria-hidden="true" style="min-height:300px"></div>
 }
 
+<!-- ── Lo más visitado ───────────────────────────── -->
+@defer (on viewport) {
+  <section class="popular-section section section--compact" aria-labelledby="popular-heading">
+    <div class="container">
+      <div class="section__header">
+        <div>
+          <h2 id="popular-heading" class="section__title">Lo más visitado</h2>
+          <p class="section__subtitle">Basado en tus visitas · Se actualiza a medida que navegas</p>
+        </div>
+      </div>
+      <ul class="picks-row" role="list" aria-label="Productos más visitados">
+        @for (product of popularProducts(); track product.id) {
+          <li class="picks-row__item">
+            <span class="pick-badge pick-badge--popular" aria-hidden="true">📈 Popular</span>
+            <app-product-card [product]="product" />
+          </li>
+        }
+      </ul>
+    </div>
+  </section>
+} @placeholder {
+  <div class="section section--placeholder" aria-hidden="true" style="min-height:300px"></div>
+}
+
+<!-- ── Productos destacados ──────────────────────── -->
+@defer (on viewport) {
+  <section class="featured-section section section--compact" aria-labelledby="featured-heading">
+    <div class="container">
+      <div class="section__header">
+        <div>
+          <h2 id="featured-heading" class="section__title">Productos destacados</h2>
+          <p class="section__subtitle">Disponibles en más tiendas — más opciones, mejor precio</p>
+        </div>
+
+      </div>
+      <ul class="picks-row" role="list" aria-label="Productos destacados">
+        @for (product of featuredProducts(); track product.id) {
+          <li class="picks-row__item">
+            <span class="pick-badge pick-badge--featured" aria-hidden="true">⭐ Destacado</span>
+            <app-product-card [product]="product" />
+          </li>
+        }
+      </ul>
+    </div>
+  </section>
+} @placeholder {
+  <div class="section section--placeholder" aria-hidden="true" style="min-height:300px"></div>
+}
+
+
 <!-- ── Recursos 3D Banner ────────────────────────── -->
 @defer (on viewport) {
-  <section class="recursos-banner section" aria-labelledby="recursos-banner-heading">
+  <section class="recursos-banner section section--compact" aria-labelledby="recursos-banner-heading">
     <div class="container">
       <div class="recursos-banner__card">
         <div class="recursos-banner__content">
@@ -212,7 +268,7 @@
 
 <!-- ── Guías y Soluciones Banner ─────────────────── -->
 @defer (on viewport) {
-  <section class="guias-banner section" aria-labelledby="guias-banner-heading">
+  <section class="guias-banner section section--compact" aria-labelledby="guias-banner-heading">
     <div class="container">
       <div class="guias-banner__card">
         <div class="guias-banner__content">

@@ -15,16 +15,16 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { DecimalPipe } from '@angular/common';
 import { debounceTime, distinctUntilChanged, startWith } from 'rxjs/operators';
 import { ProductCardComponent } from '../../shared/components/product-card/product-card.component';
-import { SkeletonComponent } from '../../shared/components/skeleton/skeleton.component';
 import { CategoryService } from '../../core/services/category.service';
 import { StoreService } from '../../core/services/store.service';
 import { ProductService } from '../../core/services/product.service';
 import { CatalogService } from '../../core/services/catalog.service';
+import { Product } from '../../core/models';
 
 @Component({
   selector: 'app-home',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [ReactiveFormsModule, RouterLink, ProductCardComponent, SkeletonComponent, DecimalPipe],
+  imports: [ReactiveFormsModule, RouterLink, ProductCardComponent, DecimalPipe],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
@@ -40,11 +40,21 @@ export class HomeComponent {
   readonly searchControl = new FormControl('');
   readonly stores = this.storeService.stores;
   readonly categories = signal(this.categoryService.categories);
-  readonly topProducts = toSignal(this.productService.getTopProducts(8), { initialValue: [] });
+  readonly topProducts     = toSignal(this.productService.getTopProducts(8),            { initialValue: [] as Product[] });
+  readonly dailyPicks      = toSignal(this.productService.getRotatingDailyPicks(8),     { initialValue: [] as Product[] });
+  readonly popularProducts  = toSignal(this.productService.getPopularProducts(6),        { initialValue: [] as Product[] });
+  readonly featuredProducts = toSignal(this.productService.getFeaturedProducts(8),       { initialValue: [] as Product[] });
   readonly loadingProducts = signal(false);
   readonly storeCount = computed(() => this.storeService.stores().length);
   readonly categoryCount = computed(() => this.categories().length);
   readonly productCount = computed(() => this.catalogService.products().length);
+
+  readonly dailyPicksWithBadges = computed(() =>
+    this.dailyPicks().map((product, i) => ({
+      product,
+      badge: this.computePickBadge(i, product),
+    }))
+  );
 
   readonly activeIndex = signal(-1);
   readonly showDropdown = signal(false);
@@ -71,10 +81,10 @@ export class HomeComponent {
       '@context': 'https://schema.org',
       '@type': 'WebSite',
       name: '3DPrecios',
-      url: 'https://dprecios.web.app',
+      url: 'https://3dprecios.cl',
       potentialAction: {
         '@type': 'SearchAction',
-        target: 'https://dprecios.web.app/categorias?q={search_term_string}',
+        target: 'https://3dprecios.cl/categorias?q={search_term_string}',
         'query-input': 'required name=search_term_string',
       },
     },
@@ -82,7 +92,7 @@ export class HomeComponent {
       '@context': 'https://schema.org',
       '@type': 'Organization',
       name: '3DPrecios',
-      url: 'https://dprecios.web.app',
+      url: 'https://3dprecios.cl',
       description: 'Comparador de precios de productos de impresión 3D en Chile.',
       numberOfEmployees: 1,
     },
@@ -90,7 +100,7 @@ export class HomeComponent {
       '@context': 'https://schema.org',
       '@type': 'ItemList',
       name: 'Catálogo de productos de impresión 3D',
-      url: 'https://dprecios.web.app/categorias',
+      url: 'https://3dprecios.cl/categorias',
       numberOfItems: this.catalogService.products().length,
     },
   ]);
@@ -106,7 +116,7 @@ export class HomeComponent {
     });
     this.meta.updateTag({ property: 'og:title', content: '3DPrecios — Compara precios de impresión 3D en Chile' });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
-    this.meta.updateTag({ property: 'og:url', content: 'https://dprecios.web.app' });
+    this.meta.updateTag({ property: 'og:url', content: 'https://3dprecios.cl' });
 
     // Inject JSON-LD structured data via a real <script> tag (SSR-compatible)
     const script = doc.createElement('script');
@@ -173,5 +183,12 @@ export class HomeComponent {
 
   setActiveIndex(i: number): void {
     this.activeIndex.set(i);
+  }
+
+  private computePickBadge(index: number, product: Product): { icon: string; label: string; cssClass: string } | null {
+    if (index === 0)              return { icon: '🔥', label: 'Oferta del día', cssClass: 'pick-badge--hot' };
+    if (product.storeCount >= 3)  return { icon: '🏪', label: 'Multi-tienda',   cssClass: 'pick-badge--multi' };
+    if (product.storeCount >= 2)  return { icon: '🏷️', label: '2 tiendas',      cssClass: 'pick-badge--dual' };
+    return null;
   }
 }

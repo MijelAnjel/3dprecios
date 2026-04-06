@@ -18,13 +18,13 @@ Tiendas (40+ registradas, ~11 activas)
     └── --purge-non3d (elimina non-3D)               │
                                                       ▼
                                              Angular App (3DPrecios)
-                                             CatalogService → localStorage (30min)
+                                             CatalogService → IndexedDB (30min, async)
 ```
 PARA ELIMINAR SERVICE WORKER:
 navigator.serviceWorker.getRegistrations().then(r=>r.forEach(x=>x.unregister())); localStorage.clear(); location.reload();
 
 
-**Principio clave:** No hay base de datos en producción. Todo es un JSON estático de ~3 MB en CDN. El scraper se ejecuta manualmente y produce el JSON directamente. El frontend lo lee una vez y lo cachea 30 minutos.
+**Principio clave:** No hay base de datos en producción. Todo es un JSON estático de ~3 MB en CDN. El scraper se ejecuta manualmente y produce el JSON directamente. El frontend lo lee una vez y lo cachea 30 minutos en **IndexedDB** (sin bloquear el hilo principal).
 
 **Flujo de mantención típico:**
 1. `npx ts-node src/run-direct.ts` → genera nuevo `catalog.json`

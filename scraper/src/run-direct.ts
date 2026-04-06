@@ -197,9 +197,17 @@ function mergeCatalog(
       const reCat = inferCategory(prod.name, '');
       const isDowngradeSafe = prod.categoryId === 'general'
         ? reCat !== 'general'
-        : FILAMENT_CATS.has(prod.categoryId) || prod.categoryId === 'accesorios'
-          ? ['repuestos', 'resinas', 'accesorios-resina', 'secadores', 'accesorios', 'impresoras-fdm', 'impresoras-resina'].includes(reCat)
-          : ['repuestos', 'resinas', 'accesorios', 'accesorios-resina', 'scanner-3d', 'grabadoras-laser', 'impresoras-resina'].includes(reCat);
+        : FILAMENT_CATS.has(prod.categoryId)
+          // Allow filament→filament cross-moves (e.g. pla→especiales for PEBA, tpu→pla for mislabeled PLA)
+          // AND filament→non-filament when reclassification finds a clearly different category
+          ? reCat !== prod.categoryId && (
+              FILAMENT_CATS.has(reCat) ||
+              ['repuestos', 'resinas', 'accesorios-resina', 'secadores', 'accesorios', 'impresoras-fdm', 'impresoras-resina'].includes(reCat)
+            )
+          : prod.categoryId === 'accesorios'
+            ? ['repuestos', 'resinas', 'accesorios-resina', 'secadores', 'accesorios', 'impresoras-fdm', 'impresoras-resina'].includes(reCat)
+            : ['repuestos', 'resinas', 'accesorios', 'accesorios-resina', 'scanner-3d', 'grabadoras-laser',
+               'impresoras-resina', 'filamentos-pla', 'filamentos-petg', 'filamentos-abs', 'filamentos-tpu', 'filamentos-especiales'].includes(reCat);
       if (isDowngradeSafe) {
         prod.categoryId = reCat;
         // Re-extraer specs con la categoría correcta
@@ -218,6 +226,15 @@ function mergeCatalog(
       if (Object.keys(freshSpecs).length > 0) {
         prod.specs = { ...prod.specs, ...freshSpecs }; // freshSpecs override stale values
         prod.brand = prod.brand || (freshSpecs['brand'] as string | undefined) || '';
+      }
+    }
+
+    // Re-extraer specs para secadores y accesorios (nuevas reglas de brand/capacity/type)
+    if (prod.categoryId === 'secadores' || prod.categoryId === 'accesorios') {
+      const freshSpecs = extractSpecs(prod.name, prod.categoryId);
+      if (Object.keys(freshSpecs).length > 0) {
+        prod.specs = freshSpecs; // reemplazar completamente (specs deterministas)
+        prod.brand = (freshSpecs['brand'] as string | undefined) || prod.brand || '';
       }
     }
 

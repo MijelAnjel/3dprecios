@@ -24,6 +24,7 @@ import { ProductService } from '../../core/services/product.service';
 import { PriceService } from '../../core/services/price.service';
 import { StoreService } from '../../core/services/store.service';
 import { CategoryService } from '../../core/services/category.service';
+import { ViewTrackingService } from '../../core/services/view-tracking.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -50,6 +51,7 @@ export class ProductDetailComponent {
   private readonly priceService    = inject(PriceService);
   private readonly storeService    = inject(StoreService);
   private readonly categoryService = inject(CategoryService);
+  private readonly viewTracking    = inject(ViewTrackingService);
 
   readonly slug = toSignal(
     this.route.paramMap.pipe(map(p => p.get('slug') ?? '')),
@@ -184,6 +186,11 @@ export class ProductDetailComponent {
       this.meta.updateTag({ property: 'og:title',       content: `${p.name} — 3DPrecios` });
       this.meta.updateTag({ property: 'og:description', content: `Desde ${this.clp.transform(p.minPrice)} en ${p.storeCount} tiendas.` });
       this.meta.updateTag({ property: 'og:image',       content: p.images[0] ?? '' });
+    });
+
+    effect(() => {
+      const slug = this.slug();
+      if (slug) this.viewTracking.track(slug);
     });
   }
 

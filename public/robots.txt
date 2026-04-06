@@ -5,4 +5,4 @@ Allow: /
 Disallow: /privacidad
 Disallow: /terminos
 
-Sitemap: https://dprecios.web.app/sitemap.xml
+Sitemap: https://3dprecios.cl/sitemap.xml

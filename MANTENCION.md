@@ -1,6 +1,6 @@
 # 3DPrecios — Guía de Mantención
 
-Sitio live: **https://dprecios.web.app**
+Sitio live: **https://3dprecios.cl**
 Repositorio: **https://github.com/MijelAnjel/3dprecios**
 
 ---
@@ -15,11 +15,11 @@ Repositorio: **https://github.com/MijelAnjel/3dprecios**
                                               Firebase Hosting CDN
                                                      ↓  HTTP GET (1× por sesión)
                                         CatalogService (Angular in-memory)
-                                                     ↓  localStorage cache 30 min
+                                                     ↓  IndexedDB cache 30 min (async)
                                               Usuario (0 lecturas a DB)
 ```
 
-**Arquitectura Zero-Cost:** No hay base de datos en producción. `run-direct.ts` scraped las tiendas y escribe **directamente** a `src/assets/data/catalog.json`. El sitio Angular lee este JSON estático una vez y lo cachea. El navegador del usuario nunca necesita autenticación ni DB.
+**Arquitectura Zero-Cost:** No hay base de datos en producción. `run-direct.ts` scraped las tiendas y escribe **directamente** a `src/assets/data/catalog.json`. El sitio Angular lee este JSON estático una vez y lo cachea **en IndexedDB 30 minutos** (caché asíncrona, sin bloquear el hilo principal). El navegador del usuario nunca necesita autenticación ni DB.
 
 **No se usa Firestore en producción.** Firestore existe en el proyecto como legado pero el pipeline actual no lo requiere.
 
@@ -89,18 +89,20 @@ Las categorías son estáticas — están en `src/app/core/services/category.ser
 | Category ID           | Nombre                  | Qué incluye                                      |
 |-----------------------|-------------------------|--------------------------------------------------|
 | filamentos-pla        | Filamentos PLA          | PLA, PLA+, PLA Silk, PLA Matte, etc.            |
-| filamentos-abs        | Filamentos ABS          | ABS, ABS+, ASA                                   |
+| filamentos-abs        | Filamentos ABS/ASA      | ABS, ABS+, ASA                                   |
 | filamentos-petg       | Filamentos PETG         | PETG, PETG-CF, PETG-HF                           |
 | filamentos-tpu        | Filamentos TPU/TPE      | TPU, TPE (flexibles)                             |
 | filamentos-especiales | Filamentos Especiales   | Nylon, PC, PA12, PA-CF, PEEK, PEI, HIPS, PVA   |
 | impresoras-fdm        | Impresoras FDM          | Bambu, Creality, Prusa, Elegoo Aquila, Anycubic  |
 | impresoras-resina     | Impresoras Resina       | Elegoo Saturn/Mars, Anycubic, Phrozen, Shining   |
 | resinas               | Resinas                 | Resina estándar, ABS-like, 8K                    |
+| accesorios-resina     | Accesorios Resina       | FEP, náilons, tápers, guantes, funnels, pantallas |
 | repuestos             | Repuestos               | Boquillas, hotends, camas, cinturones            |
 | accesorios            | Accesorios              | Herramientas, insumos, adhesivos, eVacuum, eSpool|
 | secadores             | Secadores               | Secadores de filamento y cajas con calefacción   |
 | scanner-3d            | Escáneres 3D            | Escáneres de escritorio y portátiles              |
 | lapices-3d            | Lápices 3D             | Lápices 3D con filamento                         |
+| grabadoras-laser      | Grabadoras Láser        | Grabadoras y cortadoras láser de escritorio       |
 | general               | General                 | Todo lo que no califica en otra categoría        |
 
 ---
@@ -176,8 +178,8 @@ Ver guía completa paso a paso en [ARQUITECTURA.md](ARQUITECTURA.md#7-cómo-aña
 Resumen rápido:
 1. Crear archivo `scraper/src/stores/nueva-tienda.ts` (plantilla WC Store API o HTML+Cheerio)
 2. Agregar la tienda al array `STORES` en `scraper/src/models.ts`
-3. Importarla y agregarla al objeto `STORE_SCRAPERS` en `scraper/src/run.ts`
-4. Probar localmente con `npx ts-node src/run.ts --store=nueva-tienda`
+3. Importarla y agregarla al objeto `STORE_SCRAPERS` en `scraper/src/run-direct.ts`
+4. Probar localmente con `npx ts-node --project tsconfig.json src/run-direct.ts --store=nueva-tienda`
 5. Hacer push
 
 ---

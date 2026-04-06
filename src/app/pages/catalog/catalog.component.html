@@ -25,6 +25,7 @@
         [specFields]="specFields()"
         [allProducts]="allProducts()"
         [mobileOpen]="mobileFiltersOpen()"
+        [initialStockOnly]="filters().stockOnly"
         (filtersChange)="onFiltersChange($event)"
         (close)="mobileFiltersOpen.set(false)"
       />

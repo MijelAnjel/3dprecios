@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, input, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Injector, inject, input, runInInjectionContext, signal } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
 import { Firestore, collection, addDoc, Timestamp } from '@angular/fire/firestore';
 
@@ -25,6 +25,7 @@ export class AlertFormComponent {
 
   private readonly fb        = inject(FormBuilder);
   private readonly firestore = inject(Firestore);
+  private readonly injector  = inject(Injector);
 
   readonly formState = signal<FormState>('idle');
 
@@ -46,14 +47,16 @@ export class AlertFormComponent {
     this.formState.set('submitting');
 
     try {
-      const alertsRef = collection(this.firestore, 'priceAlerts');
-      await addDoc(alertsRef, {
-        userId:      crypto.randomUUID(),
-        productId:   this.productId(),
-        targetPrice: this.priceControl.value!,
-        email:       this.emailControl.value!.trim().toLowerCase(),
-        isActive:    true,
-        createdAt:   Timestamp.now(),
+      await runInInjectionContext(this.injector, () => {
+        const alertsRef = collection(this.firestore, 'priceAlerts');
+        return addDoc(alertsRef, {
+          userId:      crypto.randomUUID(),
+          productId:   this.productId(),
+          targetPrice: this.priceControl.value!,
+          email:       this.emailControl.value!.trim().toLowerCase(),
+          isActive:    true,
+          createdAt:   Timestamp.now(),
+        });
       });
       this.formState.set('success');
       this.form.reset();

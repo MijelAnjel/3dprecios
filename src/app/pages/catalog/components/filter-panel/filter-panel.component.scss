@@ -231,4 +231,34 @@
     cursor: pointer;
     flex-shrink: 0;
   }
+
+  // ── Toggle de disponibilidad ───────────────
+  &__stock-toggle {
+    display: flex;
+    align-items: center;
+    gap: $space-3;
+    padding: $space-4 $space-5;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  &__stock-checkbox {
+    accent-color: $primary;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  &__stock-label {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    color: $text-secondary;
+    display: flex;
+    align-items: center;
+    gap: $space-1;
+    transition: color $transition-fast;
+
+    .filter-panel__stock-toggle:hover & { color: $text-primary; }
+  }
 }

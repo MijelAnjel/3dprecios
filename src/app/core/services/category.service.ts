@@ -90,7 +90,7 @@ const CATEGORIES: Category[] = [
   {
     id: 'filamentos-abs',
     slug: 'filamentos-abs',
-    name: 'Filamentos ABS',
+    name: 'Filamentos ABS/ASA',
     icon: '🔶',
     specFields: FILAMENT_SPEC_FIELDS,
   },

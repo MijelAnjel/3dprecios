@@ -61,6 +61,12 @@ export const routes: Routes = [
     title: 'Términos de Uso — 3DPrecios',
   },
   {
+    path: 'politica-comentarios',
+    loadComponent: () =>
+      import('./pages/legal/comments/comments-policy.component').then((m) => m.CommentsPolicyComponent),
+    title: 'Política de Comentarios — 3DPrecios',
+  },
+  {
     path: '**',
     redirectTo: '',
   },

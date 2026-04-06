@@ -28,6 +28,25 @@
     </button>
   </div>
 
+  <!-- ── Disponibilidad ────────────────────── -->
+  <div class="filter-panel__section">
+    <label class="filter-panel__stock-toggle">
+      <input
+        class="filter-panel__stock-checkbox"
+        type="checkbox"
+        [formControl]="stockOnly"
+        (change)="onStockChange()"
+        id="stock-only-check"
+      />
+      <span class="filter-panel__stock-label">
+        Solo con stock
+        @if (stockOnly.value) {
+          <span class="filter-panel__active-dot" aria-label="Filtro activo">•</span>
+        }
+      </span>
+    </label>
+  </div>
+
   <!-- ── Precio ─────────────────────────────── -->
   <div class="filter-panel__section">
     <button
@@ -110,7 +129,7 @@
                   />
                   <span class="filter-panel__option-label">
                     Todos
-                    <span class="filter-panel__option-count">({{ allProducts().length }})</span>
+                    <span class="filter-panel__option-count">({{ filteredTotals()[field.key] ?? allProducts().length }})</span>
                   </span>
                 </label>
               </li>
@@ -128,9 +147,7 @@
                     />
                     <span class="filter-panel__option-label">
                       {{ opt }}{{ field.unit ? ' ' + field.unit : '' }}
-                      @if (optionCounts()[field.key]?.[opt]) {
-                        <span class="filter-panel__option-count">({{ optionCounts()[field.key][opt] }})</span>
-                      }
+                      <span class="filter-panel__option-count">({{ optionCounts()[field.key]?.[opt] ?? 0 }})</span>
                     </span>
                   </label>
                 </li>
