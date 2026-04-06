@@ -1,0 +1,14 @@
+name = "dprecios-forum"
+main = "src/index.ts"
+compatibility_date = "2025-04-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+FIREBASE_PROJECT_ID = "dprecios"
+
+# Después de crear la DB con `wrangler d1 create forum-db`,
+# reemplaza REPLACE_WITH_YOUR_D1_DATABASE_ID con el ID que devuelve el comando.
+[[d1_databases]]
+binding = "DB"
+database_name = "forum-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"

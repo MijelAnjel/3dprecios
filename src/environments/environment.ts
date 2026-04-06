@@ -1,5 +1,6 @@
 export const environment = {
   production: false,
+  workerUrl: 'http://localhost:8787',
   disqusShortname: '3dprecios',
   firebase: {
     apiKey: 'AIzaSyDSbutOg5f-IzbLnM6XEC-PQOEqNG2KRj8',

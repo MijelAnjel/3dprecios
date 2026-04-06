@@ -3,23 +3,6 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    // ── Helpers ───────────────────────────────────────────────────────────
-    function isSignedIn() {
-      return request.auth != null;
-    }
-    function isOwner(uid) {
-      return isSignedIn() && request.auth.uid == uid;
-    }
-    function getUserData() {
-      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
-    }
-    function isModOrAdmin() {
-      return isSignedIn() && getUserData().role in ['moderator', 'admin'];
-    }
-    function isNotBanned() {
-      return isSignedIn() && getUserData().banned == false;
-    }
-
     // ── Datos del catálogo — bloqueados (se sirven como JSON estático) ────
     match /products/{productId} {
       allow read, write: if false;
@@ -40,76 +23,6 @@ service cloud.firestore {
                     && request.resource.data.email is string
                     && request.resource.data.email.matches('.*@.*\\..*');
       allow update, delete: if request.auth != null && request.auth.uid == resource.data.userId;
-    }
-
-    // ── Perfiles de usuario ───────────────────────────────────────────────
-    match /users/{uid} {
-      allow read: if true;
-      allow create: if isOwner(uid)
-        && request.resource.data.role == 'user'
-        && request.resource.data.banned == false;
-      // El usuario solo puede editar campos no sensibles; mod/admin puede editarlos todos
-      allow update: if (isOwner(uid)
-          && !request.resource.data.diff(resource.data).affectedKeys()
-              .hasAny(['role', 'banned']))
-        || isModOrAdmin();
-    }
-
-    // ── Categorías del foro ───────────────────────────────────────────────
-    match /forumCategories/{categoryId} {
-      allow read:  if true;
-      allow write: if isModOrAdmin();
-    }
-
-    // ── Posts del foro ────────────────────────────────────────────────────
-    match /posts/{postId} {
-      allow read: if true;
-
-      allow create: if isNotBanned()
-        && request.resource.data.authorId == request.auth.uid
-        && request.resource.data.title.size() >= 5
-        && request.resource.data.title.size() <= 200
-        && request.resource.data.body.size() >= 20
-        && request.resource.data.body.size() <= 10000
-        && request.resource.data.isPinned == false
-        && request.resource.data.isLocked == false
-        && request.resource.data.replyCount == 0
-        && request.resource.data.views == 0;
-
-      allow update: if
-        (isOwner(resource.data.authorId) && isNotBanned()
-          && request.resource.data.diff(resource.data).affectedKeys()
-              .hasOnly(['body', 'updatedAt', 'isSolved']))
-        || (isNotBanned()
-          && request.resource.data.diff(resource.data).affectedKeys()
-              .hasOnly(['views']))
-        || isModOrAdmin();
-
-      allow delete: if isOwner(resource.data.authorId) || isModOrAdmin();
-
-      // ── Respuestas ───────────────────────────────────────────────────
-      match /replies/{replyId} {
-        allow read: if true;
-
-        allow create: if isNotBanned()
-          && !get(/databases/$(database)/documents/posts/$(postId)).data.isLocked
-          && request.resource.data.authorId == request.auth.uid
-          && request.resource.data.body.size() >= 10
-          && request.resource.data.body.size() <= 5000
-          && request.resource.data.likes == 0
-          && request.resource.data.likedBy.size() == 0;
-
-        allow update: if
-          (isOwner(resource.data.authorId) && isNotBanned()
-            && request.resource.data.diff(resource.data).affectedKeys()
-                .hasOnly(['body', 'updatedAt', 'isEdited']))
-          || (isNotBanned()
-            && request.resource.data.diff(resource.data).affectedKeys()
-                .hasOnly(['likes', 'likedBy']))
-          || isModOrAdmin();
-
-        allow delete: if isOwner(resource.data.authorId) || isModOrAdmin();
-      }
     }
 
     // ── Denegar todo lo demás ─────────────────────────────────────────────

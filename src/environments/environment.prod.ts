@@ -1,5 +1,6 @@
 export const environment = {
   production: true,
+  workerUrl: 'https://dprecios-forum.TU_SUBDOMINIO.workers.dev',
   disqusShortname: '3dprecios',
   firebase: {
     apiKey: 'AIzaSyDSbutOg5f-IzbLnM6XEC-PQOEqNG2KRj8',
