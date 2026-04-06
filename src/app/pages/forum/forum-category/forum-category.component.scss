@@ -1,0 +1,199 @@
+@use '../../../../styles/variables' as *;
+@use '../../../../styles/mixins' as *;
+
+.forum-cat {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: $space-6 $space-4;
+
+  &__breadcrumb {
+    margin-bottom: $space-5;
+
+    ol {
+      display: flex;
+      gap: $space-2;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 0.875rem;
+      color: $text-muted;
+
+      li + li::before { content: '/'; margin-right: $space-2; }
+
+      a {
+        color: $primary;
+        text-decoration: none;
+        &:hover { text-decoration: underline; }
+      }
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: $space-3;
+    margin-bottom: $space-6;
+
+    @media (max-width: 600px) { flex-wrap: wrap; }
+  }
+
+  &__icon { font-size: 2.5rem; line-height: 1; flex-shrink: 0; }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin: 0 0 $space-1;
+  }
+
+  &__desc {
+    color: $text-secondary;
+    margin: 0;
+    font-size: 0.875rem;
+  }
+
+  &__new-btn {
+    margin-left: auto;
+    flex-shrink: 0;
+    padding: $space-2 $space-4;
+    background: $primary;
+    color: #fff;
+    border-radius: $border-radius-sm;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+
+    &:hover { background: $primary-dark; }
+    &:focus-visible { outline: 2px solid $primary; outline-offset: 2px; }
+
+    @media (max-width: 600px) { margin-left: 0; }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    overflow: hidden;
+  }
+
+  &__more {
+    margin-top: $space-4;
+    text-align: center;
+
+    &-btn {
+      padding: $space-3 $space-6;
+      background: $bg-elevated;
+      border: 1px solid $border-color;
+      border-radius: $border-radius-sm;
+      color: $text-primary;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: border-color 0.2s;
+
+      &:hover:not(:disabled) { border-color: $primary; }
+      &:disabled { opacity: 0.5; cursor: not-allowed; }
+    }
+  }
+
+  &__error,
+  &__empty {
+    text-align: center;
+    padding: $space-9 $space-4;
+    color: $text-secondary;
+
+    a { color: $primary; text-decoration: underline; }
+
+    button {
+      margin-top: $space-3;
+      padding: $space-2 $space-4;
+      background: $bg-elevated;
+      border: 1px solid $border-color;
+      border-radius: $border-radius-sm;
+      color: $text-primary;
+      cursor: pointer;
+    }
+  }
+}
+
+.post-row {
+  display: flex;
+  align-items: center;
+  gap: $space-4;
+  padding: $space-4;
+  background: $bg-card;
+  text-decoration: none;
+  transition: background 0.15s;
+
+  &:hover { background: $bg-elevated; }
+  &:focus-visible { outline: 2px solid $primary; outline-offset: -2px; }
+
+  &--skeleton {
+    min-height: 72px;
+    animation: pulse 1.4s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  &__main { flex: 1; min-width: 0; }
+
+  &__badges {
+    display: flex;
+    gap: $space-1;
+    margin-bottom: $space-1;
+  }
+
+  &__title {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: $text-primary;
+    margin: 0 0 $space-1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: $space-2;
+    font-size: 0.75rem;
+    color: $text-muted;
+    margin: 0;
+  }
+
+  &__avatar {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: $space-1;
+    flex-shrink: 0;
+  }
+
+  &__stat {
+    font-size: 0.75rem;
+    color: $text-muted;
+  }
+}
+
+.badge {
+  font-size: 0.75rem;
+  &--pin   { }
+  &--lock  { }
+  &--solved { }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}

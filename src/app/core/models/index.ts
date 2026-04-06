@@ -119,47 +119,44 @@ export interface CatalogData {
 
 export interface ForumCategory {
   id:          string;
+  slug:        string;
   name:        string;
   description: string;
   icon:        string;
-  order:       number;
   postCount:   number;
-  color:       string;
+  sortOrder:   number;
 }
 
 export interface ForumPost {
-  id:             string;
-  title:          string;
-  body:           string;
-  categoryId:     string;
-  categoryName:   string;
-  authorId:       string;
-  authorName:     string;
-  authorPhotoURL: string;
-  createdAt:      Date;
-  updatedAt:      Date;
-  lastReplyAt:    Date | null;
-  lastReplyBy:    string | null;
-  replyCount:     number;
-  views:          number;
-  isPinned:       boolean;
-  isLocked:       boolean;
-  isSolved:       boolean;
-  tags:           string[];
+  id:          string;
+  categoryId:  string;
+  authorId:    string;
+  authorName:  string;
+  authorPhoto: string;
+  title:       string;
+  body:        string;
+  isPinned:    number;   // 0 | 1 (SQLite boolean)
+  isLocked:    number;
+  isSolved:    number;
+  replyCount:  number;
+  views:       number;
+  createdAt:   string;
+  updatedAt:   string | null;
+  lastReplyAt: string | null;
 }
 
 export interface ForumReply {
-  id:             string;
-  postId:         string;
-  body:           string;
-  authorId:       string;
-  authorName:     string;
-  authorPhotoURL: string;
-  createdAt:      Date;
-  updatedAt:      Date | null;
-  isEdited:       boolean;
-  likes:          number;
-  likedBy:        string[];
+  id:          string;
+  postId:      string;
+  authorId:    string;
+  authorName:  string;
+  authorPhoto: string;
+  body:        string;
+  likes:       number;
+  likedByMe:   boolean;
+  isEdited:    number;   // 0 | 1
+  createdAt:   string;
+  updatedAt:   string | null;
 }
 
 export interface UserProfile {

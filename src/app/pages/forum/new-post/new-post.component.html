@@ -1,0 +1,107 @@
+<div class="new-post">
+  <nav class="breadcrumb" aria-label="Navegación de migas de pan">
+    <a routerLink="/foro" class="breadcrumb__item">Foro</a>
+    <span class="breadcrumb__sep" aria-hidden="true">›</span>
+    <span class="breadcrumb__item breadcrumb__item--current">Nuevo post</span>
+  </nav>
+
+  <h1 class="new-post__heading">Crear nuevo post</h1>
+
+  @if (loading()) {
+    <p class="new-post__loading" aria-live="polite">Cargando categorías…</p>
+  }
+
+  @if (!loading()) {
+    @if (error(); as err) {
+      <div class="new-post__error" role="alert">{{ err }}</div>
+    }
+
+    <form class="post-form" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+
+      <!-- Categoría -->
+      <div class="field">
+        <label class="field__label" for="categoryId">Categoría</label>
+        <select
+          id="categoryId"
+          formControlName="categoryId"
+          class="field__select"
+          [class.field__select--invalid]="form.controls.categoryId.invalid && form.controls.categoryId.touched"
+          aria-required="true"
+        >
+          <option value="" disabled>Selecciona una categoría…</option>
+          @for (cat of categories(); track cat.id) {
+            <option [value]="cat.id">{{ cat.icon }} {{ cat.name }}</option>
+          }
+        </select>
+        @if (form.controls.categoryId.invalid && form.controls.categoryId.touched) {
+          <span class="field__error" role="alert">Selecciona una categoría.</span>
+        }
+      </div>
+
+      <!-- Título -->
+      <div class="field">
+        <label class="field__label" for="title">
+          Título
+          <span class="field__counter">{{ titleLength }}/200</span>
+        </label>
+        <input
+          id="title"
+          type="text"
+          formControlName="title"
+          class="field__input"
+          [class.field__input--invalid]="form.controls.title.invalid && form.controls.title.touched"
+          placeholder="Escribe un título descriptivo (mín. 5 caracteres)…"
+          maxlength="200"
+          aria-required="true"
+          [attr.aria-describedby]="(form.controls.title.invalid && form.controls.title.touched) ? 'title-error' : null"
+        />
+        @if (form.controls.title.invalid && form.controls.title.touched) {
+          <span id="title-error" class="field__error" role="alert">
+            @if (form.controls.title.hasError('required')) { El título es obligatorio. }
+            @else if (form.controls.title.hasError('minlength')) { Mínimo 5 caracteres. }
+            @else if (form.controls.title.hasError('maxlength')) { Máximo 200 caracteres. }
+          </span>
+        }
+      </div>
+
+      <!-- Cuerpo -->
+      <div class="field">
+        <label class="field__label" for="body">
+          Contenido
+          <span class="field__counter" [class.field__counter--warn]="bodyLength > 9000">
+            {{ bodyLength }}/10 000
+          </span>
+        </label>
+        <textarea
+          id="body"
+          formControlName="body"
+          class="field__textarea"
+          [class.field__textarea--invalid]="form.controls.body.invalid && form.controls.body.touched"
+          placeholder="Describe tu consulta o tema con detalle (mín. 20 caracteres)…"
+          rows="10"
+          maxlength="10000"
+          aria-required="true"
+          [attr.aria-describedby]="(form.controls.body.invalid && form.controls.body.touched) ? 'body-error' : null"
+        ></textarea>
+        @if (form.controls.body.invalid && form.controls.body.touched) {
+          <span id="body-error" class="field__error" role="alert">
+            @if (form.controls.body.hasError('required')) { El contenido es obligatorio. }
+            @else if (form.controls.body.hasError('minlength')) { Mínimo 20 caracteres. }
+            @else if (form.controls.body.hasError('maxlength')) { Máximo 10 000 caracteres. }
+          </span>
+        }
+      </div>
+
+      <div class="post-form__actions">
+        <a routerLink="/foro" class="btn btn--outline">Cancelar</a>
+        <button
+          type="submit"
+          class="btn btn--primary"
+          [disabled]="form.invalid || submitting()"
+        >
+          {{ submitting() ? 'Publicando…' : 'Publicar post' }}
+        </button>
+      </div>
+    </form>
+  }
+</div>

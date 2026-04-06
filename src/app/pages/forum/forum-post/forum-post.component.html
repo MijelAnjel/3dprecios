@@ -1,0 +1,183 @@
+<div class="forum-post">
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Navegación de migas de pan">
+    <a routerLink="/foro" class="breadcrumb__item">Foro</a>
+    @if (post(); as p) {
+      <span class="breadcrumb__sep" aria-hidden="true">›</span>
+      <a [routerLink]="['/foro/c', p.categoryId]" class="breadcrumb__item">Categoría</a>
+      <span class="breadcrumb__sep" aria-hidden="true">›</span>
+      <span class="breadcrumb__item breadcrumb__item--current" [title]="p.title">{{ p.title }}</span>
+    }
+  </nav>
+
+  <!-- Loading skeleton -->
+  @if (loading()) {
+    <div class="post-skeleton" aria-busy="true" aria-label="Cargando post…">
+      <div class="skeleton skeleton--title"></div>
+      <div class="skeleton skeleton--meta"></div>
+      <div class="skeleton skeleton--body"></div>
+      <div class="skeleton skeleton--body skeleton--body-short"></div>
+    </div>
+  }
+
+  <!-- Error -->
+  @if (error(); as err) {
+    <div class="forum-post__error" role="alert">
+      <p>{{ err }}</p>
+      <button type="button" class="btn btn--outline" (click)="loadPost()">Reintentar</button>
+    </div>
+  }
+
+  <!-- Post detail -->
+  @if (!loading() && !error() && post(); as p) {
+    <article class="post-card" aria-label="Post: {{ p.title }}">
+      <header class="post-card__header">
+        <h1 class="post-card__title">
+          {{ p.title }}
+          @if (p.isPinned) {
+            <span class="badge badge--pinned" title="Fijado">📌</span>
+          }
+          @if (p.isLocked) {
+            <span class="badge badge--locked" title="Cerrado">🔒</span>
+          }
+          @if (p.isSolved) {
+            <span class="badge badge--solved" title="Resuelto">✅</span>
+          }
+        </h1>
+
+        <div class="post-card__meta">
+          <img
+            [src]="p.authorPhoto || '/icons/icon-72x72.png'"
+            [alt]="p.authorName + ' avatar'"
+            class="post-card__avatar"
+            width="36"
+            height="36"
+          />
+          <span class="post-card__author">{{ p.authorName }}</span>
+          <time class="post-card__date" [dateTime]="p.createdAt" [title]="p.createdAt">
+            {{ relativeTime(p.createdAt) }}
+          </time>
+          <span class="post-card__stats">
+            <span title="Respuestas">💬 {{ p.replyCount }}</span>
+            <span title="Vistas">👁 {{ p.views }}</span>
+          </span>
+        </div>
+      </header>
+
+      <div class="post-card__body">
+        <pre class="post-card__text">{{ p.body }}</pre>
+      </div>
+    </article>
+
+    <!-- Replies section -->
+    <section class="replies" aria-label="Respuestas">
+      <h2 class="replies__heading">
+        {{ repliesTotal() }} {{ repliesTotal() === 1 ? 'respuesta' : 'respuestas' }}
+      </h2>
+
+      @if (replies().length === 0 && !p.isLocked) {
+        <p class="replies__empty">Sé el primero en responder.</p>
+      }
+
+      @for (reply of replies(); track reply.id) {
+        <div class="reply" [class.reply--edited]="reply.isEdited">
+          <div class="reply__author">
+            <img
+              [src]="reply.authorPhoto || '/icons/icon-72x72.png'"
+              [alt]="reply.authorName + ' avatar'"
+              class="reply__avatar"
+              width="36"
+              height="36"
+            />
+            <div class="reply__author-info">
+              <span class="reply__author-name">{{ reply.authorName }}</span>
+              <time class="reply__date" [dateTime]="reply.createdAt" [title]="reply.createdAt">
+                {{ relativeTime(reply.createdAt) }}
+              </time>
+              @if (reply.isEdited) {
+                <span class="reply__edited-flag">(editado)</span>
+              }
+            </div>
+          </div>
+
+          <div class="reply__body">
+            <pre class="reply__text">{{ reply.body }}</pre>
+          </div>
+
+          <div class="reply__actions">
+            <button
+              type="button"
+              class="like-btn"
+              [class.like-btn--active]="reply.likedByMe"
+              [disabled]="!auth.isLoggedIn()"
+              [attr.aria-pressed]="reply.likedByMe"
+              [attr.aria-label]="(reply.likedByMe ? 'Quitar like de ' : 'Me gusta de ') + reply.authorName"
+              (click)="toggleLike(reply)"
+            >
+              <span aria-hidden="true">{{ reply.likedByMe ? '❤️' : '🤍' }}</span>
+              <span class="like-btn__count">{{ reply.likes }}</span>
+            </button>
+          </div>
+        </div>
+      }
+
+      <!-- Load more -->
+      @if (hasMoreReplies()) {
+        <div class="replies__load-more">
+          <button
+            type="button"
+            class="btn btn--outline"
+            [disabled]="loadingReplies()"
+            (click)="loadMoreReplies()"
+          >
+            {{ loadingReplies() ? 'Cargando…' : 'Cargar más respuestas' }}
+          </button>
+        </div>
+      }
+    </section>
+
+    <!-- Reply form -->
+    @if (!p.isLocked) {
+      <section class="reply-form" aria-label="Escribir respuesta">
+        @if (auth.isLoggedIn()) {
+          <h2 class="reply-form__heading">Tu respuesta</h2>
+
+          @if (replyError(); as err) {
+            <div class="reply-form__error" role="alert">{{ err }}</div>
+          }
+
+          <textarea
+            class="reply-form__textarea"
+            placeholder="Escribe tu respuesta (mínimo 10 caracteres)…"
+            rows="6"
+            maxlength="10000"
+            [value]="replyBody()"
+            (input)="replyBody.set($any($event.target).value)"
+            aria-label="Cuerpo de la respuesta"
+            [disabled]="submitting()"
+          ></textarea>
+
+          <div class="reply-form__footer">
+            <span class="reply-form__counter" [class.reply-form__counter--warn]="replyBody().length > 9000">
+              {{ replyBody().length }}/10 000
+            </span>
+            <button
+              type="button"
+              class="btn btn--primary"
+              [disabled]="submitting() || replyBody().trim().length < 10"
+              (click)="submitReply()"
+            >
+              {{ submitting() ? 'Enviando…' : 'Enviar respuesta' }}
+            </button>
+          </div>
+        } @else {
+          <div class="reply-form__login-prompt">
+            <p>Inicia sesión para responder.</p>
+          </div>
+        }
+      </section>
+    } @else {
+      <p class="replies__locked">Este post está cerrado. No se aceptan nuevas respuestas.</p>
+    }
+  }
+</div>

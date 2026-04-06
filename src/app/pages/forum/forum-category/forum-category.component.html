@@ -1,0 +1,95 @@
+<section class="forum-cat">
+  <nav class="forum-cat__breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a routerLink="/foro">Foro</a></li>
+      <li aria-current="page">{{ category()?.name ?? slug }}</li>
+    </ol>
+  </nav>
+
+  <header class="forum-cat__header">
+    @if (category()) {
+      <span class="forum-cat__icon" aria-hidden="true">{{ category()!.icon }}</span>
+      <div>
+        <h1 class="forum-cat__title">{{ category()!.name }}</h1>
+        <p class="forum-cat__desc">{{ category()!.description }}</p>
+      </div>
+    }
+    @if (auth.isLoggedIn()) {
+      <a routerLink="/foro/nuevo" class="forum-cat__new-btn">+ Nuevo post</a>
+    }
+  </header>
+
+  @if (loading()) {
+    <ul class="forum-cat__list" role="list" aria-busy="true" aria-label="Cargando posts">
+      @for (_ of [1,2,3,4,5]; track $index) {
+        <li class="post-row post-row--skeleton" aria-hidden="true"></li>
+      }
+    </ul>
+  } @else if (error()) {
+    <div class="forum-cat__error" role="alert">
+      <p>{{ error() }}</p>
+      <button type="button" (click)="loadPage(1)">Reintentar</button>
+    </div>
+  } @else if (posts().length === 0) {
+    <div class="forum-cat__empty">
+      <p>Todavía no hay posts en esta categoría.</p>
+      @if (auth.isLoggedIn()) {
+        <a routerLink="/foro/nuevo">¡Sé el primero en publicar!</a>
+      }
+    </div>
+  } @else {
+    <ul class="forum-cat__list" role="list" aria-label="Posts de {{ category()?.name }}">
+      @for (post of posts(); track post.id) {
+        <li>
+          <a class="post-row" [routerLink]="['/foro/post', post.id]">
+            <div class="post-row__main">
+              <div class="post-row__badges">
+                @if (post.isPinned) {
+                  <span class="badge badge--pin" aria-label="Fijado">📌</span>
+                }
+                @if (post.isLocked) {
+                  <span class="badge badge--lock" aria-label="Cerrado">🔒</span>
+                }
+                @if (post.isSolved) {
+                  <span class="badge badge--solved" aria-label="Resuelto">✅</span>
+                }
+              </div>
+              <h2 class="post-row__title">{{ post.title }}</h2>
+              <p class="post-row__meta">
+                <img
+                  class="post-row__avatar"
+                  [src]="post.authorPhoto || '/icons/icon-72x72.png'"
+                  [alt]="post.authorName"
+                  width="18" height="18"
+                  referrerpolicy="no-referrer"
+                />
+                {{ post.authorName }} · {{ relativeTime(post.createdAt) }}
+              </p>
+            </div>
+            <div class="post-row__stats">
+              <span class="post-row__stat" aria-label="{{ post.replyCount }} respuestas">
+                💬 {{ post.replyCount }}
+              </span>
+              <span class="post-row__stat" aria-label="{{ post.views }} vistas">
+                👁️ {{ post.views }}
+              </span>
+            </div>
+          </a>
+        </li>
+      }
+    </ul>
+
+    @if (hasMore()) {
+      <div class="forum-cat__more">
+        <button
+          type="button"
+          class="forum-cat__more-btn"
+          [disabled]="loadingMore()"
+          (click)="loadMore()"
+        >
+          {{ loadingMore() ? 'Cargando...' : 'Ver más posts' }}
+        </button>
+      </div>
+    }
+  }
+</section>

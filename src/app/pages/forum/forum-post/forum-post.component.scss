@@ -1,0 +1,365 @@
+@use '../../../../styles/variables' as *;
+@use '../../../../styles/mixins' as *;
+@use 'sass:color';
+
+.forum-post {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 4rem;
+}
+
+// ── Breadcrumb ───────────────────────────────────────────────────────────────
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+
+  &__item {
+    color: $text-secondary;
+    text-decoration: none;
+
+    &:hover { color: $primary; text-decoration: underline; }
+
+    &--current {
+      color: $text-primary;
+      font-weight: 500;
+      max-width: 280px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  &__sep { color: $text-secondary; }
+}
+
+// ── Post card ────────────────────────────────────────────────────────────────
+
+.post-card {
+  background: $bg-card;
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+
+  &__header {
+    padding: 1.5rem 1.5rem 1rem;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin: 0 0 1rem;
+    line-height: 1.35;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: $text-secondary;
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  &__author { color: $text-primary; font-weight: 500; }
+
+  &__stats {
+    margin-left: auto;
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  &__body {
+    padding: 1.5rem;
+  }
+
+  &__text {
+    margin: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: inherit;
+    font-size: 0.975rem;
+    color: $text-primary;
+    line-height: 1.7;
+  }
+}
+
+// ── Badges ───────────────────────────────────────────────────────────────────
+
+.badge {
+  font-size: 1rem;
+  line-height: 1;
+
+  &--solved { filter: none; }
+}
+
+// ── Skeleton ─────────────────────────────────────────────────────────────────
+
+.post-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: $bg-card;
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, $bg-elevated 25%, color.adjust($bg-elevated, $lightness: -3%) 50%, $bg-elevated 75%);
+  background-size: 400% 100%;
+  animation: shimmer 1.4s infinite;
+  border-radius: 6px;
+
+  &--title  { height: 1.8rem; width: 70%; }
+  &--meta   { height: 0.9rem; width: 40%; }
+  &--body   { height: 1rem; }
+  &--body-short { width: 55%; }
+}
+
+@keyframes shimmer {
+  0%   { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+
+// ── Error ────────────────────────────────────────────────────────────────────
+
+.forum-post__error {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: $text-secondary;
+
+  p { margin-bottom: 1rem; }
+}
+
+// ── Replies ──────────────────────────────────────────────────────────────────
+
+.replies {
+  &__heading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $text-primary;
+    margin: 0 0 1.25rem;
+  }
+
+  &__empty {
+    color: $text-secondary;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+  }
+
+  &__load-more {
+    display: flex;
+    justify-content: center;
+    margin: 1.25rem 0;
+  }
+
+  &__locked {
+    color: $text-secondary;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem;
+    border: 1px dashed $border-color;
+    border-radius: 8px;
+  }
+}
+
+.reply {
+  background: $bg-card;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  padding: 1.25rem 1.25rem 1rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s;
+
+  &--edited { border-left: 3px solid $primary; }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  &__author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  &__author-name {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: $text-primary;
+  }
+
+  &__date {
+    font-size: 0.78rem;
+    color: $text-secondary;
+  }
+
+  &__edited-flag {
+    font-size: 0.75rem;
+    color: $text-secondary;
+    font-style: italic;
+  }
+
+  &__body { margin-bottom: 0.75rem; }
+
+  &__text {
+    margin: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: inherit;
+    font-size: 0.925rem;
+    color: $text-primary;
+    line-height: 1.65;
+  }
+
+  &__actions { display: flex; gap: 0.5rem; }
+}
+
+// ── Like button ──────────────────────────────────────────────────────────────
+
+.like-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: none;
+  border: 1px solid $border-color;
+  border-radius: 20px;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.85rem;
+  color: $text-secondary;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+
+  &:hover:not(:disabled) { border-color: $primary; color: $primary; }
+  &:disabled { opacity: 0.5; cursor: default; }
+
+  &--active {
+    border-color: hsl(0 80% 60%);
+    color: hsl(0 80% 60%);
+  }
+
+  &__count { font-variant-numeric: tabular-nums; }
+}
+
+// ── Reply form ───────────────────────────────────────────────────────────────
+
+.reply-form {
+  margin-top: 2.5rem;
+  background: $bg-card;
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  padding: 1.5rem;
+
+  &__heading {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+    color: $text-primary;
+  }
+
+  &__error {
+    background: hsl(0 70% 95%);
+    color: hsl(0 60% 40%);
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  &__textarea {
+    display: block;
+    width: 100%;
+    min-height: 130px;
+    background: $bg-elevated;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: $text-primary;
+    resize: vertical;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+
+    &:focus { outline: none; border-color: $primary; }
+    &:disabled { opacity: 0.6; }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.75rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  &__counter {
+    font-size: 0.8rem;
+    color: $text-secondary;
+    font-variant-numeric: tabular-nums;
+
+    &--warn { color: hsl(35 90% 45%); }
+  }
+
+  &__login-prompt {
+    text-align: center;
+    padding: 1.5rem;
+    color: $text-secondary;
+  }
+}
+
+// ── Buttons ──────────────────────────────────────────────────────────────────
+
+.btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+
+  &:disabled { opacity: 0.6; cursor: not-allowed; }
+
+  &--primary {
+    background: $primary;
+    color: #fff;
+    &:hover:not(:disabled) { opacity: 0.88; }
+  }
+
+  &--outline {
+    background: none;
+    border-color: $border-color;
+    color: $text-primary;
+    &:hover:not(:disabled) { border-color: $primary; color: $primary; }
+  }
+}

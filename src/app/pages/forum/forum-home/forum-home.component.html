@@ -1,0 +1,54 @@
+<section class="forum-home">
+  <header class="forum-home__header">
+    <div class="forum-home__header-text">
+      <h1 class="forum-home__title">Foro Comunidad</h1>
+      <p class="forum-home__subtitle">
+        Discute sobre filamentos, impresoras, precios y proyectos con la comunidad
+        de impresión 3D en Chile.
+      </p>
+    </div>
+    @if (auth.isLoggedIn()) {
+      <a routerLink="/foro/nuevo" class="forum-home__new-btn" aria-label="Crear nuevo post">
+        + Nuevo post
+      </a>
+    } @else {
+      <p class="forum-home__login-hint">
+        <a routerLink="/foro">Inicia sesión</a> para participar
+      </p>
+    }
+  </header>
+
+  @if (loading()) {
+    <div class="forum-home__grid" aria-busy="true" aria-label="Cargando categorías">
+      @for (_ of [1,2,3,4,5,6,7,8]; track $index) {
+        <div class="category-card category-card--skeleton" aria-hidden="true"></div>
+      }
+    </div>
+  } @else if (error()) {
+    <div class="forum-home__error" role="alert">
+      <p>{{ error() }}</p>
+      <button type="button" (click)="ngOnInit()">Reintentar</button>
+    </div>
+  } @else {
+    <ul class="forum-home__grid" role="list" aria-label="Categorías del foro">
+      @for (cat of categories(); track cat.id) {
+        <li>
+          <a
+            class="category-card"
+            [routerLink]="['/foro/c', cat.slug]"
+            [attr.aria-label]="cat.name + ': ' + cat.description"
+          >
+            <span class="category-card__icon" aria-hidden="true">{{ cat.icon }}</span>
+            <div class="category-card__body">
+              <h2 class="category-card__name">{{ cat.name }}</h2>
+              <p class="category-card__desc">{{ cat.description }}</p>
+            </div>
+            <span class="category-card__count">
+              {{ cat.postCount }} {{ cat.postCount === 1 ? 'post' : 'posts' }}
+            </span>
+          </a>
+        </li>
+      }
+    </ul>
+  }
+</section>

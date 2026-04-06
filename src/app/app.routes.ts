@@ -67,6 +67,11 @@ export const routes: Routes = [
     title: 'Política de Comentarios — 3DPrecios',
   },
   {
+    path: 'foro',
+    loadChildren: () =>
+      import('./pages/forum/forum.routes').then((m) => m.forumRoutes),
+  },
+  {
     path: '**',
     redirectTo: '',
   },

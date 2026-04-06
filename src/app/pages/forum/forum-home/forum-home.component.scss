@@ -1,0 +1,165 @@
+@use '../../../../styles/variables' as *;
+@use '../../../../styles/mixins' as *;
+@use 'sass:color';
+
+.forum-home {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: $space-6 $space-4;
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: $space-4;
+    margin-bottom: $space-8;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin: 0 0 $space-2;
+  }
+
+  &__subtitle {
+    color: $text-secondary;
+    margin: 0;
+    max-width: 480px;
+    line-height: 1.6;
+  }
+
+  &__new-btn {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    padding: $space-2 $space-4;
+    background: $primary;
+    color: #fff;
+    border-radius: $border-radius-sm;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s;
+
+    &:hover { background: $primary-dark; }
+    &:focus-visible {
+      outline: 2px solid $primary;
+      outline-offset: 2px;
+    }
+  }
+
+  &__login-hint {
+    color: $text-muted;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+
+    a {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
+
+  &__grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: $space-4;
+  }
+
+  &__error {
+    text-align: center;
+    padding: $space-8;
+    color: $text-secondary;
+
+    button {
+      margin-top: $space-3;
+      padding: $space-2 $space-4;
+      background: $bg-elevated;
+      border: 1px solid $border-color;
+      border-radius: $border-radius-sm;
+      color: $text-primary;
+      cursor: pointer;
+
+      &:hover { background: color.adjust($bg-elevated, $lightness: -5%); }
+    }
+  }
+}
+
+.category-card {
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+  padding: $space-4;
+  background: $bg-card;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s;
+  min-height: 80px;
+
+  &:hover {
+    border-color: $primary;
+    background: $bg-elevated;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+  }
+
+  &--skeleton {
+    background: $bg-card;
+    border-color: $border-color;
+    animation: pulse 1.4s ease-in-out infinite;
+    pointer-events: none;
+    min-height: 80px;
+  }
+
+  &__icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  &__body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $text-primary;
+    margin: 0 0 $space-1;
+  }
+
+  &__desc {
+    font-size: 0.8125rem;
+    color: $text-secondary;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__count {
+    font-size: 0.75rem;
+    color: $text-muted;
+    flex-shrink: 0;
+    background: $bg-elevated;
+    padding: 2px $space-2;
+    border-radius: $border-radius-sm;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}

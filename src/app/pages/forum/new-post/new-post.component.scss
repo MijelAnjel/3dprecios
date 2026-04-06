@@ -1,0 +1,165 @@
+@use '../../../../styles/variables' as *;
+@use '../../../../styles/mixins' as *;
+
+.new-post {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 4rem;
+}
+
+// ── Breadcrumb ───────────────────────────────────────────────────────────────
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+
+  &__item {
+    color: $text-secondary;
+    text-decoration: none;
+    &:hover { color: $primary; text-decoration: underline; }
+    &--current { color: $text-primary; font-weight: 500; }
+  }
+
+  &__sep { color: $text-secondary; }
+}
+
+// ── Heading ──────────────────────────────────────────────────────────────────
+
+.new-post {
+  &__heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin: 0 0 1.75rem;
+  }
+
+  &__loading {
+    color: $text-secondary;
+    font-style: italic;
+  }
+
+  &__error {
+    background: hsl(0 70% 95%);
+    color: hsl(0 60% 40%);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.9rem;
+  }
+}
+
+// ── Form ─────────────────────────────────────────────────────────────────────
+
+.post-form {
+  background: $bg-card;
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+}
+
+// ── Fields ───────────────────────────────────────────────────────────────────
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  &__label {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: $text-primary;
+  }
+
+  &__counter {
+    font-size: 0.78rem;
+    color: $text-secondary;
+    font-weight: 400;
+    font-variant-numeric: tabular-nums;
+    &--warn { color: hsl(35 90% 45%); }
+  }
+
+  &__select,
+  &__input,
+  &__textarea {
+    background: $bg-elevated;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    color: $text-primary;
+    font-family: inherit;
+    font-size: 0.95rem;
+    padding: 0.65rem 0.9rem;
+    transition: border-color 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+
+    &:focus { outline: none; border-color: $primary; }
+
+    &--invalid { border-color: hsl(0 70% 55%); }
+  }
+
+  &__select {
+    appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23888' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.9rem center;
+    padding-right: 2.2rem;
+  }
+
+  &__textarea {
+    min-height: 200px;
+    resize: vertical;
+  }
+
+  &__error {
+    font-size: 0.8rem;
+    color: hsl(0 70% 50%);
+  }
+}
+
+// ── Buttons ──────────────────────────────────────────────────────────────────
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.3rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s, border-color 0.2s;
+
+  &:disabled { opacity: 0.6; cursor: not-allowed; }
+
+  &--primary {
+    background: $primary;
+    color: #fff;
+    &:hover:not(:disabled) { opacity: 0.88; }
+  }
+
+  &--outline {
+    background: none;
+    border-color: $border-color;
+    color: $text-primary;
+    &:hover { border-color: $primary; color: $primary; }
+  }
+}
