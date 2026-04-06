@@ -23,6 +23,8 @@ Tiendas (40+ registradas, ~11 activas)
 PARA ELIMINAR SERVICE WORKER:
 navigator.serviceWorker.getRegistrations().then(r=>r.forEach(x=>x.unregister())); localStorage.clear(); location.reload();
 
+navigator.serviceWorker.getRegistrations().then(r=>r.forEach(x=>x.unregister())); localStorage.clear(); location.reload();
+
 
 **Principio clave:** No hay base de datos en producción. Todo es un JSON estático de ~3 MB en CDN. El scraper se ejecuta manualmente y produce el JSON directamente. El frontend lo lee una vez y lo cachea 30 minutos en **IndexedDB** (sin bloquear el hilo principal).
 

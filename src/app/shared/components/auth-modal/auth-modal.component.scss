@@ -1,0 +1,164 @@
+@use '../../../../styles/variables' as *;
+@use '../../../../styles/mixins' as *;
+
+:host.auth-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  padding: $space-4;
+  animation: fade-in 150ms ease forwards;
+}
+
+.auth-modal {
+  position: relative;
+  background: $bg-card;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-lg;
+  padding: $space-8 $space-7;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: slide-up 200ms ease forwards;
+
+  &__close {
+    position: absolute;
+    top: $space-4;
+    right: $space-4;
+    background: none;
+    border: none;
+    color: $text-muted;
+    font-size: $font-size-lg;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius-sm;
+    transition: color $transition-fast, background $transition-fast;
+
+    &:hover {
+      color: $text-primary;
+      background: rgba($text-primary, 0.08);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 2px;
+    }
+  }
+
+  &__logo {
+    font-size: 2.5rem;
+    color: $primary;
+    margin-bottom: $space-3;
+    line-height: 1;
+  }
+
+  &__title {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+    color: $text-primary;
+    margin: 0 0 $space-2;
+  }
+
+  &__sub {
+    color: $text-secondary;
+    font-size: $font-size-sm;
+    margin: 0 0 $space-6;
+    line-height: 1.5;
+  }
+
+  &__error {
+    background: rgba(#e53935, 0.12);
+    border: 1px solid rgba(#e53935, 0.3);
+    border-radius: $border-radius-sm;
+    color: #ef9a9a;
+    font-size: $font-size-sm;
+    padding: $space-3 $space-4;
+    margin-bottom: $space-4;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: $space-3;
+    margin-bottom: $space-5;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $space-3;
+    width: 100%;
+    padding: $space-3 $space-4;
+    border-radius: $border-radius;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    cursor: pointer;
+    border: 1px solid $border-color;
+    transition: background $transition-fast, border-color $transition-fast, opacity $transition-fast;
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 2px;
+    }
+
+    &--google {
+      background: $bg-elevated;
+      color: $text-primary;
+
+      &:hover:not(:disabled) {
+        background: rgba($text-primary, 0.1);
+        border-color: rgba($text-primary, 0.2);
+      }
+    }
+
+    &--github {
+      background: $bg-elevated;
+      color: $text-primary;
+
+      &:hover:not(:disabled) {
+        background: rgba($text-primary, 0.1);
+        border-color: rgba($text-primary, 0.2);
+      }
+    }
+  }
+
+  &__legal {
+    font-size: $font-size-xs;
+    color: $text-muted;
+    margin: 0;
+    line-height: 1.5;
+
+    a {
+      color: $accent;
+      text-decoration: underline;
+
+      &:hover {
+        color: $text-primary;
+      }
+    }
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(16px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}

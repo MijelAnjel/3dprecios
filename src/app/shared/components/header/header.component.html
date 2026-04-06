@@ -12,13 +12,19 @@
          [routerLinkActiveOptions]="{ exact: true }">Inicio</a>
       <a class="header__nav-link" routerLink="/categorias" routerLinkActive="header__nav-link--active">Categorías</a>
       <a class="header__nav-link" routerLink="/tiendas" routerLinkActive="header__nav-link--active">Tiendas</a>
-      <a class="header__nav-link" routerLink="/recursos" routerLinkActive="header__nav-link--active">Recursos</a>
+      <a class="header__nav-link" routerLink="/foro" routerLinkActive="header__nav-link--active">Foro</a>
       <a class="header__nav-link" routerLink="/guias" routerLinkActive="header__nav-link--active">Guías</a>
     </nav>
 
-    <!-- CTA desktop -->
+    <!-- Actions desktop -->
     <div class="header__actions">
-      <a class="header__cta" routerLink="/categorias">Ver productos</a>
+      @if (auth.isLoggedIn()) {
+        <app-user-avatar [profile]="auth.userProfile()" />
+      } @else {
+        <button class="header__login-btn" type="button" (click)="openLogin()">
+          Iniciar sesión
+        </button>
+      }
     </div>
 
     <!-- Hamburger móvil -->
@@ -43,9 +49,27 @@
         <a class="header__mobile-link" routerLink="/" (click)="closeMenu()">Inicio</a>
         <a class="header__mobile-link" routerLink="/categorias" (click)="closeMenu()">Categorías</a>
         <a class="header__mobile-link" routerLink="/tiendas" (click)="closeMenu()">Tiendas</a>
-        <a class="header__mobile-link" routerLink="/recursos" (click)="closeMenu()">Recursos</a>
+        <a class="header__mobile-link" routerLink="/foro" (click)="closeMenu()">Foro</a>
         <a class="header__mobile-link" routerLink="/guias" (click)="closeMenu()">Guías</a>
       </nav>
+
+      <div class="header__mobile-auth">
+        @if (auth.isLoggedIn()) {
+          <span class="header__mobile-username">{{ auth.userProfile()?.displayName }}</span>
+          <button class="header__mobile-logout" type="button" (click)="auth.logout(); closeMenu()">
+            Cerrar sesión
+          </button>
+        } @else {
+          <button class="header__mobile-login" type="button" (click)="openLogin(); closeMenu()">
+            Iniciar sesión
+          </button>
+        }
+      </div>
     </div>
   }
 </header>
+
+<!-- Modal de autenticación -->
+@if (showLogin()) {
+  <app-auth-modal (closed)="closeLogin()" />
+}

@@ -112,3 +112,63 @@ export interface CatalogData {
   stores: Store[];
   products: CatalogProduct[];
 }
+
+// ─────────────────────────────────────────────
+// Foro / Comunidad
+// ─────────────────────────────────────────────
+
+export interface ForumCategory {
+  id:          string;
+  name:        string;
+  description: string;
+  icon:        string;
+  order:       number;
+  postCount:   number;
+  color:       string;
+}
+
+export interface ForumPost {
+  id:             string;
+  title:          string;
+  body:           string;
+  categoryId:     string;
+  categoryName:   string;
+  authorId:       string;
+  authorName:     string;
+  authorPhotoURL: string;
+  createdAt:      Date;
+  updatedAt:      Date;
+  lastReplyAt:    Date | null;
+  lastReplyBy:    string | null;
+  replyCount:     number;
+  views:          number;
+  isPinned:       boolean;
+  isLocked:       boolean;
+  isSolved:       boolean;
+  tags:           string[];
+}
+
+export interface ForumReply {
+  id:             string;
+  postId:         string;
+  body:           string;
+  authorId:       string;
+  authorName:     string;
+  authorPhotoURL: string;
+  createdAt:      Date;
+  updatedAt:      Date | null;
+  isEdited:       boolean;
+  likes:          number;
+  likedBy:        string[];
+}
+
+export interface UserProfile {
+  uid:         string;
+  displayName: string;
+  photoURL:    string;
+  role:        'user' | 'moderator' | 'admin';
+  createdAt:   Date;
+  postCount:   number;
+  replyCount:  number;
+  banned:      boolean;
+}

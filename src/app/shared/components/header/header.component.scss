@@ -86,9 +86,11 @@
     }
   }
 
-  // ── CTA ─────────────────────────────────────
+  // ── CTA / Actions ───────────────────────────────────────────
   &__actions {
     display: none;
+    align-items: center;
+    gap: $space-3;
     margin-left: $space-3;
 
     @include md {
@@ -97,6 +99,12 @@
   }
 
   &__cta {
+    @include btn-primary;
+    padding: $space-2 $space-4;
+    font-size: $font-size-sm;
+  }
+
+  &__login-btn {
     @include btn-primary;
     padding: $space-2 $space-4;
     font-size: $font-size-sm;
@@ -181,6 +189,60 @@
     &:focus-visible {
       outline: 2px solid $accent;
       outline-offset: 2px;
+    }
+  }
+
+  &__mobile-auth {
+    border-top: 1px solid $border-color;
+    margin-top: $space-3;
+    padding-top: $space-3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-3;
+  }
+
+  &__mobile-username {
+    font-size: $font-size-sm;
+    color: $text-secondary;
+    font-weight: $font-weight-medium;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__mobile-login,
+  &__mobile-logout {
+    background: none;
+    border: 1px solid $border-color;
+    border-radius: $border-radius-sm;
+    color: $text-secondary;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    padding: $space-2 $space-3;
+    cursor: pointer;
+    transition: color $transition-fast, border-color $transition-fast;
+    white-space: nowrap;
+
+    &:hover {
+      color: $text-primary;
+      border-color: rgba($text-primary, 0.3);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $accent;
+      outline-offset: 2px;
+    }
+  }
+
+  &__mobile-login {
+    border-color: $primary;
+    color: $primary;
+
+    &:hover {
+      background: rgba($primary, 0.1);
+      color: $primary;
+      border-color: $primary;
     }
   }
 }
