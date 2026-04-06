@@ -1,0 +1,11 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+  "files.exclude": {
+    "worker/node_modules": true
+  },
+  "search.exclude": {
+    "worker/node_modules": true
+  }
+}
