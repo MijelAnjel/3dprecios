@@ -22,7 +22,12 @@ const app = new Hono<{ Bindings: Env }>();
 // ── CORS ──────────────────────────────────────────────────────────────────────
 app.use('*', cors({
   origin: (origin) => {
-    const allowed = ['https://dprecios.web.app', 'http://localhost:4200'];
+    const allowed = [
+      'https://3dprecios.cl',
+      'https://www.3dprecios.cl',
+      'https://dprecios.web.app',
+      'http://localhost:4200',
+    ];
     return allowed.includes(origin ?? '') ? origin : '';
   },
   allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],

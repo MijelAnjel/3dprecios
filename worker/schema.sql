@@ -72,4 +72,4 @@ INSERT OR IGNORE INTO forum_categories (id, slug, name, description, icon, sortO
   ('cat-ofertas',    'ofertas',    'Ofertas',    'Promociones y descuentos encontrados',       '🏷️', 5),
   ('cat-proyectos',  'proyectos',  'Proyectos',  'Muestra tus prints y proyectos',            '🏆', 6),
   ('cat-ayuda',      'ayuda',      'Ayuda',      'Preguntas y soporte técnico',               '🆘', 7),
-  ('cat-meta',       'meta',       'Meta',       'Sugerencias para dprecios.web.app',         '⚙️', 8);
+  ('cat-meta',       'meta',       'Meta',       'Sugerencias para 3dprecios.cl',             '⚙️', 8);
