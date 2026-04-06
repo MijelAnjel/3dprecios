@@ -12,7 +12,7 @@
       "logo": "https://icons.duckduckgo.com/ip3/horus3d.cl.ico",
       "country": "CL",
       "isActive": true,
-      "lastScraped": "2026-04-03T01:01:10.529Z"
+      "lastScraped": "2026-04-06T00:54:54.779Z"
     },
     {
       "id": "imperio3d",
@@ -32,7 +32,7 @@
       "logo": "https://icons.duckduckgo.com/ip3/makerschile.cl.ico",
       "country": "CL",
       "isActive": true,
-      "lastScraped": "2026-04-03T01:01:10.529Z"
+      "lastScraped": "2026-04-06T00:54:54.779Z"
     },
     {
       "id": "evstore",
@@ -42,7 +42,7 @@
       "logo": "https://icons.duckduckgo.com/ip3/evstore.cl.ico",
       "country": "CL",
       "isActive": true,
-      "lastScraped": "2026-04-03T01:01:10.529Z"
+      "lastScraped": "2026-04-06T00:54:54.779Z"
     },
     {
       "id": "make3d",
@@ -52,7 +52,7 @@
       "logo": "https://icons.duckduckgo.com/ip3/make3d.cl.ico",
       "country": "CL",
       "isActive": true,
-      "lastScraped": "2026-04-03T01:01:10.529Z"
+      "lastScraped": "2026-04-06T00:54:54.779Z"
     },
     {
       "id": "maxi3d",
@@ -62,7 +62,7 @@
       "logo": "https://icons.duckduckgo.com/ip3/maxi3d.cl.ico",
       "country": "CL",
       "isActive": true,
-      "lastScraped": "2026-04-03T01:01:10.529Z"
+      "lastScraped": "2026-04-06T00:54:54.779Z"
     },
     {
       "id": "capital3d",
@@ -112,7 +112,7 @@
       "logo": "https://icons.duckduckgo.com/ip3/afel.cl.ico",
       "country": "CL",
       "isActive": true,
-      "lastScraped": "2026-04-03T01:01:10.529Z"
+      "lastScraped": "2026-04-06T00:54:54.779Z"
     },
     {
       "id": "tecnosistec",
@@ -122,7 +122,7 @@
       "logo": "https://icons.duckduckgo.com/ip3/tecnosistec.cl.ico",
       "country": "CL",
       "isActive": true,
-      "lastScraped": "2026-04-03T01:01:10.529Z"
+      "lastScraped": "2026-04-06T00:54:54.779Z"
     },
     {
       "id": "mcielectronics",
@@ -152,7 +152,7 @@
       "logo": "https://icons.duckduckgo.com/ip3/pcfactory.cl.ico",
       "country": "CL",
       "isActive": true,
-      "lastScraped": "2026-04-03T01:01:10.529Z"
+      "lastScraped": "2026-04-06T00:54:54.779Z"
     },
     {
       "id": "tugadget",
@@ -172,7 +172,7 @@
       "logo": "https://icons.duckduckgo.com/ip3/falabella.com.ico",
       "country": "CL",
       "isActive": true,
-      "lastScraped": "2026-04-03T01:01:10.529Z"
+      "lastScraped": "2026-04-06T00:54:54.779Z"
     },
     {
       "id": "sodimac",
@@ -182,7 +182,7 @@
       "logo": "https://icons.duckduckgo.com/ip3/sodimac.cl.ico",
       "country": "CL",
       "isActive": true,
-      "lastScraped": "2026-04-03T01:01:10.529Z"
+      "lastScraped": "2026-04-06T00:54:54.779Z"
     },
     {
       "id": "paris",
@@ -192,7 +192,7 @@
       "logo": "https://icons.duckduckgo.com/ip3/paris.cl.ico",
       "country": "CL",
       "isActive": true,
-      "lastScraped": "2026-04-03T01:01:10.529Z"
+      "lastScraped": "2026-04-06T00:54:54.779Z"
     },
     {
       "id": "ripley",
@@ -202,7 +202,7 @@
       "logo": "https://icons.duckduckgo.com/ip3/ripley.cl.ico",
       "country": "CL",
       "isActive": true,
-      "lastScraped": "2026-04-03T01:01:10.529Z"
+      "lastScraped": "2026-04-06T00:54:54.779Z"
     }
   ],
   "products": [
@@ -4419,7 +4419,7 @@
       "specs": {
         "partType": "Hotend"
       },
-      "minPrice": 16990,
+      "minPrice": 12990,
       "maxPrice": 16990,
       "storeCount": 1,
       "updatedAt": "2026-04-04T02:39:23.132Z",
@@ -4429,6 +4429,12 @@
           "storeId": "imperio3d",
           "url": "https://imperio3d.com/producto/ventilador-hotend-serie-a1/",
           "price": 16990,
+          "stock": "available"
+        },
+        {
+          "storeId": "tecnosistec",
+          "url": "https://tecnosistec.cl/inicio/1586-filamento-pla-sunlu-gris-1kg-175mm-9781180242312.html",
+          "price": 12990,
           "stock": "available"
         }
       ],
@@ -6613,6 +6619,12 @@
           "storeId": "imperio3d",
           "url": "https://imperio3d.com/producto/lokbuild/",
           "price": 7990,
+          "stock": "available"
+        },
+        {
+          "storeId": "tecnosistec",
+          "url": "https://tecnosistec.cl/impresion-3d/1575-filamento-pla-sunlu-gris-1kg-175mm-9781180152321.html",
+          "price": 9990,
           "stock": "available"
         }
       ],
@@ -11678,7 +11690,7 @@
       "id": "panel-izquierdo-hl-bambu-lab-x1",
       "name": "Panel Izquierdo (HL) Bambu Lab X1",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "accesorios",
       "description": "",
       "images": [
         "https://imperio3d.com/wp-content/uploads/2025/01/Bmbl_SPP035-1-300x300.webp"
@@ -20485,7 +20497,7 @@
       "id": "curso-3d-online-para-equipos-de-grabado-y-corte-laser-curso-3d",
       "name": "Curso 3D Online Para Equipos de Grabado y Corte Láser | Curso 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/73957342/resize/306/172?1772205178"
@@ -21868,7 +21880,7 @@
       "id": "curso-3d-impresoras-3d-de-resina-multimarca-curso-3d",
       "name": "Curso 3D Impresoras 3D de Resina Multimarca | Curso 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/73958017/resize/306/172?1772205933"
@@ -24060,7 +24072,7 @@
       "id": "sticker-suave-para-plataforma-impresora-3d-235x235cm-repuestos-3d",
       "name": "Sticker Suave para Plataforma Impresora 3D 23,5X23,5cm | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/18808350/resize/306/172?1631196125"
@@ -24092,7 +24104,7 @@
       "id": "sticker-para-plataforma-impresora-3d-32x31cm-repuestos-3d",
       "name": "Sticker para Plataforma Impresora 3D 32X31cm | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/18803876/resize/306/172?1651681649"
@@ -25060,8 +25072,8 @@
       "specs": {
         "brand": "Creality"
       },
-      "minPrice": 59990,
-      "maxPrice": 59990,
+      "minPrice": 24000,
+      "maxPrice": 24000,
       "storeCount": 1,
       "updatedAt": "2026-04-04T01:13:05.055Z",
       "createdAt": "2026-04-03T01:01:10.529Z",
@@ -26956,9 +26968,7 @@
           "url": "https://www.todotoner.cl/impresoras/impresoras-3d/repuestos-3d/disipador-hotend-hornet-artillery",
           "price": 10990,
           "stock": "out"
-        }
-      ],
-      "history": [
+        },
         {
           "storeId": "todotoner",
           "price": 10990,
@@ -27310,7 +27320,11 @@
         "https://cdnx.jumpseller.com/todo-toner/image/32704361/resize/306/172?1677737243"
       ],
       "specs": {
-        "brand": "Creality"
+        "brand": "iSANMATE",
+        "material": "ASA",
+        "diameter": "1.75",
+        "weight": "1000",
+        "color": "Blanco"
       },
       "minPrice": 19990,
       "maxPrice": 19990,
@@ -27382,7 +27396,9 @@
         "https://cdnx.jumpseller.com/todo-toner/image/32704353/resize/306/172?1677737181"
       ],
       "specs": {
-        "brand": "Creality"
+        "brand": "Bambu Lab",
+        "extruderType": "Directa",
+        "maxSpeed": "Ultra (300+mm/s)"
       },
       "minPrice": 49990,
       "maxPrice": 49990,
@@ -28869,7 +28885,7 @@
       "history": [
         {
           "storeId": "todotoner",
-          "price": 21990,
+          "price": 219980,
           "recordedAt": "2026-04-03T01:01:10.529Z"
         }
       ]
@@ -30611,8 +30627,8 @@
       "specs": {
         "diameter": "1.75"
       },
-      "minPrice": 16990,
-      "maxPrice": 16990,
+      "minPrice": 10990,
+      "maxPrice": 10990,
       "storeCount": 1,
       "updatedAt": "2026-04-04T01:13:05.055Z",
       "createdAt": "2026-04-03T01:01:10.529Z",
@@ -31116,7 +31132,7 @@
       "id": "3-unidades-de-cortador-de-filamento-x1-y-p1-series-repuestos-3d",
       "name": "3 Unidades de Cortador de Filamento X1 y P1 Series | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/44725263/resize/306/172?1705952651"
@@ -31526,7 +31542,7 @@
         "https://cdnx.jumpseller.com/todo-toner/image/44725862/resize/306/172?1705953881"
       ],
       "specs": {
-        "partType": "Extrusor"
+        "partType": "Accesorio Resina"
       },
       "minPrice": 18990,
       "maxPrice": 18990,
@@ -31723,7 +31739,7 @@
       "id": "conjunto-eje-z-a1-mini-repuestos-3d",
       "name": "Conjunto Eje Z A1 Mini | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-resina",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/44725931/resize/306/172?1705954000"
@@ -32063,7 +32079,7 @@
       "id": "placa-madre-ams-lite-repuestos-3d",
       "name": "Placa Madre AMS Lite | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/44726097/resize/306/172?1705954471"
@@ -33092,7 +33108,7 @@
       "id": "tarjeta-del-cabezal-de-herramientas-a1-series-repuestos-3d",
       "name": "Tarjeta del Cabezal de Herramientas A1 Series | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/48413636/resize/306/172?1715285485"
@@ -34222,7 +34238,7 @@
       "id": "pantalla-lcd-saturn-4-ultra-impresora-3d-repuestos-3d",
       "name": "Pantalla LCD Saturn 4 Ultra Impresora 3D | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/50952729/resize/306/172?1721585189"
@@ -34427,7 +34443,7 @@
       "id": "marco-de-impresora-repuestos-3d",
       "name": "Marco de Impresora | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/51781265/resize/306/172?1724163824"
@@ -34459,7 +34475,7 @@
       "id": "tensionador-del-eje-y-repuestos-3d",
       "name": "Tensionador del Eje Y | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/51781290/resize/306/172?1724163904"
@@ -34587,7 +34603,7 @@
       "id": "carril-lineal-del-eje-y-repuestos-3d",
       "name": "Carril Lineal del Eje Y | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "grabadoras-laser",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/51781565/resize/306/172?1724164198"
@@ -34619,7 +34635,7 @@
       "id": "carril-lineal-del-eje-x-repuestos-3d",
       "name": "Carril Lineal del Eje X | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "grabadoras-laser",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/51781787/resize/306/172?1724164277"
@@ -34651,7 +34667,7 @@
       "id": "tapon-de-filamento-p1pp1sx1c-repuestos-3d",
       "name": "Tapón de Filamento P1P/P1S/X1C | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/51781858/resize/306/172?1724164359"
@@ -34721,7 +34737,7 @@
       "id": "tubo-teflon-ptfe-p1s-x1c-repuestos-3d",
       "name": "Tubo Teflón PTFE P1S / X1C | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/51781930/resize/306/172?1724164522"
@@ -35314,7 +35330,7 @@
         "https://cdnx.jumpseller.com/todo-toner/image/58770615/resize/306/172?1735923926"
       ],
       "specs": {
-        "brand": "Creality"
+        "partType": "Accesorio Resina"
       },
       "minPrice": 89990,
       "maxPrice": 89990,
@@ -36556,7 +36572,7 @@
       "id": "carro-delantero-de-la-herramienta-x1x1cp1pp1sx1e-repuestos-3d",
       "name": "Carro Delantero de la Herramienta X1/X1C/P1P/P1S/X1E | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/60195780/resize/306/172?1739559393"
@@ -36624,7 +36640,7 @@
       "id": "cubierta-frontal-de-la-cabeza-de-impresion-a1-mini-a1-repuestos-3d",
       "name": "Cubierta Frontal de la Cabeza de Impresión A1 mini / A1 | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "accesorios",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/60195809/resize/306/172?1739559465"
@@ -36658,7 +36674,7 @@
       "id": "kit-de-tornillos-a1-mini-ams-lite-repuestos-3d",
       "name": "Kit de Tornillos A1 Mini / AMS Lite | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "accesorios",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/60197588/resize/306/172?1739563508"
@@ -36693,7 +36709,7 @@
       "id": "paquete-de-cables-mc-ap-2-en-1-x1x1cx1e-repuestos-3d",
       "name": "Paquete de Cables MC AP (2 en 1) X1/X1C/X1E | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/60193937/resize/306/172?1739554180"
@@ -36761,7 +36777,7 @@
       "id": "cable-usb-c-de-bambu-a1-mini-repuestos-3d",
       "name": "Cable USB-C de Bambu A1 Mini | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/60193976/resize/306/172?1739554247"
@@ -37306,7 +37322,7 @@
       "id": "motor-xy-x1-x1c-x1e-repuestos-3d",
       "name": "Motor XY X1 / X1C / X1E | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/60196108/resize/306/172?1739560564"
@@ -42566,7 +42582,7 @@
       "id": "rsp-nozzle-bambu-p1-08mm",
       "name": "Hotend Completo P1S con Boquilla 0.8mm de Acero Endurecido FAH003-P Bambu Lab | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/70393672/resize/306/172?1764892684"
@@ -42602,7 +42618,7 @@
       "id": "rsp-nozzle-bambu-x1-08mm",
       "name": "Hotend Completo X1 Carbón con Boquilla 0.8mm de Acero Endurecido FAH003 Bambu Lab | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/70393705/resize/306/172?1764892736"
@@ -42673,7 +42689,7 @@
       "id": "hotend-h2d-h2s-con-boquilla-06mm-de-acero-endurecido-fah024-bambu-lab-repuestos-3d",
       "name": "Hotend H2D / H2S con Boquilla 0.6mm de Acero Endurecido FAH024 Bambu Lab | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/70393722/resize/306/172?1764892882"
@@ -42708,7 +42724,7 @@
       "id": "hotend-h2d-h2s-con-boquilla-08mm-de-acero-endurecido-fah025-bambu-lab-repuestos-3d",
       "name": "Hotend H2D / H2S con Boquilla 0.8mm de Acero Endurecido FAH025 Bambu Lab | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/70393732/resize/306/172?1764892922"
@@ -42743,7 +42759,7 @@
       "id": "hotend-h2d-h2s-con-boquilla-02mm-de-acero-endurecido-fah026-bambu-lab-repuestos-3d",
       "name": "Hotend H2D / H2S con Boquilla 0.2mm de Acero Endurecido FAH026 Bambu Lab | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/70393749/resize/306/172?1764892960"
@@ -42778,7 +42794,7 @@
       "id": "hotend-alto-flujo-h2d-h2s-con-boquilla-04mm-de-acero-endurecido-fah030-bambu-lab-repuestos-3d",
       "name": "Hotend Alto Flujo H2D / H2S con Boquilla 0.4mm de Acero Endurecido FAH030 Bambu Lab | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/70393761/resize/306/172?1764893025"
@@ -42813,7 +42829,7 @@
       "id": "hotend-alto-flujo-h2d-h2s-con-boquilla-06mm-de-acero-endurecido-fah031-bambu-lab-repuestos-3d",
       "name": "Hotend Alto Flujo H2D / H2S con Boquilla 0.6mm de Acero Endurecido FAH031 Bambu Lab | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/70393763/resize/306/172?1764893046"
@@ -42848,7 +42864,7 @@
       "id": "hotend-alto-flujo-h2d-h2s-con-boquilla-08mm-de-acero-endurecido-fah032-bambu-lab-repuestos-3d",
       "name": "Hotend Alto Flujo H2D / H2S con Boquilla 0.8mm de Acero Endurecido FAH032 Bambu Lab | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/70393771/resize/306/172?1764893075"
@@ -42883,7 +42899,7 @@
       "id": "tubo-teflon-ptfe-serie-h2d-h2s-fat009-bambu-lab-repuestos-3d",
       "name": "Tubo Teflón PTFE Serie H2D / H2S FAT009 Bambu Lab | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/70393965/resize/306/172?1764894150"
@@ -42915,7 +42931,7 @@
       "id": "tubo-teflon-ptfe-de-ams-2-pro-h2d-h2s-fat010-bambu-lab-repuestos-3d",
       "name": "Tubo Teflón PTFE de AMS 2 Pro H2D / H2S FAT010 Bambu Lab | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/70393970/resize/306/172?1764894171"
@@ -46074,7 +46090,7 @@
       "id": "hotend-de-acero-endurecido-08mm-h2d-pro-h2s-h2d-p2s-fah062-bambu-lab-repuestos-3d",
       "name": "Hotend de Acero Endurecido 0,8mm H2D Pro, H2S, H2D, P2S FAH062 BAMBU LAB | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/71834054/resize/306/172?1768361986"
@@ -46142,7 +46158,7 @@
       "id": "hotend-alto-flujo-de-acero-endurecido-04mm-h2d-pro-h2s-h2d-p2s-fah063-bambu-lab-repuestos-3d",
       "name": "Hotend Alto Flujo de Acero Endurecido 0,4mm H2D Pro, H2S, H2D, P2S FAH063 BAMBU LAB | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/71834056/resize/306/172?1768362056"
@@ -46176,7 +46192,7 @@
       "id": "hotend-alto-flujo-de-acero-endurecido-06mm-h2d-pro-h2s-h2d-p2s-fah064-bambu-lab-repuestos-3d",
       "name": "Hotend Alto Flujo de Acero Endurecido 0,6mm H2D Pro, H2S, H2D, P2S FAH064 BAMBU LAB | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/71834058/resize/306/172?1768362097"
@@ -46210,7 +46226,7 @@
       "id": "hotend-alto-flujo-de-acero-endurecido-08mm-h2d-pro-h2s-h2d-p2s-fah065-bambu-lab-repuestos-3d",
       "name": "Hotend Alto Flujo de Acero Endurecido 0,8mm H2D Pro, H2S, H2D, P2S FAH065 BAMBU LAB | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-resina",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/71834087/resize/306/172?1768362213"
@@ -56147,7 +56163,7 @@
         },
         {
           "storeId": "todotoner",
-          "price": 9990,
+          "price": 23990,
           "recordedAt": "2026-04-03T01:01:10.529Z"
         },
         {
@@ -56518,8 +56534,8 @@
         "weight": "1000",
         "color": "Gris"
       },
-      "minPrice": 13990,
-      "maxPrice": 13990,
+      "minPrice": 22990,
+      "maxPrice": 22990,
       "storeCount": 1,
       "updatedAt": "2026-04-04T01:13:05.055Z",
       "createdAt": "2026-04-03T01:01:10.529Z",
@@ -57019,7 +57035,29 @@
           "storeId": "todotoner",
           "price": 10890,
           "recordedAt": "2026-04-03T01:01:10.529Z"
-        },
+        }
+      ]
+    },
+    {
+      "slug": "fdm-creality-extendedor-de-impresion-cr-30-accesorio-alta-precision",
+      "id": "fdm-creality-extendedor-de-impresion-cr-30-accesorio-alta-precision",
+      "name": "Extendedor de Impresión CR-30 Creality | Accesorio 3D | Alta Precisión",
+      "brand": "Creality",
+      "categoryId": "impresoras-fdm",
+      "description": "",
+      "images": [
+        "https://cdnx.jumpseller.com/todo-toner/image/25880171/resize/306/172?1658715246"
+      ],
+      "specs": {
+        "brand": "Creality",
+        "kinematics": "Cartesiana"
+      },
+      "minPrice": 119990,
+      "maxPrice": 119990,
+      "storeCount": 1,
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-03T01:01:10.529Z",
+      "entries": [
         {
           "storeId": "todotoner",
           "price": 10490,
@@ -57198,8 +57236,8 @@
         "weight": "1000",
         "color": "Amarillo"
       },
-      "minPrice": 17990,
-      "maxPrice": 17990,
+      "minPrice": 79880,
+      "maxPrice": 79880,
       "storeCount": 1,
       "updatedAt": "2026-04-04T01:13:05.055Z",
       "createdAt": "2026-04-03T01:01:10.529Z",
@@ -57279,6 +57317,11 @@
           "storeId": "todotoner",
           "price": 14980,
           "recordedAt": "2026-04-03T01:01:10.529Z"
+        },
+        {
+          "storeId": "tugadget",
+          "price": 379990,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
         }
       ]
     },
@@ -57336,8 +57379,8 @@
         "weight": "1000",
         "color": "Negro"
       },
-      "minPrice": 18990,
-      "maxPrice": 18990,
+      "minPrice": 74990,
+      "maxPrice": 74990,
       "storeCount": 1,
       "updatedAt": "2026-04-04T01:13:05.055Z",
       "createdAt": "2026-04-03T01:01:10.529Z",
@@ -68250,7 +68293,7 @@
       "id": "pack-x-2-filamentos-pla-gris-1kg-ender-pack-listo-filamentos",
       "name": "Pack x 2 Filamentos PLA Gris 1kg Ender Pack Listo | Filamentos",
       "brand": "",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/68981080/resize/306/172?1761240008"
@@ -75692,7 +75735,7 @@
       "id": "tapa-de-boquilla-028-para-ghac-swallowtail-marca-gaahleri",
       "name": "Tapa de Boquilla 0,28 | Para GHAC-Swallowtail | Marca Gaahleri",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "accesorios",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/65533349/resize/306/172?1753111423"
@@ -75726,7 +75769,7 @@
       "id": "tapa-de-boquilla-05-para-ghac-swallowtail-marca-gaahleri",
       "name": "Tapa de Boquilla 0,5 | Para GHAC-Swallowtail | Marca Gaahleri",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/65533370/resize/306/172?1753111518"
@@ -75760,7 +75803,7 @@
       "id": "tapa-de-boquilla-07-para-ghac-swallowtail-marca-gaahleri",
       "name": "Tapa de Boquilla 0,7 | Para GHAC-Swallowtail | Marca Gaahleri",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "accesorios",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/65533396/resize/306/172?1753111583"
@@ -78234,8 +78277,8 @@
       "minPrice": 16990,
       "maxPrice": 16990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:16.845Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78266,8 +78309,8 @@
       "minPrice": 9990,
       "maxPrice": 9990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:16.529Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78300,8 +78343,8 @@
       "minPrice": 49990,
       "maxPrice": 49990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:15.885Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78334,8 +78377,8 @@
       "minPrice": 24990,
       "maxPrice": 24990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:14.902Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78366,8 +78409,8 @@
       "minPrice": 8990,
       "maxPrice": 8990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:13.600Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78381,6 +78424,171 @@
           "storeId": "todotoner",
           "price": 8990,
           "recordedAt": "2026-04-03T01:01:10.529Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 9000,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 18000,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 10000,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 9000,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 18000,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 10000,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 9000,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 18000,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 10000,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 9000,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 18000,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 10000,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 9000,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 18000,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 10000,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 9000,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 18000,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 10000,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 9000,
+          "recordedAt": "2026-04-05T00:53:27.990Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 18000,
+          "recordedAt": "2026-04-05T00:53:27.990Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 10000,
+          "recordedAt": "2026-04-05T00:53:27.990Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 9000,
+          "recordedAt": "2026-04-05T06:45:03.980Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 18000,
+          "recordedAt": "2026-04-05T06:45:03.980Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 10000,
+          "recordedAt": "2026-04-05T06:45:03.980Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 9000,
+          "recordedAt": "2026-04-05T12:28:44.354Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 18000,
+          "recordedAt": "2026-04-05T12:28:44.354Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 10000,
+          "recordedAt": "2026-04-05T12:28:44.354Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 9000,
+          "recordedAt": "2026-04-05T18:27:27.291Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 18000,
+          "recordedAt": "2026-04-05T18:27:27.291Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 10000,
+          "recordedAt": "2026-04-05T18:27:27.291Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 9000,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 18000,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 10000,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
         }
       ]
     },
@@ -78398,8 +78606,8 @@
       "minPrice": 10990,
       "maxPrice": 10990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:13.272Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78413,6 +78621,171 @@
           "storeId": "todotoner",
           "price": 10990,
           "recordedAt": "2026-04-03T01:01:10.529Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 14000,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 15000,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 12000,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 14000,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 15000,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 12000,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 14000,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 15000,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 12000,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 14000,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 15000,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 12000,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 14000,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 15000,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 12000,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 14000,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 15000,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 12000,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 14000,
+          "recordedAt": "2026-04-05T00:53:27.990Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 15000,
+          "recordedAt": "2026-04-05T00:53:27.990Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 12000,
+          "recordedAt": "2026-04-05T00:53:27.990Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 14000,
+          "recordedAt": "2026-04-05T06:45:03.980Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 15000,
+          "recordedAt": "2026-04-05T06:45:03.980Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 12000,
+          "recordedAt": "2026-04-05T06:45:03.980Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 14000,
+          "recordedAt": "2026-04-05T12:28:44.354Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 15000,
+          "recordedAt": "2026-04-05T12:28:44.354Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 12000,
+          "recordedAt": "2026-04-05T12:28:44.354Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 14000,
+          "recordedAt": "2026-04-05T18:27:27.291Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 15000,
+          "recordedAt": "2026-04-05T18:27:27.291Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 12000,
+          "recordedAt": "2026-04-05T18:27:27.291Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 14000,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 15000,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 12000,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
         }
       ]
     },
@@ -78432,8 +78805,8 @@
       "minPrice": 44990,
       "maxPrice": 44990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:11.445Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78466,8 +78839,8 @@
       "minPrice": 33990,
       "maxPrice": 33990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:11.109Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78489,7 +78862,7 @@
       "id": "fuente-de-poder-slim-para-impresora-3d-repuestos-3d",
       "name": "Fuente de Poder Slim para Impresora 3D | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "resinas",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/20137862/resize/306/172?1640099018"
@@ -78500,8 +78873,8 @@
       "minPrice": 39990,
       "maxPrice": 39990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:10.762Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78523,7 +78896,7 @@
       "id": "fuente-de-poder-para-impresora-3d-hornet-repuestos-3d",
       "name": "Fuente de Poder para Impresora 3D Hornet | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "resinas",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/20180315/resize/306/172?1635438009"
@@ -78534,8 +78907,8 @@
       "minPrice": 39990,
       "maxPrice": 39990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:10.442Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78566,8 +78939,8 @@
       "minPrice": 9990,
       "maxPrice": 9990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:10.101Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78598,8 +78971,8 @@
       "minPrice": 9990,
       "maxPrice": 9990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:09.767Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78613,6 +78986,171 @@
           "storeId": "todotoner",
           "price": 9990,
           "recordedAt": "2026-04-03T01:01:10.529Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 62000,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 30000,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 45000,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 62000,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 30000,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 45000,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 62000,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 30000,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 45000,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 62000,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 30000,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 45000,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 62000,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 30000,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 45000,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 62000,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 30000,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 45000,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 62000,
+          "recordedAt": "2026-04-05T00:53:27.990Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 30000,
+          "recordedAt": "2026-04-05T00:53:27.990Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 45000,
+          "recordedAt": "2026-04-05T00:53:27.990Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 62000,
+          "recordedAt": "2026-04-05T06:45:03.980Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 30000,
+          "recordedAt": "2026-04-05T06:45:03.980Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 45000,
+          "recordedAt": "2026-04-05T06:45:03.980Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 62000,
+          "recordedAt": "2026-04-05T12:28:44.354Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 30000,
+          "recordedAt": "2026-04-05T12:28:44.354Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 45000,
+          "recordedAt": "2026-04-05T12:28:44.354Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 62000,
+          "recordedAt": "2026-04-05T18:27:27.291Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 30000,
+          "recordedAt": "2026-04-05T18:27:27.291Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 45000,
+          "recordedAt": "2026-04-05T18:27:27.291Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 62000,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 30000,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
+        },
+        {
+          "storeId": "horus3d",
+          "price": 45000,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
         }
       ]
     },
@@ -78630,8 +79168,8 @@
       "minPrice": 9990,
       "maxPrice": 9990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:08.751Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78662,8 +79200,8 @@
       "minPrice": 26990,
       "maxPrice": 26990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:08.422Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78696,8 +79234,8 @@
       "minPrice": 25990,
       "maxPrice": 25990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:07.739Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78730,8 +79268,8 @@
       "minPrice": 4990,
       "maxPrice": 4990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:07.025Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78764,8 +79302,8 @@
       "minPrice": 16990,
       "maxPrice": 16990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:05.302Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78799,8 +79337,8 @@
       "minPrice": 54990,
       "maxPrice": 54990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:04.982Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78834,8 +79372,8 @@
       "minPrice": 3990,
       "maxPrice": 3990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:03.910Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78866,8 +79404,8 @@
       "minPrice": 19990,
       "maxPrice": 19990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:03.579Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78900,8 +79438,8 @@
       "minPrice": 29990,
       "maxPrice": 29990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:03.211Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78923,7 +79461,7 @@
       "id": "placa-de-impresion-photon-mono-m3-max-para-impresora-3d-repuestos-3d",
       "name": "Placa de Impresión Photon Mono M3 Max para Impresora 3D | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "resinas",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/30137590/resize/306/172?1670621005"
@@ -78932,8 +79470,8 @@
       "minPrice": 59990,
       "maxPrice": 59990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:01.517Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -78967,8 +79505,8 @@
       "minPrice": 11990,
       "maxPrice": 11990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:01.160Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79002,8 +79540,8 @@
       "minPrice": 17990,
       "maxPrice": 17990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:00.800Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79037,8 +79575,8 @@
       "minPrice": 4990,
       "maxPrice": 4990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:00.459Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79060,7 +79598,7 @@
       "id": "bomba-de-vacio-epump-usb-marca-esun-epump",
       "name": "Bomba de vacío ePump USB Marca Esun | ePump",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "secadores",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/35684976/resize/306/172?1684983892"
@@ -79069,8 +79607,8 @@
       "minPrice": 7990,
       "maxPrice": 7990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:45:00.103Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79092,7 +79630,7 @@
       "id": "placa-de-impresion-mars-3-mars-3-pro-para-impresora-3d-repuestos-3d",
       "name": "Placa de Impresión Mars 3 / Mars 3 Pro para Impresora 3D | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/36168291/resize/306/172?1686114171"
@@ -79101,8 +79639,8 @@
       "minPrice": 31990,
       "maxPrice": 31990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:59.764Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79135,8 +79673,8 @@
       "minPrice": 39990,
       "maxPrice": 39990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:59.065Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79169,8 +79707,8 @@
       "minPrice": 45990,
       "maxPrice": 45990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:58.312Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79203,8 +79741,8 @@
       "minPrice": 34990,
       "maxPrice": 34990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:57.935Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79238,8 +79776,8 @@
       "minPrice": 59990,
       "maxPrice": 59990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:57.188Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79272,8 +79810,8 @@
       "minPrice": 24990,
       "maxPrice": 24990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:56.827Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79306,8 +79844,8 @@
       "minPrice": 12990,
       "maxPrice": 12990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:56.425Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79341,8 +79879,8 @@
       "minPrice": 1699990,
       "maxPrice": 1699990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:56.064Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79376,8 +79914,8 @@
       "minPrice": 899990,
       "maxPrice": 899990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:55.671Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79411,8 +79949,8 @@
       "minPrice": 419990,
       "maxPrice": 419990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:55.266Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79446,8 +79984,8 @@
       "minPrice": 69990,
       "maxPrice": 69990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:54.889Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79481,8 +80019,8 @@
       "minPrice": 569990,
       "maxPrice": 569990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:54.100Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79513,8 +80051,8 @@
       "minPrice": 25990,
       "maxPrice": 25990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:53.711Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79548,8 +80086,8 @@
       "minPrice": 79880,
       "maxPrice": 79880,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:52.932Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79580,8 +80118,8 @@
       "minPrice": 29990,
       "maxPrice": 29990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:52.487Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79612,8 +80150,8 @@
       "minPrice": 39990,
       "maxPrice": 39990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:52.127Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79635,7 +80173,7 @@
       "id": "placa-de-impresion-mars-4-para-impresora-3d-repuestos-3d",
       "name": "Placa de Impresión Mars 4 para Impresora 3D | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "resinas",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/48190805/resize/306/172?1714775599"
@@ -79644,8 +80182,8 @@
       "minPrice": 24990,
       "maxPrice": 24990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:51.782Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79667,7 +80205,7 @@
       "id": "tanque-o-vat-de-resina-para-impresora-3d-mars-4-repuestos-3d",
       "name": "Tanque o Vat de Resina para Impresora 3D Mars 4 | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "resinas",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/48190821/resize/306/172?1714775670"
@@ -79676,8 +80214,8 @@
       "minPrice": 33990,
       "maxPrice": 33990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:51.421Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79699,7 +80237,7 @@
       "id": "tanque-o-vat-de-resina-para-impresora-3d-jupiter-se-repuestos-3d",
       "name": "Tanque o Vat de Resina para Impresora 3D Jupiter SE | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "resinas",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/48190849/resize/306/172?1714775766"
@@ -79708,8 +80246,8 @@
       "minPrice": 89990,
       "maxPrice": 89990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:51.075Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79740,8 +80278,8 @@
       "minPrice": 59990,
       "maxPrice": 59990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:50.236Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79763,7 +80301,7 @@
       "id": "placa-de-impresion-saturn-3-para-impresora-3d-repuestos-3d",
       "name": "Placa de Impresión Saturn 3 para Impresora 3D | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "scanner-3d",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/48191044/resize/306/172?1714776199"
@@ -79772,8 +80310,8 @@
       "minPrice": 29990,
       "maxPrice": 29990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:49.794Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79804,8 +80342,8 @@
       "minPrice": 47990,
       "maxPrice": 47990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:47.876Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79836,8 +80374,8 @@
       "minPrice": 35990,
       "maxPrice": 35990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:47.460Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79859,7 +80397,7 @@
       "id": "placa-de-impresion-halot-lite-para-impresora-3d-repuestos-3d",
       "name": "Placa de Impresión Halot Lite para Impresora 3D | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "general",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/50724205/resize/306/172?1721061826"
@@ -79868,8 +80406,8 @@
       "minPrice": 27990,
       "maxPrice": 27990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:46.948Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79902,8 +80440,8 @@
       "minPrice": 23990,
       "maxPrice": 23990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:46.486Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79925,7 +80463,7 @@
       "id": "placa-de-impresion-saturn-4-ultra-para-impresora-3d-repuestos-3d",
       "name": "Placa de Impresión Saturn 4 Ultra para Impresora 3D | Repuestos 3D",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "general",
       "description": "",
       "images": [
         "https://cdnx.jumpseller.com/todo-toner/image/50952498/resize/306/172?1721584813"
@@ -79934,8 +80472,8 @@
       "minPrice": 41990,
       "maxPrice": 41990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:45.917Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -79966,8 +80504,8 @@
       "minPrice": 41990,
       "maxPrice": 41990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:45.371Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80001,8 +80539,8 @@
       "minPrice": 119990,
       "maxPrice": 119990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:44.263Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80036,8 +80574,8 @@
       "minPrice": 429990,
       "maxPrice": 429990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T18:44:41.562Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80068,8 +80606,8 @@
       "minPrice": 29990,
       "maxPrice": 29990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-03-31T18:33:58.310Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80100,8 +80638,8 @@
       "minPrice": 34990,
       "maxPrice": 34990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T23:15:29.905Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80134,8 +80672,8 @@
       "minPrice": 37990,
       "maxPrice": 37990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T23:15:29.905Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80166,8 +80704,8 @@
       "minPrice": 29990,
       "maxPrice": 29990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T23:15:29.905Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80202,8 +80740,8 @@
       "minPrice": 4999990,
       "maxPrice": 4999990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T23:15:29.905Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80234,8 +80772,8 @@
       "minPrice": 23990,
       "maxPrice": 23990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T23:15:29.905Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80270,8 +80808,8 @@
       "minPrice": 999990,
       "maxPrice": 999990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T23:15:29.905Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80306,8 +80844,8 @@
       "minPrice": 999990,
       "maxPrice": 999990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T23:15:29.905Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80340,8 +80878,8 @@
       "minPrice": 23990,
       "maxPrice": 23990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T23:15:29.905Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80374,8 +80912,8 @@
       "minPrice": 47990,
       "maxPrice": 47990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T23:15:29.905Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80406,8 +80944,8 @@
       "minPrice": 59990,
       "maxPrice": 59990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T23:15:29.905Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80440,8 +80978,8 @@
       "minPrice": 59990,
       "maxPrice": 59990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T23:15:29.905Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80474,8 +81012,8 @@
       "minPrice": 59990,
       "maxPrice": 59990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T23:15:29.905Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80508,8 +81046,8 @@
       "minPrice": 29990,
       "maxPrice": 29990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T23:15:29.905Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80543,8 +81081,8 @@
       "minPrice": 169990,
       "maxPrice": 169990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T23:15:29.905Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80611,8 +81149,8 @@
       "minPrice": 289990,
       "maxPrice": 289990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T23:15:29.905Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80646,8 +81184,8 @@
       "minPrice": 399990,
       "maxPrice": 399990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-01T23:15:29.905Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80681,8 +81219,8 @@
       "minPrice": 499990,
       "maxPrice": 499990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80716,8 +81254,8 @@
       "minPrice": 898990,
       "maxPrice": 898990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80751,8 +81289,8 @@
       "minPrice": 1359990,
       "maxPrice": 1359990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80785,8 +81323,8 @@
       "minPrice": 599990,
       "maxPrice": 599990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80820,8 +81358,8 @@
       "minPrice": 59990,
       "maxPrice": 59990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80858,8 +81396,8 @@
       "minPrice": 149990,
       "maxPrice": 149990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80892,8 +81430,8 @@
       "minPrice": 22990,
       "maxPrice": 22990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80927,8 +81465,8 @@
       "minPrice": 5990,
       "maxPrice": 5990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80961,8 +81499,8 @@
       "minPrice": 144990,
       "maxPrice": 144990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -80995,8 +81533,8 @@
       "minPrice": 179990,
       "maxPrice": 179990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -81030,8 +81568,8 @@
       "minPrice": 3990,
       "maxPrice": 3990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -81065,8 +81603,8 @@
       "minPrice": 159990,
       "maxPrice": 159990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -81099,8 +81637,8 @@
       "minPrice": 16990,
       "maxPrice": 16990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -81133,8 +81671,8 @@
       "minPrice": 29990,
       "maxPrice": 29990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -81172,8 +81710,8 @@
       "minPrice": 639990,
       "maxPrice": 639990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -81212,8 +81750,8 @@
       "minPrice": 789990,
       "maxPrice": 789990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -81287,8 +81825,8 @@
       "minPrice": 249990,
       "maxPrice": 249990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -81324,8 +81862,8 @@
       "minPrice": 349990,
       "maxPrice": 349990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -81362,8 +81900,8 @@
       "minPrice": 449990,
       "maxPrice": 449990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -81399,8 +81937,8 @@
       "minPrice": 1999990,
       "maxPrice": 1999990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -81434,8 +81972,8 @@
       "minPrice": 49990,
       "maxPrice": 49990,
       "storeCount": 1,
-      "updatedAt": "2026-04-03T01:01:10.529Z",
-      "createdAt": "2026-04-03T01:01:10.529Z",
+      "updatedAt": "2026-04-06T00:54:54.779Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
       "entries": [
         {
           "storeId": "todotoner",
@@ -88938,7 +89476,7 @@
       "id": "pack-halloween-filamento-pla-negro-amarillo-naranjo-fucsia-verde",
       "name": "Pack Halloween Filamento PLA+: Negro, Amarillo, Naranjo, Fucsia, Verde",
       "brand": "",
-      "categoryId": "filamentos-pla",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://evstore.cl/wp-content/uploads/2023/10/Pack-Halloween-Filamento-PLA-Negro-Amarillo-Naranjo-Fucsia-Verde-1.jpg"
@@ -97174,6 +97712,86 @@
           "storeId": "capital3d",
           "price": 23000,
           "recordedAt": "2026-04-03T01:01:10.529Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12990,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12990,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12990,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12990,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12990,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12990,
+          "recordedAt": "2026-04-04T12:39:38.926Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-04T12:39:38.926Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12990,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12990,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
         }
       ]
     },
@@ -97276,6 +97894,91 @@
           "storeId": "capital3d",
           "price": 23000,
           "recordedAt": "2026-04-03T01:01:10.529Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-03T01:01:10.529Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12990,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12990,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12990,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12990,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12990,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12990,
+          "recordedAt": "2026-04-04T12:39:38.926Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-04T12:39:38.926Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12990,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12990,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
         }
       ]
     },
@@ -97462,6 +98165,86 @@
           "storeId": "capital3d",
           "price": 23000,
           "recordedAt": "2026-04-03T01:01:10.529Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14480,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14990,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14480,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14990,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14480,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14990,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14480,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14990,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14480,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14990,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14480,
+          "recordedAt": "2026-04-04T12:39:38.926Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14990,
+          "recordedAt": "2026-04-04T12:39:38.926Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14480,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14990,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14480,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14990,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
         }
       ]
     },
@@ -100858,8 +101641,8 @@
         "diameter": "1.75",
         "color": "Gris"
       },
-      "minPrice": 14990,
-      "maxPrice": 14990,
+      "minPrice": 12490,
+      "maxPrice": 12490,
       "storeCount": 1,
       "updatedAt": "2026-04-03T01:01:10.529Z",
       "createdAt": "2026-04-01T18:50:04.940Z",
@@ -102578,10 +103361,13 @@
         "https://evstore.cl/wp-content/uploads/2023/01/Ventilador-4010-sin-escobillas.jpg"
       ],
       "specs": {
-        "partType": "Ventilador"
+        "brand": "eSUN",
+        "diameter": "1.75",
+        "weight": "1000",
+        "color": "Negro"
       },
-      "minPrice": 2990,
-      "maxPrice": 2990,
+      "minPrice": 13990,
+      "maxPrice": 13990,
       "storeCount": 1,
       "updatedAt": "2026-04-03T01:01:10.529Z",
       "createdAt": "2026-04-01T18:49:30.818Z",
@@ -103728,7 +104514,7 @@
       "id": "bigtreetech-pad-7-para-klipper",
       "name": "BIGTREETECH: PAD 7 para Klipper",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://evstore.cl/wp-content/uploads/2023/12/PAD-7.jpg"
@@ -103762,7 +104548,7 @@
       "id": "bigtreetech-skr-v14",
       "name": "BIGTREETECH: SKR V1.4",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://evstore.cl/wp-content/uploads/2022/07/BIGTREETECH-SKR-V1.4-Turbo.jpg"
@@ -103865,7 +104651,7 @@
       "id": "sistema-hotend-completo-cr10s-pro",
       "name": "Sistema Hotend completo CR10S Pro",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://evstore.cl/wp-content/uploads/2024/10/Hotend-completo-CR10S-PRO.jpg"
@@ -106287,6 +107073,126 @@
           "storeId": "makerschile",
           "price": 21973,
           "recordedAt": "2026-04-03T01:01:10.529Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 11680,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12490,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 11890,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 11680,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12490,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 11890,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 11680,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12490,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 11890,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 11680,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12490,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 11890,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 11680,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12490,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 11890,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 11680,
+          "recordedAt": "2026-04-04T12:39:38.926Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12490,
+          "recordedAt": "2026-04-04T12:39:38.926Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 11890,
+          "recordedAt": "2026-04-04T12:39:38.926Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 11680,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12490,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 11890,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 11680,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 12490,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 11890,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
         }
       ]
     },
@@ -106363,6 +107269,86 @@
           "storeId": "makerschile",
           "price": 80991,
           "recordedAt": "2026-04-03T01:01:10.529Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14990,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-03T06:47:41.716Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14990,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-03T12:34:47.269Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14990,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-03T18:32:10.364Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14990,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-04T00:51:02.651Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14990,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-04T06:41:44.723Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14990,
+          "recordedAt": "2026-04-04T12:39:38.926Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-04T12:39:38.926Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14990,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-04T18:29:51.925Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 14990,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
+        },
+        {
+          "storeId": "todotoner",
+          "price": 13990,
+          "recordedAt": "2026-04-06T00:54:54.779Z"
         }
       ]
     },
@@ -106517,7 +107503,11 @@
         "https://makerschile.cl/wp-content/uploads/2025/05/Ender-6.png"
       ],
       "specs": {
-        "brand": "Creality"
+        "brand": "Elegoo",
+        "material": "TPU",
+        "diameter": "1.75",
+        "weight": "1000",
+        "color": "Verde"
       },
       "minPrice": 476991,
       "maxPrice": 476991,
@@ -107224,7 +108214,7 @@
       "id": "tubo-bowden-ptfe",
       "name": "Tubo Bowden Ptfe",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/659917-MLC45556543219_042021.jpg"
@@ -107256,7 +108246,7 @@
       "id": "tubo-bowden-capricorn-ptfe-original",
       "name": "Tubo Bowden Capricorn Ptfe Original",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/744161-MLC45556590109_042021.jpg"
@@ -107612,7 +108602,11 @@
         "https://makerschile.cl/wp-content/uploads/2025/05/D_850156-MLC45786937388_052021-F.jpg"
       ],
       "specs": {
-        "partType": "Extrusor"
+        "brand": "eSUN",
+        "material": "PVA",
+        "diameter": "1.75",
+        "weight": "500",
+        "color": "Transparente"
       },
       "minPrice": 22491,
       "maxPrice": 22491,
@@ -111911,7 +112905,7 @@
       "id": "bambu-lab-a1",
       "name": "Bambu Lab A1",
       "brand": "",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/Bambulab_A1_3_makerschile.webp"
@@ -111943,7 +112937,7 @@
       "id": "bambu-lab-a1-mini",
       "name": "Bambu Lab A1 Mini",
       "brand": "",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/a1-mini-2-png.webp"
@@ -111990,7 +112984,7 @@
       "id": "pre-order-bambu-lab-h2d-combo",
       "name": "PRE ORDER Bambu Lab H2D Combo",
       "brand": "",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/Bambulab-H2D-Combo-1.webp"
@@ -112086,7 +113080,7 @@
       "id": "bambu-lab-h2d-combo",
       "name": "Bambu Lab H2D Combo",
       "brand": "",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/Bambulab-H2D-Combo-1.webp"
@@ -112152,7 +113146,7 @@
       "id": "pre-order-bambu-lab-h2s-combo",
       "name": "PRE ORDER Bambu Lab H2S Combo",
       "brand": "",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/09/H2S-1.webp"
@@ -112184,7 +113178,7 @@
       "id": "pre-order-bambu-lab-h2d",
       "name": "PRE ORDER Bambu Lab H2D",
       "brand": "",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/09/H2D.webp"
@@ -112216,7 +113210,7 @@
       "id": "pre-order-bambu-lab-a1-mini",
       "name": "PRE ORDER Bambu Lab A1 Mini",
       "brand": "",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/a1-mini-2-png.webp"
@@ -112314,7 +113308,7 @@
       "id": "pre-order-bambu-lab-p2s-combo",
       "name": "PRE ORDER Bambu Lab P2S Combo",
       "brand": "",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/11/Bambu-Lab-P2S-Combo-1.webp"
@@ -112346,7 +113340,7 @@
       "id": "bambu-lab-p2s-combo",
       "name": "Bambu Lab P2S Combo",
       "brand": "",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2026/01/bambu-lab-p2s-combo-1.webp"
@@ -112378,7 +113372,7 @@
       "id": "bambu-lab-p2s",
       "name": "Bambu Lab P2S",
       "brand": "",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "filamentos-pla",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2026/01/bambu-lab-p2s-1.webp"
@@ -112410,7 +113404,7 @@
       "id": "bambu-lab-h2s-combo",
       "name": "Bambu Lab H2S Combo",
       "brand": "",
-      "categoryId": "impresoras-fdm",
+      "categoryId": "repuestos",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2026/01/Bambu-Lab-H2S-AMS-Combo-33459_2.webp"
@@ -113351,7 +114345,7 @@
       "id": "alicate-de-corte-diagonal",
       "name": "Alicate de corte diagonal",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "general",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2022/08/Pinzas3.png"
@@ -114114,7 +115108,7 @@
       "id": "boquilla-mk8-de-acero-inoxidable-04mm",
       "name": "Boquilla MK8 de acero inoxidable 0.4mm",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "general",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2023/09/Boquilla-mk8-Acero-Inox.png"
@@ -114254,7 +115248,7 @@
       "id": "conector-neumatico-jp4-01",
       "name": "Conector neumático JP4-01",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "general",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2023/09/Conector-neumatico-JP4-01.png"
@@ -115496,7 +116490,7 @@
       "id": "hotend-a1-series-acero-reforzado-06mm",
       "name": "Hotend A1 Series Acero Reforzado 0.6mm",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "general",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2025/05/Hotend-A1-06mm.png"
@@ -115826,7 +116820,7 @@
       "id": "hotend-a1-series-acero-reforzado-02mm",
       "name": "Hotend A1 Series Acero Reforzado 0.2mm",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "general",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2025/05/Hotend-A1-02mm.png"
@@ -116492,7 +117486,7 @@
       "id": "rsp-nozzle-k1-04mm",
       "name": "Boquilla de latón y acero 0.4mm para K1/3V3KE",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "general",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2025/09/Boquillas-K1-x2.png"
@@ -116564,7 +117558,7 @@
       "id": "hotend-a1-series-acero-reforzado-08mm",
       "name": "Hotend A1 Series Acero Reforzado 0.8mm",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "general",
       "description": "",
       "images": [
         "https://horus3d.cl/wp-content/uploads/2025/05/Hotend-A1-08mm.png"
@@ -118776,7 +119770,7 @@
       "id": "mini-fuente-de-poder-hlk-5m12-220av-12v-5w",
       "name": "Mini Fuente De Poder Hlk-5m12 220av-12v 5w",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/Mini-Fuente-Hlk-5m12-scaled-1.jpg"
@@ -118844,7 +119838,7 @@
       "id": "fuente-de-poder-ac-100-240v-a-dc-5v-40a",
       "name": "Fuente De Poder Ac 100-240v A Dc 5v 40a",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-resina",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/5v-40A-scaled-1.jpg"
@@ -118912,7 +119906,7 @@
       "id": "stepper-motor-driver-a3967-easydriver",
       "name": "Stepper Motor Driver A3967 Easydriver",
       "brand": "",
-      "categoryId": "repuestos",
+      "categoryId": "impresoras-resina",
       "description": "",
       "images": [
         "https://makerschile.cl/wp-content/uploads/2025/05/EasyStepper-scaled-1.jpg"
@@ -120276,8 +121270,8 @@
         "weight": "1000",
         "color": "Amarillo"
       },
-      "minPrice": 12990,
-      "maxPrice": 12990,
+      "minPrice": 59990,
+      "maxPrice": 59990,
       "storeCount": 1,
       "updatedAt": "2026-04-03T01:01:10.529Z",
       "createdAt": "2026-04-02T06:55:56.047Z",
@@ -121250,8 +122244,8 @@
         "diameter": "1.75",
         "color": "Naranja"
       },
-      "minPrice": 25990,
-      "maxPrice": 25990,
+      "minPrice": 599990,
+      "maxPrice": 599990,
       "storeCount": 1,
       "updatedAt": "2026-04-03T01:01:10.529Z",
       "createdAt": "2026-04-02T12:43:59.136Z",
@@ -121286,8 +122280,8 @@
         "diameter": "1.75",
         "color": "Verde"
       },
-      "minPrice": 25990,
-      "maxPrice": 25990,
+      "minPrice": 898990,
+      "maxPrice": 898990,
       "storeCount": 1,
       "updatedAt": "2026-04-03T01:01:10.529Z",
       "createdAt": "2026-04-02T12:43:59.136Z",
@@ -124967,8 +125961,8 @@
         "diameter": "1.75",
         "variant": "luminous"
       },
-      "minPrice": 25990,
-      "maxPrice": 25990,
+      "minPrice": 32990,
+      "maxPrice": 32990,
       "storeCount": 1,
       "updatedAt": "2026-04-03T01:01:10.529Z",
       "createdAt": "2026-04-02T12:43:59.136Z",
@@ -129022,41 +130016,38 @@
       ]
     },
     {
-      "slug": "repuesto-anet-set-j-link-et4-et4pro-firmware-de-codigo-abierto-para-impresora-3d",
-      "id": "repuesto-anet-set-j-link-et4-et4pro-firmware-de-codigo-abierto-para-impresora-3d",
-      "name": "Repuesto Anet set J-Link ET4 + ET4Pro Firmware de código abierto para impresora 3D",
-      "brand": "Anet",
-      "categoryId": "repuestos",
+      "slug": "fdm-uniz-ubee-marca-volumen-imp-198x124x180mm-dental",
+      "id": "fdm-uniz-ubee-marca-volumen-imp-198x124x180mm-dental",
+      "name": "UBEE Marca UNIZ | Volumen Imp 198x124x180mm | Impresora 3D Dental",
+      "brand": "Uniz",
+      "categoryId": "impresoras-fdm",
       "description": "",
       "images": [
-        "https://tecnosistec.cl/4019-home_default/repuesto-anet-set-j-link-et4-et4pro-firmware-de-codigo-abierto-para-impresora-3d.jpg"
+        "https://cdnx.jumpseller.com/todo-toner/image/56978431/resize/306/172?1731450076"
       ],
       "specs": {
-        "brand": "Anet"
+        "brand": "Uniz",
+        "workArea": "198×124×180mm",
+        "buildVolume": "Pequeño (hasta 220mm)"
       },
-      "minPrice": 7990,
-      "maxPrice": 7990,
+      "minPrice": 4999990,
+      "maxPrice": 4999990,
       "storeCount": 1,
-      "updatedAt": "2026-04-02T18:41:49.732Z",
-      "createdAt": "2026-04-02T18:41:49.732Z",
+      "updatedAt": "2026-04-03T01:01:10.529Z",
+      "createdAt": "2026-04-03T01:01:10.529Z",
       "entries": [
         {
-          "storeId": "tecnosistec",
-          "url": "https://tecnosistec.cl/repuestos-impresoras-3d/1450-repuesto-anet-set-j-link-et4-et4pro-firmware-de-codigo-abierto-para-impresora-3d-9781185574623.html",
-          "price": 7990,
+          "storeId": "todotoner",
+          "url": "https://www.todotoner.cl/impresoras/impresoras-3d-dental/impresoras/ubee",
+          "price": 4999990,
           "stock": "available"
         }
       ],
       "history": [
         {
-          "storeId": "tecnosistec",
-          "price": 7990,
-          "recordedAt": "2026-04-02T18:41:49.732Z"
-        },
-        {
-          "storeId": "tecnosistec",
-          "price": 7990,
-          "recordedAt": "2026-04-01T23:15:29.905Z"
+          "storeId": "todotoner",
+          "price": 4999990,
+          "recordedAt": "2026-04-03T01:01:10.529Z"
         }
       ]
     },
@@ -130186,6 +131177,45 @@
       ]
     },
     {
+      "slug": "repuesto-anet-set-j-link-et4-et4pro-firmware-de-codigo-abierto-para-impresora-3d",
+      "id": "repuesto-anet-set-j-link-et4-et4pro-firmware-de-codigo-abierto-para-impresora-3d",
+      "name": "Repuesto Anet set J-Link ET4 + ET4Pro Firmware de código abierto para impresora 3D",
+      "brand": "Anet",
+      "categoryId": "repuestos",
+      "description": "",
+      "images": [
+        "https://tecnosistec.cl/4019-home_default/repuesto-anet-set-j-link-et4-et4pro-firmware-de-codigo-abierto-para-impresora-3d.jpg"
+      ],
+      "specs": {
+        "brand": "Anet"
+      },
+      "minPrice": 7990,
+      "maxPrice": 7990,
+      "storeCount": 1,
+      "updatedAt": "2026-04-02T18:41:49.732Z",
+      "createdAt": "2026-04-02T18:41:49.732Z",
+      "entries": [
+        {
+          "storeId": "tecnosistec",
+          "url": "https://tecnosistec.cl/repuestos-impresoras-3d/1450-repuesto-anet-set-j-link-et4-et4pro-firmware-de-codigo-abierto-para-impresora-3d-9781185574623.html",
+          "price": 7990,
+          "stock": "available"
+        }
+      ],
+      "history": [
+        {
+          "storeId": "tecnosistec",
+          "price": 7990,
+          "recordedAt": "2026-04-02T18:41:49.732Z"
+        },
+        {
+          "storeId": "tecnosistec",
+          "price": 7990,
+          "recordedAt": "2026-04-01T23:15:29.905Z"
+        }
+      ]
+    },
+    {
       "slug": "bq-panda-cryogrip-frostbite-bambulab-a1-p1-x1",
       "id": "bq-panda-cryogrip-frostbite-bambulab-a1-p1-x1",
       "name": "BQ Panda CryoGrip Frostbite Bambulab A1-P1-X1",
@@ -130631,6 +131661,40 @@
           "storeId": "tecnosistec",
           "price": 17990,
           "recordedAt": "2026-04-01T23:15:29.905Z"
+        }
+      ]
+    },
+    {
+      "slug": "bambulab-puerta-de-vidrio-frontal",
+      "id": "bambulab-puerta-de-vidrio-frontal",
+      "name": "BambuLab Puerta de vidrio frontal",
+      "brand": "Bambu Lab",
+      "categoryId": "repuestos",
+      "description": "",
+      "images": [
+        "https://imperio3d.com/wp-content/uploads/2024/03/Bambulab_FAS002-300x300.webp"
+      ],
+      "specs": {
+        "brand": "Bambu Lab"
+      },
+      "minPrice": 45990,
+      "maxPrice": 45990,
+      "storeCount": 1,
+      "updatedAt": "2026-04-02T06:55:56.047Z",
+      "createdAt": "2026-04-02T06:55:56.047Z",
+      "entries": [
+        {
+          "storeId": "imperio3d",
+          "url": "https://imperio3d.com/producto/bambulab-puerta-de-vidrio-frontal/",
+          "price": 45990,
+          "stock": "available"
+        }
+      ],
+      "history": [
+        {
+          "storeId": "imperio3d",
+          "price": 45990,
+          "recordedAt": "2026-04-02T06:55:56.047Z"
         }
       ]
     },
