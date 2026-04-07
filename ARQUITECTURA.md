@@ -110,7 +110,9 @@ PowerShell local
 - **fetch nativo** — para llamadas HTTP y APIs REST
 
 ### Infraestructura
-- **Firebase** (Hosting + Firestore + Auth)
+- **Firebase** — Hosting + Firestore (`priceAlerts` only) + Auth (Google + GitHub)
+- **Cloudflare Workers** — backend del foro (`dprecios-forum.3dprecios.workers.dev`); framework Hono v4; verificación JWT Firebase via Web Crypto API (sin dependencias externas)
+- **Cloudflare D1** — base de datos SQLite del foro (`forum-db`, ID `a689d86e-9815-4680-b089-2018a6a0ce52`, región ENAM); 5M lecturas/día tier gratuito
 - **GitHub Actions** — CI/CD de deploy automático (push a `master` → `ng build` → `firebase deploy`)
 - **Cloudflare** — DNS + regla de redirección www → apex (`3dprecios.cl`)
 - **Resend.com** — emails transaccionales (futuro)
@@ -148,11 +150,13 @@ print3d-web/
 │       │       └── price.service.ts      ← entries e historial desde CatalogService
 │       ├── shared/
 │       │   ├── components/
-│       │   │   ├── header/
+│       │   │   ├── header/           ← nav con enlace /foro, login button, UserAvatar
 │       │   │   ├── footer/
 │       │   │   ├── product-card/
 │       │   │   ├── breadcrumb/
-│       │   │   └── skeleton/
+│       │   │   ├── skeleton/
+│       │   │   ├── auth-modal/       ← modal Google / GitHub login
+│       │   │   └── user-avatar/      ← avatar + menú desplegable del usuario
 │       │   └── pipes/
 │       │       └── clp.pipe.ts    ← formateo de precios CLP
 │       └── pages/
@@ -165,6 +169,12 @@ print3d-web/
 │           │       ├── price-chart/
 │           │       └── alert-form/
 │           ├── store/             ← perfil de tienda
+│           ├── forum/             ← foro comunitario (lazy loaded)
+│           │   ├── forum.routes.ts
+│           │   ├── forum-home/    ← listado de categorías del foro
+│           │   ├── forum-category/ ← posts de una categoría (paginado)
+│           │   ├── forum-post/    ← detalle de post + replies + like
+│           │   └── new-post/      ← formulario crear post (authGuard)
 │           └── legal/             ← privacy, terms
 │
 ├── scraper/
@@ -197,6 +207,20 @@ print3d-web/
 │   ├── manifest.webmanifest
 │   ├── robots.txt
 │   └── sitemap.xml
+│
+├── worker/                        ← Cloudflare Worker (backend del foro)
+│   ├── package.json               ← Hono + wrangler
+│   ├── wrangler.toml              ← binding D1 (forum-db)
+│   ├── tsconfig.json              ← moduleResolution: bundler
+│   ├── schema.sql                 ← tablas D1 + 8 categorías seed
+│   └── src/
+│       ├── index.ts               ← Hono app, CORS, auth middleware global
+│       ├── auth.ts                ← verifyFirebaseToken() via Web Crypto API
+│       └── routes/
+│           ├── categories.ts      ← GET /api/forum/categories
+│           ├── users.ts           ← GET/POST /api/users/me
+│           ├── posts.ts           ← CRUD /api/forum/posts
+│           └── replies.ts         ← CRUD + like /api/forum/replies
 │
 ├── .github/workflows/
 │   ├── deploy.yml                 ← auto-deploy en cada push a master
@@ -256,7 +280,7 @@ interface CatalogEntry {
 
 ### Firestore (write-only — solo `priceAlerts`)
 
-Firestore solo recibe alertas de precio desde `AlertFormComponent`. No se usa para leer el catálogo.
+Firestore solo recibe alertas de precio desde `AlertFormComponent`. No se usa para leer el catálogo ni el foro.
 
 ```
 /priceAlerts/{alertId}
@@ -270,6 +294,37 @@ Firestore solo recibe alertas de precio desde `AlertFormComponent`. No se usa pa
 > **Nota histórica:** La arquitectura anterior usaba Firestore como base de datos activa
 > (`/products/`, `/entries/`, `/history/`) y `export.ts` para generar `catalog.json`.
 > Ese pipeline fue reemplazado por `run-direct.ts` que escribe directamente a `catalog.json`.
+
+### Cloudflare D1 — base de datos del foro
+
+SQLite gestionado por Cloudflare. Accesible solo desde el Worker. El Angular frontend nunca accede a D1 directamente — siempre vía la API REST del Worker.
+
+```sql
+-- Tablas principales
+users              (id TEXT PK, email, displayName, photoURL, role, isBanned, createdAt)
+forum_categories   (id TEXT PK, slug UNIQUE, name, description, icon, postCount, sortOrder)
+posts              (id TEXT PK, categoryId FK, authorId FK, title, body,
+                    isPinned, isLocked, isSolved, replyCount, views,
+                    createdAt, updatedAt, lastReplyAt)
+replies            (id TEXT PK, postId FK, authorId FK, body, likes,
+                    isEdited, createdAt, updatedAt)
+reply_likes        (replyId FK, userId FK, PRIMARY KEY(replyId, userId))
+```
+
+**8 categorías seed:** `general`, `filamentos`, `resinas`, `impresoras`, `ofertas`, `proyectos`, `ayuda`, `meta`
+
+**Límites gratuitos Cloudflare D1:**
+| Métrica | Límite/día |
+|---|---|
+| Lecturas | 5 000 000 |
+| Escrituras | 100 000 |
+| Storage | 5 GB total |
+
+### Firebase Auth
+
+Único servicio de Firebase usado por el usuario. Proveedores habilitados: **Google** y **GitHub**.
+
+El Worker valida tokens Firebase JWT usando `crypto.subtle` (Web Crypto API) — sin dependencias de Admin SDK. Obtiene las claves públicas de `googleapis.com/service_accounts/v1/jwk/...` (cacheadas 1h en Cloudflare CDN).
 
 ---
 
@@ -710,10 +765,29 @@ getSimilar(product: CatalogProduct, limit: number): CatalogProduct[]
 // PriceService — lee CatalogService (0 Firestore)
 getEntries(productSlug: string): CatalogEntry[]
 getHistory(productSlug: string): CatalogHistoryPoint[]
+
+// AuthService — Firebase Auth (Google + GitHub)
+firebaseUser: Signal<User | null | undefined>
+isLoggedIn: Signal<boolean>
+userProfile: Signal<UserProfile | null>
+loginWithGoogle() / loginWithGitHub() / logout()
+
+// UserProfileService — POST /api/users/me en el Worker
+ensureProfile(firebaseUser): Promise<void>   // crea o actualiza el perfil en D1
+currentProfile: Signal<UserProfile | null>
+
+// ForumApiService — wrapper REST sobre el Worker
+getCategories(): Promise<ForumCategory[]>
+getPosts(slug, page): Promise<PostsPage>
+getPost(id): Promise<ForumPost>
+getReplies(postId, page): Promise<RepliesPage>
+createPost(data) / updatePost(id, data) / deletePost(id)
+createReply(postId, body) / updateReply(id, body) / deleteReply(id)
+toggleLike(replyId): Promise<{ liked: boolean }>
 ```
 
-> **Excepción:** `AlertFormComponent` escribe alertas de precio directamente en Firestore
-> via AngularFire — es la única operación Firestore iniciada por el usuario.
+> **Única operación Firestore:** `AlertFormComponent` escribe alertas de precio en
+> Firestore (`priceAlerts`) via AngularFire. El foro usa D1 a través del Worker.
 
 ---
 
@@ -723,6 +797,12 @@ getHistory(productSlug: string): CatalogHistoryPoint[]
 - **Trigger:** push a `master`
 - **Acción:** `ng build` → `firebase deploy --only hosting`
 - **Tiempo:** ~3-4 minutos
+
+### Deploy del Worker (manual — local PowerShell)
+- **Directorio:** `worker/`
+- **Comando:** `npx wrangler deploy`
+- **URL producción:** `https://dprecios-forum.3dprecios.workers.dev`
+- **Migración schema D1:** `npx wrangler d1 execute forum-db --remote --file=./schema.sql`
 
 ### Scraping (manual — local PowerShell)
 - **Cómo ejecutar:** `npx ts-node --project tsconfig.json src/run-direct.ts` desde `scraper/`
@@ -941,6 +1021,7 @@ Hay ~30 tiendas más en `models.ts` con `isActive: true` que aún retornan 0 pro
 | **Ajustar scrapers que retornan 0** | Para cada tienda en models.ts con `isActive: true` y 0 productos, investigar el DOM/API y actualizar CATEGORY_PATHS o categoryIds |
 | **Deduplicación de repuestos** | `buildCanonicalKey` para repuestos: `rep-{partType}-{brand}-{modelo}-{specs}` — actualmente solo el 3% de repuestos se comparten entre tiendas |
 | **`nozzleDiameter` en specs** | El diámetro de boquilla (0.2-1.2mm) es el filtro más buscado; extraer de regex `(\d+[.,]\d+)\s*mm` en `extractSpecs` |
+| **Foro Fase 3** | Edición inline de posts/replies propios; moderación (pin/lock/ban); notificaciones al recibir reply |
 
 ### Media prioridad
 
@@ -949,7 +1030,8 @@ Hay ~30 tiendas más en `models.ts` con `isActive: true` que aún retornan 0 pro
 | **Specs para impresoras FDM** | Agregar `workArea` (`\d+x\d+x\d+`) y `extruderCount` |
 | **Historial de precios en frontend** | El campo `history[]` existe en el modelo; falta el gráfico de línea en product-detail |
 | **Más tiendas activas** | pcfactory (investigar API), bambulab.com/es-cl, todoclick.cl |
-| **Sistema de alertas** | `AlertFormComponent` existe; falta Firebase Auth + Resend trigger |
+| **Sistema de alertas** | `AlertFormComponent` existe; falta Resend trigger (Firebase Auth ya implementado) |
+| **Render Markdown en el foro** | Instalar `marked` para renderizar body de posts/replies como Markdown real |
 
 ### Baja prioridad
 
@@ -958,3 +1040,4 @@ Hay ~30 tiendas más en `models.ts` con `isActive: true` que aún retornan 0 pro
 | **Colores adicionales** | Marfil, Hueso, Champagne, Terracota, Borgoña, Coral no capturados |
 | **Comparador lado a lado** | Seleccionar 2-3 productos y comparar specs/precios en tabla |
 | **Exportar CSV** | Botón de descarga en ficha de producto |
+| **Dominio propio para Worker** | Mover `dprecios-forum.3dprecios.workers.dev` a `api.3dprecios.cl` via Cloudflare Custom Domain |
