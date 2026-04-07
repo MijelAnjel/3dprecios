@@ -160,7 +160,7 @@ CREATE TABLE reply_likes (
 | cat-proyectos  | proyectos   | Proyectos    | 🏆    |
 | cat-ayuda      | ayuda       | Ayuda        | 🆘    |
 | cat-meta       | meta        | Meta         | ⚙️    |
-
+ 
 ---
 
 ## 4. API REST (Cloudflare Worker)

@@ -3,12 +3,13 @@ import { RouterLink } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { ForumApiService } from '../../../core/services/forum-api.service';
 import { AuthService } from '../../../core/services/auth.service';
+import { AuthModalComponent } from '../../../shared/components/auth-modal/auth-modal.component';
 import { ForumCategory } from '../../../core/models';
 
 @Component({
   selector: 'app-forum-home',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink],
+  imports: [RouterLink, AuthModalComponent],
   templateUrl: './forum-home.component.html',
   styleUrl: './forum-home.component.scss',
 })
@@ -18,9 +19,10 @@ export class ForumHomeComponent implements OnInit {
   private readonly meta  = inject(Meta);
   readonly auth          = inject(AuthService);
 
-  readonly categories = signal<ForumCategory[]>([]);
-  readonly loading    = signal(true);
-  readonly error      = signal<string | null>(null);
+  readonly categories  = signal<ForumCategory[]>([]);
+  readonly loading     = signal(true);
+  readonly error       = signal<string | null>(null);
+  readonly showLogin   = signal(false);
 
   ngOnInit(): void {
     this.title.setTitle('Foro Comunidad — 3DPrecios');

@@ -77,7 +77,8 @@ import { AuthService } from '../../../core/services/auth.service';
   styleUrl: './auth-modal.component.scss',
 })
 export class AuthModalComponent {
-  private auth = inject(AuthService);
+  private auth          = inject(AuthService);
+  private readonly elRef = inject(ElementRef);
 
   readonly closed  = output<void>();
   readonly loading = signal(false);
@@ -85,7 +86,7 @@ export class AuthModalComponent {
 
   constructor() {
     afterNextRender(() => {
-      const panel = (inject(ElementRef).nativeElement as HTMLElement)
+      const panel = (this.elRef.nativeElement as HTMLElement)
         .querySelector<HTMLElement>('.auth-modal__close');
       panel?.focus();
     });

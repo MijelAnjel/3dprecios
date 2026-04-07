@@ -13,10 +13,14 @@
       </a>
     } @else {
       <p class="forum-home__login-hint">
-        <a routerLink="/foro">Inicia sesión</a> para participar
+        <button type="button" class="forum-home__login-link" (click)="showLogin.set(true)">Inicia sesión</button> para participar
       </p>
     }
   </header>
+
+  @if (showLogin()) {
+    <app-auth-modal (closed)="showLogin.set(false)" />
+  }
 
   @if (loading()) {
     <div class="forum-home__grid" aria-busy="true" aria-label="Cargando categorías">
